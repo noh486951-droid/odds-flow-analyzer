@@ -562,6 +562,83 @@ def detect_back_to_back(matches):
 
 
 # ============================================================
+# 新聞翻譯模組 (Gemini 批量翻譯)
+# ============================================================
+def translate_news_titles(news_dict):
+    """用 Gemini 批量翻譯英文新聞標題為中文 (僅 1 次 API 呼叫)"""
+    if not GEMINI_API_KEY:
+        return news_dict
+    
+    # 收集所有英文標題
+    all_titles = []
+    title_map = {}  # index -> (category, item_index)
+    
+    for category in ["nba", "soccer"]:
+        for i, item in enumerate(news_dict.get(category, [])):
+            title = item.get("title", "")
+            # 只翻譯英文標題 (簡單判斷: 包含拉丁字母且無中文)
+            if title and any(c.isascii() and c.isalpha() for c in title) and not any('\u4e00' <= c <= '\u9fff' for c in title):
+                idx = len(all_titles)
+                all_titles.append(title)
+                title_map[idx] = (category, i)
+    
+    if not all_titles:
+        print("  ✅ 新聞全都是中文，無需翻譯")
+        return news_dict
+    
+    print(f"  🌐 批量翻譯 {len(all_titles)} 則英文新聞標題...")
+    
+    # 組裝 prompt
+    numbered = "\n".join([f"{i+1}. {t}" for i, t in enumerate(all_titles)])
+    prompt = f"""請將以下英文體育新聞標題翻譯成繁體中文。
+規則：
+- 每行一則，格式為「編號. 中文翻譯」
+- 保留人名與隊名的英文原文（括號內加中文）
+- 簡潔流暢
+
+{numbered}"""
+    
+    try:
+        genai.configure(api_key=GEMINI_API_KEY)
+        safety_settings = [
+            {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+        ]
+        
+        model = genai.GenerativeModel("gemini-2.0-flash")
+        response = model.generate_content(prompt, safety_settings=safety_settings)
+        translated = response.text.strip()
+        
+        # 解析翻譯結果
+        for line in translated.split("\n"):
+            line = line.strip()
+            if not line:
+                continue
+            # 解析 "1. 翻譯內容" 格式
+            parts = line.split(".", 1)
+            if len(parts) == 2:
+                try:
+                    idx = int(parts[0].strip()) - 1
+                    zh_title = parts[1].strip()
+                    if idx in title_map and zh_title:
+                        cat, item_idx = title_map[idx]
+                        # 保留原文，加上翻譯
+                        news_dict[cat][item_idx]["title_zh"] = zh_title
+                        news_dict[cat][item_idx]["title_en"] = news_dict[cat][item_idx]["title"]
+                        news_dict[cat][item_idx]["title"] = zh_title
+                except (ValueError, IndexError):
+                    pass
+        
+        print(f"  ✅ 翻譯完成")
+    except Exception as e:
+        print(f"  ⚠️ 翻譯失敗 (保留英文原標題): {e}")
+    
+    return news_dict
+
+
+# ============================================================
 # AI 分析模組 (Gemini)
 # ============================================================
 def analyze_with_ai(matches_with_changes, news_items):
@@ -584,7 +661,6 @@ def analyze_with_ai(matches_with_changes, news_items):
     ]
 
     results = []
-    import time
     
     # 免費版每日限制: gemini-2.0-flash ~1500次/天, gemini-2.5-flash 僅20次/天
     # 每次最多分析 3 場 (每天排程4次 = 最多12次/天，安全範圍內)
@@ -595,49 +671,35 @@ def analyze_with_ai(matches_with_changes, news_items):
     matches_to_analyze = matches_with_changes[:3]
     print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析")
     
-    # 優先使用 gemini-2.0-flash (每日額度較高)，失敗才降級
+    # 直接嘗試用 gemini-2.0-flash，失敗才降級 (省掉測試呼叫的 1 次額度)
     MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-2.5-flash"]
-    active_model = None
-    for model_name in MODEL_PRIORITY:
-        try:
-            test_model = genai.GenerativeModel(model_name)
-            test_response = test_model.generate_content("回答OK", safety_settings=safety_settings)
-            if test_response.text:
-                active_model = test_model
-                print(f"  ✅ 使用模型: {model_name}")
-                time.sleep(5)  # 測試也消耗配額，休息一下
-                break
-        except Exception as e:
-            print(f"  ⚠️ {model_name} 不可用: {e}")
-    
-    if not active_model:
-        print("  ❌ 所有 AI 模型都不可用，跳過分析")
-        for match in matches_to_analyze:
-            match["ai_analysis"] = "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。"
-            match["analysis_source"] = "fallback"
-            results.append(match)
-        return results
     
     for i, match in enumerate(matches_to_analyze):
         prompt = build_analysis_prompt(match, news_items)
-        try:
-            response = active_model.generate_content(prompt, safety_settings=safety_settings)
-            analysis_text = response.text.strip()
-            match["ai_analysis"] = analysis_text
-            match["analysis_source"] = "gemini"
-            print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成: {match['home_team']} vs {match['away_team']}")
-            
-            # 每次間隔 15 秒避免 RPM 限制
-            if i < len(matches_to_analyze) - 1:
-                print(f"  ⏳ 等待 15 秒避免觸發速率限制...")
-                time.sleep(15)
-        except Exception as e:
-            error_msg = str(e).replace('"', "'")
-            print(f"  ⚠️ AI 分析失敗: {error_msg}")
-            match["ai_analysis"] = f"AI 分析暫時無法使用 ({error_msg[:80]})。請參考勝率數據判斷。"
+        success = False
+        for model_name in MODEL_PRIORITY:
+            try:
+                model = genai.GenerativeModel(model_name)
+                response = model.generate_content(prompt, safety_settings=safety_settings)
+                analysis_text = response.text.strip()
+                match["ai_analysis"] = analysis_text
+                match["analysis_source"] = "gemini"
+                print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成 ({model_name}): {match['home_team']} vs {match['away_team']}")
+                success = True
+                break
+            except Exception as e:
+                print(f"  ⚠️ {model_name} 失敗: {str(e)[:60]}")
+        
+        if not success:
+            match["ai_analysis"] = "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。"
             match["analysis_source"] = "fallback"
-
+        
         results.append(match)
+        
+        # 每次間隔 15 秒避免 RPM 限制
+        if i < len(matches_to_analyze) - 1:
+            print(f"  ⏳ 等待 15 秒避免觸發速率限制...")
+            time_module.sleep(15)
 
     return results
 
@@ -889,6 +951,10 @@ def main():
         "soccer": fetch_news("soccer"),
     }
     print(f"  NBA 新聞: {len(news['nba'])} 則, 足球新聞: {len(news['soccer'])} 則")
+
+    # 5.1 翻譯英文新聞標題 (批量 1 次 API 呼叫)
+    print("\n🌐 翻譯新聞標題...")
+    news = translate_news_titles(news)
 
     # 5.5 傷兵篩選
     print("\n🏥 篩選傷兵資訊...")
