@@ -234,8 +234,9 @@ def calculate_average_odds(match):
 # 初盤鎖定與變動偵測
 # ============================================================
 def detect_changes(current_matches, existing_data):
-    """比對初盤與現盤，計算變動"""
+    """比對初盤與現盤，計算變動，累積盤口時序"""
     results = []
+    now_str = get_now().strftime("%m/%d %H:%M")
 
     for match in current_matches:
         match_id = match["id"]
@@ -248,6 +249,10 @@ def detect_changes(current_matches, existing_data):
             match["change_pct"] = {}
             match["is_new"] = True
             match["first_seen"] = get_now().isoformat()
+            # 初始化盤口時序
+            snapshot = {"time": now_str}
+            snapshot.update(match["avg_odds"])
+            match["odds_timeline"] = [snapshot]
         else:
             # 已知比賽：比對變動
             match["opening_odds"] = existing_match.get("opening_odds", match["avg_odds"])
@@ -266,16 +271,59 @@ def detect_changes(current_matches, existing_data):
             match["odds_change"] = change
             match["change_pct"] = change_pct
             
-            # 定義資金趨勢/價值注警示 (賠率下降 >= 5% 視為顯著的 Smart Money Move)
+            # 定義資金趨勢/價值注警示
             is_value_bet = False
             for team, pct in change_pct.items():
                 if pct <= -5.0:
                     is_value_bet = True
             match["is_value_bet"] = is_value_bet
+            
+            # 累積盤口時序 (最多保留 20 個快照)
+            timeline = existing_match.get("odds_timeline", [])
+            snapshot = {"time": now_str}
+            snapshot.update(match["avg_odds"])
+            # 避免重複快照
+            if not timeline or timeline[-1].get("time") != now_str:
+                timeline.append(snapshot)
+            match["odds_timeline"] = timeline[-20:]
 
         results.append(match)
 
     return results
+
+
+def detect_sharp_moves(matches):
+    """偵測急速盤口移動 (聪明錢訊號)"""
+    for match in matches:
+        timeline = match.get("odds_timeline", [])
+        if len(timeline) < 2:
+            continue
+        
+        sharp_moves = []
+        latest = timeline[-1]
+        prev = timeline[-2]
+        
+        for team in match.get("avg_odds", {}).keys():
+            cur_price = latest.get(team, 0)
+            prev_price = prev.get(team, 0)
+            if prev_price <= 0 or cur_price <= 0:
+                continue
+            
+            move_pct = round((cur_price - prev_price) / prev_price * 100, 2)
+            
+            if move_pct <= -8.0:
+                level = "💰 聪明錢訊號" if move_pct <= -15.0 else "🔥 急速移動"
+                sharp_moves.append({
+                    "team": team,
+                    "move_pct": move_pct,
+                    "from": prev_price,
+                    "to": cur_price,
+                    "level": level,
+                    "message": f"{team} 賠率 {prev_price:.2f}→{cur_price:.2f} ({move_pct:+.1f}%)"
+                })
+        
+        if sharp_moves:
+            match["sharp_moves"] = sharp_moves
 
 
 def get_significant_changes(matches):
@@ -409,11 +457,11 @@ def fetch_team_last_events(team_id, count=15):
 
 
 def fetch_h2h_and_form(home_team, away_team):
-    """取得 H2H 交手紀錄與雙方近5場戰績"""
+    """取得 H2H 交手紀錄與雙方近5場戰績 (含主客場拆分)"""
     result = {
         "h2h_history": [],
-        "home_form": {"record": "", "wins": 0, "losses": 0, "details": []},
-        "away_form": {"record": "", "wins": 0, "losses": 0, "details": []},
+        "home_form": {"record": "", "wins": 0, "losses": 0, "home_record": "", "away_record": "", "details": []},
+        "away_form": {"record": "", "wins": 0, "losses": 0, "home_record": "", "away_record": "", "details": []},
     }
     
     # 搜尋隊伍 ID
@@ -433,6 +481,8 @@ def fetch_h2h_and_form(home_team, away_team):
         
         # 計算近5場戰績
         home_record = []
+        home_at_home = []  # 主場戰績
+        home_at_away = []  # 客場戰績
         for ev in home_events[:5]:
             home_score = int(ev.get("intHomeScore", 0) or 0)
             away_score = int(ev.get("intAwayScore", 0) or 0)
@@ -440,17 +490,25 @@ def fetch_h2h_and_form(home_team, away_team):
             team_score = home_score if is_home else away_score
             opp_score = away_score if is_home else home_score
             won = team_score > opp_score
-            home_record.append("W" if won else "L")
+            r = "W" if won else "L"
+            home_record.append(r)
+            if is_home:
+                home_at_home.append(r)
+            else:
+                home_at_away.append(r)
             result["home_form"]["details"].append({
                 "date": ev.get("dateEvent", ""),
                 "opponent": ev.get("strAwayTeam") if is_home else ev.get("strHomeTeam"),
                 "score": f"{home_score}-{away_score}",
-                "result": "W" if won else "L"
+                "result": r,
+                "venue": "主" if is_home else "客"
             })
         
         result["home_form"]["record"] = "".join(home_record)
         result["home_form"]["wins"] = home_record.count("W")
         result["home_form"]["losses"] = home_record.count("L")
+        result["home_form"]["home_record"] = "".join(home_at_home)
+        result["home_form"]["away_record"] = "".join(home_at_away)
         
         # 從主隊的比賽中找 H2H
         for ev in home_events:
@@ -474,6 +532,8 @@ def fetch_h2h_and_form(home_team, away_team):
         time_module.sleep(1)
         
         away_record = []
+        away_at_home = []
+        away_at_away = []
         for ev in away_events[:5]:
             home_score = int(ev.get("intHomeScore", 0) or 0)
             away_score = int(ev.get("intAwayScore", 0) or 0)
@@ -481,17 +541,25 @@ def fetch_h2h_and_form(home_team, away_team):
             team_score = home_score if is_home else away_score
             opp_score = away_score if is_home else home_score
             won = team_score > opp_score
-            away_record.append("W" if won else "L")
+            r = "W" if won else "L"
+            away_record.append(r)
+            if is_home:
+                away_at_home.append(r)
+            else:
+                away_at_away.append(r)
             result["away_form"]["details"].append({
                 "date": ev.get("dateEvent", ""),
                 "opponent": ev.get("strAwayTeam") if is_home else ev.get("strHomeTeam"),
                 "score": f"{home_score}-{away_score}",
-                "result": "W" if won else "L"
+                "result": r,
+                "venue": "主" if is_home else "客"
             })
         
         result["away_form"]["record"] = "".join(away_record)
         result["away_form"]["wins"] = away_record.count("W")
         result["away_form"]["losses"] = away_record.count("L")
+        result["away_form"]["home_record"] = "".join(away_at_home)
+        result["away_form"]["away_record"] = "".join(away_at_away)
         
         # 從客隊的比賽中補充 H2H
         for ev in away_events:
@@ -514,6 +582,132 @@ def fetch_h2h_and_form(home_team, away_team):
     
     return result
 
+
+# ============================================================
+# 足球天氣模組 (Open-Meteo, 免費無需 Key)
+# ============================================================
+# 主要足球城市座標 (擴充用)
+VENUE_COORDS = {
+    # EPL
+    "Arsenal": (51.555, -0.108), "Chelsea": (51.482, -0.191),
+    "Liverpool": (53.431, -2.961), "Manchester City": (53.483, -2.200),
+    "Manchester United": (53.463, -2.291), "Tottenham": (51.604, -0.066),
+    "Aston Villa": (52.509, -1.885), "Newcastle": (54.976, -1.622),
+    # La Liga
+    "Barcelona": (41.381, 2.123), "Real Madrid": (40.453, -3.688),
+    "Atletico Madrid": (40.436, -3.600),
+    # Serie A
+    "AC Milan": (45.478, 9.124), "Inter": (45.478, 9.124),
+    "Juventus": (45.110, 7.641), "Roma": (41.934, 12.455), "Napoli": (40.828, 14.193),
+    # Bundesliga
+    "Bayern Munich": (48.219, 11.625), "Borussia Dortmund": (51.493, 7.452),
+    # UCL common
+    "Paris Saint-Germain": (48.842, 2.253), "PSG": (48.842, 2.253), 
+    "Benfica": (38.753, -9.185), "Porto": (41.162, -8.584),
+}
+
+def get_venue_coords(team_name):
+    """根據隊名查找球場座標"""
+    for key, coords in VENUE_COORDS.items():
+        if key.lower() in team_name.lower():
+            return coords
+    return None
+
+def fetch_match_weather(home_team, commence_time):
+    """用 Open-Meteo 取得比賽當地天氣 (僅足球)"""
+    coords = get_venue_coords(home_team)
+    if not coords:
+        return None
+    
+    lat, lon = coords
+    try:
+        url = "https://api.open-meteo.com/v1/forecast"
+        params = {
+            "latitude": lat,
+            "longitude": lon,
+            "current": "temperature_2m,wind_speed_10m,rain,weather_code",
+            "timezone": "auto"
+        }
+        resp = requests.get(url, params=params, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            current = data.get("current", {})
+            temp = current.get("temperature_2m", 0)
+            wind = current.get("wind_speed_10m", 0)
+            rain = current.get("rain", 0)
+            code = current.get("weather_code", 0)
+            
+            # 判斷天氣狀況
+            if rain > 0 or code in [61, 63, 65, 80, 81, 82, 95, 96, 99]:
+                condition = "🌧️ 雨天"
+            elif wind > 30:
+                condition = "💨 強風"
+            elif code in [71, 73, 75, 85, 86]:
+                condition = "❄️ 雪"
+            elif code in [45, 48]:
+                condition = "🌫️ 霧"
+            else:
+                condition = "☀️ 晴朗"
+            
+            weather = {
+                "temp": round(temp, 1),
+                "wind": round(wind, 1),
+                "rain": round(rain, 1),
+                "condition": condition,
+                "impact": ""
+            }
+            
+            # 評估對大小球的影響
+            if rain > 2 or wind > 35:
+                weather["impact"] = "⚠️ 天氣可能壓低進球數 (建議留意小分)"
+            elif rain > 0 or wind > 25:
+                weather["impact"] = "場地可能濕滑，對腳下技術要求較高"
+            
+            return weather
+    except Exception as e:
+        print(f"    ⚠️ 天氣查詢失敗 ({home_team}): {e}")
+    return None
+
+
+# ============================================================
+# ATS 讓分勝率累積器 (種子階段)
+# ============================================================
+ATS_FILE = os.path.join(DATA_DIR, "ats_tracker.json")
+
+def load_ats_data():
+    """載入 ATS 累積資料"""
+    return load_json(ATS_FILE) or {"teams": {}, "last_updated": ""}
+
+def update_ats_tracker(matches):
+    """將當前讓分盤口資訊寫入 ATS 追蹤器 (種子階段: 只記錄盤口，不記錄結果)"""
+    ats = load_ats_data()
+    now = get_now().isoformat()
+    
+    for match in matches:
+        spreads = match.get("other_markets", {}).get("spreads", {})
+        if not spreads:
+            continue
+        
+        for team in [match["home_team"], match["away_team"]]:
+            if team not in ats["teams"]:
+                ats["teams"][team] = {"games_tracked": 0, "spreads_history": []}
+            
+            spread_info = spreads.get(team, {})
+            if "point" in spread_info:
+                ats["teams"][team]["spreads_history"].append({
+                    "date": now[:10],
+                    "opponent": match["away_team"] if team == match["home_team"] else match["home_team"],
+                    "spread": spread_info["point"],
+                    "match_id": match["id"],
+                    "commence_time": match.get("commence_time", ""),
+                })
+                ats["teams"][team]["games_tracked"] = len(ats["teams"][team]["spreads_history"])
+                # 只保留最近 50 筆
+                ats["teams"][team]["spreads_history"] = ats["teams"][team]["spreads_history"][-50:]
+    
+    ats["last_updated"] = now
+    save_json(ATS_FILE, ats)
+    print(f"  📊 ATS 追蹤器已更新 ({len(ats['teams'])} 隊)")
 
 # ============================================================
 # NBA 背靠背偵測
@@ -755,11 +949,40 @@ def build_analysis_prompt(match, news_items):
     if h2h:
         h2h_text = "\n".join([f"- {h['date']}: {h['home']} vs {h['away']} ({h['score']})" for h in h2h])
 
-    # 近期戰績
+    # 近期戰績 (含主客場拆分)
     home_form = match.get("home_form", {})
     away_form = match.get("away_form", {})
-    form_text = f"- {home}: 近5場 {home_form.get('record', '未知')} ({home_form.get('wins', 0)}勝{home_form.get('losses', 0)}負)\n"
-    form_text += f"- {away}: 近5場 {away_form.get('record', '未知')} ({away_form.get('wins', 0)}勝{away_form.get('losses', 0)}負)"
+    form_text = f"- {home}: 近5場 {home_form.get('record', '未知')} ({home_form.get('wins', 0)}勝{home_form.get('losses', 0)}負)"
+    if home_form.get("home_record"):
+        form_text += f" | 主場 {home_form['home_record']}, 客場 {home_form.get('away_record', '')}"
+    form_text += f"\n- {away}: 近5場 {away_form.get('record', '未知')} ({away_form.get('wins', 0)}勝{away_form.get('losses', 0)}負)"
+    if away_form.get("home_record"):
+        form_text += f" | 主場 {away_form['home_record']}, 客場 {away_form.get('away_record', '')}"
+
+    # 盤口走勢
+    timeline = match.get("odds_timeline", [])
+    timeline_text = "僅有單一快照"
+    if len(timeline) >= 2:
+        timeline_text = ""
+        for snap in timeline[-5:]:  # 最近5個快照
+            parts = [f"{snap.get('time', '?')}:"]
+            for team in current.keys():
+                parts.append(f"{team}={snap.get(team, '?')}")
+            timeline_text += " | ".join(parts) + "\n"
+
+    # 急速移動
+    sharp_text = "無"
+    sharp = match.get("sharp_moves", [])
+    if sharp:
+        sharp_text = "\n".join([f"- {s['level']}: {s['message']}" for s in sharp])
+
+    # 天氣 (足球)
+    weather_text = "N/A"
+    weather = match.get("weather")
+    if weather:
+        weather_text = f"{weather['condition']} | 氣溫 {weather['temp']}°C | 風速 {weather['wind']}km/h | 降雨 {weather['rain']}mm"
+        if weather.get("impact"):
+            weather_text += f"\n{weather['impact']}"
 
     prompt = f"""你是一位專業的運動彩券分析師，請用繁體中文回答。
 
@@ -782,8 +1005,17 @@ def build_analysis_prompt(match, news_items):
 ## 歷史交手紀錄
 {h2h_text}
 
-## 近期戰績
+## 近期戰績 (含主客場拆分)
 {form_text}
+
+## 盤口走勢 (時序)
+{timeline_text}
+
+## 急速移動偵測
+{sharp_text}
+
+## 天氣 (足球)
+{weather_text}
 
 ## 獨贏賠率變動
 """
@@ -800,10 +1032,11 @@ def build_analysis_prompt(match, news_items):
 {news_text}
 
 ## 你的任務
-1. 結合「真實勝率」「讓分/大小」「傷兵」「疲勞」「近期戰績」「歷史交手」，在開頭給出【💡 投注推薦】（例如：【💡 推薦：主讓 -6.5】或【💡 推薦：大分 246.5】）。
-2. 用 2~3 句話說明推薦原因，必須提到你考量了哪些關鍵因素（傷兵？背靠背？近期戰績？H2H？）。
-3. 若有傷兵或背靠背疲勞，必須特別提醒其對盤口的可能影響。
-4. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因。控制在 100 字以內。
+1. 結合所有資訊（勝率、盤口走勢、急速移動、傷兵、疲勞、主客場、H2H、天氣），在開頭給出【💡 投注推薦】。
+2. 用 2~3 句話說明推薦原因，必須提到你考量了哪些關鍵因素。
+3. 若有急速移動或聰明錢訊號，特別強調。若盤口走勢顯示單向大幅移動，分析可能原因。
+4. 若有傷兵、背靠背、或惡劣天氣，必須提醒對盤口的影響。
+5. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因。控制在 120 字以內。
 """
     return prompt
 
@@ -986,6 +1219,28 @@ def main():
         except Exception as e:
             print(f"  ⚠️ H2H 抓取失敗 ({match['home_team']} vs {match['away_team']}): {e}")
 
+    # 5.8 急速盤口移動偵測
+    print("\n🔥 偵測急速盤口移動...")
+    detect_sharp_moves(matches_with_changes)
+    sharp_count = sum(1 for m in matches_with_changes if m.get("sharp_moves"))
+    if sharp_count:
+        print(f"  🔥 發現 {sharp_count} 場有急速移動!")
+    else:
+        print("  ✅ 無急速移動")
+
+    # 5.9 足球天氣查詢 (僅足球賽事)
+    print("\n☁️ 查詢足球賽事天氣...")
+    weather_count = 0
+    for match in matches_with_changes:
+        if "soccer" in match.get("sport_key", ""):
+            weather = fetch_match_weather(match["home_team"], match.get("commence_time"))
+            if weather:
+                match["weather"] = weather
+                weather_count += 1
+                print(f"  {weather['condition']} {match['home_team']}: {weather['temp']}°C, 風速{weather['wind']}km/h")
+    if weather_count == 0:
+        print("  ✅ 無足球賽事或無天氣資料")
+
     # 6. AI 分析 (僅對有顯著變動的比賽)
     if significant:
         print("\n🤖 啟動 AI 分析...")
@@ -1007,6 +1262,10 @@ def main():
     output["stats"]["api_remaining"] = api_remaining
     save_json(CURRENT_FILE, output)
     print(f"  ✅ 即時數據已更新: {CURRENT_FILE}")
+
+    # 7.5 更新 ATS 追蹤器
+    print("\n📊 更新 ATS 追蹤器...")
+    update_ats_tracker(matches_with_changes)
 
     # 8. 歸檔歷史
     save_to_archive(output)

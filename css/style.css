@@ -1098,3 +1098,88 @@ body {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+
+/* ============================================================
+   v1.5.0: Sharp Move Tags
+   ============================================================ */
+.sharp-tag {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.25), rgba(241, 196, 15, 0.25));
+  color: #f39c12;
+  border: 1px solid rgba(241, 196, 15, 0.5);
+  animation: sharpPulse 2s infinite;
+}
+
+@keyframes sharpPulse {
+  0%, 100% { box-shadow: 0 0 0 rgba(241, 196, 15, 0); }
+  50% { box-shadow: 0 0 8px rgba(241, 196, 15, 0.4); }
+}
+
+.sharp-item {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(241, 196, 15, 0.1));
+  border: 1px solid rgba(241, 196, 15, 0.3);
+  color: #f39c12;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================================
+   v1.5.0: Weather Tags
+   ============================================================ */
+.weather-tag {
+  background: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  border: 1px solid rgba(52, 152, 219, 0.4);
+}
+
+.weather-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.weather-condition {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.weather-impact {
+  width: 100%;
+  background: rgba(243, 156, 18, 0.1);
+  border: 1px solid rgba(243, 156, 18, 0.3);
+  color: #f39c12;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+/* ============================================================
+   v1.5.0: Timeline Chart
+   ============================================================ */
+.timeline-chart {
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 4px;
+  background: rgba(0,0,0,0.2);
+}
+
+.timeline-labels, .timeline-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  padding: 0.2rem 0;
+}
+
+.timeline-values {
+  color: var(--primary);
+  font-weight: 600;
+}
