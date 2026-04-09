@@ -1,54 +1,103 @@
-# 運彩盤口變動追蹤器 (Odds Flow Analyzer)
+# ⚡ Odds Flow Analyzer | 運彩盤口變動追蹤器
 
-這是一個全自動化的運彩看盤網頁，專為「朋友圈」設計。
-它能夠自動捕捉 NBA 與足球的盤口變動，並交由 Google Gemini AI 進行診斷分析。
+> **當前版本：v1.3.0**
 
-## 目錄結構
+一套全自動、零成本的運彩分析工具，部署在 GitHub Pages 上，24 小時自動運轉。
+
+🔗 **線上體驗：** https://noh486951-droid.github.io/odds-flow-analyzer/
+
+---
+
+## 📋 功能總覽
+
+| 功能 | 說明 |
+|---|---|
+| 📊 即時賠率追蹤 | 自動抓取 NBA 與英超等足球聯賽的獨贏、讓分、大小分賠率 |
+| 🎯 真實勝率計算 | 反推莊家水錢，顯示每個盤口的「過盤率」與「大分勝率」 |
+| 🏆 金色高勝率標記 | 勝率 ≥ 60% 的選項自動金色發光高亮，一眼辨識高價值標的 |
+| 🤖 AI 深度分析 | 透過 Gemini AI 針對高勝率比賽自動生成投注推薦及原因說明 |
+| 📅 歷史數據回顧 | 每日自動存檔，可回查任意日期的盤口走勢 |
+| 🧮 串關計算機 | 輸入多場賠率，自動計算串關倍率與預期獎金 |
+| 📰 新聞快遞 | 自動抓取 NBA 與足球相關 RSS 新聞，輔助決策 |
+
+## 🏗️ 技術架構
+
+- **前端**：HTML + CSS + JavaScript（GitHub Pages 靜態部署）
+- **後端**：Python（透過 GitHub Actions 每 6 小時自動執行）
+- **資料來源**：[The Odds API](https://the-odds-api.com/)（免費版）
+- **AI 引擎**：Google Gemini 2.0/2.5 Flash（免費版）
+
+## 💡 省 Token 策略
+
+- 只有當任一盤口勝率超過 **60%** 時才觸發 AI 分析
+- 每次執行最多僅分析勝率最高的前 **3 場**比賽
+- 優先使用每日額度較高的 `gemini-2.0-flash`，額度耗盡才切換 `gemini-2.5-flash`
+
+## 🔑 環境變數 (GitHub Secrets)
+
+| 名稱 | 說明 |
+|---|---|
+| `ODDS_API_KEY` | The Odds API 金鑰 (https://the-odds-api.com/) |
+| `GEMINI_API_KEY` | Google Gemini API 金鑰 (https://aistudio.google.com/) |
+
+## 📁 專案結構
+
 ```
 odds-flow-analyzer/
-├── .github/workflows/   # GitHub Actions 自動化腳本
-├── css/                 # 網站樣式 (Dark Mode, Glassmorphism)
-├── js/                  # 前端互動邏輯
-├── data/                # 存放爬蟲抓取下來的 JSON (包含歷史 archive)
-├── scripts/             # Python 爬蟲與 AI 分析核心
-└── index.html           # 網站首頁
+├── index.html            # 主頁面
+├── css/style.css         # 樣式表
+├── js/
+│   ├── app.js            # 核心邏輯與賽事卡片渲染
+│   ├── dashboard.js      # 即時看板控制器
+│   ├── history.js        # 歷史回顧控制器
+│   └── calculator.js     # 串關計算機
+├── scripts/
+│   ├── fetch_odds.py     # 資料抓取、AI 分析核心
+│   └── requirements.txt  # Python 依賴
+├── data/
+│   ├── current.json      # 當前即時數據
+│   └── archive/          # 歷史每日存檔
+└── .github/workflows/    # GitHub Actions 自動排程
 ```
 
-## 部署與使用指南 (完全免費方案)
+---
 
-此網站設計為透過 **GitHub Pages** 託管，並利用 **GitHub Actions** 達成自動更新數據。請按照以下步驟完成設定：
+## 📌 版本紀錄 (Changelog)
 
-### 步驟 1: 將程式碼推送到 GitHub
-1. 在 GitHub 上建立一個新的 **公開(Public)** 儲存庫（Repository），例如命名為 `odds-flow-analyzer`。
-2. 將此資料夾內的所有檔案上傳或 Push 到該儲存庫的主分支 (`main` 或 `master`)。
+### v1.3.0 — 2026-04-09
+> AI 智慧配額管理 & 勝率驅動分析
 
-### 步驟 2: 設定 API 金鑰 (GitHub Secrets)
-為了安全起見，AI 金鑰與抓賠率的金鑰不能寫死在程式碼中，我們將把它們存在 GitHub Secrets：
-1. 進入您的 GitHub 儲存庫。
-2. 點擊頂部的 **Settings**。
-3. 在左側選單欄往下拉，找到 **Secrets and variables**，點擊 **Actions**。
-4. 點擊綠色的 **New repository secret**。
-5. 新增第一個金鑰：
-   - Name 欄位填入：`ODDS_API_KEY`
-   - Secret 欄位貼上您從 The Odds API 申請到的金鑰。
-   - 點擊 Add secret。
-6. 重複步驟 4-5 新增第二個金鑰：
-   - Name 欄位填入：`GEMINI_API_KEY`
-   - Secret 欄位貼上您從 Google AI Studio 申請到的金鑰。
+- ✅ **智慧模型切換**：自動偵測 `gemini-2.0-flash` / `gemini-2.5-flash` 可用性，優先使用高額度模型
+- ✅ **每日配額保護**：每次執行最多分析 3 場，4 次排程/天 = 12 次/天，安全低於免費 20 次/天上限
+- ✅ **勝率驅動 AI**：僅勝率 ≥ 60% 的比賽才消耗 AI Token，其餘只顯示數據
+- ✅ **金色高亮特效**：≥ 60% 勝率文字加上金色發光效果
+- ✅ **安全過濾關閉**：解除 Gemini 對博弈內容的誤判封鎖
 
-### 步驟 3: 啟動 GitHub Pages
-1. 在 **Settings** 頁面的左側選單中點擊 **Pages**。
-2. 在 **Build and deployment** 區塊，Source 選擇 `Deploy from a branch`。
-3. Branch 下拉選單選擇 `main` (或 `master`)，後方資料夾選擇 `/ (root)`。
-4. 點擊 **Save**。
-5. 等待約 1~2 分鐘，頁面上方會顯示您專屬的網站網址。
+### v1.2.0 — 2026-04-09
+> 進階盤口 & AI 投注推薦
 
-### 步驟 4: 啟動第一筆數據抓取
-由於剛建立時 `data/` 資料夾中可能沒有即時數據：
-1. 進入儲存庫頂部的 **Actions** 頁籤。
-2. 在左側點擊 **Update Odds Data** 工作流。
-3. 點擊右側的 **Run workflow** -> 確認執行。
-4. 等候腳本執行完成（約 30 秒至 1 分鐘）。
-5. 重新整理您的 GitHub Pages 網站，您將看到最新的盤口分析！
+- ✅ 整合讓分 (spreads) 與大小分 (totals) 盤口數據
+- ✅ 計算各盤口「過盤率」與「大分勝率」
+- ✅ AI 強制輸出【💡 推薦】投注建議與原因說明
+- ✅ 前端防呆機制 (try-catch 防止單張卡片錯誤導致全站當機)
 
-往後系統會每 3 小時自動化執行一次抓取動作，並自動歸檔歷史數據。
+### v1.1.0 — 2026-04-09
+> 核心功能上線
+
+- ✅ NBA + 英超足球賠率即時追蹤
+- ✅ 真實勝率計算 (扣除莊家水錢)
+- ✅ AI 診斷盤口走勢 (Gemini API)
+- ✅ 歷史數據每日存檔
+- ✅ 串關計算機
+- ✅ RSS 新聞快遞
+
+### v1.0.0 — 2026-04-09
+> 專案初始化
+
+- ✅ 基礎架構建立
+- ✅ GitHub Pages 部署
+- ✅ GitHub Actions 自動排程
+
+---
+
+> ⚠️ **免責聲明**：本工具數據僅供參考，投注請理性。
