@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-09T17:21:17.853178+08:00",
-  "last_updated_display": "2026/04/09 17:21 (台北時間)",
+  "last_updated": "2026-04-09T17:48:09.825184+08:00",
+  "last_updated_display": "2026/04/09 17:48 (台北時間)",
   "matches": {
     "0852cffec341701f6a0dde8619ae9f56": {
       "id": "0852cffec341701f6a0dde8619ae9f56",
@@ -115,7 +115,7 @@
         }
       ],
       "avg_odds": {
-        "Chicago Bulls": 1.395,
+        "Chicago Bulls": 1.394,
         "Washington Wizards": 3.041
       },
       "true_probs": {
@@ -156,16 +156,16 @@
       "first_seen": "2026-04-09T16:27:35.506099+08:00",
       "is_new": false,
       "odds_change": {
-        "Chicago Bulls": -0.002,
+        "Chicago Bulls": -0.003,
         "Washington Wizards": 0.003
       },
       "change_pct": {
-        "Chicago Bulls": -0.14,
+        "Chicago Bulls": -0.21,
         "Washington Wizards": 0.1
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "53b49bbe56f8581f353bbbb5c6179ac5": {
       "id": "53b49bbe56f8581f353bbbb5c6179ac5",
@@ -250,19 +250,19 @@
           "markets": {
             "h2h": {
               "Miami Heat": {
-                "price": 2.4
+                "price": 2.45
               },
               "Toronto Raptors": {
-                "price": 1.62
+                "price": 1.61
               }
             },
             "spreads": {
               "Miami Heat": {
-                "price": 1.87,
+                "price": 1.91,
                 "point": 4.0
               },
               "Toronto Raptors": {
-                "price": 1.95,
+                "price": 1.91,
                 "point": -4.0
               }
             },
@@ -280,12 +280,12 @@
         }
       ],
       "avg_odds": {
-        "Miami Heat": 2.437,
+        "Miami Heat": 2.441,
         "Toronto Raptors": 1.576
       },
       "true_probs": {
-        "Miami Heat": 39.3,
-        "Toronto Raptors": 60.7
+        "Miami Heat": 39.2,
+        "Toronto Raptors": 60.8
       },
       "other_markets": {
         "spreads": {
@@ -321,16 +321,16 @@
       "first_seen": "2026-04-09T16:27:35.506113+08:00",
       "is_new": false,
       "odds_change": {
-        "Miami Heat": 0.007,
+        "Miami Heat": 0.011,
         "Toronto Raptors": -0.003
       },
       "change_pct": {
-        "Miami Heat": 0.29,
+        "Miami Heat": 0.45,
         "Toronto Raptors": -0.19
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "bf30a732402325cab54ab666ee0f5c11": {
       "id": "bf30a732402325cab54ab666ee0f5c11",
@@ -353,14 +353,14 @@
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.95,
-                "point": 3.5,
-                "prob": 49.0
+                "price": 1.91,
+                "point": 4.5,
+                "prob": 50.0
               },
               "New York Knicks": {
-                "price": 1.87,
-                "point": -3.5,
-                "prob": 51.0
+                "price": 1.91,
+                "point": -4.5,
+                "prob": 50.0
               }
             },
             "totals": {
@@ -391,11 +391,11 @@
             "spreads": {
               "Boston Celtics": {
                 "price": 1.94,
-                "point": 4.0
+                "point": 4.5
               },
               "New York Knicks": {
                 "price": 1.94,
-                "point": -4.0
+                "point": -4.5
               }
             },
             "totals": {
@@ -424,11 +424,11 @@
             "spreads": {
               "Boston Celtics": {
                 "price": 1.91,
-                "point": 4.0
+                "point": 4.5
               },
               "New York Knicks": {
                 "price": 1.91,
-                "point": -4.0
+                "point": -4.5
               }
             },
             "totals": {
@@ -445,7 +445,7 @@
         }
       ],
       "avg_odds": {
-        "Boston Celtics": 2.515,
+        "Boston Celtics": 2.514,
         "New York Knicks": 1.549
       },
       "true_probs": {
@@ -455,14 +455,14 @@
       "other_markets": {
         "spreads": {
           "Boston Celtics": {
-            "price": 1.95,
-            "point": 3.5,
-            "prob": 49.0
+            "price": 1.91,
+            "point": 4.5,
+            "prob": 50.0
           },
           "New York Knicks": {
-            "price": 1.87,
-            "point": -3.5,
-            "prob": 51.0
+            "price": 1.91,
+            "point": -4.5,
+            "prob": 50.0
           }
         },
         "totals": {
@@ -486,16 +486,16 @@
       "first_seen": "2026-04-09T16:27:35.506117+08:00",
       "is_new": false,
       "odds_change": {
-        "Boston Celtics": 0.014,
+        "Boston Celtics": 0.013,
         "New York Knicks": -0.006
       },
       "change_pct": {
-        "Boston Celtics": 0.56,
+        "Boston Celtics": 0.52,
         "New York Knicks": -0.39
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "625bbdf7bc0bdf1d57b3f97742908221": {
       "id": "625bbdf7bc0bdf1d57b3f97742908221",
@@ -518,14 +518,14 @@
             },
             "spreads": {
               "Brooklyn Nets": {
-                "price": 1.89,
+                "price": 1.93,
                 "point": 3.5,
-                "prob": 50.5
+                "prob": 49.5
               },
               "Indiana Pacers": {
-                "price": 1.93,
+                "price": 1.89,
                 "point": -3.5,
-                "prob": 49.5
+                "prob": 50.5
               }
             },
             "totals": {
@@ -590,8 +590,8 @@
         }
       ],
       "avg_odds": {
-        "Brooklyn Nets": 2.337,
-        "Indiana Pacers": 1.625
+        "Brooklyn Nets": 2.336,
+        "Indiana Pacers": 1.626
       },
       "true_probs": {
         "Brooklyn Nets": 41.0,
@@ -600,14 +600,14 @@
       "other_markets": {
         "spreads": {
           "Brooklyn Nets": {
-            "price": 1.89,
+            "price": 1.93,
             "point": 3.5,
-            "prob": 50.5
+            "prob": 49.5
           },
           "Indiana Pacers": {
-            "price": 1.93,
+            "price": 1.89,
             "point": -3.5,
-            "prob": 49.5
+            "prob": 50.5
           }
         },
         "totals": {
@@ -631,16 +631,14 @@
       "first_seen": "2026-04-09T16:27:35.506119+08:00",
       "is_new": false,
       "odds_change": {
-        "Brooklyn Nets": 0.02,
-        "Indiana Pacers": -0.01
+        "Brooklyn Nets": 0.019,
+        "Indiana Pacers": -0.009
       },
       "change_pct": {
-        "Brooklyn Nets": 0.86,
-        "Indiana Pacers": -0.61
+        "Brooklyn Nets": 0.82,
+        "Indiana Pacers": -0.55
       },
-      "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "is_value_bet": false
     },
     "30b372ff1973370201b644c207be2dd3": {
       "id": "30b372ff1973370201b644c207be2dd3",
@@ -735,12 +733,12 @@
         }
       ],
       "avg_odds": {
-        "Houston Rockets": 1.582,
-        "Philadelphia 76ers": 2.423
+        "Houston Rockets": 1.583,
+        "Philadelphia 76ers": 2.419
       },
       "true_probs": {
-        "Houston Rockets": 60.5,
-        "Philadelphia 76ers": 39.5
+        "Houston Rockets": 60.4,
+        "Philadelphia 76ers": 39.6
       },
       "other_markets": {
         "spreads": {
@@ -776,16 +774,16 @@
       "first_seen": "2026-04-09T16:27:35.506121+08:00",
       "is_new": false,
       "odds_change": {
-        "Houston Rockets": -0.002,
-        "Philadelphia 76ers": 0.005
+        "Houston Rockets": -0.001,
+        "Philadelphia 76ers": 0.001
       },
       "change_pct": {
-        "Houston Rockets": -0.13,
-        "Philadelphia 76ers": 0.21
+        "Houston Rockets": -0.06,
+        "Philadelphia 76ers": 0.04
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "29fe17f5b19da82ce2957c3683a10aa7": {
       "id": "29fe17f5b19da82ce2957c3683a10aa7",
@@ -949,8 +947,8 @@
         "Los Angeles Lakers": 0.15
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "10d3a3a8df4f15a0754da8195a47c41f": {
       "id": "10d3a3a8df4f15a0754da8195a47c41f",
@@ -1055,8 +1053,8 @@
       ],
       "avg_odds": {
         "West Ham United": 1.834,
-        "Wolverhampton Wanderers": 4.224,
-        "Draw": 3.758
+        "Wolverhampton Wanderers": 4.223,
+        "Draw": 3.756
       },
       "true_probs": {
         "West Ham United": 52.0,
@@ -1099,17 +1097,17 @@
       "is_new": false,
       "odds_change": {
         "West Ham United": 0.0,
-        "Wolverhampton Wanderers": 0.002,
-        "Draw": -0.001
+        "Wolverhampton Wanderers": 0.001,
+        "Draw": -0.003
       },
       "change_pct": {
         "West Ham United": 0.0,
-        "Wolverhampton Wanderers": 0.05,
-        "Draw": -0.03
+        "Wolverhampton Wanderers": 0.02,
+        "Draw": -0.08
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "ff027a0ac6a0538a713b46bd753b670d": {
       "id": "ff027a0ac6a0538a713b46bd753b670d",
@@ -1124,13 +1122,13 @@
           "markets": {
             "h2h": {
               "Arsenal": {
-                "price": 1.4
+                "price": 1.38
               },
               "Bournemouth": {
-                "price": 6.0
+                "price": 7.0
               },
               "Draw": {
-                "price": 4.9
+                "price": 4.6
               }
             }
           }
@@ -1191,14 +1189,14 @@
         }
       ],
       "avg_odds": {
-        "Arsenal": 1.425,
-        "Bournemouth": 7.241,
-        "Draw": 4.735
+        "Arsenal": 1.424,
+        "Bournemouth": 7.322,
+        "Draw": 4.712
       },
       "true_probs": {
         "Arsenal": 66.8,
-        "Bournemouth": 13.1,
-        "Draw": 20.1
+        "Bournemouth": 13.0,
+        "Draw": 20.2
       },
       "other_markets": {
         "spreads": {
@@ -1235,18 +1233,18 @@
       "first_seen": "2026-04-09T17:10:54.596295+08:00",
       "is_new": false,
       "odds_change": {
-        "Arsenal": 0.0,
-        "Bournemouth": 0.0,
-        "Draw": 0.0
+        "Arsenal": -0.001,
+        "Bournemouth": 0.081,
+        "Draw": -0.023
       },
       "change_pct": {
-        "Arsenal": 0.0,
-        "Bournemouth": 0.0,
-        "Draw": 0.0
+        "Arsenal": -0.07,
+        "Bournemouth": 1.12,
+        "Draw": -0.49
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "0b8adb16f16b2490e3fbd514a2d86190": {
       "id": "0b8adb16f16b2490e3fbd514a2d86190",
@@ -1264,10 +1262,10 @@
                 "price": 2.05
               },
               "Everton": {
-                "price": 3.25
+                "price": 3.35
               },
               "Draw": {
-                "price": 3.35
+                "price": 3.3
               }
             }
           }
@@ -1329,13 +1327,13 @@
       ],
       "avg_odds": {
         "Brentford": 2.148,
-        "Everton": 3.485,
-        "Draw": 3.361
+        "Everton": 3.492,
+        "Draw": 3.356
       },
       "true_probs": {
         "Brentford": 44.3,
         "Everton": 27.3,
-        "Draw": 28.3
+        "Draw": 28.4
       },
       "other_markets": {
         "spreads": {
@@ -1373,17 +1371,15 @@
       "is_new": false,
       "odds_change": {
         "Brentford": 0.0,
-        "Everton": 0.0,
-        "Draw": 0.0
+        "Everton": 0.007,
+        "Draw": -0.005
       },
       "change_pct": {
         "Brentford": 0.0,
-        "Everton": 0.0,
-        "Draw": 0.0
+        "Everton": 0.2,
+        "Draw": -0.15
       },
-      "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "is_value_bet": false
     },
     "44d98d5d5c19eb115a527f1de294f03e": {
       "id": "44d98d5d5c19eb115a527f1de294f03e",
@@ -1477,9 +1473,9 @@
         }
       ],
       "avg_odds": {
-        "Brighton and Hove Albion": 1.73,
-        "Burnley": 4.519,
-        "Draw": 4.005
+        "Brighton and Hove Albion": 1.729,
+        "Burnley": 4.515,
+        "Draw": 4.008
       },
       "true_probs": {
         "Brighton and Hove Albion": 55.1,
@@ -1521,18 +1517,18 @@
       "first_seen": "2026-04-09T17:10:54.596300+08:00",
       "is_new": false,
       "odds_change": {
-        "Brighton and Hove Albion": 0.003,
-        "Burnley": 0.012,
-        "Draw": -0.02
+        "Brighton and Hove Albion": 0.002,
+        "Burnley": 0.008,
+        "Draw": -0.017
       },
       "change_pct": {
-        "Brighton and Hove Albion": 0.17,
-        "Burnley": 0.27,
-        "Draw": -0.5
+        "Brighton and Hove Albion": 0.12,
+        "Burnley": 0.18,
+        "Draw": -0.42
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "f022ab37b6c69f588015498186a9694b": {
       "id": "f022ab37b6c69f588015498186a9694b",
@@ -1604,14 +1600,14 @@
         }
       ],
       "avg_odds": {
-        "Fulham": 4.985,
+        "Fulham": 4.983,
         "Liverpool": 1.617,
-        "Draw": 4.343
+        "Draw": 4.337
       },
       "true_probs": {
         "Fulham": 19.1,
         "Liverpool": 58.9,
-        "Draw": 21.9
+        "Draw": 22.0
       },
       "other_markets": {
         "spreads": {
@@ -1648,18 +1644,18 @@
       "first_seen": "2026-04-09T17:10:54.596302+08:00",
       "is_new": false,
       "odds_change": {
-        "Fulham": 0.0,
+        "Fulham": -0.002,
         "Liverpool": 0.0,
-        "Draw": 0.0
+        "Draw": -0.006
       },
       "change_pct": {
-        "Fulham": 0.0,
+        "Fulham": -0.04,
         "Liverpool": 0.0,
-        "Draw": 0.0
+        "Draw": -0.14
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "542c7cb070f6d66aa7003cd825d5c199": {
       "id": "542c7cb070f6d66aa7003cd825d5c199",
@@ -1731,14 +1727,14 @@
         }
       ],
       "avg_odds": {
-        "Aston Villa": 2.683,
-        "Nottingham Forest": 2.657,
-        "Draw": 3.325
+        "Aston Villa": 2.682,
+        "Nottingham Forest": 2.658,
+        "Draw": 3.322
       },
       "true_probs": {
         "Aston Villa": 35.5,
         "Nottingham Forest": 35.8,
-        "Draw": 28.6
+        "Draw": 28.7
       },
       "other_markets": {
         "spreads": {
@@ -1775,18 +1771,18 @@
       "first_seen": "2026-04-09T17:10:54.596304+08:00",
       "is_new": false,
       "odds_change": {
-        "Aston Villa": 0.0,
-        "Nottingham Forest": 0.0,
-        "Draw": 0.0
+        "Aston Villa": -0.001,
+        "Nottingham Forest": 0.001,
+        "Draw": -0.003
       },
       "change_pct": {
-        "Aston Villa": 0.0,
-        "Nottingham Forest": 0.0,
-        "Draw": 0.0
+        "Aston Villa": -0.04,
+        "Nottingham Forest": 0.04,
+        "Draw": -0.09
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "aa83ffb32d9d72361f2cca8c1d3c2b19": {
       "id": "aa83ffb32d9d72361f2cca8c1d3c2b19",
@@ -1858,13 +1854,13 @@
         }
       ],
       "avg_odds": {
-        "Crystal Palace": 3.034,
-        "Newcastle United": 2.297,
-        "Draw": 3.506
+        "Crystal Palace": 3.044,
+        "Newcastle United": 2.292,
+        "Draw": 3.507
       },
       "true_probs": {
-        "Crystal Palace": 31.4,
-        "Newcastle United": 41.5,
+        "Crystal Palace": 31.3,
+        "Newcastle United": 41.6,
         "Draw": 27.2
       },
       "other_markets": {
@@ -1902,18 +1898,16 @@
       "first_seen": "2026-04-09T17:10:54.596308+08:00",
       "is_new": false,
       "odds_change": {
-        "Crystal Palace": 0.0,
-        "Newcastle United": 0.0,
-        "Draw": -0.002
+        "Crystal Palace": 0.01,
+        "Newcastle United": -0.005,
+        "Draw": -0.001
       },
       "change_pct": {
-        "Crystal Palace": 0.0,
-        "Newcastle United": 0.0,
-        "Draw": -0.06
+        "Crystal Palace": 0.33,
+        "Newcastle United": -0.22,
+        "Draw": -0.03
       },
-      "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "is_value_bet": false
     },
     "5b7b41cabf1a84e8991c9cf3d0a7ab90": {
       "id": "5b7b41cabf1a84e8991c9cf3d0a7ab90",
@@ -2007,9 +2001,9 @@
         }
       ],
       "avg_odds": {
-        "Sunderland": 2.649,
-        "Tottenham Hotspur": 2.661,
-        "Draw": 3.378
+        "Sunderland": 2.648,
+        "Tottenham Hotspur": 2.662,
+        "Draw": 3.377
       },
       "true_probs": {
         "Sunderland": 36.0,
@@ -2051,18 +2045,16 @@
       "first_seen": "2026-04-09T17:10:54.596310+08:00",
       "is_new": false,
       "odds_change": {
-        "Sunderland": 0.0,
-        "Tottenham Hotspur": 0.0,
-        "Draw": 0.0
+        "Sunderland": -0.001,
+        "Tottenham Hotspur": 0.001,
+        "Draw": -0.001
       },
       "change_pct": {
-        "Sunderland": 0.0,
-        "Tottenham Hotspur": 0.0,
-        "Draw": 0.0
+        "Sunderland": -0.04,
+        "Tottenham Hotspur": 0.04,
+        "Draw": -0.03
       },
-      "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "is_value_bet": false
     },
     "e4c2f457a464a95a8631ab28ef77b0b9": {
       "id": "e4c2f457a464a95a8631ab28ef77b0b9",
@@ -2156,13 +2148,13 @@
         }
       ],
       "avg_odds": {
-        "Chelsea": 3.064,
-        "Manchester City": 2.152,
-        "Draw": 3.852
+        "Chelsea": 3.071,
+        "Manchester City": 2.148,
+        "Draw": 3.85
       },
       "true_probs": {
-        "Chelsea": 31.1,
-        "Manchester City": 44.2,
+        "Chelsea": 31.0,
+        "Manchester City": 44.3,
         "Draw": 24.7
       },
       "other_markets": {
@@ -2200,18 +2192,16 @@
       "first_seen": "2026-04-09T17:10:54.596312+08:00",
       "is_new": false,
       "odds_change": {
-        "Chelsea": 0.001,
-        "Manchester City": 0.0,
-        "Draw": 0.0
+        "Chelsea": 0.008,
+        "Manchester City": -0.004,
+        "Draw": -0.002
       },
       "change_pct": {
-        "Chelsea": 0.03,
-        "Manchester City": 0.0,
-        "Draw": 0.0
+        "Chelsea": 0.26,
+        "Manchester City": -0.19,
+        "Draw": -0.05
       },
-      "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "is_value_bet": false
     },
     "7d48c93e68e7403998d0ed38e99caae5": {
       "id": "7d48c93e68e7403998d0ed38e99caae5",
@@ -2292,27 +2282,27 @@
           "markets": {
             "h2h": {
               "Leeds United": {
-                "price": 5.0
+                "price": 4.9
               },
               "Manchester United": {
-                "price": 1.58
+                "price": 1.6
               },
               "Draw": {
-                "price": 4.5
+                "price": 4.4
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Leeds United": 5.248,
-        "Manchester United": 1.608,
-        "Draw": 4.189
+        "Leeds United": 5.246,
+        "Manchester United": 1.609,
+        "Draw": 4.181
       },
       "true_probs": {
         "Leeds United": 18.1,
-        "Manchester United": 59.2,
-        "Draw": 22.7
+        "Manchester United": 59.1,
+        "Draw": 22.8
       },
       "other_markets": {
         "spreads": {
@@ -2349,18 +2339,18 @@
       "first_seen": "2026-04-09T17:10:54.596314+08:00",
       "is_new": false,
       "odds_change": {
-        "Leeds United": 0.0,
-        "Manchester United": 0.0,
-        "Draw": 0.0
+        "Leeds United": -0.002,
+        "Manchester United": 0.001,
+        "Draw": -0.008
       },
       "change_pct": {
-        "Leeds United": 0.0,
-        "Manchester United": 0.0,
-        "Draw": 0.0
+        "Leeds United": -0.04,
+        "Manchester United": 0.06,
+        "Draw": -0.19
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "2c2061ffc9ee67808fd45273089d7795": {
       "id": "2c2061ffc9ee67808fd45273089d7795",
@@ -2454,14 +2444,14 @@
         }
       ],
       "avg_odds": {
-        "Brentford": 2.114,
+        "Brentford": 2.113,
         "Fulham": 3.247,
-        "Draw": 3.615
+        "Draw": 3.621
       },
       "true_probs": {
-        "Brentford": 44.7,
+        "Brentford": 44.8,
         "Fulham": 29.1,
-        "Draw": 26.2
+        "Draw": 26.1
       },
       "other_markets": {
         "spreads": {
@@ -2498,18 +2488,18 @@
       "first_seen": "2026-04-09T17:10:54.596316+08:00",
       "is_new": false,
       "odds_change": {
-        "Brentford": 0.0,
+        "Brentford": -0.001,
         "Fulham": 0.0,
-        "Draw": 0.0
+        "Draw": 0.006
       },
       "change_pct": {
-        "Brentford": 0.0,
+        "Brentford": -0.05,
         "Fulham": 0.0,
-        "Draw": 0.0
+        "Draw": 0.17
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "be6cdb6ddd27d099b5291f0d1e051d92": {
       "id": "be6cdb6ddd27d099b5291f0d1e051d92",
@@ -2603,9 +2593,9 @@
         }
       ],
       "avg_odds": {
-        "Bournemouth": 3.693,
-        "Newcastle United": 1.87,
-        "Draw": 3.973
+        "Bournemouth": 3.698,
+        "Newcastle United": 1.869,
+        "Draw": 3.972
       },
       "true_probs": {
         "Bournemouth": 25.6,
@@ -2647,18 +2637,18 @@
       "first_seen": "2026-04-09T17:10:54.596319+08:00",
       "is_new": false,
       "odds_change": {
-        "Bournemouth": 0.0,
-        "Newcastle United": 0.0,
-        "Draw": 0.0
+        "Bournemouth": 0.005,
+        "Newcastle United": -0.001,
+        "Draw": -0.001
       },
       "change_pct": {
-        "Bournemouth": 0.0,
-        "Newcastle United": 0.0,
-        "Draw": 0.0
+        "Bournemouth": 0.14,
+        "Newcastle United": -0.05,
+        "Draw": -0.03
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "d137c5f062243e857803fcebfdda2953": {
       "id": "d137c5f062243e857803fcebfdda2953",
@@ -2752,9 +2742,9 @@
         }
       ],
       "avg_odds": {
-        "Leeds United": 1.66,
-        "Wolverhampton Wanderers": 5.122,
-        "Draw": 3.86
+        "Leeds United": 1.661,
+        "Wolverhampton Wanderers": 5.126,
+        "Draw": 3.859
       },
       "true_probs": {
         "Leeds United": 57.0,
@@ -2796,18 +2786,18 @@
       "first_seen": "2026-04-09T17:10:54.596321+08:00",
       "is_new": false,
       "odds_change": {
-        "Leeds United": 0.0,
-        "Wolverhampton Wanderers": 0.0,
-        "Draw": 0.0
+        "Leeds United": 0.001,
+        "Wolverhampton Wanderers": 0.004,
+        "Draw": -0.001
       },
       "change_pct": {
-        "Leeds United": 0.0,
-        "Wolverhampton Wanderers": 0.0,
-        "Draw": 0.0
+        "Leeds United": 0.06,
+        "Wolverhampton Wanderers": 0.08,
+        "Draw": -0.03
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "5e7f44119f2e640fdf04c245a764657f": {
       "id": "5e7f44119f2e640fdf04c245a764657f",
@@ -2903,7 +2893,7 @@
       "avg_odds": {
         "Brighton and Hove Albion": 2.575,
         "Tottenham Hotspur": 2.535,
-        "Draw": 3.634
+        "Draw": 3.637
       },
       "true_probs": {
         "Brighton and Hove Albion": 36.7,
@@ -2947,16 +2937,14 @@
       "odds_change": {
         "Brighton and Hove Albion": 0.0,
         "Tottenham Hotspur": 0.0,
-        "Draw": 0.0
+        "Draw": 0.003
       },
       "change_pct": {
         "Brighton and Hove Albion": 0.0,
         "Tottenham Hotspur": 0.0,
-        "Draw": 0.0
+        "Draw": 0.08
       },
-      "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "is_value_bet": false
     },
     "933e20e0892b28ca075a9ab5465d5c6d": {
       "id": "933e20e0892b28ca075a9ab5465d5c6d",
@@ -3051,13 +3039,13 @@
       ],
       "avg_odds": {
         "Chelsea": 2.174,
-        "Manchester United": 3.24,
-        "Draw": 3.456
+        "Manchester United": 3.247,
+        "Draw": 3.452
       },
       "true_probs": {
         "Chelsea": 43.5,
-        "Manchester United": 29.2,
-        "Draw": 27.3
+        "Manchester United": 29.1,
+        "Draw": 27.4
       },
       "other_markets": {
         "spreads": {
@@ -3095,17 +3083,17 @@
       "is_new": false,
       "odds_change": {
         "Chelsea": 0.0,
-        "Manchester United": 0.0,
-        "Draw": 0.0
+        "Manchester United": 0.007,
+        "Draw": -0.004
       },
       "change_pct": {
         "Chelsea": 0.0,
-        "Manchester United": 0.0,
-        "Draw": 0.0
+        "Manchester United": 0.22,
+        "Draw": -0.12
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "72406c12d6334a8f3475a640ea1f814b": {
       "id": "72406c12d6334a8f3475a640ea1f814b",
@@ -3210,8 +3198,8 @@
       ],
       "avg_odds": {
         "Aston Villa": 1.621,
-        "Sunderland": 5.564,
-        "Draw": 3.861
+        "Sunderland": 5.566,
+        "Draw": 3.86
       },
       "true_probs": {
         "Aston Villa": 58.4,
@@ -3254,17 +3242,15 @@
       "is_new": false,
       "odds_change": {
         "Aston Villa": 0.0,
-        "Sunderland": 0.0,
-        "Draw": 0.0
+        "Sunderland": 0.002,
+        "Draw": -0.001
       },
       "change_pct": {
         "Aston Villa": 0.0,
-        "Sunderland": 0.0,
-        "Draw": 0.0
+        "Sunderland": 0.04,
+        "Draw": -0.03
       },
-      "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "is_value_bet": false
     },
     "95d68f9006aa718d447c759366118c31": {
       "id": "95d68f9006aa718d447c759366118c31",
@@ -3368,14 +3354,14 @@
         }
       ],
       "avg_odds": {
-        "Burnley": 6.062,
-        "Nottingham Forest": 1.539,
-        "Draw": 4.127
+        "Burnley": 6.06,
+        "Nottingham Forest": 1.54,
+        "Draw": 4.122
       },
       "true_probs": {
         "Burnley": 15.6,
-        "Nottingham Forest": 61.5,
-        "Draw": 22.9
+        "Nottingham Forest": 61.4,
+        "Draw": 23.0
       },
       "other_markets": {
         "spreads": {
@@ -3412,18 +3398,18 @@
       "first_seen": "2026-04-09T17:10:54.596332+08:00",
       "is_new": false,
       "odds_change": {
-        "Burnley": 0.0,
-        "Nottingham Forest": 0.0,
-        "Draw": 0.0
+        "Burnley": -0.002,
+        "Nottingham Forest": 0.001,
+        "Draw": -0.005
       },
       "change_pct": {
-        "Burnley": 0.0,
-        "Nottingham Forest": 0.0,
-        "Draw": 0.0
+        "Burnley": -0.03,
+        "Nottingham Forest": 0.06,
+        "Draw": -0.12
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "3e7369c873aed1c62f4d76fd652d73c7": {
       "id": "3e7369c873aed1c62f4d76fd652d73c7",
@@ -3527,14 +3513,14 @@
         }
       ],
       "avg_odds": {
-        "Everton": 3.388,
-        "Liverpool": 2.084,
-        "Draw": 3.559
+        "Everton": 3.39,
+        "Liverpool": 2.085,
+        "Draw": 3.552
       },
       "true_probs": {
-        "Everton": 28.0,
+        "Everton": 27.9,
         "Liverpool": 45.4,
-        "Draw": 26.6
+        "Draw": 26.7
       },
       "other_markets": {
         "spreads": {
@@ -3571,18 +3557,18 @@
       "first_seen": "2026-04-09T17:10:54.596334+08:00",
       "is_new": false,
       "odds_change": {
-        "Everton": 0.0,
-        "Liverpool": 0.0,
-        "Draw": 0.0
+        "Everton": 0.002,
+        "Liverpool": 0.001,
+        "Draw": -0.007
       },
       "change_pct": {
-        "Everton": 0.0,
-        "Liverpool": 0.0,
-        "Draw": 0.0
+        "Everton": 0.06,
+        "Liverpool": 0.05,
+        "Draw": -0.2
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     },
     "67946ccfc03197bc48eb7b6c9786b713": {
       "id": "67946ccfc03197bc48eb7b6c9786b713",
@@ -3686,12 +3672,12 @@
         }
       ],
       "avg_odds": {
-        "Arsenal": 3.415,
-        "Manchester City": 2.073,
-        "Draw": 3.563
+        "Arsenal": 3.41,
+        "Manchester City": 2.075,
+        "Draw": 3.565
       },
       "true_probs": {
-        "Arsenal": 27.7,
+        "Arsenal": 27.8,
         "Manchester City": 45.7,
         "Draw": 26.6
       },
@@ -3730,18 +3716,16 @@
       "first_seen": "2026-04-09T17:10:54.596336+08:00",
       "is_new": false,
       "odds_change": {
-        "Arsenal": 0.0,
-        "Manchester City": 0.0,
-        "Draw": 0.0
+        "Arsenal": -0.005,
+        "Manchester City": 0.002,
+        "Draw": 0.002
       },
       "change_pct": {
-        "Arsenal": 0.0,
-        "Manchester City": 0.0,
-        "Draw": 0.0
+        "Arsenal": -0.15,
+        "Manchester City": 0.1,
+        "Draw": 0.06
       },
-      "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "is_value_bet": false
     },
     "ea28653ebcd7743146869e2aa7851275": {
       "id": "ea28653ebcd7743146869e2aa7851275",
@@ -3835,14 +3819,14 @@
         }
       ],
       "avg_odds": {
-        "Crystal Palace": 2.161,
-        "West Ham United": 3.502,
-        "Draw": 3.256
+        "Crystal Palace": 2.163,
+        "West Ham United": 3.508,
+        "Draw": 3.245
       },
       "true_probs": {
         "Crystal Palace": 43.8,
-        "West Ham United": 27.1,
-        "Draw": 29.1
+        "West Ham United": 27.0,
+        "Draw": 29.2
       },
       "other_markets": {
         "spreads": {
@@ -3879,18 +3863,18 @@
       "first_seen": "2026-04-09T17:10:54.596338+08:00",
       "is_new": false,
       "odds_change": {
-        "Crystal Palace": 0.0,
-        "West Ham United": 0.0,
-        "Draw": 0.0
+        "Crystal Palace": 0.002,
+        "West Ham United": 0.006,
+        "Draw": -0.011
       },
       "change_pct": {
-        "Crystal Palace": 0.0,
-        "West Ham United": 0.0,
-        "Draw": 0.0
+        "Crystal Palace": 0.09,
+        "West Ham United": 0.17,
+        "Draw": -0.34
       },
       "is_value_bet": false,
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 分析暫時無法使用，請參考新聞連結自行判斷。",
+      "analysis_source": "fallback"
     }
   },
   "leagues": {
@@ -4051,9 +4035,28 @@
       }
     ]
   },
-  "significant_changes": [],
+  "significant_changes": [
+    "0852cffec341701f6a0dde8619ae9f56",
+    "53b49bbe56f8581f353bbbb5c6179ac5",
+    "bf30a732402325cab54ab666ee0f5c11",
+    "30b372ff1973370201b644c207be2dd3",
+    "29fe17f5b19da82ce2957c3683a10aa7",
+    "10d3a3a8df4f15a0754da8195a47c41f",
+    "ff027a0ac6a0538a713b46bd753b670d",
+    "44d98d5d5c19eb115a527f1de294f03e",
+    "f022ab37b6c69f588015498186a9694b",
+    "542c7cb070f6d66aa7003cd825d5c199",
+    "7d48c93e68e7403998d0ed38e99caae5",
+    "2c2061ffc9ee67808fd45273089d7795",
+    "be6cdb6ddd27d099b5291f0d1e051d92",
+    "d137c5f062243e857803fcebfdda2953",
+    "933e20e0892b28ca075a9ab5465d5c6d",
+    "95d68f9006aa718d447c759366118c31",
+    "3e7369c873aed1c62f4d76fd652d73c7",
+    "ea28653ebcd7743146869e2aa7851275"
+  ],
   "stats": {
     "total_matches": 26,
-    "significant_changes_count": 0
+    "significant_changes_count": 18
   }
 }
