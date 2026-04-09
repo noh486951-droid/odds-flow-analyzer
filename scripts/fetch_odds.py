@@ -104,7 +104,7 @@ def fetch_odds(sport_key):
     params = {
         "apiKey": ODDS_API_KEY,
         "regions": "us,eu",
-        "markets": "h2h,spreads",
+        "markets": "h2h,spreads,totals,btts",
         "oddsFormat": "decimal",
     }
 
@@ -159,31 +159,48 @@ def parse_odds_data(raw_data, sport_key):
             match["bookmakers"].append(bm)
 
         # 計算平均賠率 (取所有博彩商的平均)
-        avg_odds = calculate_average_odds(match)
+        avg_odds, other_markets = calculate_average_odds(match)
         match["avg_odds"] = avg_odds
+        match["other_markets"] = other_markets
+        
+        # 計算真實勝算(扣除水錢)
+        implied_sum = sum(1/p for p in avg_odds.values() if p > 0)
+        true_probs = {}
+        for team, p in avg_odds.items():
+            if p > 0 and implied_sum > 0:
+                true_probs[team] = round((1/p) / implied_sum * 100, 1)
+        match["true_probs"] = true_probs
+        
         matches.append(match)
 
     return matches
 
 
 def calculate_average_odds(match):
-    """計算所有博彩商的平均賠率"""
+    """計算所有博彩商的平均賠率並提取其他盤口資料"""
     h2h_totals = {}
     h2h_counts = {}
+    other_markets = {"spreads": {}, "totals": {}, "btts": {}}
 
     for bm in match.get("bookmakers", []):
-        h2h = bm.get("markets", {}).get("h2h", {})
+        markets = bm.get("markets", {})
+        h2h = markets.get("h2h", {})
         for team, data in h2h.items():
             price = data.get("price", 0)
             if price > 0:
                 h2h_totals[team] = h2h_totals.get(team, 0) + price
                 h2h_counts[team] = h2h_counts.get(team, 0) + 1
+        
+        # 抓取第一家有開盤的資料做代表
+        for mk in ["spreads", "totals", "btts"]:
+            if not other_markets[mk] and mk in markets:
+                other_markets[mk] = markets[mk]
 
     avg = {}
     for team in h2h_totals:
         avg[team] = round(h2h_totals[team] / h2h_counts[team], 3)
 
-    return avg
+    return avg, other_markets
 
 
 # ============================================================
@@ -221,6 +238,13 @@ def detect_changes(current_matches, existing_data):
 
             match["odds_change"] = change
             match["change_pct"] = change_pct
+            
+            # 定義資金趨勢/價值注警示 (賠率下降 >= 5% 視為顯著的 Smart Money Move)
+            is_value_bet = False
+            for team, pct in change_pct.items():
+                if pct <= -5.0:
+                    is_value_bet = True
+            match["is_value_bet"] = is_value_bet
 
         results.append(match)
 
@@ -342,10 +366,10 @@ def build_analysis_prompt(match, news_items):
 {news_text}
 
 ## 你的任務
-1. 根據以上賠率變動數據和最新新聞，用 1-2 句話簡要說明賠率變動的可能原因。
-2. 如果新聞中沒有明確相關的資訊，請誠實回答「目前無明確新聞佐證，可能為市場資金流動所致」。
-3. 不要編造不存在的新聞或事件。
-4. 回答格式：直接給出分析結論，不要加任何標題或前綴。
+1. 根據賠率變動及勝率數據，簡要用 1-2 句話說明哪支球隊勝算較大，以及變動原因。
+2. 若發現賠率明顯下降，可提醒這可能是價值注或聰明錢的流向。
+3. 如果新聞無佐證，誠實回答「無明顯新聞佐證，可能為資金流動所致」。
+4. 回答格式：直接給出結論，不要加前綴。
 """
     return prompt
 
