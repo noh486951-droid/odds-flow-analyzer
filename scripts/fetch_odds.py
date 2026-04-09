@@ -101,10 +101,13 @@ def get_current_soccer_league():
 def fetch_odds(sport_key):
     """從 The Odds API 抓取某聯賽的賠率"""
     url = f"{ODDS_API_BASE}/{sport_key}/odds/"
+    # NBA 不支援雙進 (btts)，需要分開設定
+    markets = "h2h,spreads,totals,btts" if "soccer" in sport_key else "h2h,spreads,totals"
+
     params = {
         "apiKey": ODDS_API_KEY,
         "regions": "us,eu",
-        "markets": "h2h,spreads,totals,btts",
+        "markets": markets,
         "oddsFormat": "decimal",
     }
 

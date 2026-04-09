@@ -91,111 +91,117 @@ function updateGlobalUI(data) {
 // Shared UI Components
 // ============================================================
 function createMatchCard(match) {
-  const isSig = isSignificantChange(match) ? 'is-significant' : '';
-  const homeOdds = match.avg_odds?.[match.home_team] || 0;
-  const awayOdds = match.avg_odds?.[match.away_team] || 0;
-  
-  const homeOpen = match.opening_odds?.[match.home_team] || homeOdds;
-  const awayOpen = match.opening_odds?.[match.away_team] || awayOdds;
-  
-  const homeChange = calculateChangeClass(homeOdds, homeOpen);
-  const awayChange = calculateChangeClass(awayOdds, awayOpen);
+  try {
+    const isSig = isSignificantChange(match) ? 'is-significant' : '';
+    const homeOdds = match.avg_odds?.[match.home_team] || 0;
+    const awayOdds = match.avg_odds?.[match.away_team] || 0;
+    
+    const homeOpen = match.opening_odds?.[match.home_team] || homeOdds;
+    const awayOpen = match.opening_odds?.[match.away_team] || awayOdds;
+    
+    const homeChange = calculateChangeClass(homeOdds, homeOpen);
+    const awayChange = calculateChangeClass(awayOdds, awayOpen);
 
-  // 價值注徽章
-  const isValueBetHtml = match.is_value_bet ? '<div class="value-bet-badge">💎 價值注警示</div>' : '';
+    // 價值注徽章
+    const isValueBetHtml = match.is_value_bet ? '<div class="value-bet-badge">💎 價值注警示</div>' : '';
 
-  // 其他盤口 (讓分、大小、雙進)
-  let otherMarketsHtml = '';
-  const spreads = match.other_markets?.spreads || {};
-  const totals = match.other_markets?.totals || {};
-  const btts = match.other_markets?.btts || {};
-  
-  const getPoint = (obj) => {
-    for (let k in obj) {
-      if (obj[k].point !== undefined) return obj[k].point;
+    // 其他盤口 (讓分、大小、雙進)
+    let otherMarketsHtml = '';
+    const spreads = match.other_markets?.spreads || {};
+    const totals = match.other_markets?.totals || {};
+    const btts = match.other_markets?.btts || {};
+    
+    const getPoint = (obj) => {
+      for (let k in obj) {
+        if (obj[k].point !== undefined) return obj[k].point;
+      }
+      return '';
+    };
+
+    if (Object.keys(spreads).length > 0) {
+      const pt = getPoint(spreads);
+      if (pt !== '') otherMarketsHtml += `<span class="market-tag">主讓 ${pt > 0 ? '+'+pt : pt}</span>`;
     }
-    return '';
-  };
+    if (Object.keys(totals).length > 0) {
+      const pt = getPoint(totals);
+      if (pt !== '') otherMarketsHtml += `<span class="market-tag">大小 ${pt}</span>`;
+    }
+    if (Object.keys(btts).length > 0) {
+      const yesPrice = btts['Yes']?.price;
+      if (yesPrice) otherMarketsHtml += `<span class="market-tag">雙進(是) ${yesPrice}</span>`;
+    }
 
-  if (Object.keys(spreads).length > 0) {
-    const pt = getPoint(spreads);
-    if (pt !== '') otherMarketsHtml += `<span class="market-tag">主讓 ${pt > 0 ? '+'+pt : pt}</span>`;
-  }
-  if (Object.keys(totals).length > 0) {
-    const pt = getPoint(totals);
-    if (pt !== '') otherMarketsHtml += `<span class="market-tag">大小 ${pt}</span>`;
-  }
-  if (Object.keys(btts).length > 0) {
-    const yesPrice = btts['Yes']?.price;
-    if (yesPrice) otherMarketsHtml += `<span class="market-tag">雙進(是) ${yesPrice}</span>`;
-  }
-
-  // 勝率進度條
-  let probHtml = '';
-  if (match.true_probs && Object.keys(match.true_probs).length > 0) {
-    const probHome = match.true_probs[match.home_team] || 50;
-    const probAway = match.true_probs[match.away_team] || 50;
-    probHtml = `
-      <div class="prob-container">
-        <div class="prob-labels">
-          <span style="color: var(--primary)">${probHome.toFixed(1)}%</span>
-          <span class="prob-title">AI 真實勝率</span>
-          <span style="color: var(--warning)">${probAway.toFixed(1)}%</span>
-        </div>
-        <div class="prob-bar">
-          <div class="prob-fill" style="width: ${probHome}%"></div>
-        </div>
-      </div>
-    `;
-  }
-
-  let aiHtml = '';
-  if (match.ai_analysis) {
-    aiHtml = `
-      <div class="ai-analysis">
-        <div class="ai-header">
-          <span>🤖 AI 診斷分析</span>
-        </div>
-        <div class="ai-content">${match.ai_analysis}</div>
-      </div>
-    `;
-  }
-
-  return `
-    <div class="match-card ${isSig}">
-      ${isValueBetHtml}
-      <div class="match-header">
-        <span class="match-league">${match.league || '未知聯賽'}</span>
-        <span>開賽: ${formatTime(match.commence_time)}</span>
-      </div>
-      
-      <div class="other-markets">
-        ${otherMarketsHtml}
-      </div>
-      
-      <div class="match-teams">
-        <div class="team-row">
-          <span class="team-name">${match.home_team} (主)</span>
-          <div class="odds-box">
-            <span class="odds-opening">${homeOpen.toFixed(2)}</span>
-            <span class="odds-current">${homeOdds.toFixed(2)}</span>
-            <span class="odds-change ${homeChange.cls}">${homeChange.icon}</span>
+    // 勝率進度條
+    let probHtml = '';
+    // 防呆：確保 true_probs 存在且不為 null
+    if (match.true_probs && Object.keys(match.true_probs).length > 0) {
+      const probHome = match.true_probs[match.home_team] || 50;
+      const probAway = match.true_probs[match.away_team] || 50;
+      probHtml = `
+        <div class="prob-container">
+          <div class="prob-labels">
+            <span style="color: var(--primary)">${probHome.toFixed(1)}%</span>
+            <span class="prob-title">AI 真實勝率</span>
+            <span style="color: var(--warning)">${probAway.toFixed(1)}%</span>
+          </div>
+          <div class="prob-bar">
+            <div class="prob-fill" style="width: ${probHome}%"></div>
           </div>
         </div>
-        <div class="team-row">
-          <span class="team-name">${match.away_team} (客)</span>
-          <div class="odds-box">
-            <span class="odds-opening">${awayOpen.toFixed(2)}</span>
-            <span class="odds-current">${awayOdds.toFixed(2)}</span>
-            <span class="odds-change ${awayChange.cls}">${awayChange.icon}</span>
+      `;
+    }
+
+    let aiHtml = '';
+    if (match.ai_analysis) {
+      aiHtml = `
+        <div class="ai-analysis">
+          <div class="ai-header">
+            <span>🤖 AI 診斷分析</span>
+          </div>
+          <div class="ai-content">${match.ai_analysis}</div>
+        </div>
+      `;
+    }
+
+    return `
+      <div class="match-card ${isSig}">
+        ${isValueBetHtml}
+        <div class="match-header">
+          <span class="match-league">${match.league || '未知聯賽'}</span>
+          <span>開賽: ${formatTime(match.commence_time)}</span>
+        </div>
+        
+        <div class="other-markets">
+          ${otherMarketsHtml}
+        </div>
+        
+        <div class="match-teams">
+          <div class="team-row">
+            <span class="team-name">${match.home_team} (主)</span>
+            <div class="odds-box">
+              <span class="odds-opening">${homeOpen.toFixed(2)}</span>
+              <span class="odds-current">${homeOdds.toFixed(2)}</span>
+              <span class="odds-change ${homeChange.cls}">${homeChange.icon}</span>
+            </div>
+          </div>
+          <div class="team-row">
+            <span class="team-name">${match.away_team} (客)</span>
+            <div class="odds-box">
+              <span class="odds-opening">${awayOpen.toFixed(2)}</span>
+              <span class="odds-current">${awayOdds.toFixed(2)}</span>
+              <span class="odds-change ${awayChange.cls}">${awayChange.icon}</span>
+            </div>
           </div>
         </div>
+        
+        ${probHtml}
+        ${aiHtml}
       </div>
-      
-      ${probHtml}
-      ${aiHtml}
-    </div>
-  `;
+    `;
+  } catch (error) {
+    console.error("Error generating match card for " + match?.id, error);
+    return `<div class="match-card"><div class="empty-state">賽事資料載入錯誤</div></div>`;
+  }
 }
 
 function calculateChangeClass(current, open) {
