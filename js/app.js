@@ -122,6 +122,22 @@ function createMatchCard(match) {
       ).join('');
     }
 
+    // 急速移動標籤
+    let sharpHtml = '';
+    const sharp = match.sharp_moves || [];
+    if (sharp.length > 0) {
+      sharpHtml = sharp.map(s => 
+        `<div class="alert-tag sharp-tag">${s.level}</div>`
+      ).join('');
+    }
+
+    // 天氣標籤 (足球)
+    let weatherHtml = '';
+    if (match.weather) {
+      const w = match.weather;
+      weatherHtml = `<div class="alert-tag weather-tag">${w.condition} ${w.temp}°C</div>`;
+    }
+
     // 近期戰績
     let formHtml = '';
     const homeForm = match.home_form?.record || '';
@@ -229,6 +245,8 @@ function createMatchCard(match) {
         <div class="alert-tags">
           ${injuryHtml}
           ${fatigueHtml}
+          ${sharpHtml}
+          ${weatherHtml}
         </div>
         
         <div class="other-markets">
@@ -317,6 +335,66 @@ function openMatchDetail(matchId) {
       `</div>`;
   }
 
+  // 盤口走勢圖 (mini chart)
+  let timelineHtml = '';
+  const timeline = match.odds_timeline || [];
+  if (timeline.length >= 2) {
+    const teams = Object.keys(match.avg_odds || {});
+    const homeTeam = match.home_team;
+    const vals = timeline.map(s => s[homeTeam] || 0).filter(v => v > 0);
+    if (vals.length >= 2) {
+      const min = Math.min(...vals) - 0.05;
+      const max = Math.max(...vals) + 0.05;
+      const range = max - min || 1;
+      const points = vals.map((v, i) => {
+        const x = (i / (vals.length - 1)) * 200;
+        const y = 40 - ((v - min) / range) * 35;
+        return `${x},${y}`;
+      }).join(' ');
+      timelineHtml = `
+        <div class="modal-section">
+          <h3>📈 盤口走勢 (${homeTeam})</h3>
+          <svg class="timeline-chart" viewBox="0 0 200 45" preserveAspectRatio="none">
+            <polyline points="${points}" fill="none" stroke="var(--primary)" stroke-width="2" />
+            ${vals.map((v, i) => {
+              const x = (i / (vals.length - 1)) * 200;
+              const y = 40 - ((v - min) / range) * 35;
+              return `<circle cx="${x}" cy="${y}" r="3" fill="var(--primary)" />`;
+            }).join('')}
+          </svg>
+          <div class="timeline-labels">
+            ${timeline.map(s => `<span>${s.time}</span>`).join('')}
+          </div>
+          <div class="timeline-values">
+            ${vals.map(v => `<span>${v.toFixed(2)}</span>`).join('')}
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  // 急速移動
+  let sharpModalHtml = '';
+  const sharpMoves = match.sharp_moves || [];
+  if (sharpMoves.length > 0) {
+    sharpModalHtml = `<div class="modal-section"><h3>🔥 急速移動偵測</h3>` +
+      sharpMoves.map(s => `<div class="sharp-item">${s.level}: ${s.message}</div>`).join('') +
+      `</div>`;
+  }
+
+  // 天氣
+  let weatherModalHtml = '';
+  if (match.weather) {
+    const w = match.weather;
+    weatherModalHtml = `<div class="modal-section"><h3>☁️ 比賽天氣</h3>
+      <div class="weather-info">
+        <span class="weather-condition">${w.condition}</span>
+        <span>氣溫 ${w.temp}°C | 風速 ${w.wind}km/h | 降雨 ${w.rain}mm</span>
+        ${w.impact ? `<div class="weather-impact">${w.impact}</div>` : ''}
+      </div>
+    </div>`;
+  }
+
   // AI Analysis
   let aiHtml = '<p class="modal-empty">此場比賽未觸發 AI 分析</p>';
   if (match.ai_analysis) {
@@ -351,6 +429,8 @@ function openMatchDetail(matchId) {
     </div>
 
     ${fatigueHtml}
+    ${sharpModalHtml}
+    ${weatherModalHtml}
 
     <div class="modal-section">
       <h3>🏥 傷兵快訊</h3>
@@ -366,6 +446,8 @@ function openMatchDetail(matchId) {
       <h3>📊 歷史交手紀錄</h3>
       ${h2hHtml}
     </div>
+
+    ${timelineHtml}
 
     <div class="modal-section">
       <h3>🔥 近期戰績</h3>
