@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="運彩盤口變動追蹤器 - 即時 NBA 與足球賠率分析、AI 診斷盤口走勢">
+  <title>Odds Flow Analyzer | 運彩盤口變動追蹤器</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 背景動畫 -->
+  <div class="bg-particles" id="bgParticles"></div>
+
+  <!-- 頂部導航 -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <h1>Odds Flow</h1>
+        <span class="logo-badge">LIVE</span>
+      </div>
+      <nav class="nav" id="mainNav">
+        <button class="nav-btn active" data-view="dashboard" id="nav-dashboard">
+          <span class="nav-icon">📊</span> 即時看板
+        </button>
+        <button class="nav-btn" data-view="history" id="nav-history">
+          <span class="nav-icon">📅</span> 歷史回顧
+        </button>
+        <button class="nav-btn" data-view="calculator" id="nav-calculator">
+          <span class="nav-icon">🧮</span> 串關計算
+        </button>
+        <button class="nav-btn" data-view="news" id="nav-news">
+          <span class="nav-icon">📰</span> 新聞快遞
+        </button>
+      </nav>
+      <div class="header-meta">
+        <span class="update-time" id="updateTime">載入中...</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主內容區 -->
+  <main class="main-content">
+    <!-- 統計橫幅 -->
+    <section class="stats-bar" id="statsBar">
+      <div class="stat-card">
+        <span class="stat-value" id="statTotalMatches">-</span>
+        <span class="stat-label">追蹤賽事</span>
+      </div>
+      <div class="stat-card highlight">
+        <span class="stat-value" id="statSignificant">-</span>
+        <span class="stat-label">顯著變動</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="statLeagues">-</span>
+        <span class="stat-label">涵蓋聯賽</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="statApiRemaining">-</span>
+        <span class="stat-label">本月額度</span>
+      </div>
+    </section>
+
+    <!-- ===== 即時看板 ===== -->
+    <section class="view-panel active" id="view-dashboard">
+      <!-- 聯賽篩選 -->
+      <div class="filter-bar" id="leagueFilter">
+        <button class="filter-btn active" data-league="all">全部</button>
+        <button class="filter-btn" data-league="NBA">🏀 NBA</button>
+        <button class="filter-btn" data-league="soccer">⚽ 足球</button>
+      </div>
+
+      <!-- 比賽列表 -->
+      <div class="matches-grid" id="matchesGrid">
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>正在載入最新賠率數據...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 歷史回顧 ===== -->
+    <section class="view-panel" id="view-history">
+      <div class="history-controls">
+        <button class="date-nav-btn" id="prevDate">◀</button>
+        <input type="date" class="date-picker" id="historyDate">
+        <button class="date-nav-btn" id="nextDate">▶</button>
+      </div>
+      <div class="matches-grid" id="historyGrid">
+        <div class="empty-state">
+          <span class="empty-icon">📅</span>
+          <p>選擇日期以查看歷史數據</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 串關計算機 ===== -->
+    <section class="view-panel" id="view-calculator">
+      <div class="calculator-container">
+        <div class="calc-header">
+          <h2>串關計算機</h2>
+          <p class="calc-desc">加入多場比賽的賠率，自動計算串關總倍率與預期獎金</p>
+        </div>
+        <div class="calc-body">
+          <div class="calc-input-group">
+            <label>投注金額 (NT$)</label>
+            <input type="number" id="betAmount" value="100" min="1" class="calc-input">
+          </div>
+          <div class="parlay-legs" id="parlayLegs">
+            <!-- 動態生成 -->
+          </div>
+          <button class="btn-add-leg" id="addLegBtn">+ 加入關數</button>
+          <div class="calc-result" id="calcResult">
+            <div class="result-row">
+              <span class="result-label">串關倍率</span>
+              <span class="result-value" id="totalMultiplier">-</span>
+            </div>
+            <div class="result-row highlight">
+              <span class="result-label">預期獎金</span>
+              <span class="result-value" id="totalPayout">NT$ -</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">預期利潤</span>
+              <span class="result-value" id="totalProfit">NT$ -</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 新聞快遞 ===== -->
+    <section class="view-panel" id="view-news">
+      <div class="news-columns">
+        <div class="news-column">
+          <h3 class="news-col-title">🏀 NBA 新聞</h3>
+          <div class="news-list" id="nbaNewsList">
+            <div class="loading-state"><div class="spinner"></div></div>
+          </div>
+        </div>
+        <div class="news-column">
+          <h3 class="news-col-title">⚽ 足球新聞</h3>
+          <div class="news-list" id="soccerNewsList">
+            <div class="loading-state"><div class="spinner"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 底部 -->
+  <footer class="footer">
+    <p>Odds Flow Analyzer © 2026 | 數據僅供參考，投注請理性</p>
+    <p class="footer-sub">Powered by The Odds API + Google Gemini AI</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/history.js"></script>
+  <script src="js/calculator.js"></script>
+</body>
+</html>
