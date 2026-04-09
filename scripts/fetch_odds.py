@@ -365,10 +365,11 @@ def analyze_with_ai(matches_with_changes, news_items):
             print(f"  🤖 AI 分析完成: {match['home_team']} vs {match['away_team']}")
             
             # 避免觸發免費 API 每分鐘 15 次請求的限制
-            time.sleep(4)
+            time.sleep(6)
         except Exception as e:
-            print(f"  ⚠️ AI 分析失敗: {e}")
-            match["ai_analysis"] = "AI 分析暫時無法使用，請參考新聞連結自行判斷。"
+            error_msg = str(e).replace('"', "'")
+            print(f"  ⚠️ AI 分析失敗: {error_msg}")
+            match["ai_analysis"] = f"AI 分析暫時無法使用 (API 錯誤: {error_msg})，請參考新聞連結自行判斷。"
             match["analysis_source"] = "fallback"
 
         results.append(match)
