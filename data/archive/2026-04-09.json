@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-09T18:12:20.813663+08:00",
-  "last_updated_display": "2026/04/09 18:12 (台北時間)",
+  "last_updated": "2026-04-09T18:19:15.256892+08:00",
+  "last_updated_display": "2026/04/09 18:19 (台北時間)",
   "matches": {
     "0852cffec341701f6a0dde8619ae9f56": {
       "id": "0852cffec341701f6a0dde8619ae9f56",
@@ -93,30 +93,30 @@
             },
             "spreads": {
               "Chicago Bulls": {
-                "price": 1.97,
+                "price": 1.98,
                 "point": -6.5
               },
               "Washington Wizards": {
-                "price": 1.95,
+                "price": 1.94,
                 "point": 6.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.95,
-                "point": 246.5
+                "point": 247.5
               },
               "Under": {
                 "price": 1.97,
-                "point": 246.5
+                "point": 247.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Chicago Bulls": 1.394,
-        "Washington Wizards": 3.045
+        "Chicago Bulls": 1.395,
+        "Washington Wizards": 3.043
       },
       "true_probs": {
         "Chicago Bulls": 68.6,
@@ -156,16 +156,16 @@
       "first_seen": "2026-04-09T16:27:35.506099+08:00",
       "is_new": false,
       "odds_change": {
-        "Chicago Bulls": -0.003,
-        "Washington Wizards": 0.007
+        "Chicago Bulls": -0.002,
+        "Washington Wizards": 0.005
       },
       "change_pct": {
-        "Chicago Bulls": -0.21,
-        "Washington Wizards": 0.23
+        "Chicago Bulls": -0.14,
+        "Washington Wizards": 0.16
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 47.34663847s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 47\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：客受讓 +6.5】\n\n芝加哥公牛擁有高達68.6%的真實勝率，實力明顯優於華盛頓巫師的31.4%。雖然盤口開出主讓-6.5，但這與兩隊實際戰力形成顯著差異，公牛即便面對讓分盤，客場受讓+6.5的選項依然極具價值，因其有極高機率能直接贏球或以小分差落敗。公牛獨贏賠率略有下降，反映出市場資金對其的看好，此為聰明錢的流向。新聞方面無明顯佐證，可能為資金流動所致。",
+      "analysis_source": "gemini"
     },
     "53b49bbe56f8581f353bbbb5c6179ac5": {
       "id": "53b49bbe56f8581f353bbbb5c6179ac5",
@@ -180,22 +180,22 @@
           "markets": {
             "h2h": {
               "Miami Heat": {
-                "price": 2.42
+                "price": 2.5
               },
               "Toronto Raptors": {
-                "price": 1.59
+                "price": 1.56
               }
             },
             "spreads": {
               "Miami Heat": {
-                "price": 1.89,
+                "price": 1.93,
                 "point": 4.5,
-                "prob": 50.5
+                "prob": 49.5
               },
               "Toronto Raptors": {
-                "price": 1.93,
+                "price": 1.89,
                 "point": -4.5,
-                "prob": 49.5
+                "prob": 50.5
               }
             },
             "totals": {
@@ -280,24 +280,24 @@
         }
       ],
       "avg_odds": {
-        "Miami Heat": 2.473,
-        "Toronto Raptors": 1.563
+        "Miami Heat": 2.479,
+        "Toronto Raptors": 1.56
       },
       "true_probs": {
-        "Miami Heat": 38.7,
-        "Toronto Raptors": 61.3
+        "Miami Heat": 38.6,
+        "Toronto Raptors": 61.4
       },
       "other_markets": {
         "spreads": {
           "Miami Heat": {
-            "price": 1.89,
+            "price": 1.93,
             "point": 4.5,
-            "prob": 50.5
+            "prob": 49.5
           },
           "Toronto Raptors": {
-            "price": 1.93,
+            "price": 1.89,
             "point": -4.5,
-            "prob": 49.5
+            "prob": 50.5
           }
         },
         "totals": {
@@ -321,16 +321,16 @@
       "first_seen": "2026-04-09T16:27:35.506113+08:00",
       "is_new": false,
       "odds_change": {
-        "Miami Heat": 0.043,
-        "Toronto Raptors": -0.016
+        "Miami Heat": 0.049,
+        "Toronto Raptors": -0.019
       },
       "change_pct": {
-        "Miami Heat": 1.77,
-        "Toronto Raptors": -1.01
+        "Miami Heat": 2.02,
+        "Toronto Raptors": -1.2
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 43.62267859s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 43\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -4.5】\n結合真實勝率與讓分盤，暴龍的61.4%勝率遠高於熱火。讓分盤僅開出主讓4.5分，對於一支勝率超過6成的球隊而言，此讓分盤是相對有利的，且暴龍獨贏賠率下降，表明市場資金正持續流入主隊，這通常是聰明錢的流向。新聞無明顯佐證，可能為資金流動所致。",
+      "analysis_source": "gemini"
     },
     "bf30a732402325cab54ab666ee0f5c11": {
       "id": "bf30a732402325cab54ab666ee0f5c11",
@@ -445,8 +445,8 @@
         }
       ],
       "avg_odds": {
-        "Boston Celtics": 2.515,
-        "New York Knicks": 1.549
+        "Boston Celtics": 2.514,
+        "New York Knicks": 1.55
       },
       "true_probs": {
         "Boston Celtics": 38.1,
@@ -486,16 +486,16 @@
       "first_seen": "2026-04-09T16:27:35.506117+08:00",
       "is_new": false,
       "odds_change": {
-        "Boston Celtics": 0.014,
-        "New York Knicks": -0.006
+        "Boston Celtics": 0.013,
+        "New York Knicks": -0.005
       },
       "change_pct": {
-        "Boston Celtics": 0.56,
-        "New York Knicks": -0.39
+        "Boston Celtics": 0.52,
+        "New York Knicks": -0.32
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 43.238066925s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 43\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -4.5】\n紐約尼克擁有高達61.9%的真實勝率，對陣38.1%的波士頓塞爾提克，顯示兩隊實力差距顯著。考慮到尼克作為主隊的優勢，讓4.5分是足以被高勝率球隊覆蓋的盤口，且尼克獨贏賠率微幅下降，可能為資金流向支持主隊所致。",
+      "analysis_source": "gemini"
     },
     "625bbdf7bc0bdf1d57b3f97742908221": {
       "id": "625bbdf7bc0bdf1d57b3f97742908221",
@@ -782,8 +782,8 @@
         "Philadelphia 76ers": 0.08
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 42.92750199s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 42\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -3.5】\n\n根據休士頓火箭隊 60.5% 的真實勝率，相較於費城76人隊的 39.5%，火箭隊在實力上明顯佔據優勢。考量到主讓分盤口僅為 -3.5，這個讓分條件對於一支擁有六成勝率的球隊來說，可能稍微低估了其應有的獲勝優勢，使其在讓分盤上具有潛在的投注價值。獨贏賠率方面，火箭隊賠率雖有微幅下調 (-0.06%)，可能暗示市場資金略微傾向於看好主隊，但變動極小；而提供的最新相關新聞皆與本場比賽無直接關聯，故賠率變化可能主要源於市場資金的自然流動。",
+      "analysis_source": "gemini"
     },
     "29fe17f5b19da82ce2957c3683a10aa7": {
       "id": "29fe17f5b19da82ce2957c3683a10aa7",
@@ -947,8 +947,8 @@
         "Los Angeles Lakers": 0.93
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 42.514972288s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 42\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -4.5】\n\n金州勇士隊高達63.4%的真實勝率顯著優於洛杉磯湖人隊的36.6%，這表明勇士隊在實力上有明顯優勢，足以在主場克服-4.5分的讓分盤。雖然相關新聞未直接佐證此戰果，但勇士隊獨贏賠率的輕微下降（初盤 1.517 → 現盤 1.511）可能反映了市場資金對勇士隊的信心增加，或是聰明錢的流向。",
+      "analysis_source": "gemini"
     },
     "10d3a3a8df4f15a0754da8195a47c41f": {
       "id": "10d3a3a8df4f15a0754da8195a47c41f",
@@ -4032,8 +4032,8 @@
         "Draw": 0.0
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 42.175009975s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 42\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -1.5】\n\n皇家馬德里坐擁高達74.2%的真實勝率，面對僅10.3%勝率的Girona，實力差距懸殊。考量到皇馬在主場的強大宰制力及進攻火力，即便需要讓出1.5球，他們仍有極高機率能以兩球或以上的優勢獲勝。獨贏賠率維持不變，顯示市場對皇馬取勝的共識穩固，未出現大幅資金流向變化。最新新聞無直接佐證此場比賽的資訊，推薦主要依據雙方實力差距、真實勝率及盤口分析。",
+      "analysis_source": "gemini"
     },
     "016d8d76a7cc27f1bc8cc6775df92683": {
       "id": "016d8d76a7cc27f1bc8cc6775df92683",
@@ -4171,8 +4171,8 @@
         "Draw": 0.0
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 40.750684815s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 40\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -1.5】\n\nReal Sociedad擁有55.0%的真實勝率，遠高於Alavés的19.5%，這顯示主隊在實力上具有明顯優勢。儘管讓分盤為主讓1.5球，但考量到雙方巨大的實力差距，Real Sociedad有能力在主場取得一場至少兩球的勝利。獨贏賠率及讓分盤賠率皆無變動，顯示市場對此賽果的預期相對穩定，且目前新聞資訊無明顯佐證，可能為資金流動所致。",
+      "analysis_source": "gemini"
     },
     "fb63c2d00e89a32791a12a8859455b11": {
       "id": "fb63c2d00e89a32791a12a8859455b11",
@@ -4447,8 +4447,8 @@
         "Draw": 0.0
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 40.432599535s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 40\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -1.5】\n巴塞羅那擁有壓倒性的真實勝率優勢（75.0% vs 10.3%），即使面對主讓1.5球的盤口，考量到其主場統治力及對手西班牙人的實力差距，預計仍能取得兩球或以上的淨勝球。獨贏賠率未有變動，而近期雖有巴塞羅那輸給馬德里競技的新聞，但面對實力明顯較弱的聯賽同城對手，此戰績影響有限。",
+      "analysis_source": "gemini"
     },
     "c81f5a4b65049a4e0a90fc94be704069": {
       "id": "c81f5a4b65049a4e0a90fc94be704069",
@@ -4971,8 +4971,8 @@
         "Draw": 0.0
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 40.123640912s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 40\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -1.5】\n\nCelta Vigo的真實勝率高達57.3%，遠超客隊Oviedo的19.5%，這顯示主隊在實力上擁有壓倒性優勢。儘管讓分盤為-1.5要求Celta Vigo至少贏兩球，但考慮到主場優勢以及兩隊實力上的巨大差距，Celta Vigo有能力達成一場具統治力的勝利。賠率微幅下降（-0.06%）雖不明顯，但仍反映市場對主隊的持續信心，且無相關新聞佐證，可能為資金流動所致。",
+      "analysis_source": "gemini"
     },
     "a1e8d7ee23f8c72f75be14bb70723d99": {
       "id": "a1e8d7ee23f8c72f75be14bb70723d99",
@@ -5706,8 +5706,8 @@
         "Draw": 0.0
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 39.731986429s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 39\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -1.75】\n\nReal Madrid擁有高達73.9%的真實勝率，顯示其在主場對陣實力較弱的Alavés有絕對優勢。考量到主隊強大的攻擊火力與主場統治力，即使讓分達1.75球，Real Madrid仍極有可能以至少兩球的差距取勝，展現其碾壓性的實力。由於獨贏賠率及盤口賠率均無變動，且無明顯新聞佐證，本次推薦主要依據雙方實力差距的數據分析。",
+      "analysis_source": "gemini"
     },
     "7759c10d8fefa09122099f380241a8be": {
       "id": "7759c10d8fefa09122099f380241a8be",
@@ -6316,8 +6316,8 @@
         "Draw": 0.0
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 39.439385944s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 39\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "【💡 推薦：主讓 -1.75】\nBarcelona坐擁高達73.7%的真實勝率，遠超Celta Vigo的11.2%，在主場迎戰如此懸殊的對手，以多球優勢獲勝的機率極高。儘管最新消息提及Barcelona上役不敵Atletico且可能十人應戰，這反而可能激發他們此役反彈的鬥志，尋求一場大勝來重振士氣。由於賠率並無變動，無明顯新聞佐證，可能為資金流動所致。",
+      "analysis_source": "gemini"
     },
     "a3f979b998f70bcf99bcee41c65f90a5": {
       "id": "a3f979b998f70bcf99bcee41c65f90a5",
@@ -6734,33 +6734,33 @@
   "leagues": {
     "NBA": [
       "bf30a732402325cab54ab666ee0f5c11",
-      "30b372ff1973370201b644c207be2dd3",
-      "0852cffec341701f6a0dde8619ae9f56",
       "625bbdf7bc0bdf1d57b3f97742908221",
+      "53b49bbe56f8581f353bbbb5c6179ac5",
+      "0852cffec341701f6a0dde8619ae9f56",
       "29fe17f5b19da82ce2957c3683a10aa7",
-      "53b49bbe56f8581f353bbbb5c6179ac5"
+      "30b372ff1973370201b644c207be2dd3"
     ],
     "西甲 La Liga": [
-      "7af046b7a51c309f8f2f6c820e7bcb11",
-      "7759c10d8fefa09122099f380241a8be",
-      "ed245ff0289860db9cd29c9b76b44926",
-      "c208f9c1d251de9006fd23a7e9cfa948",
-      "445c97066158652824e10b05bc53c6ae",
-      "fee736ef555102544f70b322b548a2cf",
-      "7559b639344db13dd02fe99179c7d77f",
-      "016d8d76a7cc27f1bc8cc6775df92683",
       "55b745a0778185dd0225c9412bb3b69a",
-      "a3f979b998f70bcf99bcee41c65f90a5",
-      "a6a0d55b933b3bb01c4ba789f4444783",
-      "c81f5a4b65049a4e0a90fc94be704069",
+      "c4a4e452254d87ff646343d0357d58e7",
+      "7759c10d8fefa09122099f380241a8be",
+      "c208f9c1d251de9006fd23a7e9cfa948",
+      "016d8d76a7cc27f1bc8cc6775df92683",
       "fb63c2d00e89a32791a12a8859455b11",
+      "4c05627297ffdfd1bb17dfcc1dd3b6d6",
+      "21c5b81029447a350af6e553f1e31c5c",
+      "c81f5a4b65049a4e0a90fc94be704069",
+      "a1e8d7ee23f8c72f75be14bb70723d99",
+      "445c97066158652824e10b05bc53c6ae",
       "dcc73a8a22fc0f052bd085be3f7e1bbf",
       "ce727a41a47d5e86ddee97c7cd14928d",
-      "21c5b81029447a350af6e553f1e31c5c",
+      "fee736ef555102544f70b322b548a2cf",
       "1a8b233790dce45b2219cdb234a7916c",
-      "c4a4e452254d87ff646343d0357d58e7",
-      "4c05627297ffdfd1bb17dfcc1dd3b6d6",
-      "a1e8d7ee23f8c72f75be14bb70723d99"
+      "7559b639344db13dd02fe99179c7d77f",
+      "ed245ff0289860db9cd29c9b76b44926",
+      "a6a0d55b933b3bb01c4ba789f4444783",
+      "7af046b7a51c309f8f2f6c820e7bcb11",
+      "a3f979b998f70bcf99bcee41c65f90a5"
     ]
   },
   "news": {
@@ -6937,6 +6937,10 @@
     },
     {
       "time": "2026-04-09T18:12:20.826864+08:00",
+      "matches_count": 46
+    },
+    {
+      "time": "2026-04-09T18:19:15.265560+08:00",
       "matches_count": 46
     }
   ]
