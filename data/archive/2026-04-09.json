@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-09T16:27:36.363754+08:00",
-  "last_updated_display": "2026/04/09 16:27 (台北時間)",
+  "last_updated": "2026-04-09T17:03:07.565038+08:00",
+  "last_updated_display": "2026/04/09 17:03 (台北時間)",
   "matches": {
     "0852cffec341701f6a0dde8619ae9f56": {
       "id": "0852cffec341701f6a0dde8619ae9f56",
@@ -30,6 +30,16 @@
                 "price": 1.87,
                 "point": 6.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.89,
+                "point": 246.5
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 246.5
+              }
             }
           }
         },
@@ -52,6 +62,16 @@
               "Washington Wizards": {
                 "price": 1.95,
                 "point": 6.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.87,
+                "point": 246.0
+              },
+              "Under": {
+                "price": 1.95,
+                "point": 246.0
               }
             }
           }
@@ -76,22 +96,66 @@
                 "price": 1.95,
                 "point": 6.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.95,
+                "point": 246.5
+              },
+              "Under": {
+                "price": 1.97,
+                "point": 246.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "Chicago Bulls": 1.397,
-        "Washington Wizards": 3.038
+        "Chicago Bulls": 1.395,
+        "Washington Wizards": 3.041
+      },
+      "other_markets": {
+        "spreads": {
+          "Chicago Bulls": {
+            "price": 1.95,
+            "point": -6.5
+          },
+          "Washington Wizards": {
+            "price": 1.87,
+            "point": 6.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.89,
+            "point": 246.5
+          },
+          "Under": {
+            "price": 1.93,
+            "point": 246.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Chicago Bulls": 68.6,
+        "Washington Wizards": 31.4
       },
       "opening_odds": {
         "Chicago Bulls": 1.397,
         "Washington Wizards": 3.038
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T16:27:35.506099+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Chicago Bulls": -0.002,
+        "Washington Wizards": 0.003
+      },
+      "change_pct": {
+        "Chicago Bulls": -0.14,
+        "Washington Wizards": 0.1
+      },
+      "is_value_bet": false,
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -123,6 +187,16 @@
                 "price": 1.85,
                 "point": -3.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 238.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 238.5
+              }
             }
           }
         },
@@ -145,6 +219,16 @@
               "Toronto Raptors": {
                 "price": 1.93,
                 "point": -3.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.97,
+                "point": 239.5
+              },
+              "Under": {
+                "price": 1.95,
+                "point": 239.5
               }
             }
           }
@@ -169,22 +253,66 @@
                 "price": 1.95,
                 "point": -4.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 238.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 238.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "Miami Heat": 2.43,
-        "Toronto Raptors": 1.579
+        "Miami Heat": 2.431,
+        "Toronto Raptors": 1.578
+      },
+      "other_markets": {
+        "spreads": {
+          "Miami Heat": {
+            "price": 1.98,
+            "point": 3.5
+          },
+          "Toronto Raptors": {
+            "price": 1.85,
+            "point": -3.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.91,
+            "point": 238.5
+          },
+          "Under": {
+            "price": 1.91,
+            "point": 238.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Miami Heat": 39.4,
+        "Toronto Raptors": 60.6
       },
       "opening_odds": {
         "Miami Heat": 2.43,
         "Toronto Raptors": 1.579
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T16:27:35.506113+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Miami Heat": 0.001,
+        "Toronto Raptors": -0.001
+      },
+      "change_pct": {
+        "Miami Heat": 0.04,
+        "Toronto Raptors": -0.06
+      },
+      "is_value_bet": false,
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -216,6 +344,16 @@
                 "price": 1.87,
                 "point": -3.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 216.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 216.5
+              }
             }
           }
         },
@@ -232,12 +370,22 @@
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.93,
+                "price": 1.94,
                 "point": 4.0
               },
               "New York Knicks": {
-                "price": 1.96,
+                "price": 1.94,
                 "point": -4.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.93,
+                "point": 216.5
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 216.5
               }
             }
           }
@@ -255,29 +403,73 @@
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.89,
+                "price": 1.91,
                 "point": 4.0
               },
               "New York Knicks": {
-                "price": 1.93,
+                "price": 1.91,
                 "point": -4.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 216.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 216.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Boston Celtics": 2.501,
-        "New York Knicks": 1.555
+        "Boston Celtics": 2.516,
+        "New York Knicks": 1.549
+      },
+      "other_markets": {
+        "spreads": {
+          "Boston Celtics": {
+            "price": 1.95,
+            "point": 3.5
+          },
+          "New York Knicks": {
+            "price": 1.87,
+            "point": -3.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.91,
+            "point": 216.5
+          },
+          "Under": {
+            "price": 1.91,
+            "point": 216.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Boston Celtics": 38.1,
+        "New York Knicks": 61.9
       },
       "opening_odds": {
         "Boston Celtics": 2.501,
         "New York Knicks": 1.555
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T16:27:35.506117+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Boston Celtics": 0.015,
+        "New York Knicks": -0.006
+      },
+      "change_pct": {
+        "Boston Celtics": 0.6,
+        "New York Knicks": -0.39
+      },
+      "is_value_bet": false,
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -309,6 +501,16 @@
                 "price": 1.93,
                 "point": -3.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.89,
+                "point": 223.5
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 223.5
+              }
             }
           }
         },
@@ -317,10 +519,10 @@
           "markets": {
             "h2h": {
               "Brooklyn Nets": {
-                "price": 2.2
+                "price": 2.3
               },
               "Indiana Pacers": {
-                "price": 1.67
+                "price": 1.61
               }
             },
             "spreads": {
@@ -331,6 +533,16 @@
               "Indiana Pacers": {
                 "price": 1.91,
                 "point": -3.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 224.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 224.5
               }
             }
           }
@@ -350,17 +562,51 @@
         }
       ],
       "avg_odds": {
-        "Brooklyn Nets": 2.317,
-        "Indiana Pacers": 1.635
+        "Brooklyn Nets": 2.337,
+        "Indiana Pacers": 1.625
+      },
+      "other_markets": {
+        "spreads": {
+          "Brooklyn Nets": {
+            "price": 1.89,
+            "point": 3.5
+          },
+          "Indiana Pacers": {
+            "price": 1.93,
+            "point": -3.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.89,
+            "point": 223.5
+          },
+          "Under": {
+            "price": 1.93,
+            "point": 223.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Brooklyn Nets": 41.0,
+        "Indiana Pacers": 59.0
       },
       "opening_odds": {
         "Brooklyn Nets": 2.317,
         "Indiana Pacers": 1.635
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T16:27:35.506119+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Brooklyn Nets": 0.02,
+        "Indiana Pacers": -0.01
+      },
+      "change_pct": {
+        "Brooklyn Nets": 0.86,
+        "Indiana Pacers": -0.61
+      },
+      "is_value_bet": false,
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -391,6 +637,16 @@
               "Philadelphia 76ers": {
                 "price": 1.95,
                 "point": 3.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.89,
+                "point": 225.5
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 225.5
               }
             }
           }
@@ -428,22 +684,66 @@
                 "price": 1.94,
                 "point": 3.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.93,
+                "point": 225.5
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 225.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "Houston Rockets": 1.584,
-        "Philadelphia 76ers": 2.418
+        "Houston Rockets": 1.585,
+        "Philadelphia 76ers": 2.416
+      },
+      "other_markets": {
+        "spreads": {
+          "Houston Rockets": {
+            "price": 1.87,
+            "point": -3.5
+          },
+          "Philadelphia 76ers": {
+            "price": 1.95,
+            "point": 3.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.89,
+            "point": 225.5
+          },
+          "Under": {
+            "price": 1.93,
+            "point": 225.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Houston Rockets": 60.4,
+        "Philadelphia 76ers": 39.6
       },
       "opening_odds": {
         "Houston Rockets": 1.584,
         "Philadelphia 76ers": 2.418
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T16:27:35.506121+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Houston Rockets": 0.001,
+        "Philadelphia 76ers": -0.002
+      },
+      "change_pct": {
+        "Houston Rockets": 0.06,
+        "Philadelphia 76ers": -0.08
+      },
+      "is_value_bet": false,
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -475,6 +775,16 @@
                 "price": 1.95,
                 "point": 4.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 225.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 225.5
+              }
             }
           }
         },
@@ -497,6 +807,16 @@
               "Los Angeles Lakers": {
                 "price": 1.94,
                 "point": 5.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.93,
+                "point": 225.5
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 225.5
               }
             }
           }
@@ -521,22 +841,66 @@
                 "price": 1.91,
                 "point": 5.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 225.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 225.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "Golden State Warriors": 1.517,
-        "Los Angeles Lakers": 2.593
+        "Golden State Warriors": 1.518,
+        "Los Angeles Lakers": 2.594
+      },
+      "other_markets": {
+        "spreads": {
+          "Golden State Warriors": {
+            "price": 1.87,
+            "point": -4.5
+          },
+          "Los Angeles Lakers": {
+            "price": 1.95,
+            "point": 4.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.91,
+            "point": 225.5
+          },
+          "Under": {
+            "price": 1.91,
+            "point": 225.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Golden State Warriors": 63.1,
+        "Los Angeles Lakers": 36.9
       },
       "opening_odds": {
         "Golden State Warriors": 1.517,
         "Los Angeles Lakers": 2.593
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T16:27:35.506124+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Golden State Warriors": 0.001,
+        "Los Angeles Lakers": 0.001
+      },
+      "change_pct": {
+        "Golden State Warriors": 0.07,
+        "Los Angeles Lakers": 0.04
+      },
+      "is_value_bet": false,
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -2193,34 +2557,12 @@
   },
   "leagues": {
     "NBA": [
-      "0852cffec341701f6a0dde8619ae9f56",
-      "53b49bbe56f8581f353bbbb5c6179ac5",
       "bf30a732402325cab54ab666ee0f5c11",
+      "29fe17f5b19da82ce2957c3683a10aa7",
+      "53b49bbe56f8581f353bbbb5c6179ac5",
       "625bbdf7bc0bdf1d57b3f97742908221",
-      "30b372ff1973370201b644c207be2dd3",
-      "29fe17f5b19da82ce2957c3683a10aa7"
-    ],
-    "英超 EPL": [
-      "10d3a3a8df4f15a0754da8195a47c41f",
-      "ff027a0ac6a0538a713b46bd753b670d",
-      "0b8adb16f16b2490e3fbd514a2d86190",
-      "44d98d5d5c19eb115a527f1de294f03e",
-      "f022ab37b6c69f588015498186a9694b",
-      "542c7cb070f6d66aa7003cd825d5c199",
-      "aa83ffb32d9d72361f2cca8c1d3c2b19",
-      "5b7b41cabf1a84e8991c9cf3d0a7ab90",
-      "e4c2f457a464a95a8631ab28ef77b0b9",
-      "7d48c93e68e7403998d0ed38e99caae5",
-      "2c2061ffc9ee67808fd45273089d7795",
-      "be6cdb6ddd27d099b5291f0d1e051d92",
-      "d137c5f062243e857803fcebfdda2953",
-      "5e7f44119f2e640fdf04c245a764657f",
-      "933e20e0892b28ca075a9ab5465d5c6d",
-      "72406c12d6334a8f3475a640ea1f814b",
-      "95d68f9006aa718d447c759366118c31",
-      "3e7369c873aed1c62f4d76fd652d73c7",
-      "67946ccfc03197bc48eb7b6c9786b713",
-      "ea28653ebcd7743146869e2aa7851275"
+      "0852cffec341701f6a0dde8619ae9f56",
+      "30b372ff1973370201b644c207be2dd3"
     ]
   },
   "news": {
@@ -2351,12 +2693,16 @@
   },
   "significant_changes": [],
   "stats": {
-    "total_matches": 26,
+    "total_matches": 6,
     "significant_changes_count": 0
   },
   "snapshots": [
     {
       "time": "2026-04-09T16:27:36.367657+08:00",
+      "matches_count": 26
+    },
+    {
+      "time": "2026-04-09T17:03:07.567764+08:00",
       "matches_count": 26
     }
   ]
