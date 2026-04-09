@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-09T17:03:07.565038+08:00",
-  "last_updated_display": "2026/04/09 17:03 (台北時間)",
+  "last_updated": "2026-04-09T17:10:55.910895+08:00",
+  "last_updated_display": "2026/04/09 17:10 (台北時間)",
   "matches": {
     "0852cffec341701f6a0dde8619ae9f56": {
       "id": "0852cffec341701f6a0dde8619ae9f56",
@@ -268,7 +268,7 @@
         }
       ],
       "avg_odds": {
-        "Miami Heat": 2.431,
+        "Miami Heat": 2.435,
         "Toronto Raptors": 1.578
       },
       "other_markets": {
@@ -295,8 +295,8 @@
         "btts": {}
       },
       "true_probs": {
-        "Miami Heat": 39.4,
-        "Toronto Raptors": 60.6
+        "Miami Heat": 39.3,
+        "Toronto Raptors": 60.7
       },
       "opening_odds": {
         "Miami Heat": 2.43,
@@ -305,11 +305,11 @@
       "first_seen": "2026-04-09T16:27:35.506113+08:00",
       "is_new": false,
       "odds_change": {
-        "Miami Heat": 0.001,
+        "Miami Heat": 0.005,
         "Toronto Raptors": -0.001
       },
       "change_pct": {
-        "Miami Heat": 0.04,
+        "Miami Heat": 0.21,
         "Toronto Raptors": -0.06
       },
       "is_value_bet": false,
@@ -699,8 +699,8 @@
         }
       ],
       "avg_odds": {
-        "Houston Rockets": 1.585,
-        "Philadelphia 76ers": 2.416
+        "Houston Rockets": 1.58,
+        "Philadelphia 76ers": 2.428
       },
       "other_markets": {
         "spreads": {
@@ -726,8 +726,8 @@
         "btts": {}
       },
       "true_probs": {
-        "Houston Rockets": 60.4,
-        "Philadelphia 76ers": 39.6
+        "Houston Rockets": 60.6,
+        "Philadelphia 76ers": 39.4
       },
       "opening_odds": {
         "Houston Rockets": 1.584,
@@ -736,12 +736,12 @@
       "first_seen": "2026-04-09T16:27:35.506121+08:00",
       "is_new": false,
       "odds_change": {
-        "Houston Rockets": 0.001,
-        "Philadelphia 76ers": -0.002
+        "Houston Rockets": -0.004,
+        "Philadelphia 76ers": 0.01
       },
       "change_pct": {
-        "Houston Rockets": 0.06,
-        "Philadelphia 76ers": -0.08
+        "Houston Rockets": -0.25,
+        "Philadelphia 76ers": 0.41
       },
       "is_value_bet": false,
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
@@ -856,8 +856,8 @@
         }
       ],
       "avg_odds": {
-        "Golden State Warriors": 1.518,
-        "Los Angeles Lakers": 2.594
+        "Golden State Warriors": 1.519,
+        "Los Angeles Lakers": 2.599
       },
       "other_markets": {
         "spreads": {
@@ -893,12 +893,12 @@
       "first_seen": "2026-04-09T16:27:35.506124+08:00",
       "is_new": false,
       "odds_change": {
-        "Golden State Warriors": 0.001,
-        "Los Angeles Lakers": 0.001
+        "Golden State Warriors": 0.002,
+        "Los Angeles Lakers": 0.006
       },
       "change_pct": {
-        "Golden State Warriors": 0.07,
-        "Los Angeles Lakers": 0.04
+        "Golden State Warriors": 0.13,
+        "Los Angeles Lakers": 0.23
       },
       "is_value_bet": false,
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
@@ -928,12 +928,22 @@
             },
             "spreads": {
               "West Ham United": {
-                "price": 1.34,
+                "price": 1.33,
                 "point": 0.0
               },
               "Wolverhampton Wanderers": {
-                "price": 2.94,
+                "price": 2.97,
                 "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.88,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.07,
+                "point": 2.5
               }
             }
           }
@@ -977,24 +987,62 @@
                 "price": 1.99,
                 "point": 0.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.78,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.96,
+                "point": 2.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "West Ham United": 1.83,
-        "Wolverhampton Wanderers": 4.229,
-        "Draw": 3.763
+        "West Ham United": 1.834,
+        "Wolverhampton Wanderers": 4.222,
+        "Draw": 3.759
+      },
+      "other_markets": {
+        "spreads": {
+          "West Ham United": {
+            "price": 1.33,
+            "point": 0.0
+          },
+          "Wolverhampton Wanderers": {
+            "price": 2.97,
+            "point": 0.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.88,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 2.07,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "West Ham United": 52.0,
+        "Wolverhampton Wanderers": 22.6,
+        "Draw": 25.4
       },
       "opening_odds": {
-        "West Ham United": 1.83,
-        "Wolverhampton Wanderers": 4.229,
-        "Draw": 3.763
+        "West Ham United": 1.834,
+        "Wolverhampton Wanderers": 4.222,
+        "Draw": 3.759
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506127+08:00",
+      "first_seen": "2026-04-09T17:10:54.596293+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1035,6 +1083,16 @@
               "Draw": {
                 "price": 4.8
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.58,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.19,
+                "point": 2.5
+              }
             }
           }
         },
@@ -1051,6 +1109,16 @@
               "Draw": {
                 "price": 4.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.56,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.05,
+                "point": 2.5
+              }
             }
           }
         }
@@ -1060,6 +1128,34 @@
         "Bournemouth": 7.241,
         "Draw": 4.735
       },
+      "other_markets": {
+        "spreads": {
+          "Arsenal": {
+            "price": 2.06,
+            "point": -1.5
+          },
+          "Bournemouth": {
+            "price": 1.71,
+            "point": 1.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.58,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 2.19,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Arsenal": 66.8,
+        "Bournemouth": 13.1,
+        "Draw": 20.1
+      },
       "opening_odds": {
         "Arsenal": 1.425,
         "Bournemouth": 7.241,
@@ -1068,7 +1164,7 @@
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506132+08:00",
+      "first_seen": "2026-04-09T17:10:54.596295+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1109,6 +1205,16 @@
               "Draw": {
                 "price": 3.35
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.92,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.76,
+                "point": 2.5
+              }
             }
           }
         },
@@ -1125,6 +1231,16 @@
               "Draw": {
                 "price": 3.2
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.92,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.66,
+                "point": 2.5
+              }
             }
           }
         }
@@ -1134,6 +1250,34 @@
         "Everton": 3.485,
         "Draw": 3.361
       },
+      "other_markets": {
+        "spreads": {
+          "Brentford": {
+            "price": 2.09,
+            "point": -0.5
+          },
+          "Everton": {
+            "price": 1.69,
+            "point": 0.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.92,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 1.76,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Brentford": 44.3,
+        "Everton": 27.3,
+        "Draw": 28.3
+      },
       "opening_odds": {
         "Brentford": 2.148,
         "Everton": 3.485,
@@ -1142,7 +1286,7 @@
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506137+08:00",
+      "first_seen": "2026-04-09T17:10:54.596298+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1183,6 +1327,16 @@
               "Draw": {
                 "price": 3.95
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.69,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.01,
+                "point": 2.5
+              }
             }
           }
         },
@@ -1209,6 +1363,16 @@
                 "price": 1.37,
                 "point": 1.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.81,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.15,
+                "point": 2.5
+              }
             }
           }
         }
@@ -1218,6 +1382,34 @@
         "Burnley": 4.507,
         "Draw": 4.025
       },
+      "other_markets": {
+        "spreads": {
+          "Brighton and Hove Albion": {
+            "price": 2.85,
+            "point": -1.5
+          },
+          "Burnley": {
+            "price": 1.37,
+            "point": 1.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.69,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 2.01,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Brighton and Hove Albion": 55.2,
+        "Burnley": 21.1,
+        "Draw": 23.7
+      },
       "opening_odds": {
         "Brighton and Hove Albion": 1.727,
         "Burnley": 4.507,
@@ -1226,7 +1418,7 @@
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506142+08:00",
+      "first_seen": "2026-04-09T17:10:54.596300+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1267,6 +1459,16 @@
               "Draw": {
                 "price": 4.4
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.23,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.48,
+                "point": 3.5
+              }
             }
           }
         },
@@ -1288,19 +1490,47 @@
         }
       ],
       "avg_odds": {
-        "Fulham": 4.989,
-        "Liverpool": 1.616,
+        "Fulham": 4.985,
+        "Liverpool": 1.617,
         "Draw": 4.343
       },
+      "other_markets": {
+        "spreads": {
+          "Fulham": {
+            "price": 2.22,
+            "point": 0.5
+          },
+          "Liverpool": {
+            "price": 1.61,
+            "point": -0.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.23,
+            "point": 3.5
+          },
+          "Under": {
+            "price": 1.48,
+            "point": 3.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Fulham": 19.1,
+        "Liverpool": 58.9,
+        "Draw": 21.9
+      },
       "opening_odds": {
-        "Fulham": 4.989,
-        "Liverpool": 1.616,
+        "Fulham": 4.985,
+        "Liverpool": 1.617,
         "Draw": 4.343
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506144+08:00",
+      "first_seen": "2026-04-09T17:10:54.596302+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1357,6 +1587,16 @@
               "Draw": {
                 "price": 3.3
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.89,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.88,
+                "point": 2.5
+              }
             }
           }
         }
@@ -1366,6 +1606,34 @@
         "Nottingham Forest": 2.657,
         "Draw": 3.325
       },
+      "other_markets": {
+        "spreads": {
+          "Aston Villa": {
+            "price": 1.47,
+            "point": 0.5
+          },
+          "Nottingham Forest": {
+            "price": 2.49,
+            "point": -0.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.89,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 1.88,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Aston Villa": 35.5,
+        "Nottingham Forest": 35.8,
+        "Draw": 28.6
+      },
       "opening_odds": {
         "Aston Villa": 2.683,
         "Nottingham Forest": 2.657,
@@ -1374,7 +1642,7 @@
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506146+08:00",
+      "first_seen": "2026-04-09T17:10:54.596304+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1431,24 +1699,62 @@
               "Draw": {
                 "price": 3.4
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.72,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.1,
+                "point": 2.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "Crystal Palace": 3.025,
-        "Newcastle United": 2.301,
-        "Draw": 3.51
+        "Crystal Palace": 3.034,
+        "Newcastle United": 2.297,
+        "Draw": 3.508
+      },
+      "other_markets": {
+        "spreads": {
+          "Crystal Palace": {
+            "price": 1.6,
+            "point": 0.5
+          },
+          "Newcastle United": {
+            "price": 2.2,
+            "point": -0.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.72,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 2.1,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Crystal Palace": 31.4,
+        "Newcastle United": 41.5,
+        "Draw": 27.1
       },
       "opening_odds": {
-        "Crystal Palace": 3.025,
-        "Newcastle United": 2.301,
-        "Draw": 3.51
+        "Crystal Palace": 3.034,
+        "Newcastle United": 2.297,
+        "Draw": 3.508
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506148+08:00",
+      "first_seen": "2026-04-09T17:10:54.596308+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1489,6 +1795,16 @@
               "Draw": {
                 "price": 3.35
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.89,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.78,
+                "point": 2.5
+              }
             }
           }
         },
@@ -1515,6 +1831,16 @@
                 "price": 1.99,
                 "point": 0.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.02,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.92,
+                "point": 2.5
+              }
             }
           }
         }
@@ -1524,6 +1850,34 @@
         "Tottenham Hotspur": 2.661,
         "Draw": 3.378
       },
+      "other_markets": {
+        "spreads": {
+          "Sunderland": {
+            "price": 1.95,
+            "point": 0.0
+          },
+          "Tottenham Hotspur": {
+            "price": 1.99,
+            "point": 0.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.89,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 1.78,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Sunderland": 36.0,
+        "Tottenham Hotspur": 35.8,
+        "Draw": 28.2
+      },
       "opening_odds": {
         "Sunderland": 2.649,
         "Tottenham Hotspur": 2.661,
@@ -1532,7 +1886,7 @@
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506150+08:00",
+      "first_seen": "2026-04-09T17:10:54.596310+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1583,6 +1937,16 @@
                 "price": 1.61,
                 "point": 0.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.4,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.67,
+                "point": 3.5
+              }
             }
           }
         },
@@ -1599,24 +1963,62 @@
               "Draw": {
                 "price": 3.65
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.49,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.23,
+                "point": 2.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "Chelsea": 3.07,
-        "Manchester City": 2.151,
-        "Draw": 3.849
+        "Chelsea": 3.063,
+        "Manchester City": 2.152,
+        "Draw": 3.852
+      },
+      "other_markets": {
+        "spreads": {
+          "Chelsea": {
+            "price": 2.31,
+            "point": 0.0
+          },
+          "Manchester City": {
+            "price": 1.61,
+            "point": 0.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.4,
+            "point": 3.5
+          },
+          "Under": {
+            "price": 1.67,
+            "point": 3.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Chelsea": 31.1,
+        "Manchester City": 44.2,
+        "Draw": 24.7
       },
       "opening_odds": {
-        "Chelsea": 3.07,
-        "Manchester City": 2.151,
-        "Draw": 3.849
+        "Chelsea": 3.063,
+        "Manchester City": 2.152,
+        "Draw": 3.852
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506152+08:00",
+      "first_seen": "2026-04-09T17:10:54.596312+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1633,13 +2035,13 @@
           "markets": {
             "h2h": {
               "Leeds United": {
-                "price": 5.23
+                "price": 5.33
               },
               "Manchester United": {
                 "price": 1.69
               },
               "Draw": {
-                "price": 4.32
+                "price": 4.26
               }
             },
             "spreads": {
@@ -1650,6 +2052,16 @@
               "Manchester United": {
                 "price": 2.62,
                 "point": -1.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.79,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.19,
+                "point": 2.5
               }
             }
           }
@@ -1666,6 +2078,16 @@
               },
               "Draw": {
                 "price": 4.1
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.62,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.97,
+                "point": 2.5
               }
             }
           }
@@ -1688,19 +2110,47 @@
         }
       ],
       "avg_odds": {
-        "Leeds United": 5.241,
-        "Manchester United": 1.607,
-        "Draw": 4.196
+        "Leeds United": 5.248,
+        "Manchester United": 1.608,
+        "Draw": 4.189
+      },
+      "other_markets": {
+        "spreads": {
+          "Leeds United": {
+            "price": 1.43,
+            "point": 1.5
+          },
+          "Manchester United": {
+            "price": 2.62,
+            "point": -1.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.79,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 2.19,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Leeds United": 18.1,
+        "Manchester United": 59.2,
+        "Draw": 22.7
       },
       "opening_odds": {
-        "Leeds United": 5.241,
-        "Manchester United": 1.607,
-        "Draw": 4.196
+        "Leeds United": 5.248,
+        "Manchester United": 1.608,
+        "Draw": 4.189
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506156+08:00",
+      "first_seen": "2026-04-09T17:10:54.596314+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1735,6 +2185,16 @@
                 "price": 2.41,
                 "point": 0.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.83,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.14,
+                "point": 2.5
+              }
             }
           }
         },
@@ -1750,6 +2210,16 @@
               },
               "Draw": {
                 "price": 3.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.68,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.88,
+                "point": 2.5
               }
             }
           }
@@ -1772,19 +2242,47 @@
         }
       ],
       "avg_odds": {
-        "Brentford": 2.111,
-        "Fulham": 3.242,
-        "Draw": 3.629
+        "Brentford": 2.114,
+        "Fulham": 3.247,
+        "Draw": 3.615
+      },
+      "other_markets": {
+        "spreads": {
+          "Brentford": {
+            "price": 1.57,
+            "point": 0.0
+          },
+          "Fulham": {
+            "price": 2.41,
+            "point": 0.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.83,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 2.14,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Brentford": 44.7,
+        "Fulham": 29.1,
+        "Draw": 26.2
       },
       "opening_odds": {
-        "Brentford": 2.111,
-        "Fulham": 3.242,
-        "Draw": 3.629
+        "Brentford": 2.114,
+        "Fulham": 3.247,
+        "Draw": 3.615
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506158+08:00",
+      "first_seen": "2026-04-09T17:10:54.596316+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1819,6 +2317,16 @@
                 "price": 1.39,
                 "point": 0.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.21,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.78,
+                "point": 3.5
+              }
             }
           }
         },
@@ -1835,6 +2343,16 @@
               "Draw": {
                 "price": 3.95
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.0,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.61,
+                "point": 3.5
+              }
             }
           }
         },
@@ -1849,26 +2367,54 @@
                 "price": 1.78
               },
               "Draw": {
-                "price": 3.75
+                "price": 3.8
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Bournemouth": 3.691,
+        "Bournemouth": 3.693,
         "Newcastle United": 1.87,
-        "Draw": 3.969
+        "Draw": 3.973
+      },
+      "other_markets": {
+        "spreads": {
+          "Bournemouth": {
+            "price": 2.72,
+            "point": 0.0
+          },
+          "Newcastle United": {
+            "price": 1.39,
+            "point": 0.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.21,
+            "point": 3.5
+          },
+          "Under": {
+            "price": 1.78,
+            "point": 3.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Bournemouth": 25.6,
+        "Newcastle United": 50.6,
+        "Draw": 23.8
       },
       "opening_odds": {
-        "Bournemouth": 3.691,
+        "Bournemouth": 3.693,
         "Newcastle United": 1.87,
-        "Draw": 3.969
+        "Draw": 3.973
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506160+08:00",
+      "first_seen": "2026-04-09T17:10:54.596319+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1896,12 +2442,22 @@
             },
             "spreads": {
               "Leeds United": {
-                "price": 2.77,
+                "price": 2.73,
                 "point": -1.5
               },
               "Wolverhampton Wanderers": {
-                "price": 1.39,
+                "price": 1.4,
                 "point": 1.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.97,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.97,
+                "point": 2.5
               }
             }
           }
@@ -1918,6 +2474,16 @@
               },
               "Draw": {
                 "price": 3.75
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.74,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.83,
+                "point": 2.5
               }
             }
           }
@@ -1940,19 +2506,47 @@
         }
       ],
       "avg_odds": {
-        "Leeds United": 1.663,
-        "Wolverhampton Wanderers": 5.118,
-        "Draw": 3.844
+        "Leeds United": 1.66,
+        "Wolverhampton Wanderers": 5.122,
+        "Draw": 3.86
+      },
+      "other_markets": {
+        "spreads": {
+          "Leeds United": {
+            "price": 2.73,
+            "point": -1.5
+          },
+          "Wolverhampton Wanderers": {
+            "price": 1.4,
+            "point": 1.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.97,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 1.97,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Leeds United": 57.0,
+        "Wolverhampton Wanderers": 18.5,
+        "Draw": 24.5
       },
       "opening_odds": {
-        "Leeds United": 1.663,
-        "Wolverhampton Wanderers": 5.118,
-        "Draw": 3.844
+        "Leeds United": 1.66,
+        "Wolverhampton Wanderers": 5.122,
+        "Draw": 3.86
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506164+08:00",
+      "first_seen": "2026-04-09T17:10:54.596321+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -1972,10 +2566,10 @@
                 "price": 2.69
               },
               "Tottenham Hotspur": {
-                "price": 2.62
+                "price": 2.63
               },
               "Draw": {
-                "price": 3.8
+                "price": 3.78
               }
             },
             "spreads": {
@@ -1986,6 +2580,16 @@
               "Tottenham Hotspur": {
                 "price": 1.95,
                 "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.75,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.25,
+                "point": 2.5
               }
             }
           }
@@ -2003,6 +2607,16 @@
               "Draw": {
                 "price": 3.55
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.53,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.12,
+                "point": 2.5
+              }
             }
           }
         },
@@ -2017,7 +2631,7 @@
                 "price": 2.35
               },
               "Draw": {
-                "price": 3.45
+                "price": 3.5
               }
             }
           }
@@ -2025,18 +2639,46 @@
       ],
       "avg_odds": {
         "Brighton and Hove Albion": 2.575,
-        "Tottenham Hotspur": 2.532,
-        "Draw": 3.63
+        "Tottenham Hotspur": 2.535,
+        "Draw": 3.634
+      },
+      "other_markets": {
+        "spreads": {
+          "Brighton and Hove Albion": {
+            "price": 1.99,
+            "point": 0.0
+          },
+          "Tottenham Hotspur": {
+            "price": 1.95,
+            "point": 0.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.75,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 2.25,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Brighton and Hove Albion": 36.7,
+        "Tottenham Hotspur": 37.3,
+        "Draw": 26.0
       },
       "opening_odds": {
         "Brighton and Hove Albion": 2.575,
-        "Tottenham Hotspur": 2.532,
-        "Draw": 3.63
+        "Tottenham Hotspur": 2.535,
+        "Draw": 3.634
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506166+08:00",
+      "first_seen": "2026-04-09T17:10:54.596323+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -2071,6 +2713,16 @@
                 "price": 2.41,
                 "point": 0.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.34,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.7,
+                "point": 3.5
+              }
             }
           }
         },
@@ -2086,6 +2738,16 @@
               },
               "Draw": {
                 "price": 3.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.04,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.57,
+                "point": 3.5
               }
             }
           }
@@ -2109,18 +2771,46 @@
       ],
       "avg_odds": {
         "Chelsea": 2.174,
-        "Manchester United": 3.242,
-        "Draw": 3.452
+        "Manchester United": 3.24,
+        "Draw": 3.456
+      },
+      "other_markets": {
+        "spreads": {
+          "Chelsea": {
+            "price": 1.57,
+            "point": 0.0
+          },
+          "Manchester United": {
+            "price": 2.41,
+            "point": 0.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.34,
+            "point": 3.5
+          },
+          "Under": {
+            "price": 1.7,
+            "point": 3.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Chelsea": 43.5,
+        "Manchester United": 29.2,
+        "Draw": 27.3
       },
       "opening_odds": {
         "Chelsea": 2.174,
-        "Manchester United": 3.242,
-        "Draw": 3.452
+        "Manchester United": 3.24,
+        "Draw": 3.456
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506168+08:00",
+      "first_seen": "2026-04-09T17:10:54.596325+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -2155,6 +2845,16 @@
                 "price": 2.08,
                 "point": 0.75
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.92,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.92,
+                "point": 2.5
+              }
             }
           }
         },
@@ -2170,6 +2870,16 @@
               },
               "Draw": {
                 "price": 3.75
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.85,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.95,
+                "point": 2.5
               }
             }
           }
@@ -2187,6 +2897,16 @@
               "Draw": {
                 "price": 4.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.85,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.9,
+                "point": 2.5
+              }
             }
           }
         }
@@ -2196,6 +2916,34 @@
         "Sunderland": 5.564,
         "Draw": 3.861
       },
+      "other_markets": {
+        "spreads": {
+          "Aston Villa": {
+            "price": 1.79,
+            "point": -0.75
+          },
+          "Sunderland": {
+            "price": 2.08,
+            "point": 0.75
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.92,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 1.92,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Aston Villa": 58.4,
+        "Sunderland": 17.0,
+        "Draw": 24.5
+      },
       "opening_odds": {
         "Aston Villa": 1.621,
         "Sunderland": 5.564,
@@ -2204,7 +2952,7 @@
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506170+08:00",
+      "first_seen": "2026-04-09T17:10:54.596327+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -2239,6 +2987,16 @@
                 "price": 1.97,
                 "point": -1.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.99,
+                "point": 2.75
+              },
+              "Under": {
+                "price": 1.85,
+                "point": 2.75
+              }
             }
           }
         },
@@ -2254,6 +3012,16 @@
               },
               "Draw": {
                 "price": 4.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.75,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.05,
+                "point": 2.5
               }
             }
           }
@@ -2271,24 +3039,62 @@
               "Draw": {
                 "price": 4.3
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.75,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.05,
+                "point": 2.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "Burnley": 6.06,
-        "Nottingham Forest": 1.54,
-        "Draw": 4.123
+        "Burnley": 6.062,
+        "Nottingham Forest": 1.539,
+        "Draw": 4.127
+      },
+      "other_markets": {
+        "spreads": {
+          "Burnley": {
+            "price": 1.88,
+            "point": 1.0
+          },
+          "Nottingham Forest": {
+            "price": 1.97,
+            "point": -1.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.99,
+            "point": 2.75
+          },
+          "Under": {
+            "price": 1.85,
+            "point": 2.75
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Burnley": 15.6,
+        "Nottingham Forest": 61.5,
+        "Draw": 22.9
       },
       "opening_odds": {
-        "Burnley": 6.06,
-        "Nottingham Forest": 1.54,
-        "Draw": 4.123
+        "Burnley": 6.062,
+        "Nottingham Forest": 1.539,
+        "Draw": 4.127
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506172+08:00",
+      "first_seen": "2026-04-09T17:10:54.596332+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -2324,7 +3130,7 @@
                 "price": 3.6
               },
               "Liverpool": {
-                "price": 2.17
+                "price": 2.18
               },
               "Draw": {
                 "price": 3.6
@@ -2338,6 +3144,16 @@
               "Liverpool": {
                 "price": 1.53,
                 "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.81,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.17,
+                "point": 2.5
               }
             }
           }
@@ -2365,24 +3181,62 @@
                 "price": 2.02,
                 "point": -0.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.68,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.06,
+                "point": 2.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "Everton": 3.384,
-        "Liverpool": 2.079,
-        "Draw": 3.577
+        "Everton": 3.388,
+        "Liverpool": 2.084,
+        "Draw": 3.559
+      },
+      "other_markets": {
+        "spreads": {
+          "Everton": {
+            "price": 2.51,
+            "point": 0.0
+          },
+          "Liverpool": {
+            "price": 1.53,
+            "point": 0.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.81,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 2.17,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Everton": 28.0,
+        "Liverpool": 45.4,
+        "Draw": 26.6
       },
       "opening_odds": {
-        "Everton": 3.384,
-        "Liverpool": 2.079,
-        "Draw": 3.577
+        "Everton": 3.388,
+        "Liverpool": 2.084,
+        "Draw": 3.559
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506174+08:00",
+      "first_seen": "2026-04-09T17:10:54.596334+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -2417,6 +3271,16 @@
                 "price": 1.84,
                 "point": -0.25
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.84,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.0,
+                "point": 2.5
+              }
             }
           }
         },
@@ -2433,6 +3297,16 @@
               "Draw": {
                 "price": 3.5
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.75,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.0,
+                "point": 2.5
+              }
             }
           }
         },
@@ -2441,32 +3315,70 @@
           "markets": {
             "h2h": {
               "Arsenal": {
-                "price": 3.5
+                "price": 3.4
               },
               "Manchester City": {
                 "price": 2.05
               },
               "Draw": {
-                "price": 3.5
+                "price": 3.6
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.77,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.0,
+                "point": 2.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Arsenal": 3.432,
-        "Manchester City": 2.066,
-        "Draw": 3.568
+        "Arsenal": 3.415,
+        "Manchester City": 2.073,
+        "Draw": 3.563
+      },
+      "other_markets": {
+        "spreads": {
+          "Arsenal": {
+            "price": 2.02,
+            "point": 0.25
+          },
+          "Manchester City": {
+            "price": 1.84,
+            "point": -0.25
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.84,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 2.0,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Arsenal": 27.7,
+        "Manchester City": 45.7,
+        "Draw": 26.6
       },
       "opening_odds": {
-        "Arsenal": 3.432,
-        "Manchester City": 2.066,
-        "Draw": 3.568
+        "Arsenal": 3.415,
+        "Manchester City": 2.073,
+        "Draw": 3.563
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506176+08:00",
+      "first_seen": "2026-04-09T17:10:54.596336+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     },
@@ -2507,6 +3419,16 @@
               "Draw": {
                 "price": 3.3
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.77,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.79,
+                "point": 2.5
+              }
             }
           }
         },
@@ -2533,36 +3455,96 @@
                 "price": 2.43,
                 "point": 0.0
               }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.97,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.97,
+                "point": 2.5
+              }
             }
           }
         }
       ],
       "avg_odds": {
-        "Crystal Palace": 2.159,
-        "West Ham United": 3.511,
+        "Crystal Palace": 2.161,
+        "West Ham United": 3.502,
         "Draw": 3.256
       },
+      "other_markets": {
+        "spreads": {
+          "Crystal Palace": {
+            "price": 1.48,
+            "point": 0.0
+          },
+          "West Ham United": {
+            "price": 2.43,
+            "point": 0.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.77,
+            "point": 2.5
+          },
+          "Under": {
+            "price": 1.79,
+            "point": 2.5
+          }
+        },
+        "btts": {}
+      },
+      "true_probs": {
+        "Crystal Palace": 43.8,
+        "West Ham United": 27.1,
+        "Draw": 29.1
+      },
       "opening_odds": {
-        "Crystal Palace": 2.159,
-        "West Ham United": 3.511,
+        "Crystal Palace": 2.161,
+        "West Ham United": 3.502,
         "Draw": 3.256
       },
       "odds_change": {},
       "change_pct": {},
       "is_new": true,
-      "first_seen": "2026-04-09T16:27:35.506178+08:00",
+      "first_seen": "2026-04-09T17:10:54.596338+08:00",
       "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
       "analysis_source": "rule_based"
     }
   },
   "leagues": {
     "NBA": [
-      "bf30a732402325cab54ab666ee0f5c11",
       "29fe17f5b19da82ce2957c3683a10aa7",
-      "53b49bbe56f8581f353bbbb5c6179ac5",
       "625bbdf7bc0bdf1d57b3f97742908221",
-      "0852cffec341701f6a0dde8619ae9f56",
-      "30b372ff1973370201b644c207be2dd3"
+      "bf30a732402325cab54ab666ee0f5c11",
+      "30b372ff1973370201b644c207be2dd3",
+      "53b49bbe56f8581f353bbbb5c6179ac5",
+      "0852cffec341701f6a0dde8619ae9f56"
+    ],
+    "英超 EPL": [
+      "3e7369c873aed1c62f4d76fd652d73c7",
+      "933e20e0892b28ca075a9ab5465d5c6d",
+      "e4c2f457a464a95a8631ab28ef77b0b9",
+      "be6cdb6ddd27d099b5291f0d1e051d92",
+      "44d98d5d5c19eb115a527f1de294f03e",
+      "7d48c93e68e7403998d0ed38e99caae5",
+      "ea28653ebcd7743146869e2aa7851275",
+      "aa83ffb32d9d72361f2cca8c1d3c2b19",
+      "d137c5f062243e857803fcebfdda2953",
+      "5e7f44119f2e640fdf04c245a764657f",
+      "0b8adb16f16b2490e3fbd514a2d86190",
+      "72406c12d6334a8f3475a640ea1f814b",
+      "ff027a0ac6a0538a713b46bd753b670d",
+      "542c7cb070f6d66aa7003cd825d5c199",
+      "95d68f9006aa718d447c759366118c31",
+      "10d3a3a8df4f15a0754da8195a47c41f",
+      "5b7b41cabf1a84e8991c9cf3d0a7ab90",
+      "2c2061ffc9ee67808fd45273089d7795",
+      "67946ccfc03197bc48eb7b6c9786b713",
+      "f022ab37b6c69f588015498186a9694b"
     ]
   },
   "news": {
@@ -2693,7 +3675,7 @@
   },
   "significant_changes": [],
   "stats": {
-    "total_matches": 6,
+    "total_matches": 26,
     "significant_changes_count": 0
   },
   "snapshots": [
@@ -2703,6 +3685,10 @@
     },
     {
       "time": "2026-04-09T17:03:07.567764+08:00",
+      "matches_count": 26
+    },
+    {
+      "time": "2026-04-09T17:10:55.917415+08:00",
       "matches_count": 26
     }
   ]
