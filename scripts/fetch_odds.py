@@ -347,33 +347,31 @@ def analyze_with_ai(matches_with_changes, news_items):
 
     results = []
     import time
-    for match in matches_with_changes:
+    
+    # 免費版 gemini-2.5-flash 限制: 每分鐘 5 次
+    # 只分析前 5 場最有價值的比賽，按最高勝率排序
+    matches_with_changes.sort(
+        key=lambda m: max(m.get("true_probs", {}).values(), default=50),
+        reverse=True
+    )
+    matches_to_analyze = matches_with_changes[:5]
+    print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析")
+    
+    model = genai.GenerativeModel("gemini-2.5-flash")
+    
+    for i, match in enumerate(matches_to_analyze):
         prompt = build_analysis_prompt(match, news_items)
         try:
-            response = None
-            error_msgs = []
-            # 依序測試可用的模型名稱
-            for model_name in ["gemini-2.5-flash", "gemini-1.5-flash", "gemini-1.5-flash-latest", "gemini-pro"]:
-                try:
-                    model = genai.GenerativeModel(model_name)
-                    response = model.generate_content(prompt, safety_settings=safety_settings)
-                    # 如果成功拿到 response 就跳出迴圈
-                    break 
-                except Exception as e:
-                    error_msgs.append(f"[{model_name} failed: {str(e)}]")
-            
-            if not response:
-                # 所有模型都失敗了
-                full_error = " ; ".join(error_msgs)
-                raise Exception(f"無可用模型: {full_error}")
-                
+            response = model.generate_content(prompt, safety_settings=safety_settings)
             analysis_text = response.text.strip()
             match["ai_analysis"] = analysis_text
             match["analysis_source"] = "gemini"
-            print(f"  🤖 AI 分析完成: {match['home_team']} vs {match['away_team']}")
+            print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成: {match['home_team']} vs {match['away_team']}")
             
-            # 避免觸發免費 API 每分鐘 15 次請求的限制
-            time.sleep(6)
+            # 免費版每分鐘只能 5 次，間隔 15 秒確保安全
+            if i < len(matches_to_analyze) - 1:
+                print(f"  ⏳ 等待 15 秒避免觸發速率限制...")
+                time.sleep(15)
         except Exception as e:
             error_msg = str(e).replace('"', "'")
             print(f"  ⚠️ AI 分析失敗: {error_msg}")
