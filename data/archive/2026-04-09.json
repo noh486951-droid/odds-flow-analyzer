@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-09T18:06:28.185552+08:00",
-  "last_updated_display": "2026/04/09 18:06 (台北時間)",
+  "last_updated": "2026-04-09T18:12:20.813663+08:00",
+  "last_updated_display": "2026/04/09 18:12 (台北時間)",
   "matches": {
     "0852cffec341701f6a0dde8619ae9f56": {
       "id": "0852cffec341701f6a0dde8619ae9f56",
@@ -115,8 +115,8 @@
         }
       ],
       "avg_odds": {
-        "Chicago Bulls": 1.395,
-        "Washington Wizards": 3.041
+        "Chicago Bulls": 1.394,
+        "Washington Wizards": 3.045
       },
       "true_probs": {
         "Chicago Bulls": 68.6,
@@ -156,15 +156,15 @@
       "first_seen": "2026-04-09T16:27:35.506099+08:00",
       "is_new": false,
       "odds_change": {
-        "Chicago Bulls": -0.002,
-        "Washington Wizards": 0.003
+        "Chicago Bulls": -0.003,
+        "Washington Wizards": 0.007
       },
       "change_pct": {
-        "Chicago Bulls": -0.14,
-        "Washington Wizards": 0.1
+        "Chicago Bulls": -0.21,
+        "Washington Wizards": 0.23
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 47.34663847s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 47\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "53b49bbe56f8581f353bbbb5c6179ac5": {
@@ -250,20 +250,20 @@
           "markets": {
             "h2h": {
               "Miami Heat": {
-                "price": 2.49
+                "price": 2.51
               },
               "Toronto Raptors": {
-                "price": 1.59
+                "price": 1.58
               }
             },
             "spreads": {
               "Miami Heat": {
-                "price": 1.95,
-                "point": 4.0
+                "price": 1.93,
+                "point": 4.5
               },
               "Toronto Raptors": {
-                "price": 1.87,
-                "point": -4.0
+                "price": 1.89,
+                "point": -4.5
               }
             },
             "totals": {
@@ -280,12 +280,12 @@
         }
       ],
       "avg_odds": {
-        "Miami Heat": 2.468,
-        "Toronto Raptors": 1.565
+        "Miami Heat": 2.473,
+        "Toronto Raptors": 1.563
       },
       "true_probs": {
-        "Miami Heat": 38.8,
-        "Toronto Raptors": 61.2
+        "Miami Heat": 38.7,
+        "Toronto Raptors": 61.3
       },
       "other_markets": {
         "spreads": {
@@ -321,15 +321,15 @@
       "first_seen": "2026-04-09T16:27:35.506113+08:00",
       "is_new": false,
       "odds_change": {
-        "Miami Heat": 0.038,
-        "Toronto Raptors": -0.014
+        "Miami Heat": 0.043,
+        "Toronto Raptors": -0.016
       },
       "change_pct": {
-        "Miami Heat": 1.56,
-        "Toronto Raptors": -0.89
+        "Miami Heat": 1.77,
+        "Toronto Raptors": -1.01
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 43.62267859s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 43\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "bf30a732402325cab54ab666ee0f5c11": {
@@ -445,7 +445,7 @@
         }
       ],
       "avg_odds": {
-        "Boston Celtics": 2.514,
+        "Boston Celtics": 2.515,
         "New York Knicks": 1.549
       },
       "true_probs": {
@@ -486,15 +486,15 @@
       "first_seen": "2026-04-09T16:27:35.506117+08:00",
       "is_new": false,
       "odds_change": {
-        "Boston Celtics": 0.013,
+        "Boston Celtics": 0.014,
         "New York Knicks": -0.006
       },
       "change_pct": {
-        "Boston Celtics": 0.52,
+        "Boston Celtics": 0.56,
         "New York Knicks": -0.39
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 43.238066925s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 43\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "625bbdf7bc0bdf1d57b3f97742908221": {
@@ -734,7 +734,7 @@
       ],
       "avg_odds": {
         "Houston Rockets": 1.583,
-        "Philadelphia 76ers": 2.421
+        "Philadelphia 76ers": 2.42
       },
       "true_probs": {
         "Houston Rockets": 60.5,
@@ -775,14 +775,14 @@
       "is_new": false,
       "odds_change": {
         "Houston Rockets": -0.001,
-        "Philadelphia 76ers": 0.003
+        "Philadelphia 76ers": 0.002
       },
       "change_pct": {
         "Houston Rockets": -0.06,
-        "Philadelphia 76ers": 0.12
+        "Philadelphia 76ers": 0.08
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 42.92750199s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 42\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "29fe17f5b19da82ce2957c3683a10aa7": {
@@ -898,12 +898,12 @@
         }
       ],
       "avg_odds": {
-        "Golden State Warriors": 1.509,
-        "Los Angeles Lakers": 2.625
+        "Golden State Warriors": 1.511,
+        "Los Angeles Lakers": 2.617
       },
       "true_probs": {
-        "Golden State Warriors": 63.5,
-        "Los Angeles Lakers": 36.5
+        "Golden State Warriors": 63.4,
+        "Los Angeles Lakers": 36.6
       },
       "other_markets": {
         "spreads": {
@@ -939,15 +939,15 @@
       "first_seen": "2026-04-09T16:27:35.506124+08:00",
       "is_new": false,
       "odds_change": {
-        "Golden State Warriors": -0.008,
-        "Los Angeles Lakers": 0.032
+        "Golden State Warriors": -0.006,
+        "Los Angeles Lakers": 0.024
       },
       "change_pct": {
-        "Golden State Warriors": -0.53,
-        "Los Angeles Lakers": 1.23
+        "Golden State Warriors": -0.4,
+        "Los Angeles Lakers": 0.93
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 42.514972288s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 42\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "10d3a3a8df4f15a0754da8195a47c41f": {
@@ -4019,11 +4019,20 @@
         "Real Madrid": 1.284,
         "Draw": 6.159
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T18:06:25.697917+08:00",
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "is_new": false,
+      "odds_change": {
+        "Girona": 0.0,
+        "Real Madrid": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Girona": 0.0,
+        "Real Madrid": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false,
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 42.175009975s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 42\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "016d8d76a7cc27f1bc8cc6775df92683": {
@@ -4149,11 +4158,20 @@
         "Real Sociedad": 1.731,
         "Draw": 3.738
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T18:06:25.697920+08:00",
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "is_new": false,
+      "odds_change": {
+        "Alavés": 0.0,
+        "Real Sociedad": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Alavés": 0.0,
+        "Real Sociedad": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false,
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 40.750684815s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 40\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "fb63c2d00e89a32791a12a8859455b11": {
@@ -4279,10 +4297,19 @@
         "Valencia": 2.956,
         "Draw": 3.28
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697922+08:00"
+      "first_seen": "2026-04-09T18:06:25.697922+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Elche CF": 0.0,
+        "Valencia": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Elche CF": 0.0,
+        "Valencia": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "55b745a0778185dd0225c9412bb3b69a": {
       "id": "55b745a0778185dd0225c9412bb3b69a",
@@ -4407,11 +4434,20 @@
         "Espanyol": 9.237,
         "Draw": 6.476
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T18:06:25.697928+08:00",
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "is_new": false,
+      "odds_change": {
+        "Barcelona": 0.0,
+        "Espanyol": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Barcelona": 0.0,
+        "Espanyol": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false,
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 40.432599535s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 40\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "c81f5a4b65049a4e0a90fc94be704069": {
@@ -4525,10 +4561,19 @@
         "Sevilla": 3.208,
         "Draw": 3.164
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697930+08:00"
+      "first_seen": "2026-04-09T18:06:25.697930+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Atlético Madrid": 0.0,
+        "Sevilla": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Atlético Madrid": 0.0,
+        "Sevilla": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "ed245ff0289860db9cd29c9b76b44926": {
       "id": "ed245ff0289860db9cd29c9b76b44926",
@@ -4663,10 +4708,19 @@
         "Real Betis": 3.206,
         "Draw": 3.472
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697932+08:00"
+      "first_seen": "2026-04-09T18:06:25.697932+08:00",
+      "is_new": false,
+      "odds_change": {
+        "CA Osasuna": 0.0,
+        "Real Betis": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "CA Osasuna": 0.0,
+        "Real Betis": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "21c5b81029447a350af6e553f1e31c5c": {
       "id": "21c5b81029447a350af6e553f1e31c5c",
@@ -4738,13 +4792,13 @@
         }
       ],
       "avg_odds": {
-        "Mallorca": 2.483,
-        "Rayo Vallecano": 2.959,
+        "Mallorca": 2.468,
+        "Rayo Vallecano": 2.975,
         "Draw": 3.225
       },
       "true_probs": {
-        "Mallorca": 38.3,
-        "Rayo Vallecano": 32.2,
+        "Mallorca": 38.5,
+        "Rayo Vallecano": 32.0,
         "Draw": 29.5
       },
       "other_markets": {
@@ -4779,10 +4833,19 @@
         "Rayo Vallecano": 2.959,
         "Draw": 3.225
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697934+08:00"
+      "first_seen": "2026-04-09T18:06:25.697934+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Mallorca": -0.015,
+        "Rayo Vallecano": 0.016,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Mallorca": -0.6,
+        "Rayo Vallecano": 0.54,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "1a8b233790dce45b2219cdb234a7916c": {
       "id": "1a8b233790dce45b2219cdb234a7916c",
@@ -4854,7 +4917,7 @@
         }
       ],
       "avg_odds": {
-        "Celta Vigo": 1.662,
+        "Celta Vigo": 1.661,
         "Oviedo": 4.893,
         "Draw": 4.106
       },
@@ -4895,11 +4958,20 @@
         "Oviedo": 4.893,
         "Draw": 4.106
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T18:06:25.697938+08:00",
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "is_new": false,
+      "odds_change": {
+        "Celta Vigo": -0.001,
+        "Oviedo": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Celta Vigo": -0.06,
+        "Oviedo": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false,
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 40.123640912s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 40\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "a1e8d7ee23f8c72f75be14bb70723d99": {
@@ -5023,10 +5095,19 @@
         "Villarreal": 3.061,
         "Draw": 3.506
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697940+08:00"
+      "first_seen": "2026-04-09T18:06:25.697940+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Athletic Bilbao": 0.0,
+        "Villarreal": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Athletic Bilbao": 0.0,
+        "Villarreal": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "c4a4e452254d87ff646343d0357d58e7": {
       "id": "c4a4e452254d87ff646343d0357d58e7",
@@ -5161,10 +5242,19 @@
         "Levante": 2.779,
         "Draw": 3.01
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697943+08:00"
+      "first_seen": "2026-04-09T18:06:25.697943+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Getafe": 0.0,
+        "Levante": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Getafe": 0.0,
+        "Levante": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "dcc73a8a22fc0f052bd085be3f7e1bbf": {
       "id": "dcc73a8a22fc0f052bd085be3f7e1bbf",
@@ -5299,10 +5389,19 @@
         "CA Osasuna": 4.311,
         "Draw": 3.424
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697945+08:00"
+      "first_seen": "2026-04-09T18:06:25.697945+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Athletic Bilbao": 0.0,
+        "CA Osasuna": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Athletic Bilbao": 0.0,
+        "CA Osasuna": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "4c05627297ffdfd1bb17dfcc1dd3b6d6": {
       "id": "4c05627297ffdfd1bb17dfcc1dd3b6d6",
@@ -5447,10 +5546,19 @@
         "Valencia": 3.014,
         "Draw": 3.121
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697947+08:00"
+      "first_seen": "2026-04-09T18:06:25.697947+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Mallorca": 0.0,
+        "Valencia": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Mallorca": 0.0,
+        "Valencia": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "ce727a41a47d5e86ddee97c7cd14928d": {
       "id": "ce727a41a47d5e86ddee97c7cd14928d",
@@ -5585,11 +5693,20 @@
         "Real Madrid": 1.271,
         "Draw": 5.788
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T18:06:25.697949+08:00",
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "is_new": false,
+      "odds_change": {
+        "Alavés": 0.0,
+        "Real Madrid": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Alavés": 0.0,
+        "Real Madrid": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false,
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 39.731986429s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 39\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "7759c10d8fefa09122099f380241a8be": {
@@ -5735,10 +5852,19 @@
         "Real Betis": 2.701,
         "Draw": 3.396
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697951+08:00"
+      "first_seen": "2026-04-09T18:06:25.697951+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Girona": 0.0,
+        "Real Betis": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Girona": 0.0,
+        "Real Betis": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "7af046b7a51c309f8f2f6c820e7bcb11": {
       "id": "7af046b7a51c309f8f2f6c820e7bcb11",
@@ -5883,10 +6009,19 @@
         "Elche CF": 4.105,
         "Draw": 3.774
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697953+08:00"
+      "first_seen": "2026-04-09T18:06:25.697953+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Atlético Madrid": 0.0,
+        "Elche CF": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Atlético Madrid": 0.0,
+        "Elche CF": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "a6a0d55b933b3bb01c4ba789f4444783": {
       "id": "a6a0d55b933b3bb01c4ba789f4444783",
@@ -6021,10 +6156,19 @@
         "Real Sociedad": 1.777,
         "Draw": 3.149
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697955+08:00"
+      "first_seen": "2026-04-09T18:06:25.697955+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Getafe": 0.0,
+        "Real Sociedad": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Getafe": 0.0,
+        "Real Sociedad": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "445c97066158652824e10b05bc53c6ae": {
       "id": "445c97066158652824e10b05bc53c6ae",
@@ -6159,11 +6303,20 @@
         "Celta Vigo": 8.419,
         "Draw": 6.221
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T18:06:25.697957+08:00",
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.)，請參考新聞連結自行判斷。",
+      "is_new": false,
+      "odds_change": {
+        "Barcelona": 0.0,
+        "Celta Vigo": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Barcelona": 0.0,
+        "Celta Vigo": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false,
+      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 無可用模型: [gemini-2.5-flash failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 39.439385944s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 39\n}\n]] ; [gemini-1.5-flash failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-1.5-flash-latest failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.] ; [gemini-pro failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.])，請參考新聞連結自行判斷。",
       "analysis_source": "fallback"
     },
     "a3f979b998f70bcf99bcee41c65f90a5": {
@@ -6289,10 +6442,19 @@
         "Sevilla": 2.392,
         "Draw": 3.369
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697960+08:00"
+      "first_seen": "2026-04-09T18:06:25.697960+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Levante": 0.0,
+        "Sevilla": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Levante": 0.0,
+        "Sevilla": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "c208f9c1d251de9006fd23a7e9cfa948": {
       "id": "c208f9c1d251de9006fd23a7e9cfa948",
@@ -6417,10 +6579,19 @@
         "Rayo Vallecano": 1.804,
         "Draw": 3.615
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697962+08:00"
+      "first_seen": "2026-04-09T18:06:25.697962+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Espanyol": 0.0,
+        "Rayo Vallecano": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Espanyol": 0.0,
+        "Rayo Vallecano": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     },
     "fee736ef555102544f70b322b548a2cf": {
       "id": "fee736ef555102544f70b322b548a2cf",
@@ -6545,42 +6716,51 @@
         "Villarreal": 1.846,
         "Draw": 3.7
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T18:06:25.697966+08:00"
+      "first_seen": "2026-04-09T18:06:25.697966+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Oviedo": 0.0,
+        "Villarreal": 0.0,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Oviedo": 0.0,
+        "Villarreal": 0.0,
+        "Draw": 0.0
+      },
+      "is_value_bet": false
     }
   },
   "leagues": {
     "NBA": [
       "bf30a732402325cab54ab666ee0f5c11",
       "30b372ff1973370201b644c207be2dd3",
-      "53b49bbe56f8581f353bbbb5c6179ac5",
-      "29fe17f5b19da82ce2957c3683a10aa7",
       "0852cffec341701f6a0dde8619ae9f56",
-      "625bbdf7bc0bdf1d57b3f97742908221"
+      "625bbdf7bc0bdf1d57b3f97742908221",
+      "29fe17f5b19da82ce2957c3683a10aa7",
+      "53b49bbe56f8581f353bbbb5c6179ac5"
     ],
     "西甲 La Liga": [
-      "ed245ff0289860db9cd29c9b76b44926",
-      "dcc73a8a22fc0f052bd085be3f7e1bbf",
-      "a6a0d55b933b3bb01c4ba789f4444783",
-      "c4a4e452254d87ff646343d0357d58e7",
-      "ce727a41a47d5e86ddee97c7cd14928d",
-      "c208f9c1d251de9006fd23a7e9cfa948",
-      "a3f979b998f70bcf99bcee41c65f90a5",
-      "016d8d76a7cc27f1bc8cc6775df92683",
-      "21c5b81029447a350af6e553f1e31c5c",
-      "55b745a0778185dd0225c9412bb3b69a",
-      "a1e8d7ee23f8c72f75be14bb70723d99",
-      "7559b639344db13dd02fe99179c7d77f",
-      "4c05627297ffdfd1bb17dfcc1dd3b6d6",
-      "7759c10d8fefa09122099f380241a8be",
-      "fb63c2d00e89a32791a12a8859455b11",
-      "445c97066158652824e10b05bc53c6ae",
       "7af046b7a51c309f8f2f6c820e7bcb11",
+      "7759c10d8fefa09122099f380241a8be",
+      "ed245ff0289860db9cd29c9b76b44926",
+      "c208f9c1d251de9006fd23a7e9cfa948",
+      "445c97066158652824e10b05bc53c6ae",
+      "fee736ef555102544f70b322b548a2cf",
+      "7559b639344db13dd02fe99179c7d77f",
+      "016d8d76a7cc27f1bc8cc6775df92683",
+      "55b745a0778185dd0225c9412bb3b69a",
+      "a3f979b998f70bcf99bcee41c65f90a5",
+      "a6a0d55b933b3bb01c4ba789f4444783",
       "c81f5a4b65049a4e0a90fc94be704069",
+      "fb63c2d00e89a32791a12a8859455b11",
+      "dcc73a8a22fc0f052bd085be3f7e1bbf",
+      "ce727a41a47d5e86ddee97c7cd14928d",
+      "21c5b81029447a350af6e553f1e31c5c",
       "1a8b233790dce45b2219cdb234a7916c",
-      "fee736ef555102544f70b322b548a2cf"
+      "c4a4e452254d87ff646343d0357d58e7",
+      "4c05627297ffdfd1bb17dfcc1dd3b6d6",
+      "a1e8d7ee23f8c72f75be14bb70723d99"
     ]
   },
   "news": {
@@ -6753,6 +6933,10 @@
     },
     {
       "time": "2026-04-09T18:06:28.193065+08:00",
+      "matches_count": 46
+    },
+    {
+      "time": "2026-04-09T18:12:20.826864+08:00",
       "matches_count": 46
     }
   ]
