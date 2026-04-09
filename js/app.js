@@ -161,6 +161,7 @@ function createMatchCard(match) {
     `;
   }
 
+  return `
     <div class="match-card ${isSig}">
       ${isValueBetHtml}
       <div class="match-header">
@@ -194,6 +195,7 @@ function createMatchCard(match) {
       ${probHtml}
       ${aiHtml}
     </div>
+  `;
 }
 
 function calculateChangeClass(current, open) {
