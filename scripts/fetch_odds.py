@@ -336,17 +336,36 @@ def analyze_with_ai(matches_with_changes, news_items):
         return []
 
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    
+    # 關閉所有的安全過濾，因為運彩分析可能被誤判為違規內容
+    from google.generativeai.types import HarmCategory, HarmBlockThreshold
+    safety_settings = {
+        HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+    }
 
     results = []
+    import time
     for match in matches_with_changes:
         prompt = build_analysis_prompt(match, news_items)
         try:
-            response = model.generate_content(prompt)
+            try:
+                model = genai.GenerativeModel("gemini-2.0-flash")
+                response = model.generate_content(prompt, safety_settings=safety_settings)
+            except Exception as e:
+                print(f"  ⚠️ 嘗試 gemini-2.0-flash 失敗 ({e})，降級使用 gemini-1.5-flash")
+                model = genai.GenerativeModel("gemini-1.5-flash")
+                response = model.generate_content(prompt, safety_settings=safety_settings)
+                
             analysis_text = response.text.strip()
             match["ai_analysis"] = analysis_text
             match["analysis_source"] = "gemini"
             print(f"  🤖 AI 分析完成: {match['home_team']} vs {match['away_team']}")
+            
+            # 避免觸發免費 API 每分鐘 15 次請求的限制
+            time.sleep(4)
         except Exception as e:
             print(f"  ⚠️ AI 分析失敗: {e}")
             match["ai_analysis"] = "AI 分析暫時無法使用，請參考新聞連結自行判斷。"
