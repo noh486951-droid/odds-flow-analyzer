@@ -348,34 +348,55 @@ def analyze_with_ai(matches_with_changes, news_items):
     results = []
     import time
     
-    # 免費版 gemini-2.5-flash 限制: 每分鐘 5 次
-    # 只分析前 5 場最有價值的比賽，按最高勝率排序
+    # 免費版每日限制: gemini-2.0-flash ~1500次/天, gemini-2.5-flash 僅20次/天
+    # 每次最多分析 3 場 (每天排程4次 = 最多12次/天，安全範圍內)
     matches_with_changes.sort(
         key=lambda m: max(m.get("true_probs", {}).values(), default=50),
         reverse=True
     )
-    matches_to_analyze = matches_with_changes[:5]
+    matches_to_analyze = matches_with_changes[:3]
     print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析")
     
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    # 優先使用 gemini-2.0-flash (每日額度較高)，失敗才降級
+    MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-2.5-flash"]
+    active_model = None
+    for model_name in MODEL_PRIORITY:
+        try:
+            test_model = genai.GenerativeModel(model_name)
+            test_response = test_model.generate_content("回答OK", safety_settings=safety_settings)
+            if test_response.text:
+                active_model = test_model
+                print(f"  ✅ 使用模型: {model_name}")
+                time.sleep(5)  # 測試也消耗配額，休息一下
+                break
+        except Exception as e:
+            print(f"  ⚠️ {model_name} 不可用: {e}")
+    
+    if not active_model:
+        print("  ❌ 所有 AI 模型都不可用，跳過分析")
+        for match in matches_to_analyze:
+            match["ai_analysis"] = "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。"
+            match["analysis_source"] = "fallback"
+            results.append(match)
+        return results
     
     for i, match in enumerate(matches_to_analyze):
         prompt = build_analysis_prompt(match, news_items)
         try:
-            response = model.generate_content(prompt, safety_settings=safety_settings)
+            response = active_model.generate_content(prompt, safety_settings=safety_settings)
             analysis_text = response.text.strip()
             match["ai_analysis"] = analysis_text
             match["analysis_source"] = "gemini"
             print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成: {match['home_team']} vs {match['away_team']}")
             
-            # 免費版每分鐘只能 5 次，間隔 15 秒確保安全
+            # 每次間隔 15 秒避免 RPM 限制
             if i < len(matches_to_analyze) - 1:
                 print(f"  ⏳ 等待 15 秒避免觸發速率限制...")
                 time.sleep(15)
         except Exception as e:
             error_msg = str(e).replace('"', "'")
             print(f"  ⚠️ AI 分析失敗: {error_msg}")
-            match["ai_analysis"] = f"AI 分析暫時無法使用 (API 錯誤: {error_msg})，請參考新聞連結自行判斷。"
+            match["ai_analysis"] = f"AI 分析暫時無法使用 ({error_msg[:80]})。請參考勝率數據判斷。"
             match["analysis_source"] = "fallback"
 
         results.append(match)
