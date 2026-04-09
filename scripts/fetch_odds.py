@@ -341,6 +341,24 @@ def build_analysis_prompt(match, news_items):
     change = match.get("odds_change", {})
     change_pct = match.get("change_pct", {})
 
+    true_probs = match.get("true_probs", {})
+    other_markets = match.get("other_markets", {})
+    spreads = other_markets.get("spreads", {})
+    totals = other_markets.get("totals", {})
+
+    # 提取讓分和大小分
+    spread_str = "無"
+    for k, v in spreads.items():
+        if "point" in v:
+            spread_str = f"主讓 {v['point']}"
+            break
+
+    total_str = "無"
+    for k, v in totals.items():
+        if "point" in v:
+            total_str = f"大小 {v['point']}"
+            break
+
     # 組織新聞文字
     news_text = ""
     for item in news_items[:10]:
@@ -350,11 +368,15 @@ def build_analysis_prompt(match, news_items):
 
 ## 比賽資訊
 - 聯賽: {league}
-- 主隊: {home}
-- 客隊: {away}
+- 主隊: {home} (真實勝率: {true_probs.get(home, '未知')}%)
+- 客隊: {away} (真實勝率: {true_probs.get(away, '未知')}%)
 - 開賽時間: {match.get('commence_time', '未知')}
 
-## 賠率變動
+## 附加盤口資訊
+- 讓分盤: {spread_str}
+- 大小分盤: {total_str}
+
+## 獨贏賠率變動
 """
     for team in current:
         op = opening.get(team, "N/A")
@@ -369,10 +391,11 @@ def build_analysis_prompt(match, news_items):
 {news_text}
 
 ## 你的任務
-1. 根據賠率變動及勝率數據，簡要用 1-2 句話說明哪支球隊勝算較大，以及變動原因。
-2. 若發現賠率明顯下降，可提醒這可能是價值注或聰明錢的流向。
-3. 如果新聞無佐證，誠實回答「無明顯新聞佐證，可能為資金流動所致」。
-4. 回答格式：直接給出結論，不要加前綴。
+1. 結合「真實勝率」與「附加盤口 (讓分/大小)」，請在開頭給出一個超級具體的【💡 投注推薦】，例如：【💡 推薦：主讓 -6.5】或【💡 推薦：大分 246.5】或【💡 推薦：客隊獨贏】。
+2. 根據賠率變動及新聞，簡要用 1-2 句話說明你的推薦原因，解釋為何考量讓分後依然看好這一方。
+3. 若發現賠率明顯下降，可提醒這可能是價值注或聰明錢的流向。
+4. 如果新聞無佐證，表明「無明顯新聞佐證，可能為資金流動所致」。
+5. 回答格式：第一行務必是【💡 推薦：xxx】，從第二行開始說明原因。
 """
     return prompt
 
