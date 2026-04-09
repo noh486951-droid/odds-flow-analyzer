@@ -11,6 +11,21 @@ import requests
 import feedparser
 import google.generativeai as genai
 from datetime import datetime, timezone, timedelta
+import time as time_module
+
+# TheSportsDB 免費 API (不需註冊)
+SPORTSDB_BASE = "https://www.thesportsdb.com/api/v1/json/3"
+SPORTSDB_CACHE = {}  # team_name -> team_id cache
+
+# 傷兵關鍵字
+INJURY_KEYWORDS = [
+    "injury", "injured", "out", "doubtful", "questionable",
+    "ruled out", "miss", "sidelined", "hamstring", "ACL",
+    "concussion", "day-to-day", "GTD", "ankle", "knee",
+    "fracture", "sprain", "strain", "surgery", "rest",
+    "load management", "dnp", "will not play", "expected to miss",
+    "受傷", "缺陣", "傷停", "傷病", "休息"
+]
 
 # ============================================================
 # 設定區
@@ -323,6 +338,227 @@ def fetch_news(category="nba", max_items=15):
     return unique[:20]
 
 
+def filter_injury_news(news_items, home_team, away_team):
+    """從新聞中篩選出與兩隊相關的傷兵消息"""
+    injury_alerts = []
+    home_words = home_team.lower().split()
+    away_words = away_team.lower().split()
+    
+    for item in news_items:
+        text = (item.get("title", "") + " " + item.get("summary", "")).lower()
+        
+        # 檢查是否包含傷兵關鍵字
+        has_injury_kw = any(kw in text for kw in INJURY_KEYWORDS)
+        if not has_injury_kw:
+            continue
+            
+        # 檢查是否與某一隊相關
+        related_team = None
+        if any(w in text for w in home_words if len(w) > 3):
+            related_team = home_team
+        elif any(w in text for w in away_words if len(w) > 3):
+            related_team = away_team
+            
+        if related_team:
+            injury_alerts.append({
+                "team": related_team,
+                "title": item["title"],
+                "link": item.get("link", ""),
+            })
+    
+    return injury_alerts[:5]  # 最多5則
+
+
+# ============================================================
+# TheSportsDB 模組 (H2H + 近期戰績)
+# ============================================================
+def search_team_id(team_name):
+    """從 TheSportsDB 搜尋隊伍 ID"""
+    if team_name in SPORTSDB_CACHE:
+        return SPORTSDB_CACHE[team_name]
+    
+    try:
+        url = f"{SPORTSDB_BASE}/searchteams.php"
+        resp = requests.get(url, params={"t": team_name}, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            teams = data.get("teams")
+            if teams and len(teams) > 0:
+                team_id = teams[0].get("idTeam")
+                SPORTSDB_CACHE[team_name] = team_id
+                return team_id
+    except Exception as e:
+        print(f"    ⚠️ TheSportsDB 搜尋失敗 ({team_name}): {e}")
+    
+    return None
+
+
+def fetch_team_last_events(team_id, count=15):
+    """取得某隊最近的比賽結果"""
+    try:
+        url = f"{SPORTSDB_BASE}/eventslast.php"
+        resp = requests.get(url, params={"id": team_id}, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            return data.get("results", []) or []
+    except Exception as e:
+        print(f"    ⚠️ TheSportsDB 取近期賽事失敗: {e}")
+    return []
+
+
+def fetch_h2h_and_form(home_team, away_team):
+    """取得 H2H 交手紀錄與雙方近5場戰績"""
+    result = {
+        "h2h_history": [],
+        "home_form": {"record": "", "wins": 0, "losses": 0, "details": []},
+        "away_form": {"record": "", "wins": 0, "losses": 0, "details": []},
+    }
+    
+    # 搜尋隊伍 ID
+    home_id = search_team_id(home_team)
+    time_module.sleep(1)  # 避免速率限制
+    away_id = search_team_id(away_team)
+    time_module.sleep(1)
+    
+    if not home_id and not away_id:
+        print(f"    ⚠️ 無法找到隊伍 ID: {home_team}, {away_team}")
+        return result
+    
+    # 取主隊近期比賽
+    if home_id:
+        home_events = fetch_team_last_events(home_id)
+        time_module.sleep(1)
+        
+        # 計算近5場戰績
+        home_record = []
+        for ev in home_events[:5]:
+            home_score = int(ev.get("intHomeScore", 0) or 0)
+            away_score = int(ev.get("intAwayScore", 0) or 0)
+            is_home = ev.get("idHomeTeam") == home_id
+            team_score = home_score if is_home else away_score
+            opp_score = away_score if is_home else home_score
+            won = team_score > opp_score
+            home_record.append("W" if won else "L")
+            result["home_form"]["details"].append({
+                "date": ev.get("dateEvent", ""),
+                "opponent": ev.get("strAwayTeam") if is_home else ev.get("strHomeTeam"),
+                "score": f"{home_score}-{away_score}",
+                "result": "W" if won else "L"
+            })
+        
+        result["home_form"]["record"] = "".join(home_record)
+        result["home_form"]["wins"] = home_record.count("W")
+        result["home_form"]["losses"] = home_record.count("L")
+        
+        # 從主隊的比賽中找 H2H
+        for ev in home_events:
+            ev_home = ev.get("strHomeTeam", "")
+            ev_away = ev.get("strAwayTeam", "")
+            # 檢查是否是兩隊的交手
+            teams_in_event = [ev_home.lower(), ev_away.lower()]
+            if any(w in " ".join(teams_in_event) for w in away_team.lower().split() if len(w) > 3):
+                h2h_entry = {
+                    "date": ev.get("dateEvent", ""),
+                    "home": ev_home,
+                    "away": ev_away,
+                    "score": f"{ev.get('intHomeScore', '?')}-{ev.get('intAwayScore', '?')}"
+                }
+                if h2h_entry not in result["h2h_history"]:
+                    result["h2h_history"].append(h2h_entry)
+    
+    # 取客隊近期比賽
+    if away_id:
+        away_events = fetch_team_last_events(away_id)
+        time_module.sleep(1)
+        
+        away_record = []
+        for ev in away_events[:5]:
+            home_score = int(ev.get("intHomeScore", 0) or 0)
+            away_score = int(ev.get("intAwayScore", 0) or 0)
+            is_home = ev.get("idHomeTeam") == away_id
+            team_score = home_score if is_home else away_score
+            opp_score = away_score if is_home else home_score
+            won = team_score > opp_score
+            away_record.append("W" if won else "L")
+            result["away_form"]["details"].append({
+                "date": ev.get("dateEvent", ""),
+                "opponent": ev.get("strAwayTeam") if is_home else ev.get("strHomeTeam"),
+                "score": f"{home_score}-{away_score}",
+                "result": "W" if won else "L"
+            })
+        
+        result["away_form"]["record"] = "".join(away_record)
+        result["away_form"]["wins"] = away_record.count("W")
+        result["away_form"]["losses"] = away_record.count("L")
+        
+        # 從客隊的比賽中補充 H2H
+        for ev in away_events:
+            ev_home = ev.get("strHomeTeam", "")
+            ev_away = ev.get("strAwayTeam", "")
+            teams_in_event = [ev_home.lower(), ev_away.lower()]
+            if any(w in " ".join(teams_in_event) for w in home_team.lower().split() if len(w) > 3):
+                h2h_entry = {
+                    "date": ev.get("dateEvent", ""),
+                    "home": ev_home,
+                    "away": ev_away,
+                    "score": f"{ev.get('intHomeScore', '?')}-{ev.get('intAwayScore', '?')}"
+                }
+                if h2h_entry not in result["h2h_history"]:
+                    result["h2h_history"].append(h2h_entry)
+    
+    # H2H 按日期排序 (最新的在前)
+    result["h2h_history"].sort(key=lambda x: x.get("date", ""), reverse=True)
+    result["h2h_history"] = result["h2h_history"][:5]  # 最多5場
+    
+    return result
+
+
+# ============================================================
+# NBA 背靠背偵測
+# ============================================================
+def detect_back_to_back(matches):
+    """偵測 NBA 背靠背第二場的疲勞隊伍"""
+    # 只處理 NBA
+    nba_matches = [m for m in matches if "nba" in m.get("sport_key", "").lower()]
+    if len(nba_matches) < 2:
+        return
+    
+    # 建立隊伍 -> 比賽時間的映射
+    team_schedule = {}  # team -> list of (commence_time, match_ref)
+    for match in nba_matches:
+        ct = match.get("commence_time", "")
+        if not ct:
+            continue
+        try:
+            game_time = datetime.fromisoformat(ct.replace("Z", "+00:00"))
+        except:
+            continue
+        
+        for team in [match["home_team"], match["away_team"]]:
+            if team not in team_schedule:
+                team_schedule[team] = []
+            team_schedule[team].append((game_time, match))
+    
+    # 檢查每隊是否有背靠背
+    for team, games in team_schedule.items():
+        games.sort(key=lambda x: x[0])
+        for i in range(1, len(games)):
+            time_diff = (games[i][0] - games[i-1][0]).total_seconds() / 3600
+            if 18 <= time_diff <= 30:  # 18~30 小時間隔 = 背靠背
+                match_ref = games[i][1]
+                prev_match = games[i-1][1]
+                prev_opponent = prev_match["away_team"] if prev_match["home_team"] == team else prev_match["home_team"]
+                
+                if "fatigue_alert" not in match_ref:
+                    match_ref["fatigue_alert"] = []
+                match_ref["fatigue_alert"].append({
+                    "team": team,
+                    "type": "b2b",
+                    "message": f"背靠背第二場 (前一場 vs {prev_opponent})"
+                })
+                print(f"  😴 背靠背偵測: {team} (前一場 vs {prev_opponent})")
+
+
 # ============================================================
 # AI 分析模組 (Gemini)
 # ============================================================
@@ -405,7 +641,7 @@ def analyze_with_ai(matches_with_changes, news_items):
 
 
 def build_analysis_prompt(match, news_items):
-    """建構 AI 分析的 Prompt"""
+    """建構 AI 分析的 Prompt (含傷兵/H2H/疲勞)"""
     home = match["home_team"]
     away = match["away_team"]
     league = match["league"]
@@ -437,6 +673,30 @@ def build_analysis_prompt(match, news_items):
     for item in news_items[:10]:
         news_text += f"- {item['title']}\n"
 
+    # 傷兵資訊
+    injury_text = "無已知傷兵消息"
+    injuries = match.get("injury_alerts", [])
+    if injuries:
+        injury_text = "\n".join([f"- 🏥 [{inj['team']}] {inj['title']}" for inj in injuries])
+
+    # 背靠背疲勞
+    fatigue_text = "無"
+    fatigue = match.get("fatigue_alert", [])
+    if fatigue:
+        fatigue_text = "\n".join([f"- 😴 {fa['team']}: {fa['message']}" for fa in fatigue])
+
+    # H2H 歷史交手
+    h2h_text = "無歷史交手資料"
+    h2h = match.get("h2h_history", [])
+    if h2h:
+        h2h_text = "\n".join([f"- {h['date']}: {h['home']} vs {h['away']} ({h['score']})" for h in h2h])
+
+    # 近期戰績
+    home_form = match.get("home_form", {})
+    away_form = match.get("away_form", {})
+    form_text = f"- {home}: 近5場 {home_form.get('record', '未知')} ({home_form.get('wins', 0)}勝{home_form.get('losses', 0)}負)\n"
+    form_text += f"- {away}: 近5場 {away_form.get('record', '未知')} ({away_form.get('wins', 0)}勝{away_form.get('losses', 0)}負)"
+
     prompt = f"""你是一位專業的運動彩券分析師，請用繁體中文回答。
 
 ## 比賽資訊
@@ -448,6 +708,18 @@ def build_analysis_prompt(match, news_items):
 ## 附加盤口資訊
 - 讓分盤: {spread_str}
 - 大小分盤: {total_str}
+
+## 傷兵快訊
+{injury_text}
+
+## 疲勞警示
+{fatigue_text}
+
+## 歷史交手紀錄
+{h2h_text}
+
+## 近期戰績
+{form_text}
 
 ## 獨贏賠率變動
 """
@@ -464,11 +736,10 @@ def build_analysis_prompt(match, news_items):
 {news_text}
 
 ## 你的任務
-1. 結合「真實勝率」與「附加盤口 (讓分/大小)」，請在開頭給出一個超級具體的【💡 投注推薦】，例如：【💡 推薦：主讓 -6.5】或【💡 推薦：大分 246.5】或【💡 推薦：客隊獨贏】。
-2. 根據賠率變動及新聞，簡要用 1-2 句話說明你的推薦原因，解釋為何考量讓分後依然看好這一方。
-3. 若發現賠率明顯下降，可提醒這可能是價值注或聰明錢的流向。
-4. 如果新聞無佐證，表明「無明顯新聞佐證，可能為資金流動所致」。
-5. 回答格式：第一行務必是【💡 推薦：xxx】，從第二行開始說明原因。
+1. 結合「真實勝率」「讓分/大小」「傷兵」「疲勞」「近期戰績」「歷史交手」，在開頭給出【💡 投注推薦】（例如：【💡 推薦：主讓 -6.5】或【💡 推薦：大分 246.5】）。
+2. 用 2~3 句話說明推薦原因，必須提到你考量了哪些關鍵因素（傷兵？背靠背？近期戰績？H2H？）。
+3. 若有傷兵或背靠背疲勞，必須特別提醒其對盤口的可能影響。
+4. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因。控制在 100 字以內。
 """
     return prompt
 
@@ -614,6 +885,36 @@ def main():
         "soccer": fetch_news("soccer"),
     }
     print(f"  NBA 新聞: {len(news['nba'])} 則, 足球新聞: {len(news['soccer'])} 則")
+
+    # 5.5 傷兵篩選
+    print("\n🏥 篩選傷兵資訊...")
+    all_news = news["nba"] + news["soccer"]
+    injury_count = 0
+    for match in matches_with_changes:
+        injuries = filter_injury_news(all_news, match["home_team"], match["away_team"])
+        if injuries:
+            match["injury_alerts"] = injuries
+            injury_count += len(injuries)
+    print(f"  🏥 共發現 {injury_count} 則傷兵相關新聞")
+
+    # 5.6 NBA 背靠背偵測
+    print("\n😴 偵測 NBA 背靠背...")
+    detect_back_to_back(matches_with_changes)
+
+    # 5.7 TheSportsDB: H2H + 近5場戰績 (只對前8場比賽抓取，避免速率限制)
+    print("\n📊 抓取 H2H 交手紀錄與近期戰績...")
+    for i, match in enumerate(matches_with_changes[:8]):
+        try:
+            h2h_data = fetch_h2h_and_form(match["home_team"], match["away_team"])
+            match["h2h_history"] = h2h_data["h2h_history"]
+            match["home_form"] = h2h_data["home_form"]
+            match["away_form"] = h2h_data["away_form"]
+            form_home = h2h_data['home_form'].get('record', '')
+            form_away = h2h_data['away_form'].get('record', '')
+            h2h_count = len(h2h_data['h2h_history'])
+            print(f"  [{i+1}] {match['home_team']}({form_home}) vs {match['away_team']}({form_away}), H2H: {h2h_count}場")
+        except Exception as e:
+            print(f"  ⚠️ H2H 抓取失敗 ({match['home_team']} vs {match['away_team']}): {e}")
 
     # 6. AI 分析 (僅對有顯著變動的比賽)
     if significant:

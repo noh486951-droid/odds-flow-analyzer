@@ -105,6 +105,40 @@ function createMatchCard(match) {
     // 價值注徽章
     const isValueBetHtml = match.is_value_bet ? '<div class="value-bet-badge">💎 價值注警示</div>' : '';
 
+    // 傷兵標籤
+    let injuryHtml = '';
+    const injuries = match.injury_alerts || [];
+    if (injuries.length > 0) {
+      injuryHtml = `<div class="alert-tag injury-tag">🏥 傷兵 ${injuries.length} 則</div>`;
+    }
+
+    // 疲勞標籤
+    let fatigueHtml = '';
+    const fatigue = match.fatigue_alert || [];
+    if (fatigue.length > 0) {
+      fatigueHtml = fatigue.map(f => 
+        `<div class="alert-tag fatigue-tag">😴 ${f.team} 背靠背</div>`
+      ).join('');
+    }
+
+    // 近期戰績
+    let formHtml = '';
+    const homeForm = match.home_form?.record || '';
+    const awayForm = match.away_form?.record || '';
+    if (homeForm || awayForm) {
+      const renderDots = (record) => record.split('').map(r => 
+        `<span class="form-dot ${r === 'W' ? 'form-win' : 'form-loss'}">${r}</span>`
+      ).join('');
+      formHtml = `
+        <div class="form-row">
+          <span class="form-label">近況</span>
+          <span class="form-dots">${renderDots(homeForm)}</span>
+          <span class="form-vs">vs</span>
+          <span class="form-dots">${renderDots(awayForm)}</span>
+        </div>
+      `;
+    }
+
     // 其他盤口 (讓分、大小、雙進)
     let otherMarketsHtml = '';
     const spreads = match.other_markets?.spreads || {};
@@ -144,7 +178,6 @@ function createMatchCard(match) {
 
     // 勝率進度條
     let probHtml = '';
-    // 防呆：確保 true_probs 存在且不為 null
     if (match.true_probs && Object.keys(match.true_probs).length > 0) {
       const probHome = match.true_probs[match.home_team] || 50;
       const probAway = match.true_probs[match.away_team] || 50;
@@ -164,22 +197,30 @@ function createMatchCard(match) {
 
     let aiHtml = '';
     if (match.ai_analysis) {
+      const shortAnalysis = match.ai_analysis.length > 120 
+        ? match.ai_analysis.substring(0, 120) + '...' 
+        : match.ai_analysis;
       aiHtml = `
         <div class="ai-analysis">
           <div class="ai-header">
             <span>🤖 AI 診斷分析</span>
           </div>
-          <div class="ai-content">${match.ai_analysis}</div>
+          <div class="ai-content">${shortAnalysis}</div>
         </div>
       `;
     }
 
     return `
-      <div class="match-card ${isSig}">
+      <div class="match-card ${isSig}" onclick="openMatchDetail('${match.id}')" style="cursor:pointer" title="點擊查看詳情">
         ${isValueBetHtml}
         <div class="match-header">
           <span class="match-league">${match.league || '未知聯賽'}</span>
           <span>開賽: ${formatTime(match.commence_time)}</span>
+        </div>
+
+        <div class="alert-tags">
+          ${injuryHtml}
+          ${fatigueHtml}
         </div>
         
         <div class="other-markets">
@@ -205,8 +246,11 @@ function createMatchCard(match) {
           </div>
         </div>
         
+        ${formHtml}
         ${probHtml}
         ${aiHtml}
+
+        <div class="card-footer-hint">📋 點擊查看完整分析</div>
       </div>
     `;
   } catch (error) {
@@ -214,6 +258,121 @@ function createMatchCard(match) {
     return `<div class="match-card"><div class="empty-state">賽事資料載入錯誤</div></div>`;
   }
 }
+
+// ============================================================
+// Match Detail Modal
+// ============================================================
+function openMatchDetail(matchId) {
+  if (!AppState.currentData?.matches?.[matchId]) return;
+  const match = AppState.currentData.matches[matchId];
+  
+  const modal = document.getElementById('matchDetailModal');
+  const content = document.getElementById('modalContent');
+  
+  // H2H
+  let h2hHtml = '<p class="modal-empty">暫無歷史交手資料</p>';
+  const h2h = match.h2h_history || [];
+  if (h2h.length > 0) {
+    h2hHtml = `<table class="h2h-table">
+      <tr><th>日期</th><th>主隊</th><th>比分</th><th>客隊</th></tr>
+      ${h2h.map(h => `<tr><td>${h.date}</td><td>${h.home}</td><td class="h2h-score">${h.score}</td><td>${h.away}</td></tr>`).join('')}
+    </table>`;
+  }
+
+  // Recent form
+  const renderFormDetail = (form, teamName) => {
+    if (!form?.details?.length) return `<p class="modal-empty">${teamName}: 無近期資料</p>`;
+    const dots = (form.record || '').split('').map(r => 
+      `<span class="form-dot ${r === 'W' ? 'form-win' : 'form-loss'}">${r}</span>`
+    ).join('');
+    const details = form.details.map(d => 
+      `<div class="form-detail-row"><span>${d.date}</span><span>vs ${d.opponent}</span><span class="${d.result === 'W' ? 'form-win' : 'form-loss'}">${d.score} (${d.result})</span></div>`
+    ).join('');
+    return `<div class="form-section"><h4>${teamName} ${dots} (${form.wins}勝${form.losses}負)</h4>${details}</div>`;
+  };
+
+  // Injuries
+  let injuryHtml = '<p class="modal-empty">無已知傷兵消息</p>';
+  const injuries = match.injury_alerts || [];
+  if (injuries.length > 0) {
+    injuryHtml = injuries.map(inj => 
+      `<div class="injury-item"><span class="injury-team">${inj.team}</span><a href="${inj.link}" target="_blank">${inj.title}</a></div>`
+    ).join('');
+  }
+
+  // Fatigue
+  let fatigueHtml = '';
+  const fatigue = match.fatigue_alert || [];
+  if (fatigue.length > 0) {
+    fatigueHtml = `<div class="modal-section"><h3>😴 疲勞警示</h3>` +
+      fatigue.map(f => `<div class="fatigue-item">${f.team}: ${f.message}</div>`).join('') +
+      `</div>`;
+  }
+
+  // AI Analysis
+  let aiHtml = '<p class="modal-empty">此場比賽未觸發 AI 分析</p>';
+  if (match.ai_analysis) {
+    aiHtml = `<div class="ai-content modal-ai">${match.ai_analysis}</div>`;
+  }
+
+  // Prob bar
+  const probHome = match.true_probs?.[match.home_team] || 50;
+  const probAway = match.true_probs?.[match.away_team] || 50;
+  const getGoldClass = (prob) => prob >= 60.0 ? 'gold-prob' : '';
+
+  content.innerHTML = `
+    <div class="modal-header-bar">
+      <h2>${match.home_team} vs ${match.away_team}</h2>
+      <button class="modal-close-btn" onclick="closeMatchDetail()">✕</button>
+    </div>
+    <div class="modal-meta">${match.league} | 開賽: ${formatTime(match.commence_time)}</div>
+
+    <div class="modal-prob-bar">
+      <div class="prob-labels">
+        <span class="${getGoldClass(probHome)}" style="color:var(--primary)">${probHome.toFixed(1)}%</span>
+        <span class="prob-title">真實勝率</span>
+        <span class="${getGoldClass(probAway)}" style="color:var(--warning)">${probAway.toFixed(1)}%</span>
+      </div>
+      <div class="prob-bar"><div class="prob-fill" style="width:${probHome}%"></div></div>
+    </div>
+
+    ${fatigueHtml}
+
+    <div class="modal-section">
+      <h3>🏥 傷兵快訊</h3>
+      ${injuryHtml}
+    </div>
+
+    <div class="modal-section">
+      <h3>🤖 AI 完整分析</h3>
+      ${aiHtml}
+    </div>
+
+    <div class="modal-section">
+      <h3>📊 歷史交手紀錄</h3>
+      ${h2hHtml}
+    </div>
+
+    <div class="modal-section">
+      <h3>🔥 近期戰績</h3>
+      ${renderFormDetail(match.home_form, match.home_team)}
+      ${renderFormDetail(match.away_form, match.away_team)}
+    </div>
+  `;
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMatchDetail() {
+  document.getElementById('matchDetailModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// ESC 鍵關閉 Modal
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeMatchDetail();
+});
 
 function calculateChangeClass(current, open) {
   const diff = current - open;
@@ -263,7 +422,6 @@ function renderNews(newsData) {
 // ============================================================
 function initParticles() {
   const container = document.getElementById('bgParticles');
-  // 簡單的滑鼠追蹤微光效果
   document.addEventListener('mousemove', (e) => {
     const x = (e.clientX / window.innerWidth) * 100;
     const y = (e.clientY / window.innerHeight) * 100;
