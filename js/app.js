@@ -82,6 +82,7 @@ function updateGlobalUI(data) {
   document.getElementById('statTotalMatches').textContent = data.stats.total_matches;
   document.getElementById('statSignificant').textContent = data.stats.significant_changes_count;
   document.getElementById('statLeagues').textContent = Object.keys(data.leagues || {}).length;
+  document.getElementById('statApiRemaining').textContent = data.stats?.api_remaining || '-';
   
   // 渲染新聞
   renderNews(data.news);
@@ -197,9 +198,16 @@ function createMatchCard(match) {
 
     let aiHtml = '';
     if (match.ai_analysis) {
-      const shortAnalysis = match.ai_analysis.length > 120 
-        ? match.ai_analysis.substring(0, 120) + '...' 
-        : match.ai_analysis;
+      // 美化 AI 錯誤訊息，把技術性英文換成中文提示
+      let displayAnalysis = match.ai_analysis;
+      if (displayAnalysis.includes('429') || displayAnalysis.includes('quota') || displayAnalysis.includes('exceeded')) {
+        displayAnalysis = 'AI 分析今日已達免費額度上限，明日下午自動恢復。請參考勝率數據判斷。';
+      } else if (displayAnalysis.includes('API 錯誤') || displayAnalysis.includes('failed')) {
+        displayAnalysis = 'AI 分析暫時無法使用，請參考勝率數據判斷。';
+      }
+      const shortAnalysis = displayAnalysis.length > 120 
+        ? displayAnalysis.substring(0, 120) + '...' 
+        : displayAnalysis;
       aiHtml = `
         <div class="ai-analysis">
           <div class="ai-header">
@@ -312,7 +320,13 @@ function openMatchDetail(matchId) {
   // AI Analysis
   let aiHtml = '<p class="modal-empty">此場比賽未觸發 AI 分析</p>';
   if (match.ai_analysis) {
-    aiHtml = `<div class="ai-content modal-ai">${match.ai_analysis}</div>`;
+    let displayAnalysis = match.ai_analysis;
+    if (displayAnalysis.includes('429') || displayAnalysis.includes('quota') || displayAnalysis.includes('exceeded')) {
+      displayAnalysis = 'AI 分析今日已達免費額度上限，明日下午自動恢復。請參考勝率數據判斷。';
+    } else if (displayAnalysis.includes('API 錯誤') || displayAnalysis.includes('failed')) {
+      displayAnalysis = 'AI 分析暫時無法使用，請參考勝率數據判斷。';
+    }
+    aiHtml = `<div class="ai-content modal-ai">${displayAnalysis}</div>`;
   }
 
   // Prob bar
@@ -378,7 +392,7 @@ function calculateChangeClass(current, open) {
   const diff = current - open;
   if (diff > 0.05) return { cls: 'change-up', icon: '↑' };
   if (diff < -0.05) return { cls: 'change-down', icon: '↓' };
-  return { cls: 'change-none', icon: '-' };
+  return { cls: 'change-none', icon: '→' };
 }
 
 function isSignificantChange(match) {

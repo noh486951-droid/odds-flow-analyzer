@@ -6,16 +6,18 @@ window.HistoryController = {
     this.dateInput = document.getElementById('historyDate');
     this.grid = document.getElementById('historyGrid');
     
-    // 設定預設日期為昨天
-    const yesterday = new Date();
-    yesterday.setDate(yesterday.getDate() - 1);
-    this.dateInput.value = yesterday.toISOString().split('T')[0];
-    this.dateInput.max = new Date().toISOString().split('T')[0];
+    // 設定預設日期為今天
+    const today = new Date();
+    this.dateInput.value = today.toISOString().split('T')[0];
+    this.dateInput.max = today.toISOString().split('T')[0];
     
     // 事件綁定
     document.getElementById('prevDate').addEventListener('click', () => this.changeDate(-1));
     document.getElementById('nextDate').addEventListener('click', () => this.changeDate(1));
     this.dateInput.addEventListener('change', () => this.loadHistory());
+    
+    // 自動載入今天的資料
+    this.loadHistory();
   },
   
   changeDate(days) {

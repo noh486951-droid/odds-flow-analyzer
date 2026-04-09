@@ -61,13 +61,15 @@ SOCCER_LEAGUES = [
 # 變動門檻 (超過此值才觸發 AI 分析)
 ODDS_CHANGE_THRESHOLD = 0.05  # 5%
 
-# 新聞 RSS 來源
+# 新聞 RSS 來源 (中文優先、英文補充)
 NEWS_RSS = {
     "nba": [
+        "https://tw.news.yahoo.com/rss/nba",
         "https://www.espn.com/espn/rss/nba/news",
         "https://sports.yahoo.com/nba/rss.xml",
     ],
     "soccer": [
+        "https://tw.news.yahoo.com/rss/soccer",
         "http://feeds.bbci.co.uk/sport/football/rss.xml",
         "https://www.espn.com/espn/rss/soccer/news",
     ],
@@ -132,16 +134,16 @@ def fetch_odds(sport_key):
             data = resp.json()
             remaining = resp.headers.get("x-requests-remaining", "?")
             print(f"  ✅ {LEAGUES.get(sport_key, sport_key)}: 取得 {len(data)} 場比賽 (剩餘額度: {remaining})")
-            return data
+            return data, remaining
         elif resp.status_code == 422:
             print(f"  ⚠️ {LEAGUES.get(sport_key, sport_key)}: 目前無賽事")
-            return []
+            return [], "?"
         else:
             print(f"  ❌ {LEAGUES.get(sport_key, sport_key)}: API 錯誤 {resp.status_code}")
-            return []
+            return [], "?"
     except Exception as e:
         print(f"  ❌ {LEAGUES.get(sport_key, sport_key)}: 連線失敗 - {e}")
-        return []
+        return [], "?"
 
 
 def parse_odds_data(raw_data, sport_key):
@@ -862,8 +864,10 @@ def main():
     # 3. 抓取賠率
     print("\n📊 抓取最新賠率...")
     all_matches = []
+    api_remaining = "?"
     for league_key in leagues_to_fetch:
-        raw = fetch_odds(league_key)
+        raw, remaining = fetch_odds(league_key)
+        api_remaining = remaining
         if raw:
             parsed = parse_odds_data(raw, league_key)
             all_matches.extend(parsed)
@@ -934,6 +938,7 @@ def main():
     # 7. 彙整並儲存
     print("\n💾 儲存數據...")
     output = build_output(matches_with_changes, news, significant)
+    output["stats"]["api_remaining"] = api_remaining
     save_json(CURRENT_FILE, output)
     print(f"  ✅ 即時數據已更新: {CURRENT_FILE}")
 
