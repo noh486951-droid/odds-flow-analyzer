@@ -350,13 +350,22 @@ def analyze_with_ai(matches_with_changes, news_items):
     for match in matches_with_changes:
         prompt = build_analysis_prompt(match, news_items)
         try:
-            try:
-                model = genai.GenerativeModel("gemini-2.0-flash")
-                response = model.generate_content(prompt, safety_settings=safety_settings)
-            except Exception as e:
-                print(f"  ⚠️ 嘗試 gemini-2.0-flash 失敗 ({e})，降級使用 gemini-1.5-flash")
-                model = genai.GenerativeModel("gemini-1.5-flash")
-                response = model.generate_content(prompt, safety_settings=safety_settings)
+            response = None
+            error_msgs = []
+            # 依序測試可用的模型名稱
+            for model_name in ["gemini-2.5-flash", "gemini-1.5-flash", "gemini-1.5-flash-latest", "gemini-pro"]:
+                try:
+                    model = genai.GenerativeModel(model_name)
+                    response = model.generate_content(prompt, safety_settings=safety_settings)
+                    # 如果成功拿到 response 就跳出迴圈
+                    break 
+                except Exception as e:
+                    error_msgs.append(f"[{model_name} failed: {str(e)}]")
+            
+            if not response:
+                # 所有模型都失敗了
+                full_error = " ; ".join(error_msgs)
+                raise Exception(f"無可用模型: {full_error}")
                 
             analysis_text = response.text.strip()
             match["ai_analysis"] = analysis_text
