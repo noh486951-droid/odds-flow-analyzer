@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupNavigation();
   initParticles();
   
-  // 載入即時數據
-  await fetchCurrentData();
-  
-  // 初始化各模組
+  // 初始化各模組 (必須在抓資料之前，建立事件監聽)
   if (window.DashboardController) DashboardController.init();
   if (window.HistoryController) HistoryController.init();
   if (window.CalculatorController) CalculatorController.init();
+
+  // 載入即時數據
+  await fetchCurrentData();
 });
 
 function setupNavigation() {
@@ -118,22 +118,27 @@ function createMatchCard(match) {
       return '';
     };
 
+    const getGoldClass = (prob) => prob >= 60.0 ? 'gold-prob' : '';
+
     if (Object.keys(spreads).length > 0) {
       const pt = getPoint(spreads);
       const homeProb = spreads[match.home_team]?.prob;
-      const probStr = homeProb ? ` (過盤率 ${homeProb.toFixed(1)}%)` : '';
+      const hcClass = homeProb && homeProb >= 60.0 ? 'gold-prob' : '';
+      const probStr = homeProb ? ` (過盤率 <span class="${hcClass}">${homeProb.toFixed(1)}%</span>)` : '';
       if (pt !== '') otherMarketsHtml += `<span class="market-tag">主讓 ${pt > 0 ? '+'+pt : pt}${probStr}</span>`;
     }
     if (Object.keys(totals).length > 0) {
       const pt = getPoint(totals);
       const overProb = totals['Over']?.prob;
-      const probStr = overProb ? ` (大分勝率 ${overProb.toFixed(1)}%)` : '';
+      const ocClass = overProb && overProb >= 60.0 ? 'gold-prob' : '';
+      const probStr = overProb ? ` (大分勝率 <span class="${ocClass}">${overProb.toFixed(1)}%</span>)` : '';
       if (pt !== '') otherMarketsHtml += `<span class="market-tag">大小 ${pt}${probStr}</span>`;
     }
     if (Object.keys(btts).length > 0) {
       const yesPrice = btts['Yes']?.price;
       const yesProb = btts['Yes']?.prob;
-      const probStr = yesProb ? ` (勝率 ${yesProb.toFixed(1)}%)` : '';
+      const ycClass = yesProb && yesProb >= 60.0 ? 'gold-prob' : '';
+      const probStr = yesProb ? ` (勝率 <span class="${ycClass}">${yesProb.toFixed(1)}%</span>)` : '';
       if (yesPrice) otherMarketsHtml += `<span class="market-tag">雙進(是) ${yesPrice}${probStr}</span>`;
     }
 
@@ -146,9 +151,9 @@ function createMatchCard(match) {
       probHtml = `
         <div class="prob-container">
           <div class="prob-labels">
-            <span style="color: var(--primary)">${probHome.toFixed(1)}%</span>
+            <span class="${getGoldClass(probHome)}" style="color: var(--primary)">${probHome.toFixed(1)}%</span>
             <span class="prob-title">AI 真實勝率</span>
-            <span style="color: var(--warning)">${probAway.toFixed(1)}%</span>
+            <span class="${getGoldClass(probAway)}" style="color: var(--warning)">${probAway.toFixed(1)}%</span>
           </div>
           <div class="prob-bar">
             <div class="prob-fill" style="width: ${probHome}%"></div>

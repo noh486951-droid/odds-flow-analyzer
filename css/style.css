@@ -800,3 +800,9 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* 60% 以上高勝率發光特效 */
+.gold-prob {
+  color: #f1c40f !important;
+  font-weight: 800;
+  text-shadow: 0 0 6px rgba(241, 196, 15, 0.5);
+}

@@ -262,13 +262,32 @@ def detect_changes(current_matches, existing_data):
 
 
 def get_significant_changes(matches):
-    """篩選出有顯著賠率變動的比賽"""
+    """篩選出勝率超過 60% 的比賽進行 AI 分析 (節省 Token)"""
     significant = []
     for match in matches:
-        for team, pct in match.get("change_pct", {}).items():
-            if abs(pct) >= ODDS_CHANGE_THRESHOLD * 100:
-                significant.append(match)
+        is_high_prob = False
+        
+        # 1. 檢查獨贏勝率
+        for prob in match.get("true_probs", {}).values():
+            if prob >= 60.0:
+                is_high_prob = True
                 break
+                
+        # 2. 檢查讓分/大小分勝率
+        if not is_high_prob:
+            other_mk = match.get("other_markets", {})
+            for mk in ["spreads", "totals"]:
+                if mk in other_mk:
+                    for v in other_mk[mk].values():
+                        if v.get("prob", 0) >= 60.0:
+                            is_high_prob = True
+                            break
+                if is_high_prob:
+                    break
+
+        if is_high_prob:
+            significant.append(match)
+            
     return significant
 
 
