@@ -164,15 +164,22 @@ def parse_odds_data(raw_data, sport_key):
         # 計算平均賠率 (取所有博彩商的平均)
         avg_odds, other_markets = calculate_average_odds(match)
         match["avg_odds"] = avg_odds
-        match["other_markets"] = other_markets
         
         # 計算真實勝算(扣除水錢)
-        implied_sum = sum(1/p for p in avg_odds.values() if p > 0)
-        true_probs = {}
-        for team, p in avg_odds.items():
-            if p > 0 and implied_sum > 0:
-                true_probs[team] = round((1/p) / implied_sum * 100, 1)
-        match["true_probs"] = true_probs
+        def calc_probs(outcomes):
+            implied_sum = sum(1/p for p in outcomes.values() if p > 0)
+            return {k: round((1/p) / implied_sum * 100, 1) for k, p in outcomes.items() if p > 0 and implied_sum > 0}
+            
+        match["true_probs"] = calc_probs(avg_odds)
+        
+        # 計算其他盤口的真實機率寫入 other_markets
+        for mk in ["spreads", "totals"]:
+            if mk in other_markets and other_markets[mk]:
+                market_probs = calc_probs({k: v.get("price", 0) for k, v in other_markets[mk].items()})
+                for k in other_markets[mk]:
+                    other_markets[mk][k]["prob"] = market_probs.get(k, 50.0)
+                    
+        match["other_markets"] = other_markets
         
         matches.append(match)
 

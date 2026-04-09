@@ -120,15 +120,21 @@ function createMatchCard(match) {
 
     if (Object.keys(spreads).length > 0) {
       const pt = getPoint(spreads);
-      if (pt !== '') otherMarketsHtml += `<span class="market-tag">主讓 ${pt > 0 ? '+'+pt : pt}</span>`;
+      const homeProb = spreads[match.home_team]?.prob;
+      const probStr = homeProb ? ` (過盤率 ${homeProb.toFixed(1)}%)` : '';
+      if (pt !== '') otherMarketsHtml += `<span class="market-tag">主讓 ${pt > 0 ? '+'+pt : pt}${probStr}</span>`;
     }
     if (Object.keys(totals).length > 0) {
       const pt = getPoint(totals);
-      if (pt !== '') otherMarketsHtml += `<span class="market-tag">大小 ${pt}</span>`;
+      const overProb = totals['Over']?.prob;
+      const probStr = overProb ? ` (大分勝率 ${overProb.toFixed(1)}%)` : '';
+      if (pt !== '') otherMarketsHtml += `<span class="market-tag">大小 ${pt}${probStr}</span>`;
     }
     if (Object.keys(btts).length > 0) {
       const yesPrice = btts['Yes']?.price;
-      if (yesPrice) otherMarketsHtml += `<span class="market-tag">雙進(是) ${yesPrice}</span>`;
+      const yesProb = btts['Yes']?.prob;
+      const probStr = yesProb ? ` (勝率 ${yesProb.toFixed(1)}%)` : '';
+      if (yesPrice) otherMarketsHtml += `<span class="market-tag">雙進(是) ${yesPrice}${probStr}</span>`;
     }
 
     // 勝率進度條
