@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-09T21:06:16.229318+08:00",
-  "last_updated_display": "2026/04/09 21:06 (台北時間)",
+  "last_updated": "2026-04-09T23:51:35.074103+08:00",
+  "last_updated_display": "2026/04/09 23:51 (台北時間)",
   "matches": {
     "0852cffec341701f6a0dde8619ae9f56": {
       "id": "0852cffec341701f6a0dde8619ae9f56",
@@ -15,34 +15,34 @@
           "markets": {
             "h2h": {
               "Chicago Bulls": {
-                "price": 1.4
+                "price": 1.39
               },
               "Washington Wizards": {
-                "price": 3.05
+                "price": 3.1
               }
             },
             "spreads": {
               "Chicago Bulls": {
-                "price": 1.95,
+                "price": 1.93,
                 "point": -6.5,
-                "prob": 49.0
+                "prob": 49.5
               },
               "Washington Wizards": {
-                "price": 1.87,
+                "price": 1.89,
                 "point": 6.5,
-                "prob": 51.0
+                "prob": 50.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.91,
-                "point": 247.5,
-                "prob": 50.0
+                "price": 1.95,
+                "point": 248.5,
+                "prob": 49.0
               },
               "Under": {
-                "price": 1.91,
-                "point": 247.5,
-                "prob": 50.0
+                "price": 1.87,
+                "point": 248.5,
+                "prob": 51.0
               }
             }
           }
@@ -52,10 +52,10 @@
           "markets": {
             "h2h": {
               "Chicago Bulls": {
-                "price": 1.41
+                "price": 1.4
               },
               "Washington Wizards": {
-                "price": 3.03
+                "price": 3.07
               }
             },
             "spreads": {
@@ -71,11 +71,11 @@
             "totals": {
               "Over": {
                 "price": 1.87,
-                "point": 247.0
+                "point": 247.5
               },
               "Under": {
                 "price": 1.95,
-                "point": 247.0
+                "point": 247.5
               }
             }
           }
@@ -85,66 +85,66 @@
           "markets": {
             "h2h": {
               "Chicago Bulls": {
-                "price": 1.42
+                "price": 1.43
               },
               "Washington Wizards": {
-                "price": 3.15
+                "price": 3.12
               }
             },
             "spreads": {
               "Chicago Bulls": {
-                "price": 1.98,
+                "price": 2.0,
                 "point": -6.5
               },
               "Washington Wizards": {
-                "price": 1.94,
+                "price": 1.92,
                 "point": 6.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.95,
-                "point": 247.5
+                "price": 2.09,
+                "point": 248.5
               },
               "Under": {
-                "price": 1.97,
-                "point": 247.5
+                "price": 1.85,
+                "point": 248.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Chicago Bulls": 1.395,
-        "Washington Wizards": 3.059
+        "Chicago Bulls": 1.388,
+        "Washington Wizards": 3.085
       },
       "true_probs": {
-        "Chicago Bulls": 68.7,
-        "Washington Wizards": 31.3
+        "Chicago Bulls": 69.0,
+        "Washington Wizards": 31.0
       },
       "other_markets": {
         "spreads": {
           "Chicago Bulls": {
-            "price": 1.95,
+            "price": 1.93,
             "point": -6.5,
-            "prob": 49.0
+            "prob": 49.5
           },
           "Washington Wizards": {
-            "price": 1.87,
+            "price": 1.89,
             "point": 6.5,
-            "prob": 51.0
+            "prob": 50.5
           }
         },
         "totals": {
           "Over": {
-            "price": 1.91,
-            "point": 247.5,
-            "prob": 50.0
+            "price": 1.95,
+            "point": 248.5,
+            "prob": 49.0
           },
           "Under": {
-            "price": 1.91,
-            "point": 247.5,
-            "prob": 50.0
+            "price": 1.87,
+            "point": 248.5,
+            "prob": 51.0
           }
         },
         "btts": {}
@@ -156,15 +156,49 @@
       "first_seen": "2026-04-09T16:27:35.506099+08:00",
       "is_new": false,
       "odds_change": {
-        "Chicago Bulls": -0.002,
-        "Washington Wizards": 0.021
+        "Chicago Bulls": -0.009,
+        "Washington Wizards": 0.047
       },
       "change_pct": {
-        "Chicago Bulls": -0.14,
-        "Washington Wizards": 0.69
+        "Chicago Bulls": -0.64,
+        "Washington Wizards": 1.55
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 9.223013013s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerDayPerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 9\n}\n])，請參考新聞連結自行判斷。",
+      "h2h_history": [
+        {
+          "date": "2026-04-07",
+          "home": "Washington Wizards",
+          "away": "Chicago Bulls",
+          "score": "98-129"
+        }
+      ],
+      "home_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "details": [
+          {
+            "date": "2026-04-07",
+            "opponent": "Chicago Bulls",
+            "score": "98-129",
+            "result": "L"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "details": [
+          {
+            "date": "2026-04-05",
+            "opponent": "Phoenix Suns",
+            "score": "110-120",
+            "result": "L"
+          }
+        ]
+      },
+      "ai_analysis": "AI 分析暫時無法使用 (429 You exceeded your current quota, please check your plan and billing details.)。請參考勝率數據判斷。",
       "analysis_source": "fallback"
     },
     "53b49bbe56f8581f353bbbb5c6179ac5": {
@@ -180,34 +214,34 @@
           "markets": {
             "h2h": {
               "Miami Heat": {
-                "price": 2.5
+                "price": 2.36
               },
               "Toronto Raptors": {
-                "price": 1.56
+                "price": 1.62
               }
             },
             "spreads": {
               "Miami Heat": {
-                "price": 1.89,
-                "point": 4.5,
-                "prob": 50.5
+                "price": 1.91,
+                "point": 3.5,
+                "prob": 50.0
               },
               "Toronto Raptors": {
-                "price": 1.93,
-                "point": -4.5,
-                "prob": 49.5
+                "price": 1.91,
+                "point": -3.5,
+                "prob": 50.0
               }
             },
             "totals": {
               "Over": {
-                "price": 1.98,
-                "point": 239.5,
-                "prob": 48.3
+                "price": 1.91,
+                "point": 236.5,
+                "prob": 50.0
               },
               "Under": {
-                "price": 1.85,
-                "point": 239.5,
-                "prob": 51.7
+                "price": 1.91,
+                "point": 236.5,
+                "prob": 50.0
               }
             }
           }
@@ -217,30 +251,30 @@
           "markets": {
             "h2h": {
               "Miami Heat": {
-                "price": 2.59
+                "price": 2.46
               },
               "Toronto Raptors": {
-                "price": 1.58
+                "price": 1.63
               }
             },
             "spreads": {
               "Miami Heat": {
-                "price": 1.92,
-                "point": 4.5
+                "price": 1.96,
+                "point": 3.5
               },
               "Toronto Raptors": {
-                "price": 2.0,
-                "point": -4.5
+                "price": 1.96,
+                "point": -3.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.96,
-                "point": 239.5
+                "price": 1.95,
+                "point": 236.5
               },
               "Under": {
-                "price": 1.96,
-                "point": 239.5
+                "price": 1.97,
+                "point": 236.5
               }
             }
           }
@@ -250,66 +284,66 @@
           "markets": {
             "h2h": {
               "Miami Heat": {
-                "price": 2.49
+                "price": 2.35
               },
               "Toronto Raptors": {
-                "price": 1.59
+                "price": 1.65
               }
             },
             "spreads": {
               "Miami Heat": {
-                "price": 1.88,
-                "point": 4.5
+                "price": 1.91,
+                "point": 3.5
               },
               "Toronto Raptors": {
-                "price": 1.93,
-                "point": -4.5
+                "price": 1.91,
+                "point": -3.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.91,
-                "point": 239.0
+                "price": 1.95,
+                "point": 237.0
               },
               "Under": {
-                "price": 1.91,
-                "point": 239.0
+                "price": 1.87,
+                "point": 237.0
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Miami Heat": 2.505,
-        "Toronto Raptors": 1.554
+        "Miami Heat": 2.362,
+        "Toronto Raptors": 1.616
       },
       "true_probs": {
-        "Miami Heat": 38.3,
-        "Toronto Raptors": 61.7
+        "Miami Heat": 40.6,
+        "Toronto Raptors": 59.4
       },
       "other_markets": {
         "spreads": {
           "Miami Heat": {
-            "price": 1.89,
-            "point": 4.5,
-            "prob": 50.5
+            "price": 1.91,
+            "point": 3.5,
+            "prob": 50.0
           },
           "Toronto Raptors": {
-            "price": 1.93,
-            "point": -4.5,
-            "prob": 49.5
+            "price": 1.91,
+            "point": -3.5,
+            "prob": 50.0
           }
         },
         "totals": {
           "Over": {
-            "price": 1.98,
-            "point": 239.5,
-            "prob": 48.3
+            "price": 1.91,
+            "point": 236.5,
+            "prob": 50.0
           },
           "Under": {
-            "price": 1.85,
-            "point": 239.5,
-            "prob": 51.7
+            "price": 1.91,
+            "point": 236.5,
+            "prob": 50.0
           }
         },
         "btts": {}
@@ -321,16 +355,55 @@
       "first_seen": "2026-04-09T16:27:35.506113+08:00",
       "is_new": false,
       "odds_change": {
-        "Miami Heat": 0.075,
-        "Toronto Raptors": -0.025
+        "Miami Heat": -0.068,
+        "Toronto Raptors": 0.037
       },
       "change_pct": {
-        "Miami Heat": 3.09,
-        "Toronto Raptors": -1.58
+        "Miami Heat": -2.8,
+        "Toronto Raptors": 2.34
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 6.379073729s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerDayPerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 6\n}\n])，請參考新聞連結自行判斷。",
-      "analysis_source": "fallback"
+      "injury_alerts": [
+        {
+          "team": "Miami Heat",
+          "title": "Redick downplays sideline quarrel with Vanderbilt",
+          "link": "https://www.espn.com/nba/story/_/id/48426779/lakers-redick-downplays-quarrel-vanderbilt-normal"
+        }
+      ],
+      "h2h_history": [
+        {
+          "date": "2026-04-07",
+          "home": "Toronto Raptors",
+          "away": "Miami Heat",
+          "score": "121-95"
+        }
+      ],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "details": [
+          {
+            "date": "2026-04-07",
+            "opponent": "Miami Heat",
+            "score": "121-95",
+            "result": "W"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "details": [
+          {
+            "date": "2026-04-04",
+            "opponent": "Washington Wizards",
+            "score": "152-136",
+            "result": "W"
+          }
+        ]
+      }
     },
     "bf30a732402325cab54ab666ee0f5c11": {
       "id": "bf30a732402325cab54ab666ee0f5c11",
@@ -345,34 +418,34 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.45
+                "price": 2.54
               },
               "New York Knicks": {
-                "price": 1.57
+                "price": 1.54
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.91,
+                "price": 1.93,
                 "point": 4.5,
-                "prob": 50.0
+                "prob": 49.5
               },
               "New York Knicks": {
-                "price": 1.91,
+                "price": 1.89,
                 "point": -4.5,
-                "prob": 50.0
+                "prob": 50.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.95,
-                "point": 215.5,
-                "prob": 49.0
+                "price": 1.91,
+                "point": 216.5,
+                "prob": 50.0
               },
               "Under": {
-                "price": 1.87,
-                "point": 215.5,
-                "prob": 51.0
+                "price": 1.91,
+                "point": 216.5,
+                "prob": 50.0
               }
             }
           }
@@ -382,30 +455,30 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.6
+                "price": 2.62
               },
               "New York Knicks": {
-                "price": 1.55
+                "price": 1.54
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.96,
+                "price": 1.98,
                 "point": 4.5
               },
               "New York Knicks": {
-                "price": 1.93,
+                "price": 1.91,
                 "point": -4.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.93,
-                "point": 215.0
+                "price": 1.96,
+                "point": 216.5
               },
               "Under": {
-                "price": 1.93,
-                "point": 215.0
+                "price": 1.91,
+                "point": 216.5
               }
             }
           }
@@ -415,66 +488,66 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.59
+                "price": 2.61
               },
               "New York Knicks": {
-                "price": 1.55
+                "price": 1.54
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.93,
+                "price": 1.94,
                 "point": 4.5
               },
               "New York Knicks": {
-                "price": 1.89,
+                "price": 1.88,
                 "point": -4.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.91,
-                "point": 215.0
+                "price": 1.93,
+                "point": 216.5
               },
               "Under": {
-                "price": 1.91,
-                "point": 215.0
+                "price": 1.88,
+                "point": 216.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Boston Celtics": 2.558,
-        "New York Knicks": 1.538
+        "Boston Celtics": 2.587,
+        "New York Knicks": 1.527
       },
       "true_probs": {
-        "Boston Celtics": 37.5,
-        "New York Knicks": 62.5
+        "Boston Celtics": 37.1,
+        "New York Knicks": 62.9
       },
       "other_markets": {
         "spreads": {
           "Boston Celtics": {
-            "price": 1.91,
+            "price": 1.93,
             "point": 4.5,
-            "prob": 50.0
+            "prob": 49.5
           },
           "New York Knicks": {
-            "price": 1.91,
+            "price": 1.89,
             "point": -4.5,
-            "prob": 50.0
+            "prob": 50.5
           }
         },
         "totals": {
           "Over": {
-            "price": 1.95,
-            "point": 215.5,
-            "prob": 49.0
+            "price": 1.91,
+            "point": 216.5,
+            "prob": 50.0
           },
           "Under": {
-            "price": 1.87,
-            "point": 215.5,
-            "prob": 51.0
+            "price": 1.91,
+            "point": 216.5,
+            "prob": 50.0
           }
         },
         "btts": {}
@@ -486,16 +559,43 @@
       "first_seen": "2026-04-09T16:27:35.506117+08:00",
       "is_new": false,
       "odds_change": {
-        "Boston Celtics": 0.057,
-        "New York Knicks": -0.017
+        "Boston Celtics": 0.086,
+        "New York Knicks": -0.028
       },
       "change_pct": {
-        "Boston Celtics": 2.28,
-        "New York Knicks": -1.09
+        "Boston Celtics": 3.44,
+        "New York Knicks": -1.8
       },
       "is_value_bet": false,
-      "ai_analysis": "【💡 推薦：主讓 -4.5】\n紐約尼克以 62.5% 的真實勝率顯著領先波士頓塞爾提克的 37.5%，表明其整體實力強勁，對於主場作戰的尼克來說，覆蓋 -4.5 分的讓分盤應在合理範圍內。尼克獨贏賠率的下降 (-1.09%)，也顯示市場資金傾向於看好尼克。儘管有新聞報導塞爾提克為「50勝等級」強隊，與其提供的真實勝率存在顯著矛盾，但考量現有數據優勢與資金流向，仍建議支持尼克讓分。",
-      "analysis_source": "gemini"
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "details": [
+          {
+            "date": "2026-04-03",
+            "opponent": "Chicago Bulls",
+            "score": "136-96",
+            "result": "W"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "details": [
+          {
+            "date": "2026-04-08",
+            "opponent": "Charlotte Hornets",
+            "score": "113-102",
+            "result": "W"
+          }
+        ]
+      },
+      "ai_analysis": "AI 分析暫時無法使用 (429 You exceeded your current quota, please check your plan and billing details.)。請參考勝率數據判斷。",
+      "analysis_source": "fallback"
     },
     "625bbdf7bc0bdf1d57b3f97742908221": {
       "id": "625bbdf7bc0bdf1d57b3f97742908221",
@@ -510,34 +610,34 @@
           "markets": {
             "h2h": {
               "Brooklyn Nets": {
-                "price": 2.36
+                "price": 2.3
               },
               "Indiana Pacers": {
-                "price": 1.62
+                "price": 1.65
               }
             },
             "spreads": {
               "Brooklyn Nets": {
                 "price": 1.93,
-                "point": 3.5,
+                "point": 2.5,
                 "prob": 49.5
               },
               "Indiana Pacers": {
                 "price": 1.89,
-                "point": -3.5,
+                "point": -2.5,
                 "prob": 50.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.87,
-                "point": 223.5,
-                "prob": 51.0
+                "price": 1.95,
+                "point": 224.5,
+                "prob": 49.0
               },
               "Under": {
-                "price": 1.95,
-                "point": 223.5,
-                "prob": 49.0
+                "price": 1.87,
+                "point": 224.5,
+                "prob": 51.0
               }
             }
           }
@@ -580,46 +680,46 @@
           "markets": {
             "h2h": {
               "Brooklyn Nets": {
-                "price": 2.3
+                "price": 2.25
               },
               "Indiana Pacers": {
-                "price": 1.6
+                "price": 1.62
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Brooklyn Nets": 2.394,
-        "Indiana Pacers": 1.603
+        "Brooklyn Nets": 2.331,
+        "Indiana Pacers": 1.632
       },
       "true_probs": {
-        "Brooklyn Nets": 40.1,
-        "Indiana Pacers": 59.9
+        "Brooklyn Nets": 41.2,
+        "Indiana Pacers": 58.8
       },
       "other_markets": {
         "spreads": {
           "Brooklyn Nets": {
             "price": 1.93,
-            "point": 3.5,
+            "point": 2.5,
             "prob": 49.5
           },
           "Indiana Pacers": {
             "price": 1.89,
-            "point": -3.5,
+            "point": -2.5,
             "prob": 50.5
           }
         },
         "totals": {
           "Over": {
-            "price": 1.87,
-            "point": 223.5,
-            "prob": 51.0
+            "price": 1.95,
+            "point": 224.5,
+            "prob": 49.0
           },
           "Under": {
-            "price": 1.95,
-            "point": 223.5,
-            "prob": 49.0
+            "price": 1.87,
+            "point": 224.5,
+            "prob": 51.0
           }
         },
         "btts": {}
@@ -631,14 +731,48 @@
       "first_seen": "2026-04-09T16:27:35.506119+08:00",
       "is_new": false,
       "odds_change": {
-        "Brooklyn Nets": 0.077,
-        "Indiana Pacers": -0.032
+        "Brooklyn Nets": 0.014,
+        "Indiana Pacers": -0.003
       },
       "change_pct": {
-        "Brooklyn Nets": 3.32,
-        "Indiana Pacers": -1.96
+        "Brooklyn Nets": 0.6,
+        "Indiana Pacers": -0.18
       },
-      "is_value_bet": false
+      "is_value_bet": false,
+      "injury_alerts": [
+        {
+          "team": "Brooklyn Nets",
+          "title": "NBA Play-In Tournament Odds 2026: East Still Open Heading Into Final Weekend",
+          "link": "https://sports.yahoo.com/articles/nba-play-tournament-odds-schedule-202500833.html"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "details": [
+          {
+            "date": "2026-04-07",
+            "opponent": "Milwaukee Bucks",
+            "score": "96-90",
+            "result": "W"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "details": [
+          {
+            "date": "2026-04-07",
+            "opponent": "Minnesota Timberwolves",
+            "score": "104-124",
+            "result": "L"
+          }
+        ]
+      }
     },
     "30b372ff1973370201b644c207be2dd3": {
       "id": "30b372ff1973370201b644c207be2dd3",
@@ -661,26 +795,26 @@
             },
             "spreads": {
               "Houston Rockets": {
-                "price": 1.85,
-                "point": -3.5,
-                "prob": 51.7
+                "price": 1.98,
+                "point": -4.5,
+                "prob": 48.3
               },
               "Philadelphia 76ers": {
-                "price": 1.98,
-                "point": 3.5,
-                "prob": 48.3
+                "price": 1.85,
+                "point": 4.5,
+                "prob": 51.7
               }
             },
             "totals": {
               "Over": {
-                "price": 1.89,
-                "point": 225.5,
-                "prob": 50.5
+                "price": 1.95,
+                "point": 227.5,
+                "prob": 49.0
               },
               "Under": {
-                "price": 1.93,
-                "point": 225.5,
-                "prob": 49.5
+                "price": 1.87,
+                "point": 227.5,
+                "prob": 51.0
               }
             }
           }
@@ -711,58 +845,58 @@
             },
             "spreads": {
               "Houston Rockets": {
-                "price": 1.94,
+                "price": 1.96,
                 "point": -4.0
               },
               "Philadelphia 76ers": {
-                "price": 1.94,
+                "price": 1.93,
                 "point": 4.0
               }
             },
             "totals": {
               "Over": {
-                "price": 1.93,
-                "point": 225.5
+                "price": 1.91,
+                "point": 227.0
               },
               "Under": {
-                "price": 1.93,
-                "point": 225.5
+                "price": 1.96,
+                "point": 227.0
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Houston Rockets": 1.583,
-        "Philadelphia 76ers": 2.432
+        "Houston Rockets": 1.585,
+        "Philadelphia 76ers": 2.429
       },
       "true_probs": {
-        "Houston Rockets": 60.6,
-        "Philadelphia 76ers": 39.4
+        "Houston Rockets": 60.5,
+        "Philadelphia 76ers": 39.5
       },
       "other_markets": {
         "spreads": {
           "Houston Rockets": {
-            "price": 1.85,
-            "point": -3.5,
-            "prob": 51.7
+            "price": 1.98,
+            "point": -4.5,
+            "prob": 48.3
           },
           "Philadelphia 76ers": {
-            "price": 1.98,
-            "point": 3.5,
-            "prob": 48.3
+            "price": 1.85,
+            "point": 4.5,
+            "prob": 51.7
           }
         },
         "totals": {
           "Over": {
-            "price": 1.89,
-            "point": 225.5,
-            "prob": 50.5
+            "price": 1.95,
+            "point": 227.5,
+            "prob": 49.0
           },
           "Under": {
-            "price": 1.93,
-            "point": 225.5,
-            "prob": 49.5
+            "price": 1.87,
+            "point": 227.5,
+            "prob": 51.0
           }
         },
         "btts": {}
@@ -774,15 +908,49 @@
       "first_seen": "2026-04-09T16:27:35.506121+08:00",
       "is_new": false,
       "odds_change": {
-        "Houston Rockets": -0.001,
-        "Philadelphia 76ers": 0.014
+        "Houston Rockets": 0.001,
+        "Philadelphia 76ers": 0.011
       },
       "change_pct": {
-        "Houston Rockets": -0.06,
-        "Philadelphia 76ers": 0.58
+        "Houston Rockets": 0.06,
+        "Philadelphia 76ers": 0.45
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 44.191061039s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerDayPerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 44\n}\n])，請參考新聞連結自行判斷。",
+      "injury_alerts": [
+        {
+          "team": "Philadelphia 76ers",
+          "title": "NBA Play-In Tournament Odds 2026: East Still Open Heading Into Final Weekend",
+          "link": "https://sports.yahoo.com/articles/nba-play-tournament-odds-schedule-202500833.html"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "details": [
+          {
+            "date": "2026-04-04",
+            "opponent": "Utah Jazz",
+            "score": "140-106",
+            "result": "W"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "details": [
+          {
+            "date": "2026-04-04",
+            "opponent": "Detroit Pistons",
+            "score": "93-116",
+            "result": "L"
+          }
+        ]
+      },
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
       "analysis_source": "fallback"
     },
     "29fe17f5b19da82ce2957c3683a10aa7": {
@@ -798,10 +966,10 @@
           "markets": {
             "h2h": {
               "Golden State Warriors": {
-                "price": 1.54
+                "price": 1.52
               },
               "Los Angeles Lakers": {
-                "price": 2.54
+                "price": 2.6
               }
             },
             "spreads": {
@@ -843,21 +1011,21 @@
             },
             "spreads": {
               "Golden State Warriors": {
-                "price": 1.94,
+                "price": 1.96,
                 "point": -4.5
               },
               "Los Angeles Lakers": {
-                "price": 1.94,
+                "price": 1.93,
                 "point": 4.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.95,
+                "price": 1.93,
                 "point": 225.5
               },
               "Under": {
-                "price": 1.92,
+                "price": 1.93,
                 "point": 225.5
               }
             }
@@ -876,21 +1044,21 @@
             },
             "spreads": {
               "Golden State Warriors": {
-                "price": 1.91,
+                "price": 1.93,
                 "point": -4.5
               },
               "Los Angeles Lakers": {
-                "price": 1.91,
+                "price": 1.89,
                 "point": 4.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.93,
+                "price": 1.91,
                 "point": 225.5
               },
               "Under": {
-                "price": 1.89,
+                "price": 1.91,
                 "point": 225.5
               }
             }
@@ -898,7 +1066,7 @@
         }
       ],
       "avg_odds": {
-        "Golden State Warriors": 1.528,
+        "Golden State Warriors": 1.532,
         "Los Angeles Lakers": 2.574
       },
       "true_probs": {
@@ -939,15 +1107,49 @@
       "first_seen": "2026-04-09T16:27:35.506124+08:00",
       "is_new": false,
       "odds_change": {
-        "Golden State Warriors": 0.011,
+        "Golden State Warriors": 0.015,
         "Los Angeles Lakers": -0.019
       },
       "change_pct": {
-        "Golden State Warriors": 0.73,
+        "Golden State Warriors": 0.99,
         "Los Angeles Lakers": -0.73
       },
       "is_value_bet": false,
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 44.059366611s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerDayPerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 44\n}\n])，請參考新聞連結自行判斷。",
+      "injury_alerts": [
+        {
+          "team": "Los Angeles Lakers",
+          "title": "Redick downplays sideline quarrel with Vanderbilt",
+          "link": "https://www.espn.com/nba/story/_/id/48426779/lakers-redick-downplays-quarrel-vanderbilt-normal"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "details": [
+          {
+            "date": "2026-04-08",
+            "opponent": "Sacramento Kings",
+            "score": "110-105",
+            "result": "W"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "details": [
+          {
+            "date": "2026-04-08",
+            "opponent": "Oklahoma City Thunder",
+            "score": "87-123",
+            "result": "L"
+          }
+        ]
+      },
+      "ai_analysis": "AI 分析暫時無法使用 (429 You exceeded your current quota, please check your plan and billing details.)。請參考勝率數據判斷。",
       "analysis_source": "fallback"
     },
     "e39a51d05b5444bf1c98ffa0ed6811d3": {
@@ -1008,13 +1210,13 @@
         }
       ],
       "avg_odds": {
-        "Atlético Madrid": 3.748,
-        "Barcelona": 1.811,
-        "Draw": 4.308
+        "Atlético Madrid": 3.759,
+        "Barcelona": 1.809,
+        "Draw": 4.311
       },
       "true_probs": {
-        "Atlético Madrid": 25.4,
-        "Barcelona": 52.5,
+        "Atlético Madrid": 25.3,
+        "Barcelona": 52.6,
         "Draw": 22.1
       },
       "other_markets": {
@@ -1049,11 +1251,60 @@
         "Barcelona": 1.811,
         "Draw": 4.308
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T21:05:31.540091+08:00",
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 43.936840237s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 43\n}\n])，請參考新聞連結自行判斷。",
+      "is_new": false,
+      "odds_change": {
+        "Atlético Madrid": 0.011,
+        "Barcelona": -0.002,
+        "Draw": 0.003
+      },
+      "change_pct": {
+        "Atlético Madrid": 0.29,
+        "Barcelona": -0.11,
+        "Draw": 0.07
+      },
+      "is_value_bet": false,
+      "h2h_history": [
+        {
+          "date": "2026-04-08",
+          "home": "Barcelona",
+          "away": "Atlético Madrid",
+          "score": "0-2"
+        },
+        {
+          "date": "2026-04-04",
+          "home": "Atlético Madrid",
+          "away": "Barcelona",
+          "score": "1-2"
+        }
+      ],
+      "home_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "details": [
+          {
+            "date": "2026-04-04",
+            "opponent": "Barcelona",
+            "score": "1-2",
+            "result": "L"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "details": [
+          {
+            "date": "2026-04-08",
+            "opponent": "Atlético Madrid",
+            "score": "0-2",
+            "result": "L"
+          }
+        ]
+      },
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
       "analysis_source": "fallback"
     },
     "6f7c43b668146a5e9ba09151c1ba460b": {
@@ -1069,10 +1320,10 @@
           "markets": {
             "h2h": {
               "Liverpool": {
-                "price": 2.34
+                "price": 2.35
               },
               "Paris Saint Germain": {
-                "price": 2.6
+                "price": 2.59
               },
               "Draw": {
                 "price": 4.55
@@ -1101,63 +1352,63 @@
           "markets": {
             "h2h": {
               "Liverpool": {
-                "price": 2.35
+                "price": 2.38
               },
               "Paris Saint Germain": {
                 "price": 2.6
               },
               "Draw": {
-                "price": 4.1
+                "price": 3.9
               }
             },
             "totals": {
               "Over": {
-                "price": 2.0,
+                "price": 2.1,
                 "point": 3.5,
-                "prob": 46.1
+                "prob": 44.3
               },
               "Under": {
-                "price": 1.71,
+                "price": 1.67,
                 "point": 3.5,
-                "prob": 53.9
+                "prob": 55.7
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Liverpool": 2.319,
-        "Paris Saint Germain": 2.542,
-        "Draw": 4.406
+        "Liverpool": 2.323,
+        "Paris Saint Germain": 2.537,
+        "Draw": 4.399
       },
       "true_probs": {
-        "Liverpool": 41.0,
-        "Paris Saint Germain": 37.4,
+        "Liverpool": 40.9,
+        "Paris Saint Germain": 37.5,
         "Draw": 21.6
       },
       "other_markets": {
         "spreads": {
           "Liverpool": {
-            "price": 1.82,
+            "price": 1.83,
             "point": 0.0,
-            "prob": 52.8
+            "prob": 52.6
           },
           "Paris Saint Germain": {
-            "price": 2.04,
+            "price": 2.03,
             "point": -0.0,
-            "prob": 47.2
+            "prob": 47.4
           }
         },
         "totals": {
           "Over": {
-            "price": 2.0,
+            "price": 2.1,
             "point": 3.5,
-            "prob": 46.1
+            "prob": 44.3
           },
           "Under": {
-            "price": 1.71,
+            "price": 1.67,
             "point": 3.5,
-            "prob": 53.9
+            "prob": 55.7
           }
         },
         "btts": {}
@@ -1167,10 +1418,46 @@
         "Paris Saint Germain": 2.542,
         "Draw": 4.406
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T21:05:31.540093+08:00"
+      "first_seen": "2026-04-09T21:05:31.540093+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Liverpool": 0.004,
+        "Paris Saint Germain": -0.005,
+        "Draw": -0.007
+      },
+      "change_pct": {
+        "Liverpool": 0.17,
+        "Paris Saint Germain": -0.2,
+        "Draw": -0.16
+      },
+      "is_value_bet": false,
+      "injury_alerts": [
+        {
+          "team": "Liverpool",
+          "title": "Liverpool still alive - but their season now hangs by a thread",
+          "link": "https://www.bbc.com/sport/football/articles/c3expgqy2zxo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "details": [
+          {
+            "date": "2026-03-18",
+            "opponent": "Galatasaray",
+            "score": "4-0",
+            "result": "W"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "details": []
+      }
     },
     "02ff9b02f1eab3394f9e38d70e257e12": {
       "id": "02ff9b02f1eab3394f9e38d70e257e12",
@@ -1265,11 +1552,11 @@
       ],
       "avg_odds": {
         "Arsenal": 1.396,
-        "Sporting Lisbon": 7.73,
-        "Draw": 4.806
+        "Sporting Lisbon": 7.693,
+        "Draw": 4.809
       },
       "true_probs": {
-        "Arsenal": 68.0,
+        "Arsenal": 67.9,
         "Sporting Lisbon": 12.3,
         "Draw": 19.7
       },
@@ -1305,11 +1592,20 @@
         "Sporting Lisbon": 7.73,
         "Draw": 4.806
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-09T21:05:31.540095+08:00",
-      "ai_analysis": "AI 分析暫時無法使用 (API 錯誤: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 43.81918198s. [links {\n  description: 'Learn more about Gemini API quotas'\n  url: 'https://ai.google.dev/gemini-api/docs/rate-limits'\n}\n, violations {\n  quota_metric: 'generativelanguage.googleapis.com/generate_content_free_tier_requests'\n  quota_id: 'GenerateRequestsPerDayPerProjectPerModel-FreeTier'\n  quota_dimensions {\n    key: 'model'\n    value: 'gemini-2.5-flash'\n  }\n  quota_dimensions {\n    key: 'location'\n    value: 'global'\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 43\n}\n])，請參考新聞連結自行判斷。",
+      "is_new": false,
+      "odds_change": {
+        "Arsenal": 0.0,
+        "Sporting Lisbon": -0.037,
+        "Draw": 0.003
+      },
+      "change_pct": {
+        "Arsenal": 0.0,
+        "Sporting Lisbon": -0.48,
+        "Draw": 0.06
+      },
+      "is_value_bet": false,
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
       "analysis_source": "fallback"
     },
     "76200682955d7f62f3b051a14f5f67fa": {
@@ -1404,9 +1700,9 @@
         }
       ],
       "avg_odds": {
-        "Bayern Munich": 1.587,
-        "Real Madrid": 4.543,
-        "Draw": 4.942
+        "Bayern Munich": 1.586,
+        "Real Madrid": 4.539,
+        "Draw": 4.959
       },
       "true_probs": {
         "Bayern Munich": 59.9,
@@ -1445,10 +1741,19 @@
         "Real Madrid": 4.543,
         "Draw": 4.942
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
-      "first_seen": "2026-04-09T21:05:31.540098+08:00"
+      "first_seen": "2026-04-09T21:05:31.540098+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Bayern Munich": -0.001,
+        "Real Madrid": -0.004,
+        "Draw": 0.017
+      },
+      "change_pct": {
+        "Bayern Munich": -0.06,
+        "Real Madrid": -0.09,
+        "Draw": 0.34
+      },
+      "is_value_bet": false
     }
   },
   "leagues": {
@@ -1470,67 +1775,79 @@
   "news": {
     "nba": [
       {
+        "title": "'50 wins in a gap year': How Jaylen Brown turbocharged the Celtics back to title contention",
+        "link": "https://www.espn.com/nba/story/_/id/48430297/how-jaylen-brown-turbocharged-boston-celtics-back-title-contention-jayson-tatum",
+        "published": "Thu, 9 Apr 2026 08:44:17 EST",
+        "summary": "Between memorizing the astrological signs of his teammates and undergoing extreme underwater training, Brown didn't need to be a hero in Boston. He simply needed to lead. \"I'm not going to make myself"
+      },
+      {
         "title": "OKC locks up No. 1 seed, joins elite company",
         "link": "https://www.espn.com/nba/story/_/id/48435203/okc-locks-no-1-seed-home-court-postseason",
-        "published": "Thu, 9 Apr 2026 00:48:50 EST",
+        "published": "Thu, 9 Apr 2026 10:53:01 EST",
         "summary": "The Thunder clinched the NBA's best regular-season record with a win over the Clippers to join some exclusive company."
       },
       {
         "title": "Cunningham has double-double in Pistons return",
         "link": "https://www.espn.com/nba/story/_/id/48434381/cade-cunningham-double-double-return-pistons-rout-bucks",
-        "published": "Thu, 9 Apr 2026 00:48:50 EST",
+        "published": "Thu, 9 Apr 2026 10:53:01 EST",
         "summary": "Cade Cunningham had 13 points and 10 assists in his return from a collapsed lung as the Pistons routed the Bucks on Wednesday night."
       },
       {
         "title": "Sources: Kings' late foul was error, not tanking",
         "link": "https://www.espn.com/nba/story/_/id/48432683/sources-kings-late-foul-was-tactical-error-not-tanking",
-        "published": "Thu, 9 Apr 2026 00:48:50 EST",
+        "published": "Thu, 9 Apr 2026 10:53:01 EST",
         "summary": "The NBA is looking into what team sources say was a strategy mistake by Kings coach Doug Christie -- and not tanking tactics -- during Tuesday's loss to the Warriors."
       },
       {
         "title": "Mavs dispute claim they erred with Reaves' MRI",
         "link": "https://www.espn.com/nba/story/_/id/48424364/mavericks-dispute-redick-claim-erred-reaves-mri",
-        "published": "Thu, 9 Apr 2026 00:48:50 EST",
+        "published": "Thu, 9 Apr 2026 10:53:01 EST",
         "summary": "The Mavericks disputed Lakers coach JJ Redick's claim that their medical team examined the wrong part of Austin Reaves' body when the guard received an MRI by Dallas' staff."
       },
       {
         "title": "Redick downplays sideline quarrel with Vanderbilt",
         "link": "https://www.espn.com/nba/story/_/id/48426779/lakers-redick-downplays-quarrel-vanderbilt-normal",
-        "published": "Thu, 9 Apr 2026 00:48:50 EST",
+        "published": "Thu, 9 Apr 2026 10:53:01 EST",
         "summary": "Lakers coach JJ Redick subbed forward Jarred Vanderbilt out of early in the second quarter, leading to a heated exchange between the two that Redick described as a \"normal interaction\" for him."
       },
       {
         "title": "Wemby (rib), Castle (knee) miss win vs. Blazers",
         "link": "https://www.espn.com/nba/story/_/id/48430417/spurs-rule-injured-victor-wembanyama-stephon-castle",
-        "published": "Thu, 9 Apr 2026 00:48:50 EST",
+        "published": "Thu, 9 Apr 2026 10:53:01 EST",
         "summary": "The Spurs ruled Victor Wembanyama (bruised left rib) and Stephon Castle (sore right knee) out for their game Wednesday against the Trail Blazers."
       },
       {
         "title": "Tatum preps for MSG return: 'Just another game'",
         "link": "https://www.espn.com/nba/story/_/id/48426101/jayson-tatum-preps-return-msg-just-another-game",
-        "published": "Thu, 9 Apr 2026 00:48:50 EST",
+        "published": "Thu, 9 Apr 2026 10:53:01 EST",
         "summary": "Jayson Tatum said that although he's not thrilled to return to the arena where he tore an Achilles less than a year ago, he is aiming to treat Thursday's matchup against the Knicks at MSG as \"just ano"
       },
       {
         "title": "Bucks' Rivers, asked about future, talks grandkids",
         "link": "https://www.espn.com/nba/story/_/id/48424561/bucks-rivers-asked-future-talks-missing-grandkids",
-        "published": "Thu, 9 Apr 2026 00:48:50 EST",
+        "published": "Thu, 9 Apr 2026 10:53:01 EST",
         "summary": "Doc Rivers declined to give a definitive answer but spoke about his desire to spend more time with his grandchildren when he was asked Tuesday about his coaching future."
       },
       {
-        "title": "🏀 Postseason tracker: Who's in, who's out?",
-        "link": "https://www.espn.com/nba/story/_/id/48083437/nba-2025-26-postseason-tracker-clinched-playoff-play-spots",
-        "published": "Thu, 9 Apr 2026 00:48:50 EST",
-        "summary": "The 2025-26 NBA postseason is fast approaching. Stay up to date with which teams have clinched."
-      },
-      {
-        "title": "'50 wins in a gap year': How Jaylen Brown turbocharged the Celtics back to title contention",
-        "link": "https://www.espn.com/nba/story/_/id/48430297/how-jaylen-brown-turbocharged-boston-celtics-back-title-contention-jayson-tatum",
-        "published": "Thu, 9 Apr 2026 08:44:17 EST",
-        "summary": "Between memorizing the astrological signs of his teammates and undergoing extreme underwater training, Brown didn't need to be a hero in Boston. He simply needed to lead. \"I'm not going to make myself"
+        "title": "🏀 Inside the NBA's tanking problem",
+        "link": "https://www.espn.com/nba/story/_/id/48414627/nba-tanking-adam-silver-league-problem-solutions-epidemic",
+        "published": "Thu, 9 Apr 2026 10:53:01 EST",
+        "summary": "With tanking strategies growing in both audaciousness and frequency of use, can the league get its arms around the often-effective practice?"
       }
     ],
     "soccer": [
+      {
+        "title": "Arsenal's big summer: Arteta contract and Nwaneri and Lewis-Skelly futures",
+        "link": "https://www.bbc.com/sport/football/articles/cn78kdymmvpo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 15:36:40 GMT",
+        "summary": "Whatever happens this season, Arsenal are facing some big decisions in the summer over Mikel Arteta's contract and their transfer moves."
+      },
+      {
+        "title": "Seven games to go - how will De Zerbi try to save Spurs?",
+        "link": "https://www.bbc.com/sport/football/articles/cvg3kxy221xo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 13:36:31 GMT",
+        "summary": "Clubs at risk of relegation tend to hire pragmatic coaches - but Spurs have not done that by appointing Roberto de Zerbi."
+      },
       {
         "title": "Maguire on his major lows and belief he is still one of world's best",
         "link": "https://www.bbc.com/sport/football/articles/cg4036peyq7o?at_medium=RSS&at_campaign=rss",
@@ -1538,10 +1855,16 @@
         "summary": "Manchester United defender Harry Maguire on how his mum defended him in his lowest moments, his return to form, new contract and bright future"
       },
       {
-        "title": "How fluid PSG exposed Slot's back-five tweak",
-        "link": "https://www.bbc.com/sport/football/articles/c0j6ewp0577o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Apr 2026 06:14:01 GMT",
-        "summary": "Arne Slot changed Liverpool's shape for their Champions League quarter-final first leg - but their tactics were still bested by European champions Paris St-Germain. Umir Irfan explains how."
+        "title": "Sutton's predictions v boxing promoter & Arsenal fan Frank Warren",
+        "link": "https://www.bbc.com/sport/football/articles/cwyj5w47zlwo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 15:48:26 GMT",
+        "summary": "Chris Sutton takes on boxing promoter Frank Warren plus the BBC readers and AI with his predictions for this weekend's Premier League fixtures."
+      },
+      {
+        "title": "Scotland confirm final World Cup warm-up against Bolivia - live on BBC",
+        "link": "https://www.bbc.com/sport/football/articles/cm25yp3k8vlo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 14:09:16 GMT",
+        "summary": "Scotland confirm a friendly against Bolivia in Harrison, New Jersey on 6 June as their final warm-up game before this summer's World Cup finals."
       },
       {
         "title": "Howe's future & likely sales - why Newcastle face key summer",
@@ -1550,34 +1873,10 @@
         "summary": "Newcastle's inconsistent season leaves them facing a defining summer - with questions over Eddie Howe's future and sales of key players a possibility. BBC Sport assesses the situation."
       },
       {
-        "title": "How to follow the Premier League on the BBC this weekend",
-        "link": "https://www.bbc.com/sport/football/articles/c0kpzljpz6lo?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Apr 2026 12:00:23 GMT",
-        "summary": "BBC Sport Ask Me Anything explains how to follow the Premier League on the BBC this week."
-      },
-      {
-        "title": "Liverpool still alive - but their season now hangs by a thread",
-        "link": "https://www.bbc.com/sport/football/articles/c3expgqy2zxo?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 08 Apr 2026 23:08:51 GMT",
-        "summary": "Negative tactics and no shots on target - but somehow Liverpool's Champions League campaign is still just about alive after a 2-0 loss at PSG."
-      },
-      {
-        "title": "Dominant PSG beat Liverpool in quarter-final first leg",
-        "link": "https://www.bbc.com/sport/football/videos/c78l1jdep92o?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 08 Apr 2026 21:35:06 GMT",
-        "summary": "Goals from Desire Doue and Khvicha Kvaratskhelia give PSG a 2-0 victory over Liverpool in the first-leg of their Champions League quarter-final."
-      },
-      {
-        "title": "Alvarez scores superb free-kick as Atletico beat 10-man Barca",
-        "link": "https://www.bbc.com/sport/football/videos/c5ywlr30w1go?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 08 Apr 2026 21:46:58 GMT",
-        "summary": "Julian Alvarez and Alexander Sorloth give Atletico Madrid a 2-0 victory over 10-man Barcelona in their Champions League quarter-final first leg at the Nou Camp."
-      },
-      {
-        "title": "Back Haaland and Semenyo to shine at Chelsea - FPL team of the week",
-        "link": "https://www.bbc.com/sport/football/articles/ce35yk45v12o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Apr 2026 08:01:51 GMT",
-        "summary": "Put your faith in trusted FPL assets such as Bruno Fernandes and Antoine Semenyo this week, with a double gameweek on the horizon."
+        "title": "How fluid PSG exposed Slot's back-five tweak",
+        "link": "https://www.bbc.com/sport/football/articles/c0j6ewp0577o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 06:14:01 GMT",
+        "summary": "Arne Slot changed Liverpool's shape for their Champions League quarter-final first leg - but their tactics were still bested by European champions Paris St-Germain. Umir Irfan explains how."
       },
       {
         "title": "Wood in Forest squad after six months out injured",
@@ -1586,16 +1885,21 @@
         "summary": "Striker Chris Wood will end his six-month injury lay-off by returning to the Nottingham Forest squad in Porto."
       },
       {
-        "title": "Dortmund weigh up third Sancho move - Thursday's gossip",
-        "link": "https://www.bbc.com/sport/football/articles/c20qeyevzd1o?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 08 Apr 2026 21:37:40 GMT",
-        "summary": "Borussia Dortmund weighing up third move Jadon Sancho, Tottenham pushing to sign goalkeeper James Trafford, Arsenal targeting defenders Victor Valdepena and Jacobo Ramon, plus more."
+        "title": "Back Haaland and Semenyo to shine at Chelsea - FPL team of the week",
+        "link": "https://www.bbc.com/sport/football/articles/ce35yk45v12o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 08:01:51 GMT",
+        "summary": "Put your faith in trusted FPL assets such as Bruno Fernandes and Antoine Semenyo this week, with a double gameweek on the horizon."
+      },
+      {
+        "title": "Dominant PSG beat Liverpool in quarter-final first leg",
+        "link": "https://www.bbc.com/sport/football/videos/c78l1jdep92o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 08 Apr 2026 21:35:06 GMT",
+        "summary": "Goals from Desire Doue and Khvicha Kvaratskhelia give PSG a 2-0 victory over Liverpool in the first-leg of their Champions League quarter-final."
       }
     ]
   },
   "significant_changes": [
     "0852cffec341701f6a0dde8619ae9f56",
-    "53b49bbe56f8581f353bbbb5c6179ac5",
     "bf30a732402325cab54ab666ee0f5c11",
     "30b372ff1973370201b644c207be2dd3",
     "29fe17f5b19da82ce2957c3683a10aa7",
@@ -1604,6 +1908,6 @@
   ],
   "stats": {
     "total_matches": 10,
-    "significant_changes_count": 7
+    "significant_changes_count": 6
   }
 }
