@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-10T00:53:54.336613+08:00",
-  "last_updated_display": "2026/04/10 00:53 (台北時間)",
+  "last_updated": "2026-04-10T02:55:15.037655+08:00",
+  "last_updated_display": "2026/04/10 02:55 (台北時間)",
   "matches": {
     "0852cffec341701f6a0dde8619ae9f56": {
       "id": "0852cffec341701f6a0dde8619ae9f56",
@@ -60,21 +60,21 @@
             },
             "spreads": {
               "Chicago Bulls": {
-                "price": 1.89,
+                "price": 1.87,
                 "point": -6.0
               },
               "Washington Wizards": {
-                "price": 1.93,
+                "price": 1.95,
                 "point": 6.0
               }
             },
             "totals": {
               "Over": {
-                "price": 1.87,
+                "price": 1.91,
                 "point": 248.5
               },
               "Under": {
-                "price": 1.95,
+                "price": 1.91,
                 "point": 248.5
               }
             }
@@ -115,12 +115,12 @@
         }
       ],
       "avg_odds": {
-        "Chicago Bulls": 1.397,
-        "Washington Wizards": 3.051
+        "Chicago Bulls": 1.388,
+        "Washington Wizards": 3.097
       },
       "true_probs": {
-        "Chicago Bulls": 68.6,
-        "Washington Wizards": 31.4
+        "Chicago Bulls": 69.1,
+        "Washington Wizards": 30.9
       },
       "other_markets": {
         "spreads": {
@@ -156,12 +156,12 @@
       "first_seen": "2026-04-09T16:27:35.506099+08:00",
       "is_new": false,
       "odds_change": {
-        "Chicago Bulls": 0.0,
-        "Washington Wizards": 0.013
+        "Chicago Bulls": -0.009,
+        "Washington Wizards": 0.059
       },
       "change_pct": {
-        "Chicago Bulls": 0.0,
-        "Washington Wizards": 0.43
+        "Chicago Bulls": -0.64,
+        "Washington Wizards": 1.94
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -169,6 +169,11 @@
           "time": "04/10 00:53",
           "Chicago Bulls": 1.397,
           "Washington Wizards": 3.051
+        },
+        {
+          "time": "04/10 02:54",
+          "Chicago Bulls": 1.388,
+          "Washington Wizards": 3.097
         }
       ],
       "h2h_history": [
@@ -211,8 +216,8 @@
           }
         ]
       },
-      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
-      "analysis_source": "fallback"
+      "ai_analysis": "💡 推薦：芝加哥公牛 -6.5 (讓分盤)\n\n公牛真實勝率 (69.1%) 遠高於巫師 (30.9%)，且兩天前才以31分屠殺巫師。獨贏賠率走勢顯示資金持續流向公牛，強化其優勢。考量無已知傷兵或疲勞問題，公牛應能再次輕鬆過盤。",
+      "analysis_source": "gemini"
     },
     "53b49bbe56f8581f353bbbb5c6179ac5": {
       "id": "53b49bbe56f8581f353bbbb5c6179ac5",
@@ -227,34 +232,34 @@
           "markets": {
             "h2h": {
               "Miami Heat": {
-                "price": 2.36
+                "price": 2.4
               },
               "Toronto Raptors": {
-                "price": 1.62
+                "price": 1.6
               }
             },
             "spreads": {
               "Miami Heat": {
-                "price": 1.93,
+                "price": 1.95,
                 "point": 3.5,
-                "prob": 49.5
+                "prob": 49.0
               },
               "Toronto Raptors": {
-                "price": 1.89,
+                "price": 1.87,
                 "point": -3.5,
-                "prob": 50.5
+                "prob": 51.0
               }
             },
             "totals": {
               "Over": {
-                "price": 1.91,
+                "price": 1.89,
                 "point": 236.5,
-                "prob": 50.0
+                "prob": 50.5
               },
               "Under": {
-                "price": 1.91,
+                "price": 1.93,
                 "point": 236.5,
-                "prob": 50.0
+                "prob": 49.5
               }
             }
           }
@@ -264,19 +269,19 @@
           "markets": {
             "h2h": {
               "Miami Heat": {
-                "price": 2.52
+                "price": 2.49
               },
               "Toronto Raptors": {
-                "price": 1.6
+                "price": 1.62
               }
             },
             "spreads": {
               "Miami Heat": {
-                "price": 2.0,
+                "price": 1.99,
                 "point": 3.5
               },
               "Toronto Raptors": {
-                "price": 1.92,
+                "price": 1.93,
                 "point": -3.5
               }
             },
@@ -297,10 +302,10 @@
           "markets": {
             "h2h": {
               "Miami Heat": {
-                "price": 2.41
+                "price": 2.43
               },
               "Toronto Raptors": {
-                "price": 1.62
+                "price": 1.61
               }
             },
             "spreads": {
@@ -327,36 +332,36 @@
         }
       ],
       "avg_odds": {
-        "Miami Heat": 2.37,
-        "Toronto Raptors": 1.61
+        "Miami Heat": 2.383,
+        "Toronto Raptors": 1.607
       },
       "true_probs": {
-        "Miami Heat": 40.5,
-        "Toronto Raptors": 59.5
+        "Miami Heat": 40.3,
+        "Toronto Raptors": 59.7
       },
       "other_markets": {
         "spreads": {
           "Miami Heat": {
-            "price": 1.93,
+            "price": 1.95,
             "point": 3.5,
-            "prob": 49.5
+            "prob": 49.0
           },
           "Toronto Raptors": {
-            "price": 1.89,
+            "price": 1.87,
             "point": -3.5,
-            "prob": 50.5
+            "prob": 51.0
           }
         },
         "totals": {
           "Over": {
-            "price": 1.91,
+            "price": 1.89,
             "point": 236.5,
-            "prob": 50.0
+            "prob": 50.5
           },
           "Under": {
-            "price": 1.91,
+            "price": 1.93,
             "point": 236.5,
-            "prob": 50.0
+            "prob": 49.5
           }
         },
         "btts": {}
@@ -368,12 +373,12 @@
       "first_seen": "2026-04-09T16:27:35.506113+08:00",
       "is_new": false,
       "odds_change": {
-        "Miami Heat": -0.06,
-        "Toronto Raptors": 0.031
+        "Miami Heat": -0.047,
+        "Toronto Raptors": 0.028
       },
       "change_pct": {
-        "Miami Heat": -2.47,
-        "Toronto Raptors": 1.96
+        "Miami Heat": -1.93,
+        "Toronto Raptors": 1.77
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -381,6 +386,11 @@
           "time": "04/10 00:53",
           "Miami Heat": 2.37,
           "Toronto Raptors": 1.61
+        },
+        {
+          "time": "04/10 02:54",
+          "Miami Heat": 2.383,
+          "Toronto Raptors": 1.607
         }
       ],
       "injury_alerts": [
@@ -444,34 +454,34 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.54
+                "price": 2.8
               },
               "New York Knicks": {
-                "price": 1.54
+                "price": 1.46
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.95,
-                "point": 4.5,
-                "prob": 49.0
+                "price": 1.91,
+                "point": 5.5,
+                "prob": 50.0
               },
               "New York Knicks": {
-                "price": 1.87,
-                "point": -4.5,
-                "prob": 51.0
+                "price": 1.91,
+                "point": -5.5,
+                "prob": 50.0
               }
             },
             "totals": {
               "Over": {
-                "price": 1.89,
-                "point": 215.5,
-                "prob": 50.5
+                "price": 1.91,
+                "point": 212.5,
+                "prob": 50.0
               },
               "Under": {
-                "price": 1.93,
-                "point": 215.5,
-                "prob": 49.5
+                "price": 1.91,
+                "point": 212.5,
+                "prob": 50.0
               }
             }
           }
@@ -481,30 +491,30 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.66
+                "price": 2.79
               },
               "New York Knicks": {
-                "price": 1.53
+                "price": 1.49
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.93,
-                "point": 5.0
+                "price": 1.95,
+                "point": 5.5
               },
               "New York Knicks": {
-                "price": 1.95,
-                "point": -5.0
+                "price": 1.93,
+                "point": -5.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.93,
-                "point": 215.5
+                "point": 212.5
               },
               "Under": {
                 "price": 1.93,
-                "point": 215.5
+                "point": 212.5
               }
             }
           }
@@ -514,66 +524,66 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.65
+                "price": 2.77
               },
               "New York Knicks": {
-                "price": 1.53
+                "price": 1.49
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.9,
-                "point": 5.0
+                "price": 1.92,
+                "point": 5.5
               },
               "New York Knicks": {
-                "price": 1.92,
-                "point": -5.0
+                "price": 1.9,
+                "point": -5.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 215.5
+                "point": 212.5
               },
               "Under": {
                 "price": 1.91,
-                "point": 215.5
+                "point": 212.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Boston Celtics": 2.593,
-        "New York Knicks": 1.525
+        "Boston Celtics": 2.734,
+        "New York Knicks": 1.48
       },
       "true_probs": {
-        "Boston Celtics": 37.0,
-        "New York Knicks": 63.0
+        "Boston Celtics": 35.1,
+        "New York Knicks": 64.9
       },
       "other_markets": {
         "spreads": {
           "Boston Celtics": {
-            "price": 1.95,
-            "point": 4.5,
-            "prob": 49.0
+            "price": 1.91,
+            "point": 5.5,
+            "prob": 50.0
           },
           "New York Knicks": {
-            "price": 1.87,
-            "point": -4.5,
-            "prob": 51.0
+            "price": 1.91,
+            "point": -5.5,
+            "prob": 50.0
           }
         },
         "totals": {
           "Over": {
-            "price": 1.89,
-            "point": 215.5,
-            "prob": 50.5
+            "price": 1.91,
+            "point": 212.5,
+            "prob": 50.0
           },
           "Under": {
-            "price": 1.93,
-            "point": 215.5,
-            "prob": 49.5
+            "price": 1.91,
+            "point": 212.5,
+            "prob": 50.0
           }
         },
         "btts": {}
@@ -585,12 +595,12 @@
       "first_seen": "2026-04-09T16:27:35.506117+08:00",
       "is_new": false,
       "odds_change": {
-        "Boston Celtics": 0.092,
-        "New York Knicks": -0.03
+        "Boston Celtics": 0.233,
+        "New York Knicks": -0.075
       },
       "change_pct": {
-        "Boston Celtics": 3.68,
-        "New York Knicks": -1.93
+        "Boston Celtics": 9.32,
+        "New York Knicks": -4.82
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -598,6 +608,18 @@
           "time": "04/10 00:53",
           "Boston Celtics": 2.593,
           "New York Knicks": 1.525
+        },
+        {
+          "time": "04/10 02:54",
+          "Boston Celtics": 2.734,
+          "New York Knicks": 1.48
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "New York Knicks",
+          "title": "Tatum back at Madison Square Garden for 1st time since injury, but Celtics without Brown vs. Knicks",
+          "link": "https://sports.yahoo.com/articles/tatum-back-madison-square-garden-183224728.html"
         }
       ],
       "h2h_history": [],
@@ -633,7 +655,7 @@
           }
         ]
       },
-      "ai_analysis": "【💡 推薦：紐約尼克 -4.5】\n\n紐約尼克擁有高達63.0%的真實勝率，顯示其主場優勢與實力領先。獨贏賠率持續下修，市場資金流向尼克，盤口信心穩定，故看好尼克能順利過盤。",
+      "ai_analysis": "【💡 推薦：New York Knicks 讓分 -5.5】\n\n主隊尼克真實勝率高達64.9%，且獨贏賠率從1.555大幅下降至1.48，顯示市場資金正單向流向尼克，有明顯的聰明錢訊號。儘管塞爾提克Tatum回歸，但主力Jaylen Brown的缺陣對戰力折損嚴重，加上尼克坐擁主場優勢，判斷尼克有望輕鬆過盤。",
       "analysis_source": "gemini"
     },
     "625bbdf7bc0bdf1d57b3f97742908221": {
@@ -649,34 +671,34 @@
           "markets": {
             "h2h": {
               "Brooklyn Nets": {
-                "price": 2.3
+                "price": 2.36
               },
               "Indiana Pacers": {
-                "price": 1.65
+                "price": 1.62
               }
             },
             "spreads": {
               "Brooklyn Nets": {
-                "price": 1.93,
-                "point": 2.5,
-                "prob": 49.5
+                "price": 1.89,
+                "point": 3.5,
+                "prob": 50.5
               },
               "Indiana Pacers": {
-                "price": 1.89,
-                "point": -2.5,
-                "prob": 50.5
+                "price": 1.93,
+                "point": -3.5,
+                "prob": 49.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.95,
+                "price": 1.91,
                 "point": 224.5,
-                "prob": 49.0
+                "prob": 50.0
               },
               "Under": {
-                "price": 1.87,
+                "price": 1.91,
                 "point": 224.5,
-                "prob": 51.0
+                "prob": 50.0
               }
             }
           }
@@ -722,43 +744,43 @@
                 "price": 2.25
               },
               "Indiana Pacers": {
-                "price": 1.63
+                "price": 1.64
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Brooklyn Nets": 2.327,
-        "Indiana Pacers": 1.634
+        "Brooklyn Nets": 2.349,
+        "Indiana Pacers": 1.622
       },
       "true_probs": {
-        "Brooklyn Nets": 41.3,
-        "Indiana Pacers": 58.7
+        "Brooklyn Nets": 40.8,
+        "Indiana Pacers": 59.2
       },
       "other_markets": {
         "spreads": {
           "Brooklyn Nets": {
-            "price": 1.93,
-            "point": 2.5,
-            "prob": 49.5
+            "price": 1.89,
+            "point": 3.5,
+            "prob": 50.5
           },
           "Indiana Pacers": {
-            "price": 1.89,
-            "point": -2.5,
-            "prob": 50.5
+            "price": 1.93,
+            "point": -3.5,
+            "prob": 49.5
           }
         },
         "totals": {
           "Over": {
-            "price": 1.95,
+            "price": 1.91,
             "point": 224.5,
-            "prob": 49.0
+            "prob": 50.0
           },
           "Under": {
-            "price": 1.87,
+            "price": 1.91,
             "point": 224.5,
-            "prob": 51.0
+            "prob": 50.0
           }
         },
         "btts": {}
@@ -770,12 +792,12 @@
       "first_seen": "2026-04-09T16:27:35.506119+08:00",
       "is_new": false,
       "odds_change": {
-        "Brooklyn Nets": 0.01,
-        "Indiana Pacers": -0.001
+        "Brooklyn Nets": 0.032,
+        "Indiana Pacers": -0.013
       },
       "change_pct": {
-        "Brooklyn Nets": 0.43,
-        "Indiana Pacers": -0.06
+        "Brooklyn Nets": 1.38,
+        "Indiana Pacers": -0.8
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -783,13 +805,11 @@
           "time": "04/10 00:53",
           "Brooklyn Nets": 2.327,
           "Indiana Pacers": 1.634
-        }
-      ],
-      "injury_alerts": [
+        },
         {
-          "team": "Brooklyn Nets",
-          "title": "NBA Play-In Tournament Odds 2026: East Still Open Heading Into Final Weekend",
-          "link": "https://sports.yahoo.com/articles/nba-play-tournament-odds-schedule-202500833.html"
+          "time": "04/10 02:54",
+          "Brooklyn Nets": 2.349,
+          "Indiana Pacers": 1.622
         }
       ],
       "h2h_history": [],
@@ -839,34 +859,34 @@
           "markets": {
             "h2h": {
               "Houston Rockets": {
-                "price": 1.57
+                "price": 1.46
               },
               "Philadelphia 76ers": {
-                "price": 2.45
+                "price": 2.8
               }
             },
             "spreads": {
               "Houston Rockets": {
-                "price": 1.85,
-                "point": -3.5,
-                "prob": 51.7
+                "price": 1.91,
+                "point": -5.5,
+                "prob": 50.0
               },
               "Philadelphia 76ers": {
-                "price": 1.98,
-                "point": 3.5,
-                "prob": 48.3
+                "price": 1.91,
+                "point": 5.5,
+                "prob": 50.0
               }
             },
             "totals": {
               "Over": {
-                "price": 1.95,
-                "point": 227.5,
-                "prob": 49.0
+                "price": 1.91,
+                "point": 226.5,
+                "prob": 50.0
               },
               "Under": {
-                "price": 1.87,
-                "point": 227.5,
-                "prob": 51.0
+                "price": 1.91,
+                "point": 226.5,
+                "prob": 50.0
               }
             }
           }
@@ -876,10 +896,10 @@
           "markets": {
             "h2h": {
               "Houston Rockets": {
-                "price": 1.56
+                "price": 1.47
               },
               "Philadelphia 76ers": {
-                "price": 2.4
+                "price": 2.7
               }
             }
           }
@@ -889,29 +909,29 @@
           "markets": {
             "h2h": {
               "Houston Rockets": {
-                "price": 1.59
+                "price": 1.47
               },
               "Philadelphia 76ers": {
-                "price": 2.5
+                "price": 2.85
               }
             },
             "spreads": {
               "Houston Rockets": {
-                "price": 1.96,
-                "point": -4.0
+                "price": 1.94,
+                "point": -5.5
               },
               "Philadelphia 76ers": {
-                "price": 1.93,
-                "point": 4.0
+                "price": 1.94,
+                "point": 5.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.93,
+                "price": 1.98,
                 "point": 227.0
               },
               "Under": {
-                "price": 1.93,
+                "price": 1.88,
                 "point": 227.0
               }
             }
@@ -919,36 +939,36 @@
         }
       ],
       "avg_odds": {
-        "Houston Rockets": 1.584,
-        "Philadelphia 76ers": 2.43
+        "Houston Rockets": 1.458,
+        "Philadelphia 76ers": 2.799
       },
       "true_probs": {
-        "Houston Rockets": 60.5,
-        "Philadelphia 76ers": 39.5
+        "Houston Rockets": 65.8,
+        "Philadelphia 76ers": 34.2
       },
       "other_markets": {
         "spreads": {
           "Houston Rockets": {
-            "price": 1.85,
-            "point": -3.5,
-            "prob": 51.7
+            "price": 1.91,
+            "point": -5.5,
+            "prob": 50.0
           },
           "Philadelphia 76ers": {
-            "price": 1.98,
-            "point": 3.5,
-            "prob": 48.3
+            "price": 1.91,
+            "point": 5.5,
+            "prob": 50.0
           }
         },
         "totals": {
           "Over": {
-            "price": 1.95,
-            "point": 227.5,
-            "prob": 49.0
+            "price": 1.91,
+            "point": 226.5,
+            "prob": 50.0
           },
           "Under": {
-            "price": 1.87,
-            "point": 227.5,
-            "prob": 51.0
+            "price": 1.91,
+            "point": 226.5,
+            "prob": 50.0
           }
         },
         "btts": {}
@@ -960,26 +980,24 @@
       "first_seen": "2026-04-09T16:27:35.506121+08:00",
       "is_new": false,
       "odds_change": {
-        "Houston Rockets": 0.0,
-        "Philadelphia 76ers": 0.012
+        "Houston Rockets": -0.126,
+        "Philadelphia 76ers": 0.381
       },
       "change_pct": {
-        "Houston Rockets": 0.0,
-        "Philadelphia 76ers": 0.5
+        "Houston Rockets": -7.95,
+        "Philadelphia 76ers": 15.76
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/10 00:53",
           "Houston Rockets": 1.584,
           "Philadelphia 76ers": 2.43
-        }
-      ],
-      "injury_alerts": [
+        },
         {
-          "team": "Philadelphia 76ers",
-          "title": "NBA Play-In Tournament Odds 2026: East Still Open Heading Into Final Weekend",
-          "link": "https://sports.yahoo.com/articles/nba-play-tournament-odds-schedule-202500833.html"
+          "time": "04/10 02:54",
+          "Houston Rockets": 1.458,
+          "Philadelphia 76ers": 2.799
         }
       ],
       "h2h_history": [],
@@ -1031,33 +1049,33 @@
           "markets": {
             "h2h": {
               "Golden State Warriors": {
-                "price": 1.52
+                "price": 1.68
               },
               "Los Angeles Lakers": {
-                "price": 2.6
+                "price": 2.24
               }
             },
             "spreads": {
               "Golden State Warriors": {
-                "price": 1.91,
-                "point": -4.5,
-                "prob": 50.0
+                "price": 1.89,
+                "point": -2.5,
+                "prob": 50.5
               },
               "Los Angeles Lakers": {
-                "price": 1.91,
-                "point": 4.5,
-                "prob": 50.0
+                "price": 1.93,
+                "point": 2.5,
+                "prob": 49.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 225.5,
+                "point": 223.5,
                 "prob": 50.0
               },
               "Under": {
                 "price": 1.91,
-                "point": 225.5,
+                "point": 223.5,
                 "prob": 50.0
               }
             }
@@ -1068,30 +1086,30 @@
           "markets": {
             "h2h": {
               "Golden State Warriors": {
-                "price": 1.53
+                "price": 1.69
               },
               "Los Angeles Lakers": {
-                "price": 2.66
+                "price": 2.27
               }
             },
             "spreads": {
               "Golden State Warriors": {
-                "price": 1.94,
-                "point": -4.5
+                "price": 1.95,
+                "point": -3.5
               },
               "Los Angeles Lakers": {
-                "price": 1.94,
-                "point": 4.5
+                "price": 1.93,
+                "point": 3.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.93,
-                "point": 225.5
+                "point": 224.0
               },
               "Under": {
                 "price": 1.93,
-                "point": 225.5
+                "point": 224.0
               }
             }
           }
@@ -1101,65 +1119,65 @@
           "markets": {
             "h2h": {
               "Golden State Warriors": {
-                "price": 1.53
+                "price": 1.69
               },
               "Los Angeles Lakers": {
-                "price": 2.65
+                "price": 2.25
               }
             },
             "spreads": {
               "Golden State Warriors": {
-                "price": 1.91,
-                "point": -4.5
+                "price": 1.92,
+                "point": -3.5
               },
               "Los Angeles Lakers": {
-                "price": 1.91,
-                "point": 4.5
+                "price": 1.9,
+                "point": 3.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 225.5
+                "point": 224.0
               },
               "Under": {
                 "price": 1.91,
-                "point": 225.5
+                "point": 224.0
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Golden State Warriors": 1.531,
-        "Los Angeles Lakers": 2.578
+        "Golden State Warriors": 1.612,
+        "Los Angeles Lakers": 2.389
       },
       "true_probs": {
-        "Golden State Warriors": 62.7,
-        "Los Angeles Lakers": 37.3
+        "Golden State Warriors": 59.7,
+        "Los Angeles Lakers": 40.3
       },
       "other_markets": {
         "spreads": {
           "Golden State Warriors": {
-            "price": 1.91,
-            "point": -4.5,
-            "prob": 50.0
+            "price": 1.89,
+            "point": -2.5,
+            "prob": 50.5
           },
           "Los Angeles Lakers": {
-            "price": 1.91,
-            "point": 4.5,
-            "prob": 50.0
+            "price": 1.93,
+            "point": 2.5,
+            "prob": 49.5
           }
         },
         "totals": {
           "Over": {
             "price": 1.91,
-            "point": 225.5,
+            "point": 223.5,
             "prob": 50.0
           },
           "Under": {
             "price": 1.91,
-            "point": 225.5,
+            "point": 223.5,
             "prob": 50.0
           }
         },
@@ -1172,19 +1190,24 @@
       "first_seen": "2026-04-09T16:27:35.506124+08:00",
       "is_new": false,
       "odds_change": {
-        "Golden State Warriors": 0.014,
-        "Los Angeles Lakers": -0.015
+        "Golden State Warriors": 0.095,
+        "Los Angeles Lakers": -0.204
       },
       "change_pct": {
-        "Golden State Warriors": 0.92,
-        "Los Angeles Lakers": -0.58
+        "Golden State Warriors": 6.26,
+        "Los Angeles Lakers": -7.87
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/10 00:53",
           "Golden State Warriors": 1.531,
           "Los Angeles Lakers": 2.578
+        },
+        {
+          "time": "04/10 02:54",
+          "Golden State Warriors": 1.612,
+          "Los Angeles Lakers": 2.389
         }
       ],
       "injury_alerts": [
@@ -1226,9 +1249,7 @@
             "venue": "主"
           }
         ]
-      },
-      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
-      "analysis_source": "fallback"
+      }
     },
     "10d3a3a8df4f15a0754da8195a47c41f": {
       "id": "10d3a3a8df4f15a0754da8195a47c41f",
@@ -1332,9 +1353,9 @@
         }
       ],
       "avg_odds": {
-        "West Ham United": 1.835,
-        "Wolverhampton Wanderers": 4.232,
-        "Draw": 3.745
+        "West Ham United": 1.834,
+        "Wolverhampton Wanderers": 4.237,
+        "Draw": 3.742
       },
       "true_probs": {
         "West Ham United": 52.0,
@@ -1376,14 +1397,14 @@
       "first_seen": "2026-04-10T00:23:50.002780+08:00",
       "is_new": false,
       "odds_change": {
-        "West Ham United": 0.0,
-        "Wolverhampton Wanderers": 0.0,
-        "Draw": 0.0
+        "West Ham United": -0.001,
+        "Wolverhampton Wanderers": 0.005,
+        "Draw": -0.003
       },
       "change_pct": {
-        "West Ham United": 0.0,
-        "Wolverhampton Wanderers": 0.0,
-        "Draw": 0.0
+        "West Ham United": -0.05,
+        "Wolverhampton Wanderers": 0.12,
+        "Draw": -0.08
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1392,6 +1413,19 @@
           "West Ham United": 1.835,
           "Wolverhampton Wanderers": 4.232,
           "Draw": 3.745
+        },
+        {
+          "time": "04/10 02:54",
+          "West Ham United": 1.834,
+          "Wolverhampton Wanderers": 4.237,
+          "Draw": 3.742
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "West Ham United",
+          "title": "Why Man United shouldn't extend Bruno Fernandes",
+          "link": "https://www.espn.com/soccer/story/_/id/48410931/bruno-fernandes-man-united-contract-extension-mohamed-salah-liverpool-transfers-ryan-ohanlon"
         }
       ],
       "h2h_history": [],
@@ -1443,13 +1477,13 @@
           "markets": {
             "h2h": {
               "Arsenal": {
-                "price": 1.38
+                "price": 1.4
               },
               "Bournemouth": {
-                "price": 7.0
+                "price": 6.5
               },
               "Draw": {
-                "price": 4.6
+                "price": 4.5
               }
             }
           }
@@ -1459,13 +1493,13 @@
           "markets": {
             "h2h": {
               "Arsenal": {
-                "price": 1.43
+                "price": 1.46
               },
               "Bournemouth": {
-                "price": 6.8
+                "price": 6.6
               },
               "Draw": {
-                "price": 4.8
+                "price": 4.7
               }
             },
             "totals": {
@@ -1510,26 +1544,26 @@
         }
       ],
       "avg_odds": {
-        "Arsenal": 1.425,
-        "Bournemouth": 7.332,
-        "Draw": 4.732
+        "Arsenal": 1.429,
+        "Bournemouth": 7.276,
+        "Draw": 4.715
       },
       "true_probs": {
-        "Arsenal": 66.9,
-        "Bournemouth": 13.0,
-        "Draw": 20.1
+        "Arsenal": 66.7,
+        "Bournemouth": 13.1,
+        "Draw": 20.2
       },
       "other_markets": {
         "spreads": {
           "Arsenal": {
-            "price": 2.06,
+            "price": 2.11,
             "point": -1.5,
-            "prob": 45.4
+            "prob": 44.3
           },
           "Bournemouth": {
-            "price": 1.71,
+            "price": 1.68,
             "point": 1.5,
-            "prob": 54.6
+            "prob": 55.7
           }
         },
         "totals": {
@@ -1554,14 +1588,14 @@
       "first_seen": "2026-04-10T00:23:50.002783+08:00",
       "is_new": false,
       "odds_change": {
-        "Arsenal": -0.001,
-        "Bournemouth": 0.0,
-        "Draw": 0.019
+        "Arsenal": 0.003,
+        "Bournemouth": -0.056,
+        "Draw": 0.002
       },
       "change_pct": {
-        "Arsenal": -0.07,
-        "Bournemouth": 0.0,
-        "Draw": 0.4
+        "Arsenal": 0.21,
+        "Bournemouth": -0.76,
+        "Draw": 0.04
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1570,47 +1604,37 @@
           "Arsenal": 1.425,
           "Bournemouth": 7.332,
           "Draw": 4.732
+        },
+        {
+          "time": "04/10 02:54",
+          "Arsenal": 1.429,
+          "Bournemouth": 7.276,
+          "Draw": 4.715
         }
       ],
       "h2h_history": [],
       "home_form": {
-        "record": "L",
+        "record": "",
         "wins": 0,
-        "losses": 1,
-        "home_record": "L",
+        "losses": 0,
+        "home_record": "",
         "away_record": "",
-        "details": [
-          {
-            "date": "2026-03-22",
-            "opponent": "Manchester City",
-            "score": "0-2",
-            "result": "L",
-            "venue": "主"
-          }
-        ]
+        "details": []
       },
       "away_form": {
-        "record": "L",
+        "record": "",
         "wins": 0,
-        "losses": 1,
-        "home_record": "L",
+        "losses": 0,
+        "home_record": "",
         "away_record": "",
-        "details": [
-          {
-            "date": "2026-03-20",
-            "opponent": "Manchester United",
-            "score": "2-2",
-            "result": "L",
-            "venue": "主"
-          }
-        ]
+        "details": []
       },
       "weather": {
-        "temp": 14.5,
+        "temp": 12.1,
         "wind": 22.7,
-        "rain": 0.1,
-        "condition": "🌧️ 雨天",
-        "impact": "場地可能濕滑，對腳下技術要求較高"
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
       },
       "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
       "analysis_source": "fallback"
@@ -1752,6 +1776,12 @@
       "odds_timeline": [
         {
           "time": "04/10 00:53",
+          "Brentford": 2.146,
+          "Everton": 3.505,
+          "Draw": 3.359
+        },
+        {
+          "time": "04/10 02:54",
           "Brentford": 2.146,
           "Everton": 3.505,
           "Draw": 3.359
@@ -1910,6 +1940,12 @@
           "Brighton and Hove Albion": 1.733,
           "Burnley": 4.525,
           "Draw": 4.007
+        },
+        {
+          "time": "04/10 02:54",
+          "Brighton and Hove Albion": 1.733,
+          "Burnley": 4.525,
+          "Draw": 4.007
         }
       ],
       "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
@@ -1955,14 +1991,14 @@
             },
             "totals": {
               "Over": {
-                "price": 2.25,
-                "point": 3.5,
-                "prob": 39.5
+                "price": 1.44,
+                "point": 2.5,
+                "prob": 61.5
               },
               "Under": {
-                "price": 1.47,
-                "point": 3.5,
-                "prob": 60.5
+                "price": 2.3,
+                "point": 2.5,
+                "prob": 38.5
               }
             }
           }
@@ -2009,14 +2045,14 @@
         },
         "totals": {
           "Over": {
-            "price": 2.25,
-            "point": 3.5,
-            "prob": 39.5
+            "price": 1.44,
+            "point": 2.5,
+            "prob": 61.5
           },
           "Under": {
-            "price": 1.47,
-            "point": 3.5,
-            "prob": 60.5
+            "price": 2.3,
+            "point": 2.5,
+            "prob": 38.5
           }
         },
         "btts": {}
@@ -2045,6 +2081,12 @@
           "Fulham": 4.92,
           "Liverpool": 1.63,
           "Draw": 4.323
+        },
+        {
+          "time": "04/10 02:54",
+          "Fulham": 4.92,
+          "Liverpool": 1.63,
+          "Draw": 4.323
         }
       ],
       "injury_alerts": [
@@ -2052,11 +2094,16 @@
           "team": "Liverpool",
           "title": "Liverpool still alive - but their season now hangs by a thread",
           "link": "https://www.bbc.com/sport/football/articles/c3expgqy2zxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "team": "Liverpool",
+          "title": "Why Man United shouldn't extend Bruno Fernandes",
+          "link": "https://www.espn.com/soccer/story/_/id/48410931/bruno-fernandes-man-united-contract-extension-mohamed-salah-liverpool-transfers-ryan-ohanlon"
         }
       ],
       "weather": {
-        "temp": 8.4,
-        "wind": 29.9,
+        "temp": 7.3,
+        "wind": 27.0,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": "場地可能濕滑，對腳下技術要求較高"
@@ -2134,12 +2181,12 @@
         }
       ],
       "avg_odds": {
-        "Aston Villa": 2.687,
-        "Nottingham Forest": 2.655,
-        "Draw": 3.333
+        "Aston Villa": 2.691,
+        "Nottingham Forest": 2.654,
+        "Draw": 3.332
       },
       "true_probs": {
-        "Aston Villa": 35.5,
+        "Aston Villa": 35.4,
         "Nottingham Forest": 35.9,
         "Draw": 28.6
       },
@@ -2178,14 +2225,14 @@
       "first_seen": "2026-04-10T00:23:50.002791+08:00",
       "is_new": false,
       "odds_change": {
-        "Aston Villa": 0.0,
-        "Nottingham Forest": 0.0,
-        "Draw": 0.0
+        "Aston Villa": 0.004,
+        "Nottingham Forest": -0.001,
+        "Draw": -0.001
       },
       "change_pct": {
-        "Aston Villa": 0.0,
-        "Nottingham Forest": 0.0,
-        "Draw": 0.0
+        "Aston Villa": 0.15,
+        "Nottingham Forest": -0.04,
+        "Draw": -0.03
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -2194,6 +2241,12 @@
           "Aston Villa": 2.687,
           "Nottingham Forest": 2.655,
           "Draw": 3.333
+        },
+        {
+          "time": "04/10 02:54",
+          "Aston Villa": 2.691,
+          "Nottingham Forest": 2.654,
+          "Draw": 3.332
         }
       ],
       "injury_alerts": [
@@ -2276,13 +2329,13 @@
         }
       ],
       "avg_odds": {
-        "Crystal Palace": 3.057,
-        "Newcastle United": 2.29,
+        "Crystal Palace": 3.062,
+        "Newcastle United": 2.287,
         "Draw": 3.505
       },
       "true_probs": {
-        "Crystal Palace": 31.2,
-        "Newcastle United": 41.6,
+        "Crystal Palace": 31.1,
+        "Newcastle United": 41.7,
         "Draw": 27.2
       },
       "other_markets": {
@@ -2320,13 +2373,13 @@
       "first_seen": "2026-04-10T00:23:50.002795+08:00",
       "is_new": false,
       "odds_change": {
-        "Crystal Palace": 0.002,
-        "Newcastle United": 0.0,
+        "Crystal Palace": 0.007,
+        "Newcastle United": -0.003,
         "Draw": 0.0
       },
       "change_pct": {
-        "Crystal Palace": 0.07,
-        "Newcastle United": 0.0,
+        "Crystal Palace": 0.23,
+        "Newcastle United": -0.13,
         "Draw": 0.0
       },
       "is_value_bet": false,
@@ -2336,6 +2389,19 @@
           "Crystal Palace": 3.057,
           "Newcastle United": 2.29,
           "Draw": 3.505
+        },
+        {
+          "time": "04/10 02:54",
+          "Crystal Palace": 3.062,
+          "Newcastle United": 2.287,
+          "Draw": 3.505
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Newcastle United",
+          "title": "Why Man United shouldn't extend Bruno Fernandes",
+          "link": "https://www.espn.com/soccer/story/_/id/48410931/bruno-fernandes-man-united-contract-extension-mohamed-salah-liverpool-transfers-ryan-ohanlon"
         }
       ]
     },
@@ -2379,14 +2445,14 @@
             },
             "totals": {
               "Over": {
-                "price": 1.89,
+                "price": 1.88,
                 "point": 2.5,
-                "prob": 48.5
+                "prob": 48.8
               },
               "Under": {
-                "price": 1.78,
+                "price": 1.79,
                 "point": 2.5,
-                "prob": 51.5
+                "prob": 51.2
               }
             }
           }
@@ -2431,12 +2497,12 @@
         }
       ],
       "avg_odds": {
-        "Sunderland": 2.647,
-        "Tottenham Hotspur": 2.671,
-        "Draw": 3.379
+        "Sunderland": 2.645,
+        "Tottenham Hotspur": 2.67,
+        "Draw": 3.382
       },
       "true_probs": {
-        "Sunderland": 36.0,
+        "Sunderland": 36.1,
         "Tottenham Hotspur": 35.7,
         "Draw": 28.2
       },
@@ -2455,14 +2521,14 @@
         },
         "totals": {
           "Over": {
-            "price": 1.89,
+            "price": 1.88,
             "point": 2.5,
-            "prob": 48.5
+            "prob": 48.8
           },
           "Under": {
-            "price": 1.78,
+            "price": 1.79,
             "point": 2.5,
-            "prob": 51.5
+            "prob": 51.2
           }
         },
         "btts": {}
@@ -2475,14 +2541,14 @@
       "first_seen": "2026-04-10T00:23:50.002797+08:00",
       "is_new": false,
       "odds_change": {
-        "Sunderland": -0.001,
-        "Tottenham Hotspur": 0.001,
-        "Draw": 0.002
+        "Sunderland": -0.003,
+        "Tottenham Hotspur": 0.0,
+        "Draw": 0.005
       },
       "change_pct": {
-        "Sunderland": -0.04,
-        "Tottenham Hotspur": 0.04,
-        "Draw": 0.06
+        "Sunderland": -0.11,
+        "Tottenham Hotspur": 0.0,
+        "Draw": 0.15
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -2491,6 +2557,19 @@
           "Sunderland": 2.647,
           "Tottenham Hotspur": 2.671,
           "Draw": 3.379
+        },
+        {
+          "time": "04/10 02:54",
+          "Sunderland": 2.645,
+          "Tottenham Hotspur": 2.67,
+          "Draw": 3.382
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Tottenham Hotspur",
+          "title": "Kudus may require surgery after injury setback",
+          "link": "https://www.bbc.com/sport/football/articles/cjd8r239139o?at_medium=RSS&at_campaign=rss"
         }
       ]
     },
@@ -2646,14 +2725,20 @@
           "Chelsea": 3.121,
           "Manchester City": 2.128,
           "Draw": 3.852
+        },
+        {
+          "time": "04/10 02:54",
+          "Chelsea": 3.121,
+          "Manchester City": 2.128,
+          "Draw": 3.852
         }
       ],
       "weather": {
-        "temp": 14.5,
-        "wind": 23.4,
-        "rain": 0.1,
-        "condition": "🌧️ 雨天",
-        "impact": "場地可能濕滑，對腳下技術要求較高"
+        "temp": 12.2,
+        "wind": 23.0,
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
       }
     },
     "7d48c93e68e7403998d0ed38e99caae5": {
@@ -2808,11 +2893,24 @@
           "Leeds United": 5.201,
           "Manchester United": 1.611,
           "Draw": 4.185
+        },
+        {
+          "time": "04/10 02:54",
+          "Leeds United": 5.201,
+          "Manchester United": 1.611,
+          "Draw": 4.185
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Manchester United",
+          "title": "Why Man United shouldn't extend Bruno Fernandes",
+          "link": "https://www.espn.com/soccer/story/_/id/48410931/bruno-fernandes-man-united-contract-extension-mohamed-salah-liverpool-transfers-ryan-ohanlon"
         }
       ],
       "weather": {
-        "temp": 8.6,
-        "wind": 24.5,
+        "temp": 7.7,
+        "wind": 18.4,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
@@ -2969,6 +3067,12 @@
       "odds_timeline": [
         {
           "time": "04/10 00:53",
+          "Brentford": 2.11,
+          "Fulham": 3.233,
+          "Draw": 3.642
+        },
+        {
+          "time": "04/10 02:54",
           "Brentford": 2.11,
           "Fulham": 3.233,
           "Draw": 3.642
@@ -3129,13 +3233,26 @@
           "Bournemouth": 3.693,
           "Newcastle United": 1.87,
           "Draw": 3.973
+        },
+        {
+          "time": "04/10 02:54",
+          "Bournemouth": 3.693,
+          "Newcastle United": 1.87,
+          "Draw": 3.973
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Newcastle United",
+          "title": "Why Man United shouldn't extend Bruno Fernandes",
+          "link": "https://www.espn.com/soccer/story/_/id/48410931/bruno-fernandes-man-united-contract-extension-mohamed-salah-liverpool-transfers-ryan-ohanlon"
         }
       ],
       "weather": {
-        "temp": 8.7,
-        "wind": 26.6,
-        "rain": 0.0,
-        "condition": "☀️ 晴朗",
+        "temp": 6.7,
+        "wind": 22.0,
+        "rain": 0.1,
+        "condition": "🌧️ 雨天",
         "impact": "場地可能濕滑，對腳下技術要求較高"
       },
       "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
@@ -3293,6 +3410,19 @@
           "Leeds United": 1.66,
           "Wolverhampton Wanderers": 5.122,
           "Draw": 3.855
+        },
+        {
+          "time": "04/10 02:54",
+          "Leeds United": 1.66,
+          "Wolverhampton Wanderers": 5.122,
+          "Draw": 3.855
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Leeds United",
+          "title": "Why Man United shouldn't extend Bruno Fernandes",
+          "link": "https://www.espn.com/soccer/story/_/id/48410931/bruno-fernandes-man-united-contract-extension-mohamed-salah-liverpool-transfers-ryan-ohanlon"
         }
       ],
       "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
@@ -3450,11 +3580,24 @@
           "Brighton and Hove Albion": 2.575,
           "Tottenham Hotspur": 2.537,
           "Draw": 3.633
+        },
+        {
+          "time": "04/10 02:54",
+          "Brighton and Hove Albion": 2.575,
+          "Tottenham Hotspur": 2.537,
+          "Draw": 3.633
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Tottenham Hotspur",
+          "title": "Kudus may require surgery after injury setback",
+          "link": "https://www.bbc.com/sport/football/articles/cjd8r239139o?at_medium=RSS&at_campaign=rss"
         }
       ],
       "weather": {
-        "temp": 14.6,
-        "wind": 22.7,
+        "temp": 12.2,
+        "wind": 23.8,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
@@ -3473,25 +3616,25 @@
           "markets": {
             "h2h": {
               "Chelsea": {
-                "price": 2.26
+                "price": 2.28
               },
               "Manchester United": {
-                "price": 3.48
+                "price": 3.39
               },
               "Draw": {
-                "price": 3.52
+                "price": 3.56
               }
             },
             "spreads": {
               "Chelsea": {
-                "price": 1.57,
+                "price": 1.6,
                 "point": 0.0,
-                "prob": 60.6
+                "prob": 59.4
               },
               "Manchester United": {
-                "price": 2.41,
+                "price": 2.34,
                 "point": 0.0,
-                "prob": 39.4
+                "prob": 40.6
               }
             },
             "totals": {
@@ -3545,33 +3688,33 @@
                 "price": 3.05
               },
               "Draw": {
-                "price": 3.35
+                "price": 3.3
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Chelsea": 2.174,
-        "Manchester United": 3.24,
-        "Draw": 3.456
+        "Chelsea": 2.177,
+        "Manchester United": 3.201,
+        "Draw": 3.489
       },
       "true_probs": {
-        "Chelsea": 43.5,
-        "Manchester United": 29.2,
-        "Draw": 27.3
+        "Chelsea": 43.4,
+        "Manchester United": 29.5,
+        "Draw": 27.1
       },
       "other_markets": {
         "spreads": {
           "Chelsea": {
-            "price": 1.57,
+            "price": 1.6,
             "point": 0.0,
-            "prob": 60.6
+            "prob": 59.4
           },
           "Manchester United": {
-            "price": 2.41,
+            "price": 2.34,
             "point": 0.0,
-            "prob": 39.4
+            "prob": 40.6
           }
         },
         "totals": {
@@ -3596,14 +3739,14 @@
       "first_seen": "2026-04-10T00:23:50.002813+08:00",
       "is_new": false,
       "odds_change": {
-        "Chelsea": 0.0,
-        "Manchester United": 0.0,
-        "Draw": 0.0
+        "Chelsea": 0.003,
+        "Manchester United": -0.039,
+        "Draw": 0.033
       },
       "change_pct": {
-        "Chelsea": 0.0,
-        "Manchester United": 0.0,
-        "Draw": 0.0
+        "Chelsea": 0.14,
+        "Manchester United": -1.2,
+        "Draw": 0.95
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -3612,17 +3755,28 @@
           "Chelsea": 2.174,
           "Manchester United": 3.24,
           "Draw": 3.456
+        },
+        {
+          "time": "04/10 02:54",
+          "Chelsea": 2.177,
+          "Manchester United": 3.201,
+          "Draw": 3.489
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Manchester United",
+          "title": "Why Man United shouldn't extend Bruno Fernandes",
+          "link": "https://www.espn.com/soccer/story/_/id/48410931/bruno-fernandes-man-united-contract-extension-mohamed-salah-liverpool-transfers-ryan-ohanlon"
         }
       ],
       "weather": {
-        "temp": 14.5,
-        "wind": 23.4,
-        "rain": 0.1,
-        "condition": "🌧️ 雨天",
-        "impact": "場地可能濕滑，對腳下技術要求較高"
-      },
-      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
-      "analysis_source": "fallback"
+        "temp": 12.2,
+        "wind": 23.0,
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
+      }
     },
     "72406c12d6334a8f3475a640ea1f814b": {
       "id": "72406c12d6334a8f3475a640ea1f814b",
@@ -3728,12 +3882,12 @@
       "avg_odds": {
         "Aston Villa": 1.618,
         "Sunderland": 5.55,
-        "Draw": 3.727
+        "Draw": 3.729
       },
       "true_probs": {
-        "Aston Villa": 57.9,
+        "Aston Villa": 58.0,
         "Sunderland": 16.9,
-        "Draw": 25.2
+        "Draw": 25.1
       },
       "other_markets": {
         "spreads": {
@@ -3772,12 +3926,12 @@
       "odds_change": {
         "Aston Villa": 0.0,
         "Sunderland": 0.0,
-        "Draw": -0.002
+        "Draw": 0.0
       },
       "change_pct": {
         "Aston Villa": 0.0,
         "Sunderland": 0.0,
-        "Draw": -0.05
+        "Draw": 0.0
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -3786,11 +3940,17 @@
           "Aston Villa": 1.618,
           "Sunderland": 5.55,
           "Draw": 3.727
+        },
+        {
+          "time": "04/10 02:54",
+          "Aston Villa": 1.618,
+          "Sunderland": 5.55,
+          "Draw": 3.729
         }
       ],
       "weather": {
-        "temp": 10.8,
-        "wind": 23.0,
+        "temp": 9.1,
+        "wind": 23.8,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
@@ -3955,6 +4115,12 @@
       "odds_timeline": [
         {
           "time": "04/10 00:53",
+          "Burnley": 6.058,
+          "Nottingham Forest": 1.537,
+          "Draw": 4.127
+        },
+        {
+          "time": "04/10 02:54",
           "Burnley": 6.058,
           "Nottingham Forest": 1.537,
           "Draw": 4.127
@@ -4132,6 +4298,12 @@
           "Everton": 3.383,
           "Liverpool": 2.079,
           "Draw": 3.572
+        },
+        {
+          "time": "04/10 02:54",
+          "Everton": 3.383,
+          "Liverpool": 2.079,
+          "Draw": 3.572
         }
       ],
       "injury_alerts": [
@@ -4139,6 +4311,11 @@
           "team": "Liverpool",
           "title": "Liverpool still alive - but their season now hangs by a thread",
           "link": "https://www.bbc.com/sport/football/articles/c3expgqy2zxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "team": "Liverpool",
+          "title": "Why Man United shouldn't extend Bruno Fernandes",
+          "link": "https://www.espn.com/soccer/story/_/id/48410931/bruno-fernandes-man-united-contract-extension-mohamed-salah-liverpool-transfers-ryan-ohanlon"
         }
       ],
       "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
@@ -4246,13 +4423,13 @@
         }
       ],
       "avg_odds": {
-        "Arsenal": 3.41,
-        "Manchester City": 2.075,
-        "Draw": 3.561
+        "Arsenal": 3.399,
+        "Manchester City": 2.079,
+        "Draw": 3.56
       },
       "true_probs": {
-        "Arsenal": 27.8,
-        "Manchester City": 45.6,
+        "Arsenal": 27.9,
+        "Manchester City": 45.5,
         "Draw": 26.6
       },
       "other_markets": {
@@ -4290,14 +4467,14 @@
       "first_seen": "2026-04-10T00:23:50.002822+08:00",
       "is_new": false,
       "odds_change": {
-        "Arsenal": -0.005,
-        "Manchester City": 0.001,
-        "Draw": -0.002
+        "Arsenal": -0.016,
+        "Manchester City": 0.005,
+        "Draw": -0.003
       },
       "change_pct": {
-        "Arsenal": -0.15,
-        "Manchester City": 0.05,
-        "Draw": -0.06
+        "Arsenal": -0.47,
+        "Manchester City": 0.24,
+        "Draw": -0.08
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -4306,11 +4483,17 @@
           "Arsenal": 3.41,
           "Manchester City": 2.075,
           "Draw": 3.561
+        },
+        {
+          "time": "04/10 02:54",
+          "Arsenal": 3.399,
+          "Manchester City": 2.079,
+          "Draw": 3.56
         }
       ],
       "weather": {
-        "temp": 8.6,
-        "wind": 22.3,
+        "temp": 7.7,
+        "wind": 18.0,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
@@ -4345,7 +4528,7 @@
           "markets": {
             "h2h": {
               "Crystal Palace": {
-                "price": 2.05
+                "price": 2.07
               },
               "West Ham United": {
                 "price": 3.5
@@ -4358,12 +4541,12 @@
               "Over": {
                 "price": 1.78,
                 "point": 2.5,
-                "prob": 50.1
+                "prob": 50.0
               },
               "Under": {
-                "price": 1.79,
+                "price": 1.78,
                 "point": 2.5,
-                "prob": 49.9
+                "prob": 50.0
               }
             }
           }
@@ -4408,14 +4591,14 @@
         }
       ],
       "avg_odds": {
-        "Crystal Palace": 2.157,
-        "West Ham United": 3.506,
-        "Draw": 3.254
+        "Crystal Palace": 2.165,
+        "West Ham United": 3.502,
+        "Draw": 3.25
       },
       "true_probs": {
-        "Crystal Palace": 43.9,
-        "West Ham United": 27.0,
-        "Draw": 29.1
+        "Crystal Palace": 43.8,
+        "West Ham United": 27.1,
+        "Draw": 29.2
       },
       "other_markets": {
         "spreads": {
@@ -4434,12 +4617,12 @@
           "Over": {
             "price": 1.78,
             "point": 2.5,
-            "prob": 50.1
+            "prob": 50.0
           },
           "Under": {
-            "price": 1.79,
+            "price": 1.78,
             "point": 2.5,
-            "prob": 49.9
+            "prob": 50.0
           }
         },
         "btts": {}
@@ -4452,14 +4635,14 @@
       "first_seen": "2026-04-10T00:23:50.002824+08:00",
       "is_new": false,
       "odds_change": {
-        "Crystal Palace": 0.0,
-        "West Ham United": 0.0,
-        "Draw": 0.0
+        "Crystal Palace": 0.008,
+        "West Ham United": -0.004,
+        "Draw": -0.004
       },
       "change_pct": {
-        "Crystal Palace": 0.0,
-        "West Ham United": 0.0,
-        "Draw": 0.0
+        "Crystal Palace": 0.37,
+        "West Ham United": -0.11,
+        "Draw": -0.12
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -4468,6 +4651,19 @@
           "Crystal Palace": 2.157,
           "West Ham United": 3.506,
           "Draw": 3.254
+        },
+        {
+          "time": "04/10 02:54",
+          "Crystal Palace": 2.165,
+          "West Ham United": 3.502,
+          "Draw": 3.25
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "West Ham United",
+          "title": "Why Man United shouldn't extend Bruno Fernandes",
+          "link": "https://www.espn.com/soccer/story/_/id/48410931/bruno-fernandes-man-united-contract-extension-mohamed-salah-liverpool-transfers-ryan-ohanlon"
         }
       ],
       "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
@@ -4509,10 +4705,10 @@
   "news": {
     "nba": [
       {
-        "title": "'50 wins in a gap year': How Jaylen Brown turbocharged the Celtics back to title contention",
-        "link": "https://www.espn.com/nba/story/_/id/48430297/how-jaylen-brown-turbocharged-boston-celtics-back-title-contention-jayson-tatum",
-        "published": "Thu, 9 Apr 2026 08:44:17 EST",
-        "summary": "Between memorizing the astrological signs of his teammates and undergoing extreme underwater training, Brown didn't need to be a hero in Boston. He simply needed to lead. \"I'm not going to make myself"
+        "title": "2026 NBA draft top 100: Where top prospects land on the big board after March",
+        "link": "https://www.espn.com/nba/story/_/id/46886245/2026-nba-draft-big-board-rankings-top-100-prospects-players",
+        "published": "Thu, 9 Apr 2026 14:11:32 EST",
+        "summary": "Here is the updated top 100 big board for the 2026 class after an exciting college season."
       },
       {
         "title": "OKC locks up No. 1 seed, joins elite company",
@@ -4571,6 +4767,12 @@
     ],
     "soccer": [
       {
+        "title": "Robertson to leave Liverpool at the end of the season",
+        "link": "https://www.bbc.com/sport/football/articles/cp8d4jvj108o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 18:45:29 GMT",
+        "summary": "Andy Robertson will leave Liverpool at the end of the season when his contract expires in the summer, the club has announced."
+      },
+      {
         "title": "Arsenal's big summer - Arteta contract, £100m for Nwaneri and Lewis-Skelly",
         "link": "https://www.bbc.com/sport/football/articles/cn78kdymmvpo?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 09 Apr 2026 15:36:40 GMT",
@@ -4583,10 +4785,10 @@
         "summary": "Clubs at risk of relegation tend to hire pragmatic coaches - but Spurs have not done that by appointing Roberto de Zerbi."
       },
       {
-        "title": "Maguire on his major lows and belief he is still one of world's best",
-        "link": "https://www.bbc.com/sport/football/articles/cg4036peyq7o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Apr 2026 11:00:26 GMT",
-        "summary": "Manchester United defender Harry Maguire on how his mum defended him in his lowest moments, his return to form, new contract and bright future"
+        "title": "Oliver and Taylor selected as World Cup referees",
+        "link": "https://www.bbc.com/sport/football/articles/cx2d5302rplo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 18:02:16 GMT",
+        "summary": "Michael Oliver and Anthony Taylor have been named as referees for this summer's 2026 World Cup."
       },
       {
         "title": "Sutton's predictions v boxing promoter & Arsenal fan Frank Warren",
@@ -4595,16 +4797,22 @@
         "summary": "Chris Sutton takes on boxing promoter Frank Warren plus the BBC readers and AI with his predictions for this weekend's Premier League fixtures."
       },
       {
+        "title": "Kudus may require surgery after injury setback",
+        "link": "https://www.bbc.com/sport/football/articles/cjd8r239139o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 14:30:05 GMT",
+        "summary": "Tottenham winger Mohammed Kudus may require surgery after suffering a setback in his recovery from a thigh injury."
+      },
+      {
+        "title": "Maguire on his major lows and belief he is still one of world's best",
+        "link": "https://www.bbc.com/sport/football/articles/cg4036peyq7o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 11:00:26 GMT",
+        "summary": "Manchester United defender Harry Maguire on how his mum defended him in his lowest moments, his return to form, new contract and bright future"
+      },
+      {
         "title": "Bedford on 'full circle' moment in England career",
         "link": "https://www.bbc.com/sport/football/articles/c8x7dgvwww1o?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 09 Apr 2026 16:00:12 GMT",
         "summary": "Returning as head coach for England Women's under-23s felt like a \"full circle moment\" for Lydia Bedford."
-      },
-      {
-        "title": "Scotland confirm final World Cup warm-up against Bolivia - live on BBC",
-        "link": "https://www.bbc.com/sport/football/articles/cm25yp3k8vlo?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Apr 2026 14:09:16 GMT",
-        "summary": "Scotland confirm a friendly against Bolivia in Harrison, New Jersey on 6 June as their final warm-up game before this summer's World Cup finals."
       },
       {
         "title": "Howe's future & likely sales - why Newcastle face key summer",
@@ -4613,22 +4821,10 @@
         "summary": "Newcastle's inconsistent season leaves them facing a defining summer - with questions over Eddie Howe's future and sales of key players a possibility. BBC Sport assesses the situation."
       },
       {
-        "title": "How fluid PSG exposed Slot's back-five tweak",
-        "link": "https://www.bbc.com/sport/football/articles/c0j6ewp0577o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Apr 2026 06:14:01 GMT",
-        "summary": "Arne Slot changed Liverpool's shape for their Champions League quarter-final first leg - but their tactics were still bested by European champions Paris St-Germain. Umir Irfan explains how."
-      },
-      {
-        "title": "Wood in Forest squad after six months out injured",
-        "link": "https://www.bbc.com/sport/football/articles/cgrl4vr58lgo?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 08 Apr 2026 18:59:21 GMT",
-        "summary": "Striker Chris Wood will end his six-month injury lay-off by returning to the Nottingham Forest squad in Porto."
-      },
-      {
-        "title": "Back Haaland and Semenyo to shine at Chelsea - FPL team of the week",
-        "link": "https://www.bbc.com/sport/football/articles/ce35yk45v12o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Apr 2026 08:01:51 GMT",
-        "summary": "Put your faith in trusted FPL assets such as Bruno Fernandes and Antoine Semenyo this week, with a double gameweek on the horizon."
+        "title": "Scotland confirm final World Cup warm-up against Bolivia - live on BBC",
+        "link": "https://www.bbc.com/sport/football/articles/cm25yp3k8vlo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Apr 2026 14:09:16 GMT",
+        "summary": "Scotland confirm a friendly against Bolivia in Harrison, New Jersey on 6 June as their final warm-up game before this summer's World Cup finals."
       }
     ]
   },
@@ -4636,7 +4832,6 @@
     "0852cffec341701f6a0dde8619ae9f56",
     "bf30a732402325cab54ab666ee0f5c11",
     "30b372ff1973370201b644c207be2dd3",
-    "29fe17f5b19da82ce2957c3683a10aa7",
     "10d3a3a8df4f15a0754da8195a47c41f",
     "ff027a0ac6a0538a713b46bd753b670d",
     "44d98d5d5c19eb115a527f1de294f03e",
@@ -4646,14 +4841,13 @@
     "2c2061ffc9ee67808fd45273089d7795",
     "be6cdb6ddd27d099b5291f0d1e051d92",
     "d137c5f062243e857803fcebfdda2953",
-    "933e20e0892b28ca075a9ab5465d5c6d",
     "95d68f9006aa718d447c759366118c31",
     "3e7369c873aed1c62f4d76fd652d73c7",
     "ea28653ebcd7743146869e2aa7851275"
   ],
   "stats": {
     "total_matches": 26,
-    "significant_changes_count": 17,
-    "api_remaining": "330"
+    "significant_changes_count": 15,
+    "api_remaining": "318"
   }
 }
