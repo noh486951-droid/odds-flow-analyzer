@@ -149,14 +149,20 @@ class GeminiApiKeyManager:
             return "N/A"
         return self.keys[self.current_idx]["label"]
         
-    def switch_key(self):
+    def switch_key(self, is_quota=False):
         if len(self.keys) > 1:
+            if is_quota:
+                self.keys[self.current_idx]["active"] = False
+                print(f"  ❌ {self.keys[self.current_idx]['label']} 額度可能已滿，停用此 Key。")
+            else:
+                print(f"  🔄 {self.keys[self.current_idx]['label']} 觸發速率限制，暫時切換至下一把 Key。")
+                
+            for _ in range(len(self.keys)):
+                self.current_idx = (self.current_idx + 1) % len(self.keys)
+                if self.keys[self.current_idx]["active"]:
+                    return True
+        elif is_quota and self.keys:
             self.keys[self.current_idx]["active"] = False
-            next_idx = (self.current_idx + 1) % len(self.keys)
-            if self.keys[next_idx]["active"]:
-                print(f"  🔄 {self.keys[self.current_idx]['label']} 額度可能已滿，自動切換至 {self.keys[next_idx]['label']}")
-                self.current_idx = next_idx
-                return True
         return False
 
 gemini_key_manager = GeminiApiKeyManager()
@@ -974,8 +980,11 @@ def translate_news_titles(news_dict):
         except Exception as e:
             err_str = str(e).lower()
             print(f"  ⚠️ 翻譯失敗 ({gemini_key_manager.get_label()}): {str(e)[:60]}")
-            if "429" in err_str or "quota" in err_str or "exhausted" in err_str:
-                if gemini_key_manager.switch_key():
+            if "quota" in err_str or "exhausted" in err_str:
+                if gemini_key_manager.switch_key(is_quota=True):
+                    continue
+            elif "429" in err_str:
+                if gemini_key_manager.switch_key(is_quota=False):
                     continue
             break
     
@@ -1013,8 +1022,8 @@ def analyze_with_ai(matches_with_changes, news_items):
     matches_to_analyze = matches_with_changes[:3]
     print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析 (可用 Keys: {len(gemini_key_manager.keys)})")
     
-    # 直接嘗試用 gemini-2.0-flash，失敗才降級 (省掉測試呼叫的 1 次額度)
-    MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-2.5-flash"]
+    # 直接嘗試用 gemini-2.0-flash，失敗才降級
+    MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-1.5-flash"]
     
     for i, match in enumerate(matches_to_analyze):
         prompt = build_analysis_prompt(match, news_items)
@@ -1034,6 +1043,10 @@ def analyze_with_ai(matches_with_changes, news_items):
                     model = genai.GenerativeModel(model_name)
                     response = model.generate_content(prompt, safety_settings=safety_settings)
                     analysis_text = response.text.strip()
+                    # 避免被安全機制阻擋卻拿到空字串
+                    if not analysis_text:
+                        raise ValueError("AI 回傳了空內容（可能觸發了安全過濾）")
+                        
                     match["ai_analysis"] = analysis_text
                     match["analysis_source"] = "gemini"
                     print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成 ({model_name} via {gemini_key_manager.get_label()}): {match['home_team']} vs {match['away_team']}")
@@ -1042,8 +1055,11 @@ def analyze_with_ai(matches_with_changes, news_items):
                 except Exception as e:
                     err_str = str(e).lower()
                     print(f"  ⚠️ {model_name} 失敗 ({gemini_key_manager.get_label()}): {str(e)[:60]}")
-                    if "429" in err_str or "quota" in err_str or "exhausted" in err_str:
-                        switched_key_this_attempt = gemini_key_manager.switch_key()
+                    if "quota" in err_str or "exhausted" in err_str:
+                        switched_key_this_attempt = gemini_key_manager.switch_key(is_quota=True)
+                        break 
+                    elif "429" in err_str:
+                        switched_key_this_attempt = gemini_key_manager.switch_key(is_quota=False)
                         break # 跳出 model loop，若有切換 key 則讓外層 while 重試
             
             if success or not switched_key_this_attempt:
