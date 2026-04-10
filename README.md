@@ -1,6 +1,6 @@
 # ⚡ Odds Flow Analyzer | 運彩盤口變動追蹤器
 
-> **當前版本：v1.7.2**
+> **當前版本：v1.7.3**
 
 一套全自動、零成本的運彩分析工具，部署在 GitHub Pages 上，24 小時自動運轉。
 
@@ -65,6 +65,14 @@ odds-flow-analyzer/
 ---
 
 ## 📌 版本紀錄 (Changelog)
+
+### v1.7.3 — 2026-04-11
+> 修復三大致命 Bug：模型 404、Key 切換失效、誤判邏輯
+
+- ✅ **移除已下架的 `gemini-1.5-flash`**：Google 已停止此模型，回傳 404 導致全線失敗。模型清單精簡為 `gemini-2.0-flash → gemini-2.0-flash-lite`
+- ✅ **修復 "rate" 誤匹配 Bug**：`"rate" in err_str` 會匹配到 "gene**rate**Content"，導致 404 被誤判為 429。改用精確的 `"rate limit"` 和 `"too many requests"` 匹配
+- ✅ **修復 Key 切換永遠不觸發**：404 誤判導致 `all_models_quota_dead=False`，使得 GKey-2 從未被嘗試。重構為 `has_quota_error` 正向追蹤邏輯
+- ✅ **404 優先判斷**：模型不存在時直接跳過，不影響 quota 判斷和 Key 切換決策
 
 ### v1.7.2 — 2026-04-10
 > 修復模型降級邏輯：AI 分析終於能跑完

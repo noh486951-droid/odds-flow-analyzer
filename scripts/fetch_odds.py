@@ -1037,7 +1037,7 @@ def analyze_with_ai(matches_with_changes, news_items):
 
     results = []
 
-    # 免費版每日限制: gemini-2.0-flash ~1500次/天, gemini-1.5-flash 僅20次/天
+    # 免費版每日限制: gemini-2.0-flash ~1500次/天, gemini-2.0-flash-lite 額度更高
     # 每次最多分析 3 場 (每天排程4次 = 最多12次/天，安全範圍內)
     matches_with_changes.sort(
         key=lambda m: max(m.get("true_probs", {}).values(), default=50),
@@ -1046,9 +1046,9 @@ def analyze_with_ai(matches_with_changes, news_items):
     matches_to_analyze = matches_with_changes[:3]
     print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析 (可用 Keys: {len(gemini_key_manager.keys)})")
 
-    # 直接嘗試用 gemini-2.0-flash，失敗才降級
-    # v1.7.2: 加入 gemini-2.0-flash-lite (免費額度更高)，修復 model fallback 邏輯
-    MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.0-flash-lite"]
+    # v1.7.3: 移除已下架的 gemini-1.5-flash，修復 "rate" 誤匹配 "generateContent" 的 Bug
+    # Google 免費模型 (2026): gemini-2.0-flash, gemini-2.0-flash-lite
+    MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-2.0-flash-lite"]
 
     for i, match in enumerate(matches_to_analyze):
         prompt = build_analysis_prompt(match, news_items)
@@ -1070,9 +1070,9 @@ def analyze_with_ai(matches_with_changes, news_items):
                 break
 
             genai.configure(api_key=api_key)
-            all_models_quota_dead = True  # 假設全部 model 都 quota 掛掉
+            has_quota_error = False  # 此 Key 是否有任何 quota 錯誤
 
-            # 內層：遍歷所有模型 — quota 錯誤用 continue 而非 break！
+            # 內層：遍歷所有模型
             for model_name in MODEL_PRIORITY:
                 try:
                     print(f"  🔧 [AI DEBUG] 呼叫 {model_name} (via {key_label})...")
@@ -1082,13 +1082,11 @@ def analyze_with_ai(matches_with_changes, news_items):
                     # 安全地取得回應文字
                     if not response.parts:
                         print(f"  ⚠️ {model_name}: 回應被安全過濾攔截 (response.parts 為空)")
-                        all_models_quota_dead = False
-                        continue  # 試下一個 model，不觸發 Key 切換
+                        continue
 
                     analysis_text = response.text.strip()
                     if not analysis_text:
                         print(f"  ⚠️ {model_name}: 回應文字為空")
-                        all_models_quota_dead = False
                         continue
 
                     match["ai_analysis"] = analysis_text
@@ -1098,32 +1096,35 @@ def analyze_with_ai(matches_with_changes, news_items):
                     break
                 except Exception as e:
                     err_str = str(e).lower()
-                    print(f"  ⚠️ {model_name} 失敗 ({key_label}): {str(e)[:120]}")
-                    if "quota" in err_str or "exhausted" in err_str or "resource has been exhausted" in err_str:
-                        # v1.7.2 修復：quota 掛掉 → continue 試下一個 model！不再 break！
-                        print(f"  🔧 [AI DEBUG] {model_name} quota 耗盡，繼續嘗試下一個模型...")
+                    print(f"  ⚠️ {model_name} 失敗 ({key_label}): {str(e)[:150]}")
+
+                    # v1.7.3: 優先判斷 404 (模型不存在)，避免被後面的 "rate" 誤匹配
+                    if "404" in err_str or "not found" in err_str:
+                        print(f"  🔧 [AI DEBUG] {model_name} 不存在 (404)，跳過此模型")
                         continue
-                    elif "429" in err_str or "rate" in err_str:
-                        # 429 可能只是短暫的 RPM 限制，等一下再試下一個 model
-                        print(f"  ⏳ {model_name} 遇到 429，等待 15 秒後試下一個模型...")
+                    elif "quota" in err_str or "exhausted" in err_str or "resource has been exhausted" in err_str:
+                        print(f"  🔧 [AI DEBUG] {model_name} quota 耗盡，繼續嘗試下一個模型...")
+                        has_quota_error = True
+                        continue
+                    elif "429" in err_str or "too many requests" in err_str or "rate limit" in err_str:
+                        # 429 短暫 RPM 限制，等一下再試下一個 model
+                        print(f"  ⏳ {model_name} 遇到 429 限流，等待 15 秒後試下一個模型...")
                         time_module.sleep(15)
-                        all_models_quota_dead = False
                         continue
                     else:
-                        # 其他錯誤（網路、API 變動等），不切 Key，繼續試下一個 model
-                        print(f"  🔧 [AI DEBUG] 非 quota/429 錯誤，試下一個 model")
-                        all_models_quota_dead = False
+                        print(f"  🔧 [AI DEBUG] 未知錯誤類型，試下一個 model")
                         continue
 
-            # 所有模型都試完了：如果全部都是 quota 掛掉，切換到下一把 Key
-            if not success and all_models_quota_dead:
-                print(f"  🔧 [AI DEBUG] {key_label} 所有模型 quota 耗盡，嘗試切換 Key...")
+            # 所有模型都試完了：只要有 quota 錯誤就嘗試切換 Key
+            if not success and has_quota_error:
+                print(f"  🔧 [AI DEBUG] {key_label} 遭遇 quota 限制，嘗試切換 Key...")
                 switched = gemini_key_manager.switch_key(is_quota=True)
                 if not switched:
                     print(f"  🔧 [AI DEBUG] 無更多可用 Key，放棄此場分析")
                     break
             elif not success:
-                # 非 quota 原因全部失敗，不再重試
+                # 全部都是非 quota 錯誤（如全部 404），不再重試
+                print(f"  🔧 [AI DEBUG] 所有模型均非 quota 錯誤，不切 Key")
                 break
 
         if not success:
@@ -1619,19 +1620,43 @@ def main():
     gemini_key_manager.reset()
 
     if significant:
-        print(f"\n🤖 啟動 AI 分析... (共 {len(significant)} 場, 模型優先順序: gemini-2.0-flash → 1.5-flash → 2.0-flash-lite)")
+        # v1.7.3: 在 main() 就限制數量，避免 14 場全部跑完浪費 quota 和時間
+        # 按勝率排序，只取前 3 場（有雙 Key 可取 5 場）
+        MAX_AI = 5 if len(gemini_key_manager.keys) >= 2 else 3
+        significant.sort(key=lambda m: max(m.get("true_probs", {}).values(), default=50), reverse=True)
+        ai_targets = significant[:MAX_AI]
+        print(f"\n🤖 啟動 AI 分析... (符合條件 {len(significant)} 場, 取前 {len(ai_targets)} 場, 模型: gemini-2.0-flash → 2.0-flash-lite)")
         # 根據聯賽類型選擇新聞
-        for idx, match in enumerate(significant):
+        consecutive_failures = 0
+        for idx, match in enumerate(ai_targets):
             if "nba" in match.get("sport_key", ""):
                 relevant_news = news["nba"]
             else:
                 relevant_news = news["soccer"]
-            print(f"\n  --- 分析第 {idx+1}/{len(significant)} 場: {match['home_team']} vs {match['away_team']} ---")
+            print(f"\n  --- 分析第 {idx+1}/{len(ai_targets)} 場: {match['home_team']} vs {match['away_team']} ---")
             analyze_with_ai([match], relevant_news)
+
+            # 早停機制：連續 2 場都失敗就不再嘗試，節省時間
+            if match.get("analysis_source") == "fallback":
+                consecutive_failures += 1
+                if consecutive_failures >= 2:
+                    print(f"\n  🛑 連續 {consecutive_failures} 場 AI 分析失敗，判斷 quota 已耗盡，跳過剩餘場次")
+                    for remaining in ai_targets[idx+1:]:
+                        remaining["ai_analysis"] = "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。"
+                        remaining["analysis_source"] = "fallback"
+                    break
+            else:
+                consecutive_failures = 0
+
             # 每場之間間隔 10 秒避免 RPM
-            if idx < len(significant) - 1:
+            if idx < len(ai_targets) - 1:
                 print(f"  ⏳ 等待 10 秒避免 RPM 限制...")
                 time_module.sleep(10)
+        # 未被 AI 分析的 significant 比賽，給予基礎分析
+        for match in significant[MAX_AI:]:
+            if "ai_analysis" not in match:
+                match["ai_analysis"] = "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。"
+                match["analysis_source"] = "rule_based"
     else:
         print("\n✅ 無顯著變動，跳過 AI 分析")
         # 對所有比賽添加基礎分析
