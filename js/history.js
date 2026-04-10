@@ -110,7 +110,7 @@ window.HistoryController = {
           </div>
           <div class="history-stat-card">
             <span class="stat-emoji">✅</span>
-            <span class="stat-detail">已結束</span>
+            <span class="stat-detail">已完賽 (結算)</span>
             <span class="stat-big">${matches.filter(m => m.final_score).length}</span>
           </div>
         </div>

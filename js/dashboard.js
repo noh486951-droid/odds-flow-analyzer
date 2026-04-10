@@ -4,18 +4,24 @@
 window.DashboardController = {
   init() {
     this.currentFilter = 'all';
+    this.isHighProbMode = false;
     this.grid = document.getElementById('matchesGrid');
-    this.filterBtns = document.querySelectorAll('#leagueFilter .filter-btn');
+    
+    // League Filters (Excluding toggle buttons)
+    this.leagueBtns = document.querySelectorAll('#leagueFilter .filter-btn:not(.toggle-btn)');
+    
+    // High Prob Toggle
+    this.highProbBtn = document.getElementById('highProbFilter');
     
     // Listen for data loaded event
     document.addEventListener('dataLoaded', (e) => {
       this.render(e.detail);
     });
     
-    // Setup filters
-    this.filterBtns.forEach(btn => {
+    // Setup league filters
+    this.leagueBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
-        this.filterBtns.forEach(b => b.classList.remove('active'));
+        this.leagueBtns.forEach(b => b.classList.remove('active'));
         e.currentTarget.classList.add('active');
         this.currentFilter = e.currentTarget.getAttribute('data-league');
         if (AppState.currentData) {
@@ -23,6 +29,21 @@ window.DashboardController = {
         }
       });
     });
+    
+    // Setup high probability toggle
+    if (this.highProbBtn) {
+      this.highProbBtn.addEventListener('click', (e) => {
+        this.isHighProbMode = !this.isHighProbMode;
+        if (this.isHighProbMode) {
+          this.highProbBtn.classList.add('active-toggle');
+        } else {
+          this.highProbBtn.classList.remove('active-toggle');
+        }
+        if (AppState.currentData) {
+          this.render(AppState.currentData);
+        }
+      });
+    }
   },
   
   render(data) {
@@ -46,6 +67,33 @@ window.DashboardController = {
       });
     }
     
+    // High Probability Filter (> 60% win rate)
+    if (this.isHighProbMode) {
+      filtered = filtered.filter(m => {
+        let isHighProb = false;
+        
+        // 1. Check true_probs
+        if (m.true_probs) {
+           for (const prob of Object.values(m.true_probs)) {
+               if (prob >= 60.0) return true;
+           }
+        }
+        
+        // 2. Check other_markets (spreads/totals/btts)
+        if (m.other_markets) {
+           for (const mk of ["spreads", "totals", "btts"]) {
+               if (m.other_markets[mk]) {
+                   for (const val of Object.values(m.other_markets[mk])) {
+                       if (val.prob && val.prob >= 60.0) return true;
+                   }
+               }
+           }
+        }
+        
+        return false;
+      });
+    }
+    
     // 排序：有顯著變動的(有AI分析的)排前面，然後按時間排序
     filtered.sort((a, b) => {
       const aSig = isSignificantChange(a) ? 1 : 0;
@@ -55,7 +103,8 @@ window.DashboardController = {
     });
     
     if (filtered.length === 0) {
-      this.grid.innerHTML = '<div class="empty-state">此分類目前無賽事</div>';
+      const msg = this.isHighProbMode ? '此分類目前無 AI 勝率高於 60% 的焦點賽事' : '此分類目前無賽事';
+      this.grid.innerHTML = `<div class="empty-state">${msg}</div>`;
       return;
     }
     

@@ -256,6 +256,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
+
 .filter-btn {
   background: var(--bg-input);
   border: 1px solid var(--border);
@@ -276,6 +277,33 @@ body {
   background: rgba(88, 166, 255, 0.15);
   border-color: var(--primary);
   color: var(--primary);
+}
+
+/* High Prob Toggle Button */
+.toggle-btn {
+  background: var(--bg-card);
+  border-color: rgba(241, 196, 15, 0.3);
+  color: #f1c40f;
+}
+
+.toggle-btn:hover {
+  background: rgba(241, 196, 15, 0.1);
+  color: #f1c40f;
+}
+
+.toggle-btn.active-toggle {
+  background: linear-gradient(135deg, rgba(241, 196, 15, 0.2), rgba(241, 196, 15, 0.4));
+  border-color: #f1c40f;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  box-shadow: 0 0 15px rgba(241, 196, 15, 0.2);
+}
+
+.filter-divider {
+  width: 1px;
+  background: var(--border);
+  height: 24px;
+  margin: auto 0.5rem;
 }
 
 .matches-grid {
@@ -473,7 +501,7 @@ body {
 .prob-bar {
   width: 100%;
   height: 8px;
-  background: var(--warning); /* 客隊背景預設顏色 */
+  background: var(--warning); /* 摰ａ��峕艶�鞱身憿讛𠧧 */
   border-radius: 4px;
   overflow: hidden;
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
@@ -800,7 +828,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* 60% �H�W���Ӳv�o���S�� */
+/* 60% 以上高勝率發光特效 */
 .gold-prob {
   color: #f1c40f !important;
   font-weight: 800;
@@ -1259,31 +1287,34 @@ body {
 .ai-result-badge {
   position: absolute;
   top: -8px;
-  right: 12px;
+  left: 12px;
   padding: 0.25rem 0.6rem;
   border-radius: 6px;
   font-size: 0.75rem;
   font-weight: 800;
-  z-index: 2;
+  z-index: 20;
   letter-spacing: 1px;
 }
 
 .result-hit {
-  background: rgba(46, 204, 113, 0.2);
-  color: #2ecc71;
-  border: 1px solid rgba(46, 204, 113, 0.4);
+  background: rgba(46, 204, 113, 0.95);
+  color: #fff;
+  border: 1px solid #2ecc71;
+  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
 }
 
 .result-miss {
-  background: rgba(231, 76, 60, 0.2);
-  color: #e74c3c;
-  border: 1px solid rgba(231, 76, 60, 0.4);
+  background: rgba(231, 76, 60, 0.95);
+  color: #fff;
+  border: 1px solid #e74c3c;
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
 }
 
 .result-push {
-  background: rgba(149, 165, 166, 0.2);
-  color: #95a5a6;
-  border: 1px solid rgba(149, 165, 166, 0.4);
+  background: rgba(149, 165, 166, 0.95);
+  color: #fff;
+  border: 1px solid #95a5a6;
+  box-shadow: 0 4px 10px rgba(149, 165, 166, 0.3);
 }
 
 .history-card-wrapper {
