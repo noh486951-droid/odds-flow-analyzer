@@ -1,6 +1,6 @@
 # ⚡ Odds Flow Analyzer | 運彩盤口變動追蹤器
 
-> **當前版本：v1.6.0**
+> **當前版本：v1.7.0**
 
 一套全自動、零成本的運彩分析工具，部署在 GitHub Pages 上，24 小時自動運轉。
 
@@ -25,20 +25,22 @@
 - **前端**：HTML + CSS + JavaScript（GitHub Pages 靜態部署）
 - **後端**：Python（透過 GitHub Actions 每 6 小時自動執行）
 - **資料來源**：[The Odds API](https://the-odds-api.com/)（免費版）
-- **AI 引擎**：Google Gemini 2.0/2.5 Flash（免費版）
+- **AI 引擎**：Google Gemini 2.0/1.5 Flash（免費版）
 
 ## 💡 省 Token 策略
 
 - 只有當任一盤口勝率超過 **60%** 時才觸發 AI 分析
 - 每次執行最多僅分析勝率最高的前 **3 場**比賽
-- 優先使用每日額度較高的 `gemini-2.0-flash`，額度耗盡才切換 `gemini-2.5-flash`
+- 優先使用每日額度較高的 `gemini-2.0-flash`，額度耗盡才切換 `gemini-1.5-flash`
 
 ## 🔑 環境變數 (GitHub Secrets)
 
 | 名稱 | 說明 |
 |---|---|
 | `ODDS_API_KEY` | The Odds API 金鑰 (https://the-odds-api.com/) |
+| `ODDS_API_KEY_2` | (選填) 第二組 The Odds API 金鑰，自動負載均衡 |
 | `GEMINI_API_KEY` | Google Gemini API 金鑰 (https://aistudio.google.com/) |
+| `GEMINI_API_KEY_2` | (選填) 第二組 Google Gemini API 金鑰，防 429 限流與額度擴充 |
 
 ## 📁 專案結構
 
@@ -63,6 +65,28 @@ odds-flow-analyzer/
 ---
 
 ## 📌 版本紀錄 (Changelog)
+
+### v1.7.0 — 2026-04-10
+> Gemini API 雙金鑰輪替 & 強健性升級
+
+- ✅ **雙 Gemini API 支援**：新增 `GEMINI_API_KEY_2`，AI 分析次數翻倍並有效防止單一 Key 觸發 429 速率限制。
+- ✅ **智慧輪替系統**：自動區分 `Quota exceeded` (日額度耗盡) 與 `429 Too Many Requests` (短暫限流)，精準動態切換備用金鑰。
+- ✅ **防衛性翻譯機制**：阻擋因 AI 安全審查導致的空白新聞，發生異常時改保留英文原標題。
+- ✅ **修正預備模型名稱**：由 `gemini-2.5-flash` 修正為正確的 `gemini-1.5-flash` 以確保降級容錯順利啟動。
+
+### v1.6.3 — 2026-04-10
+> UI 佈局修復 & 傷兵快訊邏輯優化
+
+- ✅ **傷兵邏輯精準化**：限制傷兵新聞搜尋範圍，大幅降低抓取跨隊伍新聞導致的誤標狀況。
+- ✅ **圖表 Y 軸動態縮放**：走勢圖導入依據數據起伏的動態 padding，讓微小的盤口變動也能清楚視覺化。
+- ✅ **底部排版優化**：修復了 `?v=1.6.3` 版本頁面底端出現過多黑色空白的問題。
+
+### v1.6.2 — 2026-04-10
+> TheSportsDB 強化交手紀錄 & 前端高勝率篩選
+
+- ✅ **H2H 資料修復**：導入 `eventsh2h.php` 端點，有效解決跨聯會對戰 (Cross-conference) 中交手紀錄「暫無資料」的問題。
+- ✅ **前端篩選器增強**：高勝率篩選器按鈕提示強化 `≥60%`，並排除 `rule_based` 或錯誤回應的情境。
+- ✅ **走勢圖視覺優化**：加入客場球隊的走勢線，並更新顏色為警示橘 (`var(--warning)`)，增加 Hover 提示。
 
 ### v1.6.0 — 2026-04-10
 > 最終比數回測 + 雙 API Key + AI 命中率追蹤
