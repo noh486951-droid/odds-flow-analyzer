@@ -33,6 +33,7 @@ INJURY_KEYWORDS = [
 ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
 ODDS_API_KEY_2 = os.environ.get("ODDS_API_KEY_2", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_API_KEY_2 = os.environ.get("GEMINI_API_KEY_2", "") or os.environ.get("GEMINI_API_KEY2", "")
 
 # 台北時區 (UTC+8)
 TZ_TAIPEI = timezone(timedelta(hours=8))
@@ -123,6 +124,42 @@ class OddsApiKeyManager:
         return sum(k["remaining"] for k in self.keys)
 
 key_manager = OddsApiKeyManager()
+
+
+# ============================================================
+# Gemini 雙 API Key 管理器
+# ============================================================
+class GeminiApiKeyManager:
+    """管理雙 Gemini API Key，遇到 Quota 錯誤時自動切換"""
+    def __init__(self):
+        self.keys = []
+        if GEMINI_API_KEY:
+            self.keys.append({"key": GEMINI_API_KEY, "label": "GKey-1", "active": True})
+        if GEMINI_API_KEY_2:
+            self.keys.append({"key": GEMINI_API_KEY_2, "label": "GKey-2", "active": True})
+        self.current_idx = 0
+    
+    def get_key(self):
+        if not self.keys or not self.keys[self.current_idx]["active"]:
+            return ""
+        return self.keys[self.current_idx]["key"]
+    
+    def get_label(self):
+        if not self.keys:
+            return "N/A"
+        return self.keys[self.current_idx]["label"]
+        
+    def switch_key(self):
+        if len(self.keys) > 1:
+            self.keys[self.current_idx]["active"] = False
+            next_idx = (self.current_idx + 1) % len(self.keys)
+            if self.keys[next_idx]["active"]:
+                print(f"  🔄 {self.keys[self.current_idx]['label']} 額度可能已滿，自動切換至 {self.keys[next_idx]['label']}")
+                self.current_idx = next_idx
+                return True
+        return False
+
+gemini_key_manager = GeminiApiKeyManager()
 
 
 # ============================================================
@@ -891,42 +928,56 @@ def translate_news_titles(news_dict):
 
 {numbered}"""
     
-    try:
-        genai.configure(api_key=GEMINI_API_KEY)
-        safety_settings = [
-            {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
-            {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-            {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-            {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
-        ]
-        
-        model = genai.GenerativeModel("gemini-2.0-flash")
-        response = model.generate_content(prompt, safety_settings=safety_settings)
-        translated = response.text.strip()
-        
-        # 解析翻譯結果
-        for line in translated.split("\n"):
-            line = line.strip()
-            if not line:
-                continue
-            # 解析 "1. 翻譯內容" 格式
-            parts = line.split(".", 1)
-            if len(parts) == 2:
-                try:
-                    idx = int(parts[0].strip()) - 1
-                    zh_title = parts[1].strip()
-                    if idx in title_map and zh_title:
-                        cat, item_idx = title_map[idx]
-                        # 保留原文，加上翻譯
-                        news_dict[cat][item_idx]["title_zh"] = zh_title
-                        news_dict[cat][item_idx]["title_en"] = news_dict[cat][item_idx]["title"]
-                        news_dict[cat][item_idx]["title"] = zh_title
-                except (ValueError, IndexError):
-                    pass
-        
-        print(f"  ✅ 翻譯完成")
-    except Exception as e:
-        print(f"  ⚠️ 翻譯失敗 (保留英文原標題): {e}")
+    max_retries = 2 if len(gemini_key_manager.keys) > 1 else 1
+    
+    for attempt in range(max_retries):
+        api_key = gemini_key_manager.get_key()
+        if not api_key:
+            print("  ⚠️ 無可用的 Gemini API Key 進行翻譯")
+            break
+            
+        try:
+            genai.configure(api_key=api_key)
+            safety_settings = [
+                {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
+                {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+                {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+                {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+            ]
+            
+            model = genai.GenerativeModel("gemini-2.0-flash")
+            response = model.generate_content(prompt, safety_settings=safety_settings)
+            translated = response.text.strip()
+            
+            # 解析翻譯結果
+            for line in translated.split("\n"):
+                line = line.strip()
+                if not line:
+                    continue
+                # 解析 "1. 翻譯內容" 格式
+                parts = line.split(".", 1)
+                if len(parts) == 2:
+                    try:
+                        idx = int(parts[0].strip()) - 1
+                        zh_title = parts[1].strip()
+                        if idx in title_map and zh_title:
+                            cat, item_idx = title_map[idx]
+                            # 保留原文，加上翻譯
+                            news_dict[cat][item_idx]["title_zh"] = zh_title
+                            news_dict[cat][item_idx]["title_en"] = news_dict[cat][item_idx]["title"]
+                            news_dict[cat][item_idx]["title"] = zh_title
+                    except (ValueError, IndexError):
+                        pass
+            
+            print(f"  ✅ 翻譯完成 ({gemini_key_manager.get_label()})")
+            break # 成功，跳出重試迴圈
+        except Exception as e:
+            err_str = str(e).lower()
+            print(f"  ⚠️ 翻譯失敗 ({gemini_key_manager.get_label()}): {str(e)[:60]}")
+            if "429" in err_str or "quota" in err_str or "exhausted" in err_str:
+                if gemini_key_manager.switch_key():
+                    continue
+            break
     
     return news_dict
 
@@ -936,15 +987,13 @@ def translate_news_titles(news_dict):
 # ============================================================
 def analyze_with_ai(matches_with_changes, news_items):
     """使用 Gemini AI 分析賠率變動原因"""
-    if not GEMINI_API_KEY:
-        print("  ⚠️ 未設定 GEMINI_API_KEY，跳過 AI 分析")
+    if not GEMINI_API_KEY and not GEMINI_API_KEY_2:
+        print("  ⚠️ 未設定 GEMINI API KEY，跳過 AI 分析")
         return add_fallback_analysis(matches_with_changes)
 
     if not matches_with_changes:
         return []
 
-    genai.configure(api_key=GEMINI_API_KEY)
-    
     # 使用字串字典形式設定 (避免套件版本匯入錯誤)
     safety_settings = [
         {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
@@ -962,7 +1011,7 @@ def analyze_with_ai(matches_with_changes, news_items):
         reverse=True
     )
     matches_to_analyze = matches_with_changes[:3]
-    print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析")
+    print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析 (可用 Keys: {len(gemini_key_manager.keys)})")
     
     # 直接嘗試用 gemini-2.0-flash，失敗才降級 (省掉測試呼叫的 1 次額度)
     MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-2.5-flash"]
@@ -970,18 +1019,35 @@ def analyze_with_ai(matches_with_changes, news_items):
     for i, match in enumerate(matches_to_analyze):
         prompt = build_analysis_prompt(match, news_items)
         success = False
-        for model_name in MODEL_PRIORITY:
-            try:
-                model = genai.GenerativeModel(model_name)
-                response = model.generate_content(prompt, safety_settings=safety_settings)
-                analysis_text = response.text.strip()
-                match["ai_analysis"] = analysis_text
-                match["analysis_source"] = "gemini"
-                print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成 ({model_name}): {match['home_team']} vs {match['away_team']}")
-                success = True
+        
+        # 若發生 quota error 且切換 key 成功，則重新進行 while 迴圈
+        while not success:
+            api_key = gemini_key_manager.get_key()
+            if not api_key:
                 break
-            except Exception as e:
-                print(f"  ⚠️ {model_name} 失敗: {str(e)[:60]}")
+            
+            genai.configure(api_key=api_key)
+            switched_key_this_attempt = False
+            
+            for model_name in MODEL_PRIORITY:
+                try:
+                    model = genai.GenerativeModel(model_name)
+                    response = model.generate_content(prompt, safety_settings=safety_settings)
+                    analysis_text = response.text.strip()
+                    match["ai_analysis"] = analysis_text
+                    match["analysis_source"] = "gemini"
+                    print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成 ({model_name} via {gemini_key_manager.get_label()}): {match['home_team']} vs {match['away_team']}")
+                    success = True
+                    break
+                except Exception as e:
+                    err_str = str(e).lower()
+                    print(f"  ⚠️ {model_name} 失敗 ({gemini_key_manager.get_label()}): {str(e)[:60]}")
+                    if "429" in err_str or "quota" in err_str or "exhausted" in err_str:
+                        switched_key_this_attempt = gemini_key_manager.switch_key()
+                        break # 跳出 model loop，若有切換 key 則讓外層 while 重試
+            
+            if success or not switched_key_this_attempt:
+                break # 如果成功了，或是沒能切換 Key (額度全滿/出現非 quota 錯誤)，就結束這個 match 的分析嘗試
         
         if not success:
             match["ai_analysis"] = "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。"
@@ -990,7 +1056,7 @@ def analyze_with_ai(matches_with_changes, news_items):
         results.append(match)
         
         # 每次間隔 15 秒避免 RPM 限制
-        if i < len(matches_to_analyze) - 1:
+        if i < len(matches_to_analyze) - 1 and success:
             print(f"  ⏳ 等待 15 秒避免觸發速率限制...")
             time_module.sleep(15)
 
