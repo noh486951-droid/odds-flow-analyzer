@@ -106,6 +106,9 @@ function createMatchCard(match) {
     // 價值注徽章
     const isValueBetHtml = match.is_value_bet ? '<div class="value-bet-badge">💎 價值注警示</div>' : '';
 
+    // 顯著變動標籤 (對應左側紅色邊框)
+    const isSigBadgeHtml = isSig ? '<div class="sig-change-badge" title="賠率在開盤後已出現大幅移動（變動幅度 > 5%）">📉 盤口急變</div>' : '';
+
     // 傷兵標籤
     let injuryHtml = '';
     const injuries = match.injury_alerts || [];
@@ -237,6 +240,7 @@ function createMatchCard(match) {
     return `
       <div class="match-card ${isSig}" onclick="openMatchDetail('${match.id}')" style="cursor:pointer" title="點擊查看詳情">
         ${isValueBetHtml}
+        ${isSigBadgeHtml}
         <div class="match-header">
           <span class="match-league">${match.league || '未知聯賽'}</span>
           <span>開賽: ${formatTime(match.commence_time)}</span>
@@ -296,7 +300,7 @@ function openMatchDetail(matchId) {
   const content = document.getElementById('modalContent');
   
   // H2H
-  let h2hHtml = '<p class="modal-empty">暫無歷史交手資料</p>';
+  let h2hHtml = '<p class="modal-empty">近期賽程中查無交手記錄（跨聯會對陣或本季首次相遇）</p>';
   const h2h = match.h2h_history || [];
   if (h2h.length > 0) {
     h2hHtml = `<table class="h2h-table">
@@ -308,13 +312,19 @@ function openMatchDetail(matchId) {
   // Recent form
   const renderFormDetail = (form, teamName) => {
     if (!form?.details?.length) return `<p class="modal-empty">${teamName}: 無近期資料</p>`;
-    const dots = (form.record || '').split('').map(r => 
+    const dots = (form.record || '').split('').map(r =>
       `<span class="form-dot ${r === 'W' ? 'form-win' : 'form-loss'}">${r}</span>`
     ).join('');
-    const details = form.details.map(d => 
-      `<div class="form-detail-row"><span>${d.date}</span><span>vs ${d.opponent}</span><span class="${d.result === 'W' ? 'form-win' : 'form-loss'}">${d.score} (${d.result})</span></div>`
+    // 主客場拆分
+    const homeRec = form.home_record || '';
+    const awayRec = form.away_record || '';
+    const splitHtml = (homeRec || awayRec)
+      ? `<div class="form-split">主場 <span class="form-split-rec">${homeRec || '-'}</span> ／ 客場 <span class="form-split-rec">${awayRec || '-'}</span></div>`
+      : '';
+    const details = form.details.map(d =>
+      `<div class="form-detail-row"><span>${d.date}</span><span>${d.venue ? `[${d.venue}]` : ''} vs ${d.opponent}</span><span class="${d.result === 'W' ? 'form-win' : 'form-loss'}">${d.score} (${d.result})</span></div>`
     ).join('');
-    return `<div class="form-section"><h4>${teamName} ${dots} (${form.wins}勝${form.losses}負)</h4>${details}</div>`;
+    return `<div class="form-section"><h4>${teamName} ${dots} (${form.wins}勝${form.losses}負)</h4>${splitHtml}${details}</div>`;
   };
 
   // Injuries
@@ -338,35 +348,63 @@ function openMatchDetail(matchId) {
   // 盤口走勢圖 (mini chart)
   let timelineHtml = '';
   const timeline = match.odds_timeline || [];
-  if (timeline.length >= 2) {
-    const teams = Object.keys(match.avg_odds || {});
+  if (timeline.length >= 1) {
     const homeTeam = match.home_team;
-    const vals = timeline.map(s => s[homeTeam] || 0).filter(v => v > 0);
-    if (vals.length >= 2) {
-      const min = Math.min(...vals) - 0.05;
-      const max = Math.max(...vals) + 0.05;
-      const range = max - min || 1;
-      const points = vals.map((v, i) => {
-        const x = (i / (vals.length - 1)) * 200;
-        const y = 40 - ((v - min) / range) * 35;
-        return `${x},${y}`;
-      }).join(' ');
+    const awayTeam = match.away_team;
+    const homeVals = timeline.map(s => s[homeTeam] || 0).filter(v => v > 0);
+    const awayVals = timeline.map(s => s[awayTeam] || 0).filter(v => v > 0);
+
+    // 資料點不足或完全無變動時，改顯示文字提示
+    const homeRange = homeVals.length >= 2 ? Math.max(...homeVals) - Math.min(...homeVals) : 0;
+    const awayRange = awayVals.length >= 2 ? Math.max(...awayVals) - Math.min(...awayVals) : 0;
+    const hasEnoughData = homeVals.length >= 3 || awayVals.length >= 3;
+    const hasVariance = homeRange >= 0.02 || awayRange >= 0.02;
+
+    if (!hasEnoughData || !hasVariance) {
+      const snapshotCount = timeline.length;
       timelineHtml = `
         <div class="modal-section">
-          <h3>📈 盤口走勢 (${homeTeam})</h3>
-          <svg class="timeline-chart" viewBox="0 0 200 45" preserveAspectRatio="none">
-            <polyline points="${points}" fill="none" stroke="var(--primary)" stroke-width="2" />
-            ${vals.map((v, i) => {
-              const x = (i / (vals.length - 1)) * 200;
-              const y = 40 - ((v - min) / range) * 35;
-              return `<circle cx="${x}" cy="${y}" r="3" fill="var(--primary)" />`;
-            }).join('')}
+          <h3>📈 盤口走勢</h3>
+          <div class="timeline-pending">資料累積中（目前 ${snapshotCount} 筆快照，需至少 3 筆且有變動才顯示圖表）</div>
+        </div>
+      `;
+    } else {
+      // 計算兩隊共同的 y 軸範圍
+      const allVals = [...homeVals, ...awayVals];
+      const globalMin = Math.min(...allVals) - 0.05;
+      const globalMax = Math.max(...allVals) + 0.05;
+      const range = globalMax - globalMin || 1;
+
+      const makePoints = (vals) => vals.map((v, i) => {
+        const x = (i / (vals.length - 1)) * 280;
+        const y = 40 - ((v - globalMin) / range) * 35;
+        return `${x},${y}`;
+      }).join(' ');
+
+      const makeDots = (vals, color) => vals.map((v, i) => {
+        const x = (i / (vals.length - 1)) * 280;
+        const y = 40 - ((v - globalMin) / range) * 35;
+        return `<circle cx="${x}" cy="${y}" r="3" fill="${color}" />`;
+      }).join('');
+
+      const homePointsSvg = homeVals.length >= 2
+        ? `<polyline points="${makePoints(homeVals)}" fill="none" stroke="var(--primary)" stroke-width="2" />${makeDots(homeVals, 'var(--primary)')}` : '';
+      const awayPointsSvg = awayVals.length >= 2
+        ? `<polyline points="${makePoints(awayVals)}" fill="none" stroke="var(--warning)" stroke-width="2" />${makeDots(awayVals, 'var(--warning)')}` : '';
+
+      timelineHtml = `
+        <div class="modal-section">
+          <h3>📈 盤口走勢</h3>
+          <div class="timeline-legend">
+            <span class="legend-home">── ${homeTeam}</span>
+            <span class="legend-away">── ${awayTeam}</span>
+          </div>
+          <svg class="timeline-chart" viewBox="0 0 280 45" preserveAspectRatio="none">
+            ${homePointsSvg}
+            ${awayPointsSvg}
           </svg>
           <div class="timeline-labels">
             ${timeline.map(s => `<span>${s.time}</span>`).join('')}
-          </div>
-          <div class="timeline-values">
-            ${vals.map(v => `<span>${v.toFixed(2)}</span>`).join('')}
           </div>
         </div>
       `;

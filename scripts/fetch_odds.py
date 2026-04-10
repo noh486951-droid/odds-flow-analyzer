@@ -578,7 +578,7 @@ def fetch_h2h_and_form(home_team, away_team):
         result["home_form"]["home_record"] = "".join(home_at_home)
         result["home_form"]["away_record"] = "".join(home_at_away)
         
-        # 從主隊的比賽中找 H2H
+        # 從主隊的比賽中找 H2H (掃近期賽程作為補充)
         for ev in home_events:
             ev_home = ev.get("strHomeTeam", "")
             ev_away = ev.get("strAwayTeam", "")
@@ -593,6 +593,28 @@ def fetch_h2h_and_form(home_team, away_team):
                 }
                 if h2h_entry not in result["h2h_history"]:
                     result["h2h_history"].append(h2h_entry)
+
+    # 使用 TheSportsDB 專用 H2H endpoint 補充 (更準確，跨聯會也能找到)
+    if home_id and away_id:
+        try:
+            h2h_url = f"{SPORTSDB_BASE}/eventsh2h.php"
+            h2h_resp = requests.get(h2h_url, params={"id": home_id, "id2": away_id}, timeout=10)
+            time_module.sleep(1)
+            if h2h_resp.status_code == 200:
+                h2h_data = h2h_resp.json()
+                for ev in (h2h_data.get("results") or []):
+                    ev_home = ev.get("strHomeTeam", "")
+                    ev_away = ev.get("strAwayTeam", "")
+                    h2h_entry = {
+                        "date": ev.get("dateEvent", ""),
+                        "home": ev_home,
+                        "away": ev_away,
+                        "score": f"{ev.get('intHomeScore', '?')}-{ev.get('intAwayScore', '?')}"
+                    }
+                    if h2h_entry not in result["h2h_history"]:
+                        result["h2h_history"].append(h2h_entry)
+        except Exception as e:
+            print(f"    ⚠️ TheSportsDB H2H endpoint 失敗: {e}")
     
     # 取客隊近期比賽
     if away_id:
