@@ -1,5 +1,5 @@
 // ============================================================
-// History Controller
+// History Controller (v1.6.0 - 含比數 + AI 回測)
 // ============================================================
 window.HistoryController = {
   init() {
@@ -66,13 +66,102 @@ window.HistoryController = {
     if (!data || !data.matches) return;
     const matches = Object.values(data.matches);
     
+    // 計算 AI 命中率
+    const aiMatches = matches.filter(m => m.ai_result && m.ai_result !== 'N/A');
+    const hits = aiMatches.filter(m => m.ai_result === 'HIT').length;
+    const misses = aiMatches.filter(m => m.ai_result === 'MISS').length;
+    const pushes = aiMatches.filter(m => m.ai_result === 'PUSH').length;
+    const total = hits + misses;
+    const pct = total > 0 ? Math.round((hits / total) * 100) : 0;
+    
+    // 排序：已完成的在前，有AI結果的優先
     matches.sort((a, b) => {
+      // 有比數的排前面
+      const aScore = a.final_score ? 1 : 0;
+      const bScore = b.final_score ? 1 : 0;
+      if (aScore !== bScore) return bScore - aScore;
+      // 有顯著變動的排前面
       const aSig = isSignificantChange(a) ? 1 : 0;
       const bSig = isSignificantChange(b) ? 1 : 0;
       if (aSig !== bSig) return bSig - aSig;
       return new Date(a.commence_time) - new Date(b.commence_time);
     });
     
-    this.grid.innerHTML = matches.map(m => createMatchCard(m)).join('');
+    // 統計頭部
+    let statsHtml = '';
+    if (aiMatches.length > 0) {
+      const pctColor = pct >= 60 ? '#2ecc71' : pct >= 40 ? '#f39c12' : '#e74c3c';
+      statsHtml = `
+        <div class="history-stats">
+          <div class="history-stat-card">
+            <span class="stat-emoji">🤖</span>
+            <span class="stat-detail">AI 戰績</span>
+            <span class="stat-big" style="color: ${pctColor}">${hits} 勝 ${misses} 負${pushes > 0 ? ` ${pushes} 和` : ''}</span>
+          </div>
+          <div class="history-stat-card">
+            <span class="stat-emoji">🎯</span>
+            <span class="stat-detail">命中率</span>
+            <span class="stat-big" style="color: ${pctColor}">${pct}%</span>
+          </div>
+          <div class="history-stat-card">
+            <span class="stat-emoji">📊</span>
+            <span class="stat-detail">追蹤賽事</span>
+            <span class="stat-big">${matches.length}</span>
+          </div>
+          <div class="history-stat-card">
+            <span class="stat-emoji">✅</span>
+            <span class="stat-detail">已結束</span>
+            <span class="stat-big">${matches.filter(m => m.final_score).length}</span>
+          </div>
+        </div>
+      `;
+    }
+    
+    // 渲染卡片 (加上比數與結果)
+    const cardsHtml = matches.map(m => this.createHistoryCard(m)).join('');
+    
+    this.grid.innerHTML = statsHtml + cardsHtml;
+  },
+  
+  createHistoryCard(match) {
+    // 基礎卡片
+    let cardHtml = createMatchCard(match);
+    
+    // 注入比數
+    if (match.final_score) {
+      const [homeScore, awayScore] = match.final_score.split('-');
+      const scoreHtml = `
+        <div class="final-score-overlay">
+          <span class="score-label">FINAL</span>
+          <span class="score-value">${homeScore} - ${awayScore}</span>
+        </div>
+      `;
+      // 在卡片的 match-header 後面插入比數
+      cardHtml = cardHtml.replace('</div><!-- match-header-end -->', `</div>${scoreHtml}`);
+      
+      // 如果沒找到標記，用 class 尋找
+      if (!cardHtml.includes('final-score-overlay')) {
+        // Fallback: 在第一個 match-teams 之前插入
+        cardHtml = cardHtml.replace('<div class="match-teams">', `${scoreHtml}<div class="match-teams">`);
+      }
+    }
+    
+    // 注入 AI 結果標籤
+    if (match.ai_result && match.ai_result !== 'N/A') {
+      const resultClass = match.ai_result === 'HIT' ? 'result-hit' : 
+                          match.ai_result === 'MISS' ? 'result-miss' : 'result-push';
+      const resultEmoji = match.ai_result === 'HIT' ? '✅' : 
+                          match.ai_result === 'MISS' ? '❌' : '➖';
+      const resultText = match.ai_result === 'HIT' ? '命中' : 
+                         match.ai_result === 'MISS' ? '未中' : '和局';
+      const badgeHtml = `<div class="ai-result-badge ${resultClass}">${resultEmoji} ${resultText}</div>`;
+      
+      // 在卡片開頭插入
+      cardHtml = cardHtml.replace('<div class="match-card', `${badgeHtml}<div class="match-card`);
+      // 用 wrapper 包住
+      cardHtml = `<div class="history-card-wrapper ${resultClass}-border">${cardHtml}</div>`;
+    }
+    
+    return cardHtml;
   }
 };
