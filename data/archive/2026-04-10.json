@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-10T21:34:33.436742+08:00",
-  "last_updated_display": "2026/04/10 21:34 (台北時間)",
+  "last_updated": "2026-04-10T21:49:59.780611+08:00",
+  "last_updated_display": "2026/04/10 21:49 (台北時間)",
   "matches": {
     "0852cffec341701f6a0dde8619ae9f56": {
       "id": "0852cffec341701f6a0dde8619ae9f56",
@@ -12707,36 +12707,20 @@
       ],
       "h2h_history": [],
       "home_form": {
-        "record": "W",
-        "wins": 1,
+        "record": "",
+        "wins": 0,
         "losses": 0,
-        "home_record": "W",
+        "home_record": "",
         "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-05",
-            "opponent": "Memphis Grizzlies",
-            "score": "131-115",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
+        "details": []
       },
       "away_form": {
-        "record": "L",
+        "record": "",
         "wins": 0,
-        "losses": 1,
-        "home_record": "L",
+        "losses": 0,
+        "home_record": "",
         "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-09",
-            "opponent": "Indiana Pacers",
-            "score": "94-123",
-            "result": "L",
-            "venue": "主"
-          }
-        ]
+        "details": []
       },
       "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
       "analysis_source": "fallback"
@@ -16941,8 +16925,8 @@
         }
       ],
       "weather": {
-        "temp": 10.2,
-        "wind": 15.5,
+        "temp": 10.3,
+        "wind": 15.8,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
@@ -17133,8 +17117,8 @@
         }
       ],
       "weather": {
-        "temp": 12.6,
-        "wind": 11.5,
+        "temp": 12.7,
+        "wind": 12.2,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
@@ -17315,8 +17299,8 @@
         }
       ],
       "weather": {
-        "temp": 9.4,
-        "wind": 12.3,
+        "temp": 9.5,
+        "wind": 11.5,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
@@ -17325,32 +17309,32 @@
   },
   "leagues": {
     "NBA": [
+      "858993998045b68682b2aae461cb4037",
       "30b372ff1973370201b644c207be2dd3",
-      "625bbdf7bc0bdf1d57b3f97742908221",
-      "53b49bbe56f8581f353bbbb5c6179ac5",
-      "4398234154ac742bd22d689c8d4bf956",
-      "29fe17f5b19da82ce2957c3683a10aa7",
-      "1fbdc557471472d90b606f5e50853915",
-      "88bf78be502ce70dd7e5e669cd9f95df",
-      "39083e08e7959b0ec516933d574379cd",
+      "bf30a732402325cab54ab666ee0f5c11",
       "80adae4b4459f5602f7500d94892f2a5",
       "d463e0aa51436ff32f8ee83d6d3893a8",
-      "51aa38f3acd638a314975c61ab16a862",
       "11fa8c6f7710a287909a9765aa925cce",
       "d6099dffbcac5bbcdf69fd35c6229ff7",
-      "858993998045b68682b2aae461cb4037",
-      "0852cffec341701f6a0dde8619ae9f56",
-      "ebbf0d3885094991ff36055e753635a3",
-      "bf30a732402325cab54ab666ee0f5c11",
-      "1126b937945abff19e12dc1ac60f2ecb",
-      "70a2274c4f82c7a3f37879b7edf0cfa4",
+      "53b49bbe56f8581f353bbbb5c6179ac5",
       "1935906088ec1cf3d2f989ace06a8acb",
-      "f47d78a747510d6ef00500f74872372d"
+      "1126b937945abff19e12dc1ac60f2ecb",
+      "51aa38f3acd638a314975c61ab16a862",
+      "625bbdf7bc0bdf1d57b3f97742908221",
+      "f47d78a747510d6ef00500f74872372d",
+      "29fe17f5b19da82ce2957c3683a10aa7",
+      "ebbf0d3885094991ff36055e753635a3",
+      "39083e08e7959b0ec516933d574379cd",
+      "1fbdc557471472d90b606f5e50853915",
+      "0852cffec341701f6a0dde8619ae9f56",
+      "70a2274c4f82c7a3f37879b7edf0cfa4",
+      "4398234154ac742bd22d689c8d4bf956",
+      "88bf78be502ce70dd7e5e669cd9f95df"
     ],
     "歐冠 UCL": [
+      "e39a51d05b5444bf1c98ffa0ed6811d3",
       "76200682955d7f62f3b051a14f5f67fa",
       "02ff9b02f1eab3394f9e38d70e257e12",
-      "e39a51d05b5444bf1c98ffa0ed6811d3",
       "6f7c43b668146a5e9ba09151c1ba460b"
     ]
   },
@@ -17499,7 +17483,7 @@
   "stats": {
     "total_matches": 19,
     "significant_changes_count": 14,
-    "api_remaining": "138"
+    "api_remaining": "DEBUG"
   },
   "snapshots": [
     {
@@ -17556,6 +17540,10 @@
     },
     {
       "time": "2026-04-10T21:34:33.456725+08:00",
+      "matches_count": 103
+    },
+    {
+      "time": "2026-04-10T21:49:59.803916+08:00",
       "matches_count": 103
     }
   ]
