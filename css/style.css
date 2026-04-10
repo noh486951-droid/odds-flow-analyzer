@@ -54,6 +54,9 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  /* Sticky footer：讓 footer 永遠貼底，不留黑色空白 */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Background Effects */
@@ -173,8 +176,10 @@ body {
 
 .main-content {
   max-width: 1400px;
+  width: 100%;
   margin: 2rem auto;
   padding: 0 2rem 2rem;
+  flex: 1; /* 撐開剩餘高度，把 footer 推到頁面最底 */
 }
 
 /* ============================================================
@@ -1230,6 +1235,27 @@ body {
 .legend-away {
   color: var(--warning);
   font-weight: 600;
+}
+
+/* 各隊獨立走勢圖容器 */
+.team-chart-wrap {
+  margin-bottom: 0.75rem;
+}
+
+.team-chart-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.team-chart-range {
+  font-weight: 400;
+  font-size: 0.72rem;
+  opacity: 0.85;
+  color: var(--text-muted);
 }
 
 /* 走勢資料累積中提示 */

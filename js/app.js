@@ -369,40 +369,54 @@ function openMatchDetail(matchId) {
         </div>
       `;
     } else {
-      // 計算兩隊共同的 y 軸範圍
-      const allVals = [...homeVals, ...awayVals];
-      const globalMin = Math.min(...allVals) - 0.05;
-      const globalMax = Math.max(...allVals) + 0.05;
-      const range = globalMax - globalMin || 1;
+      // 各隊獨立 Y 軸：讓每條線的變動幅度填滿圖表高度，即使賠率只差 0.01 也看得出來
+      const makeTeamChart = (vals, color, teamName) => {
+        if (vals.length < 2) return '';
+        const vMin = Math.min(...vals);
+        const vMax = Math.max(...vals);
+        // 動態 padding：變動幅度越小，padding 越小，使微小變動仍可見
+        const rawRange = vMax - vMin;
+        const pad = rawRange < 0.01 ? 0.005 : rawRange * 0.25;
+        const scaledMin = vMin - pad;
+        const scaledMax = vMax + pad;
+        const range = scaledMax - scaledMin || 0.01;
 
-      const makePoints = (vals) => vals.map((v, i) => {
-        const x = (i / (vals.length - 1)) * 280;
-        const y = 40 - ((v - globalMin) / range) * 35;
-        return `${x},${y}`;
-      }).join(' ');
+        const pts = vals.map((v, i) => {
+          const x = (i / (vals.length - 1)) * 280;
+          const y = 36 - ((v - scaledMin) / range) * 30;
+          return `${x},${y}`;
+        }).join(' ');
 
-      const makeDots = (vals, color) => vals.map((v, i) => {
-        const x = (i / (vals.length - 1)) * 280;
-        const y = 40 - ((v - globalMin) / range) * 35;
-        return `<circle cx="${x}" cy="${y}" r="3" fill="${color}" />`;
-      }).join('');
+        const dots = vals.map((v, i) => {
+          const x = (i / (vals.length - 1)) * 280;
+          const y = 36 - ((v - scaledMin) / range) * 30;
+          return `<circle cx="${x}" cy="${y}" r="3" fill="${color}"><title>${v.toFixed(2)}</title></circle>`;
+        }).join('');
 
-      const homePointsSvg = homeVals.length >= 2
-        ? `<polyline points="${makePoints(homeVals)}" fill="none" stroke="var(--primary)" stroke-width="2" />${makeDots(homeVals, 'var(--primary)')}` : '';
-      const awayPointsSvg = awayVals.length >= 2
-        ? `<polyline points="${makePoints(awayVals)}" fill="none" stroke="var(--warning)" stroke-width="2" />${makeDots(awayVals, 'var(--warning)')}` : '';
+        const trendLabel = rawRange >= 0.01
+          ? (vals[vals.length - 1] > vals[0] ? ' ↑' : ' ↓')
+          : ' →';
+        const rangeLabel = rawRange >= 0.01 ? `${vMin.toFixed(2)}–${vMax.toFixed(2)}` : `${vMin.toFixed(2)} (無變動)`;
+
+        return `
+          <div class="team-chart-wrap">
+            <div class="team-chart-label" style="color:${color}">${teamName} <span class="team-chart-range">${rangeLabel}${trendLabel}</span></div>
+            <svg class="timeline-chart" viewBox="0 0 280 40" preserveAspectRatio="none">
+              <polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2"/>
+              ${dots}
+            </svg>
+          </div>
+        `;
+      };
+
+      const homeChartSvg = makeTeamChart(homeVals, 'var(--primary)', homeTeam);
+      const awayChartSvg = makeTeamChart(awayVals, 'var(--warning)', awayTeam);
 
       timelineHtml = `
         <div class="modal-section">
-          <h3>📈 盤口走勢</h3>
-          <div class="timeline-legend">
-            <span class="legend-home">── ${homeTeam}</span>
-            <span class="legend-away">── ${awayTeam}</span>
-          </div>
-          <svg class="timeline-chart" viewBox="0 0 280 45" preserveAspectRatio="none">
-            ${homePointsSvg}
-            ${awayPointsSvg}
-          </svg>
+          <h3>📈 盤口走勢（各隊獨立比例）</h3>
+          ${homeChartSvg}
+          ${awayChartSvg}
           <div class="timeline-labels">
             ${timeline.map(s => `<span>${s.time}</span>`).join('')}
           </div>

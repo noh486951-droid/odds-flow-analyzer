@@ -457,33 +457,42 @@ def fetch_news(category="nba", max_items=15):
 
 
 def filter_injury_news(news_items, home_team, away_team):
-    """從新聞中篩選出與兩隊相關的傷兵消息"""
+    """從新聞中篩選出與兩隊相關的傷兵消息
+
+    比對規則（較嚴格）：
+    - 傷兵關鍵字：出現在 title 即可（title 是主題，更可靠）
+    - 隊名比對：**僅在 title** 中尋找，避免 summary 順帶提及其他隊伍造成誤標
+    """
     injury_alerts = []
-    home_words = home_team.lower().split()
-    away_words = away_team.lower().split()
-    
+    home_words = [w for w in home_team.lower().split() if len(w) > 3]
+    away_words = [w for w in away_team.lower().split() if len(w) > 3]
+
     for item in news_items:
-        text = (item.get("title", "") + " " + item.get("summary", "")).lower()
-        
-        # 檢查是否包含傷兵關鍵字
-        has_injury_kw = any(kw in text for kw in INJURY_KEYWORDS)
+        title_lower = item.get("title", "").lower()
+        summary_lower = item.get("summary", "").lower()
+
+        # 傷兵關鍵字必須出現在 title（主題明確），summary 僅作備用
+        has_injury_kw = (
+            any(kw in title_lower for kw in INJURY_KEYWORDS)
+            or any(kw in summary_lower for kw in INJURY_KEYWORDS)
+        )
         if not has_injury_kw:
             continue
-            
-        # 檢查是否與某一隊相關
+
+        # 隊名只在 title 比對：確保文章主角是這場比賽的隊伍
         related_team = None
-        if any(w in text for w in home_words if len(w) > 3):
+        if home_words and any(w in title_lower for w in home_words):
             related_team = home_team
-        elif any(w in text for w in away_words if len(w) > 3):
+        elif away_words and any(w in title_lower for w in away_words):
             related_team = away_team
-            
+
         if related_team:
             injury_alerts.append({
                 "team": related_team,
                 "title": item["title"],
                 "link": item.get("link", ""),
             })
-    
+
     return injury_alerts[:5]  # 最多5則
 
 
