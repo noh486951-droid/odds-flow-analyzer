@@ -31,6 +31,7 @@ INJURY_KEYWORDS = [
 # 設定區
 # ============================================================
 ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
+ODDS_API_KEY_2 = os.environ.get("ODDS_API_KEY_2", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 
 # 台北時區 (UTC+8)
@@ -82,6 +83,49 @@ HISTORY_FILE_TEMPLATE = os.path.join(DATA_DIR, "archive", "{date}.json")
 
 
 # ============================================================
+# 雙 API Key 管理器
+# ============================================================
+class OddsApiKeyManager:
+    """管理雙 API Key，額度不足時自動切換"""
+    def __init__(self):
+        self.keys = []
+        if ODDS_API_KEY:
+            self.keys.append({"key": ODDS_API_KEY, "label": "Key-1", "remaining": 999})
+        if ODDS_API_KEY_2:
+            self.keys.append({"key": ODDS_API_KEY_2, "label": "Key-2", "remaining": 999})
+        self.current_idx = 0
+    
+    def get_key(self):
+        if not self.keys:
+            return ""
+        return self.keys[self.current_idx]["key"]
+    
+    def get_label(self):
+        if not self.keys:
+            return "N/A"
+        return self.keys[self.current_idx]["label"]
+    
+    def update_remaining(self, remaining_str):
+        if not self.keys:
+            return
+        try:
+            remaining = int(remaining_str)
+            self.keys[self.current_idx]["remaining"] = remaining
+            if remaining < 20 and len(self.keys) > 1:
+                next_idx = (self.current_idx + 1) % len(self.keys)
+                if self.keys[next_idx]["remaining"] > 20:
+                    print(f"  🔄 {self.get_label()} 剩餘 {remaining} 次，自動切換至 {self.keys[next_idx]['label']}")
+                    self.current_idx = next_idx
+        except (ValueError, TypeError):
+            pass
+    
+    def get_total_remaining(self):
+        return sum(k["remaining"] for k in self.keys)
+
+key_manager = OddsApiKeyManager()
+
+
+# ============================================================
 # 工具函數
 # ============================================================
 def get_now():
@@ -116,13 +160,12 @@ def get_current_soccer_league():
 # The Odds API 模組
 # ============================================================
 def fetch_odds(sport_key):
-    """從 The Odds API 抓取某聯賽的賠率"""
+    """從 The Odds API 抓取某聯賽的賠率 (使用 Key Manager)"""
     url = f"{ODDS_API_BASE}/{sport_key}/odds/"
-    # 為避免部分聯賽或方案不支援 btts 導致 400 錯誤，統一使用標準盤口
     markets = "h2h,spreads,totals"
 
     params = {
-        "apiKey": ODDS_API_KEY,
+        "apiKey": key_manager.get_key(),
         "regions": "us,eu",
         "markets": markets,
         "oddsFormat": "decimal",
@@ -133,7 +176,8 @@ def fetch_odds(sport_key):
         if resp.status_code == 200:
             data = resp.json()
             remaining = resp.headers.get("x-requests-remaining", "?")
-            print(f"  ✅ {LEAGUES.get(sport_key, sport_key)}: 取得 {len(data)} 場比賽 (剩餘額度: {remaining})")
+            key_manager.update_remaining(remaining)
+            print(f"  ✅ {LEAGUES.get(sport_key, sport_key)}: 取得 {len(data)} 場比賽 ({key_manager.get_label()} 剩餘: {remaining})")
             return data, remaining
         elif resp.status_code == 422:
             print(f"  ⚠️ {LEAGUES.get(sport_key, sport_key)}: 目前無賽事")
@@ -143,6 +187,30 @@ def fetch_odds(sport_key):
             return [], "?"
     except Exception as e:
         print(f"  ❌ {LEAGUES.get(sport_key, sport_key)}: 連線失敗 - {e}")
+        return [], "?"
+
+
+def fetch_scores(sport_key):
+    """從 The Odds API 抓取已結束比賽的比數 (daysFrom=3, 消耗 2 點)"""
+    url = f"{ODDS_API_BASE}/{sport_key}/scores/"
+    params = {
+        "apiKey": key_manager.get_key(),
+        "daysFrom": 3,
+    }
+    try:
+        resp = requests.get(url, params=params, timeout=30)
+        if resp.status_code == 200:
+            data = resp.json()
+            remaining = resp.headers.get("x-requests-remaining", "?")
+            key_manager.update_remaining(remaining)
+            completed = [g for g in data if g.get("completed")]
+            print(f"  ✅ {LEAGUES.get(sport_key, sport_key)} 比數: {len(completed)} 場已結束 ({key_manager.get_label()} 剩餘: {remaining})")
+            return completed, remaining
+        else:
+            print(f"  ⚠️ {LEAGUES.get(sport_key, sport_key)} 比數: API 錯誤 {resp.status_code}")
+            return [], "?"
+    except Exception as e:
+        print(f"  ❌ {LEAGUES.get(sport_key, sport_key)} 比數: 連線失敗 - {e}")
         return [], "?"
 
 
@@ -1139,6 +1207,103 @@ def save_to_archive(output):
     print(f"  📦 歷史檔案已儲存: {archive_path}")
 
 
+def update_archive_scores(score_data):
+    """用比數更新歷史存檔中的比賽紀錄"""
+    if not score_data:
+        return 0
+    
+    # 建立 id -> score 映射
+    score_map = {}
+    for game in score_data:
+        gid = game.get("id")
+        scores = game.get("scores", [])
+        if gid and scores and game.get("completed"):
+            score_map[gid] = {
+                "completed": True,
+                "scores": {s["name"]: s["score"] for s in scores},
+                "last_update": game.get("last_update", ""),
+            }
+    
+    if not score_map:
+        return 0
+    
+    updated = 0
+    # 搜尋最近 3 天的存檔
+    for days_ago in range(4):
+        date = (get_now() - timedelta(days=days_ago)).strftime("%Y-%m-%d")
+        archive_path = HISTORY_FILE_TEMPLATE.format(date=date)
+        archive = load_json(archive_path)
+        if not archive:
+            continue
+        
+        changed = False
+        for match_id, match in archive.get("matches", {}).items():
+            if match_id in score_map and not match.get("final_score"):
+                sc = score_map[match_id]
+                home = match.get("home_team", "")
+                away = match.get("away_team", "")
+                home_score = sc["scores"].get(home, "?")
+                away_score = sc["scores"].get(away, "?")
+                match["final_score"] = f"{home_score}-{away_score}"
+                match["completed"] = True
+                
+                # 判定 AI 預測
+                match["ai_result"] = judge_ai_recommendation(match, int(home_score or 0), int(away_score or 0))
+                
+                updated += 1
+                changed = True
+        
+        if changed:
+            save_json(archive_path, archive)
+    
+    return updated
+
+
+def judge_ai_recommendation(match, home_score, away_score):
+    """判定 AI 推薦是否命中"""
+    analysis = match.get("ai_analysis", "")
+    if not analysis or "fallback" in match.get("analysis_source", ""):
+        return "N/A"
+    
+    # 嘗試解析推薦內容
+    rec_match = re.search(r"【💡\s*推薦[：:]\s*(.+?)】", analysis)
+    if not rec_match:
+        return "N/A"
+    
+    rec = rec_match.group(1).strip()
+    total_score = home_score + away_score
+    
+    # 判定讓分 (Spread)
+    spread_match = re.search(r"主讓\s*([-+]?\d+\.?\d*)", rec)
+    if spread_match:
+        spread = float(spread_match.group(1))
+        # 主隊得分 + 讓分 > 客隊得分 => 主讓命中
+        if home_score + spread > away_score:
+            return "HIT"
+        elif home_score + spread < away_score:
+            return "MISS"
+        return "PUSH"
+    
+    # 判定大小 (Total)
+    total_match = re.search(r"(大分|小分|大|小)\s*([\d.]+)", rec)
+    if total_match:
+        direction = total_match.group(1)
+        line = float(total_match.group(2))
+        if "大" in direction:
+            return "HIT" if total_score > line else "MISS"
+        else:
+            return "HIT" if total_score < line else "MISS"
+    
+    # 判定獨贏
+    home = match.get("home_team", "")
+    away = match.get("away_team", "")
+    if home in rec:
+        return "HIT" if home_score > away_score else "MISS"
+    if away in rec:
+        return "HIT" if away_score > home_score else "MISS"
+    
+    return "N/A"
+
 # ============================================================
 # 主流程
 # ============================================================
@@ -1155,6 +1320,8 @@ def main():
     soccer_league = get_current_soccer_league()
     leagues_to_fetch = ["basketball_nba", soccer_league]
     print(f"\n📡 本次抓取: NBA + {LEAGUES[soccer_league]}")
+    key_count = len(key_manager.keys)
+    print(f"  🔑 API Key 數量: {key_count} ({'雙 Key 模式' if key_count >= 2 else '單 Key 模式'})")
 
     # 3. 抓取賠率
     print("\n📊 抓取最新賠率...")
@@ -1269,6 +1436,20 @@ def main():
 
     # 8. 歸檔歷史
     save_to_archive(output)
+
+    # 9. 抓取比數並更新歷史 (回測 AI 預測)
+    print("\n🏆 抓取最終比數...")
+    all_scores = []
+    for league_key in leagues_to_fetch:
+        scores, _ = fetch_scores(league_key)
+        all_scores.extend(scores)
+        time_module.sleep(1)
+    
+    if all_scores:
+        updated = update_archive_scores(all_scores)
+        print(f"  ✅ 已更新 {updated} 場比賽的最終比數")
+    else:
+        print("  ℹ️ 無已結束的比賽")
 
     print("\n" + "=" * 60)
     print(f"✅ 完成！共處理 {len(all_matches)} 場比賽")
