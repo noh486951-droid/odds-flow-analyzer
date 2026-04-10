@@ -34,6 +34,8 @@ ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
 ODDS_API_KEY_2 = os.environ.get("ODDS_API_KEY_2", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_API_KEY_2 = os.environ.get("GEMINI_API_KEY_2", "") or os.environ.get("GEMINI_API_KEY2", "")
+# DEBUG 模式: 設定為 true 時跳過 Odds API 呼叫，使用快取資料，只測試 AI 功能
+DEBUG_SKIP_ODDS = os.environ.get("DEBUG_SKIP_ODDS", "").lower() in ("true", "1", "yes")
 
 # 台北時區 (UTC+8)
 TZ_TAIPEI = timezone(timedelta(hours=8))
@@ -156,7 +158,7 @@ class GeminiApiKeyManager:
                 print(f"  ❌ {self.keys[self.current_idx]['label']} 額度可能已滿，停用此 Key。")
             else:
                 print(f"  🔄 {self.keys[self.current_idx]['label']} 觸發速率限制，暫時切換至下一把 Key。")
-                
+
             for _ in range(len(self.keys)):
                 self.current_idx = (self.current_idx + 1) % len(self.keys)
                 if self.keys[self.current_idx]["active"]:
@@ -164,6 +166,14 @@ class GeminiApiKeyManager:
         elif is_quota and self.keys:
             self.keys[self.current_idx]["active"] = False
         return False
+
+    def reset(self):
+        """重置所有 Key 為可用狀態 (用於翻譯和分析之間，避免連坐效應)"""
+        for k in self.keys:
+            k["active"] = True
+        self.current_idx = 0
+        if self.keys:
+            print(f"  🔄 已重置 Gemini Key Manager ({len(self.keys)} 把 Key 全部回復可用)")
 
 gemini_key_manager = GeminiApiKeyManager()
 
@@ -953,8 +963,16 @@ def translate_news_titles(news_dict):
             
             model = genai.GenerativeModel("gemini-2.0-flash")
             response = model.generate_content(prompt, safety_settings=safety_settings)
+
+            # 處理安全過濾導致空回應的情況
+            if not response.parts:
+                print("  ⚠️ 翻譯被安全過濾攔截（可能有敏感標題），保留英文原文")
+                break
             translated = response.text.strip()
-            
+            if not translated:
+                print("  ⚠️ 翻譯回傳空內容，保留英文原文")
+                break
+
             # 解析翻譯結果
             for line in translated.split("\n"):
                 line = line.strip()
@@ -996,6 +1014,12 @@ def translate_news_titles(news_dict):
 # ============================================================
 def analyze_with_ai(matches_with_changes, news_items):
     """使用 Gemini AI 分析賠率變動原因"""
+    print(f"  🔧 [AI DEBUG] GEMINI_API_KEY 存在: {bool(GEMINI_API_KEY)}")
+    print(f"  🔧 [AI DEBUG] GEMINI_API_KEY_2 存在: {bool(GEMINI_API_KEY_2)}")
+    print(f"  🔧 [AI DEBUG] Key Manager keys 數量: {len(gemini_key_manager.keys)}")
+    for idx, k in enumerate(gemini_key_manager.keys):
+        print(f"  🔧 [AI DEBUG]   Key #{idx}: {k['label']}, active={k['active']}, key={k['key'][:8]}...")
+
     if not GEMINI_API_KEY and not GEMINI_API_KEY_2:
         print("  ⚠️ 未設定 GEMINI API KEY，跳過 AI 分析")
         return add_fallback_analysis(matches_with_changes)
@@ -1012,8 +1036,8 @@ def analyze_with_ai(matches_with_changes, news_items):
     ]
 
     results = []
-    
-    # 免費版每日限制: gemini-2.0-flash ~1500次/天, gemini-2.5-flash 僅20次/天
+
+    # 免費版每日限制: gemini-2.0-flash ~1500次/天, gemini-1.5-flash 僅20次/天
     # 每次最多分析 3 場 (每天排程4次 = 最多12次/天，安全範圍內)
     matches_with_changes.sort(
         key=lambda m: max(m.get("true_probs", {}).values(), default=50),
@@ -1021,32 +1045,43 @@ def analyze_with_ai(matches_with_changes, news_items):
     )
     matches_to_analyze = matches_with_changes[:3]
     print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析 (可用 Keys: {len(gemini_key_manager.keys)})")
-    
+
     # 直接嘗試用 gemini-2.0-flash，失敗才降級
     MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-1.5-flash"]
-    
+
     for i, match in enumerate(matches_to_analyze):
         prompt = build_analysis_prompt(match, news_items)
         success = False
-        
+
         # 若發生 quota error 且切換 key 成功，則重新進行 while 迴圈
-        while not success:
+        retry_count = 0
+        while not success and retry_count < 4:
+            retry_count += 1
             api_key = gemini_key_manager.get_key()
+            print(f"  🔧 [AI DEBUG] 嘗試 #{retry_count}, api_key 存在: {bool(api_key)}, label: {gemini_key_manager.get_label()}")
             if not api_key:
+                print(f"  🔧 [AI DEBUG] ❌ get_key() 返回空，所有 Key 已停用或不存在")
                 break
-            
+
             genai.configure(api_key=api_key)
             switched_key_this_attempt = False
-            
+
             for model_name in MODEL_PRIORITY:
                 try:
+                    print(f"  🔧 [AI DEBUG] 呼叫 {model_name}...")
                     model = genai.GenerativeModel(model_name)
                     response = model.generate_content(prompt, safety_settings=safety_settings)
+
+                    # 安全地取得回應文字
+                    if not response.parts:
+                        print(f"  ⚠️ {model_name}: 回應被安全過濾攔截 (response.parts 為空)")
+                        continue  # 試下一個 model，不觸發 Key 切換
+
                     analysis_text = response.text.strip()
-                    # 避免被安全機制阻擋卻拿到空字串
                     if not analysis_text:
-                        raise ValueError("AI 回傳了空內容（可能觸發了安全過濾）")
-                        
+                        print(f"  ⚠️ {model_name}: 回應文字為空")
+                        continue
+
                     match["ai_analysis"] = analysis_text
                     match["analysis_source"] = "gemini"
                     print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成 ({model_name} via {gemini_key_manager.get_label()}): {match['home_team']} vs {match['away_team']}")
@@ -1054,23 +1089,31 @@ def analyze_with_ai(matches_with_changes, news_items):
                     break
                 except Exception as e:
                     err_str = str(e).lower()
-                    print(f"  ⚠️ {model_name} 失敗 ({gemini_key_manager.get_label()}): {str(e)[:60]}")
-                    if "quota" in err_str or "exhausted" in err_str:
+                    print(f"  ⚠️ {model_name} 失敗 ({gemini_key_manager.get_label()}): {str(e)[:120]}")
+                    if "quota" in err_str or "exhausted" in err_str or "resource has been exhausted" in err_str:
                         switched_key_this_attempt = gemini_key_manager.switch_key(is_quota=True)
-                        break 
-                    elif "429" in err_str:
+                        break
+                    elif "429" in err_str or "rate" in err_str:
+                        # 429 可能只是短暫的 RPM 限制，先等一下再試
+                        print(f"  ⏳ 遇到 429，等待 30 秒再重試...")
+                        time_module.sleep(30)
                         switched_key_this_attempt = gemini_key_manager.switch_key(is_quota=False)
-                        break # 跳出 model loop，若有切換 key 則讓外層 while 重試
-            
+                        break
+                    else:
+                        # 其他錯誤（網路、API 變動等），不切 Key，繼續試下一個 model
+                        print(f"  🔧 [AI DEBUG] 非 quota/429 錯誤，試下一個 model")
+                        continue
+
             if success or not switched_key_this_attempt:
-                break # 如果成功了，或是沒能切換 Key (額度全滿/出現非 quota 錯誤)，就結束這個 match 的分析嘗試
-        
+                break
+
         if not success:
             match["ai_analysis"] = "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。"
             match["analysis_source"] = "fallback"
-        
+            print(f"  ❌ [{i+1}/{len(matches_to_analyze)}] AI 分析失敗: {match['home_team']} vs {match['away_team']}")
+
         results.append(match)
-        
+
         # 每次間隔 15 秒避免 RPM 限制
         if i < len(matches_to_analyze) - 1 and success:
             print(f"  ⏳ 等待 15 秒避免觸發速率限制...")
@@ -1425,6 +1468,13 @@ def main():
     print(f"🏀⚽ 運彩盤口變動追蹤器 - {get_now().strftime('%Y/%m/%d %H:%M')}")
     print("=" * 60)
 
+    # ── DEBUG 環境診斷 ──
+    print(f"\n🔧 環境診斷:")
+    print(f"  GEMINI_API_KEY: {'✅ 已設定 (' + GEMINI_API_KEY[:8] + '...)' if GEMINI_API_KEY else '❌ 未設定'}")
+    print(f"  GEMINI_API_KEY_2: {'✅ 已設定 (' + GEMINI_API_KEY_2[:8] + '...)' if GEMINI_API_KEY_2 else '❌ 未設定'}")
+    print(f"  Gemini Key Manager: {len(gemini_key_manager.keys)} 把 Key")
+    print(f"  DEBUG_SKIP_ODDS: {DEBUG_SKIP_ODDS}")
+
     # 1. 載入現有數據
     print("\n📂 載入現有數據...")
     existing_data = load_json(CURRENT_FILE)
@@ -1432,30 +1482,46 @@ def main():
     # 2. 決定本次要抓取的聯賽 (NBA + 輪替1個足球聯賽)
     soccer_league = get_current_soccer_league()
     leagues_to_fetch = ["basketball_nba", soccer_league]
-    print(f"\n📡 本次抓取: NBA + {LEAGUES[soccer_league]}")
-    key_count = len(key_manager.keys)
-    print(f"  🔑 API Key 數量: {key_count} ({'雙 Key 模式' if key_count >= 2 else '單 Key 模式'})")
 
-    # 3. 抓取賠率
-    print("\n📊 抓取最新賠率...")
-    all_matches = []
-    api_remaining = "?"
-    for league_key in leagues_to_fetch:
-        raw, remaining = fetch_odds(league_key)
-        api_remaining = remaining
-        if raw:
-            parsed = parse_odds_data(raw, league_key)
-            all_matches.extend(parsed)
+    # ── DEBUG 模式: 跳過 Odds API，用快取資料 ──
+    if DEBUG_SKIP_ODDS:
+        print("\n🔧 [DEBUG] 跳過 Odds API 呼叫，使用快取資料測試 AI...")
+        if existing_data and existing_data.get("matches"):
+            all_matches = list(existing_data["matches"].values())
+            api_remaining = "DEBUG"
+            print(f"  📦 從快取載入 {len(all_matches)} 場比賽")
+        else:
+            print("\n⚠️ [DEBUG] 無快取資料，結束執行。請先正常執行一次以建立快取。")
+            return
 
-    if not all_matches:
-        print("\n⚠️ 本次無賽事數據，結束執行")
-        return
+        matches_with_changes = all_matches
+        significant = get_significant_changes(matches_with_changes)
+        print(f"  📈 共 {len(significant)} 場比賽符合 AI 分析門檻 (勝率 ≥ 60%)")
+    else:
+        print(f"\n📡 本次抓取: NBA + {LEAGUES[soccer_league]}")
+        key_count = len(key_manager.keys)
+        print(f"  🔑 Odds API Key 數量: {key_count} ({'雙 Key 模式' if key_count >= 2 else '單 Key 模式'})")
 
-    # 4. 偵測變動
-    print("\n🔍 偵測賠率變動...")
-    matches_with_changes = detect_changes(all_matches, existing_data)
-    significant = get_significant_changes(matches_with_changes)
-    print(f"  📈 共 {len(significant)} 場比賽有顯著變動")
+        # 3. 抓取賠率
+        print("\n📊 抓取最新賠率...")
+        all_matches = []
+        api_remaining = "?"
+        for league_key in leagues_to_fetch:
+            raw, remaining = fetch_odds(league_key)
+            api_remaining = remaining
+            if raw:
+                parsed = parse_odds_data(raw, league_key)
+                all_matches.extend(parsed)
+
+        if not all_matches:
+            print("\n⚠️ 本次無賽事數據，結束執行")
+            return
+
+        # 4. 偵測變動
+        print("\n🔍 偵測賠率變動...")
+        matches_with_changes = detect_changes(all_matches, existing_data)
+        significant = get_significant_changes(matches_with_changes)
+        print(f"  📈 共 {len(significant)} 場比賽有顯著變動")
 
     # 5. 抓取新聞
     print("\n📰 抓取最新新聞...")
@@ -1466,8 +1532,16 @@ def main():
     print(f"  NBA 新聞: {len(news['nba'])} 則, 足球新聞: {len(news['soccer'])} 則")
 
     # 5.1 翻譯英文新聞標題 (批量 1 次 API 呼叫)
+    # 注意：翻譯失敗不應影響後續 AI 分析，所以用 try-except 包起來
     print("\n🌐 翻譯新聞標題...")
-    news = translate_news_titles(news)
+    try:
+        news = translate_news_titles(news)
+    except Exception as e:
+        print(f"  ⚠️ 翻譯模組異常，保留英文原標題: {str(e)[:60]}")
+
+    # 翻譯完成後等待 20 秒，避免跟後續的 AI 分析撞 RPM 限制
+    print("  ⏳ 等待 20 秒緩衝 RPM...")
+    time_module.sleep(20)
 
     # 5.5 傷兵篩選
     print("\n🏥 篩選傷兵資訊...")
@@ -1522,6 +1596,9 @@ def main():
         print("  ✅ 無足球賽事或無天氣資料")
 
     # 6. AI 分析 (僅對有顯著變動的比賽)
+    # 重要：重置 Gemini Key Manager，避免翻譯階段的失敗狀態「連坐」影響 AI 分析
+    gemini_key_manager.reset()
+
     if significant:
         print("\n🤖 啟動 AI 分析...")
         # 根據聯賽類型選擇新聞

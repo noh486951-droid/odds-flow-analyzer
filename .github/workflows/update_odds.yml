@@ -4,7 +4,16 @@ on:
   schedule:
     # 每 3 小時執行一次 (UTC 時間)
     - cron: '0 */3 * * *'
-  workflow_dispatch: # 允許手動觸發
+  workflow_dispatch:
+    inputs:
+      debug_skip_odds:
+        description: '跳過 Odds API 呼叫，用快取資料測試 AI (省 API 額度)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 permissions:
   contents: write
@@ -30,7 +39,10 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_API_KEY_2: ${{ secrets.ODDS_API_KEY_2 }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY2 }}
+          # 相容兩種 Secret 命名: GEMINI_API_KEY_2 或 GEMINI_API_KEY2
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY2: ${{ secrets.GEMINI_API_KEY2 }}
+          DEBUG_SKIP_ODDS: ${{ github.event.inputs.debug_skip_odds || 'false' }}
         run: python scripts/fetch_odds.py
 
       - name: Commit and push data
