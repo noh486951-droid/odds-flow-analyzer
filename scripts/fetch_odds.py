@@ -1047,64 +1047,83 @@ def analyze_with_ai(matches_with_changes, news_items):
     print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析 (可用 Keys: {len(gemini_key_manager.keys)})")
 
     # 直接嘗試用 gemini-2.0-flash，失敗才降級
-    MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-1.5-flash"]
+    # v1.7.2: 加入 gemini-2.0-flash-lite (免費額度更高)，修復 model fallback 邏輯
+    MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.0-flash-lite"]
 
     for i, match in enumerate(matches_to_analyze):
         prompt = build_analysis_prompt(match, news_items)
         success = False
 
-        # 若發生 quota error 且切換 key 成功，則重新進行 while 迴圈
-        retry_count = 0
-        while not success and retry_count < 4:
-            retry_count += 1
+        # v1.7.2 修復：每場比賽重置 Key Manager，避免上一場的失敗狀態汙染後續比賽
+        gemini_key_manager.reset()
+
+        # 外層：遍歷所有可用的 Key（最多試 key_count * 2 次）
+        max_key_attempts = len(gemini_key_manager.keys) * 2 if gemini_key_manager.keys else 1
+        for key_attempt in range(max_key_attempts):
+            if success:
+                break
             api_key = gemini_key_manager.get_key()
-            print(f"  🔧 [AI DEBUG] 嘗試 #{retry_count}, api_key 存在: {bool(api_key)}, label: {gemini_key_manager.get_label()}")
+            key_label = gemini_key_manager.get_label()
+            print(f"  🔧 [AI DEBUG] Key 嘗試 #{key_attempt+1}, api_key 存在: {bool(api_key)}, label: {key_label}")
             if not api_key:
                 print(f"  🔧 [AI DEBUG] ❌ get_key() 返回空，所有 Key 已停用或不存在")
                 break
 
             genai.configure(api_key=api_key)
-            switched_key_this_attempt = False
+            all_models_quota_dead = True  # 假設全部 model 都 quota 掛掉
 
+            # 內層：遍歷所有模型 — quota 錯誤用 continue 而非 break！
             for model_name in MODEL_PRIORITY:
                 try:
-                    print(f"  🔧 [AI DEBUG] 呼叫 {model_name}...")
+                    print(f"  🔧 [AI DEBUG] 呼叫 {model_name} (via {key_label})...")
                     model = genai.GenerativeModel(model_name)
                     response = model.generate_content(prompt, safety_settings=safety_settings)
 
                     # 安全地取得回應文字
                     if not response.parts:
                         print(f"  ⚠️ {model_name}: 回應被安全過濾攔截 (response.parts 為空)")
+                        all_models_quota_dead = False
                         continue  # 試下一個 model，不觸發 Key 切換
 
                     analysis_text = response.text.strip()
                     if not analysis_text:
                         print(f"  ⚠️ {model_name}: 回應文字為空")
+                        all_models_quota_dead = False
                         continue
 
                     match["ai_analysis"] = analysis_text
                     match["analysis_source"] = "gemini"
-                    print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成 ({model_name} via {gemini_key_manager.get_label()}): {match['home_team']} vs {match['away_team']}")
+                    print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成 ({model_name} via {key_label}): {match['home_team']} vs {match['away_team']}")
                     success = True
                     break
                 except Exception as e:
                     err_str = str(e).lower()
-                    print(f"  ⚠️ {model_name} 失敗 ({gemini_key_manager.get_label()}): {str(e)[:120]}")
+                    print(f"  ⚠️ {model_name} 失敗 ({key_label}): {str(e)[:120]}")
                     if "quota" in err_str or "exhausted" in err_str or "resource has been exhausted" in err_str:
-                        switched_key_this_attempt = gemini_key_manager.switch_key(is_quota=True)
-                        break
+                        # v1.7.2 修復：quota 掛掉 → continue 試下一個 model！不再 break！
+                        print(f"  🔧 [AI DEBUG] {model_name} quota 耗盡，繼續嘗試下一個模型...")
+                        continue
                     elif "429" in err_str or "rate" in err_str:
-                        # 429 可能只是短暫的 RPM 限制，先等一下再試
-                        print(f"  ⏳ 遇到 429，等待 30 秒再重試...")
-                        time_module.sleep(30)
-                        switched_key_this_attempt = gemini_key_manager.switch_key(is_quota=False)
-                        break
+                        # 429 可能只是短暫的 RPM 限制，等一下再試下一個 model
+                        print(f"  ⏳ {model_name} 遇到 429，等待 15 秒後試下一個模型...")
+                        time_module.sleep(15)
+                        all_models_quota_dead = False
+                        continue
                     else:
                         # 其他錯誤（網路、API 變動等），不切 Key，繼續試下一個 model
                         print(f"  🔧 [AI DEBUG] 非 quota/429 錯誤，試下一個 model")
+                        all_models_quota_dead = False
                         continue
 
-            if success or not switched_key_this_attempt:
+            # 所有模型都試完了：如果全部都是 quota 掛掉，切換到下一把 Key
+            if not success and all_models_quota_dead:
+                print(f"  🔧 [AI DEBUG] {key_label} 所有模型 quota 耗盡，嘗試切換 Key...")
+                switched = gemini_key_manager.switch_key(is_quota=True)
+                if not switched:
+                    print(f"  🔧 [AI DEBUG] 無更多可用 Key，放棄此場分析")
+                    break
+            elif not success:
+                # 非 quota 原因全部失敗，不再重試
                 break
 
         if not success:
@@ -1600,14 +1619,19 @@ def main():
     gemini_key_manager.reset()
 
     if significant:
-        print("\n🤖 啟動 AI 分析...")
+        print(f"\n🤖 啟動 AI 分析... (共 {len(significant)} 場, 模型優先順序: gemini-2.0-flash → 1.5-flash → 2.0-flash-lite)")
         # 根據聯賽類型選擇新聞
-        for match in significant:
+        for idx, match in enumerate(significant):
             if "nba" in match.get("sport_key", ""):
                 relevant_news = news["nba"]
             else:
                 relevant_news = news["soccer"]
+            print(f"\n  --- 分析第 {idx+1}/{len(significant)} 場: {match['home_team']} vs {match['away_team']} ---")
             analyze_with_ai([match], relevant_news)
+            # 每場之間間隔 10 秒避免 RPM
+            if idx < len(significant) - 1:
+                print(f"  ⏳ 等待 10 秒避免 RPM 限制...")
+                time_module.sleep(10)
     else:
         print("\n✅ 無顯著變動，跳過 AI 分析")
         # 對所有比賽添加基礎分析
