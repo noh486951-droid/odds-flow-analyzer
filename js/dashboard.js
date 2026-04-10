@@ -67,7 +67,7 @@ window.DashboardController = {
       });
     }
     
-    // High Probability Filter (> 60% win rate)
+    // High Probability Filter (> 60% win rate + AI analysis)
     if (this.isHighProbMode) {
       filtered = filtered.filter(m => {
         let isHighProb = false;
@@ -75,22 +75,31 @@ window.DashboardController = {
         // 1. Check true_probs
         if (m.true_probs) {
            for (const prob of Object.values(m.true_probs)) {
-               if (prob >= 60.0) return true;
+               if (prob >= 60.0) isHighProb = true;
            }
         }
         
         // 2. Check other_markets (spreads/totals/btts)
-        if (m.other_markets) {
+        if (!isHighProb && m.other_markets) {
            for (const mk of ["spreads", "totals", "btts"]) {
                if (m.other_markets[mk]) {
                    for (const val of Object.values(m.other_markets[mk])) {
-                       if (val.prob && val.prob >= 60.0) return true;
+                       if (val.prob && val.prob >= 60.0) {
+                           isHighProb = true;
+                       }
                    }
                }
            }
         }
         
-        return false;
+        if (!isHighProb) return false;
+        
+        // 3. 確保 AI 有實際分析過 (排除 rule_based 及額度已用滿的情況)
+        if (!m.ai_analysis || m.analysis_source === 'rule_based' || m.ai_analysis.includes('429') || m.ai_analysis.includes('quota') || m.ai_analysis.includes('exceeded') || m.ai_analysis.includes('額度已用完')) {
+            return false;
+        }
+
+        return true;
       });
     }
     
