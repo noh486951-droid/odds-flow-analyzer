@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-11T21:19:07.596181+08:00",
-  "last_updated_display": "2026/04/11 21:19 (台北時間)",
+  "last_updated": "2026-04-11T23:44:29.239564+08:00",
+  "last_updated_display": "2026/04/11 23:44 (台北時間)",
   "matches": {
     "22dcb3e32847c7eab5774e8927016216": {
       "id": "22dcb3e32847c7eab5774e8927016216",
@@ -96,11 +96,11 @@
       ],
       "avg_odds": {
         "Atlanta Hawks": 1.378,
-        "Miami Heat": 2.931
+        "Miami Heat": 2.861
       },
       "true_probs": {
-        "Atlanta Hawks": 68.0,
-        "Miami Heat": 32.0
+        "Atlanta Hawks": 67.5,
+        "Miami Heat": 32.5
       },
       "other_markets": {
         "spreads": {
@@ -137,11 +137,11 @@
       "is_new": false,
       "odds_change": {
         "Atlanta Hawks": -0.008,
-        "Miami Heat": 0.0
+        "Miami Heat": -0.07
       },
       "change_pct": {
         "Atlanta Hawks": -0.58,
-        "Miami Heat": 0.0
+        "Miami Heat": -2.39
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -164,6 +164,11 @@
           "time": "04/11 21:16",
           "Atlanta Hawks": 1.378,
           "Miami Heat": 2.931
+        },
+        {
+          "time": "04/11 23:41",
+          "Atlanta Hawks": 1.378,
+          "Miami Heat": 2.861
         }
       ],
       "h2h_history": [],
@@ -199,7 +204,7 @@
           }
         ]
       },
-      "ai_analysis": "【💡 推薦：Atlanta Hawks 讓分過盤】\n\n考量到 Atlanta Hawks 擁有顯著更高的真實勝率（68.0% vs 32.0%），且近期戰績亮眼，獨贏賠率雖有微幅下降但整體穩定，盤口走勢也未出現異常波動，因此看好 Hawks 能夠擊敗熱火。雖然 AI 自我學習參考命中率為 50%，本次分析信心 moderate。",
+      "ai_analysis": "【💡 推薦：Atlanta Hawks 讓分盤過盤】\n\n考量到 Atlanta Hawks 擁有顯著較高的真實勝率，加上獨贏賠率近期持續小幅下滑，顯示市場對其信心增強。儘管 Miami Heat 主場優勢，但 Hawks 的整體實力優勢及盤口走勢更為有利。",
       "analysis_source": "gemini"
     },
     "f78d40af453b24c39e18559579894d14": {
@@ -215,21 +220,21 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.36
+                "price": 2.44
               },
               "Orlando Magic": {
-                "price": 1.62
+                "price": 1.58
               }
             },
             "spreads": {
               "Boston Celtics": {
                 "price": 1.94,
-                "point": 3.5,
+                "point": 4.0,
                 "prob": 49.2
               },
               "Orlando Magic": {
                 "price": 1.88,
-                "point": -3.5,
+                "point": -4.0,
                 "prob": 50.8
               }
             },
@@ -295,23 +300,23 @@
         }
       ],
       "avg_odds": {
-        "Boston Celtics": 2.329,
-        "Orlando Magic": 1.567
+        "Boston Celtics": 2.277,
+        "Orlando Magic": 1.592
       },
       "true_probs": {
-        "Boston Celtics": 40.2,
-        "Orlando Magic": 59.8
+        "Boston Celtics": 41.1,
+        "Orlando Magic": 58.9
       },
       "other_markets": {
         "spreads": {
           "Boston Celtics": {
             "price": 1.94,
-            "point": 3.5,
+            "point": 4.0,
             "prob": 49.2
           },
           "Orlando Magic": {
             "price": 1.88,
-            "point": -3.5,
+            "point": -4.0,
             "prob": 50.8
           }
         },
@@ -336,12 +341,12 @@
       "first_seen": "2026-04-11T13:02:54.625019+08:00",
       "is_new": false,
       "odds_change": {
-        "Boston Celtics": -0.022,
-        "Orlando Magic": -0.005
+        "Boston Celtics": -0.074,
+        "Orlando Magic": 0.02
       },
       "change_pct": {
-        "Boston Celtics": -0.94,
-        "Orlando Magic": -0.32
+        "Boston Celtics": -3.15,
+        "Orlando Magic": 1.27
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -364,17 +369,22 @@
           "time": "04/11 21:16",
           "Boston Celtics": 2.329,
           "Orlando Magic": 1.567
+        },
+        {
+          "time": "04/11 23:41",
+          "Boston Celtics": 2.277,
+          "Orlando Magic": 1.592
         }
       ],
       "injury_alerts": [
         {
           "team": "Boston Celtics",
-          "title": "Celtics（塞爾提克）追平NBA紀錄，狂砍29顆三分，鎖定東區第二種子",
+          "title": "Celtics 追平 NBA 紀錄，投進 29 顆三分球，鎖定東區第二種子",
           "link": "https://www.espn.com/nba/story/_/id/48453131/celtics-tie-nba-record-29-3s-clinch-no-2-seed"
         },
         {
           "team": "Orlando Magic",
-          "title": "NBA罰款Magic（魔術）2.5萬美元，因違反傷病報告規定",
+          "title": "NBA 因傷病報告違規，對 Magic 罰款 2 萬 5 千美元",
           "link": "https://www.espn.com/nba/story/_/id/48440537/nba-fines-magic-25k-violating-injury-reporting-rules"
         }
       ],
@@ -411,6 +421,199 @@
           }
         ]
       }
+    },
+    "d55bfef33abc5dc6dba0717236d0ee80": {
+      "id": "d55bfef33abc5dc6dba0717236d0ee80",
+      "sport_key": "basketball_nba",
+      "league": "NBA",
+      "home_team": "Toronto Raptors",
+      "away_team": "Brooklyn Nets",
+      "commence_time": "2026-04-12T22:10:00Z",
+      "bookmakers": [
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Brooklyn Nets": {
+                "price": 15.0
+              },
+              "Toronto Raptors": {
+                "price": 1.03
+              }
+            },
+            "spreads": {
+              "Brooklyn Nets": {
+                "price": 1.91,
+                "point": 19.0,
+                "prob": 50.0
+              },
+              "Toronto Raptors": {
+                "price": 1.91,
+                "point": -19.0,
+                "prob": 50.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 217.5,
+                "prob": 50.0
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 217.5,
+                "prob": 50.0
+              }
+            }
+          }
+        },
+        {
+          "name": "Betfair",
+          "markets": {
+            "h2h": {
+              "Brooklyn Nets": {
+                "price": 1.3
+              },
+              "Toronto Raptors": {
+                "price": 1.01
+              }
+            },
+            "h2h_lay": {
+              "Brooklyn Nets": {
+                "price": 100.0
+              },
+              "Toronto Raptors": {
+                "price": 4.4
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Brooklyn Nets": {
+                "price": 19.0
+              },
+              "Toronto Raptors": {
+                "price": 1.03
+              }
+            },
+            "spreads": {
+              "Brooklyn Nets": {
+                "price": 2.01,
+                "point": 18.5
+              },
+              "Toronto Raptors": {
+                "price": 1.91,
+                "point": -18.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.97,
+                "point": 217.5
+              },
+              "Under": {
+                "price": 1.95,
+                "point": 217.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Brooklyn Nets": 11.229,
+        "Toronto Raptors": 1.032
+      },
+      "true_probs": {
+        "Brooklyn Nets": 8.4,
+        "Toronto Raptors": 91.6
+      },
+      "other_markets": {
+        "spreads": {
+          "Brooklyn Nets": {
+            "price": 1.91,
+            "point": 19.0,
+            "prob": 50.0
+          },
+          "Toronto Raptors": {
+            "price": 1.91,
+            "point": -19.0,
+            "prob": 50.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.91,
+            "point": 217.5,
+            "prob": 50.0
+          },
+          "Under": {
+            "price": 1.91,
+            "point": 217.5,
+            "prob": 50.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Brooklyn Nets": 11.229,
+        "Toronto Raptors": 1.032
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T23:41:35.820683+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 23:41",
+          "Brooklyn Nets": 11.229,
+          "Toronto Raptors": 1.032
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Brooklyn Nets",
+          "title": "Bucks 對決 Nets 球員評分：Green 創紀錄，Ryan 在大勝中表現亮眼",
+          "link": "https://sports.yahoo.com/articles/bucks-vs-nets-player-grades-130000354.html"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-09",
+            "opponent": "Miami Heat",
+            "score": "128-114",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "home_record": "L",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-09",
+            "opponent": "Indiana Pacers",
+            "score": "94-123",
+            "result": "L",
+            "venue": "主"
+          }
+        ]
+      },
+      "ai_analysis": "【💡 推薦：主隊 Toronto Raptors 讓分過盤】\n\n考慮到 Raptors 極高的真實勝率 (91.6%)，對比 Nets 慘淡的 8.4%，且 Nets 近期遭遇連敗，Raptors 的主場優勢應能克服 19.5 分的大讓分。獨贏賠率未見明顯變動，顯示盤口對此結果預期穩定，盤口並無急速移動跡象。AI 自我學習參考顯示近兩場命中率為 50%，本次分析將審慎。",
+      "analysis_source": "gemini"
     },
     "38b10a0526d5b246097a502269bcdf71": {
       "id": "38b10a0526d5b246097a502269bcdf71",
@@ -505,12 +708,12 @@
         }
       ],
       "avg_odds": {
-        "Charlotte Hornets": 1.321,
-        "New York Knicks": 3.326
+        "Charlotte Hornets": 1.323,
+        "New York Knicks": 3.311
       },
       "true_probs": {
-        "Charlotte Hornets": 71.6,
-        "New York Knicks": 28.4
+        "Charlotte Hornets": 71.5,
+        "New York Knicks": 28.5
       },
       "other_markets": {
         "spreads": {
@@ -546,12 +749,12 @@
       "first_seen": "2026-04-11T13:02:54.625026+08:00",
       "is_new": false,
       "odds_change": {
-        "Charlotte Hornets": 0.043,
-        "New York Knicks": -0.23
+        "Charlotte Hornets": 0.045,
+        "New York Knicks": -0.245
       },
       "change_pct": {
-        "Charlotte Hornets": 3.36,
-        "New York Knicks": -6.47
+        "Charlotte Hornets": 3.52,
+        "New York Knicks": -6.89
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -574,6 +777,11 @@
           "time": "04/11 21:16",
           "Charlotte Hornets": 1.321,
           "New York Knicks": 3.326
+        },
+        {
+          "time": "04/11 23:41",
+          "Charlotte Hornets": 1.323,
+          "New York Knicks": 3.311
         }
       ],
       "h2h_history": [],
@@ -609,7 +817,174 @@
           }
         ]
       },
-      "ai_analysis": "【💡 推薦：Charlotte Hornets 讓分盤 -7.5 贏】\n\n考量 Charlotte Hornets 極高的真實勝率 (71.6%)，對比 New York Knicks 較低的勝率 (28.4%)，加上獨贏賠率顯示 Hornets 的支持度穩步上升，顯示市場對其信心增強。儘管 Knicks 近期有獲勝，但 Hornets 在客場的表現與整體實力更值得信賴，因此推薦 Hornets 讓分盤過盤。",
+      "ai_analysis": "【💡 推薦：紐約尼克 -7.5】\n儘管真實勝率顯示紐約尼克處於劣勢，但極其不尋常的主讓-7.5讓分盤口，結合客隊賠率上升、主隊賠率下降的盤口走勢，明確顯示市場有大量聰明錢流入尼克。這強烈暗示市場預期尼克將能大比分獲勝，無視其帳面勝率。",
+      "analysis_source": "gemini"
+    },
+    "23c66e71d25675800d939e532e38bcd2": {
+      "id": "23c66e71d25675800d939e532e38bcd2",
+      "sport_key": "basketball_nba",
+      "league": "NBA",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "Milwaukee Bucks",
+      "commence_time": "2026-04-12T22:10:00Z",
+      "bookmakers": [
+        {
+          "name": "Betfair",
+          "markets": {
+            "h2h": {
+              "Milwaukee Bucks": {
+                "price": 10.0
+              },
+              "Philadelphia 76ers": {
+                "price": 1.01
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "totals": {
+              "Over": {
+                "price": 1.97,
+                "point": 228.5,
+                "prob": 49.7
+              },
+              "Under": {
+                "price": 1.95,
+                "point": 228.5,
+                "prob": 50.3
+              }
+            }
+          }
+        },
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Milwaukee Bucks": {
+                "price": 9.7
+              },
+              "Philadelphia 76ers": {
+                "price": 1.07
+              }
+            },
+            "spreads": {
+              "Milwaukee Bucks": {
+                "price": 1.91,
+                "point": 16.0,
+                "prob": 50.0
+              },
+              "Philadelphia 76ers": {
+                "price": 1.91,
+                "point": -16.0,
+                "prob": 50.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 227.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 227.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Milwaukee Bucks": 9.85,
+        "Philadelphia 76ers": 1.04
+      },
+      "true_probs": {
+        "Milwaukee Bucks": 9.6,
+        "Philadelphia 76ers": 90.4
+      },
+      "other_markets": {
+        "spreads": {
+          "Milwaukee Bucks": {
+            "price": 1.91,
+            "point": 16.0,
+            "prob": 50.0
+          },
+          "Philadelphia 76ers": {
+            "price": 1.91,
+            "point": -16.0,
+            "prob": 50.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.97,
+            "point": 228.5,
+            "prob": 49.7
+          },
+          "Under": {
+            "price": 1.95,
+            "point": 228.5,
+            "prob": 50.3
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Milwaukee Bucks": 9.85,
+        "Philadelphia 76ers": 1.04
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T23:41:35.820696+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 23:41",
+          "Milwaukee Bucks": 9.85,
+          "Philadelphia 76ers": 1.04
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Milwaukee Bucks",
+          "title": "Bucks 對決 Nets 球員評分：Green 創紀錄，Ryan 在大勝中表現亮眼",
+          "link": "https://sports.yahoo.com/articles/bucks-vs-nets-player-grades-130000354.html"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "home_record": "L",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-04",
+            "opponent": "Detroit Pistons",
+            "score": "93-116",
+            "result": "L",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-05",
+            "opponent": "Memphis Grizzlies",
+            "score": "131-115",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "ai_analysis": "【💡 推薦：**過盤 (主讓 16.0)**】\n\n考量到 76ers 極高的真實勝率 (90.4%)，儘管近期戰績不佳，但面對實力懸殊的 Bucks，讓分盤 16.0 仍有機會被攻破。獨贏賠率顯示莊家對 76ers 的信心極穩，且無明顯急速移動或聰明錢訊號，本次推薦將以讓分盤為主。AI 自我學習參考的 50% 命中率，表示本次分析信心度中等。",
       "analysis_source": "gemini"
     },
     "09604d4c311c1eb2215317d12154f42a": {
@@ -662,18 +1037,18 @@
           "markets": {
             "h2h": {
               "Denver Nuggets": {
-                "price": 2.08
+                "price": 1.12
               },
               "San Antonio Spurs": {
-                "price": 1.79
+                "price": 1.82
               }
             },
             "h2h_lay": {
               "Denver Nuggets": {
-                "price": 2.26
+                "price": 2.22
               },
               "San Antonio Spurs": {
-                "price": 1.93
+                "price": 11.0
               }
             }
           }
@@ -692,33 +1067,33 @@
             "spreads": {
               "Denver Nuggets": {
                 "price": 1.91,
-                "point": 2.5
+                "point": 1.5
               },
               "San Antonio Spurs": {
                 "price": 1.91,
-                "point": -2.5
+                "point": -1.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 238.5
+                "point": 239.5
               },
               "Under": {
                 "price": 1.91,
-                "point": 238.5
+                "point": 239.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Denver Nuggets": 2.045,
-        "San Antonio Spurs": 1.759
+        "Denver Nuggets": 1.984,
+        "San Antonio Spurs": 1.775
       },
       "true_probs": {
-        "Denver Nuggets": 46.2,
-        "San Antonio Spurs": 53.8
+        "Denver Nuggets": 47.2,
+        "San Antonio Spurs": 52.8
       },
       "other_markets": {
         "spreads": {
@@ -754,12 +1129,12 @@
       "first_seen": "2026-04-11T15:12:30.281973+08:00",
       "is_new": false,
       "odds_change": {
-        "Denver Nuggets": 0.124,
-        "San Antonio Spurs": -0.09
+        "Denver Nuggets": 0.063,
+        "San Antonio Spurs": -0.074
       },
       "change_pct": {
-        "Denver Nuggets": 6.45,
-        "San Antonio Spurs": -4.87
+        "Denver Nuggets": 3.28,
+        "San Antonio Spurs": -4.0
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -777,6 +1152,11 @@
           "time": "04/11 21:16",
           "Denver Nuggets": 2.045,
           "San Antonio Spurs": 1.759
+        },
+        {
+          "time": "04/11 23:41",
+          "Denver Nuggets": 1.984,
+          "San Antonio Spurs": 1.775
         }
       ],
       "h2h_history": [],
@@ -863,18 +1243,18 @@
           "markets": {
             "h2h": {
               "Golden State Warriors": {
-                "price": 3.6
+                "price": 1.35
               },
               "Los Angeles Clippers": {
-                "price": 1.31
+                "price": 1.28
               }
             },
             "h2h_lay": {
               "Golden State Warriors": {
-                "price": 4.3
+                "price": 4.5
               },
               "Los Angeles Clippers": {
-                "price": 1.38
+                "price": 3.9
               }
             }
           }
@@ -884,29 +1264,29 @@
           "markets": {
             "h2h": {
               "Golden State Warriors": {
-                "price": 4.01
+                "price": 3.92
               },
               "Los Angeles Clippers": {
-                "price": 1.3
+                "price": 1.31
               }
             },
             "spreads": {
               "Golden State Warriors": {
-                "price": 1.91,
-                "point": 9.5
+                "price": 2.04,
+                "point": 8.5
               },
               "Los Angeles Clippers": {
-                "price": 2.01,
-                "point": -9.5
+                "price": 1.88,
+                "point": -8.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.97,
+                "price": 2.04,
                 "point": 224.5
               },
               "Under": {
-                "price": 1.95,
+                "price": 1.88,
                 "point": 224.5
               }
             }
@@ -914,12 +1294,12 @@
         }
       ],
       "avg_odds": {
-        "Golden State Warriors": 3.728,
-        "Los Angeles Clippers": 1.27
+        "Golden State Warriors": 3.617,
+        "Los Angeles Clippers": 1.269
       },
       "true_probs": {
-        "Golden State Warriors": 25.4,
-        "Los Angeles Clippers": 74.6
+        "Golden State Warriors": 26.0,
+        "Los Angeles Clippers": 74.0
       },
       "other_markets": {
         "spreads": {
@@ -955,12 +1335,12 @@
       "first_seen": "2026-04-11T15:12:30.281977+08:00",
       "is_new": false,
       "odds_change": {
-        "Golden State Warriors": 0.2,
-        "Los Angeles Clippers": 0.007
+        "Golden State Warriors": 0.089,
+        "Los Angeles Clippers": 0.006
       },
       "change_pct": {
-        "Golden State Warriors": 5.67,
-        "Los Angeles Clippers": 0.55
+        "Golden State Warriors": 2.52,
+        "Los Angeles Clippers": 0.48
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -978,6 +1358,11 @@
           "time": "04/11 21:16",
           "Golden State Warriors": 3.728,
           "Los Angeles Clippers": 1.27
+        },
+        {
+          "time": "04/11 23:41",
+          "Golden State Warriors": 3.617,
+          "Los Angeles Clippers": 1.269
         }
       ],
       "h2h_history": [
@@ -1020,7 +1405,7 @@
           }
         ]
       },
-      "ai_analysis": "【💡 投注推薦：洛杉磯快艇讓分過盤】\n\n推薦理由：洛杉磯快艇擁有顯著的真實勝率優勢，且盤口走勢對快艇有利，獨贏賠率也顯示莊家對其信心。雖然近期戰績有波動，但考量到勇士的盤口賠率逆勢上升，且無明顯傷兵或疲勞問題，快艇在主場應能克服讓分。\n\n說明：勇士獨贏賠率小幅上升，顯示市場上對其信心有所減弱，與快艇盤口相對穩定走勢形成對比。",
+      "ai_analysis": "【💡 推薦：洛杉磯快艇讓分過盤 (主讓 9.0) 】\n\n快艇擁有高達 74% 的真實勝率，對戰僅 26% 勝率的勇士，實力懸殊。儘管獨贏賠率對勇士有所小幅調升，但快艇的賠率穩定，顯示市場對其信心不減。近期戰績雖有波動，但考量到雙方勝率差距及盤口數據，快艇在本場比賽有望大勝。",
       "analysis_source": "gemini"
     },
     "8c4fafe262a5424f243a130d7ab60e82": {
@@ -1116,12 +1501,12 @@
         }
       ],
       "avg_odds": {
-        "Oklahoma City Thunder": 1.386,
-        "Phoenix Suns": 2.825
+        "Oklahoma City Thunder": 1.397,
+        "Phoenix Suns": 2.918
       },
       "true_probs": {
-        "Oklahoma City Thunder": 67.1,
-        "Phoenix Suns": 32.9
+        "Oklahoma City Thunder": 67.6,
+        "Phoenix Suns": 32.4
       },
       "other_markets": {
         "spreads": {
@@ -1157,12 +1542,12 @@
       "first_seen": "2026-04-11T15:12:30.281980+08:00",
       "is_new": false,
       "odds_change": {
-        "Oklahoma City Thunder": -0.009,
-        "Phoenix Suns": 0.096
+        "Oklahoma City Thunder": 0.002,
+        "Phoenix Suns": 0.189
       },
       "change_pct": {
-        "Oklahoma City Thunder": -0.65,
-        "Phoenix Suns": 3.52
+        "Oklahoma City Thunder": 0.14,
+        "Phoenix Suns": 6.93
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1180,6 +1565,11 @@
           "time": "04/11 21:16",
           "Oklahoma City Thunder": 1.386,
           "Phoenix Suns": 2.825
+        },
+        {
+          "time": "04/11 23:41",
+          "Oklahoma City Thunder": 1.397,
+          "Phoenix Suns": 2.918
         }
       ],
       "h2h_history": [],
@@ -1215,7 +1605,7 @@
           }
         ]
       },
-      "ai_analysis": "【💡 推薦：Oklahoma City Thunder 讓分過盤】\n\n考量到雷霆隊高達 67.1% 的真實勝率，以及獨贏賠率近期呈現小幅下滑趨勢，顯示市場對主隊信心增強。太陽隊近期戰績並未提供有力支撐，且盤口走勢亦未出現明顯異常，因此看好雷霆隊能克服讓分考驗。",
+      "ai_analysis": "【💡 推薦：奧克拉荷馬雷霆 -5.5】\n考量雷霆67.6%的高真實勝率，以及太陽獨贏賠率顯著上升（2.729→2.918），市場聰明錢流向明顯偏向雷霆。儘管AI命中率僅50%，然無傷兵疲勞，主隊應能穿盤。",
       "analysis_source": "gemini"
     },
     "3f5adb3e93b0c63eb14ed1d0e8b90a43": {
@@ -1355,26 +1745,14 @@
           "time": "04/11 21:16",
           "Portland Trail Blazers": 1.064,
           "Sacramento Kings": 8.111
+        },
+        {
+          "time": "04/11 23:41",
+          "Portland Trail Blazers": 1.064,
+          "Sacramento Kings": 8.111
         }
       ],
-      "h2h_history": [],
-      "home_form": {
-        "record": "",
-        "wins": 0,
-        "losses": 0,
-        "home_record": "",
-        "away_record": "",
-        "details": []
-      },
-      "away_form": {
-        "record": "",
-        "wins": 0,
-        "losses": 0,
-        "home_record": "",
-        "away_record": "",
-        "details": []
-      },
-      "ai_analysis": "【💡 推薦：Sacramento Kings 贏盤 (客隊受讓 +16.5)】\n\n考量到 Portland Trail Blazers 極高的真實勝率與獨贏賠率的微幅變動，然 Sacramento Kings 的獨贏賠率卻呈現大幅上升的趨勢，這顯示了市場上對 Kings 的信心正在流失，盤口可能在做迷惑操作。儘管 Kings 近期戰績不佳，但面對如此懸殊的讓分盤，且無已知傷兵或疲勞警示，Sacramento Kings 受讓 16.5 分仍有守住盤口的機會。\n\n**補充說明：**\n\n由於 AI 自我學習參考顯示的近 2 場歷史資料命中率為 50%，我對本次分析的信心程度為中等。\n\n**盤口走勢分析：**\n\nSacramento Kings 的獨贏賠率從初盤的 6.929 上升至現盤的 8.111，漲幅達 17.06%。這通常意味著市場資金較為看好 Portland Trail Blazers，或者有資金流向 Kings，但賠率卻逆勢走高，這可能是一種「假象」，莊家可能在誘導資金流向熱門方，而忽略了盤口本身可能存在的價值。\n\n**其他關鍵因素考量：**\n\n*   **真實勝率懸殊：** Portland Trail Blazers 的真實勝率高達 88.4%，而 Sacramento Kings 僅有 11.6%。這是最顯著的差異，正常情況下應傾向於主隊大勝。\n*   **讓分盤幅度：** -16.5 的讓分盤對於勝率如此懸殊的比賽來說，看似合理，但也可能存在「蓋牌」的可能性，讓過於樂觀的資金掉入陷阱。\n*   **近期戰績：** 雙方近期戰績均為 0 勝 0 負，這表示我們無法從近況判斷。\n*   **無傷兵與疲勞：** 這是個好消息，雙方應能派出最強陣容。\n*   **無歷史交手紀錄：** 這讓分析更多地依賴於當前的數據和盤口。\n*   **獨贏賠率變動：** Blazers 的賠率僅微幅下降，而 Kings 的賠率大幅上升，這是一個值得警惕的信號，可能暗示市場的判斷與盤口正在產生分歧。\n\n**總結：**\n\n在如此懸殊的勝率對比下，Sacramento Kings 的賠率卻大幅走高，這在運動彩券分析中是一個較為反常的現象。儘管 AI 的歷史命中率並未提供高信心度的基礎，但盤口的非理性變動，尤其是在讓分盤達到 16.5 分的情況下，值得我們關注客隊受讓盤的潛在價值。",
+      "ai_analysis": "【💡 推薦：Sacramento Kings 受讓 +16.5 大分 228.5】\n\n儘管 Trail Blazers 的真實勝率極高，但 Kings 的獨贏賠率大幅上漲，顯示盤口對其信心減弱，這或許與近期缺乏比賽數據有關。考慮到沒有傷兵及疲勞警示，且預期兩隊可能採取快節奏進攻，大分有機會打出。盤口走勢對 Kings 較為不利，但受讓盤口仍有想像空間。AI 近期命中率 50%，分析信心度中等。",
       "analysis_source": "gemini"
     },
     "e39a51d05b5444bf1c98ffa0ed6811d3": {
@@ -1422,27 +1800,27 @@
           "markets": {
             "h2h": {
               "Atlético Madrid": {
-                "price": 3.5
+                "price": 3.6
               },
               "Barcelona": {
-                "price": 1.87
+                "price": 1.83
               },
               "Draw": {
-                "price": 4.1
+                "price": 4.2
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Atlético Madrid": 3.672,
-        "Barcelona": 1.844,
-        "Draw": 4.238
+        "Atlético Madrid": 3.676,
+        "Barcelona": 1.842,
+        "Draw": 4.242
       },
       "true_probs": {
         "Atlético Madrid": 25.9,
-        "Barcelona": 51.6,
-        "Draw": 22.5
+        "Barcelona": 51.7,
+        "Draw": 22.4
       },
       "other_markets": {
         "spreads": {
@@ -1476,35 +1854,33 @@
         "Barcelona": 1.844,
         "Draw": 4.238
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-11T21:16:39.249359+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Atlético Madrid": 0.004,
+        "Barcelona": -0.002,
+        "Draw": 0.004
+      },
+      "change_pct": {
+        "Atlético Madrid": 0.11,
+        "Barcelona": -0.11,
+        "Draw": 0.09
+      },
+      "is_value_bet": false,
       "odds_timeline": [
         {
           "time": "04/11 21:16",
           "Atlético Madrid": 3.672,
           "Barcelona": 1.844,
           "Draw": 4.238
+        },
+        {
+          "time": "04/11 23:41",
+          "Atlético Madrid": 3.676,
+          "Barcelona": 1.842,
+          "Draw": 4.242
         }
       ],
-      "h2h_history": [],
-      "home_form": {
-        "record": "",
-        "wins": 0,
-        "losses": 0,
-        "home_record": "",
-        "away_record": "",
-        "details": []
-      },
-      "away_form": {
-        "record": "",
-        "wins": 0,
-        "losses": 0,
-        "home_record": "",
-        "away_record": "",
-        "details": []
-      },
       "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
       "analysis_source": "rule_based"
     },
@@ -1578,14 +1954,14 @@
         }
       ],
       "avg_odds": {
-        "Liverpool": 2.383,
-        "Paris Saint Germain": 2.499,
-        "Draw": 4.363
+        "Liverpool": 2.384,
+        "Paris Saint Germain": 2.501,
+        "Draw": 4.361
       },
       "true_probs": {
         "Liverpool": 40.0,
         "Paris Saint Germain": 38.1,
-        "Draw": 21.8
+        "Draw": 21.9
       },
       "other_markets": {
         "spreads": {
@@ -1619,24 +1995,39 @@
         "Paris Saint Germain": 2.499,
         "Draw": 4.363
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-11T21:16:39.249363+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Liverpool": 0.001,
+        "Paris Saint Germain": 0.002,
+        "Draw": -0.002
+      },
+      "change_pct": {
+        "Liverpool": 0.04,
+        "Paris Saint Germain": 0.08,
+        "Draw": -0.05
+      },
+      "is_value_bet": false,
       "odds_timeline": [
         {
           "time": "04/11 21:16",
           "Liverpool": 2.383,
           "Paris Saint Germain": 2.499,
           "Draw": 4.363
+        },
+        {
+          "time": "04/11 23:41",
+          "Liverpool": 2.384,
+          "Paris Saint Germain": 2.501,
+          "Draw": 4.361
         }
       ],
       "weather": {
-        "temp": 8.6,
-        "wind": 16.9,
-        "rain": 0.0,
-        "condition": "☀️ 晴朗",
-        "impact": ""
+        "temp": 8.3,
+        "wind": 18.4,
+        "rain": 0.1,
+        "condition": "🌧️ 雨天",
+        "impact": "場地可能濕滑，對腳下技術要求較高"
       }
     },
     "02ff9b02f1eab3394f9e38d70e257e12": {
@@ -1652,25 +2043,25 @@
           "markets": {
             "h2h": {
               "Arsenal": {
-                "price": 1.42
+                "price": 1.47
               },
               "Sporting Lisbon": {
-                "price": 7.8
+                "price": 7.3
               },
               "Draw": {
-                "price": 4.95
+                "price": 4.7
               }
             },
             "spreads": {
               "Arsenal": {
-                "price": 2.15,
-                "point": -1.5,
-                "prob": 44.9
+                "price": 1.72,
+                "point": -1.0,
+                "prob": 56.1
               },
               "Sporting Lisbon": {
-                "price": 1.75,
-                "point": 1.5,
-                "prob": 55.1
+                "price": 2.2,
+                "point": 1.0,
+                "prob": 43.9
               }
             },
             "totals": {
@@ -1692,13 +2083,13 @@
           "markets": {
             "h2h": {
               "Arsenal": {
-                "price": 1.37
+                "price": 1.4
               },
               "Sporting Lisbon": {
-                "price": 7.0
+                "price": 6.6
               },
               "Draw": {
-                "price": 4.8
+                "price": 4.7
               }
             }
           }
@@ -1731,26 +2122,26 @@
         }
       ],
       "avg_odds": {
-        "Arsenal": 1.414,
-        "Sporting Lisbon": 7.47,
-        "Draw": 4.739
+        "Arsenal": 1.423,
+        "Sporting Lisbon": 7.302,
+        "Draw": 4.686
       },
       "true_probs": {
-        "Arsenal": 67.2,
-        "Sporting Lisbon": 12.7,
-        "Draw": 20.1
+        "Arsenal": 66.7,
+        "Sporting Lisbon": 13.0,
+        "Draw": 20.3
       },
       "other_markets": {
         "spreads": {
           "Arsenal": {
-            "price": 2.15,
-            "point": -1.5,
-            "prob": 44.9
+            "price": 1.72,
+            "point": -1.0,
+            "prob": 56.1
           },
           "Sporting Lisbon": {
-            "price": 1.75,
-            "point": 1.5,
-            "prob": 55.1
+            "price": 2.2,
+            "point": 1.0,
+            "prob": 43.9
           }
         },
         "totals": {
@@ -1772,27 +2163,54 @@
         "Sporting Lisbon": 7.47,
         "Draw": 4.739
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-11T21:16:39.249366+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Arsenal": 0.009,
+        "Sporting Lisbon": -0.168,
+        "Draw": -0.053
+      },
+      "change_pct": {
+        "Arsenal": 0.64,
+        "Sporting Lisbon": -2.25,
+        "Draw": -1.12
+      },
+      "is_value_bet": false,
       "odds_timeline": [
         {
           "time": "04/11 21:16",
           "Arsenal": 1.414,
           "Sporting Lisbon": 7.47,
           "Draw": 4.739
+        },
+        {
+          "time": "04/11 23:41",
+          "Arsenal": 1.423,
+          "Sporting Lisbon": 7.302,
+          "Draw": 4.686
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Arsenal",
+          "title": "Arsenal 球員評分：Havertz、Martinelli 在輸掉比賽中得 4/10 分，重擊爭冠希望",
+          "link": "https://www.espn.com/soccer/story/_/id/48454951/arsenal-ratings-kai-havertz-gabriel-martinelli-loss-bournemouth"
+        },
+        {
+          "team": "Arsenal",
+          "title": "Arteta：Arsenal 的失利是「一記重拳」",
+          "link": "https://www.espn.com/soccer/story/_/id/48456788/arsenal-mikel-arteta-bournemouth-defeat-big-punch-face-strange-man-city-premier-league-title"
         }
       ],
       "weather": {
-        "temp": 12.9,
-        "wind": 20.9,
+        "temp": 12.3,
+        "wind": 22.3,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
       },
-      "ai_analysis": "【💡 推薦：Arsenal 讓 -1.5 (大分 2.5)】\n\n考量到 Arsenal 顯著的真實勝率優勢 (67.2% vs 12.7%)，且無明顯傷兵或疲勞警示，本場比賽 Arsenal 在主場應能展現統治力。儘管獨贏賠率未見大幅變動，但 Arsenal 強勢的真實勝率預示其有機會以至少兩球的差距獲勝，因此選擇讓分盤。同時，考量到歐冠淘汰賽階段的進攻意願，大分 2.5 也是一個可關注的選擇。",
-      "analysis_source": "gemini"
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
     },
     "76200682955d7f62f3b051a14f5f67fa": {
       "id": "76200682955d7f62f3b051a14f5f67fa",
@@ -1847,13 +2265,13 @@
           "markets": {
             "h2h": {
               "Bayern Munich": {
-                "price": 1.56
+                "price": 1.58
               },
               "Real Madrid": {
-                "price": 4.9
+                "price": 4.75
               },
               "Draw": {
-                "price": 5.35
+                "price": 5.3
               }
             }
           }
@@ -1886,14 +2304,14 @@
         }
       ],
       "avg_odds": {
-        "Bayern Munich": 1.574,
-        "Real Madrid": 4.599,
-        "Draw": 5.06
+        "Bayern Munich": 1.58,
+        "Real Madrid": 4.587,
+        "Draw": 5.046
       },
       "true_probs": {
-        "Bayern Munich": 60.5,
-        "Real Madrid": 20.7,
-        "Draw": 18.8
+        "Bayern Munich": 60.3,
+        "Real Madrid": 20.8,
+        "Draw": 18.9
       },
       "other_markets": {
         "spreads": {
@@ -1927,34 +2345,51 @@
         "Real Madrid": 4.599,
         "Draw": 5.06
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-11T21:16:39.249369+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Bayern Munich": 0.006,
+        "Real Madrid": -0.012,
+        "Draw": -0.014
+      },
+      "change_pct": {
+        "Bayern Munich": 0.38,
+        "Real Madrid": -0.26,
+        "Draw": -0.28
+      },
+      "is_value_bet": false,
       "odds_timeline": [
         {
           "time": "04/11 21:16",
           "Bayern Munich": 1.574,
           "Real Madrid": 4.599,
           "Draw": 5.06
+        },
+        {
+          "time": "04/11 23:41",
+          "Bayern Munich": 1.58,
+          "Real Madrid": 4.587,
+          "Draw": 5.046
         }
       ],
       "weather": {
-        "temp": 16.2,
-        "wind": 13.3,
+        "temp": 15.6,
+        "wind": 14.5,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
       },
-      "ai_analysis": "【💡 推薦：主勝】\n\n考量到拜仁慕尼黑擁有高達 60.5% 的真實勝率，且雙方獨贏賠率及盤口均無明顯變動，顯示市場對此賽果已有共識。儘管缺乏歷史交手紀錄，但拜仁在主場應能佔據優勢。\n\n**備註：** 本分析基於現有資訊，並參考過去 2 場比賽 50% 的命中率，故給予此推薦，但信心程度為中等。",
-      "analysis_source": "gemini"
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
     }
   },
   "leagues": {
     "NBA": [
       "22dcb3e32847c7eab5774e8927016216",
       "f78d40af453b24c39e18559579894d14",
+      "d55bfef33abc5dc6dba0717236d0ee80",
       "38b10a0526d5b246097a502269bcdf71",
+      "23c66e71d25675800d939e532e38bcd2",
       "09604d4c311c1eb2215317d12154f42a",
       "06ccc7d0ba2acaf031c7d42eea09672c",
       "8c4fafe262a5424f243a130d7ab60e82",
@@ -1970,182 +2405,184 @@
   "news": {
     "nba": [
       {
-        "title": "NBA季後賽情報：Lakers（湖人）、Celtics（塞爾提克）、Cavs（騎士）、Pistons（活塞）、Spurs（馬刺）及Warriors（勇士）的初步消息",
+        "title": "NBA季後賽情報：Lakers、Celtics、Cavs、Pistons、Spurs 與 Warriors 的早期消息",
         "link": "https://www.espn.com/nba/story/_/id/48443792/nba-playoffs-intel-lebron-lakers-chances-curry-warriors-issues-major-questions",
         "published": "Sat, 11 Apr 2026 08:26:05 EST",
         "summary": "Are the Lakers toast? Is the Spurs' 3-point prowess real? We canvass the league on six storylines that could define the postseason.",
-        "title_zh": "NBA季後賽情報：Lakers（湖人）、Celtics（塞爾提克）、Cavs（騎士）、Pistons（活塞）、Spurs（馬刺）及Warriors（勇士）的初步消息",
+        "title_zh": "NBA季後賽情報：Lakers、Celtics、Cavs、Pistons、Spurs 與 Warriors 的早期消息",
         "title_en": "NBA playoff intel: Early buzz on the Lakers, Celtics, Cavs, Pistons, Spurs and Warriors"
       },
       {
-        "title": "NBA季後賽關注：週日戰況",
+        "title": "NBA 季後賽看點：週日看點",
         "link": "https://www.espn.com/nba/story/_/id/48287649/nba-playoff-watch-2026-standings-schedules-projections-clinchings",
         "published": "Sat, 11 Apr 2026 08:26:05 EST",
         "summary": "We break down every seeding possibility, plus a look at the race to secure the best odds for the No. 1 pick.",
-        "title_zh": "NBA季後賽關注：週日戰況",
+        "title_zh": "NBA 季後賽看點：週日看點",
         "title_en": "NBA playoff watch: What's at stake on Sunday"
       },
       {
-        "title": "SGA（薛伊·亞歷山大）、Jokic（約基奇）等人，週五NBA全聯盟至少168人缺陣",
+        "title": "SGA、Jokic 在週五 NBA 全聯盟至少 168 人缺陣名單中",
         "link": "https://www.espn.com/nba/story/_/id/48453474/nba-friday-slate-sees-least-168-injury-illness",
         "published": "Sat, 11 Apr 2026 00:53:43 EST",
         "summary": "Around the NBA, no fewer than 168 players were held out of Friday's games, including reigning MVP Shai Gilgeous-Alexander, three-time MVP Nikola Jokic and 14 members of the Grizzlies.",
-        "title_zh": "SGA（薛伊·亞歷山大）、Jokic（約基奇）等人，週五NBA全聯盟至少168人缺陣",
+        "title_zh": "SGA、Jokic 在週五 NBA 全聯盟至少 168 人缺陣名單中",
         "title_en": "SGA, Jokic among at least 168 out NBA-wide Fri."
       },
       {
-        "title": "Wembanyama（文班亞瑪）達成另一項「目標」，出賽65場",
+        "title": "Wembanyama 再達成一項「目標」，出賽 65 場",
         "link": "https://www.espn.com/nba/story/_/id/48453963/wembanyama-40-points-13-rebounds-hits-65-games-checks-another-box",
         "published": "Sat, 11 Apr 2026 00:53:43 EST",
         "summary": "Victor Wembanyama reached the 65-game threshold for awards eligibility with a 40-point outing that included 13 rebounds in a 139-120 win over the Mavericks.",
-        "title_zh": "Wembanyama（文班亞瑪）達成另一項「目標」，出賽65場",
+        "title_zh": "Wembanyama 再達成一項「目標」，出賽 65 場",
         "title_en": "Wembanyama checks another 'box,' hits 65 games"
       },
       {
-        "title": "Celtics（塞爾提克）追平NBA紀錄，狂砍29顆三分，鎖定東區第二種子",
+        "title": "Celtics 追平 NBA 紀錄，投進 29 顆三分球，鎖定東區第二種子",
         "link": "https://www.espn.com/nba/story/_/id/48453131/celtics-tie-nba-record-29-3s-clinch-no-2-seed",
         "published": "Sat, 11 Apr 2026 00:53:44 EST",
-        "summary": "The Celtics tied the franchise and NBA record with 29 3s on their way to clinching the Eastern Conference's No. 2 playoff seed in a blowout win over the Pelicans on Friday night.",
-        "title_zh": "Celtics（塞爾提克）追平NBA紀錄，狂砍29顆三分，鎖定東區第二種子",
+        "summary": "The Celtics tied the franchise and NBA record with 29 3s on their way to clinching the Eastern Conference's No. 2 playoff seed in a blowout win over the Pelicans.",
+        "title_zh": "Celtics 追平 NBA 紀錄，投進 29 顆三分球，鎖定東區第二種子",
         "title_en": "Celtics tie NBA record with 29 3s, clinch 2-seed"
       },
       {
-        "title": "Redick（瑞迪克）：『每個人』都想對陣傷兵眾多的Lakers（湖人）",
+        "title": "Redick：『每個人』都想對陣傷兵滿營的 Lakers",
         "link": "https://www.espn.com/nba/story/_/id/48453400/jj-redick-short-handed-lakers-everybody-wants-play-us",
         "published": "Sat, 11 Apr 2026 00:53:44 EST",
-        "summary": "Lakers coach JJ Redick believes other West teams that still have their seeding to be determined prefer L.A. as their first-round opponent in the playoffs.",
-        "title_zh": "Redick（瑞迪克）：『每個人』都想對陣傷兵眾多的Lakers（湖人）",
+        "summary": "Lakers coach JJ Redick believes other West teams that still have their seeding to be determined prefer Los Angeles as their first-round opponent in the playoffs.",
+        "title_zh": "Redick：『每個人』都想對陣傷兵滿營的 Lakers",
         "title_en": "Redick: 'Everybody' wants to face hobbled Lakers"
       },
       {
-        "title": "76ers（七六人）的Embiid（恩比德）出院；歸期未定",
+        "title": "76ers 的 Embiid 已出院；歸期未定",
         "link": "https://www.espn.com/nba/story/_/id/48450628/76ers-star-joel-embiid-hospital-one-day-surgery",
         "published": "Sat, 11 Apr 2026 00:53:44 EST",
         "summary": "Sixers star Joel Embiid has been discharged from a Houston hospital and is heading back to Philadelphia, with the team saying there is no set timeline for his return to the court.",
-        "title_zh": "76ers（七六人）的Embiid（恩比德）出院；歸期未定",
+        "title_zh": "76ers 的 Embiid 已出院；歸期未定",
         "title_en": "76ers' Embiid out of hospital; no timeline to play"
       },
       {
-        "title": "Heat（熱火）裁掉Rozier（羅齊爾），簽下J. Young（J. 楊）填補名單空缺",
+        "title": "Heat 裁掉 Rozier，簽下 J. Young 補足名單空缺",
         "link": "https://www.espn.com/nba/story/_/id/48447174/sources-heat-waive-embattled-guard-terry-rozier",
         "published": "Sat, 11 Apr 2026 00:53:43 EST",
         "summary": "Miami guard Terry Rozier, who has been on leave since October amid a sports gambling investigation, has been waived by the Heat.",
-        "title_zh": "Heat（熱火）裁掉Rozier（羅齊爾），簽下J. Young（J. 楊）填補名單空缺",
+        "title_zh": "Heat 裁掉 Rozier，簽下 J. Young 補足名單空缺",
         "title_en": "Heat waive Rozier, use roster spot on J. Young"
       },
       {
-        "title": "Donovan（多諾萬）不理會Reinsdorf（雷因斯多夫）的背書",
+        "title": "Donovan 不在意 Reinsdorf 的背書",
         "link": "https://www.espn.com/nba/story/_/id/48442739/bulls-donovan-says-not-reading-reinsdorf-endorsement",
         "published": "Sat, 11 Apr 2026 00:53:44 EST",
         "summary": "Bulls coach Billy Donovan, who has yet to decide on his future with the team, appreciated team president and CEO Michael Reinsdorf's endorsement of him but said he understood \"everybody's got to look ",
-        "title_zh": "Donovan（多諾萬）不理會Reinsdorf（雷因斯多夫）的背書",
+        "title_zh": "Donovan 不在意 Reinsdorf 的背書",
         "title_en": "Donovan not reading into Reinsdorf's endorsement"
       },
       {
-        "title": "NBA罰款Magic（魔術）2.5萬美元，因違反傷病報告規定",
+        "title": "NBA 因傷病報告違規，對 Magic 罰款 2 萬 5 千美元",
         "link": "https://www.espn.com/nba/story/_/id/48440537/nba-fines-magic-25k-violating-injury-reporting-rules",
         "published": "Sat, 11 Apr 2026 00:53:43 EST",
         "summary": "The NBA fined the Orlando Magic $25,000 on Thursday for violating league injury reporting rules before Monday night's home game against the Detroit Pistons.",
-        "title_zh": "NBA罰款Magic（魔術）2.5萬美元，因違反傷病報告規定",
+        "title_zh": "NBA 因傷病報告違規，對 Magic 罰款 2 萬 5 千美元",
         "title_en": "NBA fines Magic $25K for injury report violation"
       }
     ],
     "soccer": [
       {
-        "title": "Guardiola（瓜迪奧拉）的最佳與Arteta（阿特塔）最糟月份，會否決定冠軍歸屬？",
-        "link": "https://www.bbc.com/sport/football/articles/cy81j3dd7m5o?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Apr 2026 06:01:12 GMT",
-        "summary": "As the Premier League season approaches its finale, April could be the defining month for leaders Arsenal and closest challengers Manchester City. BBC Sport looks at the stats to explain why.",
-        "title_zh": "Guardiola（瓜迪奧拉）的最佳與Arteta（阿特塔）最糟月份，會否決定冠軍歸屬？",
-        "title_en": "Could Guardiola's best and Arteta's worst month decide title?"
-      },
-      {
-        "title": "艱難的賽季、憤怒的競技，以及給Michael Owen（麥可·歐文）的訊息",
+        "title": "一個艱難的賽季，帶著憤怒打球，以及傳訊給 Michael Owen",
         "link": "https://www.bbc.com/sport/football/articles/c87w429w3j5o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Apr 2026 05:06:33 GMT",
         "summary": "Ollie Watkins speaks to Kelly Somers about Aston Villa, England and his World Cup dream.",
-        "title_zh": "艱難的賽季、憤怒的競技，以及給Michael Owen（麥可·歐文）的訊息",
+        "title_zh": "一個艱難的賽季，帶著憤怒打球，以及傳訊給 Michael Owen",
         "title_en": "A tough season, playing angry, and messaging Michael Owen"
       },
       {
-        "title": "West Ham（西漢姆）重燃希望——但Spurs（熱刺）卻踏入了未知領域",
+        "title": "West Ham 重燃希望 - 但 Spurs 卻步入了未知領域",
         "link": "https://www.bbc.com/sport/football/articles/cr71jvrpp5ro?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Apr 2026 23:23:27 GMT",
         "summary": "West Ham's thumping win over Wolves not only boosts their own Premier League survival hopes, but plunges Tottenham into the drop zone - and to new depths.",
-        "title_zh": "West Ham（西漢姆）重燃希望——但Spurs（熱刺）卻踏入了未知領域",
+        "title_zh": "West Ham 重燃希望 - 但 Spurs 卻步入了未知領域",
         "title_en": "West Ham have fresh hope - but Spurs now in uncharted territory"
       },
       {
-        "title": "De Zerbi（德澤爾比）對Greenwood（格林伍德）言論的反應「並不意外」",
-        "link": "https://www.bbc.com/sport/football/articles/cdxde1g4dvqo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Apr 2026 21:30:38 GMT",
-        "summary": "Tottenham manager Roberto de Zerbi says he was \"not surprised\" by the reaction from supporters over comments he made about Mason Greenwood.",
-        "title_zh": "De Zerbi（德澤爾比）對Greenwood（格林伍德）言論的反應「並不意外」",
-        "title_en": "De Zerbi 'not surprised' by reaction to Greenwood comments"
-      },
-      {
-        "title": "O'Neill（奧尼爾）：Green Brigade（綠色旅團）的回歸或許能助冠軍爭奪一臂之力",
-        "link": "https://www.bbc.com/sport/football/articles/c8958z0q2pzo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Apr 2026 15:12:43 GMT",
-        "summary": "Martin O'Neill thinks the return of the Green Brigade ultras group following the lifting of their suspension will be \"a boost\" to Celtic's title challenge.",
-        "title_zh": "O'Neill（奧尼爾）：Green Brigade（綠色旅團）的回歸或許能助冠軍爭奪一臂之力",
-        "title_en": "Green Brigade return may boost title bid - O'Neill"
-      },
-      {
-        "title": "Wilshere（威爾謝爾）尋求對決Wembley（溫布利）常客Challinor（查利諾）的職業生涯首座冠軍",
+        "title": "Wilshere 力求在溫布利球場對決常客 Challinor，爭奪首冠",
         "link": "https://www.bbc.com/sport/football/articles/cew7jd0jk95o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Apr 2026 10:25:02 GMT",
         "summary": "Luton Town boss Jack Wilshere faces Stockport County boss and Wembley regular Dave Challinor in Sunday's EFL Trophy final.",
-        "title_zh": "Wilshere（威爾謝爾）尋求對決Wembley（溫布利）常客Challinor（查利諾）的職業生涯首座冠軍",
+        "title_zh": "Wilshere 力求在溫布利球場對決常客 Challinor，爭奪首冠",
         "title_en": "Wilshere seeks first trophy against Wembley regular Challinor"
       },
       {
-        "title": "Sutton（薩頓）的預測對決拳擊推廣人兼Arsenal（阿森納）球迷Frank Warren（弗蘭克·華倫）",
+        "title": "Sutton 的預測 v. 拳擊推廣人兼 Arsenal 球迷 Frank Warren",
         "link": "https://www.bbc.com/sport/football/articles/cwyj5w47zlwo?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 09 Apr 2026 15:48:26 GMT",
         "summary": "Chris Sutton takes on boxing promoter Frank Warren plus the BBC readers and AI with his predictions for this weekend's Premier League fixtures.",
-        "title_zh": "Sutton（薩頓）的預測對決拳擊推廣人兼Arsenal（阿森納）球迷Frank Warren（弗蘭克·華倫）",
+        "title_zh": "Sutton 的預測 v. 拳擊推廣人兼 Arsenal 球迷 Frank Warren",
         "title_en": "Sutton's predictions v boxing promoter & Arsenal fan Frank Warren"
       },
       {
-        "title": "Nike（耐克）調查世界盃球衣問題",
-        "link": "https://www.bbc.com/sport/football/articles/c2evp8283wgo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Apr 2026 18:40:21 GMT",
-        "summary": "Sportswear giant Nike is investigating a design issue with the shirts set to be worn by several teams - including England - at this summer's World Cup.",
-        "title_zh": "Nike（耐克）調查世界盃球衣問題",
-        "title_en": "Nike investigating issue with World Cup kits"
+        "title": "Guardiola 的最佳與 Arteta 的最差月份能否決定冠軍歸屬？",
+        "link": "https://www.bbc.com/sport/football/articles/cy81j3dd7m5o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 06:01:12 GMT",
+        "summary": "As the Premier League season approaches its finale, April could be the defining month for leaders Arsenal and closest challengers Manchester City. BBC Sport looks at the stats to explain why.",
+        "title_zh": "Guardiola 的最佳與 Arteta 的最差月份能否決定冠軍歸屬？",
+        "title_en": "Could Guardiola's best and Arteta's worst month decide title?"
       },
       {
-        "title": "Guardiola（瓜迪奧拉）：「非常樂意」Silva（席爾瓦）能留在Man City（曼城）",
+        "title": "De Zerbi 對 Greenwood 言論的反應「並不意外」",
+        "link": "https://www.bbc.com/sport/football/articles/cdxde1g4dvqo?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 10 Apr 2026 21:30:38 GMT",
+        "summary": "Tottenham manager Roberto de Zerbi says he was \"not surprised\" by the reaction from supporters over comments he made about Mason Greenwood.",
+        "title_zh": "De Zerbi 對 Greenwood 言論的反應「並不意外」",
+        "title_en": "De Zerbi 'not surprised' by reaction to Greenwood comments"
+      },
+      {
+        "title": "FC Basel 因體育場火災延後比賽",
+        "link": "https://www.bbc.com/sport/football/articles/ce8jeg4k3p0o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 13:17:09 GMT",
+        "summary": "FC Basel's Swiss Super League match against FC Thun is postponed after a fire causes \"significant damage\" to Basel's St Jakob-Park stadium.",
+        "title_zh": "FC Basel 因體育場火災延後比賽",
+        "title_en": "FC Basel postpone fixture after stadium fire"
+      },
+      {
+        "title": "Guardiola 「樂見」Silva 留在 Man City",
         "link": "https://www.bbc.com/sport/football/articles/c8r43zp81lgo?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Apr 2026 12:45:31 GMT",
         "summary": "Pep Guardiola says he would \"love\" captain Bernardo Silva to \"finish his career\" at Manchester City but it is up to the player to make the decision on whether he stays or leaves this summer.",
-        "title_zh": "Guardiola（瓜迪奧拉）：「非常樂意」Silva（席爾瓦）能留在Man City（曼城）",
+        "title_zh": "Guardiola 「樂見」Silva 留在 Man City",
         "title_en": "Guardiola would 'love' Silva to stay at Man City"
       },
       {
-        "title": "Rosenior（羅森諾爾）：Fernandez（費爾南德斯）很抱歉，但他將錯過與Man City（曼城）的比賽",
-        "link": "https://www.bbc.com/sport/football/articles/c70drp00yyqo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Apr 2026 14:14:46 GMT",
-        "summary": "Chelsea midfielder Enzo Fernandez is still unavailable for the upcoming home match against Manchester City despite a recent apology, head coach Liam Rosenior says.",
-        "title_zh": "Rosenior（羅森諾爾）：Fernandez（費爾南德斯）很抱歉，但他將錯過與Man City（曼城）的比賽",
-        "title_en": "Fernandez sorry but will miss Man City - Rosenior"
+        "title": "「一記重拳」- Arteta",
+        "link": "https://www.bbc.com/sport/football/videos/cd7jz4d7d9vo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 14:27:27 GMT",
+        "summary": "Arsenal manager Mikel Arteta describes the 2-1 defeat at home to Bournemouth as \"a big punch on the face\" as they drop points in the Premier League title race.",
+        "title_zh": "「一記重拳」- Arteta",
+        "title_en": "'A big punch on the face' - Arteta"
+      },
+      {
+        "title": "Scott 連續幾個月「表現驚人」- Iraola",
+        "link": "https://www.bbc.com/sport/football/videos/cvgkxq0qp7eo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 14:17:12 GMT",
+        "summary": "Bournemouth manager Andoni Iraola is full of praise for Alex Scott, whose winning goal seals a 2-1 win against Premier League leaders Arsenal at the Emirates.",
+        "title_zh": "Scott 連續幾個月「表現驚人」- Iraola",
+        "title_en": "Scott 'amazing' for months - Iraola"
       }
     ]
   },
   "significant_changes": [
+    "d55bfef33abc5dc6dba0717236d0ee80",
+    "23c66e71d25675800d939e532e38bcd2",
     "3f5adb3e93b0c63eb14ed1d0e8b90a43",
     "06ccc7d0ba2acaf031c7d42eea09672c",
     "38b10a0526d5b246097a502269bcdf71",
+    "8c4fafe262a5424f243a130d7ab60e82",
     "22dcb3e32847c7eab5774e8927016216",
     "02ff9b02f1eab3394f9e38d70e257e12",
-    "8c4fafe262a5424f243a130d7ab60e82",
     "76200682955d7f62f3b051a14f5f67fa",
     "e39a51d05b5444bf1c98ffa0ed6811d3"
   ],
   "stats": {
-    "total_matches": 11,
-    "significant_changes_count": 8,
-    "api_remaining": "26"
+    "total_matches": 13,
+    "significant_changes_count": 10,
+    "api_remaining": "494"
   }
 }
