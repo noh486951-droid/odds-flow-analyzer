@@ -64,8 +64,26 @@ window.HistoryController = {
   
   render(data) {
     if (!data || !data.matches) return;
-    const matches = Object.values(data.matches);
+    const now = new Date();
+    // v1.8.1: 過濾掉尚未開打的比賽（只顯示已開賽或已完賽的）
+    const matches = Object.values(data.matches).filter(m => {
+      if (m.final_score || m.completed) return true;  // 已完賽一定顯示
+      if (!m.commence_time) return true;  // 無開賽時間的保留
+      return new Date(m.commence_time) <= now;  // 只顯示已開賽的
+    });
     
+    if (matches.length === 0) {
+      const allCount = Object.values(data.matches).length;
+      this.grid.innerHTML = `
+        <div class="empty-state">
+          <span class="empty-icon">⏳</span>
+          <p>本日 ${allCount} 場賽事尚未開打</p>
+          <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 0.5rem;">比賽開始後會自動顯示在此頁面</p>
+        </div>
+      `;
+      return;
+    }
+
     // 計算 AI 命中率
     const aiMatches = matches.filter(m => m.ai_result && m.ai_result !== 'N/A');
     const hits = aiMatches.filter(m => m.ai_result === 'HIT').length;

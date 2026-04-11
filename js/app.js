@@ -12,6 +12,139 @@ const AppState = {
 };
 
 // ============================================================
+// 隊名中英對照表 (v1.8.1)
+// ============================================================
+const TEAM_NAME_ZH = {
+  // --- NBA ---
+  "Atlanta Hawks": "亞特蘭大老鷹",
+  "Boston Celtics": "波士頓塞爾提克",
+  "Brooklyn Nets": "布魯克林籃網",
+  "Charlotte Hornets": "夏洛特黃蜂",
+  "Chicago Bulls": "芝加哥公牛",
+  "Cleveland Cavaliers": "克里夫蘭騎士",
+  "Dallas Mavericks": "達拉斯獨行俠",
+  "Denver Nuggets": "丹佛金塊",
+  "Detroit Pistons": "底特律活塞",
+  "Golden State Warriors": "金州勇士",
+  "Houston Rockets": "休士頓火箭",
+  "Indiana Pacers": "印第安納溜馬",
+  "Los Angeles Clippers": "洛杉磯快艇",
+  "Los Angeles Lakers": "洛杉磯湖人",
+  "Memphis Grizzlies": "曼菲斯灰熊",
+  "Miami Heat": "邁阿密熱火",
+  "Milwaukee Bucks": "密爾瓦基公鹿",
+  "Minnesota Timberwolves": "明尼蘇達灰狼",
+  "New Orleans Pelicans": "紐奧良鵜鶘",
+  "New York Knicks": "紐約尼克",
+  "Oklahoma City Thunder": "奧克拉荷馬雷霆",
+  "Orlando Magic": "奧蘭多魔術",
+  "Philadelphia 76ers": "費城76人",
+  "Phoenix Suns": "鳳凰城太陽",
+  "Portland Trail Blazers": "波特蘭拓荒者",
+  "Sacramento Kings": "沙加緬度國王",
+  "San Antonio Spurs": "聖安東尼奧馬刺",
+  "Toronto Raptors": "多倫多暴龍",
+  "Utah Jazz": "猶他爵士",
+  "Washington Wizards": "華盛頓巫師",
+  // --- 英超 EPL ---
+  "Arsenal": "兵工廠",
+  "Aston Villa": "阿斯頓維拉",
+  "AFC Bournemouth": "伯恩茅斯",
+  "Bournemouth": "伯恩茅斯",
+  "Brentford": "布倫特福德",
+  "Brighton and Hove Albion": "布萊頓",
+  "Brighton": "布萊頓",
+  "Burnley": "伯恩利",
+  "Chelsea": "切爾西",
+  "Crystal Palace": "水晶宮",
+  "Everton": "艾佛頓",
+  "Fulham": "富勒姆",
+  "Ipswich Town": "伊普斯維奇",
+  "Leeds United": "里茲聯",
+  "Leicester City": "萊斯特城",
+  "Liverpool": "利物浦",
+  "Luton Town": "盧頓",
+  "Manchester City": "曼城",
+  "Manchester United": "曼聯",
+  "Newcastle United": "紐卡索聯",
+  "Nottingham Forest": "諾丁漢森林",
+  "Sheffield United": "雪菲爾聯",
+  "Southampton": "南安普頓",
+  "Tottenham Hotspur": "熱刺",
+  "West Ham United": "西漢姆聯",
+  "Wolverhampton Wanderers": "狼隊",
+  "Wolves": "狼隊",
+  // --- 西甲 La Liga ---
+  "Real Madrid": "皇家馬德里",
+  "Barcelona": "巴塞隆納",
+  "Atlético Madrid": "馬德里競技",
+  "Atletico Madrid": "馬德里競技",
+  "Sevilla": "塞維利亞",
+  "Real Sociedad": "皇家社會",
+  "Real Betis": "皇家貝蒂斯",
+  "Villarreal": "維拉利爾",
+  "Athletic Bilbao": "畢爾包競技",
+  "Valencia": "瓦倫西亞",
+  "Girona": "赫羅納",
+  "Celta Vigo": "塞爾塔",
+  "Mallorca": "馬洛卡",
+  "Las Palmas": "拉斯帕爾馬斯",
+  "Getafe": "赫塔費",
+  "Osasuna": "奧薩蘇納",
+  "Alavés": "阿拉維斯",
+  "Cadiz": "加的斯",
+  "Granada": "格拉納達",
+  "Almería": "阿爾梅里亞",
+  // --- 德甲 Bundesliga ---
+  "Bayern Munich": "拜仁慕尼黑",
+  "Borussia Dortmund": "多特蒙德",
+  "RB Leipzig": "RB 萊比錫",
+  "Bayer Leverkusen": "勒沃庫森",
+  "Eintracht Frankfurt": "法蘭克福",
+  "VfB Stuttgart": "斯圖加特",
+  "Wolfsburg": "沃夫斯堡",
+  "Borussia Monchengladbach": "門興格拉德巴赫",
+  "SC Freiburg": "弗萊堡",
+  "Union Berlin": "柏林聯合",
+  "Werder Bremen": "不來梅",
+  "Hoffenheim": "霍芬海姆",
+  "FC Augsburg": "奧格斯堡",
+  "1. FC Heidenheim": "海登海姆",
+  "SV Darmstadt 98": "達姆施塔特",
+  "1. FC Köln": "科隆",
+  // --- 歐冠 / 其他常見 ---
+  "Paris Saint-Germain": "巴黎聖日耳曼",
+  "PSG": "巴黎聖日耳曼",
+  "Inter Milan": "國際米蘭",
+  "AC Milan": "AC 米蘭",
+  "Juventus": "尤文圖斯",
+  "Napoli": "拿坡里",
+  "AS Roma": "羅馬",
+  "Lazio": "拉齊奧",
+  "Atalanta": "亞特蘭大",
+  "Fiorentina": "佛羅倫斯",
+  "Porto": "波爾圖",
+  "Benfica": "本菲卡",
+  "Sporting Lisbon": "里斯本競技",
+  "Sporting CP": "里斯本競技",
+  "Ajax": "阿賈克斯",
+  "Celtic": "塞爾提克",
+  "Rangers": "流浪者",
+  "Club Brugge": "布魯日",
+};
+
+/** 取得中文隊名，找不到就回傳原文 */
+function getTeamNameZh(engName) {
+  return TEAM_NAME_ZH[engName] || engName;
+}
+
+/** 格式化為「中文 (英)」，用於顯示 */
+function formatTeamName(engName) {
+  const zh = TEAM_NAME_ZH[engName];
+  return zh ? `${zh}` : engName;
+}
+
+// ============================================================
 // Initialization & Navigation
 // ============================================================
 document.addEventListener('DOMContentLoaded', async () => {
@@ -259,7 +392,7 @@ function createMatchCard(match) {
         
         <div class="match-teams">
           <div class="team-row">
-            <span class="team-name">${match.home_team} (主)</span>
+            <span class="team-name">${formatTeamName(match.home_team)} (主)</span>
             <div class="odds-box">
               <span class="odds-opening">${homeOpen.toFixed(2)}</span>
               <span class="odds-current">${homeOdds.toFixed(2)}</span>
@@ -267,7 +400,7 @@ function createMatchCard(match) {
             </div>
           </div>
           <div class="team-row">
-            <span class="team-name">${match.away_team} (客)</span>
+            <span class="team-name">${formatTeamName(match.away_team)} (客)</span>
             <div class="odds-box">
               <span class="odds-opening">${awayOpen.toFixed(2)}</span>
               <span class="odds-current">${awayOdds.toFixed(2)}</span>
@@ -409,8 +542,8 @@ function openMatchDetail(matchId) {
         `;
       };
 
-      const homeChartSvg = makeTeamChart(homeVals, 'var(--primary)', homeTeam);
-      const awayChartSvg = makeTeamChart(awayVals, 'var(--warning)', awayTeam);
+      const homeChartSvg = makeTeamChart(homeVals, 'var(--primary)', formatTeamName(homeTeam));
+      const awayChartSvg = makeTeamChart(awayVals, 'var(--warning)', formatTeamName(awayTeam));
 
       timelineHtml = `
         <div class="modal-section">
@@ -466,7 +599,7 @@ function openMatchDetail(matchId) {
 
   content.innerHTML = `
     <div class="modal-header-bar">
-      <h2>${match.home_team} vs ${match.away_team}</h2>
+      <h2>${formatTeamName(match.home_team)} vs ${formatTeamName(match.away_team)}</h2>
       <button class="modal-close-btn" onclick="closeMatchDetail()">✕</button>
     </div>
     <div class="modal-meta">${match.league} | 開賽: ${formatTime(match.commence_time)}</div>
@@ -503,8 +636,8 @@ function openMatchDetail(matchId) {
 
     <div class="modal-section">
       <h3>🔥 近期戰績</h3>
-      ${renderFormDetail(match.home_form, match.home_team)}
-      ${renderFormDetail(match.away_form, match.away_team)}
+      ${renderFormDetail(match.home_form, formatTeamName(match.home_team))}
+      ${renderFormDetail(match.away_form, formatTeamName(match.away_team))}
     </div>
   `;
 
