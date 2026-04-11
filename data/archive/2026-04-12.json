@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-12T03:02:09.172401+08:00",
-  "last_updated_display": "2026/04/12 03:02 (台北時間)",
+  "last_updated": "2026-04-12T05:44:45.001590+08:00",
+  "last_updated_display": "2026/04/12 05:44 (台北時間)",
   "matches": {
     "22dcb3e32847c7eab5774e8927016216": {
       "id": "22dcb3e32847c7eab5774e8927016216",
@@ -15,33 +15,33 @@
           "markets": {
             "h2h": {
               "Atlanta Hawks": {
-                "price": 1.41
+                "price": 1.68
               },
               "Miami Heat": {
-                "price": 3.0
+                "price": 2.24
               }
             },
             "spreads": {
               "Atlanta Hawks": {
                 "price": 1.91,
-                "point": -6.5,
+                "point": -3.0,
                 "prob": 50.0
               },
               "Miami Heat": {
                 "price": 1.91,
-                "point": 6.5,
+                "point": 3.0,
                 "prob": 50.0
               }
             },
             "totals": {
               "Over": {
                 "price": 1.89,
-                "point": 243.5,
+                "point": 241.5,
                 "prob": 50.5
               },
               "Under": {
                 "price": 1.93,
-                "point": 243.5,
+                "point": 241.5,
                 "prob": 49.5
               }
             }
@@ -52,78 +52,78 @@
           "markets": {
             "h2h": {
               "Atlanta Hawks": {
-                "price": 1.36
+                "price": 1.57
               },
               "Miami Heat": {
-                "price": 3.1
+                "price": 2.38
               }
             },
             "spreads": {
               "Atlanta Hawks": {
                 "price": 1.91,
-                "point": -6.5
+                "point": -3.5
               },
               "Miami Heat": {
                 "price": 1.91,
-                "point": 6.5
+                "point": 3.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 243.5
+                "point": 241.5
               },
               "Under": {
                 "price": 1.91,
-                "point": 243.5
+                "point": 241.5
               }
             }
           }
         },
         {
-          "name": "Unibet (FR)",
+          "name": "Betclic (FR)",
           "markets": {
             "h2h": {
               "Atlanta Hawks": {
-                "price": 1.35
+                "price": 1.6
               },
               "Miami Heat": {
-                "price": 2.95
+                "price": 2.2
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Atlanta Hawks": 1.383,
-        "Miami Heat": 2.978
+        "Atlanta Hawks": 1.61,
+        "Miami Heat": 2.305
       },
       "true_probs": {
-        "Atlanta Hawks": 68.3,
-        "Miami Heat": 31.7
+        "Atlanta Hawks": 58.9,
+        "Miami Heat": 41.1
       },
       "other_markets": {
         "spreads": {
           "Atlanta Hawks": {
             "price": 1.91,
-            "point": -6.5,
+            "point": -3.0,
             "prob": 50.0
           },
           "Miami Heat": {
             "price": 1.91,
-            "point": 6.5,
+            "point": 3.0,
             "prob": 50.0
           }
         },
         "totals": {
           "Over": {
             "price": 1.89,
-            "point": 243.5,
+            "point": 241.5,
             "prob": 50.5
           },
           "Under": {
             "price": 1.93,
-            "point": 243.5,
+            "point": 241.5,
             "prob": 49.5
           }
         },
@@ -136,14 +136,14 @@
       "first_seen": "2026-04-11T13:02:54.625014+08:00",
       "is_new": false,
       "odds_change": {
-        "Atlanta Hawks": -0.003,
-        "Miami Heat": 0.047
+        "Atlanta Hawks": 0.224,
+        "Miami Heat": -0.626
       },
       "change_pct": {
-        "Atlanta Hawks": -0.22,
-        "Miami Heat": 1.6
+        "Atlanta Hawks": 16.16,
+        "Miami Heat": -21.36
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/11 13:02",
@@ -174,6 +174,11 @@
           "time": "04/12 02:58",
           "Atlanta Hawks": 1.383,
           "Miami Heat": 2.978
+        },
+        {
+          "time": "04/12 05:41",
+          "Atlanta Hawks": 1.61,
+          "Miami Heat": 2.305
         }
       ],
       "h2h_history": [],
@@ -209,8 +214,16 @@
           }
         ]
       },
-      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
-      "analysis_source": "rule_based"
+      "sharp_moves": [
+        {
+          "team": "Miami Heat",
+          "move_pct": -22.6,
+          "from": 2.978,
+          "to": 2.305,
+          "level": "💰 聪明錢訊號",
+          "message": "Miami Heat 賠率 2.98→2.31 (-22.6%)"
+        }
+      ]
     },
     "f78d40af453b24c39e18559579894d14": {
       "id": "f78d40af453b24c39e18559579894d14",
@@ -225,34 +238,34 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.46
+                "price": 4.1
               },
               "Orlando Magic": {
-                "price": 1.57
+                "price": 1.26
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.94,
-                "point": 4.0,
-                "prob": 49.2
+                "price": 1.91,
+                "point": 8.5,
+                "prob": 50.0
               },
               "Orlando Magic": {
-                "price": 1.88,
-                "point": -4.0,
-                "prob": 50.8
+                "price": 1.91,
+                "point": -8.5,
+                "prob": 50.0
               }
             },
             "totals": {
               "Over": {
-                "price": 1.93,
-                "point": 217.5,
-                "prob": 49.5
+                "price": 1.91,
+                "point": 216.5,
+                "prob": 50.0
               },
               "Under": {
-                "price": 1.89,
-                "point": 217.5,
-                "prob": 50.5
+                "price": 1.91,
+                "point": 216.5,
+                "prob": 50.0
               }
             }
           }
@@ -262,20 +275,20 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.3
+                "price": 4.0
               },
               "Orlando Magic": {
-                "price": 1.61
+                "price": 1.25
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.91,
-                "point": 4.5
+                "price": 2.1,
+                "point": 7.5
               },
               "Orlando Magic": {
-                "price": 1.91,
-                "point": -4.5
+                "price": 1.73,
+                "point": -7.5
               }
             },
             "totals": {
@@ -295,46 +308,46 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 2.3
+                "price": 3.65
               },
               "Orlando Magic": {
-                "price": 1.55
+                "price": 1.24
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Boston Celtics": 2.349,
-        "Orlando Magic": 1.581
+        "Boston Celtics": 3.625,
+        "Orlando Magic": 1.268
       },
       "true_probs": {
-        "Boston Celtics": 40.2,
-        "Orlando Magic": 59.8
+        "Boston Celtics": 25.9,
+        "Orlando Magic": 74.1
       },
       "other_markets": {
         "spreads": {
           "Boston Celtics": {
-            "price": 1.94,
-            "point": 4.0,
-            "prob": 49.2
+            "price": 1.91,
+            "point": 8.5,
+            "prob": 50.0
           },
           "Orlando Magic": {
-            "price": 1.88,
-            "point": -4.0,
-            "prob": 50.8
+            "price": 1.91,
+            "point": -8.5,
+            "prob": 50.0
           }
         },
         "totals": {
           "Over": {
-            "price": 1.93,
-            "point": 217.5,
-            "prob": 49.5
+            "price": 1.91,
+            "point": 216.5,
+            "prob": 50.0
           },
           "Under": {
-            "price": 1.89,
-            "point": 217.5,
-            "prob": 50.5
+            "price": 1.91,
+            "point": 216.5,
+            "prob": 50.0
           }
         },
         "btts": {}
@@ -346,14 +359,14 @@
       "first_seen": "2026-04-11T13:02:54.625019+08:00",
       "is_new": false,
       "odds_change": {
-        "Boston Celtics": -0.002,
-        "Orlando Magic": 0.009
+        "Boston Celtics": 1.274,
+        "Orlando Magic": -0.304
       },
       "change_pct": {
-        "Boston Celtics": -0.09,
-        "Orlando Magic": 0.57
+        "Boston Celtics": 54.19,
+        "Orlando Magic": -19.34
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/11 13:02",
@@ -384,17 +397,22 @@
           "time": "04/12 02:58",
           "Boston Celtics": 2.349,
           "Orlando Magic": 1.581
+        },
+        {
+          "time": "04/12 05:41",
+          "Boston Celtics": 3.625,
+          "Orlando Magic": 1.268
         }
       ],
       "injury_alerts": [
         {
           "team": "Boston Celtics",
-          "title": "Celtics (波士頓塞爾提克) 投進 29 記三分球追平 NBA 紀錄，鎖定東區第二種子",
+          "title": "Celtics（塞爾提克）投進 29 顆三分球追平 NBA 紀錄，鎖定第 2 種子",
           "link": "https://www.espn.com/nba/story/_/id/48453131/celtics-tie-nba-record-29-3s-clinch-no-2-seed"
         },
         {
           "team": "Orlando Magic",
-          "title": "NBA 因傷病報告違規對 Magic (奧蘭多魔術) 罰款 2.5 萬美元",
+          "title": "NBA 罰款 Magic（Orlando Magic）25,000 美元，因傷病報告違規",
           "link": "https://www.espn.com/nba/story/_/id/48440537/nba-fines-magic-25k-violating-injury-reporting-rules"
         }
       ],
@@ -430,7 +448,19 @@
             "venue": "主"
           }
         ]
-      }
+      },
+      "sharp_moves": [
+        {
+          "team": "Orlando Magic",
+          "move_pct": -19.8,
+          "from": 1.581,
+          "to": 1.268,
+          "level": "💰 聪明錢訊號",
+          "message": "Orlando Magic 賠率 1.58→1.27 (-19.8%)"
+        }
+      ],
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
     },
     "d55bfef33abc5dc6dba0717236d0ee80": {
       "id": "d55bfef33abc5dc6dba0717236d0ee80",
@@ -445,21 +475,21 @@
           "markets": {
             "h2h": {
               "Brooklyn Nets": {
-                "price": 15.0
+                "price": 17.0
               },
               "Toronto Raptors": {
-                "price": 1.03
+                "price": 1.02
               }
             },
             "spreads": {
               "Brooklyn Nets": {
                 "price": 1.91,
-                "point": 19.0,
+                "point": 20.5,
                 "prob": 50.0
               },
               "Toronto Raptors": {
                 "price": 1.91,
-                "point": -19.0,
+                "point": -20.5,
                 "prob": 50.0
               }
             },
@@ -482,7 +512,7 @@
           "markets": {
             "h2h": {
               "Brooklyn Nets": {
-                "price": 1.34
+                "price": 1.33
               },
               "Toronto Raptors": {
                 "price": 1.02
@@ -493,7 +523,7 @@
                 "price": 40.0
               },
               "Toronto Raptors": {
-                "price": 1.08
+                "price": 1.07
               }
             }
           }
@@ -503,20 +533,20 @@
           "markets": {
             "h2h": {
               "Brooklyn Nets": {
-                "price": 16.5
+                "price": 22.0
               },
               "Toronto Raptors": {
-                "price": 1.04
+                "price": 1.02
               }
             },
             "spreads": {
               "Brooklyn Nets": {
-                "price": 2.05,
-                "point": 18.5
+                "price": 2.0,
+                "point": 20.5
               },
               "Toronto Raptors": {
-                "price": 1.88,
-                "point": -18.5
+                "price": 1.92,
+                "point": -20.5
               }
             },
             "totals": {
@@ -533,23 +563,23 @@
         }
       ],
       "avg_odds": {
-        "Brooklyn Nets": 10.976,
-        "Toronto Raptors": 1.038
+        "Brooklyn Nets": 11.917,
+        "Toronto Raptors": 1.03
       },
       "true_probs": {
-        "Brooklyn Nets": 8.6,
-        "Toronto Raptors": 91.4
+        "Brooklyn Nets": 8.0,
+        "Toronto Raptors": 92.0
       },
       "other_markets": {
         "spreads": {
           "Brooklyn Nets": {
             "price": 1.91,
-            "point": 19.0,
+            "point": 20.5,
             "prob": 50.0
           },
           "Toronto Raptors": {
             "price": 1.91,
-            "point": -19.0,
+            "point": -20.5,
             "prob": 50.0
           }
         },
@@ -574,12 +604,12 @@
       "first_seen": "2026-04-11T23:41:35.820683+08:00",
       "is_new": false,
       "odds_change": {
-        "Brooklyn Nets": -0.253,
-        "Toronto Raptors": 0.006
+        "Brooklyn Nets": 0.688,
+        "Toronto Raptors": -0.002
       },
       "change_pct": {
-        "Brooklyn Nets": -2.25,
-        "Toronto Raptors": 0.58
+        "Brooklyn Nets": 6.13,
+        "Toronto Raptors": -0.19
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -592,6 +622,11 @@
           "time": "04/12 02:58",
           "Brooklyn Nets": 10.976,
           "Toronto Raptors": 1.038
+        },
+        {
+          "time": "04/12 05:41",
+          "Brooklyn Nets": 11.917,
+          "Toronto Raptors": 1.03
         }
       ],
       "h2h_history": [],
@@ -627,7 +662,7 @@
           }
         ]
       },
-      "ai_analysis": "【💡 投注推薦】 客隊 布魯克林籃網 (+19.0)\n\n雖然暴龍擁有91.4%的極高真實勝率，且無傷兵疲勞問題，但高達19.0分的讓分盤在NBA實屬罕見，球隊能否全場維持專注並持續覆蓋如此大的分差具有不確定性。籃網在無不利消息下，預期將力求避免慘敗，有望憑藉頑強防守將分差控制在20分以內。鑑於AI參考命中率為50%（樣本僅2場），本次推薦信心程度適中。",
+      "ai_analysis": "【💡 推薦：主隊 Toronto Raptors 讓分過盤 (13.0)**】\n\n儘管多倫多暴龍的真實勝率高達 92%，且盤口顯示其獨贏賠率持續走低，但考量到 AI 自我學習參考中，近期 33% 的命中率並不理想，且近 5 場比賽僅取得 1 勝，而布魯克林籃網雖然勝率極低，但獨贏賠率卻有小幅上升，顯示市場對其仍有觀望。讓分盤高達 20.5，對暴龍來說並非易事，因此我將看好籃網能夠守住盤口。",
       "analysis_source": "gemini"
     },
     "38b10a0526d5b246097a502269bcdf71": {
@@ -643,33 +678,33 @@
           "markets": {
             "h2h": {
               "Charlotte Hornets": {
-                "price": 1.34
+                "price": 1.2
               },
               "New York Knicks": {
-                "price": 3.4
+                "price": 4.8
               }
             },
             "spreads": {
               "Charlotte Hornets": {
                 "price": 1.91,
-                "point": -7.5,
+                "point": -10.5,
                 "prob": 50.0
               },
               "New York Knicks": {
                 "price": 1.91,
-                "point": 7.5,
+                "point": 10.5,
                 "prob": 50.0
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 215.5,
+                "point": 213.5,
                 "prob": 50.0
               },
               "Under": {
                 "price": 1.91,
-                "point": 215.5,
+                "point": 213.5,
                 "prob": 50.0
               }
             }
@@ -680,30 +715,30 @@
           "markets": {
             "h2h": {
               "Charlotte Hornets": {
-                "price": 1.3
+                "price": 1.2
               },
               "New York Knicks": {
-                "price": 3.5
+                "price": 4.5
               }
             },
             "spreads": {
               "Charlotte Hornets": {
                 "price": 1.91,
-                "point": -7.5
+                "point": -10.5
               },
               "New York Knicks": {
                 "price": 1.91,
-                "point": 7.5
+                "point": 10.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 215.5
+                "point": 214.5
               },
               "Under": {
                 "price": 1.91,
-                "point": 215.5
+                "point": 214.5
               }
             }
           }
@@ -713,45 +748,45 @@
           "markets": {
             "h2h": {
               "Charlotte Hornets": {
-                "price": 1.29
+                "price": 1.17
               },
               "New York Knicks": {
-                "price": 3.3
+                "price": 4.45
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Charlotte Hornets": 1.315,
-        "New York Knicks": 3.279
+        "Charlotte Hornets": 1.203,
+        "New York Knicks": 4.312
       },
       "true_probs": {
-        "Charlotte Hornets": 71.4,
-        "New York Knicks": 28.6
+        "Charlotte Hornets": 78.2,
+        "New York Knicks": 21.8
       },
       "other_markets": {
         "spreads": {
           "Charlotte Hornets": {
             "price": 1.91,
-            "point": -7.5,
+            "point": -10.5,
             "prob": 50.0
           },
           "New York Knicks": {
             "price": 1.91,
-            "point": 7.5,
+            "point": 10.5,
             "prob": 50.0
           }
         },
         "totals": {
           "Over": {
             "price": 1.91,
-            "point": 215.5,
+            "point": 213.5,
             "prob": 50.0
           },
           "Under": {
             "price": 1.91,
-            "point": 215.5,
+            "point": 213.5,
             "prob": 50.0
           }
         },
@@ -764,12 +799,12 @@
       "first_seen": "2026-04-11T13:02:54.625026+08:00",
       "is_new": false,
       "odds_change": {
-        "Charlotte Hornets": 0.037,
-        "New York Knicks": -0.277
+        "Charlotte Hornets": -0.075,
+        "New York Knicks": 0.756
       },
       "change_pct": {
-        "Charlotte Hornets": 2.9,
-        "New York Knicks": -7.79
+        "Charlotte Hornets": -5.87,
+        "New York Knicks": 21.26
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -802,6 +837,11 @@
           "time": "04/12 02:58",
           "Charlotte Hornets": 1.315,
           "New York Knicks": 3.279
+        },
+        {
+          "time": "04/12 05:41",
+          "Charlotte Hornets": 1.203,
+          "New York Knicks": 4.312
         }
       ],
       "h2h_history": [],
@@ -837,6 +877,16 @@
           }
         ]
       },
+      "sharp_moves": [
+        {
+          "team": "Charlotte Hornets",
+          "move_pct": -8.52,
+          "from": 1.315,
+          "to": 1.203,
+          "level": "🔥 急速移動",
+          "message": "Charlotte Hornets 賠率 1.31→1.20 (-8.5%)"
+        }
+      ],
       "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
       "analysis_source": "rule_based"
     },
@@ -853,33 +903,33 @@
           "markets": {
             "h2h": {
               "Cleveland Cavaliers": {
-                "price": 1.07
+                "price": 1.12
               },
               "Washington Wizards": {
-                "price": 9.1
+                "price": 6.6
               }
             },
             "spreads": {
               "Cleveland Cavaliers": {
                 "price": 1.91,
-                "point": -17.0,
+                "point": -13.5,
                 "prob": 50.0
               },
               "Washington Wizards": {
                 "price": 1.91,
-                "point": 17.0,
+                "point": 13.5,
                 "prob": 50.0
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 238.5,
+                "point": 235.5,
                 "prob": 50.0
               },
               "Under": {
                 "price": 1.91,
-                "point": 238.5,
+                "point": 235.5,
                 "prob": 50.0
               }
             }
@@ -890,7 +940,7 @@
           "markets": {
             "h2h": {
               "Cleveland Cavaliers": {
-                "price": 1.06
+                "price": 1.12
               },
               "Washington Wizards": {
                 "price": 1.33
@@ -898,10 +948,10 @@
             },
             "h2h_lay": {
               "Cleveland Cavaliers": {
-                "price": 1.13
+                "price": 1.2
               },
               "Washington Wizards": {
-                "price": 1000.0
+                "price": 13.5
               }
             }
           }
@@ -911,20 +961,20 @@
           "markets": {
             "h2h": {
               "Cleveland Cavaliers": {
-                "price": 1.04
+                "price": 1.09
               },
               "Washington Wizards": {
-                "price": 16.5
+                "price": 10.0
               }
             },
             "spreads": {
               "Cleveland Cavaliers": {
-                "price": 1.91,
-                "point": -16.5
+                "price": 1.98,
+                "point": -15.5
               },
               "Washington Wizards": {
-                "price": 2.01,
-                "point": 16.5
+                "price": 1.94,
+                "point": 15.5
               }
             },
             "totals": {
@@ -941,35 +991,35 @@
         }
       ],
       "avg_odds": {
-        "Cleveland Cavaliers": 1.059,
-        "Washington Wizards": 8.913
+        "Cleveland Cavaliers": 1.107,
+        "Washington Wizards": 6.37
       },
       "true_probs": {
-        "Cleveland Cavaliers": 89.4,
-        "Washington Wizards": 10.6
+        "Cleveland Cavaliers": 85.2,
+        "Washington Wizards": 14.8
       },
       "other_markets": {
         "spreads": {
           "Cleveland Cavaliers": {
             "price": 1.91,
-            "point": -17.0,
+            "point": -13.5,
             "prob": 50.0
           },
           "Washington Wizards": {
             "price": 1.91,
-            "point": 17.0,
+            "point": 13.5,
             "prob": 50.0
           }
         },
         "totals": {
           "Over": {
             "price": 1.91,
-            "point": 238.5,
+            "point": 235.5,
             "prob": 50.0
           },
           "Under": {
             "price": 1.91,
-            "point": 238.5,
+            "point": 235.5,
             "prob": 50.0
           }
         },
@@ -979,15 +1029,27 @@
         "Cleveland Cavaliers": 1.059,
         "Washington Wizards": 8.913
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-12T02:58:34.380353+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Cleveland Cavaliers": 0.048,
+        "Washington Wizards": -2.543
+      },
+      "change_pct": {
+        "Cleveland Cavaliers": 4.53,
+        "Washington Wizards": -28.53
+      },
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/12 02:58",
           "Cleveland Cavaliers": 1.059,
           "Washington Wizards": 8.913
+        },
+        {
+          "time": "04/12 05:41",
+          "Cleveland Cavaliers": 1.107,
+          "Washington Wizards": 6.37
         }
       ],
       "h2h_history": [],
@@ -1023,7 +1085,17 @@
           }
         ]
       },
-      "ai_analysis": "【💡 推薦：華盛頓巫師 +17.0】\n\n騎士實力懸殊，勝率高達89.4%，但-17.0讓分盤巨大，NBA中常有意外。考量AI自我學習參考勝率僅50%（2場），信心程度極低，且無盤口異動或傷兵消息，保守選擇受讓分隊。",
+      "sharp_moves": [
+        {
+          "team": "Washington Wizards",
+          "move_pct": -28.53,
+          "from": 8.913,
+          "to": 6.37,
+          "level": "💰 聪明錢訊號",
+          "message": "Washington Wizards 賠率 8.91→6.37 (-28.5%)"
+        }
+      ],
+      "ai_analysis": "【💡 推薦：華盛頓巫師 +13.5】\n綜合盤口走勢與急速移動偵測，聰明錢訊號明確指向華盛頓巫師，其賠率大幅下降28.5%，暗示市場對巫師受讓盤的支持。儘管騎士真實勝率高達85.2%，但盤口變化應對莊家風險。本場無傷兵疲勞影響，但考量AI歷史命中率僅33%，本次推薦信心度偏低，請謹慎參考。",
       "analysis_source": "gemini"
     },
     "4675acfb68965858aa571a0493a222da": {
@@ -1039,22 +1111,22 @@
           "markets": {
             "h2h": {
               "Detroit Pistons": {
-                "price": 1.14
+                "price": 1.15
               },
               "Indiana Pacers": {
-                "price": 6.0
+                "price": 5.9
               }
             },
             "spreads": {
               "Detroit Pistons": {
-                "price": 1.94,
-                "point": -13.0,
-                "prob": 49.2
+                "price": 1.88,
+                "point": -12.0,
+                "prob": 50.8
               },
               "Indiana Pacers": {
-                "price": 1.88,
-                "point": 13.0,
-                "prob": 50.8
+                "price": 1.94,
+                "point": 12.0,
+                "prob": 49.2
               }
             },
             "totals": {
@@ -1076,15 +1148,15 @@
           "markets": {
             "h2h": {
               "Detroit Pistons": {
-                "price": 1.13
+                "price": 1.01
               },
               "Indiana Pacers": {
-                "price": 1.33
+                "price": 6.0
               }
             },
             "h2h_lay": {
               "Detroit Pistons": {
-                "price": 1.17
+                "price": 1.2
               },
               "Indiana Pacers": {
                 "price": 300.0
@@ -1097,54 +1169,54 @@
           "markets": {
             "h2h": {
               "Detroit Pistons": {
-                "price": 1.09
+                "price": 1.18
               },
               "Indiana Pacers": {
-                "price": 9.8
+                "price": 5.85
               }
             },
             "spreads": {
               "Detroit Pistons": {
-                "price": 1.96,
-                "point": -13.5
+                "price": 1.99,
+                "point": -12.5
               },
               "Indiana Pacers": {
-                "price": 1.96,
-                "point": 13.5
+                "price": 1.93,
+                "point": 12.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.96,
-                "point": 229.5
+                "price": 1.93,
+                "point": 228.5
               },
               "Under": {
-                "price": 1.96,
-                "point": 229.5
+                "price": 1.99,
+                "point": 228.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Detroit Pistons": 1.119,
-        "Indiana Pacers": 6.01
+        "Detroit Pistons": 1.129,
+        "Indiana Pacers": 5.691
       },
       "true_probs": {
-        "Detroit Pistons": 84.3,
-        "Indiana Pacers": 15.7
+        "Detroit Pistons": 83.4,
+        "Indiana Pacers": 16.6
       },
       "other_markets": {
         "spreads": {
           "Detroit Pistons": {
-            "price": 1.94,
-            "point": -13.0,
-            "prob": 49.2
+            "price": 1.88,
+            "point": -12.0,
+            "prob": 50.8
           },
           "Indiana Pacers": {
-            "price": 1.88,
-            "point": 13.0,
-            "prob": 50.8
+            "price": 1.94,
+            "point": 12.0,
+            "prob": 49.2
           }
         },
         "totals": {
@@ -1165,15 +1237,27 @@
         "Detroit Pistons": 1.119,
         "Indiana Pacers": 6.01
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-12T02:58:34.380356+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Detroit Pistons": 0.01,
+        "Indiana Pacers": -0.319
+      },
+      "change_pct": {
+        "Detroit Pistons": 0.89,
+        "Indiana Pacers": -5.31
+      },
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/12 02:58",
           "Detroit Pistons": 1.119,
           "Indiana Pacers": 6.01
+        },
+        {
+          "time": "04/12 05:41",
+          "Detroit Pistons": 1.129,
+          "Indiana Pacers": 5.691
         }
       ],
       "h2h_history": [],
@@ -1209,7 +1293,7 @@
           }
         ]
       },
-      "ai_analysis": "【💡 投注推薦：底特律活塞 -13.0】\n考量到底特律活塞高達84.3%的真實勝率、極低的獨贏賠率及近期連勝表現，其壓倒性優勢顯而易見。即使讓分盤口開出活塞需讓13分，但主場印第安那溜馬僅15.7%的勝率難以抗衡，活塞有望輕鬆過盤。儘管AI學習參考的整體命中率偏低(50%)，建議謹慎參考。",
+      "ai_analysis": "💡 推薦：底特律活塞 (+12.0)\n\n主要基於底特律活塞高達83.4%的真實勝率與印第安納溜馬僅16.6%的巨大落差。考量到盤口設定溜馬主讓-12.0分，這為活塞+12.0提供了極大的盤口價值，暗示盤口可能嚴重錯估。然而，本AI在相似條件下的歷史命中率僅33%，請審慎評估。",
       "analysis_source": "gemini"
     },
     "23c66e71d25675800d939e532e38bcd2": {
@@ -1245,14 +1329,14 @@
             },
             "totals": {
               "Over": {
-                "price": 1.92,
-                "point": 227.5,
-                "prob": 49.5
+                "price": 1.91,
+                "point": 228.0,
+                "prob": 49.6
               },
               "Under": {
                 "price": 1.88,
-                "point": 227.5,
-                "prob": 50.5
+                "point": 228.0,
+                "prob": 50.4
               }
             }
           }
@@ -1288,7 +1372,7 @@
                 "price": 9.2
               },
               "Philadelphia 76ers": {
-                "price": 1.07
+                "price": 1.09
               }
             },
             "h2h_lay": {
@@ -1303,12 +1387,12 @@
         }
       ],
       "avg_odds": {
-        "Milwaukee Bucks": 7.905,
+        "Milwaukee Bucks": 7.789,
         "Philadelphia 76ers": 1.08
       },
       "true_probs": {
-        "Milwaukee Bucks": 12.0,
-        "Philadelphia 76ers": 88.0
+        "Milwaukee Bucks": 12.2,
+        "Philadelphia 76ers": 87.8
       },
       "other_markets": {
         "spreads": {
@@ -1325,14 +1409,14 @@
         },
         "totals": {
           "Over": {
-            "price": 1.92,
-            "point": 227.5,
-            "prob": 49.5
+            "price": 1.91,
+            "point": 228.0,
+            "prob": 49.6
           },
           "Under": {
             "price": 1.88,
-            "point": 227.5,
-            "prob": 50.5
+            "point": 228.0,
+            "prob": 50.4
           }
         },
         "btts": {}
@@ -1344,11 +1428,11 @@
       "first_seen": "2026-04-11T23:41:35.820696+08:00",
       "is_new": false,
       "odds_change": {
-        "Milwaukee Bucks": -1.945,
+        "Milwaukee Bucks": -2.061,
         "Philadelphia 76ers": 0.04
       },
       "change_pct": {
-        "Milwaukee Bucks": -19.75,
+        "Milwaukee Bucks": -20.92,
         "Philadelphia 76ers": 3.85
       },
       "is_value_bet": true,
@@ -1361,6 +1445,11 @@
         {
           "time": "04/12 02:58",
           "Milwaukee Bucks": 7.905,
+          "Philadelphia 76ers": 1.08
+        },
+        {
+          "time": "04/12 05:41",
+          "Milwaukee Bucks": 7.789,
           "Philadelphia 76ers": 1.08
         }
       ],
@@ -1381,17 +1470,7 @@
         "away_record": "",
         "details": []
       },
-      "sharp_moves": [
-        {
-          "team": "Milwaukee Bucks",
-          "move_pct": -19.75,
-          "from": 9.85,
-          "to": 7.905,
-          "level": "💰 聪明錢訊號",
-          "message": "Milwaukee Bucks 賠率 9.85→7.91 (-19.8%)"
-        }
-      ],
-      "ai_analysis": "💡 推薦：密爾瓦基公鹿 (+16.0)\n\n考量76人主將Joel Embiid復出時間未定，其缺陣將嚴重影響球隊戰力，使得初盤的88%勝率與高達16分的讓分盤顯得過於樂觀。加上密爾瓦基公鹿的賠率出現顯著的「聰明錢訊號」下修近20%，市場資金正看好公鹿能咬住盤口。雖然AI近期命中率僅50%，但此局判斷仍傾向公鹿能守住讓分盤。",
+      "ai_analysis": "【💡 推薦：密爾瓦基公鹿 +16.0】\n\n儘管76人理論勝率極高，但最新新聞明確指出主將Embiid缺陣，導致盤口獨贏賠率出現顯著向公鹿移動的趨勢，此為市場對讓分盤重新評估的聰明錢訊號。面對高達16.0的主讓深盤，缺少核心的76人難以輕鬆覆蓋。鑒於AI自我學習命中率偏低（33%），本推薦信心度中等偏下。",
       "analysis_source": "gemini"
     },
     "c8cde1aa908581185caf0bb87659055a": {
@@ -1407,33 +1486,33 @@
           "markets": {
             "h2h": {
               "Chicago Bulls": {
-                "price": 3.4
+                "price": 3.3
               },
               "Dallas Mavericks": {
-                "price": 1.34
+                "price": 1.36
               }
             },
             "spreads": {
               "Chicago Bulls": {
-                "price": 1.91,
-                "point": 7.5,
-                "prob": 50.0
+                "price": 1.94,
+                "point": 6.5,
+                "prob": 49.2
               },
               "Dallas Mavericks": {
-                "price": 1.91,
-                "point": -7.5,
-                "prob": 50.0
+                "price": 1.88,
+                "point": -6.5,
+                "prob": 50.8
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 245.5,
+                "point": 244.5,
                 "prob": 50.0
               },
               "Under": {
                 "price": 1.91,
-                "point": 245.5,
+                "point": 244.5,
                 "prob": 50.0
               }
             }
@@ -1444,7 +1523,7 @@
           "markets": {
             "h2h": {
               "Chicago Bulls": {
-                "price": 1.26
+                "price": 1.25
               },
               "Dallas Mavericks": {
                 "price": 1.05
@@ -1455,7 +1534,7 @@
                 "price": 21.0
               },
               "Dallas Mavericks": {
-                "price": 1.43
+                "price": 5.0
               }
             }
           }
@@ -1465,29 +1544,29 @@
           "markets": {
             "h2h": {
               "Chicago Bulls": {
-                "price": 3.75
+                "price": 3.19
               },
               "Dallas Mavericks": {
-                "price": 1.33
+                "price": 1.41
               }
             },
             "spreads": {
               "Chicago Bulls": {
-                "price": 1.96,
-                "point": 7.5
+                "price": 1.98,
+                "point": 6.5
               },
               "Dallas Mavericks": {
-                "price": 1.96,
-                "point": -7.5
+                "price": 1.94,
+                "point": -6.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.95,
+                "price": 1.96,
                 "point": 245.5
               },
               "Under": {
-                "price": 1.97,
+                "price": 1.96,
                 "point": 245.5
               }
             }
@@ -1495,35 +1574,35 @@
         }
       ],
       "avg_odds": {
-        "Chicago Bulls": 3.221,
-        "Dallas Mavericks": 1.311
+        "Chicago Bulls": 3.105,
+        "Dallas Mavericks": 1.33
       },
       "true_probs": {
-        "Chicago Bulls": 28.9,
-        "Dallas Mavericks": 71.1
+        "Chicago Bulls": 30.0,
+        "Dallas Mavericks": 70.0
       },
       "other_markets": {
         "spreads": {
           "Chicago Bulls": {
-            "price": 1.91,
-            "point": 7.5,
-            "prob": 50.0
+            "price": 1.94,
+            "point": 6.5,
+            "prob": 49.2
           },
           "Dallas Mavericks": {
-            "price": 1.91,
-            "point": -7.5,
-            "prob": 50.0
+            "price": 1.88,
+            "point": -6.5,
+            "prob": 50.8
           }
         },
         "totals": {
           "Over": {
             "price": 1.91,
-            "point": 245.5,
+            "point": 244.5,
             "prob": 50.0
           },
           "Under": {
             "price": 1.91,
-            "point": 245.5,
+            "point": 244.5,
             "prob": 50.0
           }
         },
@@ -1533,15 +1612,27 @@
         "Chicago Bulls": 3.221,
         "Dallas Mavericks": 1.311
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-12T02:58:34.380369+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Chicago Bulls": -0.116,
+        "Dallas Mavericks": 0.019
+      },
+      "change_pct": {
+        "Chicago Bulls": -3.6,
+        "Dallas Mavericks": 1.45
+      },
+      "is_value_bet": false,
       "odds_timeline": [
         {
           "time": "04/12 02:58",
           "Chicago Bulls": 3.221,
           "Dallas Mavericks": 1.311
+        },
+        {
+          "time": "04/12 05:41",
+          "Chicago Bulls": 3.105,
+          "Dallas Mavericks": 1.33
         }
       ],
       "h2h_history": [],
@@ -1614,18 +1705,18 @@
           "markets": {
             "h2h": {
               "Denver Nuggets": {
-                "price": 2.04
+                "price": 2.6
               },
               "San Antonio Spurs": {
-                "price": 1.52
+                "price": 1.5
               }
             },
             "h2h_lay": {
               "Denver Nuggets": {
-                "price": 7.0
+                "price": 4.4
               },
               "San Antonio Spurs": {
-                "price": 1.97
+                "price": 1.62
               }
             }
           }
@@ -1635,29 +1726,29 @@
           "markets": {
             "h2h": {
               "Denver Nuggets": {
-                "price": 2.38
+                "price": 2.75
               },
               "San Antonio Spurs": {
-                "price": 1.57
+                "price": 1.44
               }
             },
             "spreads": {
               "Denver Nuggets": {
-                "price": 1.91,
-                "point": 4.5
+                "price": 1.73,
+                "point": 5.5
               },
               "San Antonio Spurs": {
-                "price": 1.91,
-                "point": -4.5
+                "price": 2.1,
+                "point": -5.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.8,
+                "price": 1.91,
                 "point": 237.5
               },
               "Under": {
-                "price": 2.0,
+                "price": 1.91,
                 "point": 237.5
               }
             }
@@ -1665,12 +1756,12 @@
         }
       ],
       "avg_odds": {
-        "Denver Nuggets": 2.383,
-        "San Antonio Spurs": 1.56
+        "Denver Nuggets": 2.608,
+        "San Antonio Spurs": 1.484
       },
       "true_probs": {
-        "Denver Nuggets": 39.6,
-        "San Antonio Spurs": 60.4
+        "Denver Nuggets": 36.3,
+        "San Antonio Spurs": 63.7
       },
       "other_markets": {
         "spreads": {
@@ -1706,12 +1797,12 @@
       "first_seen": "2026-04-11T15:12:30.281973+08:00",
       "is_new": false,
       "odds_change": {
-        "Denver Nuggets": 0.462,
-        "San Antonio Spurs": -0.289
+        "Denver Nuggets": 0.687,
+        "San Antonio Spurs": -0.365
       },
       "change_pct": {
-        "Denver Nuggets": 24.05,
-        "San Antonio Spurs": -15.63
+        "Denver Nuggets": 35.76,
+        "San Antonio Spurs": -19.74
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -1739,16 +1830,11 @@
           "time": "04/12 02:58",
           "Denver Nuggets": 2.383,
           "San Antonio Spurs": 1.56
-        }
-      ],
-      "sharp_moves": [
+        },
         {
-          "team": "San Antonio Spurs",
-          "move_pct": -12.11,
-          "from": 1.775,
-          "to": 1.56,
-          "level": "🔥 急速移動",
-          "message": "San Antonio Spurs 賠率 1.77→1.56 (-12.1%)"
+          "time": "04/12 05:41",
+          "Denver Nuggets": 2.608,
+          "San Antonio Spurs": 1.484
         }
       ],
       "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
@@ -1804,15 +1890,15 @@
           "markets": {
             "h2h": {
               "Golden State Warriors": {
-                "price": 1.35
+                "price": 1.36
               },
               "Los Angeles Clippers": {
-                "price": 1.05
+                "price": 1.28
               }
             },
             "h2h_lay": {
               "Golden State Warriors": {
-                "price": 21.0
+                "price": 4.5
               },
               "Los Angeles Clippers": {
                 "price": 1.37
@@ -1855,12 +1941,12 @@
         }
       ],
       "avg_odds": {
-        "Golden State Warriors": 3.581,
-        "Los Angeles Clippers": 1.261
+        "Golden State Warriors": 3.591,
+        "Los Angeles Clippers": 1.272
       },
       "true_probs": {
-        "Golden State Warriors": 26.0,
-        "Los Angeles Clippers": 74.0
+        "Golden State Warriors": 26.2,
+        "Los Angeles Clippers": 73.8
       },
       "other_markets": {
         "spreads": {
@@ -1896,12 +1982,12 @@
       "first_seen": "2026-04-11T15:12:30.281977+08:00",
       "is_new": false,
       "odds_change": {
-        "Golden State Warriors": 0.053,
-        "Los Angeles Clippers": -0.002
+        "Golden State Warriors": 0.063,
+        "Los Angeles Clippers": 0.009
       },
       "change_pct": {
-        "Golden State Warriors": 1.5,
-        "Los Angeles Clippers": -0.16
+        "Golden State Warriors": 1.79,
+        "Los Angeles Clippers": 0.71
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1929,6 +2015,11 @@
           "time": "04/12 02:58",
           "Golden State Warriors": 3.581,
           "Los Angeles Clippers": 1.261
+        },
+        {
+          "time": "04/12 05:41",
+          "Golden State Warriors": 3.591,
+          "Los Angeles Clippers": 1.272
         }
       ],
       "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
@@ -1947,33 +2038,33 @@
           "markets": {
             "h2h": {
               "Houston Rockets": {
-                "price": 1.07
+                "price": 1.12
               },
               "Memphis Grizzlies": {
-                "price": 9.7
+                "price": 6.7
               }
             },
             "spreads": {
               "Houston Rockets": {
                 "price": 1.91,
-                "point": -17.0,
+                "point": -13.5,
                 "prob": 50.0
               },
               "Memphis Grizzlies": {
                 "price": 1.91,
-                "point": 17.0,
+                "point": 13.5,
                 "prob": 50.0
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 227.5,
+                "point": 225.5,
                 "prob": 50.0
               },
               "Under": {
                 "price": 1.91,
-                "point": 227.5,
+                "point": 225.5,
                 "prob": 50.0
               }
             }
@@ -1984,7 +2075,7 @@
           "markets": {
             "h2h": {
               "Houston Rockets": {
-                "price": 1.05
+                "price": 1.14
               },
               "Memphis Grizzlies": {
                 "price": 1.3
@@ -1992,10 +2083,10 @@
             },
             "h2h_lay": {
               "Houston Rockets": {
-                "price": 1.13
+                "price": 1.2
               },
               "Memphis Grizzlies": {
-                "price": 1000.0
+                "price": 12.5
               }
             }
           }
@@ -2005,65 +2096,65 @@
           "markets": {
             "h2h": {
               "Houston Rockets": {
-                "price": 1.05
+                "price": 1.1
               },
               "Memphis Grizzlies": {
-                "price": 13.7
+                "price": 9.2
               }
             },
             "spreads": {
               "Houston Rockets": {
-                "price": 1.96,
-                "point": -16.5
+                "price": 1.99,
+                "point": -14.5
               },
               "Memphis Grizzlies": {
-                "price": 1.96,
-                "point": 16.5
+                "price": 1.93,
+                "point": 14.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.92,
-                "point": 226.5
+                "price": 1.96,
+                "point": 225.5
               },
               "Under": {
-                "price": 2.0,
-                "point": 226.5
+                "price": 1.96,
+                "point": 225.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Houston Rockets": 1.063,
-        "Memphis Grizzlies": 8.437
+        "Houston Rockets": 1.107,
+        "Memphis Grizzlies": 6.507
       },
       "true_probs": {
-        "Houston Rockets": 88.8,
-        "Memphis Grizzlies": 11.2
+        "Houston Rockets": 85.5,
+        "Memphis Grizzlies": 14.5
       },
       "other_markets": {
         "spreads": {
           "Houston Rockets": {
             "price": 1.91,
-            "point": -17.0,
+            "point": -13.5,
             "prob": 50.0
           },
           "Memphis Grizzlies": {
             "price": 1.91,
-            "point": 17.0,
+            "point": 13.5,
             "prob": 50.0
           }
         },
         "totals": {
           "Over": {
             "price": 1.91,
-            "point": 227.5,
+            "point": 225.5,
             "prob": 50.0
           },
           "Under": {
             "price": 1.91,
-            "point": 227.5,
+            "point": 225.5,
             "prob": 50.0
           }
         },
@@ -2073,18 +2164,40 @@
         "Houston Rockets": 1.063,
         "Memphis Grizzlies": 8.437
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-12T02:58:34.380385+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Houston Rockets": 0.044,
+        "Memphis Grizzlies": -1.93
+      },
+      "change_pct": {
+        "Houston Rockets": 4.14,
+        "Memphis Grizzlies": -22.88
+      },
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/12 02:58",
           "Houston Rockets": 1.063,
           "Memphis Grizzlies": 8.437
+        },
+        {
+          "time": "04/12 05:41",
+          "Houston Rockets": 1.107,
+          "Memphis Grizzlies": 6.507
         }
       ],
-      "ai_analysis": "【💡 推薦：曼菲斯灰熊 +17.0】\n\n主要考量Rockets極高的真實勝率與主讓-17.0的巨大讓分盤口，顯示兩隊實力懸殊。然而，**缺乏近期戰績與歷史交手數據**，讓分盤難以精準判斷。加上**AI自我學習的參考命中率僅50%**，我對此盤的信心度較低，故選擇受讓一方。無已知傷兵或疲勞，亦無急速移動或聰明錢訊號。",
+      "sharp_moves": [
+        {
+          "team": "Memphis Grizzlies",
+          "move_pct": -22.88,
+          "from": 8.437,
+          "to": 6.507,
+          "level": "💰 聪明錢訊號",
+          "message": "Memphis Grizzlies 賠率 8.44→6.51 (-22.9%)"
+        }
+      ],
+      "ai_analysis": "【💡 推薦：Memphis Grizzlies +13.5】\n原因：聰明錢訊號顯示灰熊賠率急降22.9%，市場資金明顯湧入，暗示其受讓分盤可能被低估。儘管火箭真實勝率高，但賠率反向移動且AI歷史命中率僅33%，故降低信心，建議跟隨資金流向。",
       "analysis_source": "gemini"
     },
     "3f3bec3a69985062b105b5fe8bf06fe9": {
@@ -2137,7 +2250,7 @@
           "markets": {
             "h2h": {
               "Los Angeles Lakers": {
-                "price": 1.04
+                "price": 1.08
               },
               "Utah Jazz": {
                 "price": 1.3
@@ -2148,52 +2261,52 @@
                 "price": 1.11
               },
               "Utah Jazz": {
-                "price": 1000.0
+                "price": 13.5
               }
             }
           }
         },
         {
-          "name": "888sport",
+          "name": "1xBet",
           "markets": {
             "h2h": {
               "Los Angeles Lakers": {
-                "price": 1.05
+                "price": 1.08
               },
               "Utah Jazz": {
-                "price": 10.0
+                "price": 10.5
               }
             },
             "spreads": {
               "Los Angeles Lakers": {
-                "price": 1.91,
+                "price": 1.98,
                 "point": -16.5
               },
               "Utah Jazz": {
-                "price": 1.91,
+                "price": 1.94,
                 "point": 16.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.8,
-                "point": 235.5
+                "price": 1.96,
+                "point": 236.5
               },
               "Under": {
-                "price": 2.0,
-                "point": 235.5
+                "price": 1.96,
+                "point": 236.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Los Angeles Lakers": 1.054,
-        "Utah Jazz": 9.016
+        "Los Angeles Lakers": 1.056,
+        "Utah Jazz": 9.091
       },
       "true_probs": {
-        "Los Angeles Lakers": 89.5,
-        "Utah Jazz": 10.5
+        "Los Angeles Lakers": 89.6,
+        "Utah Jazz": 10.4
       },
       "other_markets": {
         "spreads": {
@@ -2226,25 +2339,30 @@
         "Los Angeles Lakers": 1.054,
         "Utah Jazz": 9.016
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-12T02:58:34.380390+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Los Angeles Lakers": 0.002,
+        "Utah Jazz": 0.075
+      },
+      "change_pct": {
+        "Los Angeles Lakers": 0.19,
+        "Utah Jazz": 0.83
+      },
+      "is_value_bet": false,
       "odds_timeline": [
         {
           "time": "04/12 02:58",
           "Los Angeles Lakers": 1.054,
           "Utah Jazz": 9.016
-        }
-      ],
-      "injury_alerts": [
+        },
         {
-          "team": "Los Angeles Lakers",
-          "title": "Redick (J.J. Redick)：『每個人』都想對陣受傷的 Lakers (洛杉磯湖人)",
-          "link": "https://www.espn.com/nba/story/_/id/48453400/jj-redick-short-handed-lakers-everybody-wants-play-us"
+          "time": "04/12 05:41",
+          "Los Angeles Lakers": 1.056,
+          "Utah Jazz": 9.091
         }
       ],
-      "ai_analysis": "【💡 推薦：主隊 Los Angeles Lakers 受讓 -17.0 過盤】\n\n考量到 Lakers 高達 89.5% 的真實勝率，以及 Jazz 僅有 10.5%，盤口開出 -17.0 的讓分顯示了市場對 Lakers 的絕對看好。儘管有 Redick 的傷兵消息，但對球隊整體實力影響相對有限，且獨贏賠率未有明顯變動。AI 近期命中率 50% 屬於中等水平，本次推薦謹慎。",
+      "ai_analysis": "【💡 推薦：Los Angeles Lakers 讓分 17.0 大勝】\n\n推薦 Lakers 讓分過盤，主要考量 Lakers 89.6% 的極高真實勝率，對上勝率僅 10.4% 的 Jazz，實力差距懸殊。雖然盤口讓分較大，但獨贏賠率顯示市場對 Lakers 的支持非常穩固，近期獨贏賠率微幅上漲也顯示了買盤的持續性，未見異常波動。",
       "analysis_source": "gemini"
     },
     "47ede7b5685ae38218b5c2ea1ffd1699": {
@@ -2260,33 +2378,33 @@
           "markets": {
             "h2h": {
               "Minnesota Timberwolves": {
-                "price": 1.18
+                "price": 1.28
               },
               "New Orleans Pelicans": {
-                "price": 5.1
+                "price": 3.9
               }
             },
             "spreads": {
               "Minnesota Timberwolves": {
                 "price": 1.89,
-                "point": -10.5,
+                "point": -8.0,
                 "prob": 50.5
               },
               "New Orleans Pelicans": {
                 "price": 1.93,
-                "point": 10.5,
+                "point": 8.0,
                 "prob": 49.5
               }
             },
             "totals": {
               "Over": {
                 "price": 1.91,
-                "point": 233.5,
+                "point": 231.5,
                 "prob": 50.0
               },
               "Under": {
                 "price": 1.91,
-                "point": 233.5,
+                "point": 231.5,
                 "prob": 50.0
               }
             }
@@ -2297,18 +2415,18 @@
           "markets": {
             "h2h": {
               "Minnesota Timberwolves": {
-                "price": 1.18
+                "price": 1.27
               },
               "New Orleans Pelicans": {
-                "price": 5.5
+                "price": 3.9
               }
             },
             "h2h_lay": {
               "Minnesota Timberwolves": {
-                "price": 1.22
+                "price": 1.34
               },
               "New Orleans Pelicans": {
-                "price": 1000.0
+                "price": 6.0
               }
             }
           }
@@ -2318,20 +2436,20 @@
           "markets": {
             "h2h": {
               "Minnesota Timberwolves": {
-                "price": 1.22
+                "price": 1.34
               },
               "New Orleans Pelicans": {
-                "price": 4.98
+                "price": 3.64
               }
             },
             "spreads": {
               "Minnesota Timberwolves": {
-                "price": 1.96,
-                "point": -10.5
+                "price": 2.0,
+                "point": -8.5
               },
               "New Orleans Pelicans": {
-                "price": 1.96,
-                "point": 10.5
+                "price": 1.92,
+                "point": 8.5
               }
             },
             "totals": {
@@ -2348,35 +2466,35 @@
         }
       ],
       "avg_odds": {
-        "Minnesota Timberwolves": 1.177,
-        "New Orleans Pelicans": 4.945
+        "Minnesota Timberwolves": 1.231,
+        "New Orleans Pelicans": 4.142
       },
       "true_probs": {
-        "Minnesota Timberwolves": 80.8,
-        "New Orleans Pelicans": 19.2
+        "Minnesota Timberwolves": 77.1,
+        "New Orleans Pelicans": 22.9
       },
       "other_markets": {
         "spreads": {
           "Minnesota Timberwolves": {
             "price": 1.89,
-            "point": -10.5,
+            "point": -8.0,
             "prob": 50.5
           },
           "New Orleans Pelicans": {
             "price": 1.93,
-            "point": 10.5,
+            "point": 8.0,
             "prob": 49.5
           }
         },
         "totals": {
           "Over": {
             "price": 1.91,
-            "point": 233.5,
+            "point": 231.5,
             "prob": 50.0
           },
           "Under": {
             "price": 1.91,
-            "point": 233.5,
+            "point": 231.5,
             "prob": 50.0
           }
         },
@@ -2386,15 +2504,37 @@
         "Minnesota Timberwolves": 1.177,
         "New Orleans Pelicans": 4.945
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-12T02:58:34.380392+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Minnesota Timberwolves": 0.054,
+        "New Orleans Pelicans": -0.803
+      },
+      "change_pct": {
+        "Minnesota Timberwolves": 4.59,
+        "New Orleans Pelicans": -16.24
+      },
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/12 02:58",
           "Minnesota Timberwolves": 1.177,
           "New Orleans Pelicans": 4.945
+        },
+        {
+          "time": "04/12 05:41",
+          "Minnesota Timberwolves": 1.231,
+          "New Orleans Pelicans": 4.142
+        }
+      ],
+      "sharp_moves": [
+        {
+          "team": "New Orleans Pelicans",
+          "move_pct": -16.24,
+          "from": 4.945,
+          "to": 4.142,
+          "level": "💰 聪明錢訊號",
+          "message": "New Orleans Pelicans 賠率 4.95→4.14 (-16.2%)"
         }
       ],
       "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
@@ -2493,12 +2633,12 @@
         }
       ],
       "avg_odds": {
-        "Oklahoma City Thunder": 1.326,
-        "Phoenix Suns": 3.148
+        "Oklahoma City Thunder": 1.315,
+        "Phoenix Suns": 3.213
       },
       "true_probs": {
-        "Oklahoma City Thunder": 70.4,
-        "Phoenix Suns": 29.6
+        "Oklahoma City Thunder": 71.0,
+        "Phoenix Suns": 29.0
       },
       "other_markets": {
         "spreads": {
@@ -2534,14 +2674,14 @@
       "first_seen": "2026-04-11T15:12:30.281980+08:00",
       "is_new": false,
       "odds_change": {
-        "Oklahoma City Thunder": -0.069,
-        "Phoenix Suns": 0.419
+        "Oklahoma City Thunder": -0.08,
+        "Phoenix Suns": 0.484
       },
       "change_pct": {
-        "Oklahoma City Thunder": -4.95,
-        "Phoenix Suns": 15.35
+        "Oklahoma City Thunder": -5.73,
+        "Phoenix Suns": 17.74
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/11 15:12",
@@ -2567,13 +2707,11 @@
           "time": "04/12 02:58",
           "Oklahoma City Thunder": 1.326,
           "Phoenix Suns": 3.148
-        }
-      ],
-      "injury_alerts": [
+        },
         {
-          "team": "Oklahoma City Thunder",
-          "title": "Sutton (Chris Sutton)：是時候讓 Man City (曼城) 球員聞到血腥味了",
-          "link": "https://www.bbc.com/sport/football/videos/cn0wyynrwkqo?at_medium=RSS&at_campaign=rss"
+          "time": "04/12 05:41",
+          "Oklahoma City Thunder": 1.315,
+          "Phoenix Suns": 3.213
         }
       ],
       "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
@@ -2592,10 +2730,10 @@
           "markets": {
             "h2h": {
               "Portland Trail Blazers": {
-                "price": 1.07
+                "price": 1.06
               },
               "Sacramento Kings": {
-                "price": 9.1
+                "price": 10.0
               }
             },
             "spreads": {
@@ -2629,15 +2767,15 @@
           "markets": {
             "h2h": {
               "Portland Trail Blazers": {
-                "price": 1.06
+                "price": 1.08
               },
               "Sacramento Kings": {
-                "price": 9.0
+                "price": 10.0
               }
             },
             "h2h_lay": {
               "Portland Trail Blazers": {
-                "price": 1.12
+                "price": 1.1
               },
               "Sacramento Kings": {
                 "price": 1000.0
@@ -2660,12 +2798,12 @@
         }
       ],
       "avg_odds": {
-        "Portland Trail Blazers": 1.067,
-        "Sacramento Kings": 8.483
+        "Portland Trail Blazers": 1.064,
+        "Sacramento Kings": 8.626
       },
       "true_probs": {
-        "Portland Trail Blazers": 88.8,
-        "Sacramento Kings": 11.2
+        "Portland Trail Blazers": 89.0,
+        "Sacramento Kings": 11.0
       },
       "other_markets": {
         "spreads": {
@@ -2701,12 +2839,12 @@
       "first_seen": "2026-04-11T15:12:30.281985+08:00",
       "is_new": false,
       "odds_change": {
-        "Portland Trail Blazers": 0.011,
-        "Sacramento Kings": 1.554
+        "Portland Trail Blazers": 0.008,
+        "Sacramento Kings": 1.697
       },
       "change_pct": {
-        "Portland Trail Blazers": 1.04,
-        "Sacramento Kings": 22.43
+        "Portland Trail Blazers": 0.76,
+        "Sacramento Kings": 24.49
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -2734,9 +2872,14 @@
           "time": "04/12 02:58",
           "Portland Trail Blazers": 1.067,
           "Sacramento Kings": 8.483
+        },
+        {
+          "time": "04/12 05:41",
+          "Portland Trail Blazers": 1.064,
+          "Sacramento Kings": 8.626
         }
       ],
-      "ai_analysis": "【💡 推薦：Sacramento Kings 受讓 +16.5 大分 228.5】\n\n考慮到 Trail Blazers 極高的真實勝率 (88.8%)，但獨贏賠率卻出現對 Kings 大幅上升的趨勢，顯示盤口似乎在規避 Kings 的潛在威脅。儘管 Trail Blazers 數據強勢，但賠率變動暗示 Kings 可能有逆轉的可能，因此選擇受讓分盤。同時，考量到 NBA 賽事通常得分較高，選擇大分盤。AI 自我學習參考顯示近期的命中率為 50%，因此本次分析信心程度中等。",
+      "ai_analysis": "【💡 推薦：Sacramento Kings 受讓 +16.5】\n\n考量到 Portland Trail Blazers 驚人的 89.0% 真實勝率，以及盤口從初盤的 1.064 升至 8.626 的大幅變動，顯示市場對國王有所期待。儘管真實勝率差距懸殊，但盤口顯示的「聰明錢」訊號，加上國王讓分盤高達 +16.5，有機會受讓成功。目前 AI 參考命中率偏低，因此對此推薦持謹慎態度。",
       "analysis_source": "gemini"
     },
     "542c7cb070f6d66aa7003cd825d5c199": {
@@ -6479,261 +6622,2396 @@
         "condition": "☀️ 晴朗",
         "impact": ""
       }
+    },
+    "ed245ff0289860db9cd29c9b76b44926": {
+      "id": "ed245ff0289860db9cd29c9b76b44926",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "CA Osasuna",
+      "away_team": "Real Betis",
+      "commence_time": "2026-04-12T12:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Winamax (FR)",
+          "markets": {
+            "h2h": {
+              "CA Osasuna": {
+                "price": 2.1
+              },
+              "Real Betis": {
+                "price": 3.05
+              },
+              "Draw": {
+                "price": 3.45
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "CA Osasuna": {
+                "price": 2.29
+              },
+              "Real Betis": {
+                "price": 3.29
+              },
+              "Draw": {
+                "price": 3.64
+              }
+            },
+            "spreads": {
+              "CA Osasuna": {
+                "price": 1.62,
+                "point": 0.0,
+                "prob": 58.7
+              },
+              "Real Betis": {
+                "price": 2.3,
+                "point": 0.0,
+                "prob": 41.3
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.97,
+                "point": 2.5,
+                "prob": 50.0
+              },
+              "Under": {
+                "price": 1.97,
+                "point": 2.5,
+                "prob": 50.0
+              }
+            }
+          }
+        },
+        {
+          "name": "Tipico",
+          "markets": {
+            "h2h": {
+              "CA Osasuna": {
+                "price": 2.2
+              },
+              "Real Betis": {
+                "price": 3.2
+              },
+              "Draw": {
+                "price": 3.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.87,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.87,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "CA Osasuna": 2.212,
+        "Real Betis": 3.232,
+        "Draw": 3.483
+      },
+      "true_probs": {
+        "CA Osasuna": 43.1,
+        "Real Betis": 29.5,
+        "Draw": 27.4
+      },
+      "other_markets": {
+        "spreads": {
+          "CA Osasuna": {
+            "price": 1.62,
+            "point": 0.0,
+            "prob": 58.7
+          },
+          "Real Betis": {
+            "price": 2.3,
+            "point": 0.0,
+            "prob": 41.3
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.97,
+            "point": 2.5,
+            "prob": 50.0
+          },
+          "Under": {
+            "price": 1.97,
+            "point": 2.5,
+            "prob": 50.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "CA Osasuna": 2.212,
+        "Real Betis": 3.232,
+        "Draw": 3.483
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626297+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "CA Osasuna": 2.212,
+          "Real Betis": 3.232,
+          "Draw": 3.483
+        }
+      ]
+    },
+    "21c5b81029447a350af6e553f1e31c5c": {
+      "id": "21c5b81029447a350af6e553f1e31c5c",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Mallorca",
+      "away_team": "Rayo Vallecano",
+      "commence_time": "2026-04-12T14:15:00Z",
+      "bookmakers": [
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Mallorca": {
+                "price": 2.3
+              },
+              "Rayo Vallecano": {
+                "price": 3.1
+              },
+              "Draw": {
+                "price": 3.3
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (FR)",
+          "markets": {
+            "h2h": {
+              "Mallorca": {
+                "price": 2.25
+              },
+              "Rayo Vallecano": {
+                "price": 3.0
+              },
+              "Draw": {
+                "price": 3.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Mallorca": {
+                "price": 2.36
+              },
+              "Rayo Vallecano": {
+                "price": 3.15
+              },
+              "Draw": {
+                "price": 3.2
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.11,
+                "point": 2.5,
+                "prob": 43.4
+              },
+              "Under": {
+                "price": 1.62,
+                "point": 2.5,
+                "prob": 56.6
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Mallorca": 2.333,
+        "Rayo Vallecano": 3.212,
+        "Draw": 3.232
+      },
+      "true_probs": {
+        "Mallorca": 40.8,
+        "Rayo Vallecano": 29.7,
+        "Draw": 29.5
+      },
+      "other_markets": {
+        "spreads": {
+          "Mallorca": {
+            "price": 1.7,
+            "point": 0.0,
+            "prob": 57.9
+          },
+          "Rayo Vallecano": {
+            "price": 2.34,
+            "point": 0.0,
+            "prob": 42.1
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.11,
+            "point": 2.5,
+            "prob": 43.4
+          },
+          "Under": {
+            "price": 1.62,
+            "point": 2.5,
+            "prob": 56.6
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Mallorca": 2.333,
+        "Rayo Vallecano": 3.212,
+        "Draw": 3.232
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626300+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Mallorca": 2.333,
+          "Rayo Vallecano": 3.212,
+          "Draw": 3.232
+        }
+      ]
+    },
+    "1a8b233790dce45b2219cdb234a7916c": {
+      "id": "1a8b233790dce45b2219cdb234a7916c",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Celta Vigo",
+      "away_team": "Oviedo",
+      "commence_time": "2026-04-12T16:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Celta Vigo": {
+                "price": 1.72
+              },
+              "Oviedo": {
+                "price": 4.5
+              },
+              "Draw": {
+                "price": 4.0
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (FR)",
+          "markets": {
+            "h2h": {
+              "Celta Vigo": {
+                "price": 1.68
+              },
+              "Oviedo": {
+                "price": 4.3
+              },
+              "Draw": {
+                "price": 3.85
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Celta Vigo": {
+                "price": 1.76
+              },
+              "Oviedo": {
+                "price": 4.7
+              },
+              "Draw": {
+                "price": 3.75
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.9,
+                "point": 2.5,
+                "prob": 48.2
+              },
+              "Under": {
+                "price": 1.77,
+                "point": 2.5,
+                "prob": 51.8
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Celta Vigo": 1.736,
+        "Oviedo": 4.699,
+        "Draw": 3.85
+      },
+      "true_probs": {
+        "Celta Vigo": 54.9,
+        "Oviedo": 20.3,
+        "Draw": 24.8
+      },
+      "other_markets": {
+        "spreads": {
+          "Celta Vigo": {
+            "price": 2.99,
+            "point": -1.5,
+            "prob": 30.9
+          },
+          "Oviedo": {
+            "price": 1.34,
+            "point": 1.5,
+            "prob": 69.1
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.9,
+            "point": 2.5,
+            "prob": 48.2
+          },
+          "Under": {
+            "price": 1.77,
+            "point": 2.5,
+            "prob": 51.8
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Celta Vigo": 1.736,
+        "Oviedo": 4.699,
+        "Draw": 3.85
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626303+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Celta Vigo": 1.736,
+          "Oviedo": 4.699,
+          "Draw": 3.85
+        }
+      ],
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "a1e8d7ee23f8c72f75be14bb70723d99": {
+      "id": "a1e8d7ee23f8c72f75be14bb70723d99",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Athletic Bilbao",
+      "away_team": "Villarreal",
+      "commence_time": "2026-04-12T19:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Athletic Bilbao": {
+                "price": 2.25
+              },
+              "Villarreal": {
+                "price": 3.05
+              },
+              "Draw": {
+                "price": 3.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Athletic Bilbao": {
+                "price": 2.31
+              },
+              "Villarreal": {
+                "price": 3.1
+              },
+              "Draw": {
+                "price": 3.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.85,
+                "point": 2.5,
+                "prob": 49.6
+              },
+              "Under": {
+                "price": 1.82,
+                "point": 2.5,
+                "prob": 50.4
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "Athletic Bilbao": {
+                "price": 2.28
+              },
+              "Villarreal": {
+                "price": 3.15
+              },
+              "Draw": {
+                "price": 3.35
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.92,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.85,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Athletic Bilbao": 2.288,
+        "Villarreal": 3.141,
+        "Draw": 3.397
+      },
+      "true_probs": {
+        "Athletic Bilbao": 41.6,
+        "Villarreal": 30.3,
+        "Draw": 28.0
+      },
+      "other_markets": {
+        "spreads": {
+          "Athletic Bilbao": {
+            "price": 1.71,
+            "point": 0.0,
+            "prob": 57.6
+          },
+          "Villarreal": {
+            "price": 2.32,
+            "point": 0.0,
+            "prob": 42.4
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.85,
+            "point": 2.5,
+            "prob": 49.6
+          },
+          "Under": {
+            "price": 1.82,
+            "point": 2.5,
+            "prob": 50.4
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Athletic Bilbao": 2.288,
+        "Villarreal": 3.141,
+        "Draw": 3.397
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626306+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Athletic Bilbao": 2.288,
+          "Villarreal": 3.141,
+          "Draw": 3.397
+        }
+      ]
+    },
+    "c4a4e452254d87ff646343d0357d58e7": {
+      "id": "c4a4e452254d87ff646343d0357d58e7",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Levante",
+      "away_team": "Getafe",
+      "commence_time": "2026-04-13T19:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Winamax (FR)",
+          "markets": {
+            "h2h": {
+              "Getafe": {
+                "price": 2.75
+              },
+              "Levante": {
+                "price": 2.55
+              },
+              "Draw": {
+                "price": 2.95
+              }
+            }
+          }
+        },
+        {
+          "name": "PMU (FR)",
+          "markets": {
+            "h2h": {
+              "Getafe": {
+                "price": 2.85
+              },
+              "Levante": {
+                "price": 2.63
+              },
+              "Draw": {
+                "price": 2.95
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.5,
+                "point": 1.5,
+                "prob": 59.2
+              },
+              "Under": {
+                "price": 2.18,
+                "point": 1.5,
+                "prob": 40.8
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Getafe": {
+                "price": 3.0
+              },
+              "Levante": {
+                "price": 2.79
+              },
+              "Draw": {
+                "price": 3.08
+              }
+            },
+            "spreads": {
+              "Getafe": {
+                "price": 2.04,
+                "point": 0.0,
+                "prob": 48.4
+              },
+              "Levante": {
+                "price": 1.91,
+                "point": 0.0,
+                "prob": 51.6
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.61,
+                "point": 1.5
+              },
+              "Under": {
+                "price": 2.54,
+                "point": 1.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Getafe": 2.901,
+        "Levante": 2.703,
+        "Draw": 2.989
+      },
+      "true_probs": {
+        "Getafe": 32.9,
+        "Levante": 35.3,
+        "Draw": 31.9
+      },
+      "other_markets": {
+        "spreads": {
+          "Getafe": {
+            "price": 2.04,
+            "point": 0.0,
+            "prob": 48.4
+          },
+          "Levante": {
+            "price": 1.91,
+            "point": 0.0,
+            "prob": 51.6
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.5,
+            "point": 1.5,
+            "prob": 59.2
+          },
+          "Under": {
+            "price": 2.18,
+            "point": 1.5,
+            "prob": 40.8
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Getafe": 2.901,
+        "Levante": 2.703,
+        "Draw": 2.989
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626309+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Getafe": 2.901,
+          "Levante": 2.703,
+          "Draw": 2.989
+        }
+      ]
+    },
+    "dcc73a8a22fc0f052bd085be3f7e1bbf": {
+      "id": "dcc73a8a22fc0f052bd085be3f7e1bbf",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Athletic Bilbao",
+      "away_team": "CA Osasuna",
+      "commence_time": "2026-04-21T17:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Athletic Bilbao": {
+                "price": 1.86
+              },
+              "CA Osasuna": {
+                "price": 4.44
+              },
+              "Draw": {
+                "price": 3.45
+              }
+            },
+            "spreads": {
+              "Athletic Bilbao": {
+                "price": 1.87,
+                "point": -0.5,
+                "prob": 51.6
+              },
+              "CA Osasuna": {
+                "price": 1.99,
+                "point": 0.5,
+                "prob": 48.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.93,
+                "point": 2.25,
+                "prob": 49.7
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 2.25,
+                "prob": 50.3
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Athletic Bilbao": {
+                "price": 1.76
+              },
+              "CA Osasuna": {
+                "price": 4.1
+              },
+              "Draw": {
+                "price": 3.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Athletic Bilbao": {
+                "price": 1.88
+              },
+              "CA Osasuna": {
+                "price": 4.25
+              },
+              "Draw": {
+                "price": 3.45
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.12,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.68,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Athletic Bilbao": 1.841,
+        "CA Osasuna": 4.305,
+        "Draw": 3.406
+      },
+      "true_probs": {
+        "Athletic Bilbao": 50.8,
+        "CA Osasuna": 21.7,
+        "Draw": 27.5
+      },
+      "other_markets": {
+        "spreads": {
+          "Athletic Bilbao": {
+            "price": 1.87,
+            "point": -0.5,
+            "prob": 51.6
+          },
+          "CA Osasuna": {
+            "price": 1.99,
+            "point": 0.5,
+            "prob": 48.4
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.93,
+            "point": 2.25,
+            "prob": 49.7
+          },
+          "Under": {
+            "price": 1.91,
+            "point": 2.25,
+            "prob": 50.3
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Athletic Bilbao": 1.841,
+        "CA Osasuna": 4.305,
+        "Draw": 3.406
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626311+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Athletic Bilbao": 1.841,
+          "CA Osasuna": 4.305,
+          "Draw": 3.406
+        }
+      ]
+    },
+    "4c05627297ffdfd1bb17dfcc1dd3b6d6": {
+      "id": "4c05627297ffdfd1bb17dfcc1dd3b6d6",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Mallorca",
+      "away_team": "Valencia",
+      "commence_time": "2026-04-21T17:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Mallorca": {
+                "price": 2.46
+              },
+              "Valencia": {
+                "price": 3.1
+              },
+              "Draw": {
+                "price": 3.13
+              }
+            },
+            "spreads": {
+              "Mallorca": {
+                "price": 2.1,
+                "point": -0.25,
+                "prob": 45.9
+              },
+              "Valencia": {
+                "price": 1.78,
+                "point": 0.25,
+                "prob": 54.1
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.89,
+                "point": 2.25,
+                "prob": 50.7
+              },
+              "Under": {
+                "price": 1.94,
+                "point": 2.25,
+                "prob": 49.3
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Mallorca": {
+                "price": 2.3
+              },
+              "Valencia": {
+                "price": 2.85
+              },
+              "Draw": {
+                "price": 3.0
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Mallorca": {
+                "price": 2.54
+              },
+              "Valencia": {
+                "price": 3.2
+              },
+              "Draw": {
+                "price": 3.23
+              }
+            },
+            "spreads": {
+              "Mallorca": {
+                "price": 1.77,
+                "point": 0.0
+              },
+              "Valencia": {
+                "price": 2.22,
+                "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.23,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.76,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Mallorca": 2.405,
+        "Valencia": 2.973,
+        "Draw": 3.068
+      },
+      "true_probs": {
+        "Mallorca": 38.6,
+        "Valencia": 31.2,
+        "Draw": 30.2
+      },
+      "other_markets": {
+        "spreads": {
+          "Mallorca": {
+            "price": 2.1,
+            "point": -0.25,
+            "prob": 45.9
+          },
+          "Valencia": {
+            "price": 1.78,
+            "point": 0.25,
+            "prob": 54.1
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.89,
+            "point": 2.25,
+            "prob": 50.7
+          },
+          "Under": {
+            "price": 1.94,
+            "point": 2.25,
+            "prob": 49.3
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Mallorca": 2.405,
+        "Valencia": 2.973,
+        "Draw": 3.068
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626313+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Mallorca": 2.405,
+          "Valencia": 2.973,
+          "Draw": 3.068
+        }
+      ]
+    },
+    "ce727a41a47d5e86ddee97c7cd14928d": {
+      "id": "ce727a41a47d5e86ddee97c7cd14928d",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Real Madrid",
+      "away_team": "Alavés",
+      "commence_time": "2026-04-21T19:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Alavés": {
+                "price": 9.71
+              },
+              "Real Madrid": {
+                "price": 1.26
+              },
+              "Draw": {
+                "price": 5.97
+              }
+            },
+            "spreads": {
+              "Alavés": {
+                "price": 1.83,
+                "point": 1.75,
+                "prob": 52.3
+              },
+              "Real Madrid": {
+                "price": 2.01,
+                "point": -1.75,
+                "prob": 47.7
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.85,
+                "point": 3.0,
+                "prob": 51.7
+              },
+              "Under": {
+                "price": 1.98,
+                "point": 3.0,
+                "prob": 48.3
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Alavés": {
+                "price": 8.5
+              },
+              "Real Madrid": {
+                "price": 1.23
+              },
+              "Draw": {
+                "price": 5.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Alavés": {
+                "price": 10.5
+              },
+              "Real Madrid": {
+                "price": 1.29
+              },
+              "Draw": {
+                "price": 5.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.52,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.48,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Alavés": 9.844,
+        "Real Madrid": 1.264,
+        "Draw": 5.744
+      },
+      "true_probs": {
+        "Alavés": 9.5,
+        "Real Madrid": 74.2,
+        "Draw": 16.3
+      },
+      "other_markets": {
+        "spreads": {
+          "Alavés": {
+            "price": 1.83,
+            "point": 1.75,
+            "prob": 52.3
+          },
+          "Real Madrid": {
+            "price": 2.01,
+            "point": -1.75,
+            "prob": 47.7
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.85,
+            "point": 3.0,
+            "prob": 51.7
+          },
+          "Under": {
+            "price": 1.98,
+            "point": 3.0,
+            "prob": 48.3
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Alavés": 9.844,
+        "Real Madrid": 1.264,
+        "Draw": 5.744
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626317+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Alavés": 9.844,
+          "Real Madrid": 1.264,
+          "Draw": 5.744
+        }
+      ],
+      "weather": {
+        "temp": 15.7,
+        "wind": 14.9,
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
+      },
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "7759c10d8fefa09122099f380241a8be": {
+      "id": "7759c10d8fefa09122099f380241a8be",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Girona",
+      "away_team": "Real Betis",
+      "commence_time": "2026-04-21T19:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Girona": {
+                "price": 2.46
+              },
+              "Real Betis": {
+                "price": 2.85
+              },
+              "Draw": {
+                "price": 3.41
+              }
+            },
+            "spreads": {
+              "Girona": {
+                "price": 1.79,
+                "point": 0.0,
+                "prob": 53.7
+              },
+              "Real Betis": {
+                "price": 2.08,
+                "point": -0.0,
+                "prob": 46.3
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.0,
+                "point": 2.75,
+                "prob": 47.9
+              },
+              "Under": {
+                "price": 1.84,
+                "point": 2.75,
+                "prob": 52.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Girona": {
+                "price": 2.3
+              },
+              "Real Betis": {
+                "price": 2.65
+              },
+              "Draw": {
+                "price": 3.2
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Girona": {
+                "price": 2.55
+              },
+              "Real Betis": {
+                "price": 2.92
+              },
+              "Draw": {
+                "price": 3.56
+              }
+            },
+            "spreads": {
+              "Girona": {
+                "price": 1.85,
+                "point": 0.0
+              },
+              "Real Betis": {
+                "price": 2.1,
+                "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.86,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.1,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Girona": 2.432,
+        "Real Betis": 2.78,
+        "Draw": 3.386
+      },
+      "true_probs": {
+        "Girona": 38.6,
+        "Real Betis": 33.7,
+        "Draw": 27.7
+      },
+      "other_markets": {
+        "spreads": {
+          "Girona": {
+            "price": 1.79,
+            "point": 0.0,
+            "prob": 53.7
+          },
+          "Real Betis": {
+            "price": 2.08,
+            "point": -0.0,
+            "prob": 46.3
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.0,
+            "point": 2.75,
+            "prob": 47.9
+          },
+          "Under": {
+            "price": 1.84,
+            "point": 2.75,
+            "prob": 52.1
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Girona": 2.432,
+        "Real Betis": 2.78,
+        "Draw": 3.386
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626325+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Girona": 2.432,
+          "Real Betis": 2.78,
+          "Draw": 3.386
+        }
+      ]
+    },
+    "7af046b7a51c309f8f2f6c820e7bcb11": {
+      "id": "7af046b7a51c309f8f2f6c820e7bcb11",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Elche CF",
+      "away_team": "Atlético Madrid",
+      "commence_time": "2026-04-22T17:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Atlético Madrid": {
+                "price": 2.09
+              },
+              "Elche CF": {
+                "price": 3.43
+              },
+              "Draw": {
+                "price": 3.57
+              }
+            },
+            "spreads": {
+              "Atlético Madrid": {
+                "price": 1.82,
+                "point": -0.25,
+                "prob": 53.0
+              },
+              "Elche CF": {
+                "price": 2.05,
+                "point": 0.25,
+                "prob": 47.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.9,
+                "point": 2.75,
+                "prob": 50.4
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 2.75,
+                "prob": 49.6
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Atlético Madrid": {
+                "price": 2.12
+              },
+              "Elche CF": {
+                "price": 3.35
+              },
+              "Draw": {
+                "price": 3.55
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.72,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.08,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "Atlético Madrid": {
+                "price": 2.12
+              },
+              "Elche CF": {
+                "price": 3.35
+              },
+              "Draw": {
+                "price": 3.55
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.72,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.08,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Atlético Madrid": 2.048,
+        "Elche CF": 3.412,
+        "Draw": 3.565
+      },
+      "true_probs": {
+        "Atlético Madrid": 46.0,
+        "Elche CF": 27.6,
+        "Draw": 26.4
+      },
+      "other_markets": {
+        "spreads": {
+          "Atlético Madrid": {
+            "price": 1.82,
+            "point": -0.25,
+            "prob": 53.0
+          },
+          "Elche CF": {
+            "price": 2.05,
+            "point": 0.25,
+            "prob": 47.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.9,
+            "point": 2.75,
+            "prob": 50.4
+          },
+          "Under": {
+            "price": 1.93,
+            "point": 2.75,
+            "prob": 49.6
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Atlético Madrid": 2.048,
+        "Elche CF": 3.412,
+        "Draw": 3.565
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626327+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Atlético Madrid": 2.048,
+          "Elche CF": 3.412,
+          "Draw": 3.565
+        }
+      ]
+    },
+    "a6a0d55b933b3bb01c4ba789f4444783": {
+      "id": "a6a0d55b933b3bb01c4ba789f4444783",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Real Sociedad",
+      "away_team": "Getafe",
+      "commence_time": "2026-04-22T18:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Getafe": {
+                "price": 4.68
+              },
+              "Real Sociedad": {
+                "price": 1.85
+              },
+              "Draw": {
+                "price": 3.33
+              }
+            },
+            "spreads": {
+              "Getafe": {
+                "price": 1.99,
+                "point": 0.5,
+                "prob": 48.3
+              },
+              "Real Sociedad": {
+                "price": 1.86,
+                "point": -0.5,
+                "prob": 51.7
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.87,
+                "point": 2.0,
+                "prob": 51.3
+              },
+              "Under": {
+                "price": 1.97,
+                "point": 2.0,
+                "prob": 48.7
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Getafe": {
+                "price": 4.5
+              },
+              "Real Sociedad": {
+                "price": 1.72
+              },
+              "Draw": {
+                "price": 3.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Getafe": {
+                "price": 4.45
+              },
+              "Real Sociedad": {
+                "price": 1.88
+              },
+              "Draw": {
+                "price": 3.35
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.48,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.52,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Getafe": 4.601,
+        "Real Sociedad": 1.833,
+        "Draw": 3.286
+      },
+      "true_probs": {
+        "Getafe": 20.4,
+        "Real Sociedad": 51.1,
+        "Draw": 28.5
+      },
+      "other_markets": {
+        "spreads": {
+          "Getafe": {
+            "price": 1.99,
+            "point": 0.5,
+            "prob": 48.3
+          },
+          "Real Sociedad": {
+            "price": 1.86,
+            "point": -0.5,
+            "prob": 51.7
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.87,
+            "point": 2.0,
+            "prob": 51.3
+          },
+          "Under": {
+            "price": 1.97,
+            "point": 2.0,
+            "prob": 48.7
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Getafe": 4.601,
+        "Real Sociedad": 1.833,
+        "Draw": 3.286
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626329+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Getafe": 4.601,
+          "Real Sociedad": 1.833,
+          "Draw": 3.286
+        }
+      ]
+    },
+    "445c97066158652824e10b05bc53c6ae": {
+      "id": "445c97066158652824e10b05bc53c6ae",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Barcelona",
+      "away_team": "Celta Vigo",
+      "commence_time": "2026-04-22T19:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Barcelona": {
+                "price": 1.3
+              },
+              "Celta Vigo": {
+                "price": 7.83
+              },
+              "Draw": {
+                "price": 6.34
+              }
+            },
+            "spreads": {
+              "Barcelona": {
+                "price": 1.87,
+                "point": -1.5,
+                "prob": 51.4
+              },
+              "Celta Vigo": {
+                "price": 1.98,
+                "point": 1.5,
+                "prob": 48.6
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.97,
+                "point": 3.5,
+                "prob": 48.7
+              },
+              "Under": {
+                "price": 1.87,
+                "point": 3.5,
+                "prob": 51.3
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Barcelona": {
+                "price": 1.25
+              },
+              "Celta Vigo": {
+                "price": 7.0
+              },
+              "Draw": {
+                "price": 5.4
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Barcelona": {
+                "price": 1.32
+              },
+              "Celta Vigo": {
+                "price": 8.3
+              },
+              "Draw": {
+                "price": 5.9
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.35,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 3.15,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Barcelona": 1.294,
+        "Celta Vigo": 7.924,
+        "Draw": 5.931
+      },
+      "true_probs": {
+        "Barcelona": 72.4,
+        "Celta Vigo": 11.8,
+        "Draw": 15.8
+      },
+      "other_markets": {
+        "spreads": {
+          "Barcelona": {
+            "price": 1.87,
+            "point": -1.5,
+            "prob": 51.4
+          },
+          "Celta Vigo": {
+            "price": 1.98,
+            "point": 1.5,
+            "prob": 48.6
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.97,
+            "point": 3.5,
+            "prob": 48.7
+          },
+          "Under": {
+            "price": 1.87,
+            "point": 3.5,
+            "prob": 51.3
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Barcelona": 1.294,
+        "Celta Vigo": 7.924,
+        "Draw": 5.931
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626332+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Barcelona": 1.294,
+          "Celta Vigo": 7.924,
+          "Draw": 5.931
+        }
+      ],
+      "weather": {
+        "temp": 16.6,
+        "wind": 11.4,
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
+      },
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "a3f979b998f70bcf99bcee41c65f90a5": {
+      "id": "a3f979b998f70bcf99bcee41c65f90a5",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Levante",
+      "away_team": "Sevilla",
+      "commence_time": "2026-04-23T17:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Levante": {
+                "price": 2.7
+              },
+              "Sevilla": {
+                "price": 2.25
+              },
+              "Draw": {
+                "price": 3.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Levante": {
+                "price": 2.77
+              },
+              "Sevilla": {
+                "price": 2.53
+              },
+              "Draw": {
+                "price": 3.42
+              }
+            },
+            "spreads": {
+              "Levante": {
+                "price": 2.02,
+                "point": 0.0,
+                "prob": 47.7
+              },
+              "Sevilla": {
+                "price": 1.84,
+                "point": -0.0,
+                "prob": 52.3
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.88,
+                "point": 2.25,
+                "prob": 51.0
+              },
+              "Under": {
+                "price": 1.96,
+                "point": 2.25,
+                "prob": 49.0
+              }
+            }
+          }
+        },
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Levante": {
+                "price": 2.8
+              },
+              "Sevilla": {
+                "price": 2.45
+              },
+              "Draw": {
+                "price": 3.4
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Levante": 2.764,
+        "Sevilla": 2.482,
+        "Draw": 3.333
+      },
+      "true_probs": {
+        "Levante": 34.0,
+        "Sevilla": 37.8,
+        "Draw": 28.2
+      },
+      "other_markets": {
+        "spreads": {
+          "Levante": {
+            "price": 2.02,
+            "point": 0.0,
+            "prob": 47.7
+          },
+          "Sevilla": {
+            "price": 1.84,
+            "point": -0.0,
+            "prob": 52.3
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.88,
+            "point": 2.25,
+            "prob": 51.0
+          },
+          "Under": {
+            "price": 1.96,
+            "point": 2.25,
+            "prob": 49.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Levante": 2.764,
+        "Sevilla": 2.482,
+        "Draw": 3.333
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626334+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Levante": 2.764,
+          "Sevilla": 2.482,
+          "Draw": 3.333
+        }
+      ]
+    },
+    "c208f9c1d251de9006fd23a7e9cfa948": {
+      "id": "c208f9c1d251de9006fd23a7e9cfa948",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Rayo Vallecano",
+      "away_team": "Espanyol",
+      "commence_time": "2026-04-23T18:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Espanyol": {
+                "price": 4.36
+              },
+              "Rayo Vallecano": {
+                "price": 1.79
+              },
+              "Draw": {
+                "price": 3.76
+              }
+            },
+            "spreads": {
+              "Espanyol": {
+                "price": 2.07,
+                "point": 0.5,
+                "prob": 46.5
+              },
+              "Rayo Vallecano": {
+                "price": 1.8,
+                "point": -0.5,
+                "prob": 53.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.82,
+                "point": 2.25,
+                "prob": 52.6
+              },
+              "Under": {
+                "price": 2.02,
+                "point": 2.25,
+                "prob": 47.4
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Espanyol": {
+                "price": 4.1
+              },
+              "Rayo Vallecano": {
+                "price": 1.7
+              },
+              "Draw": {
+                "price": 3.3
+              }
+            }
+          }
+        },
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Espanyol": {
+                "price": 4.4
+              },
+              "Rayo Vallecano": {
+                "price": 1.77
+              },
+              "Draw": {
+                "price": 3.6
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Espanyol": 4.265,
+        "Rayo Vallecano": 1.789,
+        "Draw": 3.582
+      },
+      "true_probs": {
+        "Espanyol": 21.9,
+        "Rayo Vallecano": 52.1,
+        "Draw": 26.0
+      },
+      "other_markets": {
+        "spreads": {
+          "Espanyol": {
+            "price": 2.07,
+            "point": 0.5,
+            "prob": 46.5
+          },
+          "Rayo Vallecano": {
+            "price": 1.8,
+            "point": -0.5,
+            "prob": 53.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.82,
+            "point": 2.25,
+            "prob": 52.6
+          },
+          "Under": {
+            "price": 2.02,
+            "point": 2.25,
+            "prob": 47.4
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Espanyol": 4.265,
+        "Rayo Vallecano": 1.789,
+        "Draw": 3.582
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626336+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Espanyol": 4.265,
+          "Rayo Vallecano": 1.789,
+          "Draw": 3.582
+        }
+      ]
+    },
+    "fee736ef555102544f70b322b548a2cf": {
+      "id": "fee736ef555102544f70b322b548a2cf",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "西甲 La Liga",
+      "home_team": "Oviedo",
+      "away_team": "Villarreal",
+      "commence_time": "2026-04-23T19:30:00Z",
+      "bookmakers": [
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Oviedo": {
+                "price": 4.0
+              },
+              "Villarreal": {
+                "price": 1.83
+              },
+              "Draw": {
+                "price": 3.6
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Oviedo": {
+                "price": 3.8
+              },
+              "Villarreal": {
+                "price": 1.73
+              },
+              "Draw": {
+                "price": 3.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Oviedo": {
+                "price": 3.97
+              },
+              "Villarreal": {
+                "price": 1.86
+              },
+              "Draw": {
+                "price": 3.78
+              }
+            },
+            "spreads": {
+              "Oviedo": {
+                "price": 1.98,
+                "point": 0.5,
+                "prob": 48.6
+              },
+              "Villarreal": {
+                "price": 1.87,
+                "point": -0.5,
+                "prob": 51.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.01,
+                "point": 2.75,
+                "prob": 47.7
+              },
+              "Under": {
+                "price": 1.83,
+                "point": 2.75,
+                "prob": 52.3
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Oviedo": 3.931,
+        "Villarreal": 1.841,
+        "Draw": 3.688
+      },
+      "true_probs": {
+        "Oviedo": 23.8,
+        "Villarreal": 50.8,
+        "Draw": 25.4
+      },
+      "other_markets": {
+        "spreads": {
+          "Oviedo": {
+            "price": 1.98,
+            "point": 0.5,
+            "prob": 48.6
+          },
+          "Villarreal": {
+            "price": 1.87,
+            "point": -0.5,
+            "prob": 51.4
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.01,
+            "point": 2.75,
+            "prob": 47.7
+          },
+          "Under": {
+            "price": 1.83,
+            "point": 2.75,
+            "prob": 52.3
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Oviedo": 3.931,
+        "Villarreal": 1.841,
+        "Draw": 3.688
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-12T05:41:49.626339+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/12 05:41",
+          "Oviedo": 3.931,
+          "Villarreal": 1.841,
+          "Draw": 3.688
+        }
+      ]
     }
   },
   "leagues": {
     "NBA": [
-      "22dcb3e32847c7eab5774e8927016216",
-      "f78d40af453b24c39e18559579894d14",
-      "d55bfef33abc5dc6dba0717236d0ee80",
-      "38b10a0526d5b246097a502269bcdf71",
-      "ad75b36adad0af42dea87b9bcdfa91f8",
       "4675acfb68965858aa571a0493a222da",
-      "23c66e71d25675800d939e532e38bcd2",
-      "c8cde1aa908581185caf0bb87659055a",
       "09604d4c311c1eb2215317d12154f42a",
-      "06ccc7d0ba2acaf031c7d42eea09672c",
-      "fdd561cce076bab5eb0f0651d1d0f8e4",
+      "3f5adb3e93b0c63eb14ed1d0e8b90a43",
+      "22dcb3e32847c7eab5774e8927016216",
       "3f3bec3a69985062b105b5fe8bf06fe9",
+      "f78d40af453b24c39e18559579894d14",
+      "ad75b36adad0af42dea87b9bcdfa91f8",
       "47ede7b5685ae38218b5c2ea1ffd1699",
+      "fdd561cce076bab5eb0f0651d1d0f8e4",
+      "23c66e71d25675800d939e532e38bcd2",
+      "d55bfef33abc5dc6dba0717236d0ee80",
+      "c8cde1aa908581185caf0bb87659055a",
       "8c4fafe262a5424f243a130d7ab60e82",
-      "3f5adb3e93b0c63eb14ed1d0e8b90a43"
+      "38b10a0526d5b246097a502269bcdf71",
+      "06ccc7d0ba2acaf031c7d42eea09672c"
     ],
-    "英超 EPL": [
-      "542c7cb070f6d66aa7003cd825d5c199",
-      "aa83ffb32d9d72361f2cca8c1d3c2b19",
-      "5b7b41cabf1a84e8991c9cf3d0a7ab90",
-      "e4c2f457a464a95a8631ab28ef77b0b9",
-      "7d48c93e68e7403998d0ed38e99caae5",
-      "2c2061ffc9ee67808fd45273089d7795",
-      "be6cdb6ddd27d099b5291f0d1e051d92",
-      "d137c5f062243e857803fcebfdda2953",
-      "5e7f44119f2e640fdf04c245a764657f",
-      "933e20e0892b28ca075a9ab5465d5c6d",
-      "72406c12d6334a8f3475a640ea1f814b",
-      "95d68f9006aa718d447c759366118c31",
-      "3e7369c873aed1c62f4d76fd652d73c7",
-      "67946ccfc03197bc48eb7b6c9786b713",
-      "ea28653ebcd7743146869e2aa7851275",
-      "e6e88546df45a25ee81d07b597d91167",
-      "690fef3d62fc4c8015481626d5aab274",
-      "4a1a7f4a60859fc3ecc69d05f5729556",
-      "1d779cd51003d8f01a9378594cea630e",
-      "1cb5fdae7703fb61d1de571066050f9b",
-      "8a5b7d24683637ab7350fe8a20af1a62",
-      "e7eba73b41f6b75f5b4692376efb888a",
-      "c5137cd717098fbb38acd0236bc41b34",
-      "76829fec3394b52a992b0a21eedbccf6",
-      "ea38471acf4d5944929f9025e151376d"
+    "西甲 La Liga": [
+      "4c05627297ffdfd1bb17dfcc1dd3b6d6",
+      "a1e8d7ee23f8c72f75be14bb70723d99",
+      "ce727a41a47d5e86ddee97c7cd14928d",
+      "7759c10d8fefa09122099f380241a8be",
+      "1a8b233790dce45b2219cdb234a7916c",
+      "7af046b7a51c309f8f2f6c820e7bcb11",
+      "c4a4e452254d87ff646343d0357d58e7",
+      "dcc73a8a22fc0f052bd085be3f7e1bbf",
+      "445c97066158652824e10b05bc53c6ae",
+      "fee736ef555102544f70b322b548a2cf",
+      "21c5b81029447a350af6e553f1e31c5c",
+      "ed245ff0289860db9cd29c9b76b44926",
+      "a3f979b998f70bcf99bcee41c65f90a5",
+      "a6a0d55b933b3bb01c4ba789f4444783",
+      "c208f9c1d251de9006fd23a7e9cfa948"
     ]
   },
   "news": {
     "nba": [
       {
-        "title": "國王的策略：NBA 球員為何轉向西洋棋",
+        "title": "國王的棄兵：為何 NBA 球員轉向西洋棋",
         "link": "https://www.espn.com/nba/story/_/id/48389239/rise-nba-chess-popularity-antetokounmpo-wembanyama-derrick-rose",
         "published": "Sat, 11 Apr 2026 11:31:06 EST",
         "summary": "NBA players are spending more time than ever working on the boards -- but we're not talking rebounds.",
-        "title_zh": "國王的策略：NBA 球員為何轉向西洋棋",
+        "title_zh": "國王的棄兵：為何 NBA 球員轉向西洋棋",
         "title_en": "King's gambit: Why NBA players are turning to chess"
       },
       {
-        "title": "SGA (SGA)、Jokic (Nikola Jokic) 等至少 168 名 NBA 球員週五缺陣",
+        "title": "SGA（Sam Gidgious-Alexander）和 Jokic（Nikola Jokic）等至少 168 名 NBA 球員週五缺席",
         "link": "https://www.espn.com/nba/story/_/id/48453474/nba-friday-slate-sees-least-168-injury-illness",
         "published": "Sat, 11 Apr 2026 12:57:59 EST",
         "summary": "Around the NBA, no fewer than 168 players were held out of Friday's games, including reigning MVP Shai Gilgeous-Alexander, three-time MVP Nikola Jokic and 14 members of the Grizzlies.",
-        "title_zh": "SGA (SGA)、Jokic (Nikola Jokic) 等至少 168 名 NBA 球員週五缺陣",
+        "title_zh": "SGA（Sam Gidgious-Alexander）和 Jokic（Nikola Jokic）等至少 168 名 NBA 球員週五缺席",
         "title_en": "SGA, Jokic among at least 168 out NBA-wide Fri."
       },
       {
-        "title": "Wembanyama (Victor Wembanyama) 再達成一項「目標」，出賽 65 場",
+        "title": "Wembanyama（Victor Wembanyama）達成另一項「目標」，出賽 65 場",
         "link": "https://www.espn.com/nba/story/_/id/48453963/wembanyama-40-points-13-rebounds-hits-65-games-checks-another-box",
         "published": "Sat, 11 Apr 2026 12:57:59 EST",
         "summary": "Victor Wembanyama reached the 65-game threshold for awards eligibility with a 40-point outing that included 13 rebounds in a 139-120 win over the Mavericks.",
-        "title_zh": "Wembanyama (Victor Wembanyama) 再達成一項「目標」，出賽 65 場",
+        "title_zh": "Wembanyama（Victor Wembanyama）達成另一項「目標」，出賽 65 場",
         "title_en": "Wembanyama checks another 'box,' hits 65 games"
       },
       {
-        "title": "Celtics (波士頓塞爾提克) 投進 29 記三分球追平 NBA 紀錄，鎖定東區第二種子",
+        "title": "Celtics（塞爾提克）投進 29 顆三分球追平 NBA 紀錄，鎖定第 2 種子",
         "link": "https://www.espn.com/nba/story/_/id/48453131/celtics-tie-nba-record-29-3s-clinch-no-2-seed",
         "published": "Sat, 11 Apr 2026 12:57:59 EST",
         "summary": "The Celtics tied the franchise and NBA record with 29 3s on their way to clinching the Eastern Conference's No. 2 playoff seed in a blowout win over the Pelicans.",
-        "title_zh": "Celtics (波士頓塞爾提克) 投進 29 記三分球追平 NBA 紀錄，鎖定東區第二種子",
+        "title_zh": "Celtics（塞爾提克）投進 29 顆三分球追平 NBA 紀錄，鎖定第 2 種子",
         "title_en": "Celtics tie NBA record with 29 3s, clinch 2-seed"
       },
       {
-        "title": "Redick (J.J. Redick)：『每個人』都想對陣受傷的 Lakers (洛杉磯湖人)",
+        "title": "Redick（J.J. Redick）：「每個人」都想對陣傷兵眾多的 Lakers（湖人）",
         "link": "https://www.espn.com/nba/story/_/id/48453400/jj-redick-short-handed-lakers-everybody-wants-play-us",
         "published": "Sat, 11 Apr 2026 12:57:59 EST",
         "summary": "Lakers coach JJ Redick believes other West teams that still have their seeding to be determined prefer Los Angeles as their first-round opponent in the playoffs.",
-        "title_zh": "Redick (J.J. Redick)：『每個人』都想對陣受傷的 Lakers (洛杉磯湖人)",
+        "title_zh": "Redick（J.J. Redick）：「每個人」都想對陣傷兵眾多的 Lakers（湖人）",
         "title_en": "Redick: 'Everybody' wants to face hobbled Lakers"
       },
       {
-        "title": "76ers (費城 76 人) 的 Embiid (Joel Embiid) 已出院；復出時間未定",
+        "title": "76ers（76人）的 Embiid（Joel Embiid）出院；無復出時間表",
         "link": "https://www.espn.com/nba/story/_/id/48450628/76ers-star-joel-embiid-hospital-one-day-surgery",
         "published": "Sat, 11 Apr 2026 12:57:59 EST",
         "summary": "Sixers star Joel Embiid has been discharged from a Houston hospital and is heading back to Philadelphia, with the team saying there is no set timeline for his return to the court.",
-        "title_zh": "76ers (費城 76 人) 的 Embiid (Joel Embiid) 已出院；復出時間未定",
+        "title_zh": "76ers（76人）的 Embiid（Joel Embiid）出院；無復出時間表",
         "title_en": "76ers' Embiid out of hospital; no timeline to play"
       },
       {
-        "title": "Heat (邁阿密熱火) 裁掉 Rozier (Terry Rozier)，名額補上 J. Young (Jalen Young)",
+        "title": "Heat（熱火）裁掉 Rozier（Terry Rozier），簽下 J. Young（Jalen Young）",
         "link": "https://www.espn.com/nba/story/_/id/48447174/sources-heat-waive-embattled-guard-terry-rozier",
         "published": "Sat, 11 Apr 2026 12:57:59 EST",
         "summary": "Miami guard Terry Rozier, who has been on leave since October amid a sports gambling investigation, has been waived by the Heat.",
-        "title_zh": "Heat (邁阿密熱火) 裁掉 Rozier (Terry Rozier)，名額補上 J. Young (Jalen Young)",
+        "title_zh": "Heat（熱火）裁掉 Rozier（Terry Rozier），簽下 J. Young（Jalen Young）",
         "title_en": "Heat waive Rozier, use roster spot on J. Young"
       },
       {
-        "title": "Donovan (Billy Donovan) 不在意 Reinsdorf (Jerry Reinsdorf) 的背書",
+        "title": "Donovan（Billy Donovan）不理會 Reinsdorf（Jerry Reinsdorf）的支持",
         "link": "https://www.espn.com/nba/story/_/id/48442739/bulls-donovan-says-not-reading-reinsdorf-endorsement",
         "published": "Sat, 11 Apr 2026 12:57:59 EST",
         "summary": "Bulls coach Billy Donovan, who has yet to decide on his future with the team, appreciated team president and CEO Michael Reinsdorf's endorsement of him but said he understood \"everybody's got to look ",
-        "title_zh": "Donovan (Billy Donovan) 不在意 Reinsdorf (Jerry Reinsdorf) 的背書",
+        "title_zh": "Donovan（Billy Donovan）不理會 Reinsdorf（Jerry Reinsdorf）的支持",
         "title_en": "Donovan not reading into Reinsdorf's endorsement"
       },
       {
-        "title": "NBA 因傷病報告違規對 Magic (奧蘭多魔術) 罰款 2.5 萬美元",
+        "title": "NBA 罰款 Magic（Orlando Magic）25,000 美元，因傷病報告違規",
         "link": "https://www.espn.com/nba/story/_/id/48440537/nba-fines-magic-25k-violating-injury-reporting-rules",
         "published": "Sat, 11 Apr 2026 12:57:59 EST",
         "summary": "The NBA fined the Orlando Magic $25,000 on Thursday for violating league injury reporting rules before Monday night's home game against the Detroit Pistons.",
-        "title_zh": "NBA 因傷病報告違規對 Magic (奧蘭多魔術) 罰款 2.5 萬美元",
+        "title_zh": "NBA 罰款 Magic（Orlando Magic）25,000 美元，因傷病報告違規",
         "title_en": "NBA fines Magic $25K for injury report violation"
       },
       {
-        "title": "🏀 NBA 選秀百大潛力新秀：頂尖潛力球員的落點",
+        "title": "🏀 NBA 選秀百大球員：頂尖新秀落點分析",
         "link": "https://www.espn.com/nba/story/_/id/46886245/2026-nba-draft-big-board-rankings-top-100-prospects-players",
         "published": "Sat, 11 Apr 2026 12:57:59 EST",
         "summary": "Here is the updated top 100 big board for the 2026 class after an exciting college season.",
-        "title_zh": "🏀 NBA 選秀百大潛力新秀：頂尖潛力球員的落點",
+        "title_zh": "🏀 NBA 選秀百大球員：頂尖新秀落點分析",
         "title_en": "🏀 NBA draft top 100: Where top prospects land"
       }
     ],
     "soccer": [
       {
-        "title": "「一記重擊」—— Arsenal (阿森納) 真的會從這裡搞砸冠軍嗎？",
+        "title": "觀看：本日精華",
+        "link": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 12 Apr 2026 08:00:00 GMT",
+        "summary": "Highlights from five Premier League games as the season enters the final stretch.",
+        "title_zh": "觀看：本日精華",
+        "title_en": "Watch: Match of the Day"
+      },
+      {
+        "title": "青少年 Ngumoha（ ? ）進球，Liverpool（利物浦）擊敗 Fulham（富勒姆）",
+        "link": "https://www.bbc.com/sport/football/videos/cq59y9ld0e6o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 19:40:33 GMT",
+        "summary": "Rio Ngumoha and Mohamed Salah both score in Liverpool's 2-0 victory over Fulham at Anfield.",
+        "title_zh": "青少年 Ngumoha（ ? ）進球，Liverpool（利物浦）擊敗 Fulham（富勒姆）",
+        "title_en": "Teenager Ngumoha scores as Liverpool beat Fulham"
+      },
+      {
+        "title": "Scott（ ? ）攻入致勝球，Bournemouth（伯恩茅斯）爆冷擊敗 Arsenal（阿森納）",
+        "link": "https://www.bbc.com/sport/football/videos/cj94r81vl1zo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 19:00:51 GMT",
+        "summary": "Arsenal's title hopes take a hit as Bournemouth win 2-1 at the Emirates with goals from Junior Kroupi and Alex Scott.",
+        "title_zh": "Scott（ ? ）攻入致勝球，Bournemouth（伯恩茅斯）爆冷擊敗 Arsenal（阿森納）",
+        "title_en": "Scott nets the winner as Bournemouth stun Arsenal"
+      },
+      {
+        "title": "Dewsbury-Hall（ ? ）打入最後時刻扳平球，Everton（埃弗頓）戰平 Brentford（布倫特福德）",
+        "link": "https://www.bbc.com/sport/football/videos/ce8jewlrgr8o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 19:06:13 GMT",
+        "summary": "Kiernan Dewsbury-Hall scores a late equaliser as Everton rescue a point at Brentford after coming from behind twice.",
+        "title_zh": "Dewsbury-Hall（ ? ）打入最後時刻扳平球，Everton（埃弗頓）戰平 Brentford（布倫特福德）",
+        "title_en": "Dewsbury-Hall scores late equaliser as Everton draw at Brentford"
+      },
+      {
+        "title": "Wieffer（ ? ）梅開二度，Brighton（布萊頓）擊敗 Burnley（伯恩利）",
+        "link": "https://www.bbc.com/sport/football/videos/c98mpqp5202o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 19:03:17 GMT",
+        "summary": "Mats Wieffer scores twice to earn Brighton a third consecutive win with a 2-0 victory at Burnley.",
+        "title_zh": "Wieffer（ ? ）梅開二度，Brighton（布萊頓）擊敗 Burnley（伯恩利）",
+        "title_en": "Wieffer scores twice as Brighton beat Burnley"
+      },
+      {
+        "title": "「重擊一記」— Arsenal（阿森納）真的會從這裡失去冠軍嗎？",
         "link": "https://www.bbc.com/sport/football/articles/c4g5v6552l2o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Apr 2026 16:50:05 GMT",
         "summary": "Nine points clear with six games to play - could Arsenal still really blow the Premier League title from that position?",
-        "title_zh": "「一記重擊」—— Arsenal (阿森納) 真的會從這裡搞砸冠軍嗎？",
+        "title_zh": "「重擊一記」— Arsenal（阿森納）真的會從這裡失去冠軍嗎？",
         "title_en": "'Big punch in the face' - could Arsenal really blow title from here?"
       },
       {
-        "title": "沒有 Semenyo (Antoine Semenyo) 沒問題？Bournemouth (伯恩茅斯) 如何繼續挑戰極限",
+        "title": "幸運之神眷顧勇者 — Slot（Arne Slot）會讓 Ngumoha（ ? ）對陣 PSG（巴黎聖日耳曼）嗎？",
+        "link": "https://www.bbc.com/sport/football/articles/cddqgqgyerjo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 20:52:09 GMT",
+        "summary": "Liverpool's 17-year-old star Rio Ngumoha stole the show against Fulham - will Arne Slot now start him against PSG?",
+        "title_zh": "幸運之神眷顧勇者 — Slot（Arne Slot）會讓 Ngumoha（ ? ）對陣 PSG（巴黎聖日耳曼）嗎？",
+        "title_en": "Fortune favours the brave - will Slot start Ngumoha against PSG?"
+      },
+      {
+        "title": "這是拯救 Hearts（哈茨）爭冠希望的 30 分鐘嗎？",
+        "link": "https://www.bbc.com/sport/football/articles/cx2ew8q0g7go?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Apr 2026 20:40:21 GMT",
+        "summary": "As Heart of Midlothian fight back to beat Motherwell, it could prove to be the 30 minutes that saved their Scottish title chances.",
+        "title_zh": "這是拯救 Hearts（哈茨）爭冠希望的 30 分鐘嗎？",
+        "title_en": "Are these the 30 minutes that saved Hearts' title bid?"
+      },
+      {
+        "title": "沒有 Semenyo（ ? ），沒有問題？Bournemouth（伯恩茅斯）如何持續違背預期",
         "link": "https://www.bbc.com/sport/football/articles/cwyv1wxjd45o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Apr 2026 17:10:48 GMT",
         "summary": "Bournemouth have not lost a game since star forward Antoine Semenyo left for Manchester City in January - how have they done it?",
-        "title_zh": "沒有 Semenyo (Antoine Semenyo) 沒問題？Bournemouth (伯恩茅斯) 如何繼續挑戰極限",
+        "title_zh": "沒有 Semenyo（ ? ），沒有問題？Bournemouth（伯恩茅斯）如何持續違背預期",
         "title_en": "No Semenyo, no problem? How Bournemouth continue to defy the odds"
       },
       {
-        "title": "一個艱難的賽季，帶著憤怒比賽，以及給 Michael Owen (Michael Owen) 的訊息",
+        "title": "艱難的賽季，帶著怒氣比賽，以及向 Michael Owen（邁克爾·歐文）傳訊",
         "link": "https://www.bbc.com/sport/football/articles/c87w429w3j5o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Apr 2026 05:06:33 GMT",
         "summary": "Ollie Watkins speaks to Kelly Somers about Aston Villa, England and his World Cup dream.",
-        "title_zh": "一個艱難的賽季，帶著憤怒比賽，以及給 Michael Owen (Michael Owen) 的訊息",
+        "title_zh": "艱難的賽季，帶著怒氣比賽，以及向 Michael Owen（邁克爾·歐文）傳訊",
         "title_en": "A tough season, playing angry, and messaging Michael Owen"
-      },
-      {
-        "title": "「一記重擊」—— Arteta (Mikel Arteta)",
-        "link": "https://www.bbc.com/sport/football/videos/cd7jz4d7d9vo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Apr 2026 14:27:27 GMT",
-        "summary": "Arsenal manager Mikel Arteta describes the 2-1 defeat at home to Bournemouth as \"a big punch on the face\" as they drop points in the Premier League title race.",
-        "title_zh": "「一記重擊」—— Arteta (Mikel Arteta)",
-        "title_en": "'A big punch on the face' - Arteta"
-      },
-      {
-        "title": "「一切皆有可能」—— Wieffer (Quinten Timber) 談 Brighton (布萊頓) 的歐洲賽事希望",
-        "link": "https://www.bbc.com/sport/football/videos/c895qqn7lk5o?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Apr 2026 17:12:43 GMT",
-        "summary": "Mats Wieffer believes Brighton can make a push for European qualification after scoring his first career double in the win over Burnley.",
-        "title_zh": "「一切皆有可能」—— Wieffer (Quinten Timber) 談 Brighton (布萊頓) 的歐洲賽事希望",
-        "title_en": "'Everything is possible' - Wieffer on Brighton's European hopes"
-      },
-      {
-        "title": "Moyes (David Moyes)：寧願被歐洲追逐，也不要保級纏鬥",
-        "link": "https://www.bbc.com/sport/football/videos/cvg4rrzlp28o?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Apr 2026 17:02:33 GMT",
-        "summary": "Everton manager David Moyes says he's happier that his side are chasing a spot in Europe rather than fighting relegation, as they get a late equaliser against fellow European hopefuls Brentford.",
-        "title_zh": "Moyes (David Moyes)：寧願被歐洲追逐，也不要保級纏鬥",
-        "title_en": "Rather Europe chase than relegation scrap - Moyes"
-      },
-      {
-        "title": "Hurzeler (Fabian Hürzeler)：『我們不想談論歐洲』",
-        "link": "https://www.bbc.com/sport/football/videos/c7vq002dypro?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Apr 2026 17:29:32 GMT",
-        "summary": "Brighton manager Fabian Hurzeler played down his sides chances of finishing in a European spot after they won a third straight game with a 2-0 victory over Burnley.",
-        "title_zh": "Hurzeler (Fabian Hürzeler)：『我們不想談論歐洲』",
-        "title_en": "'We don't want to talk about Europe' - Hurzeler"
-      },
-      {
-        "title": "Andrews (Carlton Cole)：Thiago (Thiago Alcântara) 處於『絕佳狀態』",
-        "link": "https://www.bbc.com/sport/football/videos/ce3dkkeexe7o?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Apr 2026 17:13:17 GMT",
-        "summary": "Brentford manager Keith Andrews praises his striker Igor Thiago as he scores another two goals during a 2-2 draw against Everton to bring his total to 21 for the season.",
-        "title_zh": "Andrews (Carlton Cole)：Thiago (Thiago Alcântara) 處於『絕佳狀態』",
-        "title_en": "Thiago in an 'amazing place' - Andrews"
-      },
-      {
-        "title": "West Ham (西漢姆聯) 燃起新希望——但 Spurs (托特納姆熱刺) 現正處於未知領域",
-        "link": "https://www.bbc.com/sport/football/articles/cr71jvrpp5ro?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Apr 2026 23:23:27 GMT",
-        "summary": "West Ham's thumping win over Wolves not only boosts their own Premier League survival hopes, but plunges Tottenham into the drop zone - and to new depths.",
-        "title_zh": "West Ham (西漢姆聯) 燃起新希望——但 Spurs (托特納姆熱刺) 現正處於未知領域",
-        "title_en": "West Ham have fresh hope - but Spurs now in uncharted territory"
-      },
-      {
-        "title": "Wilshere (Jack Wilshere) 尋求對陣 Wembley 常客 Challinor (Nathan Challinor) 的首個獎盃",
-        "link": "https://www.bbc.com/sport/football/articles/cew7jd0jk95o?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Apr 2026 10:25:02 GMT",
-        "summary": "Luton Town boss Jack Wilshere faces Stockport County boss and Wembley regular Dave Challinor in Sunday's EFL Trophy final.",
-        "title_zh": "Wilshere (Jack Wilshere) 尋求對陣 Wembley 常客 Challinor (Nathan Challinor) 的首個獎盃",
-        "title_en": "Wilshere seeks first trophy against Wembley regular Challinor"
       }
     ]
   },
   "significant_changes": [
     "d55bfef33abc5dc6dba0717236d0ee80",
     "3f3bec3a69985062b105b5fe8bf06fe9",
-    "ad75b36adad0af42dea87b9bcdfa91f8",
-    "fdd561cce076bab5eb0f0651d1d0f8e4",
     "3f5adb3e93b0c63eb14ed1d0e8b90a43",
     "23c66e71d25675800d939e532e38bcd2",
+    "fdd561cce076bab5eb0f0651d1d0f8e4",
+    "ad75b36adad0af42dea87b9bcdfa91f8",
     "4675acfb68965858aa571a0493a222da",
-    "47ede7b5685ae38218b5c2ea1ffd1699",
-    "06ccc7d0ba2acaf031c7d42eea09672c",
-    "4a1a7f4a60859fc3ecc69d05f5729556",
     "38b10a0526d5b246097a502269bcdf71",
-    "c8cde1aa908581185caf0bb87659055a",
+    "47ede7b5685ae38218b5c2ea1ffd1699",
+    "ce727a41a47d5e86ddee97c7cd14928d",
+    "f78d40af453b24c39e18559579894d14",
+    "06ccc7d0ba2acaf031c7d42eea09672c",
+    "445c97066158652824e10b05bc53c6ae",
     "8c4fafe262a5424f243a130d7ab60e82",
-    "22dcb3e32847c7eab5774e8927016216",
-    "95d68f9006aa718d447c759366118c31",
-    "76829fec3394b52a992b0a21eedbccf6",
-    "8a5b7d24683637ab7350fe8a20af1a62",
+    "c8cde1aa908581185caf0bb87659055a",
     "09604d4c311c1eb2215317d12154f42a",
-    "7d48c93e68e7403998d0ed38e99caae5",
-    "d137c5f062243e857803fcebfdda2953",
-    "be6cdb6ddd27d099b5291f0d1e051d92",
-    "690fef3d62fc4c8015481626d5aab274",
-    "e4c2f457a464a95a8631ab28ef77b0b9",
-    "3e7369c873aed1c62f4d76fd652d73c7",
-    "2c2061ffc9ee67808fd45273089d7795",
-    "ea28653ebcd7743146869e2aa7851275",
-    "e6e88546df45a25ee81d07b597d91167",
-    "e7eba73b41f6b75f5b4692376efb888a",
-    "1cb5fdae7703fb61d1de571066050f9b",
-    "542c7cb070f6d66aa7003cd825d5c199"
+    "1a8b233790dce45b2219cdb234a7916c"
   ],
   "stats": {
-    "total_matches": 40,
-    "significant_changes_count": 30,
-    "api_remaining": "484"
+    "total_matches": 30,
+    "significant_changes_count": 17,
+    "api_remaining": "474"
   },
   "snapshots": [
     {
       "time": "2026-04-12T03:02:09.194030+08:00",
       "matches_count": 40
+    },
+    {
+      "time": "2026-04-12T05:44:45.026007+08:00",
+      "matches_count": 55
     }
   ]
 }
