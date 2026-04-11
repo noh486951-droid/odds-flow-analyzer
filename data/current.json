@@ -1,3439 +1,106 @@
 {
-  "last_updated": "2026-04-11T08:47:06.704120+08:00",
-  "last_updated_display": "2026/04/11 08:47 (台北時間)",
+  "last_updated": "2026-04-11T13:04:12.197531+08:00",
+  "last_updated_display": "2026/04/11 13:04 (台北時間)",
   "matches": {
-    "70a2274c4f82c7a3f37879b7edf0cfa4": {
-      "id": "70a2274c4f82c7a3f37879b7edf0cfa4",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Atlanta Hawks",
-      "away_team": "Cleveland Cavaliers",
-      "commence_time": "2026-04-10T23:12:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Atlanta Hawks": {
-                "price": 1.01
-              },
-              "Cleveland Cavaliers": {
-                "price": 18.0
-              }
-            },
-            "spreads": {
-              "Atlanta Hawks": {
-                "price": 2.0,
-                "point": -18.5,
-                "prob": 46.8
-              },
-              "Cleveland Cavaliers": {
-                "price": 1.76,
-                "point": 18.5,
-                "prob": 53.2
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.72,
-                "point": 222.5,
-                "prob": 54.3
-              },
-              "Under": {
-                "price": 2.04,
-                "point": 222.5,
-                "prob": 45.7
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Atlanta Hawks": {
-                "price": 1.01
-              },
-              "Cleveland Cavaliers": {
-                "price": 21.0
-              }
-            },
-            "spreads": {
-              "Atlanta Hawks": {
-                "price": 2.0,
-                "point": -18.5
-              },
-              "Cleveland Cavaliers": {
-                "price": 1.8,
-                "point": 18.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.73,
-                "point": 223.5
-              },
-              "Under": {
-                "price": 2.1,
-                "point": 223.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Winamax (FR)",
-          "markets": {
-            "h2h": {
-              "Atlanta Hawks": {
-                "price": 1.01
-              },
-              "Cleveland Cavaliers": {
-                "price": 25.0
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Atlanta Hawks": 1.018,
-        "Cleveland Cavaliers": 18.328
-      },
-      "true_probs": {
-        "Atlanta Hawks": 94.7,
-        "Cleveland Cavaliers": 5.3
-      },
-      "other_markets": {
-        "spreads": {
-          "Atlanta Hawks": {
-            "price": 2.0,
-            "point": -18.5,
-            "prob": 46.8
-          },
-          "Cleveland Cavaliers": {
-            "price": 1.76,
-            "point": 18.5,
-            "prob": 53.2
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.72,
-            "point": 222.5,
-            "prob": 54.3
-          },
-          "Under": {
-            "price": 2.04,
-            "point": 222.5,
-            "prob": 45.7
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Atlanta Hawks": 1.349,
-        "Cleveland Cavaliers": 3.221
-      },
-      "first_seen": "2026-04-10T12:34:28.174092+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Atlanta Hawks": -0.331,
-        "Cleveland Cavaliers": 15.107
-      },
-      "change_pct": {
-        "Atlanta Hawks": -24.54,
-        "Cleveland Cavaliers": 469.02
-      },
-      "is_value_bet": true,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "Atlanta Hawks": 1.349,
-          "Cleveland Cavaliers": 3.221
-        },
-        {
-          "time": "04/10 13:18",
-          "Atlanta Hawks": 1.347,
-          "Cleveland Cavaliers": 3.283
-        },
-        {
-          "time": "04/10 17:14",
-          "Atlanta Hawks": 1.33,
-          "Cleveland Cavaliers": 3.425
-        },
-        {
-          "time": "04/10 18:02",
-          "Atlanta Hawks": 1.314,
-          "Cleveland Cavaliers": 3.536
-        },
-        {
-          "time": "04/10 20:53",
-          "Atlanta Hawks": 1.288,
-          "Cleveland Cavaliers": 3.763
-        },
-        {
-          "time": "04/10 21:04",
-          "Atlanta Hawks": 1.283,
-          "Cleveland Cavaliers": 3.797
-        },
-        {
-          "time": "04/10 21:14",
-          "Atlanta Hawks": 1.286,
-          "Cleveland Cavaliers": 3.777
-        },
-        {
-          "time": "04/10 21:23",
-          "Atlanta Hawks": 1.286,
-          "Cleveland Cavaliers": 3.777
-        },
-        {
-          "time": "04/10 21:33",
-          "Atlanta Hawks": 1.286,
-          "Cleveland Cavaliers": 3.777
-        },
-        {
-          "time": "04/10 23:43",
-          "Atlanta Hawks": 1.299,
-          "Cleveland Cavaliers": 3.646
-        },
-        {
-          "time": "04/11 08:45",
-          "Atlanta Hawks": 1.018,
-          "Cleveland Cavaliers": 18.328
-        }
-      ],
-      "h2h_history": [
-        {
-          "date": "2026-04-10",
-          "home": "Atlanta Hawks",
-          "away": "Cleveland Cavaliers",
-          "score": "61-48"
-        },
-        {
-          "date": "2026-04-08",
-          "home": "Cleveland Cavaliers",
-          "away": "Atlanta Hawks",
-          "score": "122-116"
-        }
-      ],
-      "home_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-10",
-            "opponent": "Cleveland Cavaliers",
-            "score": "61-48",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-08",
-            "opponent": "Atlanta Hawks",
-            "score": "122-116",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "sharp_moves": [
-        {
-          "team": "Atlanta Hawks",
-          "move_pct": -21.63,
-          "from": 1.299,
-          "to": 1.018,
-          "level": "💰 聪明錢訊號",
-          "message": "Atlanta Hawks 賠率 1.30→1.02 (-21.6%)"
-        }
-      ],
-      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
-      "analysis_source": "fallback"
-    },
-    "1126b937945abff19e12dc1ac60f2ecb": {
-      "id": "1126b937945abff19e12dc1ac60f2ecb",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Charlotte Hornets",
-      "away_team": "Detroit Pistons",
-      "commence_time": "2026-04-10T23:12:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Charlotte Hornets": {
-                "price": 1.54
-              },
-              "Detroit Pistons": {
-                "price": 2.44
-              }
-            },
-            "spreads": {
-              "Charlotte Hornets": {
-                "price": 1.76,
-                "point": -2.5,
-                "prob": 53.2
-              },
-              "Detroit Pistons": {
-                "price": 2.0,
-                "point": 2.5,
-                "prob": 46.8
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.68,
-                "point": 244.5,
-                "prob": 55.6
-              },
-              "Under": {
-                "price": 2.1,
-                "point": 244.5,
-                "prob": 44.4
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Charlotte Hornets": {
-                "price": 1.53
-              },
-              "Detroit Pistons": {
-                "price": 2.5
-              }
-            },
-            "spreads": {
-              "Charlotte Hornets": {
-                "price": 1.91,
-                "point": -3.5
-              },
-              "Detroit Pistons": {
-                "price": 1.91,
-                "point": 3.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.0,
-                "point": 246.5
-              },
-              "Under": {
-                "price": 1.8,
-                "point": 246.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Betclic (FR)",
-          "markets": {
-            "h2h": {
-              "Charlotte Hornets": {
-                "price": 1.7
-              },
-              "Detroit Pistons": {
-                "price": 2.0
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Charlotte Hornets": 1.556,
-        "Detroit Pistons": 2.395
-      },
-      "true_probs": {
-        "Charlotte Hornets": 60.6,
-        "Detroit Pistons": 39.4
-      },
-      "other_markets": {
-        "spreads": {
-          "Charlotte Hornets": {
-            "price": 1.76,
-            "point": -2.5,
-            "prob": 53.2
-          },
-          "Detroit Pistons": {
-            "price": 2.0,
-            "point": 2.5,
-            "prob": 46.8
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.68,
-            "point": 244.5,
-            "prob": 55.6
-          },
-          "Under": {
-            "price": 2.1,
-            "point": 244.5,
-            "prob": 44.4
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Charlotte Hornets": 1.7,
-        "Detroit Pistons": 2.2
-      },
-      "first_seen": "2026-04-10T09:50:55.996948+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Charlotte Hornets": -0.144,
-        "Detroit Pistons": 0.195
-      },
-      "change_pct": {
-        "Charlotte Hornets": -8.47,
-        "Detroit Pistons": 8.86
-      },
-      "is_value_bet": true,
-      "odds_timeline": [
-        {
-          "time": "04/10 09:50",
-          "Charlotte Hornets": 1.7,
-          "Detroit Pistons": 2.2
-        },
-        {
-          "time": "04/10 12:34",
-          "Charlotte Hornets": 1.622,
-          "Detroit Pistons": 2.308
-        },
-        {
-          "time": "04/10 13:18",
-          "Charlotte Hornets": 1.621,
-          "Detroit Pistons": 2.325
-        },
-        {
-          "time": "04/10 17:14",
-          "Charlotte Hornets": 1.579,
-          "Detroit Pistons": 2.431
-        },
-        {
-          "time": "04/10 18:02",
-          "Charlotte Hornets": 1.578,
-          "Detroit Pistons": 2.435
-        },
-        {
-          "time": "04/10 20:53",
-          "Charlotte Hornets": 1.502,
-          "Detroit Pistons": 2.653
-        },
-        {
-          "time": "04/10 21:04",
-          "Charlotte Hornets": 1.502,
-          "Detroit Pistons": 2.65
-        },
-        {
-          "time": "04/10 21:14",
-          "Charlotte Hornets": 1.501,
-          "Detroit Pistons": 2.655
-        },
-        {
-          "time": "04/10 21:23",
-          "Charlotte Hornets": 1.501,
-          "Detroit Pistons": 2.654
-        },
-        {
-          "time": "04/10 21:33",
-          "Charlotte Hornets": 1.5,
-          "Detroit Pistons": 2.656
-        },
-        {
-          "time": "04/10 23:43",
-          "Charlotte Hornets": 1.496,
-          "Detroit Pistons": 2.672
-        },
-        {
-          "time": "04/11 08:45",
-          "Charlotte Hornets": 1.556,
-          "Detroit Pistons": 2.395
-        }
-      ],
-      "h2h_history": [
-        {
-          "date": "2026-04-10",
-          "home": "Charlotte Hornets",
-          "away": "Detroit Pistons",
-          "score": "64-68"
-        }
-      ],
-      "home_form": {
-        "record": "L",
-        "wins": 0,
-        "losses": 1,
-        "home_record": "L",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-10",
-            "opponent": "Detroit Pistons",
-            "score": "64-68",
-            "result": "L",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-08",
-            "opponent": "Milwaukee Bucks",
-            "score": "137-111",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "sharp_moves": [
-        {
-          "team": "Detroit Pistons",
-          "move_pct": -10.37,
-          "from": 2.672,
-          "to": 2.395,
-          "level": "🔥 急速移動",
-          "message": "Detroit Pistons 賠率 2.67→2.40 (-10.4%)"
-        }
-      ],
-      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
-      "analysis_source": "rule_based"
-    },
-    "f47d78a747510d6ef00500f74872372d": {
-      "id": "f47d78a747510d6ef00500f74872372d",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Washington Wizards",
-      "away_team": "Miami Heat",
-      "commence_time": "2026-04-10T23:14:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Miami Heat": {
-                "price": 1.01
-              },
-              "Washington Wizards": {
-                "price": 19.0
-              }
-            },
-            "spreads": {
-              "Miami Heat": {
-                "price": 2.02,
-                "point": -18.5,
-                "prob": 46.3
-              },
-              "Washington Wizards": {
-                "price": 1.74,
-                "point": 18.5,
-                "prob": 53.7
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.88,
-                "point": 250.5,
-                "prob": 50.0
-              },
-              "Under": {
-                "price": 1.88,
-                "point": 250.5,
-                "prob": 50.0
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Miami Heat": {
-                "price": 1.01
-              },
-              "Washington Wizards": {
-                "price": 21.0
-              }
-            },
-            "spreads": {
-              "Miami Heat": {
-                "price": 2.0,
-                "point": -17.5
-              },
-              "Washington Wizards": {
-                "price": 1.8,
-                "point": 17.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.8,
-                "point": 251.5
-              },
-              "Under": {
-                "price": 2.0,
-                "point": 251.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Coolbet",
-          "markets": {
-            "h2h": {
-              "Miami Heat": {
-                "price": 1.01
-              },
-              "Washington Wizards": {
-                "price": 14.5
-              }
-            },
-            "spreads": {
-              "Miami Heat": {
-                "price": 1.85,
-                "point": -16.5
-              },
-              "Washington Wizards": {
-                "price": 1.95,
-                "point": 16.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.85,
-                "point": 250.5
-              },
-              "Under": {
-                "price": 1.9,
-                "point": 250.5
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Miami Heat": 1.011,
-        "Washington Wizards": 24.112
-      },
-      "true_probs": {
-        "Miami Heat": 96.0,
-        "Washington Wizards": 4.0
-      },
-      "other_markets": {
-        "spreads": {
-          "Miami Heat": {
-            "price": 2.02,
-            "point": -18.5,
-            "prob": 46.3
-          },
-          "Washington Wizards": {
-            "price": 1.74,
-            "point": 18.5,
-            "prob": 53.7
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.88,
-            "point": 250.5,
-            "prob": 50.0
-          },
-          "Under": {
-            "price": 1.88,
-            "point": 250.5,
-            "prob": 50.0
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Miami Heat": 1.051,
-        "Washington Wizards": 10.243
-      },
-      "first_seen": "2026-04-10T12:34:28.174115+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Miami Heat": -0.04,
-        "Washington Wizards": 13.869
-      },
-      "change_pct": {
-        "Miami Heat": -3.81,
-        "Washington Wizards": 135.4
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "Miami Heat": 1.051,
-          "Washington Wizards": 10.243
-        },
-        {
-          "time": "04/10 13:18",
-          "Miami Heat": 1.053,
-          "Washington Wizards": 10.448
-        },
-        {
-          "time": "04/10 17:14",
-          "Miami Heat": 1.056,
-          "Washington Wizards": 10.419
-        },
-        {
-          "time": "04/10 18:02",
-          "Miami Heat": 1.056,
-          "Washington Wizards": 10.398
-        },
-        {
-          "time": "04/10 20:53",
-          "Miami Heat": 1.055,
-          "Washington Wizards": 10.572
-        },
-        {
-          "time": "04/10 21:04",
-          "Miami Heat": 1.055,
-          "Washington Wizards": 10.67
-        },
-        {
-          "time": "04/10 21:14",
-          "Miami Heat": 1.054,
-          "Washington Wizards": 10.703
-        },
-        {
-          "time": "04/10 21:23",
-          "Miami Heat": 1.054,
-          "Washington Wizards": 10.751
-        },
-        {
-          "time": "04/10 21:33",
-          "Miami Heat": 1.054,
-          "Washington Wizards": 10.751
-        },
-        {
-          "time": "04/10 23:43",
-          "Miami Heat": 1.052,
-          "Washington Wizards": 10.813
-        },
-        {
-          "time": "04/11 08:45",
-          "Miami Heat": 1.011,
-          "Washington Wizards": 24.112
-        }
-      ],
-      "injury_alerts": [
-        {
-          "team": "Washington Wizards",
-          "title": "Sarr (toe) to miss Wizards' final three games",
-          "link": "https://www.espn.com/nba/story/_/id/48442649/alex-sarr-miss-wizards-final-three-games-toe-injury"
-        }
-      ],
-      "h2h_history": [
-        {
-          "date": "2026-04-10",
-          "home": "Washington Wizards",
-          "away": "Miami Heat",
-          "score": "52-72"
-        },
-        {
-          "date": "2026-04-04",
-          "home": "Miami Heat",
-          "away": "Washington Wizards",
-          "score": "152-136"
-        }
-      ],
-      "home_form": {
-        "record": "L",
-        "wins": 0,
-        "losses": 1,
-        "home_record": "L",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-10",
-            "opponent": "Miami Heat",
-            "score": "52-72",
-            "result": "L",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-04",
-            "opponent": "Washington Wizards",
-            "score": "152-136",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
-      "analysis_source": "fallback"
-    },
-    "4398234154ac742bd22d689c8d4bf956": {
-      "id": "4398234154ac742bd22d689c8d4bf956",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Indiana Pacers",
-      "away_team": "Philadelphia 76ers",
-      "commence_time": "2026-04-10T23:41:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Indiana Pacers": {
-                "price": 10.0
-              },
-              "Philadelphia 76ers": {
-                "price": 1.03
-              }
-            },
-            "spreads": {
-              "Indiana Pacers": {
-                "price": 1.77,
-                "point": 14.5,
-                "prob": 52.8
-              },
-              "Philadelphia 76ers": {
-                "price": 1.98,
-                "point": -14.5,
-                "prob": 47.2
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.1,
-                "point": 223.5,
-                "prob": 44.4
-              },
-              "Under": {
-                "price": 1.68,
-                "point": 223.5,
-                "prob": 55.6
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Indiana Pacers": {
-                "price": 11.0
-              },
-              "Philadelphia 76ers": {
-                "price": 1.04
-              }
-            },
-            "spreads": {
-              "Indiana Pacers": {
-                "price": 2.0,
-                "point": 13.5
-              },
-              "Philadelphia 76ers": {
-                "price": 1.8,
-                "point": -13.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 223.5
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 223.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Betclic (FR)",
-          "markets": {
-            "h2h": {
-              "Indiana Pacers": {
-                "price": 9.0
-              },
-              "Philadelphia 76ers": {
-                "price": 1.03
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Indiana Pacers": 10.629,
-        "Philadelphia 76ers": 1.039
-      },
-      "true_probs": {
-        "Indiana Pacers": 8.9,
-        "Philadelphia 76ers": 91.1
-      },
-      "other_markets": {
-        "spreads": {
-          "Indiana Pacers": {
-            "price": 1.77,
-            "point": 14.5,
-            "prob": 52.8
-          },
-          "Philadelphia 76ers": {
-            "price": 1.98,
-            "point": -14.5,
-            "prob": 47.2
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 2.1,
-            "point": 223.5,
-            "prob": 44.4
-          },
-          "Under": {
-            "price": 1.68,
-            "point": 223.5,
-            "prob": 55.6
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Indiana Pacers": 7.729,
-        "Philadelphia 76ers": 1.08
-      },
-      "first_seen": "2026-04-10T12:34:28.174126+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Indiana Pacers": 2.9,
-        "Philadelphia 76ers": -0.041
-      },
-      "change_pct": {
-        "Indiana Pacers": 37.52,
-        "Philadelphia 76ers": -3.8
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "Indiana Pacers": 7.729,
-          "Philadelphia 76ers": 1.08
-        },
-        {
-          "time": "04/10 13:18",
-          "Indiana Pacers": 8.101,
-          "Philadelphia 76ers": 1.079
-        },
-        {
-          "time": "04/10 17:14",
-          "Indiana Pacers": 8.424,
-          "Philadelphia 76ers": 1.079
-        },
-        {
-          "time": "04/10 18:02",
-          "Indiana Pacers": 8.409,
-          "Philadelphia 76ers": 1.08
-        },
-        {
-          "time": "04/10 20:53",
-          "Indiana Pacers": 8.021,
-          "Philadelphia 76ers": 1.088
-        },
-        {
-          "time": "04/10 21:04",
-          "Indiana Pacers": 8.021,
-          "Philadelphia 76ers": 1.088
-        },
-        {
-          "time": "04/10 21:14",
-          "Indiana Pacers": 7.769,
-          "Philadelphia 76ers": 1.093
-        },
-        {
-          "time": "04/10 21:23",
-          "Indiana Pacers": 7.779,
-          "Philadelphia 76ers": 1.092
-        },
-        {
-          "time": "04/10 21:33",
-          "Indiana Pacers": 7.779,
-          "Philadelphia 76ers": 1.092
-        },
-        {
-          "time": "04/10 23:43",
-          "Indiana Pacers": 8.168,
-          "Philadelphia 76ers": 1.086
-        },
-        {
-          "time": "04/11 08:45",
-          "Indiana Pacers": 10.629,
-          "Philadelphia 76ers": 1.039
-        }
-      ],
-      "injury_alerts": [
-        {
-          "team": "Philadelphia 76ers",
-          "title": "76ers' Embiid out of hospital; no timeline to play",
-          "link": "https://www.espn.com/nba/story/_/id/48450628/76ers-star-joel-embiid-hospital-one-day-surgery"
-        }
-      ],
-      "h2h_history": [
-        {
-          "date": "2026-04-10",
-          "home": "Indiana Pacers",
-          "away": "Philadelphia 76ers",
-          "score": "26-36"
-        }
-      ],
-      "home_form": {
-        "record": "L",
-        "wins": 0,
-        "losses": 1,
-        "home_record": "L",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-10",
-            "opponent": "Philadelphia 76ers",
-            "score": "26-36",
-            "result": "L",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "L",
-        "wins": 0,
-        "losses": 1,
-        "home_record": "L",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-04",
-            "opponent": "Detroit Pistons",
-            "score": "93-116",
-            "result": "L",
-            "venue": "主"
-          }
-        ]
-      },
-      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
-      "analysis_source": "fallback"
-    },
-    "80adae4b4459f5602f7500d94892f2a5": {
-      "id": "80adae4b4459f5602f7500d94892f2a5",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Boston Celtics",
-      "away_team": "New Orleans Pelicans",
-      "commence_time": "2026-04-10T23:42:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "spreads": {
-              "Boston Celtics": {
-                "price": 1.85,
-                "point": -34.5,
-                "prob": 50.5
-              },
-              "New Orleans Pelicans": {
-                "price": 1.89,
-                "point": 34.5,
-                "prob": 49.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.02,
-                "point": 248.5,
-                "prob": 46.3
-              },
-              "Under": {
-                "price": 1.74,
-                "point": 248.5,
-                "prob": 53.7
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "spreads": {
-              "Boston Celtics": {
-                "price": 1.91,
-                "point": -34.5
-              },
-              "New Orleans Pelicans": {
-                "price": 1.91,
-                "point": 34.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.8,
-                "point": 247.5
-              },
-              "Under": {
-                "price": 2.0,
-                "point": 247.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Coolbet",
-          "markets": {
-            "h2h": {
-              "Boston Celtics": {
-                "price": 1.0
-              },
-              "New Orleans Pelicans": {
-                "price": 16.5
-              }
-            },
-            "spreads": {
-              "Boston Celtics": {
-                "price": 1.85,
-                "point": -34.5
-              },
-              "New Orleans Pelicans": {
-                "price": 1.95,
-                "point": 34.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.9,
-                "point": 247.5
-              },
-              "Under": {
-                "price": 1.9,
-                "point": 247.5
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Boston Celtics": 1.02,
-        "New Orleans Pelicans": 20.067
-      },
-      "true_probs": {
-        "Boston Celtics": 95.2,
-        "New Orleans Pelicans": 4.8
-      },
-      "other_markets": {
-        "spreads": {
-          "Boston Celtics": {
-            "price": 1.85,
-            "point": -34.5,
-            "prob": 50.5
-          },
-          "New Orleans Pelicans": {
-            "price": 1.89,
-            "point": 34.5,
-            "prob": 49.5
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 2.02,
-            "point": 248.5,
-            "prob": 46.3
-          },
-          "Under": {
-            "price": 1.74,
-            "point": 248.5,
-            "prob": 53.7
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Boston Celtics": 1.065,
-        "New Orleans Pelicans": 8.553
-      },
-      "first_seen": "2026-04-10T12:34:28.174122+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Boston Celtics": -0.045,
-        "New Orleans Pelicans": 11.514
-      },
-      "change_pct": {
-        "Boston Celtics": -4.23,
-        "New Orleans Pelicans": 134.62
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "Boston Celtics": 1.065,
-          "New Orleans Pelicans": 8.553
-        },
-        {
-          "time": "04/10 13:18",
-          "Boston Celtics": 1.065,
-          "New Orleans Pelicans": 9.007
-        },
-        {
-          "time": "04/10 17:14",
-          "Boston Celtics": 1.067,
-          "New Orleans Pelicans": 9.4
-        },
-        {
-          "time": "04/10 18:02",
-          "Boston Celtics": 1.066,
-          "New Orleans Pelicans": 9.4
-        },
-        {
-          "time": "04/10 20:53",
-          "Boston Celtics": 1.066,
-          "New Orleans Pelicans": 9.549
-        },
-        {
-          "time": "04/10 21:04",
-          "Boston Celtics": 1.064,
-          "New Orleans Pelicans": 9.608
-        },
-        {
-          "time": "04/10 21:14",
-          "Boston Celtics": 1.064,
-          "New Orleans Pelicans": 9.637
-        },
-        {
-          "time": "04/10 21:23",
-          "Boston Celtics": 1.064,
-          "New Orleans Pelicans": 9.63
-        },
-        {
-          "time": "04/10 21:33",
-          "Boston Celtics": 1.064,
-          "New Orleans Pelicans": 9.631
-        },
-        {
-          "time": "04/10 23:43",
-          "Boston Celtics": 1.056,
-          "New Orleans Pelicans": 10.366
-        },
-        {
-          "time": "04/11 08:45",
-          "Boston Celtics": 1.02,
-          "New Orleans Pelicans": 20.067
-        }
-      ],
-      "h2h_history": [
-        {
-          "date": "2026-04-10",
-          "home": "Boston Celtics",
-          "away": "New Orleans Pelicans",
-          "score": "49-32"
-        }
-      ],
-      "home_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-10",
-            "opponent": "New Orleans Pelicans",
-            "score": "49-32",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-08",
-            "opponent": "Utah Jazz",
-            "score": "156-137",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
-      "analysis_source": "fallback"
-    },
-    "39083e08e7959b0ec516933d574379cd": {
-      "id": "39083e08e7959b0ec516933d574379cd",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "New York Knicks",
-      "away_team": "Toronto Raptors",
-      "commence_time": "2026-04-10T23:43:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "New York Knicks": {
-                "price": 1.05
-              },
-              "Toronto Raptors": {
-                "price": 9.3
-              }
-            },
-            "spreads": {
-              "New York Knicks": {
-                "price": 1.89,
-                "point": -13.5,
-                "prob": 49.5
-              },
-              "Toronto Raptors": {
-                "price": 1.85,
-                "point": 13.5,
-                "prob": 50.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.98,
-                "point": 199.5,
-                "prob": 47.2
-              },
-              "Under": {
-                "price": 1.77,
-                "point": 199.5,
-                "prob": 52.8
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "New York Knicks": {
-                "price": 1.05
-              },
-              "Toronto Raptors": {
-                "price": 10.0
-              }
-            },
-            "spreads": {
-              "New York Knicks": {
-                "price": 1.8,
-                "point": -13.5
-              },
-              "Toronto Raptors": {
-                "price": 2.0,
-                "point": 13.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 199.5
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 199.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Betclic (FR)",
-          "markets": {
-            "h2h": {
-              "New York Knicks": {
-                "price": 1.02
-              },
-              "Toronto Raptors": {
-                "price": 9.25
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "New York Knicks": 1.061,
-        "Toronto Raptors": 8.98
-      },
-      "true_probs": {
-        "New York Knicks": 89.4,
-        "Toronto Raptors": 10.6
-      },
-      "other_markets": {
-        "spreads": {
-          "New York Knicks": {
-            "price": 1.89,
-            "point": -13.5,
-            "prob": 49.5
-          },
-          "Toronto Raptors": {
-            "price": 1.85,
-            "point": 13.5,
-            "prob": 50.5
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.98,
-            "point": 199.5,
-            "prob": 47.2
-          },
-          "Under": {
-            "price": 1.77,
-            "point": 199.5,
-            "prob": 52.8
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "New York Knicks": 1.371,
-        "Toronto Raptors": 3.008
-      },
-      "first_seen": "2026-04-10T12:34:28.174132+08:00",
-      "is_new": false,
-      "odds_change": {
-        "New York Knicks": -0.31,
-        "Toronto Raptors": 5.972
-      },
-      "change_pct": {
-        "New York Knicks": -22.61,
-        "Toronto Raptors": 198.54
-      },
-      "is_value_bet": true,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "New York Knicks": 1.371,
-          "Toronto Raptors": 3.008
-        },
-        {
-          "time": "04/10 13:18",
-          "New York Knicks": 1.393,
-          "Toronto Raptors": 2.997
-        },
-        {
-          "time": "04/10 17:14",
-          "New York Knicks": 1.387,
-          "Toronto Raptors": 3.077
-        },
-        {
-          "time": "04/10 18:02",
-          "New York Knicks": 1.382,
-          "Toronto Raptors": 3.112
-        },
-        {
-          "time": "04/10 20:53",
-          "New York Knicks": 1.384,
-          "Toronto Raptors": 3.108
-        },
-        {
-          "time": "04/10 21:04",
-          "New York Knicks": 1.384,
-          "Toronto Raptors": 3.109
-        },
-        {
-          "time": "04/10 21:14",
-          "New York Knicks": 1.384,
-          "Toronto Raptors": 3.11
-        },
-        {
-          "time": "04/10 21:23",
-          "New York Knicks": 1.383,
-          "Toronto Raptors": 3.112
-        },
-        {
-          "time": "04/10 21:33",
-          "New York Knicks": 1.383,
-          "Toronto Raptors": 3.113
-        },
-        {
-          "time": "04/10 23:43",
-          "New York Knicks": 1.43,
-          "Toronto Raptors": 2.898
-        },
-        {
-          "time": "04/11 08:45",
-          "New York Knicks": 1.061,
-          "Toronto Raptors": 8.98
-        }
-      ],
-      "h2h_history": [
-        {
-          "date": "2026-04-10",
-          "home": "New York Knicks",
-          "away": "Toronto Raptors",
-          "score": "30-21"
-        }
-      ],
-      "home_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-10",
-            "opponent": "Toronto Raptors",
-            "score": "30-21",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-09",
-            "opponent": "Miami Heat",
-            "score": "128-114",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "sharp_moves": [
-        {
-          "team": "New York Knicks",
-          "move_pct": -25.8,
-          "from": 1.43,
-          "to": 1.061,
-          "level": "💰 聪明錢訊號",
-          "message": "New York Knicks 賠率 1.43→1.06 (-25.8%)"
-        }
-      ],
-      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
-      "analysis_source": "rule_based"
-    },
-    "ebbf0d3885094991ff36055e753635a3": {
-      "id": "ebbf0d3885094991ff36055e753635a3",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Chicago Bulls",
-      "away_team": "Orlando Magic",
-      "commence_time": "2026-04-11T00:11:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Chicago Bulls": {
-                "price": 7.3
-              },
-              "Orlando Magic": {
-                "price": 1.08
-              }
-            },
-            "spreads": {
-              "Chicago Bulls": {
-                "price": 1.8,
-                "point": 14.5,
-                "prob": 51.9
-              },
-              "Orlando Magic": {
-                "price": 1.94,
-                "point": -14.5,
-                "prob": 48.1
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.02,
-                "point": 235.5,
-                "prob": 46.3
-              },
-              "Under": {
-                "price": 1.74,
-                "point": 235.5,
-                "prob": 53.7
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Chicago Bulls": {
-                "price": 8.0
-              },
-              "Orlando Magic": {
-                "price": 1.06
-              }
-            },
-            "spreads": {
-              "Chicago Bulls": {
-                "price": 1.8,
-                "point": 14.5
-              },
-              "Orlando Magic": {
-                "price": 2.0,
-                "point": -14.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 234.5
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 234.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Betclic (FR)",
-          "markets": {
-            "h2h": {
-              "Chicago Bulls": {
-                "price": 6.25
-              },
-              "Orlando Magic": {
-                "price": 1.09
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Chicago Bulls": 8.126,
-        "Orlando Magic": 1.069
-      },
-      "true_probs": {
-        "Chicago Bulls": 11.6,
-        "Orlando Magic": 88.4
-      },
-      "other_markets": {
-        "spreads": {
-          "Chicago Bulls": {
-            "price": 1.8,
-            "point": 14.5,
-            "prob": 51.9
-          },
-          "Orlando Magic": {
-            "price": 1.94,
-            "point": -14.5,
-            "prob": 48.1
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 2.02,
-            "point": 235.5,
-            "prob": 46.3
-          },
-          "Under": {
-            "price": 1.74,
-            "point": 235.5,
-            "prob": 53.7
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Chicago Bulls": 7.077,
-        "Orlando Magic": 1.09
-      },
-      "first_seen": "2026-04-10T12:34:28.174137+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Chicago Bulls": 1.049,
-        "Orlando Magic": -0.021
-      },
-      "change_pct": {
-        "Chicago Bulls": 14.82,
-        "Orlando Magic": -1.93
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "Chicago Bulls": 7.077,
-          "Orlando Magic": 1.09
-        },
-        {
-          "time": "04/10 13:18",
-          "Chicago Bulls": 7.439,
-          "Orlando Magic": 1.091
-        },
-        {
-          "time": "04/10 17:14",
-          "Chicago Bulls": 7.693,
-          "Orlando Magic": 1.093
-        },
-        {
-          "time": "04/10 18:02",
-          "Chicago Bulls": 7.663,
-          "Orlando Magic": 1.093
-        },
-        {
-          "time": "04/10 20:53",
-          "Chicago Bulls": 7.709,
-          "Orlando Magic": 1.093
-        },
-        {
-          "time": "04/10 21:04",
-          "Chicago Bulls": 7.709,
-          "Orlando Magic": 1.093
-        },
-        {
-          "time": "04/10 21:14",
-          "Chicago Bulls": 7.767,
-          "Orlando Magic": 1.092
-        },
-        {
-          "time": "04/10 21:23",
-          "Chicago Bulls": 7.788,
-          "Orlando Magic": 1.092
-        },
-        {
-          "time": "04/10 21:33",
-          "Chicago Bulls": 7.801,
-          "Orlando Magic": 1.092
-        },
-        {
-          "time": "04/10 23:43",
-          "Chicago Bulls": 7.774,
-          "Orlando Magic": 1.092
-        },
-        {
-          "time": "04/11 08:45",
-          "Chicago Bulls": 8.126,
-          "Orlando Magic": 1.069
-        }
-      ],
-      "injury_alerts": [
-        {
-          "team": "Orlando Magic",
-          "title": "NBA fines Magic $25K for injury report violation",
-          "link": "https://www.espn.com/nba/story/_/id/48440537/nba-fines-magic-25k-violating-injury-reporting-rules"
-        }
-      ],
-      "h2h_history": [],
-      "home_form": {
-        "record": "L",
-        "wins": 0,
-        "losses": 1,
-        "home_record": "L",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-05",
-            "opponent": "Phoenix Suns",
-            "score": "110-120",
-            "result": "L",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-08",
-            "opponent": "Minnesota Timberwolves",
-            "score": "132-120",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
-      "analysis_source": "rule_based"
-    },
-    "51aa38f3acd638a314975c61ab16a862": {
-      "id": "51aa38f3acd638a314975c61ab16a862",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "San Antonio Spurs",
-      "away_team": "Dallas Mavericks",
-      "commence_time": "2026-04-11T00:11:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Dallas Mavericks": {
-                "price": 15.0
-              },
-              "San Antonio Spurs": {
-                "price": 1.02
-              }
-            },
-            "spreads": {
-              "Dallas Mavericks": {
-                "price": 1.85,
-                "point": 19.5,
-                "prob": 50.5
-              },
-              "San Antonio Spurs": {
-                "price": 1.89,
-                "point": -19.5,
-                "prob": 49.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.85,
-                "point": 241.5,
-                "prob": 50.5
-              },
-              "Under": {
-                "price": 1.89,
-                "point": 241.5,
-                "prob": 49.5
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Dallas Mavericks": {
-                "price": 13.0
-              },
-              "San Antonio Spurs": {
-                "price": 1.03
-              }
-            },
-            "spreads": {
-              "Dallas Mavericks": {
-                "price": 1.91,
-                "point": 18.5
-              },
-              "San Antonio Spurs": {
-                "price": 1.91,
-                "point": -18.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.0,
-                "point": 242.5
-              },
-              "Under": {
-                "price": 1.8,
-                "point": 242.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Betclic (FR)",
-          "markets": {
-            "h2h": {
-              "Dallas Mavericks": {
-                "price": 20.0
-              },
-              "San Antonio Spurs": {
-                "price": 1.02
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Dallas Mavericks": 13.637,
-        "San Antonio Spurs": 1.027
-      },
-      "true_probs": {
-        "Dallas Mavericks": 7.0,
-        "San Antonio Spurs": 93.0
-      },
-      "other_markets": {
-        "spreads": {
-          "Dallas Mavericks": {
-            "price": 1.85,
-            "point": 19.5,
-            "prob": 50.5
-          },
-          "San Antonio Spurs": {
-            "price": 1.89,
-            "point": -19.5,
-            "prob": 49.5
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.85,
-            "point": 241.5,
-            "prob": 50.5
-          },
-          "Under": {
-            "price": 1.89,
-            "point": 241.5,
-            "prob": 49.5
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Dallas Mavericks": 8.553,
-        "San Antonio Spurs": 1.065
-      },
-      "first_seen": "2026-04-10T09:50:55.996967+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Dallas Mavericks": 5.084,
-        "San Antonio Spurs": -0.038
-      },
-      "change_pct": {
-        "Dallas Mavericks": 59.44,
-        "San Antonio Spurs": -3.57
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 09:50",
-          "Dallas Mavericks": 8.553,
-          "San Antonio Spurs": 1.065
-        },
-        {
-          "time": "04/10 12:34",
-          "Dallas Mavericks": 9.588,
-          "San Antonio Spurs": 1.059
-        },
-        {
-          "time": "04/10 13:18",
-          "Dallas Mavericks": 9.701,
-          "San Antonio Spurs": 1.057
-        },
-        {
-          "time": "04/10 17:14",
-          "Dallas Mavericks": 10.217,
-          "San Antonio Spurs": 1.056
-        },
-        {
-          "time": "04/10 18:02",
-          "Dallas Mavericks": 10.196,
-          "San Antonio Spurs": 1.056
-        },
-        {
-          "time": "04/10 20:53",
-          "Dallas Mavericks": 10.387,
-          "San Antonio Spurs": 1.056
-        },
-        {
-          "time": "04/10 21:04",
-          "Dallas Mavericks": 10.531,
-          "San Antonio Spurs": 1.055
-        },
-        {
-          "time": "04/10 21:14",
-          "Dallas Mavericks": 10.416,
-          "San Antonio Spurs": 1.056
-        },
-        {
-          "time": "04/10 21:23",
-          "Dallas Mavericks": 10.358,
-          "San Antonio Spurs": 1.057
-        },
-        {
-          "time": "04/10 21:33",
-          "Dallas Mavericks": 10.385,
-          "San Antonio Spurs": 1.057
-        },
-        {
-          "time": "04/10 23:43",
-          "Dallas Mavericks": 10.377,
-          "San Antonio Spurs": 1.057
-        },
-        {
-          "time": "04/11 08:45",
-          "Dallas Mavericks": 13.637,
-          "San Antonio Spurs": 1.027
-        }
-      ],
-      "injury_alerts": [
-        {
-          "team": "San Antonio Spurs",
-          "title": "Spurs lead race for Robertson - Saturday's gossip",
-          "link": "https://www.bbc.com/sport/football/articles/c5yw9y4x4geo?at_medium=RSS&at_campaign=rss"
-        }
-      ],
-      "h2h_history": [],
-      "home_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-09",
-            "opponent": "Portland Trail Blazers",
-            "score": "112-101",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-04-05",
-            "opponent": "Los Angeles Lakers",
-            "score": "134-128",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
-      "analysis_source": "fallback"
-    },
-    "d463e0aa51436ff32f8ee83d6d3893a8": {
-      "id": "d463e0aa51436ff32f8ee83d6d3893a8",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Milwaukee Bucks",
-      "away_team": "Brooklyn Nets",
-      "commence_time": "2026-04-11T00:13:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Brooklyn Nets": {
-                "price": 12.0
-              },
-              "Milwaukee Bucks": {
-                "price": 1.02
-              }
-            },
-            "spreads": {
-              "Brooklyn Nets": {
-                "price": 1.69,
-                "point": 18.5,
-                "prob": 55.2
-              },
-              "Milwaukee Bucks": {
-                "price": 2.08,
-                "point": -18.5,
-                "prob": 44.8
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.88,
-                "point": 229.5,
-                "prob": 50.0
-              },
-              "Under": {
-                "price": 1.88,
-                "point": 229.5,
-                "prob": 50.0
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Brooklyn Nets": {
-                "price": 10.0
-              },
-              "Milwaukee Bucks": {
-                "price": 1.05
-              }
-            },
-            "spreads": {
-              "Brooklyn Nets": {
-                "price": 1.8,
-                "point": 16.5
-              },
-              "Milwaukee Bucks": {
-                "price": 2.0,
-                "point": -16.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 226.5
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 226.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Winamax (FR)",
-          "markets": {
-            "h2h": {
-              "Brooklyn Nets": {
-                "price": 11.5
-              },
-              "Milwaukee Bucks": {
-                "price": 1.02
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Brooklyn Nets": 9.917,
-        "Milwaukee Bucks": 1.046
-      },
-      "true_probs": {
-        "Brooklyn Nets": 9.5,
-        "Milwaukee Bucks": 90.5
-      },
-      "other_markets": {
-        "spreads": {
-          "Brooklyn Nets": {
-            "price": 1.69,
-            "point": 18.5,
-            "prob": 55.2
-          },
-          "Milwaukee Bucks": {
-            "price": 2.08,
-            "point": -18.5,
-            "prob": 44.8
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.88,
-            "point": 229.5,
-            "prob": 50.0
-          },
-          "Under": {
-            "price": 1.88,
-            "point": 229.5,
-            "prob": 50.0
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Brooklyn Nets": 3.977,
-        "Milwaukee Bucks": 1.233
-      },
-      "first_seen": "2026-04-10T12:34:28.174135+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Brooklyn Nets": 5.94,
-        "Milwaukee Bucks": -0.187
-      },
-      "change_pct": {
-        "Brooklyn Nets": 149.36,
-        "Milwaukee Bucks": -15.17
-      },
-      "is_value_bet": true,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "Brooklyn Nets": 3.977,
-          "Milwaukee Bucks": 1.233
-        },
-        {
-          "time": "04/10 13:18",
-          "Brooklyn Nets": 4.36,
-          "Milwaukee Bucks": 1.219
-        },
-        {
-          "time": "04/10 17:14",
-          "Brooklyn Nets": 4.496,
-          "Milwaukee Bucks": 1.216
-        },
-        {
-          "time": "04/10 18:02",
-          "Brooklyn Nets": 4.497,
-          "Milwaukee Bucks": 1.215
-        },
-        {
-          "time": "04/10 20:53",
-          "Brooklyn Nets": 4.591,
-          "Milwaukee Bucks": 1.21
-        },
-        {
-          "time": "04/10 21:04",
-          "Brooklyn Nets": 4.572,
-          "Milwaukee Bucks": 1.211
-        },
-        {
-          "time": "04/10 21:14",
-          "Brooklyn Nets": 4.544,
-          "Milwaukee Bucks": 1.213
-        },
-        {
-          "time": "04/10 21:23",
-          "Brooklyn Nets": 4.54,
-          "Milwaukee Bucks": 1.214
-        },
-        {
-          "time": "04/10 21:33",
-          "Brooklyn Nets": 4.545,
-          "Milwaukee Bucks": 1.214
-        },
-        {
-          "time": "04/10 23:43",
-          "Brooklyn Nets": 4.603,
-          "Milwaukee Bucks": 1.21
-        },
-        {
-          "time": "04/11 08:45",
-          "Brooklyn Nets": 9.917,
-          "Milwaukee Bucks": 1.046
-        }
-      ],
-      "sharp_moves": [
-        {
-          "team": "Milwaukee Bucks",
-          "move_pct": -13.55,
-          "from": 1.21,
-          "to": 1.046,
-          "level": "🔥 急速移動",
-          "message": "Milwaukee Bucks 賠率 1.21→1.05 (-13.6%)"
-        }
-      ],
-      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
-      "analysis_source": "rule_based"
-    },
-    "11fa8c6f7710a287909a9765aa925cce": {
-      "id": "11fa8c6f7710a287909a9765aa925cce",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Denver Nuggets",
-      "away_team": "Oklahoma City Thunder",
-      "commence_time": "2026-04-11T01:10:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Denver Nuggets": {
-                "price": 1.76
-              },
-              "Oklahoma City Thunder": {
-                "price": 2.12
-              }
-            },
-            "spreads": {
-              "Denver Nuggets": {
-                "price": 1.91,
-                "point": -2.0,
-                "prob": 50.0
-              },
-              "Oklahoma City Thunder": {
-                "price": 1.91,
-                "point": 2.0,
-                "prob": 50.0
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.89,
-                "point": 222.5,
-                "prob": 50.5
-              },
-              "Under": {
-                "price": 1.93,
-                "point": 222.5,
-                "prob": 49.5
-              }
-            }
-          }
-        },
-        {
-          "name": "1xBet",
-          "markets": {
-            "h2h": {
-              "Denver Nuggets": {
-                "price": 1.81
-              },
-              "Oklahoma City Thunder": {
-                "price": 2.14
-              }
-            },
-            "spreads": {
-              "Denver Nuggets": {
-                "price": 1.94,
-                "point": -1.5
-              },
-              "Oklahoma City Thunder": {
-                "price": 1.98,
-                "point": 1.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.94,
-                "point": 222.5
-              },
-              "Under": {
-                "price": 1.98,
-                "point": 222.5
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Denver Nuggets": {
-                "price": 1.73
-              },
-              "Oklahoma City Thunder": {
-                "price": 2.1
-              }
-            },
-            "spreads": {
-              "Denver Nuggets": {
-                "price": 2.0,
-                "point": -2.5
-              },
-              "Oklahoma City Thunder": {
-                "price": 1.8,
-                "point": 2.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 223.5
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 223.5
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Denver Nuggets": 1.745,
-        "Oklahoma City Thunder": 2.13
-      },
-      "true_probs": {
-        "Denver Nuggets": 55.0,
-        "Oklahoma City Thunder": 45.0
-      },
-      "other_markets": {
-        "spreads": {
-          "Denver Nuggets": {
-            "price": 1.91,
-            "point": -2.0,
-            "prob": 50.0
-          },
-          "Oklahoma City Thunder": {
-            "price": 1.91,
-            "point": 2.0,
-            "prob": 50.0
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.89,
-            "point": 222.5,
-            "prob": 50.5
-          },
-          "Under": {
-            "price": 1.93,
-            "point": 222.5,
-            "prob": 49.5
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Denver Nuggets": 1.2,
-        "Oklahoma City Thunder": 3.898
-      },
-      "first_seen": "2026-04-10T12:34:28.174150+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Denver Nuggets": 0.545,
-        "Oklahoma City Thunder": -1.768
-      },
-      "change_pct": {
-        "Denver Nuggets": 45.42,
-        "Oklahoma City Thunder": -45.36
-      },
-      "is_value_bet": true,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "Denver Nuggets": 1.2,
-          "Oklahoma City Thunder": 3.898
-        },
-        {
-          "time": "04/10 13:18",
-          "Denver Nuggets": 1.21,
-          "Oklahoma City Thunder": 3.856
-        },
-        {
-          "time": "04/10 17:14",
-          "Denver Nuggets": 1.186,
-          "Oklahoma City Thunder": 4.943
-        },
-        {
-          "time": "04/10 18:02",
-          "Denver Nuggets": 1.18,
-          "Oklahoma City Thunder": 5.02
-        },
-        {
-          "time": "04/10 20:53",
-          "Denver Nuggets": 1.173,
-          "Oklahoma City Thunder": 5.235
-        },
-        {
-          "time": "04/10 21:04",
-          "Denver Nuggets": 1.167,
-          "Oklahoma City Thunder": 5.335
-        },
-        {
-          "time": "04/10 21:14",
-          "Denver Nuggets": 1.167,
-          "Oklahoma City Thunder": 5.353
-        },
-        {
-          "time": "04/10 21:23",
-          "Denver Nuggets": 1.166,
-          "Oklahoma City Thunder": 5.372
-        },
-        {
-          "time": "04/10 21:33",
-          "Denver Nuggets": 1.166,
-          "Oklahoma City Thunder": 5.37
-        },
-        {
-          "time": "04/10 23:43",
-          "Denver Nuggets": 1.165,
-          "Oklahoma City Thunder": 5.422
-        },
-        {
-          "time": "04/11 08:45",
-          "Denver Nuggets": 1.745,
-          "Oklahoma City Thunder": 2.13
-        }
-      ],
-      "injury_alerts": [
-        {
-          "team": "Oklahoma City Thunder",
-          "title": "Fernandez sorry but will miss Man City - Rosenior",
-          "link": "https://www.bbc.com/sport/football/articles/c70drp00yyqo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "team": "Oklahoma City Thunder",
-          "title": "Chelsea's Rosenior: Enzo sorry, but still out vs. City",
-          "link": "https://www.espn.com/soccer/story/_/id/48446876/enzo-fernandez-apologised-chelsea-vs-man-city-chelsea-liam-rosenior"
-        }
-      ],
-      "sharp_moves": [
-        {
-          "team": "Oklahoma City Thunder",
-          "move_pct": -60.72,
-          "from": 5.422,
-          "to": 2.13,
-          "level": "💰 聪明錢訊號",
-          "message": "Oklahoma City Thunder 賠率 5.42→2.13 (-60.7%)"
-        }
-      ]
-    },
-    "1fbdc557471472d90b606f5e50853915": {
-      "id": "1fbdc557471472d90b606f5e50853915",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Houston Rockets",
-      "away_team": "Minnesota Timberwolves",
-      "commence_time": "2026-04-11T01:40:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Houston Rockets": {
-                "price": 1.24
-              },
-              "Minnesota Timberwolves": {
-                "price": 4.3
-              }
-            },
-            "spreads": {
-              "Houston Rockets": {
-                "price": 1.88,
-                "point": -9.5,
-                "prob": 50.8
-              },
-              "Minnesota Timberwolves": {
-                "price": 1.94,
-                "point": 9.5,
-                "prob": 49.2
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 226.5,
-                "prob": 50.0
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 226.5,
-                "prob": 50.0
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Houston Rockets": {
-                "price": 1.2
-              },
-              "Minnesota Timberwolves": {
-                "price": 4.5
-              }
-            },
-            "spreads": {
-              "Houston Rockets": {
-                "price": 1.91,
-                "point": -9.5
-              },
-              "Minnesota Timberwolves": {
-                "price": 1.91,
-                "point": 9.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.0,
-                "point": 226.5
-              },
-              "Under": {
-                "price": 1.8,
-                "point": 226.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Unibet (FR)",
-          "markets": {
-            "h2h": {
-              "Houston Rockets": {
-                "price": 1.23
-              },
-              "Minnesota Timberwolves": {
-                "price": 4.65
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Houston Rockets": 1.217,
-        "Minnesota Timberwolves": 4.519
-      },
-      "true_probs": {
-        "Houston Rockets": 78.8,
-        "Minnesota Timberwolves": 21.2
-      },
-      "other_markets": {
-        "spreads": {
-          "Houston Rockets": {
-            "price": 1.88,
-            "point": -9.5,
-            "prob": 50.8
-          },
-          "Minnesota Timberwolves": {
-            "price": 1.94,
-            "point": 9.5,
-            "prob": 49.2
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.91,
-            "point": 226.5,
-            "prob": 50.0
-          },
-          "Under": {
-            "price": 1.91,
-            "point": 226.5,
-            "prob": 50.0
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Houston Rockets": 1.231,
-        "Minnesota Timberwolves": 4.157
-      },
-      "first_seen": "2026-04-10T12:34:28.174152+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Houston Rockets": -0.014,
-        "Minnesota Timberwolves": 0.362
-      },
-      "change_pct": {
-        "Houston Rockets": -1.14,
-        "Minnesota Timberwolves": 8.71
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "Houston Rockets": 1.231,
-          "Minnesota Timberwolves": 4.157
-        },
-        {
-          "time": "04/10 13:18",
-          "Houston Rockets": 1.221,
-          "Minnesota Timberwolves": 4.33
-        },
-        {
-          "time": "04/10 17:14",
-          "Houston Rockets": 1.223,
-          "Minnesota Timberwolves": 4.396
-        },
-        {
-          "time": "04/10 18:02",
-          "Houston Rockets": 1.218,
-          "Minnesota Timberwolves": 4.472
-        },
-        {
-          "time": "04/10 20:53",
-          "Houston Rockets": 1.211,
-          "Minnesota Timberwolves": 4.575
-        },
-        {
-          "time": "04/10 21:04",
-          "Houston Rockets": 1.209,
-          "Minnesota Timberwolves": 4.589
-        },
-        {
-          "time": "04/10 21:14",
-          "Houston Rockets": 1.209,
-          "Minnesota Timberwolves": 4.594
-        },
-        {
-          "time": "04/10 21:23",
-          "Houston Rockets": 1.206,
-          "Minnesota Timberwolves": 4.643
-        },
-        {
-          "time": "04/10 21:33",
-          "Houston Rockets": 1.205,
-          "Minnesota Timberwolves": 4.663
-        },
-        {
-          "time": "04/10 23:43",
-          "Houston Rockets": 1.204,
-          "Minnesota Timberwolves": 4.697
-        },
-        {
-          "time": "04/11 08:45",
-          "Houston Rockets": 1.217,
-          "Minnesota Timberwolves": 4.519
-        }
-      ],
-      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
-      "analysis_source": "rule_based"
-    },
-    "88bf78be502ce70dd7e5e669cd9f95df": {
-      "id": "88bf78be502ce70dd7e5e669cd9f95df",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Utah Jazz",
-      "away_team": "Memphis Grizzlies",
-      "commence_time": "2026-04-11T01:40:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Memphis Grizzlies": {
-                "price": 2.42
-              },
-              "Utah Jazz": {
-                "price": 1.6
-              }
-            },
-            "spreads": {
-              "Memphis Grizzlies": {
-                "price": 1.88,
-                "point": 4.0,
-                "prob": 50.8
-              },
-              "Utah Jazz": {
-                "price": 1.94,
-                "point": -4.0,
-                "prob": 49.2
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.89,
-                "point": 248.5,
-                "prob": 50.5
-              },
-              "Under": {
-                "price": 1.93,
-                "point": 248.5,
-                "prob": 49.5
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Memphis Grizzlies": {
-                "price": 2.3
-              },
-              "Utah Jazz": {
-                "price": 1.61
-              }
-            },
-            "spreads": {
-              "Memphis Grizzlies": {
-                "price": 1.91,
-                "point": 3.5
-              },
-              "Utah Jazz": {
-                "price": 1.91,
-                "point": -3.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 248.5
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 248.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Unibet (FR)",
-          "markets": {
-            "h2h": {
-              "Memphis Grizzlies": {
-                "price": 2.4
-              },
-              "Utah Jazz": {
-                "price": 1.63
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Memphis Grizzlies": 2.368,
-        "Utah Jazz": 1.615
-      },
-      "true_probs": {
-        "Memphis Grizzlies": 40.5,
-        "Utah Jazz": 59.5
-      },
-      "other_markets": {
-        "spreads": {
-          "Memphis Grizzlies": {
-            "price": 1.88,
-            "point": 4.0,
-            "prob": 50.8
-          },
-          "Utah Jazz": {
-            "price": 1.94,
-            "point": -4.0,
-            "prob": 49.2
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.89,
-            "point": 248.5,
-            "prob": 50.5
-          },
-          "Under": {
-            "price": 1.93,
-            "point": 248.5,
-            "prob": 49.5
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Memphis Grizzlies": 2.482,
-        "Utah Jazz": 1.533
-      },
-      "first_seen": "2026-04-10T09:50:55.996969+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Memphis Grizzlies": -0.114,
-        "Utah Jazz": 0.082
-      },
-      "change_pct": {
-        "Memphis Grizzlies": -4.59,
-        "Utah Jazz": 5.35
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 09:50",
-          "Memphis Grizzlies": 2.482,
-          "Utah Jazz": 1.533
-        },
-        {
-          "time": "04/10 12:34",
-          "Memphis Grizzlies": 2.447,
-          "Utah Jazz": 1.561
-        },
-        {
-          "time": "04/10 13:18",
-          "Memphis Grizzlies": 2.435,
-          "Utah Jazz": 1.572
-        },
-        {
-          "time": "04/10 17:14",
-          "Memphis Grizzlies": 2.407,
-          "Utah Jazz": 1.59
-        },
-        {
-          "time": "04/10 18:02",
-          "Memphis Grizzlies": 2.391,
-          "Utah Jazz": 1.599
-        },
-        {
-          "time": "04/10 20:53",
-          "Memphis Grizzlies": 2.372,
-          "Utah Jazz": 1.61
-        },
-        {
-          "time": "04/10 21:04",
-          "Memphis Grizzlies": 2.367,
-          "Utah Jazz": 1.612
-        },
-        {
-          "time": "04/10 21:14",
-          "Memphis Grizzlies": 2.367,
-          "Utah Jazz": 1.612
-        },
-        {
-          "time": "04/10 21:23",
-          "Memphis Grizzlies": 2.353,
-          "Utah Jazz": 1.618
-        },
-        {
-          "time": "04/10 21:33",
-          "Memphis Grizzlies": 2.355,
-          "Utah Jazz": 1.618
-        },
-        {
-          "time": "04/10 23:43",
-          "Memphis Grizzlies": 2.357,
-          "Utah Jazz": 1.618
-        },
-        {
-          "time": "04/11 08:45",
-          "Memphis Grizzlies": 2.368,
-          "Utah Jazz": 1.615
-        }
-      ]
-    },
-    "d6099dffbcac5bbcdf69fd35c6229ff7": {
-      "id": "d6099dffbcac5bbcdf69fd35c6229ff7",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Sacramento Kings",
-      "away_team": "Golden State Warriors",
-      "commence_time": "2026-04-11T02:10:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Golden State Warriors": {
-                "price": 1.2
-              },
-              "Sacramento Kings": {
-                "price": 4.85
-              }
-            },
-            "spreads": {
-              "Golden State Warriors": {
-                "price": 1.93,
-                "point": -11.0,
-                "prob": 49.5
-              },
-              "Sacramento Kings": {
-                "price": 1.89,
-                "point": 11.0,
-                "prob": 50.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.93,
-                "point": 229.5,
-                "prob": 49.5
-              },
-              "Under": {
-                "price": 1.89,
-                "point": 229.5,
-                "prob": 50.5
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Golden State Warriors": {
-                "price": 1.2
-              },
-              "Sacramento Kings": {
-                "price": 4.5
-              }
-            },
-            "spreads": {
-              "Golden State Warriors": {
-                "price": 1.91,
-                "point": -10.5
-              },
-              "Sacramento Kings": {
-                "price": 1.91,
-                "point": 10.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 229.5
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 229.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Unibet (FR)",
-          "markets": {
-            "h2h": {
-              "Golden State Warriors": {
-                "price": 1.2
-              },
-              "Sacramento Kings": {
-                "price": 4.9
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Golden State Warriors": 1.197,
-        "Sacramento Kings": 4.82
-      },
-      "true_probs": {
-        "Golden State Warriors": 80.1,
-        "Sacramento Kings": 19.9
-      },
-      "other_markets": {
-        "spreads": {
-          "Golden State Warriors": {
-            "price": 1.93,
-            "point": -11.0,
-            "prob": 49.5
-          },
-          "Sacramento Kings": {
-            "price": 1.89,
-            "point": 11.0,
-            "prob": 50.5
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.93,
-            "point": 229.5,
-            "prob": 49.5
-          },
-          "Under": {
-            "price": 1.89,
-            "point": 229.5,
-            "prob": 50.5
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Golden State Warriors": 1.182,
-        "Sacramento Kings": 4.339
-      },
-      "first_seen": "2026-04-10T12:34:28.174163+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Golden State Warriors": 0.015,
-        "Sacramento Kings": 0.481
-      },
-      "change_pct": {
-        "Golden State Warriors": 1.27,
-        "Sacramento Kings": 11.09
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 12:34",
-          "Golden State Warriors": 1.182,
-          "Sacramento Kings": 4.339
-        },
-        {
-          "time": "04/10 13:18",
-          "Golden State Warriors": 1.191,
-          "Sacramento Kings": 4.649
-        },
-        {
-          "time": "04/10 17:14",
-          "Golden State Warriors": 1.186,
-          "Sacramento Kings": 4.92
-        },
-        {
-          "time": "04/10 18:02",
-          "Golden State Warriors": 1.19,
-          "Sacramento Kings": 4.887
-        },
-        {
-          "time": "04/10 20:53",
-          "Golden State Warriors": 1.202,
-          "Sacramento Kings": 4.705
-        },
-        {
-          "time": "04/10 21:04",
-          "Golden State Warriors": 1.205,
-          "Sacramento Kings": 4.652
-        },
-        {
-          "time": "04/10 21:14",
-          "Golden State Warriors": 1.206,
-          "Sacramento Kings": 4.652
-        },
-        {
-          "time": "04/10 21:23",
-          "Golden State Warriors": 1.21,
-          "Sacramento Kings": 4.592
-        },
-        {
-          "time": "04/10 21:33",
-          "Golden State Warriors": 1.21,
-          "Sacramento Kings": 4.589
-        },
-        {
-          "time": "04/10 23:43",
-          "Golden State Warriors": 1.207,
-          "Sacramento Kings": 4.645
-        },
-        {
-          "time": "04/11 08:45",
-          "Golden State Warriors": 1.197,
-          "Sacramento Kings": 4.82
-        }
-      ],
-      "injury_alerts": [
-        {
-          "team": "Sacramento Kings",
-          "title": "How to watch Warriors vs. Kings",
-          "link": "https://sports.yahoo.com/articles/watch-warriors-vs-kings-220000023.html"
-        }
-      ],
-      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
-      "analysis_source": "rule_based"
-    },
-    "858993998045b68682b2aae461cb4037": {
-      "id": "858993998045b68682b2aae461cb4037",
-      "sport_key": "basketball_nba",
-      "league": "NBA",
-      "home_team": "Portland Trail Blazers",
-      "away_team": "Los Angeles Clippers",
-      "commence_time": "2026-04-11T02:10:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Los Angeles Clippers": {
-                "price": 2.02
-              },
-              "Portland Trail Blazers": {
-                "price": 1.83
-              }
-            },
-            "spreads": {
-              "Los Angeles Clippers": {
-                "price": 1.93,
-                "point": 1.5,
-                "prob": 49.5
-              },
-              "Portland Trail Blazers": {
-                "price": 1.89,
-                "point": -1.5,
-                "prob": 50.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 226.5,
-                "prob": 50.0
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 226.5,
-                "prob": 50.0
-              }
-            }
-          }
-        },
-        {
-          "name": "888sport",
-          "markets": {
-            "h2h": {
-              "Los Angeles Clippers": {
-                "price": 2.0
-              },
-              "Portland Trail Blazers": {
-                "price": 1.8
-              }
-            },
-            "spreads": {
-              "Los Angeles Clippers": {
-                "price": 1.91,
-                "point": 1.5
-              },
-              "Portland Trail Blazers": {
-                "price": 1.91,
-                "point": -1.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.91,
-                "point": 226.5
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 226.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Unibet (FR)",
-          "markets": {
-            "h2h": {
-              "Los Angeles Clippers": {
-                "price": 2.05
-              },
-              "Portland Trail Blazers": {
-                "price": 1.8
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Los Angeles Clippers": 2.038,
-        "Portland Trail Blazers": 1.806
-      },
-      "true_probs": {
-        "Los Angeles Clippers": 47.0,
-        "Portland Trail Blazers": 53.0
-      },
-      "other_markets": {
-        "spreads": {
-          "Los Angeles Clippers": {
-            "price": 1.93,
-            "point": 1.5,
-            "prob": 49.5
-          },
-          "Portland Trail Blazers": {
-            "price": 1.89,
-            "point": -1.5,
-            "prob": 50.5
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.91,
-            "point": 226.5,
-            "prob": 50.0
-          },
-          "Under": {
-            "price": 1.91,
-            "point": 226.5,
-            "prob": 50.0
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Los Angeles Clippers": 1.993,
-        "Portland Trail Blazers": 1.793
-      },
-      "first_seen": "2026-04-10T09:50:55.996975+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Los Angeles Clippers": 0.045,
-        "Portland Trail Blazers": 0.013
-      },
-      "change_pct": {
-        "Los Angeles Clippers": 2.26,
-        "Portland Trail Blazers": 0.73
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 09:50",
-          "Los Angeles Clippers": 1.993,
-          "Portland Trail Blazers": 1.793
-        },
-        {
-          "time": "04/10 12:34",
-          "Los Angeles Clippers": 2.053,
-          "Portland Trail Blazers": 1.778
-        },
-        {
-          "time": "04/10 13:18",
-          "Los Angeles Clippers": 2.053,
-          "Portland Trail Blazers": 1.779
-        },
-        {
-          "time": "04/10 17:14",
-          "Los Angeles Clippers": 2.04,
-          "Portland Trail Blazers": 1.797
-        },
-        {
-          "time": "04/10 18:02",
-          "Los Angeles Clippers": 2.051,
-          "Portland Trail Blazers": 1.792
-        },
-        {
-          "time": "04/10 20:53",
-          "Los Angeles Clippers": 2.035,
-          "Portland Trail Blazers": 1.804
-        },
-        {
-          "time": "04/10 21:04",
-          "Los Angeles Clippers": 2.03,
-          "Portland Trail Blazers": 1.807
-        },
-        {
-          "time": "04/10 21:14",
-          "Los Angeles Clippers": 2.007,
-          "Portland Trail Blazers": 1.828
-        },
-        {
-          "time": "04/10 21:23",
-          "Los Angeles Clippers": 2.0,
-          "Portland Trail Blazers": 1.835
-        },
-        {
-          "time": "04/10 21:33",
-          "Los Angeles Clippers": 1.999,
-          "Portland Trail Blazers": 1.835
-        },
-        {
-          "time": "04/10 23:43",
-          "Los Angeles Clippers": 1.999,
-          "Portland Trail Blazers": 1.837
-        },
-        {
-          "time": "04/11 08:45",
-          "Los Angeles Clippers": 2.038,
-          "Portland Trail Blazers": 1.806
-        }
-      ]
-    },
     "1935906088ec1cf3d2f989ace06a8acb": {
       "id": "1935906088ec1cf3d2f989ace06a8acb",
       "sport_key": "basketball_nba",
       "league": "NBA",
       "home_team": "Los Angeles Lakers",
       "away_team": "Phoenix Suns",
-      "commence_time": "2026-04-11T02:40:00Z",
+      "commence_time": "2026-04-11T02:41:00Z",
       "bookmakers": [
         {
           "name": "FanDuel",
           "markets": {
-            "h2h": {
-              "Los Angeles Lakers": {
-                "price": 2.2
-              },
-              "Phoenix Suns": {
-                "price": 1.7
-              }
-            },
             "spreads": {
               "Los Angeles Lakers": {
-                "price": 1.88,
-                "point": 2.5,
-                "prob": 50.8
+                "price": 1.65,
+                "point": -28.5,
+                "prob": 56.7
               },
               "Phoenix Suns": {
-                "price": 1.94,
-                "point": -2.5,
-                "prob": 49.2
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.94,
-                "point": 217.5,
-                "prob": 49.2
-              },
-              "Under": {
-                "price": 1.88,
-                "point": 217.5,
-                "prob": 50.8
+                "price": 2.16,
+                "point": 28.5,
+                "prob": 43.3
               }
             }
           }
         },
         {
-          "name": "Betfair",
+          "name": "888sport",
           "markets": {
-            "h2h": {
-              "Los Angeles Lakers": {
-                "price": 2.28
-              },
-              "Phoenix Suns": {
-                "price": 1.77
-              }
-            },
-            "h2h_lay": {
-              "Los Angeles Lakers": {
-                "price": 2.3
-              },
-              "Phoenix Suns": {
-                "price": 1.79
-              }
-            }
-          }
-        },
-        {
-          "name": "1xBet",
-          "markets": {
-            "h2h": {
-              "Los Angeles Lakers": {
-                "price": 2.19
-              },
-              "Phoenix Suns": {
-                "price": 1.77
-              }
-            },
             "spreads": {
               "Los Angeles Lakers": {
-                "price": 1.92,
-                "point": 2.5
+                "price": 1.8,
+                "point": -20.5
               },
               "Phoenix Suns": {
                 "price": 2.0,
-                "point": -2.5
+                "point": 20.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.96,
-                "point": 217.5
+                "price": 2.1,
+                "point": 179.5,
+                "prob": 45.2
               },
               "Under": {
-                "price": 1.96,
-                "point": 217.5
+                "price": 1.73,
+                "point": 179.5,
+                "prob": 54.8
+              }
+            }
+          }
+        },
+        {
+          "name": "DraftKings",
+          "markets": {
+            "spreads": {
+              "Los Angeles Lakers": {
+                "price": 1.37,
+                "point": -27.5
+              },
+              "Phoenix Suns": {
+                "price": 3.0,
+                "point": 27.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Los Angeles Lakers": 2.149,
-        "Phoenix Suns": 1.733
+        "Los Angeles Lakers": 1.01,
+        "Phoenix Suns": 21.992
       },
       "true_probs": {
-        "Los Angeles Lakers": 44.6,
-        "Phoenix Suns": 55.4
+        "Los Angeles Lakers": 95.6,
+        "Phoenix Suns": 4.4
       },
       "other_markets": {
         "spreads": {
           "Los Angeles Lakers": {
-            "price": 1.88,
-            "point": 2.5,
-            "prob": 50.8
+            "price": 1.65,
+            "point": -28.5,
+            "prob": 56.7
           },
           "Phoenix Suns": {
-            "price": 1.94,
-            "point": -2.5,
-            "prob": 49.2
+            "price": 2.16,
+            "point": 28.5,
+            "prob": 43.3
           }
         },
         "totals": {
           "Over": {
-            "price": 1.94,
-            "point": 217.5,
-            "prob": 49.2
+            "price": 2.1,
+            "point": 179.5,
+            "prob": 45.2
           },
           "Under": {
-            "price": 1.88,
-            "point": 217.5,
-            "prob": 50.8
+            "price": 1.73,
+            "point": 179.5,
+            "prob": 54.8
           }
         },
         "btts": {}
@@ -3445,14 +112,14 @@
       "first_seen": "2026-04-10T13:18:56.069911+08:00",
       "is_new": false,
       "odds_change": {
-        "Los Angeles Lakers": 0.076,
-        "Phoenix Suns": 0.086
+        "Los Angeles Lakers": -1.063,
+        "Phoenix Suns": 20.345
       },
       "change_pct": {
-        "Los Angeles Lakers": 3.67,
-        "Phoenix Suns": 5.22
+        "Los Angeles Lakers": -51.28,
+        "Phoenix Suns": 1235.28
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/10 13:18",
@@ -3503,376 +170,133 @@
           "time": "04/11 08:45",
           "Los Angeles Lakers": 2.149,
           "Phoenix Suns": 1.733
+        },
+        {
+          "time": "04/11 13:02",
+          "Los Angeles Lakers": 1.01,
+          "Phoenix Suns": 21.992
         }
-      ]
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "home_record": "L",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-08",
+            "opponent": "Oklahoma City Thunder",
+            "score": "87-123",
+            "result": "L",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-09",
+            "opponent": "Dallas Mavericks",
+            "score": "112-107",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "sharp_moves": [
+        {
+          "team": "Los Angeles Lakers",
+          "move_pct": -53.0,
+          "from": 2.149,
+          "to": 1.01,
+          "level": "💰 聪明錢訊號",
+          "message": "Los Angeles Lakers 賠率 2.15→1.01 (-53.0%)"
+        }
+      ],
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
+      "analysis_source": "fallback"
     },
-    "e39a51d05b5444bf1c98ffa0ed6811d3": {
-      "id": "e39a51d05b5444bf1c98ffa0ed6811d3",
-      "sport_key": "soccer_uefa_champs_league",
-      "league": "歐冠 UCL",
-      "home_team": "Atlético Madrid",
-      "away_team": "Barcelona",
-      "commence_time": "2026-04-14T19:00:00Z",
+    "22dcb3e32847c7eab5774e8927016216": {
+      "id": "22dcb3e32847c7eab5774e8927016216",
+      "sport_key": "basketball_nba",
+      "league": "NBA",
+      "home_team": "Miami Heat",
+      "away_team": "Atlanta Hawks",
+      "commence_time": "2026-04-12T22:10:00Z",
       "bookmakers": [
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Atlanta Hawks": {
+                "price": 1.41
+              },
+              "Miami Heat": {
+                "price": 3.0
+              }
+            },
+            "spreads": {
+              "Atlanta Hawks": {
+                "price": 1.94,
+                "point": -6.5,
+                "prob": 49.2
+              },
+              "Miami Heat": {
+                "price": 1.88,
+                "point": 6.5,
+                "prob": 50.8
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.89,
+                "point": 243.5,
+                "prob": 50.5
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 243.5,
+                "prob": 49.5
+              }
+            }
+          }
+        },
         {
           "name": "888sport",
           "markets": {
             "h2h": {
-              "Atlético Madrid": {
-                "price": 3.5
+              "Atlanta Hawks": {
+                "price": 1.36
               },
-              "Barcelona": {
-                "price": 1.85
-              },
-              "Draw": {
-                "price": 4.0
-              }
-            }
-          }
-        },
-        {
-          "name": "Marathon Bet",
-          "markets": {
-            "h2h": {
-              "Atlético Madrid": {
-                "price": 3.72
-              },
-              "Barcelona": {
-                "price": 1.88
-              },
-              "Draw": {
-                "price": 4.33
-              }
-            }
-          }
-        },
-        {
-          "name": "DraftKings",
-          "markets": {
-            "h2h": {
-              "Atlético Madrid": {
-                "price": 3.5
-              },
-              "Barcelona": {
-                "price": 1.87
-              },
-              "Draw": {
-                "price": 4.1
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Atlético Madrid": 3.653,
-        "Barcelona": 1.847,
-        "Draw": 4.237
-      },
-      "true_probs": {
-        "Atlético Madrid": 26.0,
-        "Barcelona": 51.5,
-        "Draw": 22.5
-      },
-      "other_markets": {
-        "spreads": {
-          "Atlético Madrid": {
-            "price": 1.99,
-            "point": 0.5,
-            "prob": 48.4
-          },
-          "Barcelona": {
-            "price": 1.87,
-            "point": -0.5,
-            "prob": 51.6
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.35,
-            "point": 2.5,
-            "prob": 69.0
-          },
-          "Under": {
-            "price": 3.0,
-            "point": 2.5,
-            "prob": 31.0
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Atlético Madrid": 3.774,
-        "Barcelona": 1.804,
-        "Draw": 4.294
-      },
-      "first_seen": "2026-04-10T21:04:12.191573+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Atlético Madrid": -0.121,
-        "Barcelona": 0.043,
-        "Draw": -0.057
-      },
-      "change_pct": {
-        "Atlético Madrid": -3.21,
-        "Barcelona": 2.38,
-        "Draw": -1.33
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 21:04",
-          "Atlético Madrid": 3.774,
-          "Barcelona": 1.804,
-          "Draw": 4.294
-        },
-        {
-          "time": "04/10 21:14",
-          "Atlético Madrid": 3.774,
-          "Barcelona": 1.804,
-          "Draw": 4.294
-        },
-        {
-          "time": "04/10 21:23",
-          "Atlético Madrid": 3.774,
-          "Barcelona": 1.804,
-          "Draw": 4.294
-        },
-        {
-          "time": "04/10 21:33",
-          "Atlético Madrid": 3.774,
-          "Barcelona": 1.804,
-          "Draw": 4.294
-        },
-        {
-          "time": "04/10 23:43",
-          "Atlético Madrid": 3.781,
-          "Barcelona": 1.805,
-          "Draw": 4.294
-        },
-        {
-          "time": "04/11 08:45",
-          "Atlético Madrid": 3.653,
-          "Barcelona": 1.847,
-          "Draw": 4.237
-        }
-      ],
-      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
-      "analysis_source": "rule_based"
-    },
-    "6f7c43b668146a5e9ba09151c1ba460b": {
-      "id": "6f7c43b668146a5e9ba09151c1ba460b",
-      "sport_key": "soccer_uefa_champs_league",
-      "league": "歐冠 UCL",
-      "home_team": "Liverpool",
-      "away_team": "Paris Saint Germain",
-      "commence_time": "2026-04-14T19:00:00Z",
-      "bookmakers": [
-        {
-          "name": "Marathon Bet",
-          "markets": {
-            "h2h": {
-              "Liverpool": {
-                "price": 2.38
-              },
-              "Paris Saint Germain": {
-                "price": 2.57
-              },
-              "Draw": {
-                "price": 4.5
-              }
-            }
-          }
-        },
-        {
-          "name": "DraftKings",
-          "markets": {
-            "h2h": {
-              "Liverpool": {
-                "price": 2.35
-              },
-              "Paris Saint Germain": {
-                "price": 2.55
-              },
-              "Draw": {
-                "price": 4.2
-              }
-            }
-          }
-        },
-        {
-          "name": "BetMGM",
-          "markets": {
-            "h2h": {
-              "Liverpool": {
-                "price": 2.38
-              },
-              "Paris Saint Germain": {
-                "price": 2.6
-              },
-              "Draw": {
-                "price": 3.9
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.1,
-                "point": 3.5,
-                "prob": 44.3
-              },
-              "Under": {
-                "price": 1.67,
-                "point": 3.5,
-                "prob": 55.7
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Liverpool": 2.343,
-        "Paris Saint Germain": 2.525,
-        "Draw": 4.391
-      },
-      "true_probs": {
-        "Liverpool": 40.6,
-        "Paris Saint Germain": 37.7,
-        "Draw": 21.7
-      },
-      "other_markets": {
-        "spreads": {
-          "Liverpool": {
-            "price": 1.85,
-            "point": 0.0,
-            "prob": 52.1
-          },
-          "Paris Saint Germain": {
-            "price": 2.01,
-            "point": -0.0,
-            "prob": 47.9
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 2.1,
-            "point": 3.5,
-            "prob": 44.3
-          },
-          "Under": {
-            "price": 1.67,
-            "point": 3.5,
-            "prob": 55.7
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Liverpool": 2.303,
-        "Paris Saint Germain": 2.558,
-        "Draw": 4.389
-      },
-      "first_seen": "2026-04-10T21:04:12.191576+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Liverpool": 0.04,
-        "Paris Saint Germain": -0.033,
-        "Draw": 0.002
-      },
-      "change_pct": {
-        "Liverpool": 1.74,
-        "Paris Saint Germain": -1.29,
-        "Draw": 0.05
-      },
-      "is_value_bet": false,
-      "odds_timeline": [
-        {
-          "time": "04/10 21:04",
-          "Liverpool": 2.303,
-          "Paris Saint Germain": 2.558,
-          "Draw": 4.389
-        },
-        {
-          "time": "04/10 21:14",
-          "Liverpool": 2.303,
-          "Paris Saint Germain": 2.559,
-          "Draw": 4.386
-        },
-        {
-          "time": "04/10 21:23",
-          "Liverpool": 2.303,
-          "Paris Saint Germain": 2.559,
-          "Draw": 4.386
-        },
-        {
-          "time": "04/10 21:33",
-          "Liverpool": 2.303,
-          "Paris Saint Germain": 2.557,
-          "Draw": 4.39
-        },
-        {
-          "time": "04/10 23:43",
-          "Liverpool": 2.306,
-          "Paris Saint Germain": 2.556,
-          "Draw": 4.404
-        },
-        {
-          "time": "04/11 08:45",
-          "Liverpool": 2.343,
-          "Paris Saint Germain": 2.525,
-          "Draw": 4.391
-        }
-      ],
-      "weather": {
-        "temp": 7.9,
-        "wind": 25.9,
-        "rain": 0.0,
-        "condition": "☀️ 晴朗",
-        "impact": "場地可能濕滑，對腳下技術要求較高"
-      }
-    },
-    "02ff9b02f1eab3394f9e38d70e257e12": {
-      "id": "02ff9b02f1eab3394f9e38d70e257e12",
-      "sport_key": "soccer_uefa_champs_league",
-      "league": "歐冠 UCL",
-      "home_team": "Arsenal",
-      "away_team": "Sporting Lisbon",
-      "commence_time": "2026-04-15T19:00:00Z",
-      "bookmakers": [
-        {
-          "name": "Coolbet",
-          "markets": {
-            "h2h": {
-              "Arsenal": {
-                "price": 1.42
-              },
-              "Sporting Lisbon": {
-                "price": 7.8
-              },
-              "Draw": {
-                "price": 4.95
+              "Miami Heat": {
+                "price": 3.1
               }
             },
             "spreads": {
-              "Arsenal": {
-                "price": 2.15,
-                "point": -1.5,
-                "prob": 44.9
+              "Atlanta Hawks": {
+                "price": 1.8,
+                "point": -5.5
               },
-              "Sporting Lisbon": {
-                "price": 1.75,
-                "point": 1.5,
-                "prob": 55.1
+              "Miami Heat": {
+                "price": 2.0,
+                "point": 5.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.78,
-                "point": 2.5,
-                "prob": 54.2
+                "price": 1.91,
+                "point": 243.5
               },
               "Under": {
-                "price": 2.11,
-                "point": 2.5,
-                "prob": 45.8
+                "price": 1.91,
+                "point": 243.5
               }
             }
           }
@@ -3881,39 +305,541 @@
           "name": "Unibet (FR)",
           "markets": {
             "h2h": {
-              "Arsenal": {
-                "price": 1.37
+              "Atlanta Hawks": {
+                "price": 1.36
               },
-              "Sporting Lisbon": {
-                "price": 7.0
+              "Miami Heat": {
+                "price": 2.8
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Atlanta Hawks": 1.386,
+        "Miami Heat": 2.931
+      },
+      "true_probs": {
+        "Atlanta Hawks": 67.9,
+        "Miami Heat": 32.1
+      },
+      "other_markets": {
+        "spreads": {
+          "Atlanta Hawks": {
+            "price": 1.94,
+            "point": -6.5,
+            "prob": 49.2
+          },
+          "Miami Heat": {
+            "price": 1.88,
+            "point": 6.5,
+            "prob": 50.8
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.89,
+            "point": 243.5,
+            "prob": 50.5
+          },
+          "Under": {
+            "price": 1.93,
+            "point": 243.5,
+            "prob": 49.5
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Atlanta Hawks": 1.386,
+        "Miami Heat": 2.931
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625014+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Atlanta Hawks": 1.386,
+          "Miami Heat": 2.931
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-04",
+            "opponent": "Washington Wizards",
+            "score": "152-136",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-10",
+            "opponent": "Cleveland Cavaliers",
+            "score": "124-102",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
+      "analysis_source": "fallback"
+    },
+    "f78d40af453b24c39e18559579894d14": {
+      "id": "f78d40af453b24c39e18559579894d14",
+      "sport_key": "basketball_nba",
+      "league": "NBA",
+      "home_team": "Boston Celtics",
+      "away_team": "Orlando Magic",
+      "commence_time": "2026-04-12T22:10:00Z",
+      "bookmakers": [
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Boston Celtics": {
+                "price": 2.4
               },
-              "Draw": {
-                "price": 4.8
+              "Orlando Magic": {
+                "price": 1.6
+              }
+            },
+            "spreads": {
+              "Boston Celtics": {
+                "price": 1.94,
+                "point": 3.5,
+                "prob": 49.2
+              },
+              "Orlando Magic": {
+                "price": 1.88,
+                "point": -3.5,
+                "prob": 50.8
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.93,
+                "point": 216.5,
+                "prob": 49.5
+              },
+              "Under": {
+                "price": 1.89,
+                "point": 216.5,
+                "prob": 50.5
               }
             }
           }
         },
         {
-          "name": "BetMGM",
+          "name": "888sport",
           "markets": {
             "h2h": {
-              "Arsenal": {
-                "price": 1.43
+              "Boston Celtics": {
+                "price": 2.5
               },
-              "Sporting Lisbon": {
-                "price": 7.0
+              "Orlando Magic": {
+                "price": 1.53
+              }
+            },
+            "spreads": {
+              "Boston Celtics": {
+                "price": 1.91,
+                "point": 4.5
               },
-              "Draw": {
-                "price": 4.75
+              "Orlando Magic": {
+                "price": 1.91,
+                "point": -4.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.69,
+                "price": 1.91,
+                "point": 216.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 216.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Boston Celtics": {
+                "price": 2.3
+              },
+              "Orlando Magic": {
+                "price": 1.52
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Boston Celtics": 2.351,
+        "Orlando Magic": 1.572
+      },
+      "true_probs": {
+        "Boston Celtics": 40.1,
+        "Orlando Magic": 59.9
+      },
+      "other_markets": {
+        "spreads": {
+          "Boston Celtics": {
+            "price": 1.94,
+            "point": 3.5,
+            "prob": 49.2
+          },
+          "Orlando Magic": {
+            "price": 1.88,
+            "point": -3.5,
+            "prob": 50.8
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.93,
+            "point": 216.5,
+            "prob": 49.5
+          },
+          "Under": {
+            "price": 1.89,
+            "point": 216.5,
+            "prob": 50.5
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Boston Celtics": 2.351,
+        "Orlando Magic": 1.572
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625019+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Boston Celtics": 2.351,
+          "Orlando Magic": 1.572
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Boston Celtics",
+          "title": "Celtics tie NBA record with 29 3s; clinch 2-seed",
+          "link": "https://www.espn.com/nba/story/_/id/48453131/celtics-tie-nba-record-29-3s-clinch-no-2-seed"
+        },
+        {
+          "team": "Orlando Magic",
+          "title": "NBA fines Magic $25K for injury report violation",
+          "link": "https://www.espn.com/nba/story/_/id/48440537/nba-fines-magic-25k-violating-injury-reporting-rules"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-10",
+            "opponent": "New Orleans Pelicans",
+            "score": "144-118",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-08",
+            "opponent": "Minnesota Timberwolves",
+            "score": "132-120",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      }
+    },
+    "38b10a0526d5b246097a502269bcdf71": {
+      "id": "38b10a0526d5b246097a502269bcdf71",
+      "sport_key": "basketball_nba",
+      "league": "NBA",
+      "home_team": "New York Knicks",
+      "away_team": "Charlotte Hornets",
+      "commence_time": "2026-04-12T22:10:00Z",
+      "bookmakers": [
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Charlotte Hornets": {
+                "price": 1.29
+              },
+              "New York Knicks": {
+                "price": 3.75
+              }
+            },
+            "spreads": {
+              "Charlotte Hornets": {
+                "price": 1.94,
+                "point": -8.5,
+                "prob": 49.2
+              },
+              "New York Knicks": {
+                "price": 1.88,
+                "point": 8.5,
+                "prob": 50.8
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 215.5,
+                "prob": 50.0
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 215.5,
+                "prob": 50.0
+              }
+            }
+          }
+        },
+        {
+          "name": "888sport",
+          "markets": {
+            "h2h": {
+              "Charlotte Hornets": {
+                "price": 1.29
+              },
+              "New York Knicks": {
+                "price": 3.6
+              }
+            },
+            "spreads": {
+              "Charlotte Hornets": {
+                "price": 1.91,
+                "point": -8.5
+              },
+              "New York Knicks": {
+                "price": 1.91,
+                "point": 8.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 215.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 215.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Charlotte Hornets": {
+                "price": 1.26
+              },
+              "New York Knicks": {
+                "price": 3.4
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Charlotte Hornets": 1.278,
+        "New York Knicks": 3.556
+      },
+      "true_probs": {
+        "Charlotte Hornets": 73.6,
+        "New York Knicks": 26.4
+      },
+      "other_markets": {
+        "spreads": {
+          "Charlotte Hornets": {
+            "price": 1.94,
+            "point": -8.5,
+            "prob": 49.2
+          },
+          "New York Knicks": {
+            "price": 1.88,
+            "point": 8.5,
+            "prob": 50.8
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.91,
+            "point": 215.5,
+            "prob": 50.0
+          },
+          "Under": {
+            "price": 1.91,
+            "point": 215.5,
+            "prob": 50.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Charlotte Hornets": 1.278,
+        "New York Knicks": 3.556
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625026+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Charlotte Hornets": 1.278,
+          "New York Knicks": 3.556
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-10",
+            "opponent": "Toronto Raptors",
+            "score": "112-95",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "home_record": "L",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-10",
+            "opponent": "Detroit Pistons",
+            "score": "100-118",
+            "result": "L",
+            "venue": "主"
+          }
+        ]
+      },
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
+      "analysis_source": "fallback"
+    },
+    "2511313dfbfa1fe5714b0b8cd6ba0c1f": {
+      "id": "2511313dfbfa1fe5714b0b8cd6ba0c1f",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "1. FC Heidenheim",
+      "away_team": "Union Berlin",
+      "commence_time": "2026-04-11T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "1. FC Heidenheim": {
+                "price": 2.95
+              },
+              "Union Berlin": {
+                "price": 2.35
+              },
+              "Draw": {
+                "price": 3.4
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "1. FC Heidenheim": {
+                "price": 3.0
+              },
+              "Union Berlin": {
+                "price": 2.36
+              },
+              "Draw": {
+                "price": 3.45
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.84,
+                "point": 2.5,
+                "prob": 49.9
+              },
+              "Under": {
+                "price": 1.83,
+                "point": 2.5,
+                "prob": 50.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "1. FC Heidenheim": {
+                "price": 2.98
+              },
+              "Union Berlin": {
+                "price": 2.32
+              },
+              "Draw": {
+                "price": 3.55
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.82,
                 "point": 2.5
               },
               "Under": {
-                "price": 2.05,
+                "price": 1.98,
                 "point": 2.5
               }
             }
@@ -3921,101 +847,244 @@
         }
       ],
       "avg_odds": {
-        "Arsenal": 1.399,
-        "Sporting Lisbon": 7.761,
-        "Draw": 4.827
+        "1. FC Heidenheim": 2.999,
+        "Union Berlin": 2.332,
+        "Draw": 3.496
       },
       "true_probs": {
-        "Arsenal": 68.0,
-        "Sporting Lisbon": 12.3,
-        "Draw": 19.7
+        "1. FC Heidenheim": 31.8,
+        "Union Berlin": 40.9,
+        "Draw": 27.3
       },
       "other_markets": {
         "spreads": {
-          "Arsenal": {
-            "price": 2.15,
-            "point": -1.5,
-            "prob": 44.9
+          "1. FC Heidenheim": {
+            "price": 2.24,
+            "point": 0.0,
+            "prob": 44.0
           },
-          "Sporting Lisbon": {
-            "price": 1.75,
-            "point": 1.5,
-            "prob": 55.1
+          "Union Berlin": {
+            "price": 1.76,
+            "point": 0.0,
+            "prob": 56.0
           }
         },
         "totals": {
           "Over": {
-            "price": 1.78,
+            "price": 1.84,
             "point": 2.5,
-            "prob": 54.2
+            "prob": 49.9
           },
           "Under": {
-            "price": 2.11,
+            "price": 1.83,
             "point": 2.5,
-            "prob": 45.8
+            "prob": 50.1
           }
         },
         "btts": {}
       },
       "opening_odds": {
-        "Arsenal": 1.397,
-        "Sporting Lisbon": 7.729,
-        "Draw": 4.821
+        "1. FC Heidenheim": 2.999,
+        "Union Berlin": 2.332,
+        "Draw": 3.496
       },
-      "first_seen": "2026-04-10T21:04:12.191579+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Arsenal": 0.002,
-        "Sporting Lisbon": 0.032,
-        "Draw": 0.006
-      },
-      "change_pct": {
-        "Arsenal": 0.14,
-        "Sporting Lisbon": 0.41,
-        "Draw": 0.12
-      },
-      "is_value_bet": false,
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625033+08:00",
       "odds_timeline": [
         {
-          "time": "04/10 21:04",
-          "Arsenal": 1.397,
-          "Sporting Lisbon": 7.729,
-          "Draw": 4.821
-        },
-        {
-          "time": "04/10 21:14",
-          "Arsenal": 1.397,
-          "Sporting Lisbon": 7.729,
-          "Draw": 4.821
-        },
-        {
-          "time": "04/10 21:23",
-          "Arsenal": 1.397,
-          "Sporting Lisbon": 7.729,
-          "Draw": 4.821
-        },
-        {
-          "time": "04/10 21:33",
-          "Arsenal": 1.397,
-          "Sporting Lisbon": 7.729,
-          "Draw": 4.818
-        },
-        {
-          "time": "04/10 23:43",
-          "Arsenal": 1.398,
-          "Sporting Lisbon": 7.754,
-          "Draw": 4.82
-        },
-        {
-          "time": "04/11 08:45",
-          "Arsenal": 1.399,
-          "Sporting Lisbon": 7.761,
-          "Draw": 4.827
+          "time": "04/11 13:02",
+          "1. FC Heidenheim": 2.999,
+          "Union Berlin": 2.332,
+          "Draw": 3.496
         }
       ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
+      "away_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "home_record": "L",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-05",
+            "opponent": "St Pauli",
+            "score": "1-1",
+            "result": "L",
+            "venue": "主"
+          }
+        ]
+      }
+    },
+    "a37f2dbc488d6e5d8d222c90baf147ad": {
+      "id": "a37f2dbc488d6e5d8d222c90baf147ad",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "Borussia Dortmund",
+      "away_team": "Bayer Leverkusen",
+      "commence_time": "2026-04-11T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "888sport",
+          "markets": {
+            "h2h": {
+              "Bayer Leverkusen": {
+                "price": 3.25
+              },
+              "Borussia Dortmund": {
+                "price": 2.0
+              },
+              "Draw": {
+                "price": 3.6
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Bayer Leverkusen": {
+                "price": 3.4
+              },
+              "Borussia Dortmund": {
+                "price": 2.02
+              },
+              "Draw": {
+                "price": 3.85
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.24,
+                "point": 3.5,
+                "prob": 41.1
+              },
+              "Under": {
+                "price": 1.56,
+                "point": 3.5,
+                "prob": 58.9
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Bayer Leverkusen": {
+                "price": 3.4
+              },
+              "Borussia Dortmund": {
+                "price": 1.96
+              },
+              "Draw": {
+                "price": 4.0
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Bayer Leverkusen": 3.456,
+        "Borussia Dortmund": 2.001,
+        "Draw": 3.861
+      },
+      "true_probs": {
+        "Bayer Leverkusen": 27.6,
+        "Borussia Dortmund": 47.7,
+        "Draw": 24.7
+      },
+      "other_markets": {
+        "spreads": {
+          "Bayer Leverkusen": {
+            "price": 2.52,
+            "point": 0.0,
+            "prob": 36.7
+          },
+          "Borussia Dortmund": {
+            "price": 1.46,
+            "point": 0.0,
+            "prob": 63.3
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.24,
+            "point": 3.5,
+            "prob": 41.1
+          },
+          "Under": {
+            "price": 1.56,
+            "point": 3.5,
+            "prob": 58.9
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Bayer Leverkusen": 3.456,
+        "Borussia Dortmund": 2.001,
+        "Draw": 3.861
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625036+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Bayer Leverkusen": 3.456,
+          "Borussia Dortmund": 2.001,
+          "Draw": 3.861
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-03-21",
+            "opponent": "Hamburg",
+            "score": "3-2",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-04",
+            "opponent": "Wolfsburg",
+            "score": "6-3",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
       "weather": {
-        "temp": 9.5,
-        "wind": 12.6,
+        "temp": 7.9,
+        "wind": 8.3,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
@@ -4023,91 +1092,803 @@
       "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
       "analysis_source": "rule_based"
     },
-    "76200682955d7f62f3b051a14f5f67fa": {
-      "id": "76200682955d7f62f3b051a14f5f67fa",
-      "sport_key": "soccer_uefa_champs_league",
-      "league": "歐冠 UCL",
-      "home_team": "Bayern Munich",
-      "away_team": "Real Madrid",
-      "commence_time": "2026-04-15T19:00:00Z",
+    "5d7d753912fa6244f3eec78d2fd2e1b4": {
+      "id": "5d7d753912fa6244f3eec78d2fd2e1b4",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "RB Leipzig",
+      "away_team": "Borussia Monchengladbach",
+      "commence_time": "2026-04-11T13:30:00Z",
       "bookmakers": [
         {
-          "name": "GTbets",
+          "name": "888sport",
+          "markets": {
+            "h2h": {
+              "Borussia Monchengladbach": {
+                "price": 5.5
+              },
+              "RB Leipzig": {
+                "price": 1.44
+              },
+              "Draw": {
+                "price": 4.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Borussia Monchengladbach": {
+                "price": 5.8
+              },
+              "RB Leipzig": {
+                "price": 1.49
+              },
+              "Draw": {
+                "price": 4.9
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.05,
+                "point": 3.5,
+                "prob": 44.7
+              },
+              "Under": {
+                "price": 1.66,
+                "point": 3.5,
+                "prob": 55.3
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Borussia Monchengladbach": {
+                "price": 5.5
+              },
+              "RB Leipzig": {
+                "price": 1.48
+              },
+              "Draw": {
+                "price": 5.1
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Borussia Monchengladbach": 5.902,
+        "RB Leipzig": 1.487,
+        "Draw": 4.832
+      },
+      "true_probs": {
+        "Borussia Monchengladbach": 16.2,
+        "RB Leipzig": 64.1,
+        "Draw": 19.7
+      },
+      "other_markets": {
+        "spreads": {
+          "Borussia Monchengladbach": {
+            "price": 1.71,
+            "point": 1.5,
+            "prob": 57.6
+          },
+          "RB Leipzig": {
+            "price": 2.32,
+            "point": -1.5,
+            "prob": 42.4
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.05,
+            "point": 3.5,
+            "prob": 44.7
+          },
+          "Under": {
+            "price": 1.66,
+            "point": 3.5,
+            "prob": 55.3
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Borussia Monchengladbach": 5.902,
+        "RB Leipzig": 1.487,
+        "Draw": 4.832
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625039+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Borussia Monchengladbach": 5.902,
+          "RB Leipzig": 1.487,
+          "Draw": 4.832
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
+      "away_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "0ed7ec2f06bb6aade4f4efb225fe239f": {
+      "id": "0ed7ec2f06bb6aade4f4efb225fe239f",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "VfL Wolfsburg",
+      "away_team": "Eintracht Frankfurt",
+      "commence_time": "2026-04-11T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "888sport",
+          "markets": {
+            "h2h": {
+              "Eintracht Frankfurt": {
+                "price": 2.5
+              },
+              "VfL Wolfsburg": {
+                "price": 2.5
+              },
+              "Draw": {
+                "price": 3.4
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Eintracht Frankfurt": {
+                "price": 2.6
+              },
+              "VfL Wolfsburg": {
+                "price": 2.6
+              },
+              "Draw": {
+                "price": 3.6
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.57,
+                "point": 2.5,
+                "prob": 58.5
+              },
+              "Under": {
+                "price": 2.21,
+                "point": 2.5,
+                "prob": 41.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Eintracht Frankfurt": {
+                "price": 2.5
+              },
+              "VfL Wolfsburg": {
+                "price": 2.55
+              },
+              "Draw": {
+                "price": 3.7
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Eintracht Frankfurt": 2.62,
+        "VfL Wolfsburg": 2.547,
+        "Draw": 3.628
+      },
+      "true_probs": {
+        "Eintracht Frankfurt": 36.4,
+        "VfL Wolfsburg": 37.4,
+        "Draw": 26.3
+      },
+      "other_markets": {
+        "spreads": {
+          "Eintracht Frankfurt": {
+            "price": 2.0,
+            "point": 0.0,
+            "prob": 49.2
+          },
+          "VfL Wolfsburg": {
+            "price": 1.94,
+            "point": 0.0,
+            "prob": 50.8
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.57,
+            "point": 2.5,
+            "prob": 58.5
+          },
+          "Under": {
+            "price": 2.21,
+            "point": 2.5,
+            "prob": 41.5
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Eintracht Frankfurt": 2.62,
+        "VfL Wolfsburg": 2.547,
+        "Draw": 3.628
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625042+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Eintracht Frankfurt": 2.62,
+          "VfL Wolfsburg": 2.547,
+          "Draw": 3.628
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
+      "away_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      }
+    },
+    "0b40b16ce0a37bbd5e9e8405c2d3fd16": {
+      "id": "0b40b16ce0a37bbd5e9e8405c2d3fd16",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "FC St. Pauli",
+      "away_team": "Bayern Munich",
+      "commence_time": "2026-04-11T16:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Codere (IT)",
           "markets": {
             "h2h": {
               "Bayern Munich": {
-                "price": 1.63
+                "price": 1.39
               },
-              "Real Madrid": {
-                "price": 4.68
+              "FC St. Pauli": {
+                "price": 7.4
               },
               "Draw": {
-                "price": 4.8
+                "price": 5.2
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.26,
+                "point": 3.5,
+                "prob": 40.5
+              },
+              "Under": {
+                "price": 1.54,
+                "point": 3.5,
+                "prob": 59.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "Bayern Munich": {
+                "price": 1.37
+              },
+              "FC St. Pauli": {
+                "price": 8.8
+              },
+              "Draw": {
+                "price": 4.95
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.52,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.42,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Coolbet",
+          "markets": {
+            "h2h": {
+              "Bayern Munich": {
+                "price": 1.39
+              },
+              "FC St. Pauli": {
+                "price": 8.25
+              },
+              "Draw": {
+                "price": 5.25
               }
             },
             "spreads": {
               "Bayern Munich": {
-                "price": 2.33,
+                "price": 2.08,
                 "point": -1.5,
-                "prob": 40.4
+                "prob": 46.7
               },
-              "Real Madrid": {
-                "price": 1.58,
+              "FC St. Pauli": {
+                "price": 1.82,
                 "point": 1.5,
-                "prob": 59.6
+                "prob": 53.3
               }
             },
             "totals": {
               "Over": {
-                "price": 1.78,
-                "point": 3.5,
-                "prob": 53.0
+                "price": 1.96,
+                "point": 3.0
               },
               "Under": {
-                "price": 2.01,
-                "point": 3.5,
-                "prob": 47.0
+                "price": 1.92,
+                "point": 3.0
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Bayern Munich": 1.368,
+        "FC St. Pauli": 7.952,
+        "Draw": 5.186
+      },
+      "true_probs": {
+        "Bayern Munich": 69.6,
+        "FC St. Pauli": 12.0,
+        "Draw": 18.4
+      },
+      "other_markets": {
+        "spreads": {
+          "Bayern Munich": {
+            "price": 2.08,
+            "point": -1.5,
+            "prob": 46.7
+          },
+          "FC St. Pauli": {
+            "price": 1.82,
+            "point": 1.5,
+            "prob": 53.3
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.26,
+            "point": 3.5,
+            "prob": 40.5
+          },
+          "Under": {
+            "price": 1.54,
+            "point": 3.5,
+            "prob": 59.5
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Bayern Munich": 1.368,
+        "FC St. Pauli": 7.952,
+        "Draw": 5.186
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625044+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Bayern Munich": 1.368,
+          "FC St. Pauli": 7.952,
+          "Draw": 5.186
+        }
+      ],
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
+      "analysis_source": "fallback"
+    },
+    "5a6b97618df4296ab0fe52ddbf8cf9c9": {
+      "id": "5a6b97618df4296ab0fe52ddbf8cf9c9",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "1. FC Köln",
+      "away_team": "Werder Bremen",
+      "commence_time": "2026-04-12T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "888sport",
+          "markets": {
+            "h2h": {
+              "1. FC Köln": {
+                "price": 2.15
+              },
+              "Werder Bremen": {
+                "price": 3.1
+              },
+              "Draw": {
+                "price": 3.4
               }
             }
           }
         },
         {
-          "name": "Marathon Bet",
+          "name": "Codere (IT)",
           "markets": {
             "h2h": {
-              "Bayern Munich": {
-                "price": 1.56
+              "1. FC Köln": {
+                "price": 2.23
               },
-              "Real Madrid": {
-                "price": 4.95
-              },
-              "Draw": {
-                "price": 5.3
-              }
-            }
-          }
-        },
-        {
-          "name": "William Hill",
-          "markets": {
-            "h2h": {
-              "Bayern Munich": {
-                "price": 1.57
-              },
-              "Real Madrid": {
-                "price": 4.5
+              "Werder Bremen": {
+                "price": 3.15
               },
               "Draw": {
-                "price": 4.8
+                "price": 3.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.3,
+                "price": 1.67,
+                "point": 2.5,
+                "prob": 54.9
+              },
+              "Under": {
+                "price": 2.03,
+                "point": 2.5,
+                "prob": 45.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "1. FC Köln": {
+                "price": 2.2
+              },
+              "Werder Bremen": {
+                "price": 3.2
+              },
+              "Draw": {
+                "price": 3.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "1. FC Köln": 2.223,
+        "Werder Bremen": 3.189,
+        "Draw": 3.471
+      },
+      "true_probs": {
+        "1. FC Köln": 42.8,
+        "Werder Bremen": 29.8,
+        "Draw": 27.4
+      },
+      "other_markets": {
+        "spreads": {
+          "1. FC Köln": {
+            "price": 1.61,
+            "point": 0.0,
+            "prob": 59.0
+          },
+          "Werder Bremen": {
+            "price": 2.32,
+            "point": 0.0,
+            "prob": 41.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.67,
+            "point": 2.5,
+            "prob": 54.9
+          },
+          "Under": {
+            "price": 2.03,
+            "point": 2.5,
+            "prob": 45.1
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "1. FC Köln": 2.223,
+        "Werder Bremen": 3.189,
+        "Draw": 3.471
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625047+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "1. FC Köln": 2.223,
+          "Werder Bremen": 3.189,
+          "Draw": 3.471
+        }
+      ]
+    },
+    "292214a603a411e313a6c30ec6d0ca5a": {
+      "id": "292214a603a411e313a6c30ec6d0ca5a",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "VfB Stuttgart",
+      "away_team": "Hamburger SV",
+      "commence_time": "2026-04-12T15:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Hamburger SV": {
+                "price": 7.9
+              },
+              "VfB Stuttgart": {
+                "price": 1.39
+              },
+              "Draw": {
+                "price": 4.95
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.43,
+                "point": 2.5,
+                "prob": 65.8
+              },
+              "Under": {
+                "price": 2.75,
+                "point": 2.5,
+                "prob": 34.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Hamburger SV": {
+                "price": 6.8
+              },
+              "VfB Stuttgart": {
+                "price": 1.39
+              },
+              "Draw": {
+                "price": 5.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.03,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.67,
+                "point": 3.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Hamburger SV": {
+                "price": 6.5
+              },
+              "VfB Stuttgart": {
+                "price": 1.39
+              },
+              "Draw": {
+                "price": 5.6
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Hamburger SV": 7.315,
+        "VfB Stuttgart": 1.383,
+        "Draw": 5.202
+      },
+      "true_probs": {
+        "Hamburger SV": 13.0,
+        "VfB Stuttgart": 68.7,
+        "Draw": 18.3
+      },
+      "other_markets": {
+        "spreads": {
+          "Hamburger SV": {
+            "price": 1.89,
+            "point": 1.5,
+            "prob": 52.0
+          },
+          "VfB Stuttgart": {
+            "price": 2.05,
+            "point": -1.5,
+            "prob": 48.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.43,
+            "point": 2.5,
+            "prob": 65.8
+          },
+          "Under": {
+            "price": 2.75,
+            "point": 2.5,
+            "prob": 34.2
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Hamburger SV": 7.315,
+        "VfB Stuttgart": 1.383,
+        "Draw": 5.202
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625051+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Hamburger SV": 7.315,
+          "VfB Stuttgart": 1.383,
+          "Draw": 5.202
+        }
+      ],
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
+      "analysis_source": "fallback"
+    },
+    "06f3024060ccf4d366a992e875d45d65": {
+      "id": "06f3024060ccf4d366a992e875d45d65",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "FSV Mainz 05",
+      "away_team": "SC Freiburg",
+      "commence_time": "2026-04-12T17:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "FSV Mainz 05": {
+                "price": 2.3
+              },
+              "SC Freiburg": {
+                "price": 3.3
+              },
+              "Draw": {
+                "price": 3.25
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.81,
+                "point": 2.5,
+                "prob": 50.7
+              },
+              "Under": {
+                "price": 1.86,
+                "point": 2.5,
+                "prob": 49.3
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "FSV Mainz 05": {
+                "price": 2.38
+              },
+              "SC Freiburg": {
+                "price": 3.25
+              },
+              "Draw": {
+                "price": 3.05
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.85,
                 "point": 2.5
               },
               "Under": {
-                "price": 3.3,
+                "price": 1.92,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "FSV Mainz 05": {
+                "price": 2.4
+              },
+              "SC Freiburg": {
+                "price": 3.53
+              },
+              "Draw": {
+                "price": 3.17
+              }
+            },
+            "spreads": {
+              "FSV Mainz 05": {
+                "price": 1.6,
+                "point": 0.0,
+                "prob": 59.4
+              },
+              "SC Freiburg": {
+                "price": 2.34,
+                "point": 0.0,
+                "prob": 40.6
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.93,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.01,
                 "point": 2.5
               }
             }
@@ -4115,132 +1896,1481 @@
         }
       ],
       "avg_odds": {
-        "Bayern Munich": 1.577,
-        "Real Madrid": 4.56,
-        "Draw": 5.074
+        "FSV Mainz 05": 2.284,
+        "SC Freiburg": 3.388,
+        "Draw": 3.134
       },
       "true_probs": {
-        "Bayern Munich": 60.4,
-        "Real Madrid": 20.9,
-        "Draw": 18.8
+        "FSV Mainz 05": 41.6,
+        "SC Freiburg": 28.1,
+        "Draw": 30.3
       },
       "other_markets": {
         "spreads": {
-          "Bayern Munich": {
-            "price": 2.33,
-            "point": -1.5,
-            "prob": 40.4
+          "FSV Mainz 05": {
+            "price": 1.6,
+            "point": 0.0,
+            "prob": 59.4
           },
-          "Real Madrid": {
-            "price": 1.58,
-            "point": 1.5,
-            "prob": 59.6
+          "SC Freiburg": {
+            "price": 2.34,
+            "point": 0.0,
+            "prob": 40.6
           }
         },
         "totals": {
           "Over": {
-            "price": 1.78,
-            "point": 3.5,
-            "prob": 53.0
+            "price": 1.81,
+            "point": 2.5,
+            "prob": 50.7
           },
           "Under": {
-            "price": 2.01,
-            "point": 3.5,
-            "prob": 47.0
+            "price": 1.86,
+            "point": 2.5,
+            "prob": 49.3
           }
         },
         "btts": {}
       },
       "opening_odds": {
-        "Bayern Munich": 1.588,
-        "Real Madrid": 4.513,
-        "Draw": 5.009
+        "FSV Mainz 05": 2.284,
+        "SC Freiburg": 3.388,
+        "Draw": 3.134
       },
-      "first_seen": "2026-04-10T21:04:12.191581+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Bayern Munich": -0.011,
-        "Real Madrid": 0.047,
-        "Draw": 0.065
-      },
-      "change_pct": {
-        "Bayern Munich": -0.69,
-        "Real Madrid": 1.04,
-        "Draw": 1.3
-      },
-      "is_value_bet": false,
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625053+08:00",
       "odds_timeline": [
         {
-          "time": "04/10 21:04",
-          "Bayern Munich": 1.588,
-          "Real Madrid": 4.513,
-          "Draw": 5.009
+          "time": "04/11 13:02",
+          "FSV Mainz 05": 2.284,
+          "SC Freiburg": 3.388,
+          "Draw": 3.134
+        }
+      ]
+    },
+    "be9eda34a4ddf026072d12f7db44ec28": {
+      "id": "be9eda34a4ddf026072d12f7db44ec28",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "FC St. Pauli",
+      "away_team": "1. FC Köln",
+      "commence_time": "2026-04-17T18:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "1. FC Köln": {
+                "price": 3.09
+              },
+              "FC St. Pauli": {
+                "price": 2.38
+              },
+              "Draw": {
+                "price": 3.26
+              }
+            },
+            "spreads": {
+              "1. FC Köln": {
+                "price": 1.82,
+                "point": 0.25,
+                "prob": 53.0
+              },
+              "FC St. Pauli": {
+                "price": 2.05,
+                "point": -0.25,
+                "prob": 47.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.92,
+                "point": 2.25,
+                "prob": 50.0
+              },
+              "Under": {
+                "price": 1.92,
+                "point": 2.25,
+                "prob": 50.0
+              }
+            }
+          }
         },
         {
-          "time": "04/10 21:14",
-          "Bayern Munich": 1.588,
-          "Real Madrid": 4.513,
-          "Draw": 5.009
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "1. FC Köln": {
+                "price": 2.95
+              },
+              "FC St. Pauli": {
+                "price": 2.2
+              },
+              "Draw": {
+                "price": 3.1
+              }
+            }
+          }
         },
         {
-          "time": "04/10 21:23",
-          "Bayern Munich": 1.588,
-          "Real Madrid": 4.513,
-          "Draw": 5.009
+          "name": "Betclic (FR)",
+          "markets": {
+            "h2h": {
+              "1. FC Köln": {
+                "price": 3.1
+              },
+              "FC St. Pauli": {
+                "price": 2.28
+              },
+              "Draw": {
+                "price": 3.23
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "1. FC Köln": 3.072,
+        "FC St. Pauli": 2.34,
+        "Draw": 3.228
+      },
+      "true_probs": {
+        "1. FC Köln": 30.6,
+        "FC St. Pauli": 40.2,
+        "Draw": 29.2
+      },
+      "other_markets": {
+        "spreads": {
+          "1. FC Köln": {
+            "price": 1.82,
+            "point": 0.25,
+            "prob": 53.0
+          },
+          "FC St. Pauli": {
+            "price": 2.05,
+            "point": -0.25,
+            "prob": 47.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.92,
+            "point": 2.25,
+            "prob": 50.0
+          },
+          "Under": {
+            "price": 1.92,
+            "point": 2.25,
+            "prob": 50.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "1. FC Köln": 3.072,
+        "FC St. Pauli": 2.34,
+        "Draw": 3.228
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625055+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "1. FC Köln": 3.072,
+          "FC St. Pauli": 2.34,
+          "Draw": 3.228
+        }
+      ]
+    },
+    "c036050b0e0a7c47198af093319deab9": {
+      "id": "c036050b0e0a7c47198af093319deab9",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "Bayer Leverkusen",
+      "away_team": "Augsburg",
+      "commence_time": "2026-04-18T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Augsburg": {
+                "price": 6.46
+              },
+              "Bayer Leverkusen": {
+                "price": 1.44
+              },
+              "Draw": {
+                "price": 4.82
+              }
+            },
+            "spreads": {
+              "Augsburg": {
+                "price": 1.92,
+                "point": 1.25,
+                "prob": 50.1
+              },
+              "Bayer Leverkusen": {
+                "price": 1.93,
+                "point": -1.25,
+                "prob": 49.9
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.84,
+                "point": 3.0,
+                "prob": 52.1
+              },
+              "Under": {
+                "price": 2.0,
+                "point": 3.0,
+                "prob": 47.9
+              }
+            }
+          }
         },
         {
-          "time": "04/10 21:33",
-          "Bayern Munich": 1.588,
-          "Real Madrid": 4.509,
-          "Draw": 5.009
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Augsburg": {
+                "price": 5.8
+              },
+              "Bayer Leverkusen": {
+                "price": 1.38
+              },
+              "Draw": {
+                "price": 4.5
+              }
+            }
+          }
         },
         {
-          "time": "04/10 23:43",
-          "Bayern Munich": 1.588,
-          "Real Madrid": 4.51,
-          "Draw": 5.012
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Augsburg": {
+                "price": 6.91
+              },
+              "Bayer Leverkusen": {
+                "price": 1.48
+              },
+              "Draw": {
+                "price": 5.08
+              }
+            },
+            "spreads": {
+              "Augsburg": {
+                "price": 1.75,
+                "point": 1.5
+              },
+              "Bayer Leverkusen": {
+                "price": 2.25,
+                "point": -1.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.38,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.68,
+                "point": 3.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Augsburg": 6.383,
+        "Bayer Leverkusen": 1.438,
+        "Draw": 4.717
+      },
+      "true_probs": {
+        "Augsburg": 14.7,
+        "Bayer Leverkusen": 65.4,
+        "Draw": 19.9
+      },
+      "other_markets": {
+        "spreads": {
+          "Augsburg": {
+            "price": 1.92,
+            "point": 1.25,
+            "prob": 50.1
+          },
+          "Bayer Leverkusen": {
+            "price": 1.93,
+            "point": -1.25,
+            "prob": 49.9
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.84,
+            "point": 3.0,
+            "prob": 52.1
+          },
+          "Under": {
+            "price": 2.0,
+            "point": 3.0,
+            "prob": 47.9
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Augsburg": 6.383,
+        "Bayer Leverkusen": 1.438,
+        "Draw": 4.717
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625058+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Augsburg": 6.383,
+          "Bayer Leverkusen": 1.438,
+          "Draw": 4.717
+        }
+      ],
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
+      "analysis_source": "fallback"
+    },
+    "5d060a6bc6d73ff3baf1b6befb592076": {
+      "id": "5d060a6bc6d73ff3baf1b6befb592076",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "TSG Hoffenheim",
+      "away_team": "Borussia Dortmund",
+      "commence_time": "2026-04-18T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Borussia Dortmund": {
+                "price": 2.36
+              },
+              "TSG Hoffenheim": {
+                "price": 2.68
+              },
+              "Draw": {
+                "price": 3.94
+              }
+            },
+            "spreads": {
+              "Borussia Dortmund": {
+                "price": 1.81,
+                "point": -0.0,
+                "prob": 53.2
+              },
+              "TSG Hoffenheim": {
+                "price": 2.06,
+                "point": 0.0,
+                "prob": 46.8
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.02,
+                "point": 3.25,
+                "prob": 47.4
+              },
+              "Under": {
+                "price": 1.82,
+                "point": 3.25,
+                "prob": 52.6
+              }
+            }
+          }
         },
         {
-          "time": "04/11 08:45",
-          "Bayern Munich": 1.577,
-          "Real Madrid": 4.56,
-          "Draw": 5.074
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Borussia Dortmund": {
+                "price": 2.25
+              },
+              "TSG Hoffenheim": {
+                "price": 2.5
+              },
+              "Draw": {
+                "price": 3.6
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Borussia Dortmund": {
+                "price": 2.42
+              },
+              "TSG Hoffenheim": {
+                "price": 2.83
+              },
+              "Draw": {
+                "price": 4.03
+              }
+            },
+            "spreads": {
+              "Borussia Dortmund": {
+                "price": 1.83,
+                "point": 0.0
+              },
+              "TSG Hoffenheim": {
+                "price": 2.13,
+                "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.32,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.71,
+                "point": 3.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Borussia Dortmund": 2.325,
+        "TSG Hoffenheim": 2.683,
+        "Draw": 3.861
+      },
+      "true_probs": {
+        "Borussia Dortmund": 40.5,
+        "TSG Hoffenheim": 35.1,
+        "Draw": 24.4
+      },
+      "other_markets": {
+        "spreads": {
+          "Borussia Dortmund": {
+            "price": 1.81,
+            "point": -0.0,
+            "prob": 53.2
+          },
+          "TSG Hoffenheim": {
+            "price": 2.06,
+            "point": 0.0,
+            "prob": 46.8
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.02,
+            "point": 3.25,
+            "prob": 47.4
+          },
+          "Under": {
+            "price": 1.82,
+            "point": 3.25,
+            "prob": 52.6
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Borussia Dortmund": 2.325,
+        "TSG Hoffenheim": 2.683,
+        "Draw": 3.861
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625062+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Borussia Dortmund": 2.325,
+          "TSG Hoffenheim": 2.683,
+          "Draw": 3.861
+        }
+      ]
+    },
+    "12ea6b540ca92cfb666ee8e9f96b8867": {
+      "id": "12ea6b540ca92cfb666ee8e9f96b8867",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "Werder Bremen",
+      "away_team": "Hamburger SV",
+      "commence_time": "2026-04-18T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Hamburger SV": {
+                "price": 3.52
+              },
+              "Werder Bremen": {
+                "price": 2.05
+              },
+              "Draw": {
+                "price": 3.58
+              }
+            },
+            "spreads": {
+              "Hamburger SV": {
+                "price": 1.81,
+                "point": 0.5,
+                "prob": 53.2
+              },
+              "Werder Bremen": {
+                "price": 2.06,
+                "point": -0.5,
+                "prob": 46.8
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.9,
+                "point": 2.75,
+                "prob": 50.4
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 2.75,
+                "prob": 49.6
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Hamburger SV": {
+                "price": 3.3
+              },
+              "Werder Bremen": {
+                "price": 1.94
+              },
+              "Draw": {
+                "price": 3.4
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Hamburger SV": {
+                "price": 3.63
+              },
+              "Werder Bremen": {
+                "price": 2.1
+              },
+              "Draw": {
+                "price": 3.77
+              }
+            },
+            "spreads": {
+              "Hamburger SV": {
+                "price": 2.56,
+                "point": 0.0
+              },
+              "Werder Bremen": {
+                "price": 1.51,
+                "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.77,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.22,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Hamburger SV": 3.455,
+        "Werder Bremen": 2.015,
+        "Draw": 3.63
+      },
+      "true_probs": {
+        "Hamburger SV": 27.3,
+        "Werder Bremen": 46.8,
+        "Draw": 26.0
+      },
+      "other_markets": {
+        "spreads": {
+          "Hamburger SV": {
+            "price": 1.81,
+            "point": 0.5,
+            "prob": 53.2
+          },
+          "Werder Bremen": {
+            "price": 2.06,
+            "point": -0.5,
+            "prob": 46.8
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.9,
+            "point": 2.75,
+            "prob": 50.4
+          },
+          "Under": {
+            "price": 1.93,
+            "point": 2.75,
+            "prob": 49.6
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Hamburger SV": 3.455,
+        "Werder Bremen": 2.015,
+        "Draw": 3.63
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625064+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Hamburger SV": 3.455,
+          "Werder Bremen": 2.015,
+          "Draw": 3.63
+        }
+      ]
+    },
+    "b5a6981b2a16f2cac6de83db44efcead": {
+      "id": "b5a6981b2a16f2cac6de83db44efcead",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "Union Berlin",
+      "away_team": "VfL Wolfsburg",
+      "commence_time": "2026-04-18T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Union Berlin": {
+                "price": 2.17
+              },
+              "VfL Wolfsburg": {
+                "price": 3.17
+              },
+              "Draw": {
+                "price": 3.66
+              }
+            },
+            "spreads": {
+              "Union Berlin": {
+                "price": 1.9,
+                "point": -0.25,
+                "prob": 50.6
+              },
+              "VfL Wolfsburg": {
+                "price": 1.95,
+                "point": 0.25,
+                "prob": 49.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.85,
+                "point": 2.5,
+                "prob": 51.8
+              },
+              "Under": {
+                "price": 1.99,
+                "point": 2.5,
+                "prob": 48.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Union Berlin": {
+                "price": 2.05
+              },
+              "VfL Wolfsburg": {
+                "price": 3.0
+              },
+              "Draw": {
+                "price": 3.3
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Union Berlin": {
+                "price": 2.26
+              },
+              "VfL Wolfsburg": {
+                "price": 3.3
+              },
+              "Draw": {
+                "price": 3.71
+              }
+            },
+            "spreads": {
+              "Union Berlin": {
+                "price": 1.61,
+                "point": 0.0
+              },
+              "VfL Wolfsburg": {
+                "price": 2.32,
+                "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.03,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Union Berlin": 2.16,
+        "VfL Wolfsburg": 3.156,
+        "Draw": 3.536
+      },
+      "true_probs": {
+        "Union Berlin": 43.6,
+        "VfL Wolfsburg": 29.8,
+        "Draw": 26.6
+      },
+      "other_markets": {
+        "spreads": {
+          "Union Berlin": {
+            "price": 1.9,
+            "point": -0.25,
+            "prob": 50.6
+          },
+          "VfL Wolfsburg": {
+            "price": 1.95,
+            "point": 0.25,
+            "prob": 49.4
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.85,
+            "point": 2.5,
+            "prob": 51.8
+          },
+          "Under": {
+            "price": 1.99,
+            "point": 2.5,
+            "prob": 48.2
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Union Berlin": 2.16,
+        "VfL Wolfsburg": 3.156,
+        "Draw": 3.536
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625068+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Union Berlin": 2.16,
+          "VfL Wolfsburg": 3.156,
+          "Draw": 3.536
+        }
+      ]
+    },
+    "8e0a3736b06bce73da2581f75e2cf194": {
+      "id": "8e0a3736b06bce73da2581f75e2cf194",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "Eintracht Frankfurt",
+      "away_team": "RB Leipzig",
+      "commence_time": "2026-04-18T16:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Eintracht Frankfurt": {
+                "price": 3.28
+              },
+              "RB Leipzig": {
+                "price": 2.06
+              },
+              "Draw": {
+                "price": 3.84
+              }
+            },
+            "spreads": {
+              "Eintracht Frankfurt": {
+                "price": 2.05,
+                "point": 0.25,
+                "prob": 46.9
+              },
+              "RB Leipzig": {
+                "price": 1.81,
+                "point": -0.25,
+                "prob": 53.1
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.97,
+                "point": 3.25,
+                "prob": 48.6
+              },
+              "Under": {
+                "price": 1.86,
+                "point": 3.25,
+                "prob": 51.4
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Eintracht Frankfurt": {
+                "price": 2.9
+              },
+              "RB Leipzig": {
+                "price": 1.98
+              },
+              "Draw": {
+                "price": 3.7
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Eintracht Frankfurt": {
+                "price": 3.4
+              },
+              "RB Leipzig": {
+                "price": 2.1
+              },
+              "Draw": {
+                "price": 4.07
+              }
+            },
+            "spreads": {
+              "Eintracht Frankfurt": {
+                "price": 2.46,
+                "point": 0.0
+              },
+              "RB Leipzig": {
+                "price": 1.55,
+                "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.25,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 1.75,
+                "point": 3.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Eintracht Frankfurt": 3.183,
+        "RB Leipzig": 2.049,
+        "Draw": 3.866
+      },
+      "true_probs": {
+        "Eintracht Frankfurt": 29.6,
+        "RB Leipzig": 46.0,
+        "Draw": 24.4
+      },
+      "other_markets": {
+        "spreads": {
+          "Eintracht Frankfurt": {
+            "price": 2.05,
+            "point": 0.25,
+            "prob": 46.9
+          },
+          "RB Leipzig": {
+            "price": 1.81,
+            "point": -0.25,
+            "prob": 53.1
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.97,
+            "point": 3.25,
+            "prob": 48.6
+          },
+          "Under": {
+            "price": 1.86,
+            "point": 3.25,
+            "prob": 51.4
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Eintracht Frankfurt": 3.183,
+        "RB Leipzig": 2.049,
+        "Draw": 3.866
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625071+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Eintracht Frankfurt": 3.183,
+          "RB Leipzig": 2.049,
+          "Draw": 3.866
+        }
+      ]
+    },
+    "6d912b02658b54e9d50e7b37a4587155": {
+      "id": "6d912b02658b54e9d50e7b37a4587155",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "SC Freiburg",
+      "away_team": "1. FC Heidenheim",
+      "commence_time": "2026-04-19T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "1. FC Heidenheim": {
+                "price": 4.99
+              },
+              "SC Freiburg": {
+                "price": 1.63
+              },
+              "Draw": {
+                "price": 4.16
+              }
+            },
+            "spreads": {
+              "1. FC Heidenheim": {
+                "price": 1.8,
+                "point": 1.0,
+                "prob": 53.5
+              },
+              "SC Freiburg": {
+                "price": 2.07,
+                "point": -1.0,
+                "prob": 46.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.88,
+                "point": 2.75,
+                "prob": 51.0
+              },
+              "Under": {
+                "price": 1.96,
+                "point": 2.75,
+                "prob": 49.0
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "1. FC Heidenheim": {
+                "price": 4.7
+              },
+              "SC Freiburg": {
+                "price": 1.55
+              },
+              "Draw": {
+                "price": 3.8
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "1. FC Heidenheim": {
+                "price": 5.38
+              },
+              "SC Freiburg": {
+                "price": 1.67
+              },
+              "Draw": {
+                "price": 4.37
+              }
+            },
+            "spreads": {
+              "1. FC Heidenheim": {
+                "price": 1.44,
+                "point": 1.5
+              },
+              "SC Freiburg": {
+                "price": 2.59,
+                "point": -1.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.75,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.25,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "1. FC Heidenheim": 4.884,
+        "SC Freiburg": 1.609,
+        "Draw": 3.997
+      },
+      "true_probs": {
+        "1. FC Heidenheim": 19.0,
+        "SC Freiburg": 57.7,
+        "Draw": 23.2
+      },
+      "other_markets": {
+        "spreads": {
+          "1. FC Heidenheim": {
+            "price": 1.8,
+            "point": 1.0,
+            "prob": 53.5
+          },
+          "SC Freiburg": {
+            "price": 2.07,
+            "point": -1.0,
+            "prob": 46.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.88,
+            "point": 2.75,
+            "prob": 51.0
+          },
+          "Under": {
+            "price": 1.96,
+            "point": 2.75,
+            "prob": 49.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "1. FC Heidenheim": 4.884,
+        "SC Freiburg": 1.609,
+        "Draw": 3.997
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625073+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "1. FC Heidenheim": 4.884,
+          "SC Freiburg": 1.609,
+          "Draw": 3.997
+        }
+      ]
+    },
+    "681c82154abc25a4e884697a59dc37ed": {
+      "id": "681c82154abc25a4e884697a59dc37ed",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "Bayern Munich",
+      "away_team": "VfB Stuttgart",
+      "commence_time": "2026-04-19T15:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Bayern Munich": {
+                "price": 1.39
+              },
+              "VfB Stuttgart": {
+                "price": 8.66
+              },
+              "Draw": {
+                "price": 4.53
+              }
+            },
+            "spreads": {
+              "Bayern Munich": {
+                "price": 1.92,
+                "point": -1.5,
+                "prob": 50.1
+              },
+              "VfB Stuttgart": {
+                "price": 1.93,
+                "point": 1.5,
+                "prob": 49.9
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.03,
+                "point": 4.0,
+                "prob": 47.3
+              },
+              "Under": {
+                "price": 1.82,
+                "point": 4.0,
+                "prob": 52.7
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Bayern Munich": {
+                "price": 1.32
+              },
+              "VfB Stuttgart": {
+                "price": 5.8
+              },
+              "Draw": {
+                "price": 5.2
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Bayern Munich": {
+                "price": 1.43
+              },
+              "VfB Stuttgart": {
+                "price": 8.3
+              },
+              "Draw": {
+                "price": 5.07
+              }
+            },
+            "spreads": {
+              "Bayern Munich": {
+                "price": 1.97,
+                "point": -1.5
+              },
+              "VfB Stuttgart": {
+                "price": 1.97,
+                "point": 1.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.7,
+                "point": 3.5
+              },
+              "Under": {
+                "price": 2.34,
+                "point": 3.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Bayern Munich": 1.364,
+        "VfB Stuttgart": 7.57,
+        "Draw": 5.163
+      },
+      "true_probs": {
+        "Bayern Munich": 69.2,
+        "VfB Stuttgart": 12.5,
+        "Draw": 18.3
+      },
+      "other_markets": {
+        "spreads": {
+          "Bayern Munich": {
+            "price": 1.92,
+            "point": -1.5,
+            "prob": 50.1
+          },
+          "VfB Stuttgart": {
+            "price": 1.93,
+            "point": 1.5,
+            "prob": 49.9
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.03,
+            "point": 4.0,
+            "prob": 47.3
+          },
+          "Under": {
+            "price": 1.82,
+            "point": 4.0,
+            "prob": 52.7
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Bayern Munich": 1.364,
+        "VfB Stuttgart": 7.57,
+        "Draw": 5.163
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625077+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Bayern Munich": 1.364,
+          "VfB Stuttgart": 7.57,
+          "Draw": 5.163
         }
       ],
       "weather": {
-        "temp": 6.2,
-        "wind": 11.8,
+        "temp": 4.6,
+        "wind": 9.4,
         "rain": 0.0,
         "condition": "☀️ 晴朗",
         "impact": ""
       },
-      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
-      "analysis_source": "rule_based"
+      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
+      "analysis_source": "fallback"
+    },
+    "6eb4d0ea8406f8edf5046e34ba3671e7": {
+      "id": "6eb4d0ea8406f8edf5046e34ba3671e7",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "德甲 Bundesliga",
+      "home_team": "Borussia Monchengladbach",
+      "away_team": "FSV Mainz 05",
+      "commence_time": "2026-04-19T17:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Borussia Monchengladbach": {
+                "price": 2.44
+              },
+              "FSV Mainz 05": {
+                "price": 2.79
+              },
+              "Draw": {
+                "price": 3.57
+              }
+            },
+            "spreads": {
+              "Borussia Monchengladbach": {
+                "price": 1.8,
+                "point": 0.0,
+                "prob": 53.5
+              },
+              "FSV Mainz 05": {
+                "price": 2.07,
+                "point": -0.0,
+                "prob": 46.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.86,
+                "point": 2.5,
+                "prob": 51.6
+              },
+              "Under": {
+                "price": 1.98,
+                "point": 2.5,
+                "prob": 48.4
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Borussia Monchengladbach": {
+                "price": 2.25
+              },
+              "FSV Mainz 05": {
+                "price": 2.65
+              },
+              "Draw": {
+                "price": 3.3
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Borussia Monchengladbach": {
+                "price": 2.52
+              },
+              "FSV Mainz 05": {
+                "price": 2.9
+              },
+              "Draw": {
+                "price": 3.65
+              }
+            },
+            "spreads": {
+              "Borussia Monchengladbach": {
+                "price": 1.85,
+                "point": 0.0
+              },
+              "FSV Mainz 05": {
+                "price": 2.1,
+                "point": 0.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.92,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.02,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Borussia Monchengladbach": 2.355,
+        "FSV Mainz 05": 2.705,
+        "Draw": 3.374
+      },
+      "true_probs": {
+        "Borussia Monchengladbach": 38.9,
+        "FSV Mainz 05": 33.9,
+        "Draw": 27.2
+      },
+      "other_markets": {
+        "spreads": {
+          "Borussia Monchengladbach": {
+            "price": 1.8,
+            "point": 0.0,
+            "prob": 53.5
+          },
+          "FSV Mainz 05": {
+            "price": 2.07,
+            "point": -0.0,
+            "prob": 46.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.86,
+            "point": 2.5,
+            "prob": 51.6
+          },
+          "Under": {
+            "price": 1.98,
+            "point": 2.5,
+            "prob": 48.4
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Borussia Monchengladbach": 2.355,
+        "FSV Mainz 05": 2.705,
+        "Draw": 3.374
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-11T13:02:54.625079+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/11 13:02",
+          "Borussia Monchengladbach": 2.355,
+          "FSV Mainz 05": 2.705,
+          "Draw": 3.374
+        }
+      ]
     }
   },
   "leagues": {
     "NBA": [
-      "70a2274c4f82c7a3f37879b7edf0cfa4",
-      "1126b937945abff19e12dc1ac60f2ecb",
-      "f47d78a747510d6ef00500f74872372d",
-      "4398234154ac742bd22d689c8d4bf956",
-      "80adae4b4459f5602f7500d94892f2a5",
-      "39083e08e7959b0ec516933d574379cd",
-      "ebbf0d3885094991ff36055e753635a3",
-      "51aa38f3acd638a314975c61ab16a862",
-      "d463e0aa51436ff32f8ee83d6d3893a8",
-      "11fa8c6f7710a287909a9765aa925cce",
-      "1fbdc557471472d90b606f5e50853915",
-      "88bf78be502ce70dd7e5e669cd9f95df",
-      "d6099dffbcac5bbcdf69fd35c6229ff7",
-      "858993998045b68682b2aae461cb4037",
-      "1935906088ec1cf3d2f989ace06a8acb"
+      "1935906088ec1cf3d2f989ace06a8acb",
+      "22dcb3e32847c7eab5774e8927016216",
+      "f78d40af453b24c39e18559579894d14",
+      "38b10a0526d5b246097a502269bcdf71"
     ],
-    "歐冠 UCL": [
-      "e39a51d05b5444bf1c98ffa0ed6811d3",
-      "6f7c43b668146a5e9ba09151c1ba460b",
-      "02ff9b02f1eab3394f9e38d70e257e12",
-      "76200682955d7f62f3b051a14f5f67fa"
+    "德甲 Bundesliga": [
+      "2511313dfbfa1fe5714b0b8cd6ba0c1f",
+      "a37f2dbc488d6e5d8d222c90baf147ad",
+      "5d7d753912fa6244f3eec78d2fd2e1b4",
+      "0ed7ec2f06bb6aade4f4efb225fe239f",
+      "0b40b16ce0a37bbd5e9e8405c2d3fd16",
+      "5a6b97618df4296ab0fe52ddbf8cf9c9",
+      "292214a603a411e313a6c30ec6d0ca5a",
+      "06f3024060ccf4d366a992e875d45d65",
+      "be9eda34a4ddf026072d12f7db44ec28",
+      "c036050b0e0a7c47198af093319deab9",
+      "5d060a6bc6d73ff3baf1b6befb592076",
+      "12ea6b540ca92cfb666ee8e9f96b8867",
+      "b5a6981b2a16f2cac6de83db44efcead",
+      "8e0a3736b06bce73da2581f75e2cf194",
+      "6d912b02658b54e9d50e7b37a4587155",
+      "681c82154abc25a4e884697a59dc37ed",
+      "6eb4d0ea8406f8edf5046e34ba3671e7"
     ]
   },
   "news": {
@@ -4258,52 +3388,52 @@
         "summary": "All 30 teams play Friday, with plenty left to be decided. Plus, updated playoff projections, draft lottery."
       },
       {
+        "title": "SGA, Jokic among at least 168 out NBA-wide Fri.",
+        "link": "https://www.espn.com/nba/story/_/id/48453474/nba-friday-slate-sees-least-168-injury-illness",
+        "published": "Sat, 11 Apr 2026 00:53:43 EST",
+        "summary": "Around the NBA, no fewer than 168 players were held out of Friday's games, including reigning MVP Shai Gilgeous-Alexander, three-time MVP Nikola Jokic and 14 members of the Memphis Grizzlies."
+      },
+      {
+        "title": "Wembanyama checks another 'box,' hits 65 games",
+        "link": "https://www.espn.com/nba/story/_/id/48453963/wembanyama-40-points-13-rebounds-hits-65-games-checks-another-box",
+        "published": "Sat, 11 Apr 2026 00:53:43 EST",
+        "summary": "Victor Wembanyama reached the 65-game threshold for awards eligibility on Friday with a 40-point outing that included 13 rebounds in a 139-120 win over the Dallas Mavericks."
+      },
+      {
+        "title": "Celtics tie NBA record with 29 3s; clinch 2-seed",
+        "link": "https://www.espn.com/nba/story/_/id/48453131/celtics-tie-nba-record-29-3s-clinch-no-2-seed",
+        "published": "Sat, 11 Apr 2026 00:53:44 EST",
+        "summary": "The Celtics tied the franchise and NBA record with 29 3s on their way to clinching the Eastern Conference's No. 2 playoff seed in a blowout win over the Pelicans on Friday night."
+      },
+      {
+        "title": "Redick: 'Everybody' wants to face hobbled Lakers",
+        "link": "https://www.espn.com/nba/story/_/id/48453400/jj-redick-short-handed-lakers-everybody-wants-play-us",
+        "published": "Sat, 11 Apr 2026 00:53:44 EST",
+        "summary": "Lakers coach JJ Redick believes other West teams that still have their seeding to be determined prefer L.A. as their first-round opponent in the playoffs."
+      },
+      {
         "title": "76ers' Embiid out of hospital; no timeline to play",
         "link": "https://www.espn.com/nba/story/_/id/48450628/76ers-star-joel-embiid-hospital-one-day-surgery",
-        "published": "Fri, 10 Apr 2026 16:34:47 EST",
+        "published": "Sat, 11 Apr 2026 00:53:44 EST",
         "summary": "Sixers star Joel Embiid has been discharged from a Houston hospital and is heading back to Philadelphia, with the team saying there is no set timeline for his return to the court."
       },
       {
         "title": "Heat waive Rozier, open roster spot for addition",
         "link": "https://www.espn.com/nba/story/_/id/48447174/sources-heat-waive-embattled-guard-terry-rozier",
-        "published": "Fri, 10 Apr 2026 16:34:47 EST",
+        "published": "Sat, 11 Apr 2026 00:53:43 EST",
         "summary": "Miami guard Terry Rozier, who has been on leave since October amid a sports gambling probe, has been waived by the Heat."
-      },
-      {
-        "title": "Tatum clears hurdle, happy to exit MSG on '2 feet'",
-        "link": "https://www.espn.com/nba/story/_/id/48444324/celtics-jayson-tatum-checks-another-box-return-msg",
-        "published": "Fri, 10 Apr 2026 16:34:47 EST",
-        "summary": "Jayson Tatum had 24 points, 13 rebounds and eight assists in 40 minutes Thursday night but, more importantly, walked \"off the floor on my own two feet.\""
       },
       {
         "title": "Donovan not reading into Reinsdorf's endorsement",
         "link": "https://www.espn.com/nba/story/_/id/48442739/bulls-donovan-says-not-reading-reinsdorf-endorsement",
-        "published": "Fri, 10 Apr 2026 16:34:47 EST",
+        "published": "Sat, 11 Apr 2026 00:53:44 EST",
         "summary": "Bulls coach Billy Donovan, who has yet to decide on his future with the team, appreciated team president and CEO Michael Reinsdorf's endorsement of him but said he understood \"everybody's got to look "
-      },
-      {
-        "title": "Sarr (toe) to miss Wizards' final three games",
-        "link": "https://www.espn.com/nba/story/_/id/48442649/alex-sarr-miss-wizards-final-three-games-toe-injury",
-        "published": "Fri, 10 Apr 2026 16:34:47 EST",
-        "summary": "Wizards forward Alex Sarr is likely to miss the final three games of the season with a toe injury."
-      },
-      {
-        "title": "OKC locks up No. 1 seed, joins elite company",
-        "link": "https://www.espn.com/nba/story/_/id/48435203/okc-locks-no-1-seed-home-court-postseason",
-        "published": "Fri, 10 Apr 2026 16:34:47 EST",
-        "summary": "The Thunder clinched the NBA's best regular-season record with a win over the Clippers to join some exclusive company."
       },
       {
         "title": "NBA fines Magic $25K for injury report violation",
         "link": "https://www.espn.com/nba/story/_/id/48440537/nba-fines-magic-25k-violating-injury-reporting-rules",
-        "published": "Fri, 10 Apr 2026 16:34:47 EST",
+        "published": "Sat, 11 Apr 2026 00:53:43 EST",
         "summary": "The NBA fined the Orlando Magic $25,000 on Thursday for violating league injury reporting rules before Monday night's home game against the Detroit Pistons."
-      },
-      {
-        "title": "Stanford star freshman Okorie declares for draft",
-        "link": "https://www.espn.com/mens-college-basketball/story/_/id/48440648/stanford-star-freshman-ebuka-okorie-declares-nba-draft",
-        "published": "Fri, 10 Apr 2026 16:34:47 EST",
-        "summary": "Stanford star guard Ebuka Okorie will enter the NBA draft after leading the ACC in scoring as a freshman."
       }
     ],
     "soccer": [
@@ -4370,24 +3500,19 @@
     ]
   },
   "significant_changes": [
-    "f47d78a747510d6ef00500f74872372d",
-    "80adae4b4459f5602f7500d94892f2a5",
-    "70a2274c4f82c7a3f37879b7edf0cfa4",
-    "51aa38f3acd638a314975c61ab16a862",
-    "4398234154ac742bd22d689c8d4bf956",
-    "d463e0aa51436ff32f8ee83d6d3893a8",
-    "39083e08e7959b0ec516933d574379cd",
-    "ebbf0d3885094991ff36055e753635a3",
-    "d6099dffbcac5bbcdf69fd35c6229ff7",
-    "1fbdc557471472d90b606f5e50853915",
-    "02ff9b02f1eab3394f9e38d70e257e12",
-    "1126b937945abff19e12dc1ac60f2ecb",
-    "76200682955d7f62f3b051a14f5f67fa",
-    "e39a51d05b5444bf1c98ffa0ed6811d3"
+    "1935906088ec1cf3d2f989ace06a8acb",
+    "38b10a0526d5b246097a502269bcdf71",
+    "0b40b16ce0a37bbd5e9e8405c2d3fd16",
+    "681c82154abc25a4e884697a59dc37ed",
+    "292214a603a411e313a6c30ec6d0ca5a",
+    "22dcb3e32847c7eab5774e8927016216",
+    "c036050b0e0a7c47198af093319deab9",
+    "5d7d753912fa6244f3eec78d2fd2e1b4",
+    "a37f2dbc488d6e5d8d222c90baf147ad"
   ],
   "stats": {
-    "total_matches": 19,
-    "significant_changes_count": 14,
-    "api_remaining": "94"
+    "total_matches": 21,
+    "significant_changes_count": 9,
+    "api_remaining": "78"
   }
 }
