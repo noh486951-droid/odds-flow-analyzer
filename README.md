@@ -1,6 +1,6 @@
 # ⚡ Odds Flow Analyzer | 運彩盤口變動追蹤器
 
-> **當前版本：v1.8.0**
+> **當前版本：v1.8.1**
 
 一套全自動、零成本的運彩分析工具，部署在 GitHub Pages 上，24 小時自動運轉。
 
@@ -66,6 +66,14 @@ odds-flow-analyzer/
 ---
 
 ## 📌 版本紀錄 (Changelog)
+
+### v1.8.1 — 2026-04-11
+> 🔥 SDK 全面遷移：舊 SDK 已停止支援，升級至 Gemini 2.5 系列
+
+- ✅ **SDK 遷移**：`google-generativeai` (已廢棄) → `google-genai` (官方新 SDK)
+- ✅ **模型升級**：`gemini-2.0-flash` → `gemini-2.5-flash-lite` (1000 RPD) + `gemini-2.5-flash` (250 RPD)
+- ✅ **翻譯模型**：改用 `gemini-2.5-flash-lite`，額度更大、回應更快
+- ✅ **修復 429 持續失敗**：舊 SDK + 舊模型被 Google 拒絕服務，遷移後恢復正常
 
 ### v1.8.0 — 2026-04-11
 > 三核動力支援：新增第三把 Gemini Key，穩定性再進化

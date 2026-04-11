@@ -9,7 +9,8 @@ import json
 import re
 import requests
 import feedparser
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from datetime import datetime, timezone, timedelta
 import time as time_module
 
@@ -956,20 +957,23 @@ def translate_news_titles(news_dict):
             break
             
         try:
-            genai.configure(api_key=api_key)
+            client = genai.Client(api_key=api_key)
             safety_settings = [
-                {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+                types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+                types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+                types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+                types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
             ]
-            
-            model = genai.GenerativeModel("gemini-2.0-flash")
-            response = model.generate_content(prompt, safety_settings=safety_settings)
+
+            response = client.models.generate_content(
+                model="gemini-2.5-flash-lite",
+                contents=prompt,
+                config=types.GenerateContentConfig(safety_settings=safety_settings)
+            )
 
             # 處理安全過濾導致空回應的情況
-            if not response.parts:
-                print("  ⚠️ 翻譯被安全過濾攔截（可能有敏感標題），保留英文原文")
+            if not response.text:
+                print("  ⚠️ 翻譯被安全過濾攔截或回應為空，保留英文原文")
                 break
             translated = response.text.strip()
             if not translated:
@@ -1030,18 +1034,18 @@ def analyze_with_ai(matches_with_changes, news_items):
     if not matches_with_changes:
         return []
 
-    # 使用字串字典形式設定 (避免套件版本匯入錯誤)
+    # 新版 SDK safety settings
     safety_settings = [
-        {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
-        {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-        {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-        {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+        types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+        types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+        types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+        types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
     ]
 
     results = []
 
-    # 免費版每日限制: gemini-2.0-flash ~1500次/天, gemini-2.0-flash-lite 額度更高
-    # 每次最多分析 3 場 (每天排程4次 = 最多12次/天，安全範圍內)
+    # v1.7.4: 升級至 Gemini 2.5 系列 (免費版額度: flash-lite 1000/日, flash 250/日)
+    # 每次最多分析 3~7 場 (依 Key 數量)
     matches_with_changes.sort(
         key=lambda m: max(m.get("true_probs", {}).values(), default=50),
         reverse=True
@@ -1049,9 +1053,9 @@ def analyze_with_ai(matches_with_changes, news_items):
     matches_to_analyze = matches_with_changes[:3]
     print(f"  📊 共 {len(matches_with_changes)} 場符合條件，取前 {len(matches_to_analyze)} 場進行 AI 分析 (可用 Keys: {len(gemini_key_manager.keys)})")
 
-    # v1.7.3: 移除已下架的 gemini-1.5-flash，修復 "rate" 誤匹配 "generateContent" 的 Bug
-    # Google 免費模型 (2026): gemini-2.0-flash, gemini-2.0-flash-lite
-    MODEL_PRIORITY = ["gemini-2.0-flash", "gemini-2.0-flash-lite"]
+    # v1.7.4: 升級至 Gemini 2.5 系列（舊版 2.0 將於 2026/6/1 下架）
+    # flash-lite 額度最大 (1000 RPD)，優先使用；flash 次之 (250 RPD)
+    MODEL_PRIORITY = ["gemini-2.5-flash-lite", "gemini-2.5-flash"]
 
     for i, match in enumerate(matches_to_analyze):
         prompt = build_analysis_prompt(match, news_items)
@@ -1072,19 +1076,22 @@ def analyze_with_ai(matches_with_changes, news_items):
                 print(f"  🔧 [AI DEBUG] ❌ get_key() 返回空，所有 Key 已停用或不存在")
                 break
 
-            genai.configure(api_key=api_key)
+            client = genai.Client(api_key=api_key)
             has_quota_error = False  # 此 Key 是否有任何 quota 錯誤
 
             # 內層：遍歷所有模型
             for model_name in MODEL_PRIORITY:
                 try:
                     print(f"  🔧 [AI DEBUG] 呼叫 {model_name} (via {key_label})...")
-                    model = genai.GenerativeModel(model_name)
-                    response = model.generate_content(prompt, safety_settings=safety_settings)
+                    response = client.models.generate_content(
+                        model=model_name,
+                        contents=prompt,
+                        config=types.GenerateContentConfig(safety_settings=safety_settings)
+                    )
 
                     # 安全地取得回應文字
-                    if not response.parts:
-                        print(f"  ⚠️ {model_name}: 回應被安全過濾攔截 (response.parts 為空)")
+                    if not response.text:
+                        print(f"  ⚠️ {model_name}: 回應為空或被安全過濾攔截")
                         continue
 
                     analysis_text = response.text.strip()
@@ -1630,7 +1637,7 @@ def main():
         MAX_AI = 3 if key_count == 1 else (5 if key_count == 2 else 7)
         significant.sort(key=lambda m: max(m.get("true_probs", {}).values(), default=50), reverse=True)
         ai_targets = significant[:MAX_AI]
-        print(f"\n🤖 啟動 AI 分析... (符合條件 {len(significant)} 場, 取前 {len(ai_targets)} 場, 模型: gemini-2.0-flash → 2.0-flash-lite)")
+        print(f"\n🤖 啟動 AI 分析... (符合條件 {len(significant)} 場, 取前 {len(ai_targets)} 場, 模型: gemini-2.5-flash-lite → 2.5-flash)")
         # 根據聯賽類型選擇新聞
         consecutive_failures = 0
         for idx, match in enumerate(ai_targets):
