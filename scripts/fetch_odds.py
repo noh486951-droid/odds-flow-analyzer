@@ -34,6 +34,7 @@ ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
 ODDS_API_KEY_2 = os.environ.get("ODDS_API_KEY_2", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_API_KEY_2 = os.environ.get("GEMINI_API_KEY_2", "") or os.environ.get("GEMINI_API_KEY2", "")
+GEMINI_API_KEY_3 = os.environ.get("GEMINI_API_KEY_3", "") or os.environ.get("GEMINI_API_KEY3", "")
 # DEBUG 模式: 設定為 true 時跳過 Odds API 呼叫，使用快取資料，只測試 AI 功能
 DEBUG_SKIP_ODDS = os.environ.get("DEBUG_SKIP_ODDS", "").lower() in ("true", "1", "yes")
 
@@ -139,6 +140,8 @@ class GeminiApiKeyManager:
             self.keys.append({"key": GEMINI_API_KEY, "label": "GKey-1", "active": True})
         if GEMINI_API_KEY_2:
             self.keys.append({"key": GEMINI_API_KEY_2, "label": "GKey-2", "active": True})
+        if GEMINI_API_KEY_3:
+            self.keys.append({"key": GEMINI_API_KEY_3, "label": "GKey-3", "active": True})
         self.current_idx = 0
     
     def get_key(self):
@@ -1020,7 +1023,7 @@ def analyze_with_ai(matches_with_changes, news_items):
     for idx, k in enumerate(gemini_key_manager.keys):
         print(f"  🔧 [AI DEBUG]   Key #{idx}: {k['label']}, active={k['active']}, key={k['key'][:8]}...")
 
-    if not GEMINI_API_KEY and not GEMINI_API_KEY_2:
+    if not GEMINI_API_KEY and not GEMINI_API_KEY_2 and not GEMINI_API_KEY_3:
         print("  ⚠️ 未設定 GEMINI API KEY，跳過 AI 分析")
         return add_fallback_analysis(matches_with_changes)
 
@@ -1492,6 +1495,7 @@ def main():
     print(f"\n🔧 環境診斷:")
     print(f"  GEMINI_API_KEY: {'✅ 已設定 (' + GEMINI_API_KEY[:8] + '...)' if GEMINI_API_KEY else '❌ 未設定'}")
     print(f"  GEMINI_API_KEY_2: {'✅ 已設定 (' + GEMINI_API_KEY_2[:8] + '...)' if GEMINI_API_KEY_2 else '❌ 未設定'}")
+    print(f"  GEMINI_API_KEY_3: {'✅ 已設定 (' + GEMINI_API_KEY_3[:8] + '...)' if GEMINI_API_KEY_3 else '❌ 未設定 (選填)'}")
     print(f"  Gemini Key Manager: {len(gemini_key_manager.keys)} 把 Key")
     print(f"  DEBUG_SKIP_ODDS: {DEBUG_SKIP_ODDS}")
 
@@ -1622,7 +1626,8 @@ def main():
     if significant:
         # v1.7.3: 在 main() 就限制數量，避免 14 場全部跑完浪費 quota 和時間
         # 按勝率排序，只取前 3 場（有雙 Key 可取 5 場）
-        MAX_AI = 5 if len(gemini_key_manager.keys) >= 2 else 3
+        key_count = len(gemini_key_manager.keys)
+        MAX_AI = 3 if key_count == 1 else (5 if key_count == 2 else 7)
         significant.sort(key=lambda m: max(m.get("true_probs", {}).values(), default=50), reverse=True)
         ai_targets = significant[:MAX_AI]
         print(f"\n🤖 啟動 AI 分析... (符合條件 {len(significant)} 場, 取前 {len(ai_targets)} 場, 模型: gemini-2.0-flash → 2.0-flash-lite)")

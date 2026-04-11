@@ -1,6 +1,6 @@
 # ⚡ Odds Flow Analyzer | 運彩盤口變動追蹤器
 
-> **當前版本：v1.7.3**
+> **當前版本：v1.8.0**
 
 一套全自動、零成本的運彩分析工具，部署在 GitHub Pages 上，24 小時自動運轉。
 
@@ -40,7 +40,8 @@
 | `ODDS_API_KEY` | The Odds API 金鑰 (https://the-odds-api.com/) |
 | `ODDS_API_KEY_2` | (選填) 第二組 The Odds API 金鑰，自動負載均衡 |
 | `GEMINI_API_KEY` | Google Gemini API 金鑰 (https://aistudio.google.com/) |
-| `GEMINI_API_KEY_2` | (選填) 第二組 Google Gemini API 金鑰，防 429 限流與額度擴充 |
+| `GEMINI_API_KEY_2` | (選填) 第二組 Google Gemini API 金鑰 |
+| `GEMINI_API_KEY_3` | (選填) 第三組 Google Gemini API 金鑰，三核動力支援 |
 
 ## 📁 專案結構
 
@@ -65,6 +66,13 @@ odds-flow-analyzer/
 ---
 
 ## 📌 版本紀錄 (Changelog)
+
+### v1.8.0 — 2026-04-11
+> 三核動力支援：新增第三把 Gemini Key，穩定性再進化
+
+- ✅ **新增 `GEMINI_API_KEY_3` 支援**：支援三組 API Key 輪替，大幅提升高頻分析時的 429 容錯率，AI 分析不再輕易斷供。
+- ✅ **優化 Key Manager 邏輯**：更精確的三金鑰自動切換與狀態回歸機制。
+- ✅ **文檔更新**：同步更新環境變數說明。
 
 ### v1.7.3 — 2026-04-11
 > 修復三大致命 Bug：模型 404、Key 切換失效、誤判邏輯

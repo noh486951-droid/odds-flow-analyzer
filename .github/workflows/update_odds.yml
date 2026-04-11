@@ -42,6 +42,8 @@ jobs:
           # 相容兩種 Secret 命名: GEMINI_API_KEY_2 或 GEMINI_API_KEY2
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY2: ${{ secrets.GEMINI_API_KEY2 }}
+          # 第三把 Key (選填，有設定才生效)
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
           DEBUG_SKIP_ODDS: ${{ github.event.inputs.debug_skip_odds || 'false' }}
         run: python scripts/fetch_odds.py
 
