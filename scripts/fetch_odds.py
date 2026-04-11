@@ -1044,6 +1044,14 @@ def analyze_with_ai(matches_with_changes, news_items):
 
     results = []
 
+    # v1.8.2: 載入歷史成績作為 AI 自我學習素材
+    print("  📚 載入 AI 歷史成績進行自我反饋...")
+    perf_stats = load_ai_performance_stats(days=14)
+    if perf_stats and perf_stats.get("overall", {}).get("total", 0) > 0:
+        print(f"  📊 歷史資料: {perf_stats['total_samples']} 場, 整體命中率 {perf_stats['overall'].get('pct', 'N/A')}%")
+    else:
+        print("  📊 歷史資料不足，跳過自我反饋（累積更多比賽後會啟用）")
+
     # v1.7.4: 升級至 Gemini 2.5 系列 (免費版額度: flash-lite 1000/日, flash 250/日)
     # 每次最多分析 3~7 場 (依 Key 數量)
     matches_with_changes.sort(
@@ -1058,7 +1066,10 @@ def analyze_with_ai(matches_with_changes, news_items):
     MODEL_PRIORITY = ["gemini-2.5-flash-lite", "gemini-2.5-flash"]
 
     for i, match in enumerate(matches_to_analyze):
-        prompt = build_analysis_prompt(match, news_items)
+        # v1.8.2: 為每場比賽找出相似的歷史場次
+        similar = find_similar_past_matches(match, days=30) if perf_stats else []
+        perf_context = format_performance_context(perf_stats, similar) if perf_stats else ""
+        prompt = build_analysis_prompt(match, news_items, performance_context=perf_context)
         success = False
 
         # v1.7.2 修復：每場比賽重置 Key Manager，避免上一場的失敗狀態汙染後續比賽
@@ -1152,7 +1163,7 @@ def analyze_with_ai(matches_with_changes, news_items):
     return results
 
 
-def build_analysis_prompt(match, news_items):
+def build_analysis_prompt(match, news_items, performance_context=""):
     """建構 AI 分析的 Prompt (含傷兵/H2H/疲勞)"""
     home = match["home_team"]
     away = match["away_team"]
@@ -1285,12 +1296,15 @@ def build_analysis_prompt(match, news_items):
 ## 最新相關新聞
 {news_text}
 
+{performance_context}
+
 ## 你的任務
 1. 結合所有資訊（勝率、盤口走勢、急速移動、傷兵、疲勞、主客場、H2H、天氣），在開頭給出【💡 投注推薦】。
 2. 用 2~3 句話說明推薦原因，必須提到你考量了哪些關鍵因素。
 3. 若有急速移動或聰明錢訊號，特別強調。若盤口走勢顯示單向大幅移動，分析可能原因。
 4. 若有傷兵、背靠背、或惡劣天氣，必須提醒對盤口的影響。
-5. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因。控制在 120 字以內。
+5. 若【AI 自我學習參考】顯示當前勝率區間的歷史命中率偏低，請在分析中主動提醒，並降低信心程度。
+6. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因。控制在 150 字以內。
 """
     return prompt
 
@@ -1312,6 +1326,199 @@ def add_fallback_analysis(matches):
         match["analysis_source"] = "rule_based"
 
     return matches
+
+
+# ============================================================
+# AI 自我反饋學習模組 (v1.8.2)
+# ============================================================
+def load_ai_performance_stats(days=14):
+    """
+    讀取最近 N 天的存檔，統計 AI 的歷史命中率。
+    回傳一個包含多維度統計的字典，供 prompt 使用。
+    """
+    archive_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "archive")
+    if not os.path.exists(archive_dir):
+        return None
+
+    now = datetime.now(timezone.utc)
+    all_results = []
+
+    for i in range(days):
+        date = (now - timedelta(days=i)).strftime("%Y-%m-%d")
+        filepath = os.path.join(archive_dir, f"{date}.json")
+        if not os.path.exists(filepath):
+            continue
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for m in data.get("matches", {}).values():
+                result = m.get("ai_result")
+                if result and result != "N/A":
+                    home_prob = m.get("true_probs", {}).get(m.get("home_team"), 50)
+                    away_prob = m.get("true_probs", {}).get(m.get("away_team"), 50)
+                    fav_prob = max(home_prob, away_prob)
+                    has_sharp = bool(m.get("sharp_moves"))
+                    league = m.get("league", "")
+                    all_results.append({
+                        "result": result,
+                        "fav_prob": fav_prob,
+                        "has_sharp": has_sharp,
+                        "league": league,
+                        "date": date,
+                        "home": m.get("home_team", ""),
+                        "away": m.get("away_team", ""),
+                    })
+        except Exception:
+            continue
+
+    if not all_results:
+        return None
+
+    def calc_rate(subset):
+        hits = sum(1 for r in subset if r["result"] == "HIT")
+        total = sum(1 for r in subset if r["result"] in ("HIT", "MISS"))
+        return (hits, total, round(hits / total * 100) if total > 0 else None)
+
+    stats = {"total_samples": len(all_results)}
+
+    # 整體命中率
+    h, t, pct = calc_rate(all_results)
+    stats["overall"] = {"hits": h, "total": t, "pct": pct}
+
+    # 依聯賽分類
+    stats["by_league"] = {}
+    for league in set(r["league"] for r in all_results):
+        subset = [r for r in all_results if r["league"] == league]
+        h, t, pct = calc_rate(subset)
+        if t >= 3:
+            stats["by_league"][league] = {"hits": h, "total": t, "pct": pct}
+
+    # 依勝率區間分類（僅統計大熱門）
+    stats["by_prob_range"] = {}
+    for lo, hi, label in [(60, 65, "60-65%"), (65, 70, "65-70%"), (70, 80, "70-80%"), (80, 100, "80%+")]:
+        subset = [r for r in all_results if lo <= r["fav_prob"] < hi]
+        h, t, pct = calc_rate(subset)
+        if t >= 3:
+            stats["by_prob_range"][label] = {"hits": h, "total": t, "pct": pct}
+
+    # 有無急速移動的差異
+    sharp_sub = [r for r in all_results if r["has_sharp"]]
+    normal_sub = [r for r in all_results if not r["has_sharp"]]
+    h, t, pct = calc_rate(sharp_sub)
+    if t >= 3:
+        stats["sharp_moves_rate"] = {"hits": h, "total": t, "pct": pct}
+    h, t, pct = calc_rate(normal_sub)
+    if t >= 3:
+        stats["normal_rate"] = {"hits": h, "total": t, "pct": pct}
+
+    # 近 3 天趨勢
+    recent_cutoff = (now - timedelta(days=3)).strftime("%Y-%m-%d")
+    recent = [r for r in all_results if r["date"] >= recent_cutoff]
+    h, t, pct = calc_rate(recent)
+    if t >= 2:
+        stats["recent_3d"] = {"hits": h, "total": t, "pct": pct}
+
+    return stats
+
+
+def find_similar_past_matches(match, days=30, max_results=3):
+    """
+    在歷史存檔中找出與當前比賽條件相似的已完賽場次。
+    相似條件：同聯賽 + 勝率區間相近 + 已有結果
+    """
+    archive_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "archive")
+    if not os.path.exists(archive_dir):
+        return []
+
+    home = match.get("home_team", "")
+    away = match.get("away_team", "")
+    league = match.get("league", "")
+    home_prob = match.get("true_probs", {}).get(home, 50)
+    away_prob = match.get("true_probs", {}).get(away, 50)
+    has_sharp = bool(match.get("sharp_moves"))
+
+    now = datetime.now(timezone.utc)
+    similar = []
+
+    for i in range(1, days + 1):  # 從昨天往前找
+        date = (now - timedelta(days=i)).strftime("%Y-%m-%d")
+        filepath = os.path.join(archive_dir, f"{date}.json")
+        if not os.path.exists(filepath):
+            continue
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for m in data.get("matches", {}).values():
+                if m.get("ai_result") not in ("HIT", "MISS"):
+                    continue
+                if m.get("league", "") != league:
+                    continue
+                m_home = m.get("home_team", "")
+                m_away = m.get("away_team", "")
+                m_home_prob = m.get("true_probs", {}).get(m_home, 50)
+                m_away_prob = m.get("true_probs", {}).get(m_away, 50)
+                # 勝率相差 ≤ 8% 視為相似
+                if abs(m_home_prob - home_prob) <= 8 and abs(m_away_prob - away_prob) <= 8:
+                    score = m.get("final_score", "?")
+                    result_emoji = "✅" if m.get("ai_result") == "HIT" else "❌"
+                    similar.append(
+                        f"{result_emoji} {date}: {m_home}({m_home_prob:.0f}%) vs {m_away}({m_away_prob:.0f}%) → 比數:{score}"
+                    )
+                if len(similar) >= max_results:
+                    break
+        except Exception:
+            continue
+        if len(similar) >= max_results:
+            break
+
+    return similar
+
+
+def format_performance_context(stats, similar_matches):
+    """將歷史成績統計格式化為 prompt 可用的文字"""
+    if not stats:
+        return ""
+
+    lines = [f"## AI 自我學習參考（過去 {stats.get('total_samples', 0)} 場歷史資料）"]
+
+    overall = stats.get("overall", {})
+    if overall.get("pct") is not None:
+        trend = stats.get("recent_3d", {})
+        trend_str = f"，近3天 {trend['pct']}%（{trend['total']}場）" if trend.get("pct") is not None else ""
+        lines.append(f"- 整體命中率: {overall['pct']}%（{overall['total']}場）{trend_str}")
+
+    # 本次聯賽的歷史表現
+    by_league = stats.get("by_league", {})
+    # 找比賽的聯賽（呼叫時從 match 傳入）
+    for league, d in by_league.items():
+        if d.get("pct") is not None:
+            lines.append(f"- {league} 聯賽命中率: {d['pct']}%（{d['total']}場）")
+
+    # 勝率區間分析
+    by_prob = stats.get("by_prob_range", {})
+    if by_prob:
+        lines.append("- 依勝率區間命中率:")
+        for label, d in sorted(by_prob.items()):
+            if d.get("pct") is not None:
+                flag = "⚠️ 謹慎" if d["pct"] < 50 else ("✅ 穩定" if d["pct"] >= 60 else "")
+                lines.append(f"  • {label}: {d['pct']}%（{d['total']}場）{flag}")
+
+    # 急速移動的影響
+    sharp_rate = stats.get("sharp_moves_rate", {})
+    normal_rate = stats.get("normal_rate", {})
+    if sharp_rate.get("pct") is not None and normal_rate.get("pct") is not None:
+        diff = sharp_rate["pct"] - normal_rate["pct"]
+        diff_str = f"（{'高' if diff > 0 else '低'}於一般場次 {abs(diff)}%）"
+        lines.append(f"- 有急速移動場次命中率: {sharp_rate['pct']}% {diff_str}")
+
+    # 相似場次
+    if similar_matches:
+        lines.append("- 近期相似條件場次:")
+        for s in similar_matches:
+            lines.append(f"  {s}")
+
+    lines.append("（請根據以上自我表現數據，調整本次分析的信心程度與措辭）")
+    return "\n".join(lines)
 
 
 # ============================================================
