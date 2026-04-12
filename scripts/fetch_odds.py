@@ -33,6 +33,7 @@ INJURY_KEYWORDS = [
 # ============================================================
 ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
 ODDS_API_KEY_2 = os.environ.get("ODDS_API_KEY_2", "")
+ODDS_API_KEY_3 = os.environ.get("ODDS_API_KEY_3", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_API_KEY_2 = os.environ.get("GEMINI_API_KEY_2", "") or os.environ.get("GEMINI_API_KEY2", "")
 GEMINI_API_KEY_3 = os.environ.get("GEMINI_API_KEY_3", "") or os.environ.get("GEMINI_API_KEY3", "")
@@ -88,16 +89,18 @@ HISTORY_FILE_TEMPLATE = os.path.join(DATA_DIR, "archive", "{date}.json")
 
 
 # ============================================================
-# 雙 API Key 管理器
+# Odds API Key 管理器（支援多把 Key）
 # ============================================================
 class OddsApiKeyManager:
-    """管理雙 API Key，額度不足時自動切換"""
+    """管理多把 Odds API Key，額度不足時自動切換"""
     def __init__(self):
         self.keys = []
         if ODDS_API_KEY:
             self.keys.append({"key": ODDS_API_KEY, "label": "Key-1", "remaining": 999})
         if ODDS_API_KEY_2:
             self.keys.append({"key": ODDS_API_KEY_2, "label": "Key-2", "remaining": 999})
+        if ODDS_API_KEY_3:
+            self.keys.append({"key": ODDS_API_KEY_3, "label": "Key-3", "remaining": 999})
         self.current_idx = 0
     
     def get_key(self):
@@ -217,58 +220,92 @@ def get_current_soccer_league():
 # The Odds API 模組
 # ============================================================
 def fetch_odds(sport_key):
-    """從 The Odds API 抓取某聯賽的賠率 (使用 Key Manager)"""
+    """從 The Odds API 抓取某聯賽的賠率 (使用 Key Manager，401 時自動切換 Key)"""
     url = f"{ODDS_API_BASE}/{sport_key}/odds/"
     markets = "h2h,spreads,totals"
+    league_name = LEAGUES.get(sport_key, sport_key)
 
-    params = {
-        "apiKey": key_manager.get_key(),
-        "regions": "us,eu",
-        "markets": markets,
-        "oddsFormat": "decimal",
-    }
+    # v1.8.4: 遇 401/403 自動嘗試所有 Key
+    for attempt in range(len(key_manager.keys)):
+        params = {
+            "apiKey": key_manager.get_key(),
+            "regions": "us,eu",
+            "markets": markets,
+            "oddsFormat": "decimal",
+        }
 
-    try:
-        resp = requests.get(url, params=params, timeout=30)
-        if resp.status_code == 200:
-            data = resp.json()
-            remaining = resp.headers.get("x-requests-remaining", "?")
-            key_manager.update_remaining(remaining)
-            print(f"  ✅ {LEAGUES.get(sport_key, sport_key)}: 取得 {len(data)} 場比賽 ({key_manager.get_label()} 剩餘: {remaining})")
-            return data, remaining
-        elif resp.status_code == 422:
-            print(f"  ⚠️ {LEAGUES.get(sport_key, sport_key)}: 目前無賽事")
+        try:
+            resp = requests.get(url, params=params, timeout=30)
+            if resp.status_code == 200:
+                data = resp.json()
+                remaining = resp.headers.get("x-requests-remaining", "?")
+                key_manager.update_remaining(remaining)
+                print(f"  ✅ {league_name}: 取得 {len(data)} 場比賽 ({key_manager.get_label()} 剩餘: {remaining})")
+                return data, remaining
+            elif resp.status_code == 422:
+                print(f"  ⚠️ {league_name}: 目前無賽事")
+                return [], "?"
+            elif resp.status_code in (401, 403):
+                print(f"  ⚠️ {league_name}: {key_manager.get_label()} 認證失敗 (HTTP {resp.status_code})")
+                # 標記此 Key 已失效，嘗試下一把
+                key_manager.keys[key_manager.current_idx]["remaining"] = 0
+                next_idx = (key_manager.current_idx + 1) % len(key_manager.keys)
+                if next_idx != key_manager.current_idx and key_manager.keys[next_idx]["remaining"] > 0:
+                    print(f"  🔄 切換至 {key_manager.keys[next_idx]['label']} 重試...")
+                    key_manager.current_idx = next_idx
+                    continue
+                else:
+                    print(f"  ❌ {league_name}: 所有 Odds API Key 均認證失敗")
+                    return [], "?"
+            else:
+                print(f"  ❌ {league_name}: API 錯誤 {resp.status_code}")
+                return [], "?"
+        except Exception as e:
+            print(f"  ❌ {league_name}: 連線失敗 - {e}")
             return [], "?"
-        else:
-            print(f"  ❌ {LEAGUES.get(sport_key, sport_key)}: API 錯誤 {resp.status_code}")
-            return [], "?"
-    except Exception as e:
-        print(f"  ❌ {LEAGUES.get(sport_key, sport_key)}: 連線失敗 - {e}")
-        return [], "?"
+
+    print(f"  ❌ {league_name}: 所有 Key 嘗試完畢仍失敗")
+    return [], "?"
 
 
 def fetch_scores(sport_key):
-    """從 The Odds API 抓取已結束比賽的比數 (daysFrom=3, 消耗 2 點)"""
+    """從 The Odds API 抓取已結束比賽的比數 (daysFrom=3, 401 時自動切換 Key)"""
     url = f"{ODDS_API_BASE}/{sport_key}/scores/"
-    params = {
-        "apiKey": key_manager.get_key(),
-        "daysFrom": 3,
-    }
-    try:
-        resp = requests.get(url, params=params, timeout=30)
-        if resp.status_code == 200:
-            data = resp.json()
-            remaining = resp.headers.get("x-requests-remaining", "?")
-            key_manager.update_remaining(remaining)
-            completed = [g for g in data if g.get("completed")]
-            print(f"  ✅ {LEAGUES.get(sport_key, sport_key)} 比數: {len(completed)} 場已結束 ({key_manager.get_label()} 剩餘: {remaining})")
-            return completed, remaining
-        else:
-            print(f"  ⚠️ {LEAGUES.get(sport_key, sport_key)} 比數: API 錯誤 {resp.status_code}")
+    league_name = LEAGUES.get(sport_key, sport_key)
+
+    for attempt in range(len(key_manager.keys)):
+        params = {
+            "apiKey": key_manager.get_key(),
+            "daysFrom": 3,
+        }
+        try:
+            resp = requests.get(url, params=params, timeout=30)
+            if resp.status_code == 200:
+                data = resp.json()
+                remaining = resp.headers.get("x-requests-remaining", "?")
+                key_manager.update_remaining(remaining)
+                completed = [g for g in data if g.get("completed")]
+                print(f"  ✅ {league_name} 比數: {len(completed)} 場已結束 ({key_manager.get_label()} 剩餘: {remaining})")
+                return completed, remaining
+            elif resp.status_code in (401, 403):
+                print(f"  ⚠️ {league_name} 比數: {key_manager.get_label()} 認證失敗 (HTTP {resp.status_code})")
+                key_manager.keys[key_manager.current_idx]["remaining"] = 0
+                next_idx = (key_manager.current_idx + 1) % len(key_manager.keys)
+                if next_idx != key_manager.current_idx and key_manager.keys[next_idx]["remaining"] > 0:
+                    print(f"  🔄 切換至 {key_manager.keys[next_idx]['label']} 重試...")
+                    key_manager.current_idx = next_idx
+                    continue
+                else:
+                    print(f"  ❌ {league_name} 比數: 所有 Key 認證失敗")
+                    return [], "?"
+            else:
+                print(f"  ⚠️ {league_name} 比數: API 錯誤 {resp.status_code}")
+                return [], "?"
+        except Exception as e:
+            print(f"  ❌ {league_name} 比數: 連線失敗 - {e}")
             return [], "?"
-    except Exception as e:
-        print(f"  ❌ {LEAGUES.get(sport_key, sport_key)} 比數: 連線失敗 - {e}")
-        return [], "?"
+
+    return [], "?"
 
 
 def parse_odds_data(raw_data, sport_key):
@@ -1738,7 +1775,8 @@ def main():
     else:
         print(f"\n📡 本次抓取: NBA + {LEAGUES[soccer_league]}")
         key_count = len(key_manager.keys)
-        print(f"  🔑 Odds API Key 數量: {key_count} ({'雙 Key 模式' if key_count >= 2 else '單 Key 模式'})")
+        mode_str = f"{key_count} Key 模式" if key_count >= 2 else "單 Key 模式"
+        print(f"  🔑 Odds API Key 數量: {key_count} ({mode_str})")
 
         # 3. 抓取賠率
         print("\n📊 抓取最新賠率...")

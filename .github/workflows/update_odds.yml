@@ -38,6 +38,7 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_API_KEY_2: ${{ secrets.ODDS_API_KEY_2 }}
+          ODDS_API_KEY_3: ${{ secrets.ODDS_API_KEY_3 }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           # 相容兩種 Secret 命名: GEMINI_API_KEY_2 或 GEMINI_API_KEY2
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
