@@ -1876,13 +1876,50 @@ def main():
     gemini_key_manager.reset()
 
     if significant:
-        # v1.7.3: 在 main() 就限制數量，避免 14 場全部跑完浪費 quota 和時間
-        # 按勝率排序，只取前 3 場（有雙 Key 可取 5 場）
+        # v1.8.4: 智慧選取邏輯 — 分聯賽配額 + 優先分析尚未分析過的場次
         key_count = len(gemini_key_manager.keys)
         MAX_AI = 3 if key_count == 1 else (5 if key_count == 2 else 7)
-        significant.sort(key=lambda m: max(m.get("true_probs", {}).values(), default=50), reverse=True)
-        ai_targets = significant[:MAX_AI]
-        print(f"\n🤖 啟動 AI 分析... (符合條件 {len(significant)} 場, 取前 {len(ai_targets)} 場, 模型: gemini-2.5-flash-lite → 2.5-flash)")
+
+        # 1. 分成 NBA 和足球兩組
+        nba_matches = [m for m in significant if "nba" in m.get("sport_key", "").lower() or "basketball" in m.get("sport_key", "").lower()]
+        soccer_matches = [m for m in significant if m not in nba_matches]
+
+        # 2. 排序優先級：尚未分析過的排前面 → 再按勝率排
+        def sort_key(m):
+            already_analyzed = 1 if m.get("analysis_source") == "gemini" else 0
+            max_prob = max(m.get("true_probs", {}).values(), default=50)
+            return (already_analyzed, -max_prob)  # 未分析的排前面，同狀態內按勝率高排前
+
+        nba_matches.sort(key=sort_key)
+        soccer_matches.sort(key=sort_key)
+
+        # 3. 分配配額：確保兩邊都有名額
+        if nba_matches and soccer_matches:
+            # 至少各保留 2 個名額（有足球時）
+            soccer_quota = max(2, MAX_AI // 3)  # 至少 2 場足球
+            nba_quota = MAX_AI - soccer_quota
+            # 如果某邊不夠，把名額讓給另一邊
+            if len(nba_matches) < nba_quota:
+                soccer_quota += (nba_quota - len(nba_matches))
+                nba_quota = len(nba_matches)
+            if len(soccer_matches) < soccer_quota:
+                nba_quota += (soccer_quota - len(soccer_matches))
+                soccer_quota = len(soccer_matches)
+        elif soccer_matches:
+            soccer_quota = MAX_AI
+            nba_quota = 0
+        else:
+            nba_quota = MAX_AI
+            soccer_quota = 0
+
+        ai_targets = nba_matches[:nba_quota] + soccer_matches[:soccer_quota]
+        # 混合排序，讓分析結果交替出現
+        ai_targets.sort(key=sort_key)
+
+        nba_count = sum(1 for m in ai_targets if "nba" in m.get("sport_key", "").lower() or "basketball" in m.get("sport_key", "").lower())
+        soccer_count = len(ai_targets) - nba_count
+        print(f"\n🤖 啟動 AI 分析... (符合條件 {len(significant)} 場, 取 {len(ai_targets)} 場: NBA {nba_count} + 足球 {soccer_count})")
+
         # 根據聯賽類型選擇新聞
         consecutive_failures = 0
         for idx, match in enumerate(ai_targets):
@@ -1890,7 +1927,7 @@ def main():
                 relevant_news = news["nba"]
             else:
                 relevant_news = news["soccer"]
-            print(f"\n  --- 分析第 {idx+1}/{len(ai_targets)} 場: {match['home_team']} vs {match['away_team']} ---")
+            print(f"\n  --- 分析第 {idx+1}/{len(ai_targets)} 場: {match['home_team']} vs {match['away_team']} ({match.get('league','')}) ---")
             analyze_with_ai([match], relevant_news)
 
             # 早停機制：連續 2 場都失敗就不再嘗試，節省時間
@@ -1910,8 +1947,8 @@ def main():
                 print(f"  ⏳ 等待 10 秒避免 RPM 限制...")
                 time_module.sleep(10)
         # 未被 AI 分析的 significant 比賽，給予基礎分析
-        for match in significant[MAX_AI:]:
-            if "ai_analysis" not in match:
+        for match in significant:
+            if match not in ai_targets and "ai_analysis" not in match:
                 match["ai_analysis"] = "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。"
                 match["analysis_source"] = "rule_based"
     else:
