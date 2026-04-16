@@ -372,13 +372,6 @@
         },
         {
           "date": "2026-04-10",
-          "opponent": "Miami Heat",
-          "spread": -3.5,
-          "match_id": "53b49bbe56f8581f353bbbb5c6179ac5",
-          "commence_time": "2026-04-09T23:10:00Z"
-        },
-        {
-          "date": "2026-04-10",
           "opponent": "New York Knicks",
           "spread": 6.0,
           "match_id": "39083e08e7959b0ec516933d574379cd",
@@ -708,6 +701,13 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Cleveland Cavaliers",
+          "spread": 8.0,
+          "match_id": "2a8e5a45f1bcb477a6f9cbd7739d005e",
+          "commence_time": "2026-04-18T17:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Cleveland Cavaliers",
           "spread": 8.0,
           "match_id": "2a8e5a45f1bcb477a6f9cbd7739d005e",
@@ -1083,13 +1083,6 @@
         {
           "date": "2026-04-10",
           "opponent": "Toronto Raptors",
-          "spread": -6.5,
-          "match_id": "39083e08e7959b0ec516933d574379cd",
-          "commence_time": "2026-04-10T23:40:00Z"
-        },
-        {
-          "date": "2026-04-10",
-          "opponent": "Toronto Raptors",
           "spread": -5.5,
           "match_id": "39083e08e7959b0ec516933d574379cd",
           "commence_time": "2026-04-10T23:40:00Z"
@@ -1387,11 +1380,18 @@
           "spread": -5.0,
           "match_id": "bee2c9ea4bf8df373aa45af7005b583d",
           "commence_time": "2026-04-18T22:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Atlanta Hawks",
+          "spread": -5.0,
+          "match_id": "bee2c9ea4bf8df373aa45af7005b583d",
+          "commence_time": "2026-04-18T22:10:00Z"
         }
       ]
     },
     "Boston Celtics": {
-      "games_tracked": 36,
+      "games_tracked": 37,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -1640,6 +1640,13 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Philadelphia 76ers",
+          "spread": -12.5,
+          "match_id": "00d1efd43d0790297fb68684a9171191",
+          "commence_time": "2026-04-19T17:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Philadelphia 76ers",
           "spread": -12.5,
           "match_id": "00d1efd43d0790297fb68684a9171191",
@@ -2034,13 +2041,6 @@
         {
           "date": "2026-04-10",
           "opponent": "Philadelphia 76ers",
-          "spread": -5.5,
-          "match_id": "30b372ff1973370201b644c207be2dd3",
-          "commence_time": "2026-04-10T00:10:00Z"
-        },
-        {
-          "date": "2026-04-10",
-          "opponent": "Philadelphia 76ers",
           "spread": -6.5,
           "match_id": "30b372ff1973370201b644c207be2dd3",
           "commence_time": "2026-04-10T00:10:00Z"
@@ -2380,19 +2380,19 @@
           "spread": -5.5,
           "match_id": "1a9383105929a09e5662227ad45554b8",
           "commence_time": "2026-04-19T00:40:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Los Angeles Lakers",
+          "spread": -5.5,
+          "match_id": "1a9383105929a09e5662227ad45554b8",
+          "commence_time": "2026-04-19T00:40:00Z"
         }
       ]
     },
     "Philadelphia 76ers": {
       "games_tracked": 51,
       "spreads_history": [
-        {
-          "date": "2026-04-10",
-          "opponent": "Houston Rockets",
-          "spread": 6.5,
-          "match_id": "30b372ff1973370201b644c207be2dd3",
-          "commence_time": "2026-04-10T00:10:00Z"
-        },
         {
           "date": "2026-04-10",
           "opponent": "Houston Rockets",
@@ -2735,19 +2735,19 @@
           "spread": 12.5,
           "match_id": "00d1efd43d0790297fb68684a9171191",
           "commence_time": "2026-04-19T17:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Boston Celtics",
+          "spread": 12.5,
+          "match_id": "00d1efd43d0790297fb68684a9171191",
+          "commence_time": "2026-04-19T17:10:00Z"
         }
       ]
     },
     "Golden State Warriors": {
       "games_tracked": 51,
       "spreads_history": [
-        {
-          "date": "2026-04-10",
-          "opponent": "Sacramento Kings",
-          "spread": -11.5,
-          "match_id": "d6099dffbcac5bbcdf69fd35c6229ff7",
-          "commence_time": "2026-04-11T02:10:00Z"
-        },
         {
           "date": "2026-04-10",
           "opponent": "Sacramento Kings",
@@ -3090,19 +3090,19 @@
           "spread": 2.5,
           "match_id": "c8d1b7fd06c21e259b9416daf596f023",
           "commence_time": "2026-04-18T02:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Phoenix Suns",
+          "spread": 2.5,
+          "match_id": "c8d1b7fd06c21e259b9416daf596f023",
+          "commence_time": "2026-04-18T02:10:00Z"
         }
       ]
     },
     "Los Angeles Lakers": {
       "games_tracked": 51,
       "spreads_history": [
-        {
-          "date": "2026-04-10",
-          "opponent": "Golden State Warriors",
-          "spread": 2.5,
-          "match_id": "29fe17f5b19da82ce2957c3683a10aa7",
-          "commence_time": "2026-04-10T02:10:00Z"
-        },
         {
           "date": "2026-04-10",
           "opponent": "Golden State Warriors",
@@ -3445,11 +3445,18 @@
           "spread": 5.5,
           "match_id": "1a9383105929a09e5662227ad45554b8",
           "commence_time": "2026-04-19T00:40:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Houston Rockets",
+          "spread": 5.5,
+          "match_id": "1a9383105929a09e5662227ad45554b8",
+          "commence_time": "2026-04-19T00:40:00Z"
         }
       ]
     },
     "West Ham United": {
-      "games_tracked": 29,
+      "games_tracked": 31,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -3649,6 +3656,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Everton",
+          "spread": -0.5,
+          "match_id": "e7eba73b41f6b75f5b4692376efb888a",
+          "commence_time": "2026-04-25T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Crystal Palace",
+          "spread": 0.0,
+          "match_id": "ea28653ebcd7743146869e2aa7851275",
+          "commence_time": "2026-04-20T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Everton",
           "spread": -0.5,
           "match_id": "e7eba73b41f6b75f5b4692376efb888a",
@@ -3657,7 +3678,7 @@
       ]
     },
     "Wolverhampton Wanderers": {
-      "games_tracked": 29,
+      "games_tracked": 31,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -3857,6 +3878,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Tottenham Hotspur",
+          "spread": 0.5,
+          "match_id": "c5137cd717098fbb38acd0236bc41b34",
+          "commence_time": "2026-04-25T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Leeds United",
+          "spread": 1.5,
+          "match_id": "d137c5f062243e857803fcebfdda2953",
+          "commence_time": "2026-04-18T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Tottenham Hotspur",
           "spread": 0.5,
           "match_id": "c5137cd717098fbb38acd0236bc41b34",
@@ -3865,15 +3900,8 @@
       ]
     },
     "Arsenal": {
-      "games_tracked": 49,
+      "games_tracked": 51,
       "spreads_history": [
-        {
-          "date": "2026-04-10",
-          "opponent": "Bournemouth",
-          "spread": -1.5,
-          "match_id": "ff027a0ac6a0538a713b46bd753b670d",
-          "commence_time": "2026-04-11T11:30:00Z"
-        },
         {
           "date": "2026-04-10",
           "opponent": "Manchester City",
@@ -4209,11 +4237,25 @@
           "spread": 0.0,
           "match_id": "aec5613e75cb9d2ebfcf51382511209e",
           "commence_time": "2026-04-29T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Manchester City",
+          "spread": 0.5,
+          "match_id": "67946ccfc03197bc48eb7b6c9786b713",
+          "commence_time": "2026-04-19T15:30:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Newcastle United",
+          "spread": -1.5,
+          "match_id": "76829fec3394b52a992b0a21eedbccf6",
+          "commence_time": "2026-04-25T16:30:00Z"
         }
       ]
     },
     "Bournemouth": {
-      "games_tracked": 32,
+      "games_tracked": 34,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -4434,6 +4476,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Leeds United",
+          "spread": 0.0,
+          "match_id": "690fef3d62fc4c8015481626d5aab274",
+          "commence_time": "2026-04-22T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Newcastle United",
+          "spread": 0.0,
+          "match_id": "be6cdb6ddd27d099b5291f0d1e051d92",
+          "commence_time": "2026-04-18T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Leeds United",
           "spread": 0.0,
           "match_id": "690fef3d62fc4c8015481626d5aab274",
@@ -4442,7 +4498,7 @@
       ]
     },
     "Brentford": {
-      "games_tracked": 32,
+      "games_tracked": 34,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -4663,6 +4719,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Manchester United",
+          "spread": 0.5,
+          "match_id": "ea38471acf4d5944929f9025e151376d",
+          "commence_time": "2026-04-27T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Fulham",
+          "spread": 0.0,
+          "match_id": "2c2061ffc9ee67808fd45273089d7795",
+          "commence_time": "2026-04-18T11:30:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Manchester United",
           "spread": 0.5,
           "match_id": "ea38471acf4d5944929f9025e151376d",
@@ -4671,7 +4741,7 @@
       ]
     },
     "Everton": {
-      "games_tracked": 32,
+      "games_tracked": 34,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -4892,6 +4962,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "West Ham United",
+          "spread": 0.5,
+          "match_id": "e7eba73b41f6b75f5b4692376efb888a",
+          "commence_time": "2026-04-25T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Liverpool",
+          "spread": 0.0,
+          "match_id": "3e7369c873aed1c62f4d76fd652d73c7",
+          "commence_time": "2026-04-19T13:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "West Ham United",
           "spread": 0.5,
           "match_id": "e7eba73b41f6b75f5b4692376efb888a",
@@ -4900,7 +4984,7 @@
       ]
     },
     "Burnley": {
-      "games_tracked": 32,
+      "games_tracked": 34,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -5121,6 +5205,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Manchester City",
+          "spread": 1.5,
+          "match_id": "4a1a7f4a60859fc3ecc69d05f5729556",
+          "commence_time": "2026-04-22T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Nottingham Forest",
+          "spread": 1.0,
+          "match_id": "95d68f9006aa718d447c759366118c31",
+          "commence_time": "2026-04-19T13:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Manchester City",
           "spread": 1.5,
           "match_id": "4a1a7f4a60859fc3ecc69d05f5729556",
@@ -5129,7 +5227,7 @@
       ]
     },
     "Brighton and Hove Albion": {
-      "games_tracked": 32,
+      "games_tracked": 34,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -5350,6 +5448,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Chelsea",
+          "spread": -0.5,
+          "match_id": "e6e88546df45a25ee81d07b597d91167",
+          "commence_time": "2026-04-21T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Tottenham Hotspur",
+          "spread": 0.0,
+          "match_id": "5e7f44119f2e640fdf04c245a764657f",
+          "commence_time": "2026-04-18T16:30:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Chelsea",
           "spread": -0.5,
           "match_id": "e6e88546df45a25ee81d07b597d91167",
@@ -5358,7 +5470,7 @@
       ]
     },
     "Liverpool": {
-      "games_tracked": 47,
+      "games_tracked": 49,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -5684,6 +5796,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Crystal Palace",
+          "spread": -1.5,
+          "match_id": "8a5b7d24683637ab7350fe8a20af1a62",
+          "commence_time": "2026-04-25T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Everton",
+          "spread": 0.0,
+          "match_id": "3e7369c873aed1c62f4d76fd652d73c7",
+          "commence_time": "2026-04-19T13:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Crystal Palace",
           "spread": -1.5,
           "match_id": "8a5b7d24683637ab7350fe8a20af1a62",
@@ -5692,7 +5818,7 @@
       ]
     },
     "Fulham": {
-      "games_tracked": 32,
+      "games_tracked": 34,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -5913,6 +6039,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Aston Villa",
+          "spread": 0.5,
+          "match_id": "1cb5fdae7703fb61d1de571066050f9b",
+          "commence_time": "2026-04-25T11:30:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Brentford",
+          "spread": 0.0,
+          "match_id": "2c2061ffc9ee67808fd45273089d7795",
+          "commence_time": "2026-04-18T11:30:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Aston Villa",
           "spread": 0.5,
           "match_id": "1cb5fdae7703fb61d1de571066050f9b",
@@ -5921,7 +6061,7 @@
       ]
     },
     "Nottingham Forest": {
-      "games_tracked": 35,
+      "games_tracked": 37,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -6163,6 +6303,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Sunderland",
+          "spread": 0.0,
+          "match_id": "1d779cd51003d8f01a9378594cea630e",
+          "commence_time": "2026-04-24T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Burnley",
+          "spread": -1.0,
+          "match_id": "95d68f9006aa718d447c759366118c31",
+          "commence_time": "2026-04-19T13:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Sunderland",
           "spread": 0.0,
           "match_id": "1d779cd51003d8f01a9378594cea630e",
@@ -6171,7 +6325,7 @@
       ]
     },
     "Aston Villa": {
-      "games_tracked": 35,
+      "games_tracked": 37,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -6413,6 +6567,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Fulham",
+          "spread": -0.5,
+          "match_id": "1cb5fdae7703fb61d1de571066050f9b",
+          "commence_time": "2026-04-25T11:30:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Sunderland",
+          "spread": -0.75,
+          "match_id": "72406c12d6334a8f3475a640ea1f814b",
+          "commence_time": "2026-04-19T13:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Fulham",
           "spread": -0.5,
           "match_id": "1cb5fdae7703fb61d1de571066050f9b",
@@ -6421,7 +6589,7 @@
       ]
     },
     "Crystal Palace": {
-      "games_tracked": 35,
+      "games_tracked": 37,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -6663,6 +6831,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Liverpool",
+          "spread": 1.5,
+          "match_id": "8a5b7d24683637ab7350fe8a20af1a62",
+          "commence_time": "2026-04-25T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "West Ham United",
+          "spread": 0.0,
+          "match_id": "ea28653ebcd7743146869e2aa7851275",
+          "commence_time": "2026-04-20T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Liverpool",
           "spread": 1.5,
           "match_id": "8a5b7d24683637ab7350fe8a20af1a62",
@@ -6671,7 +6853,7 @@
       ]
     },
     "Newcastle United": {
-      "games_tracked": 35,
+      "games_tracked": 37,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -6913,6 +7095,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Arsenal",
+          "spread": 1.5,
+          "match_id": "76829fec3394b52a992b0a21eedbccf6",
+          "commence_time": "2026-04-25T16:30:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Bournemouth",
+          "spread": 0.0,
+          "match_id": "be6cdb6ddd27d099b5291f0d1e051d92",
+          "commence_time": "2026-04-18T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Arsenal",
           "spread": 1.5,
           "match_id": "76829fec3394b52a992b0a21eedbccf6",
@@ -6921,7 +7117,7 @@
       ]
     },
     "Sunderland": {
-      "games_tracked": 35,
+      "games_tracked": 37,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -7163,6 +7359,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Nottingham Forest",
+          "spread": 0.0,
+          "match_id": "1d779cd51003d8f01a9378594cea630e",
+          "commence_time": "2026-04-24T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Aston Villa",
+          "spread": 0.75,
+          "match_id": "72406c12d6334a8f3475a640ea1f814b",
+          "commence_time": "2026-04-19T13:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Nottingham Forest",
           "spread": 0.0,
           "match_id": "1d779cd51003d8f01a9378594cea630e",
@@ -7171,7 +7381,7 @@
       ]
     },
     "Tottenham Hotspur": {
-      "games_tracked": 35,
+      "games_tracked": 37,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -7413,6 +7623,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Wolverhampton Wanderers",
+          "spread": -0.5,
+          "match_id": "c5137cd717098fbb38acd0236bc41b34",
+          "commence_time": "2026-04-25T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Brighton and Hove Albion",
+          "spread": 0.0,
+          "match_id": "5e7f44119f2e640fdf04c245a764657f",
+          "commence_time": "2026-04-18T16:30:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Wolverhampton Wanderers",
           "spread": -0.5,
           "match_id": "c5137cd717098fbb38acd0236bc41b34",
@@ -7421,7 +7645,7 @@
       ]
     },
     "Chelsea": {
-      "games_tracked": 35,
+      "games_tracked": 37,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -7667,11 +7891,25 @@
           "spread": 0.5,
           "match_id": "e6e88546df45a25ee81d07b597d91167",
           "commence_time": "2026-04-21T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Manchester United",
+          "spread": 0.0,
+          "match_id": "933e20e0892b28ca075a9ab5465d5c6d",
+          "commence_time": "2026-04-18T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Brighton and Hove Albion",
+          "spread": 0.5,
+          "match_id": "e6e88546df45a25ee81d07b597d91167",
+          "commence_time": "2026-04-21T19:00:00Z"
         }
       ]
     },
     "Manchester City": {
-      "games_tracked": 35,
+      "games_tracked": 37,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -7917,11 +8155,25 @@
           "spread": -1.5,
           "match_id": "4a1a7f4a60859fc3ecc69d05f5729556",
           "commence_time": "2026-04-22T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Arsenal",
+          "spread": -0.5,
+          "match_id": "67946ccfc03197bc48eb7b6c9786b713",
+          "commence_time": "2026-04-19T15:30:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Burnley",
+          "spread": -1.5,
+          "match_id": "4a1a7f4a60859fc3ecc69d05f5729556",
+          "commence_time": "2026-04-22T19:00:00Z"
         }
       ]
     },
     "Manchester United": {
-      "games_tracked": 37,
+      "games_tracked": 39,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -8177,6 +8429,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Brentford",
+          "spread": -0.5,
+          "match_id": "ea38471acf4d5944929f9025e151376d",
+          "commence_time": "2026-04-27T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Chelsea",
+          "spread": 0.0,
+          "match_id": "933e20e0892b28ca075a9ab5465d5c6d",
+          "commence_time": "2026-04-18T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Brentford",
           "spread": -0.5,
           "match_id": "ea38471acf4d5944929f9025e151376d",
@@ -8185,7 +8451,7 @@
       ]
     },
     "Leeds United": {
-      "games_tracked": 37,
+      "games_tracked": 39,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -8441,6 +8707,20 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Bournemouth",
+          "spread": 0.0,
+          "match_id": "690fef3d62fc4c8015481626d5aab274",
+          "commence_time": "2026-04-22T19:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Wolverhampton Wanderers",
+          "spread": -1.5,
+          "match_id": "d137c5f062243e857803fcebfdda2953",
+          "commence_time": "2026-04-18T14:00:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Bournemouth",
           "spread": 0.0,
           "match_id": "690fef3d62fc4c8015481626d5aab274",
@@ -13344,7 +13624,7 @@
       ]
     },
     "Charlotte Hornets": {
-      "games_tracked": 47,
+      "games_tracked": 48,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -13674,6 +13954,13 @@
           "spread": -3.5,
           "match_id": "fc16dfbe5b438857b93902fa811dd8f6",
           "commence_time": "2026-04-17T23:40:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Orlando Magic",
+          "spread": -3.5,
+          "match_id": "fc16dfbe5b438857b93902fa811dd8f6",
+          "commence_time": "2026-04-17T23:40:00Z"
         }
       ]
     },
@@ -13844,7 +14131,7 @@
       ]
     },
     "San Antonio Spurs": {
-      "games_tracked": 38,
+      "games_tracked": 39,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -14107,6 +14394,13 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Portland Trail Blazers",
+          "spread": -10.5,
+          "match_id": "04e3ad1ccbad6419ac711ff120fd5cbe",
+          "commence_time": "2026-04-20T01:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Portland Trail Blazers",
           "spread": -10.5,
           "match_id": "04e3ad1ccbad6419ac711ff120fd5cbe",
@@ -14672,13 +14966,6 @@
           "commence_time": "2026-04-11T02:10:00Z"
         },
         {
-          "date": "2026-04-10",
-          "opponent": "Los Angeles Clippers",
-          "spread": -2.0,
-          "match_id": "858993998045b68682b2aae461cb4037",
-          "commence_time": "2026-04-11T02:10:00Z"
-        },
-        {
           "date": "2026-04-11",
           "opponent": "Los Angeles Clippers",
           "spread": -2.0,
@@ -14960,6 +15247,13 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "San Antonio Spurs",
+          "spread": 10.5,
+          "match_id": "04e3ad1ccbad6419ac711ff120fd5cbe",
+          "commence_time": "2026-04-20T01:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "San Antonio Spurs",
           "spread": 10.5,
           "match_id": "04e3ad1ccbad6419ac711ff120fd5cbe",
@@ -16842,13 +17136,6 @@
         {
           "date": "2026-04-10",
           "opponent": "Cleveland Cavaliers",
-          "spread": -7.5,
-          "match_id": "70a2274c4f82c7a3f37879b7edf0cfa4",
-          "commence_time": "2026-04-10T23:10:00Z"
-        },
-        {
-          "date": "2026-04-10",
-          "opponent": "Cleveland Cavaliers",
           "spread": -8.0,
           "match_id": "70a2274c4f82c7a3f37879b7edf0cfa4",
           "commence_time": "2026-04-10T23:10:00Z"
@@ -17188,11 +17475,18 @@
           "spread": 5.0,
           "match_id": "bee2c9ea4bf8df373aa45af7005b583d",
           "commence_time": "2026-04-18T22:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "New York Knicks",
+          "spread": 5.0,
+          "match_id": "bee2c9ea4bf8df373aa45af7005b583d",
+          "commence_time": "2026-04-18T22:10:00Z"
         }
       ]
     },
     "Cleveland Cavaliers": {
-      "games_tracked": 47,
+      "games_tracked": 48,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -17518,6 +17812,13 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Toronto Raptors",
+          "spread": -8.0,
+          "match_id": "2a8e5a45f1bcb477a6f9cbd7739d005e",
+          "commence_time": "2026-04-18T17:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Toronto Raptors",
           "spread": -8.0,
           "match_id": "2a8e5a45f1bcb477a6f9cbd7739d005e",
@@ -17853,13 +18154,6 @@
     "Orlando Magic": {
       "games_tracked": 51,
       "spreads_history": [
-        {
-          "date": "2026-04-10",
-          "opponent": "Chicago Bulls",
-          "spread": -15.0,
-          "match_id": "ebbf0d3885094991ff36055e753635a3",
-          "commence_time": "2026-04-11T00:10:00Z"
-        },
         {
           "date": "2026-04-10",
           "opponent": "Chicago Bulls",
@@ -18202,19 +18496,19 @@
           "spread": 3.5,
           "match_id": "fc16dfbe5b438857b93902fa811dd8f6",
           "commence_time": "2026-04-17T23:40:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Charlotte Hornets",
+          "spread": 3.5,
+          "match_id": "fc16dfbe5b438857b93902fa811dd8f6",
+          "commence_time": "2026-04-17T23:40:00Z"
         }
       ]
     },
     "Denver Nuggets": {
       "games_tracked": 51,
       "spreads_history": [
-        {
-          "date": "2026-04-10",
-          "opponent": "Oklahoma City Thunder",
-          "spread": -10.5,
-          "match_id": "11fa8c6f7710a287909a9765aa925cce",
-          "commence_time": "2026-04-11T01:10:00Z"
-        },
         {
           "date": "2026-04-10",
           "opponent": "Oklahoma City Thunder",
@@ -18557,6 +18851,13 @@
           "spread": -6.5,
           "match_id": "526f783434e5dabca25ee032d8fee612",
           "commence_time": "2026-04-18T19:40:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Minnesota Timberwolves",
+          "spread": -6.5,
+          "match_id": "526f783434e5dabca25ee032d8fee612",
+          "commence_time": "2026-04-18T19:40:00Z"
         }
       ]
     },
@@ -18755,7 +19056,7 @@
       ]
     },
     "Minnesota Timberwolves": {
-      "games_tracked": 47,
+      "games_tracked": 48,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -19081,6 +19382,13 @@
         },
         {
           "date": "2026-04-16",
+          "opponent": "Denver Nuggets",
+          "spread": 6.5,
+          "match_id": "526f783434e5dabca25ee032d8fee612",
+          "commence_time": "2026-04-18T19:40:00Z"
+        },
+        {
+          "date": "2026-04-17",
           "opponent": "Denver Nuggets",
           "spread": 6.5,
           "match_id": "526f783434e5dabca25ee032d8fee612",
@@ -20234,7 +20542,7 @@
       ]
     },
     "Phoenix Suns": {
-      "games_tracked": 45,
+      "games_tracked": 46,
       "spreads_history": [
         {
           "date": "2026-04-10",
@@ -20550,6 +20858,13 @@
           "spread": -2.5,
           "match_id": "c8d1b7fd06c21e259b9416daf596f023",
           "commence_time": "2026-04-18T02:10:00Z"
+        },
+        {
+          "date": "2026-04-17",
+          "opponent": "Golden State Warriors",
+          "spread": -2.5,
+          "match_id": "c8d1b7fd06c21e259b9416daf596f023",
+          "commence_time": "2026-04-18T02:10:00Z"
         }
       ]
     },
@@ -20788,5 +21103,5 @@
       ]
     }
   },
-  "last_updated": "2026-04-16T22:09:10.116559+08:00"
+  "last_updated": "2026-04-17T00:30:24.474427+08:00"
 }
