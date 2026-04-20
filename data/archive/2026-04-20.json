@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-20T05:48:32.316545+08:00",
-  "last_updated_display": "2026/04/20 05:48 (台北時間)",
+  "last_updated": "2026-04-20T11:45:35.699862+08:00",
+  "last_updated_display": "2026/04/20 11:45 (台北時間)",
   "matches": {
     "00d1efd43d0790297fb68684a9171191": {
       "id": "00d1efd43d0790297fb68684a9171191",
@@ -537,7 +537,10 @@
         ]
       },
       "ai_analysis": "【💡 推薦：Oklahoma City Thunder 讓分盤 -34.5 大分 213.5】\n\n考量到雷霆 95.0% 的超高真實勝率，且對手太陽僅 5.0%，盤口初盤便開出 -34.5 大讓分，獨贏賠率也從 1.116 大幅下殺至 1.02，顯示市場高度看好雷霆。雖然太陽近期戰績看似不錯，但面對實力懸殊的對手，此役預計將是一場大勝，且兩隊過往交手太陽曾以 135 分大勝，本場比賽也可能走向大分。",
-      "analysis_source": "gemini"
+      "analysis_source": "gemini",
+      "final_score": "119-84",
+      "completed": true,
+      "ai_result": "MISS"
     },
     "e777e2f049a5c85aed96a220a2cfe924": {
       "id": "e777e2f049a5c85aed96a220a2cfe924",
@@ -807,7 +810,10 @@
         ]
       },
       "ai_analysis": "💡 推薦：底特律活塞 -8.5\n\n活塞擁有高達 76.5% 的真實勝率，且獨贏賠率顯著下降，顯示聰明錢訊號看好其表現。儘管本AI模型在70-80%勝率區間的歷史命中率僅50%，但考量主隊壓倒性優勢與盤口走勢，仍看好活塞能輕鬆穿盤。",
-      "analysis_source": "gemini"
+      "analysis_source": "gemini",
+      "final_score": "101-112",
+      "completed": true,
+      "ai_result": "N/A"
     },
     "04e3ad1ccbad6419ac711ff120fd5cbe": {
       "id": "04e3ad1ccbad6419ac711ff120fd5cbe",
@@ -815,41 +821,21 @@
       "league": "NBA",
       "home_team": "San Antonio Spurs",
       "away_team": "Portland Trail Blazers",
-      "commence_time": "2026-04-20T01:10:00Z",
+      "commence_time": "2026-04-20T01:18:00Z",
       "bookmakers": [
         {
           "name": "FanDuel",
           "markets": {
-            "h2h": {
-              "Portland Trail Blazers": {
-                "price": 5.5
-              },
-              "San Antonio Spurs": {
-                "price": 1.17
-              }
-            },
             "spreads": {
               "Portland Trail Blazers": {
-                "price": 1.95,
-                "point": 11.0,
-                "prob": 49.0
+                "price": 2.0,
+                "point": 12.5,
+                "prob": 46.8
               },
               "San Antonio Spurs": {
-                "price": 1.87,
-                "point": -11.0,
-                "prob": 51.0
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.93,
-                "point": 222.5,
-                "prob": 49.5
-              },
-              "Under": {
-                "price": 1.89,
-                "point": 222.5,
-                "prob": 50.5
+                "price": 1.76,
+                "point": -12.5,
+                "prob": 53.2
               }
             }
           }
@@ -857,32 +843,14 @@
         {
           "name": "DraftKings",
           "markets": {
-            "h2h": {
-              "Portland Trail Blazers": {
-                "price": 5.55
-              },
-              "San Antonio Spurs": {
-                "price": 1.16
-              }
-            },
             "spreads": {
               "Portland Trail Blazers": {
-                "price": 1.87,
-                "point": 11.5
+                "price": 2.4,
+                "point": 12.5
               },
               "San Antonio Spurs": {
-                "price": 1.95,
-                "point": -11.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.89,
-                "point": 222.5
-              },
-              "Under": {
-                "price": 1.93,
-                "point": 222.5
+                "price": 1.56,
+                "point": -12.5
               }
             }
           }
@@ -890,68 +858,50 @@
         {
           "name": "BetRivers",
           "markets": {
-            "h2h": {
-              "Portland Trail Blazers": {
-                "price": 5.25
-              },
-              "San Antonio Spurs": {
-                "price": 1.16
-              }
-            },
             "spreads": {
               "Portland Trail Blazers": {
-                "price": 1.89,
-                "point": 11.0
+                "price": 1.82,
+                "point": 12.5
               },
               "San Antonio Spurs": {
                 "price": 1.89,
-                "point": -11.0
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.88,
-                "point": 222.0
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 222.0
+                "point": -12.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Portland Trail Blazers": 5.409,
-        "San Antonio Spurs": 1.166
+        "Portland Trail Blazers": 21.242,
+        "San Antonio Spurs": 1.008
       },
       "true_probs": {
-        "Portland Trail Blazers": 17.7,
-        "San Antonio Spurs": 82.3
+        "Portland Trail Blazers": 4.5,
+        "San Antonio Spurs": 95.5
       },
       "other_markets": {
         "spreads": {
           "Portland Trail Blazers": {
-            "price": 1.95,
-            "point": 11.0,
-            "prob": 49.0
+            "price": 2.0,
+            "point": 12.5,
+            "prob": 46.8
           },
           "San Antonio Spurs": {
-            "price": 1.87,
-            "point": -11.0,
-            "prob": 51.0
+            "price": 1.76,
+            "point": -12.5,
+            "prob": 53.2
           }
         },
         "totals": {
           "Over": {
-            "price": 1.93,
-            "point": 222.5,
-            "prob": 49.5
+            "price": 1.97,
+            "point": 214.5,
+            "prob": 47.9
           },
           "Under": {
-            "price": 1.89,
-            "point": 222.5,
-            "prob": 50.5
+            "price": 1.81,
+            "point": 214.5,
+            "prob": 52.1
           }
         },
         "btts": {}
@@ -963,20 +913,15 @@
       "first_seen": "2026-04-15T16:00:44.592700+08:00",
       "is_new": false,
       "odds_change": {
-        "Portland Trail Blazers": 0.887,
-        "San Antonio Spurs": -0.031
+        "Portland Trail Blazers": 16.72,
+        "San Antonio Spurs": -0.189
       },
       "change_pct": {
-        "Portland Trail Blazers": 19.62,
-        "San Antonio Spurs": -2.59
+        "Portland Trail Blazers": 369.75,
+        "San Antonio Spurs": -15.79
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "04/17 16:01",
-          "Portland Trail Blazers": 4.967,
-          "San Antonio Spurs": 1.182
-        },
         {
           "time": "04/17 18:19",
           "Portland Trail Blazers": 4.987,
@@ -1071,12 +1016,17 @@
           "time": "04/20 05:45",
           "Portland Trail Blazers": 5.409,
           "San Antonio Spurs": 1.166
+        },
+        {
+          "time": "04/20 11:42",
+          "Portland Trail Blazers": 21.242,
+          "San Antonio Spurs": 1.008
         }
       ],
       "injury_alerts": [
         {
           "team": "San Antonio Spurs",
-          "title": "Forest 英雄 Gibbs-White 讓夏季追求者 Spurs 陷入更深的危機",
+          "title": "Forest (諾丁漢森林) 的英雄 Gibbs-White (吉布斯-懷特) 讓夏季追求者 Spurs (熱刺) 陷入更深的危險",
           "link": "https://www.bbc.com/sport/football/articles/cvg09l0y72no?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -1113,8 +1063,21 @@
           }
         ]
       },
-      "ai_analysis": "💡 推薦：San Antonio Spurs 讓分過盤\n\n原因：Spurs 的真實勝率高達 82.3%，遠勝 Trail Blazers 的 17.7%，儘管 Trail Blazers 近期有所反彈，但整體實力差距懸殊。盤口從初盤主讓 11.0 至今維持不變，顯示莊家對 Spurs 的信心，獨贏賠率 Spurs 也有小幅下滑，佐證了這一點。\n\n考量因素：主客場、真實勝率、歷史交手（雖無，但勝率差距明顯）、盤口走勢、獨贏賠率變動。\n\n傷兵 Gibbs-White 對 Spurs 影響待觀察，但整體優勢仍顯著。",
-      "analysis_source": "gemini"
+      "sharp_moves": [
+        {
+          "team": "San Antonio Spurs",
+          "move_pct": -13.55,
+          "from": 1.166,
+          "to": 1.008,
+          "level": "🔥 急速移動",
+          "message": "San Antonio Spurs 賠率 1.17→1.01 (-13.6%)"
+        }
+      ],
+      "ai_analysis": "【💡 推薦：San Antonio Spurs 讓分贏 (主讓 12.5)】\n\n推薦原因：Spurs (熱刺) 擁有高達 95.5% 的真實勝率，且近期盤口出現急速移動，Spurs (熱刺) 賠率從 1.17 大幅下降至 1.01，顯示市場對其信心增強，結合獨贏賠率大幅走低，預期 Spurs (熱刺) 將能順利贏下讓分盤。\n\n本次分析的信心程度為：✅ 穩定。\n\n考量因素：真實勝率、盤口急速移動（急速移動偵測）、獨贏賠率變動、AI 自我學習參考（NBA 聯賽命中率 84%、80%+ 勝率區間命中率 85%）。\n\n新聞資訊中提及的「Forest (諾丁漢森林) 的英雄 Gibbs-White (吉布斯-懷特) 讓夏季追求者 Spurs (熱刺) 陷入更深的危險」與本次 NBA 比賽無關，可能為轉載新聞時的誤植，故不納入考量。",
+      "analysis_source": "gemini",
+      "final_score": "111-98",
+      "completed": true,
+      "ai_result": "HIT"
     },
     "273905d6a4ae9217ec0734b66a0eb28b": {
       "id": "273905d6a4ae9217ec0734b66a0eb28b",
@@ -1149,14 +1112,14 @@
             },
             "totals": {
               "Over": {
-                "price": 1.87,
-                "point": 223.5,
-                "prob": 51.0
+                "price": 1.91,
+                "point": 222.5,
+                "prob": 50.0
               },
               "Under": {
-                "price": 1.95,
-                "point": 223.5,
-                "prob": 49.0
+                "price": 1.91,
+                "point": 222.5,
+                "prob": 50.0
               }
             }
           }
@@ -1169,7 +1132,7 @@
                 "price": 1.24
               },
               "Toronto Raptors": {
-                "price": 3.7
+                "price": 3.75
               }
             },
             "spreads": {
@@ -1178,17 +1141,17 @@
                 "point": -8.5
               },
               "Toronto Raptors": {
-                "price": 1.81,
+                "price": 1.8,
                 "point": 8.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.81,
+                "price": 1.83,
                 "point": 223.5
               },
               "Under": {
-                "price": 1.82,
+                "price": 1.81,
                 "point": 223.5
               }
             }
@@ -1207,11 +1170,11 @@
             },
             "spreads": {
               "Cleveland Cavaliers": {
-                "price": 1.89,
+                "price": 1.91,
                 "point": -8.5
               },
               "Toronto Raptors": {
-                "price": 1.88,
+                "price": 1.87,
                 "point": 8.5
               }
             }
@@ -1219,12 +1182,12 @@
         }
       ],
       "avg_odds": {
-        "Cleveland Cavaliers": 1.273,
-        "Toronto Raptors": 3.797
+        "Cleveland Cavaliers": 1.271,
+        "Toronto Raptors": 3.83
       },
       "true_probs": {
-        "Cleveland Cavaliers": 74.9,
-        "Toronto Raptors": 25.1
+        "Cleveland Cavaliers": 75.1,
+        "Toronto Raptors": 24.9
       },
       "other_markets": {
         "spreads": {
@@ -1241,14 +1204,14 @@
         },
         "totals": {
           "Over": {
-            "price": 1.87,
-            "point": 223.5,
-            "prob": 51.0
+            "price": 1.91,
+            "point": 222.5,
+            "prob": 50.0
           },
           "Under": {
-            "price": 1.95,
-            "point": 223.5,
-            "prob": 49.0
+            "price": 1.91,
+            "point": 222.5,
+            "prob": 50.0
           }
         },
         "btts": {}
@@ -1260,12 +1223,12 @@
       "first_seen": "2026-04-19T05:45:12.245352+08:00",
       "is_new": false,
       "odds_change": {
-        "Cleveland Cavaliers": 0.011,
-        "Toronto Raptors": -0.058
+        "Cleveland Cavaliers": 0.009,
+        "Toronto Raptors": -0.025
       },
       "change_pct": {
-        "Cleveland Cavaliers": 0.87,
-        "Toronto Raptors": -1.5
+        "Cleveland Cavaliers": 0.71,
+        "Toronto Raptors": -0.65
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1308,6 +1271,11 @@
           "time": "04/20 05:45",
           "Cleveland Cavaliers": 1.273,
           "Toronto Raptors": 3.797
+        },
+        {
+          "time": "04/20 11:42",
+          "Cleveland Cavaliers": 1.271,
+          "Toronto Raptors": 3.83
         }
       ],
       "h2h_history": [
@@ -1350,8 +1318,8 @@
           }
         ]
       },
-      "ai_analysis": "【💡 投注推薦】：克里夫蘭騎士 -8.5\n\n騎士隊坐擁極高的真實勝率(74.9%)，遠超暴龍，且在兩天前以126-113擊敗暴龍，成功讓分。儘管盤口有輕微鬆動，但無急速移動或傷兵疲勞警示。然而，AI自我學習數據顯示，在70-80%勝率區間的歷史命中率僅為50%，建議投資時保持謹慎。",
-      "analysis_source": "gemini"
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
     },
     "a1b444bd00a27cbae3cf7ca3bf75a3f0": {
       "id": "a1b444bd00a27cbae3cf7ca3bf75a3f0",
@@ -1399,47 +1367,14 @@
           }
         },
         {
-          "name": "1xBet",
-          "markets": {
-            "h2h": {
-              "Atlanta Hawks": {
-                "price": 2.91
-              },
-              "New York Knicks": {
-                "price": 1.48
-              }
-            },
-            "spreads": {
-              "Atlanta Hawks": {
-                "price": 1.96,
-                "point": 5.5
-              },
-              "New York Knicks": {
-                "price": 1.96,
-                "point": -5.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.93,
-                "point": 216.5
-              },
-              "Under": {
-                "price": 1.99,
-                "point": 216.5
-              }
-            }
-          }
-        },
-        {
           "name": "FanDuel",
           "markets": {
             "h2h": {
               "Atlanta Hawks": {
-                "price": 2.84
+                "price": 2.88
               },
               "New York Knicks": {
-                "price": 1.45
+                "price": 1.44
               }
             },
             "spreads": {
@@ -1463,15 +1398,48 @@
               }
             }
           }
+        },
+        {
+          "name": "LowVig.ag",
+          "markets": {
+            "h2h": {
+              "Atlanta Hawks": {
+                "price": 2.95
+              },
+              "New York Knicks": {
+                "price": 1.44
+              }
+            },
+            "spreads": {
+              "Atlanta Hawks": {
+                "price": 1.94,
+                "point": 5.5
+              },
+              "New York Knicks": {
+                "price": 1.94,
+                "point": -5.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.93,
+                "point": 217.0
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 217.0
+              }
+            }
+          }
         }
       ],
       "avg_odds": {
-        "Atlanta Hawks": 2.822,
-        "New York Knicks": 1.443
+        "Atlanta Hawks": 2.839,
+        "New York Knicks": 1.441
       },
       "true_probs": {
-        "Atlanta Hawks": 33.8,
-        "New York Knicks": 66.2
+        "Atlanta Hawks": 33.7,
+        "New York Knicks": 66.3
       },
       "other_markets": {
         "spreads": {
@@ -1507,12 +1475,12 @@
       "first_seen": "2026-04-19T11:40:36.810826+08:00",
       "is_new": false,
       "odds_change": {
-        "Atlanta Hawks": -0.039,
-        "New York Knicks": 0.01
+        "Atlanta Hawks": -0.022,
+        "New York Knicks": 0.008
       },
       "change_pct": {
-        "Atlanta Hawks": -1.36,
-        "New York Knicks": 0.7
+        "Atlanta Hawks": -0.77,
+        "New York Knicks": 0.56
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1550,6 +1518,11 @@
           "time": "04/20 05:45",
           "Atlanta Hawks": 2.822,
           "New York Knicks": 1.443
+        },
+        {
+          "time": "04/20 11:42",
+          "Atlanta Hawks": 2.839,
+          "New York Knicks": 1.441
         }
       ],
       "h2h_history": [
@@ -1645,10 +1618,10 @@
           "markets": {
             "h2h": {
               "Denver Nuggets": {
-                "price": 1.38
+                "price": 1.39
               },
               "Minnesota Timberwolves": {
-                "price": 3.0
+                "price": 3.05
               }
             }
           }
@@ -1676,24 +1649,24 @@
             },
             "totals": {
               "Over": {
-                "price": 1.8,
-                "point": 230.5
+                "price": 1.91,
+                "point": 231.5
               },
               "Under": {
-                "price": 2.0,
-                "point": 230.5
+                "price": 1.91,
+                "point": 231.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Denver Nuggets": 1.388,
-        "Minnesota Timberwolves": 3.059
+        "Denver Nuggets": 1.381,
+        "Minnesota Timberwolves": 3.103
       },
       "true_probs": {
-        "Denver Nuggets": 68.8,
-        "Minnesota Timberwolves": 31.2
+        "Denver Nuggets": 69.2,
+        "Minnesota Timberwolves": 30.8
       },
       "other_markets": {
         "spreads": {
@@ -1729,12 +1702,12 @@
       "first_seen": "2026-04-19T11:40:36.810829+08:00",
       "is_new": false,
       "odds_change": {
-        "Denver Nuggets": -0.002,
-        "Minnesota Timberwolves": 0.017
+        "Denver Nuggets": -0.009,
+        "Minnesota Timberwolves": 0.061
       },
       "change_pct": {
-        "Denver Nuggets": -0.14,
-        "Minnesota Timberwolves": 0.56
+        "Denver Nuggets": -0.65,
+        "Minnesota Timberwolves": 2.01
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1772,13 +1745,11 @@
           "time": "04/20 05:45",
           "Denver Nuggets": 1.388,
           "Minnesota Timberwolves": 3.059
-        }
-      ],
-      "injury_alerts": [
+        },
         {
-          "team": "Denver Nuggets",
-          "title": "回顧：Lakers 克服傷病，Murray 展現身手助 Nuggets",
-          "link": "https://www.espn.com/nba/story/_/id/48506452/2026-nba-playoffs-western-conference-round-one-takeaways"
+          "time": "04/20 11:42",
+          "Denver Nuggets": 1.381,
+          "Minnesota Timberwolves": 3.103
         }
       ],
       "h2h_history": [
@@ -1837,10 +1808,10 @@
           "markets": {
             "h2h": {
               "Houston Rockets": {
-                "price": 1.56
+                "price": 1.53
               },
               "Los Angeles Lakers": {
-                "price": 2.52
+                "price": 2.58
               }
             },
             "spreads": {
@@ -1874,10 +1845,10 @@
           "markets": {
             "h2h": {
               "Houston Rockets": {
-                "price": 1.59
+                "price": 1.57
               },
               "Los Angeles Lakers": {
-                "price": 2.42
+                "price": 2.45
               }
             },
             "spreads": {
@@ -1903,14 +1874,14 @@
           }
         },
         {
-          "name": "1xBet",
+          "name": "BetRivers",
           "markets": {
             "h2h": {
               "Houston Rockets": {
                 "price": 1.53
               },
               "Los Angeles Lakers": {
-                "price": 2.71
+                "price": 2.5
               }
             },
             "spreads": {
@@ -1919,30 +1890,30 @@
                 "point": -4.5
               },
               "Los Angeles Lakers": {
-                "price": 2.0,
+                "price": 1.88,
                 "point": 4.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.99,
-                "point": 206.5
+                "price": 1.88,
+                "point": 206.0
               },
               "Under": {
-                "price": 1.93,
-                "point": 206.5
+                "price": 1.92,
+                "point": 206.0
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Houston Rockets": 1.533,
-        "Los Angeles Lakers": 2.543
+        "Houston Rockets": 1.53,
+        "Los Angeles Lakers": 2.553
       },
       "true_probs": {
-        "Houston Rockets": 62.4,
-        "Los Angeles Lakers": 37.6
+        "Houston Rockets": 62.5,
+        "Los Angeles Lakers": 37.5
       },
       "other_markets": {
         "spreads": {
@@ -1978,12 +1949,12 @@
       "first_seen": "2026-04-19T11:40:36.810833+08:00",
       "is_new": false,
       "odds_change": {
-        "Houston Rockets": -0.018,
-        "Los Angeles Lakers": 0.056
+        "Houston Rockets": -0.021,
+        "Los Angeles Lakers": 0.066
       },
       "change_pct": {
-        "Houston Rockets": -1.16,
-        "Los Angeles Lakers": 2.25
+        "Houston Rockets": -1.35,
+        "Los Angeles Lakers": 2.65
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -2021,13 +1992,11 @@
           "time": "04/20 05:45",
           "Houston Rockets": 1.533,
           "Los Angeles Lakers": 2.543
-        }
-      ],
-      "injury_alerts": [
+        },
         {
-          "team": "Los Angeles Lakers",
-          "title": "回顧：Lakers 克服傷病，Murray 展現身手助 Nuggets",
-          "link": "https://www.espn.com/nba/story/_/id/48506452/2026-nba-playoffs-western-conference-round-one-takeaways"
+          "time": "04/20 11:42",
+          "Houston Rockets": 1.53,
+          "Los Angeles Lakers": 2.553
         }
       ],
       "h2h_history": [],
@@ -5156,25 +5125,25 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 1.1
+                "price": 1.11
               },
               "Philadelphia 76ers": {
-                "price": 7.0
+                "price": 6.5
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.88,
-                "point": -14.0
+                "price": 1.89,
+                "point": -13.5
               },
               "Philadelphia 76ers": {
-                "price": 1.91,
-                "point": 14.0
+                "price": 1.89,
+                "point": 13.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.91,
+                "price": 1.89,
                 "point": 216.5
               },
               "Under": {
@@ -5189,32 +5158,32 @@
           "markets": {
             "h2h": {
               "Boston Celtics": {
-                "price": 1.1
+                "price": 1.11
               },
               "Philadelphia 76ers": {
-                "price": 7.5
+                "price": 7.0
               }
             },
             "spreads": {
               "Boston Celtics": {
-                "price": 1.89,
-                "point": -14.0
+                "price": 1.91,
+                "point": -13.5
               },
               "Philadelphia 76ers": {
-                "price": 1.92,
-                "point": 14.0
+                "price": 1.91,
+                "point": 13.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Boston Celtics": 1.1,
-        "Philadelphia 76ers": 7.096
+        "Boston Celtics": 1.111,
+        "Philadelphia 76ers": 6.669
       },
       "true_probs": {
-        "Boston Celtics": 86.6,
-        "Philadelphia 76ers": 13.4
+        "Boston Celtics": 85.7,
+        "Philadelphia 76ers": 14.3
       },
       "other_markets": {
         "spreads": {
@@ -5247,25 +5216,44 @@
         "Boston Celtics": 1.1,
         "Philadelphia 76ers": 7.096
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-04-20T05:45:17.494064+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Boston Celtics": 0.011,
+        "Philadelphia 76ers": -0.427
+      },
+      "change_pct": {
+        "Boston Celtics": 1.0,
+        "Philadelphia 76ers": -6.02
+      },
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "04/20 05:45",
           "Boston Celtics": 1.1,
           "Philadelphia 76ers": 7.096
+        },
+        {
+          "time": "04/20 11:42",
+          "Boston Celtics": 1.111,
+          "Philadelphia 76ers": 6.669
         }
       ],
       "injury_alerts": [
         {
           "team": "Boston Celtics",
-          "title": "東區季後賽回顧：Celtics 以 32 分之差痛宰 Sixers",
+          "title": "東區季後賽總結：Magic (魔術) 爆冷擊敗 Pistons (活塞)，Celtics (塞爾提克) 壓制 Sixers (七六人)",
           "link": "https://www.espn.com/nba/story/_/id/48506456/2026-nba-playoffs-eastern-conference-round-one-takeaways"
         }
       ],
-      "h2h_history": [],
+      "h2h_history": [
+        {
+          "date": "2026-04-19",
+          "home": "Boston Celtics",
+          "away": "Philadelphia 76ers",
+          "score": "123-91"
+        }
+      ],
       "home_form": {
         "record": "W",
         "wins": 1,
@@ -5274,9 +5262,9 @@
         "away_record": "",
         "details": [
           {
-            "date": "2026-04-12",
-            "opponent": "Orlando Magic",
-            "score": "113-108",
+            "date": "2026-04-19",
+            "opponent": "Philadelphia 76ers",
+            "score": "123-91",
             "result": "W",
             "venue": "主"
           }
@@ -5298,234 +5286,3750 @@
           }
         ]
       },
-      "ai_analysis": "【💡 推薦：主勝讓分盤 -14.5 讓分過盤】\n\n考量 Boston Celtics 高達 86.6% 的真實勝率，以及東區季後賽以 32 分痛宰 Sixers 的近期戰績，Celtics 在主場極具統治力。儘管 Sixers 近期也有勝場，但面對強勢的 Celtics，本場比賽主隊有望延續勝勢並擴大分差。",
+      "ai_analysis": "【💡 推薦：主隊 Boston Celtics 讓分過盤】\n\n推薦理由：Celtics 擁有壓倒性的 85.7% 勝率，且近期的歷史交手紀錄（123-91）和東區季後賽的表現（壓制 Sixers）皆顯示其絕對優勢。盤口走勢從初盤 1.1 穩定微升至 1.111，客隊賠率則大幅下滑，顯示市場對 Celtics 的信心十足。\n\n分析：\nCeltics 在本場比賽中的勝率高達 85.7%，客隊 Sixers 僅為 14.3%，這巨大的勝率差距為 Celtics 的讓分過盤奠定了堅實的基礎。歷史交手紀錄也呈現了 Celtics 的絕對統治力，上一場以 123-91 大勝 Sixers，顯示了兩隊實力上的懸殊。\n\n盤口方面，獨贏賠率從初盤 Celtics 的 1.1 微升至 1.111，而 Sixers 的賠率則從 7.096 大幅下滑至 6.669。這種盤口走勢表明市場資金持續看好 Celtics，並對 Sixers 的獲勝前景極不樂觀。這種盤口的大幅變動，尤其是客隊賠率的顯著升高，往往預示著莊家在進行風險控制，或是市場已經普遍接受了 Celtics 將會大勝的預期。\n\n傷兵快訊提到 Celtics 壓制 Sixers，這進一步證實了 Celtics 的強勢。雖然沒有疲勞警示，但 Celtics 在本場比賽中的主場優勢，加上其強勁的實力，讓分過盤的可能性極高。\n\nAI 自我學習參考顯示，當前勝率區間（80%以上）的命中率為 85%，這與 Celtics 的勝率相符，因此可以對此次推薦給予較高的信心。\n\n總結來說，Celtics 在勝率、歷史交手、盤口走勢以及傷兵情況上都展現出絕對優勢，結合 AI 的歷史命中率參考，推薦 Celtics 讓分過盤。",
       "analysis_source": "gemini"
+    },
+    "680084e4612c197a1cf4170d82ba6f10": {
+      "id": "680084e4612c197a1cf4170d82ba6f10",
+      "sport_key": "basketball_nba",
+      "league": "NBA",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Portland Trail Blazers",
+      "commence_time": "2026-04-22T00:00:00Z",
+      "bookmakers": [
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Portland Trail Blazers": {
+                "price": 5.8
+              },
+              "San Antonio Spurs": {
+                "price": 1.15
+              }
+            },
+            "spreads": {
+              "Portland Trail Blazers": {
+                "price": 1.91,
+                "point": 12.0,
+                "prob": 50.0
+              },
+              "San Antonio Spurs": {
+                "price": 1.91,
+                "point": -12.0,
+                "prob": 50.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 221.5,
+                "prob": 50.0
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 221.5,
+                "prob": 50.0
+              }
+            }
+          }
+        },
+        {
+          "name": "DraftKings",
+          "markets": {
+            "h2h": {
+              "Portland Trail Blazers": {
+                "price": 5.55
+              },
+              "San Antonio Spurs": {
+                "price": 1.16
+              }
+            },
+            "spreads": {
+              "Portland Trail Blazers": {
+                "price": 1.91,
+                "point": 12.5
+              },
+              "San Antonio Spurs": {
+                "price": 1.91,
+                "point": -12.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.87,
+                "point": 219.5
+              },
+              "Under": {
+                "price": 1.95,
+                "point": 219.5
+              }
+            }
+          }
+        },
+        {
+          "name": "BetRivers",
+          "markets": {
+            "h2h": {
+              "Portland Trail Blazers": {
+                "price": 5.6
+              },
+              "San Antonio Spurs": {
+                "price": 1.14
+              }
+            },
+            "spreads": {
+              "Portland Trail Blazers": {
+                "price": 1.88,
+                "point": 12.0
+              },
+              "San Antonio Spurs": {
+                "price": 1.91,
+                "point": -12.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.92,
+                "point": 221.5
+              },
+              "Under": {
+                "price": 1.88,
+                "point": 221.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Portland Trail Blazers": 5.725,
+        "San Antonio Spurs": 1.145
+      },
+      "true_probs": {
+        "Portland Trail Blazers": 16.7,
+        "San Antonio Spurs": 83.3
+      },
+      "other_markets": {
+        "spreads": {
+          "Portland Trail Blazers": {
+            "price": 1.91,
+            "point": 12.0,
+            "prob": 50.0
+          },
+          "San Antonio Spurs": {
+            "price": 1.91,
+            "point": -12.0,
+            "prob": 50.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.91,
+            "point": 221.5,
+            "prob": 50.0
+          },
+          "Under": {
+            "price": 1.91,
+            "point": 221.5,
+            "prob": 50.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Portland Trail Blazers": 5.725,
+        "San Antonio Spurs": 1.145
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377293+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Portland Trail Blazers": 5.725,
+          "San Antonio Spurs": 1.145
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "San Antonio Spurs",
+          "title": "Forest (諾丁漢森林) 的英雄 Gibbs-White (吉布斯-懷特) 讓夏季追求者 Spurs (熱刺) 陷入更深的危險",
+          "link": "https://www.bbc.com/sport/football/articles/cvg09l0y72no?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "home_record": "L",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-13",
+            "opponent": "Denver Nuggets",
+            "score": "118-128",
+            "result": "L",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-04-13",
+            "opponent": "Sacramento Kings",
+            "score": "122-110",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "ai_analysis": "【💡 投注推薦】Portland Trail Blazers +12.0\n\n馬刺真實勝率雖高，但讓分盤口12.0偏大。AI參考數據顯示，在勝率80%+的相似條件下，高勝率主隊近期過盤率偏低（3場中2場未過盤），因此需謹慎看待馬刺的過盤能力。傷兵資訊中的 Gibbs-White 來自足球聯賽，與本場NBA賽事無關，不影響分析。考慮到這是總冠軍賽首戰，拓荒者在受讓盤下有機會咬住比分。",
+      "analysis_source": "gemini"
+    },
+    "c9bc6bcae048283407d1cb53995eee8e": {
+      "id": "c9bc6bcae048283407d1cb53995eee8e",
+      "sport_key": "basketball_nba",
+      "league": "NBA",
+      "home_team": "Detroit Pistons",
+      "away_team": "Orlando Magic",
+      "commence_time": "2026-04-22T23:00:00Z",
+      "bookmakers": [
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Detroit Pistons": {
+                "price": 1.22
+              },
+              "Orlando Magic": {
+                "price": 4.6
+              }
+            },
+            "spreads": {
+              "Detroit Pistons": {
+                "price": 1.88,
+                "point": -9.5,
+                "prob": 50.8
+              },
+              "Orlando Magic": {
+                "price": 1.94,
+                "point": 9.5,
+                "prob": 49.2
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 217.5,
+                "prob": 50.0
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 217.5,
+                "prob": 50.0
+              }
+            }
+          }
+        },
+        {
+          "name": "DraftKings",
+          "markets": {
+            "h2h": {
+              "Detroit Pistons": {
+                "price": 1.25
+              },
+              "Orlando Magic": {
+                "price": 4.1
+              }
+            },
+            "spreads": {
+              "Detroit Pistons": {
+                "price": 1.91,
+                "point": -9.5
+              },
+              "Orlando Magic": {
+                "price": 1.91,
+                "point": 9.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 216.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 216.5
+              }
+            }
+          }
+        },
+        {
+          "name": "BetMGM",
+          "markets": {
+            "h2h": {
+              "Detroit Pistons": {
+                "price": 1.24
+              },
+              "Orlando Magic": {
+                "price": 4.2
+              }
+            },
+            "spreads": {
+              "Detroit Pistons": {
+                "price": 1.91,
+                "point": -9.5
+              },
+              "Orlando Magic": {
+                "price": 1.91,
+                "point": 9.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 217.5
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 217.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Detroit Pistons": 1.222,
+        "Orlando Magic": 4.223
+      },
+      "true_probs": {
+        "Detroit Pistons": 77.6,
+        "Orlando Magic": 22.4
+      },
+      "other_markets": {
+        "spreads": {
+          "Detroit Pistons": {
+            "price": 1.88,
+            "point": -9.5,
+            "prob": 50.8
+          },
+          "Orlando Magic": {
+            "price": 1.94,
+            "point": 9.5,
+            "prob": 49.2
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.91,
+            "point": 217.5,
+            "prob": 50.0
+          },
+          "Under": {
+            "price": 1.91,
+            "point": 217.5,
+            "prob": 50.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Detroit Pistons": 1.222,
+        "Orlando Magic": 4.223
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377305+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Detroit Pistons": 1.222,
+          "Orlando Magic": 4.223
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Detroit Pistons",
+          "title": "東區季後賽總結：Magic (魔術) 爆冷擊敗 Pistons (活塞)，Celtics (塞爾提克) 壓制 Sixers (七六人)",
+          "link": "https://www.espn.com/nba/story/_/id/48506456/2026-nba-playoffs-eastern-conference-round-one-takeaways"
+        },
+        {
+          "team": "Detroit Pistons",
+          "title": "Pistons (活塞) 作為東區頭號種子，首輪季後賽表現失常，輸給第八種子 Magic (魔術)",
+          "link": "https://sports.yahoo.com/articles/pistons-open-playoffs-flop-easts-023946714.html"
+        },
+        {
+          "team": "Detroit Pistons",
+          "title": "Orlando (奧蘭多) 壓制頭號種子 Detroit (底特律)，客場 112-101 爆冷取勝",
+          "link": "https://sports.yahoo.com/articles/orlando-bullies-top-seeded-detroit-023028231.html"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
+      "away_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
+      "ai_analysis": "【💡 推薦：奧蘭多魔術 (+9.5)】\n\n考量到底特律活塞作為東區頭號種子，近期卻被奧蘭多魔術爆冷擊敗，顯示其讓分盤 (-9.5) 壓力巨大。儘管活塞真實勝率高，但魔術顯然已找到壓制活塞的策略，因此看好魔術能夠咬住盤口。此外，AI自我學習在與活塞真實勝率相近的70-80%區間，歷史命中率僅有50%，提醒本次分析應降低信心程度。",
+      "analysis_source": "gemini"
+    },
+    "0ce48ecb61f40bc3bd784adfe7f8e811": {
+      "id": "0ce48ecb61f40bc3bd784adfe7f8e811",
+      "sport_key": "basketball_nba",
+      "league": "NBA",
+      "home_team": "Oklahoma City Thunder",
+      "away_team": "Phoenix Suns",
+      "commence_time": "2026-04-23T01:40:00Z",
+      "bookmakers": [
+        {
+          "name": "DraftKings",
+          "markets": {
+            "h2h": {
+              "Oklahoma City Thunder": {
+                "price": 1.06
+              },
+              "Phoenix Suns": {
+                "price": 10.5
+              }
+            },
+            "spreads": {
+              "Oklahoma City Thunder": {
+                "price": 1.95,
+                "point": -17.5,
+                "prob": 49.0
+              },
+              "Phoenix Suns": {
+                "price": 1.87,
+                "point": 17.5,
+                "prob": 51.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 213.5,
+                "prob": 50.0
+              },
+              "Under": {
+                "price": 1.91,
+                "point": 213.5,
+                "prob": 50.0
+              }
+            }
+          }
+        },
+        {
+          "name": "BetMGM",
+          "markets": {
+            "h2h": {
+              "Oklahoma City Thunder": {
+                "price": 1.05
+              },
+              "Phoenix Suns": {
+                "price": 11.0
+              }
+            },
+            "spreads": {
+              "Oklahoma City Thunder": {
+                "price": 1.85,
+                "point": -16.5
+              },
+              "Phoenix Suns": {
+                "price": 1.98,
+                "point": 16.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.87,
+                "point": 213.5
+              },
+              "Under": {
+                "price": 1.95,
+                "point": 213.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (NL)",
+          "markets": {
+            "h2h": {
+              "Oklahoma City Thunder": {
+                "price": 1.07
+              },
+              "Phoenix Suns": {
+                "price": 9.5
+              }
+            },
+            "spreads": {
+              "Oklahoma City Thunder": {
+                "price": 1.92,
+                "point": -17.0
+              },
+              "Phoenix Suns": {
+                "price": 1.89,
+                "point": 17.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.92,
+                "point": 213.5
+              },
+              "Under": {
+                "price": 1.89,
+                "point": 213.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Oklahoma City Thunder": 1.054,
+        "Phoenix Suns": 10.115
+      },
+      "true_probs": {
+        "Oklahoma City Thunder": 90.6,
+        "Phoenix Suns": 9.4
+      },
+      "other_markets": {
+        "spreads": {
+          "Oklahoma City Thunder": {
+            "price": 1.95,
+            "point": -17.5,
+            "prob": 49.0
+          },
+          "Phoenix Suns": {
+            "price": 1.87,
+            "point": 17.5,
+            "prob": 51.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.91,
+            "point": 213.5,
+            "prob": 50.0
+          },
+          "Under": {
+            "price": 1.91,
+            "point": 213.5,
+            "prob": 50.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Oklahoma City Thunder": 1.054,
+        "Phoenix Suns": 10.115
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377310+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Oklahoma City Thunder": 1.054,
+          "Phoenix Suns": 10.115
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Oklahoma City Thunder",
+          "title": "西區季後賽總結：Thunder (雷霆) 在第一戰大勝 Suns (太陽)",
+          "link": "https://www.espn.com/nba/story/_/id/48506452/2026-nba-playoffs-western-conference-round-one-takeaways"
+        },
+        {
+          "team": "Oklahoma City Thunder",
+          "title": "Gilgeous-Alexander (吉爾傑斯-亞歷山大) 攻下 25 分，Thunder (雷霆) 在第一戰以 119-84 大勝 Suns (太陽)",
+          "link": "https://sports.yahoo.com/articles/gilgeous-alexander-scores-25-points-013445084.html"
+        }
+      ],
+      "ai_analysis": "【💡 推薦：Oklahoma City Thunder 讓分盤過盤】\n\n考量到 Oklahoma City Thunder 90.6% 的極高真實勝率，以及他們在第一戰以 35 分的懸殊差距擊敗 Phoenix Suns 的表現，本場讓分盤 (-17.5) 值得追擊。儘管沒有急速移動或聰明錢訊號，但兩隊近況懸殊，且無不利因素影響，可預期雷霆有望延續強勢。AI 自我學習資料顯示，80% 以上勝率的場次，命中率高達 85%，信心十足。",
+      "analysis_source": "gemini"
+    },
+    "9439cff81cd6fd6de1e7046a3b49d8a8": {
+      "id": "9439cff81cd6fd6de1e7046a3b49d8a8",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Lecce",
+      "away_team": "Fiorentina",
+      "commence_time": "2026-04-20T18:45:00Z",
+      "bookmakers": [
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Fiorentina": {
+                "price": 2.28
+              },
+              "Lecce": {
+                "price": 3.25
+              },
+              "Draw": {
+                "price": 3.25
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.12,
+                "point": 2.5,
+                "prob": 44.2
+              },
+              "Under": {
+                "price": 1.68,
+                "point": 2.5,
+                "prob": 55.8
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "Fiorentina": {
+                "price": 2.28
+              },
+              "Lecce": {
+                "price": 3.25
+              },
+              "Draw": {
+                "price": 3.25
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.12,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.68,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Fiorentina": {
+                "price": 2.15
+              },
+              "Lecce": {
+                "price": 3.5
+              },
+              "Draw": {
+                "price": 3.3
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Fiorentina": 2.212,
+        "Lecce": 3.393,
+        "Draw": 3.284
+      },
+      "true_probs": {
+        "Fiorentina": 43.0,
+        "Lecce": 28.0,
+        "Draw": 29.0
+      },
+      "other_markets": {
+        "spreads": {
+          "Fiorentina": {
+            "price": 1.93,
+            "point": -0.25,
+            "prob": 50.5
+          },
+          "Lecce": {
+            "price": 1.97,
+            "point": 0.25,
+            "prob": 49.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.12,
+            "point": 2.5,
+            "prob": 44.2
+          },
+          "Under": {
+            "price": 1.68,
+            "point": 2.5,
+            "prob": 55.8
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Fiorentina": 2.212,
+        "Lecce": 3.393,
+        "Draw": 3.284
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377315+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Fiorentina": 2.212,
+          "Lecce": 3.393,
+          "Draw": 3.284
+        }
+      ]
+    },
+    "20842ac2a58d66de639f359e26217e33": {
+      "id": "20842ac2a58d66de639f359e26217e33",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Napoli",
+      "away_team": "Cremonese",
+      "commence_time": "2026-04-24T18:45:00Z",
+      "bookmakers": [
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Cremonese": {
+                "price": 9.5
+              },
+              "Napoli": {
+                "price": 1.31
+              },
+              "Draw": {
+                "price": 4.8
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Cremonese": {
+                "price": 9.4
+              },
+              "Napoli": {
+                "price": 1.35
+              },
+              "Draw": {
+                "price": 5.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.85,
+                "point": 2.5,
+                "prob": 49.6
+              },
+              "Under": {
+                "price": 1.82,
+                "point": 2.5,
+                "prob": 50.4
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Cremonese": {
+                "price": 8.0
+              },
+              "Napoli": {
+                "price": 1.31
+              },
+              "Draw": {
+                "price": 4.9
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Cremonese": 9.529,
+        "Napoli": 1.33,
+        "Draw": 4.964
+      },
+      "true_probs": {
+        "Cremonese": 9.9,
+        "Napoli": 71.0,
+        "Draw": 19.0
+      },
+      "other_markets": {
+        "spreads": {
+          "Cremonese": {
+            "price": 1.84,
+            "point": 1.5,
+            "prob": 53.4
+          },
+          "Napoli": {
+            "price": 2.11,
+            "point": -1.5,
+            "prob": 46.6
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.85,
+            "point": 2.5,
+            "prob": 49.6
+          },
+          "Under": {
+            "price": 1.82,
+            "point": 2.5,
+            "prob": 50.4
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Cremonese": 9.529,
+        "Napoli": 1.33,
+        "Draw": 4.964
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377318+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Cremonese": 9.529,
+          "Napoli": 1.33,
+          "Draw": 4.964
+        }
+      ],
+      "weather": {
+        "temp": 16.0,
+        "wind": 5.9,
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
+      },
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "29cc5ddc31a11f7556978b323ed103fc": {
+      "id": "29cc5ddc31a11f7556978b323ed103fc",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Parma",
+      "away_team": "Pisa",
+      "commence_time": "2026-04-25T13:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Parma": {
+                "price": 1.96
+              },
+              "Pisa": {
+                "price": 3.7
+              },
+              "Draw": {
+                "price": 3.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Parma": {
+                "price": 1.98
+              },
+              "Pisa": {
+                "price": 3.65
+              },
+              "Draw": {
+                "price": 3.25
+              }
+            }
+          }
+        },
+        {
+          "name": "Marathon Bet",
+          "markets": {
+            "h2h": {
+              "Parma": {
+                "price": 2.08
+              },
+              "Pisa": {
+                "price": 3.9
+              },
+              "Draw": {
+                "price": 3.32
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Parma": 2.04,
+        "Pisa": 3.844,
+        "Draw": 3.25
+      },
+      "true_probs": {
+        "Parma": 46.3,
+        "Pisa": 24.6,
+        "Draw": 29.1
+      },
+      "other_markets": {
+        "spreads": {
+          "Parma": {
+            "price": 1.46,
+            "point": 0.0,
+            "prob": 65.1
+          },
+          "Pisa": {
+            "price": 2.72,
+            "point": 0.0,
+            "prob": 34.9
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.39,
+            "point": 2.5,
+            "prob": 41.3
+          },
+          "Under": {
+            "price": 1.68,
+            "point": 2.5,
+            "prob": 58.7
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Parma": 2.04,
+        "Pisa": 3.844,
+        "Draw": 3.25
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377320+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Parma": 2.04,
+          "Pisa": 3.844,
+          "Draw": 3.25
+        }
+      ],
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "8a9614a1c1dd66d813d98f08f3d7efd8": {
+      "id": "8a9614a1c1dd66d813d98f08f3d7efd8",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Bologna",
+      "away_team": "AS Roma",
+      "commence_time": "2026-04-25T16:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "AS Roma": {
+                "price": 2.35
+              },
+              "Bologna": {
+                "price": 2.8
+              },
+              "Draw": {
+                "price": 3.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "AS Roma": {
+                "price": 2.4
+              },
+              "Bologna": {
+                "price": 2.75
+              },
+              "Draw": {
+                "price": 3.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "AS Roma": {
+                "price": 2.5
+              },
+              "Bologna": {
+                "price": 2.9
+              },
+              "Draw": {
+                "price": 3.25
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.01,
+                "point": 2.5,
+                "prob": 45.5
+              },
+              "Under": {
+                "price": 1.68,
+                "point": 2.5,
+                "prob": 54.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "AS Roma": 2.479,
+        "Bologna": 2.901,
+        "Draw": 3.225
+      },
+      "true_probs": {
+        "AS Roma": 38.1,
+        "Bologna": 32.6,
+        "Draw": 29.3
+      },
+      "other_markets": {
+        "spreads": {
+          "AS Roma": {
+            "price": 1.83,
+            "point": 0.0,
+            "prob": 53.8
+          },
+          "Bologna": {
+            "price": 2.13,
+            "point": 0.0,
+            "prob": 46.2
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.01,
+            "point": 2.5,
+            "prob": 45.5
+          },
+          "Under": {
+            "price": 1.68,
+            "point": 2.5,
+            "prob": 54.5
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "AS Roma": 2.479,
+        "Bologna": 2.901,
+        "Draw": 3.225
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377322+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "AS Roma": 2.479,
+          "Bologna": 2.901,
+          "Draw": 3.225
+        }
+      ]
+    },
+    "5744a34d60a47f720af59a055dab12c5": {
+      "id": "5744a34d60a47f720af59a055dab12c5",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Hellas Verona",
+      "away_team": "Lecce",
+      "commence_time": "2026-04-25T18:45:00Z",
+      "bookmakers": [
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "Hellas Verona": {
+                "price": 2.43
+              },
+              "Lecce": {
+                "price": 3.4
+              },
+              "Draw": {
+                "price": 3.23
+              }
+            },
+            "spreads": {
+              "Hellas Verona": {
+                "price": 1.63,
+                "point": 0.0,
+                "prob": 58.3
+              },
+              "Lecce": {
+                "price": 2.28,
+                "point": 0.0,
+                "prob": 41.7
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.62,
+                "point": 1.5,
+                "prob": 60.9
+              },
+              "Under": {
+                "price": 2.52,
+                "point": 1.5,
+                "prob": 39.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Hellas Verona": {
+                "price": 2.25
+              },
+              "Lecce": {
+                "price": 3.15
+              },
+              "Draw": {
+                "price": 3.05
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Hellas Verona": {
+                "price": 2.36
+              },
+              "Lecce": {
+                "price": 3.35
+              },
+              "Draw": {
+                "price": 3.05
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.52,
+                "point": 1.5
+              },
+              "Under": {
+                "price": 2.32,
+                "point": 1.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Hellas Verona": 2.304,
+        "Lecce": 3.349,
+        "Draw": 3.075
+      },
+      "true_probs": {
+        "Hellas Verona": 41.0,
+        "Lecce": 28.2,
+        "Draw": 30.7
+      },
+      "other_markets": {
+        "spreads": {
+          "Hellas Verona": {
+            "price": 1.63,
+            "point": 0.0,
+            "prob": 58.3
+          },
+          "Lecce": {
+            "price": 2.28,
+            "point": 0.0,
+            "prob": 41.7
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.62,
+            "point": 1.5,
+            "prob": 60.9
+          },
+          "Under": {
+            "price": 2.52,
+            "point": 1.5,
+            "prob": 39.1
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Hellas Verona": 2.304,
+        "Lecce": 3.349,
+        "Draw": 3.075
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377325+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Hellas Verona": 2.304,
+          "Lecce": 3.349,
+          "Draw": 3.075
+        }
+      ],
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "161f9baeab748dcfa4d2df893f14b25b": {
+      "id": "161f9baeab748dcfa4d2df893f14b25b",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Fiorentina",
+      "away_team": "Sassuolo",
+      "commence_time": "2026-04-26T10:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Fiorentina": {
+                "price": 1.88
+              },
+              "Sassuolo": {
+                "price": 3.75
+              },
+              "Draw": {
+                "price": 3.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Fiorentina": {
+                "price": 1.95
+              },
+              "Sassuolo": {
+                "price": 4.0
+              },
+              "Draw": {
+                "price": 3.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.81,
+                "point": 2.5,
+                "prob": 50.8
+              },
+              "Under": {
+                "price": 1.87,
+                "point": 2.5,
+                "prob": 49.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Fiorentina": {
+                "price": 1.83
+              },
+              "Sassuolo": {
+                "price": 3.6
+              },
+              "Draw": {
+                "price": 3.2
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Fiorentina": 1.92,
+        "Sassuolo": 4.129,
+        "Draw": 3.322
+      },
+      "true_probs": {
+        "Fiorentina": 48.9,
+        "Sassuolo": 22.8,
+        "Draw": 28.3
+      },
+      "other_markets": {
+        "spreads": {
+          "Fiorentina": {
+            "price": 1.33,
+            "point": 0.0,
+            "prob": 69.1
+          },
+          "Sassuolo": {
+            "price": 2.97,
+            "point": 0.0,
+            "prob": 30.9
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.81,
+            "point": 2.5,
+            "prob": 50.8
+          },
+          "Under": {
+            "price": 1.87,
+            "point": 2.5,
+            "prob": 49.2
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Fiorentina": 1.92,
+        "Sassuolo": 4.129,
+        "Draw": 3.322
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377327+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Fiorentina": 1.92,
+          "Sassuolo": 4.129,
+          "Draw": 3.322
+        }
+      ],
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "b0d1e670b682b0ed37d6b0bc271efa6a": {
+      "id": "b0d1e670b682b0ed37d6b0bc271efa6a",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Genoa",
+      "away_team": "Como",
+      "commence_time": "2026-04-26T13:00:00Z",
+      "bookmakers": [
+        {
+          "name": "FanDuel",
+          "markets": {
+            "h2h": {
+              "Como": {
+                "price": 1.71
+              },
+              "Genoa": {
+                "price": 4.6
+              },
+              "Draw": {
+                "price": 3.6
+              }
+            }
+          }
+        },
+        {
+          "name": "888sport",
+          "markets": {
+            "h2h": {
+              "Como": {
+                "price": 1.8
+              },
+              "Genoa": {
+                "price": 4.0
+              },
+              "Draw": {
+                "price": 3.5
+              }
+            }
+          }
+        },
+        {
+          "name": "William Hill",
+          "markets": {
+            "h2h": {
+              "Como": {
+                "price": 1.8
+              },
+              "Genoa": {
+                "price": 4.0
+              },
+              "Draw": {
+                "price": 3.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.1,
+                "point": 2.5,
+                "prob": 45.2
+              },
+              "Under": {
+                "price": 1.73,
+                "point": 2.5,
+                "prob": 54.8
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Como": 1.774,
+        "Genoa": 4.416,
+        "Draw": 3.639
+      },
+      "true_probs": {
+        "Como": 52.9,
+        "Genoa": 21.3,
+        "Draw": 25.8
+      },
+      "other_markets": {
+        "spreads": {
+          "Como": {
+            "price": 1.31,
+            "point": 0.0,
+            "prob": 70.3
+          },
+          "Genoa": {
+            "price": 3.1,
+            "point": 0.0,
+            "prob": 29.7
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.1,
+            "point": 2.5,
+            "prob": 45.2
+          },
+          "Under": {
+            "price": 1.73,
+            "point": 2.5,
+            "prob": 54.8
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Como": 1.774,
+        "Genoa": 4.416,
+        "Draw": 3.639
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377329+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Como": 1.774,
+          "Genoa": 4.416,
+          "Draw": 3.639
+        }
+      ],
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "8b2db66328633438dcd0b0cb30f8f3df": {
+      "id": "8b2db66328633438dcd0b0cb30f8f3df",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Torino",
+      "away_team": "Inter Milan",
+      "commence_time": "2026-04-26T16:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Inter Milan": {
+                "price": 1.36
+              },
+              "Torino": {
+                "price": 6.4
+              },
+              "Draw": {
+                "price": 4.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Inter Milan": {
+                "price": 1.42
+              },
+              "Torino": {
+                "price": 7.0
+              },
+              "Draw": {
+                "price": 4.9
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.6,
+                "point": 2.5,
+                "prob": 57.4
+              },
+              "Under": {
+                "price": 2.16,
+                "point": 2.5,
+                "prob": 42.6
+              }
+            }
+          }
+        },
+        {
+          "name": "888sport",
+          "markets": {
+            "h2h": {
+              "Inter Milan": {
+                "price": 1.4
+              },
+              "Torino": {
+                "price": 7.0
+              },
+              "Draw": {
+                "price": 4.6
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Inter Milan": 1.402,
+        "Torino": 7.171,
+        "Draw": 4.806
+      },
+      "true_probs": {
+        "Inter Milan": 67.2,
+        "Torino": 13.1,
+        "Draw": 19.6
+      },
+      "other_markets": {
+        "spreads": {
+          "Inter Milan": {
+            "price": 2.24,
+            "point": -1.5,
+            "prob": 44.0
+          },
+          "Torino": {
+            "price": 1.76,
+            "point": 1.5,
+            "prob": 56.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.6,
+            "point": 2.5,
+            "prob": 57.4
+          },
+          "Under": {
+            "price": 2.16,
+            "point": 2.5,
+            "prob": 42.6
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Inter Milan": 1.402,
+        "Torino": 7.171,
+        "Draw": 4.806
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377331+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Inter Milan": 1.402,
+          "Torino": 7.171,
+          "Draw": 4.806
+        }
+      ],
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "df605bb6aea644247b5ce9fe90713252": {
+      "id": "df605bb6aea644247b5ce9fe90713252",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "AC Milan",
+      "away_team": "Juventus",
+      "commence_time": "2026-04-26T18:45:00Z",
+      "bookmakers": [
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "AC Milan": {
+                "price": 2.6
+              },
+              "Juventus": {
+                "price": 2.5
+              },
+              "Draw": {
+                "price": 3.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "AC Milan": {
+                "price": 2.75
+              },
+              "Juventus": {
+                "price": 2.65
+              },
+              "Draw": {
+                "price": 3.25
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.85,
+                "point": 2.5,
+                "prob": 49.6
+              },
+              "Under": {
+                "price": 1.82,
+                "point": 2.5,
+                "prob": 50.4
+              }
+            }
+          }
+        },
+        {
+          "name": "888sport",
+          "markets": {
+            "h2h": {
+              "AC Milan": {
+                "price": 2.62
+              },
+              "Juventus": {
+                "price": 2.62
+              },
+              "Draw": {
+                "price": 3.0
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "AC Milan": 2.699,
+        "Juventus": 2.638,
+        "Draw": 3.167
+      },
+      "true_probs": {
+        "AC Milan": 34.8,
+        "Juventus": 35.6,
+        "Draw": 29.6
+      },
+      "other_markets": {
+        "spreads": {
+          "AC Milan": {
+            "price": 2.01,
+            "point": 0.0,
+            "prob": 49.0
+          },
+          "Juventus": {
+            "price": 1.93,
+            "point": 0.0,
+            "prob": 51.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.85,
+            "point": 2.5,
+            "prob": 49.6
+          },
+          "Under": {
+            "price": 1.82,
+            "point": 2.5,
+            "prob": 50.4
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "AC Milan": 2.699,
+        "Juventus": 2.638,
+        "Draw": 3.167
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377334+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "AC Milan": 2.699,
+          "Juventus": 2.638,
+          "Draw": 3.167
+        }
+      ],
+      "weather": {
+        "temp": 14.7,
+        "wind": 1.6,
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
+      }
+    },
+    "3f0e9a96dbc83fd4b0c62cd12357b6a8": {
+      "id": "3f0e9a96dbc83fd4b0c62cd12357b6a8",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Cagliari",
+      "away_team": "Atalanta BC",
+      "commence_time": "2026-04-27T16:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Atalanta BC": {
+                "price": 1.71
+              },
+              "Cagliari": {
+                "price": 4.9
+              },
+              "Draw": {
+                "price": 3.85
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.86,
+                "point": 2.5,
+                "prob": 49.3
+              },
+              "Under": {
+                "price": 1.81,
+                "point": 2.5,
+                "prob": 50.7
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Atalanta BC": {
+                "price": 1.66
+              },
+              "Cagliari": {
+                "price": 4.5
+              },
+              "Draw": {
+                "price": 3.8
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Atalanta BC": {
+                "price": 1.61
+              },
+              "Cagliari": {
+                "price": 4.5
+              },
+              "Draw": {
+                "price": 3.6
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Atalanta BC": 1.708,
+        "Cagliari": 4.727,
+        "Draw": 3.82
+      },
+      "true_probs": {
+        "Atalanta BC": 55.3,
+        "Cagliari": 20.0,
+        "Draw": 24.7
+      },
+      "other_markets": {
+        "spreads": {
+          "Atalanta BC": {
+            "price": 2.99,
+            "point": -1.5,
+            "prob": 30.9
+          },
+          "Cagliari": {
+            "price": 1.34,
+            "point": 1.5,
+            "prob": 69.1
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.86,
+            "point": 2.5,
+            "prob": 49.3
+          },
+          "Under": {
+            "price": 1.81,
+            "point": 2.5,
+            "prob": 50.7
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Atalanta BC": 1.708,
+        "Cagliari": 4.727,
+        "Draw": 3.82
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377338+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Atalanta BC": 1.708,
+          "Cagliari": 4.727,
+          "Draw": 3.82
+        }
+      ],
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "aa8294b91a1920474d420d34851aaceb": {
+      "id": "aa8294b91a1920474d420d34851aaceb",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Lazio",
+      "away_team": "Udinese",
+      "commence_time": "2026-04-27T18:45:00Z",
+      "bookmakers": [
+        {
+          "name": "Codere (IT)",
+          "markets": {
+            "h2h": {
+              "Lazio": {
+                "price": 1.99
+              },
+              "Udinese": {
+                "price": 4.0
+              },
+              "Draw": {
+                "price": 3.35
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.12,
+                "point": 2.5,
+                "prob": 43.3
+              },
+              "Under": {
+                "price": 1.62,
+                "point": 2.5,
+                "prob": 56.7
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Lazio": {
+                "price": 1.87
+              },
+              "Udinese": {
+                "price": 3.7
+              },
+              "Draw": {
+                "price": 3.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Winamax (DE)",
+          "markets": {
+            "h2h": {
+              "Lazio": {
+                "price": 1.92
+              },
+              "Udinese": {
+                "price": 3.75
+              },
+              "Draw": {
+                "price": 3.35
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Lazio": 1.968,
+        "Udinese": 3.968,
+        "Draw": 3.34
+      },
+      "true_probs": {
+        "Lazio": 48.0,
+        "Udinese": 23.8,
+        "Draw": 28.3
+      },
+      "other_markets": {
+        "spreads": {
+          "Lazio": {
+            "price": 1.42,
+            "point": 0.0,
+            "prob": 67.0
+          },
+          "Udinese": {
+            "price": 2.88,
+            "point": 0.0,
+            "prob": 33.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.12,
+            "point": 2.5,
+            "prob": 43.3
+          },
+          "Under": {
+            "price": 1.62,
+            "point": 2.5,
+            "prob": 56.7
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Lazio": 1.968,
+        "Udinese": 3.968,
+        "Draw": 3.34
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377340+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Lazio": 1.968,
+          "Udinese": 3.968,
+          "Draw": 3.34
+        }
+      ],
+      "ai_analysis": "此場符合 AI 分析條件但因每次額度限制暫未分析，請參考勝率數據自行判斷。",
+      "analysis_source": "rule_based"
+    },
+    "d1280e2e5067d1465f49862c52c1bdbc": {
+      "id": "d1280e2e5067d1465f49862c52c1bdbc",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Pisa",
+      "away_team": "Lecce",
+      "commence_time": "2026-05-01T18:45:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Lecce": {
+                "price": 2.95
+              },
+              "Pisa": {
+                "price": 2.62
+              },
+              "Draw": {
+                "price": 3.04
+              }
+            },
+            "spreads": {
+              "Lecce": {
+                "price": 2.05,
+                "point": -0.0,
+                "prob": 47.0
+              },
+              "Pisa": {
+                "price": 1.82,
+                "point": 0.0,
+                "prob": 53.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.78,
+                "point": 2.0,
+                "prob": 53.9
+              },
+              "Under": {
+                "price": 2.08,
+                "point": 2.0,
+                "prob": 46.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Marathon Bet",
+          "markets": {
+            "h2h": {
+              "Lecce": {
+                "price": 2.98
+              },
+              "Pisa": {
+                "price": 2.65
+              },
+              "Draw": {
+                "price": 3.08
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Lecce": {
+                "price": 2.8
+              },
+              "Pisa": {
+                "price": 2.4
+              },
+              "Draw": {
+                "price": 2.85
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Lecce": 2.905,
+        "Pisa": 2.541,
+        "Draw": 2.991
+      },
+      "true_probs": {
+        "Lecce": 32.1,
+        "Pisa": 36.7,
+        "Draw": 31.2
+      },
+      "other_markets": {
+        "spreads": {
+          "Lecce": {
+            "price": 2.05,
+            "point": -0.0,
+            "prob": 47.0
+          },
+          "Pisa": {
+            "price": 1.82,
+            "point": 0.0,
+            "prob": 53.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.78,
+            "point": 2.0,
+            "prob": 53.9
+          },
+          "Under": {
+            "price": 2.08,
+            "point": 2.0,
+            "prob": 46.1
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Lecce": 2.905,
+        "Pisa": 2.541,
+        "Draw": 2.991
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377343+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Lecce": 2.905,
+          "Pisa": 2.541,
+          "Draw": 2.991
+        }
+      ]
+    },
+    "5eff5e865a8a2ca920a09854d927b852": {
+      "id": "5eff5e865a8a2ca920a09854d927b852",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Udinese",
+      "away_team": "Torino",
+      "commence_time": "2026-05-02T13:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Torino": {
+                "price": 3.55
+              },
+              "Udinese": {
+                "price": 2.17
+              },
+              "Draw": {
+                "price": 3.26
+              }
+            },
+            "spreads": {
+              "Torino": {
+                "price": 2.0,
+                "point": 0.25,
+                "prob": 48.2
+              },
+              "Udinese": {
+                "price": 1.86,
+                "point": -0.25,
+                "prob": 51.8
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.92,
+                "point": 2.25,
+                "prob": 50.0
+              },
+              "Under": {
+                "price": 1.92,
+                "point": 2.25,
+                "prob": 50.0
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Torino": {
+                "price": 3.2
+              },
+              "Udinese": {
+                "price": 2.0
+              },
+              "Draw": {
+                "price": 3.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Marathon Bet",
+          "markets": {
+            "h2h": {
+              "Torino": {
+                "price": 3.58
+              },
+              "Udinese": {
+                "price": 2.17
+              },
+              "Draw": {
+                "price": 3.35
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Torino": 3.425,
+        "Udinese": 2.11,
+        "Draw": 3.279
+      },
+      "true_probs": {
+        "Torino": 27.3,
+        "Udinese": 44.3,
+        "Draw": 28.5
+      },
+      "other_markets": {
+        "spreads": {
+          "Torino": {
+            "price": 2.0,
+            "point": 0.25,
+            "prob": 48.2
+          },
+          "Udinese": {
+            "price": 1.86,
+            "point": -0.25,
+            "prob": 51.8
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.92,
+            "point": 2.25,
+            "prob": 50.0
+          },
+          "Under": {
+            "price": 1.92,
+            "point": 2.25,
+            "prob": 50.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Torino": 3.425,
+        "Udinese": 2.11,
+        "Draw": 3.279
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377345+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Torino": 3.425,
+          "Udinese": 2.11,
+          "Draw": 3.279
+        }
+      ]
+    },
+    "16fa5da1e64cdb028c84396beecbb633": {
+      "id": "16fa5da1e64cdb028c84396beecbb633",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Como",
+      "away_team": "Napoli",
+      "commence_time": "2026-05-02T16:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Como": {
+                "price": 2.26
+              },
+              "Napoli": {
+                "price": 3.03
+              },
+              "Draw": {
+                "price": 3.59
+              }
+            },
+            "spreads": {
+              "Como": {
+                "price": 1.97,
+                "point": -0.25,
+                "prob": 48.8
+              },
+              "Napoli": {
+                "price": 1.88,
+                "point": 0.25,
+                "prob": 51.2
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.88,
+                "point": 2.25,
+                "prob": 51.0
+              },
+              "Under": {
+                "price": 1.96,
+                "point": 2.25,
+                "prob": 49.0
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "Como": {
+                "price": 2.28
+              },
+              "Napoli": {
+                "price": 3.05
+              },
+              "Draw": {
+                "price": 3.55
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.08,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.72,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Como": {
+                "price": 2.28
+              },
+              "Napoli": {
+                "price": 3.05
+              },
+              "Draw": {
+                "price": 3.55
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.08,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.72,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Como": 2.244,
+        "Napoli": 3.01,
+        "Draw": 3.429
+      },
+      "true_probs": {
+        "Como": 41.7,
+        "Napoli": 31.1,
+        "Draw": 27.3
+      },
+      "other_markets": {
+        "spreads": {
+          "Como": {
+            "price": 1.97,
+            "point": -0.25,
+            "prob": 48.8
+          },
+          "Napoli": {
+            "price": 1.88,
+            "point": 0.25,
+            "prob": 51.2
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.88,
+            "point": 2.25,
+            "prob": 51.0
+          },
+          "Under": {
+            "price": 1.96,
+            "point": 2.25,
+            "prob": 49.0
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Como": 2.244,
+        "Napoli": 3.01,
+        "Draw": 3.429
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377351+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Como": 2.244,
+          "Napoli": 3.01,
+          "Draw": 3.429
+        }
+      ]
+    },
+    "1645356fdf0baa021e2808442260afb3": {
+      "id": "1645356fdf0baa021e2808442260afb3",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Atalanta BC",
+      "away_team": "Genoa",
+      "commence_time": "2026-05-02T18:45:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Atalanta BC": {
+                "price": 1.59
+              },
+              "Genoa": {
+                "price": 5.46
+              },
+              "Draw": {
+                "price": 4.11
+              }
+            },
+            "spreads": {
+              "Atalanta BC": {
+                "price": 2.04,
+                "point": -1.0,
+                "prob": 47.3
+              },
+              "Genoa": {
+                "price": 1.83,
+                "point": 1.0,
+                "prob": 52.7
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.82,
+                "point": 2.5,
+                "prob": 52.7
+              },
+              "Under": {
+                "price": 2.03,
+                "point": 2.5,
+                "prob": 47.3
+              }
+            }
+          }
+        },
+        {
+          "name": "Marathon Bet",
+          "markets": {
+            "h2h": {
+              "Atalanta BC": {
+                "price": 1.61
+              },
+              "Genoa": {
+                "price": 5.55
+              },
+              "Draw": {
+                "price": 4.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Atalanta BC": {
+                "price": 1.62
+              },
+              "Genoa": {
+                "price": 5.4
+              },
+              "Draw": {
+                "price": 4.15
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.78,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.98,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Atalanta BC": 1.577,
+        "Genoa": 5.293,
+        "Draw": 4.045
+      },
+      "true_probs": {
+        "Atalanta BC": 59.2,
+        "Genoa": 17.7,
+        "Draw": 23.1
+      },
+      "other_markets": {
+        "spreads": {
+          "Atalanta BC": {
+            "price": 2.04,
+            "point": -1.0,
+            "prob": 47.3
+          },
+          "Genoa": {
+            "price": 1.83,
+            "point": 1.0,
+            "prob": 52.7
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.82,
+            "point": 2.5,
+            "prob": 52.7
+          },
+          "Under": {
+            "price": 2.03,
+            "point": 2.5,
+            "prob": 47.3
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Atalanta BC": 1.577,
+        "Genoa": 5.293,
+        "Draw": 4.045
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377354+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Atalanta BC": 1.577,
+          "Genoa": 5.293,
+          "Draw": 4.045
+        }
+      ]
+    },
+    "2457832a9a6bc5d539672aa3f6537d3b": {
+      "id": "2457832a9a6bc5d539672aa3f6537d3b",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Sassuolo",
+      "away_team": "AC Milan",
+      "commence_time": "2026-05-03T13:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "AC Milan": {
+                "price": 1.63
+              },
+              "Sassuolo": {
+                "price": 4.71
+              },
+              "Draw": {
+                "price": 4.32
+              }
+            },
+            "spreads": {
+              "AC Milan": {
+                "price": 1.83,
+                "point": -0.75,
+                "prob": 52.6
+              },
+              "Sassuolo": {
+                "price": 2.03,
+                "point": 0.75,
+                "prob": 47.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.85,
+                "point": 2.75,
+                "prob": 51.8
+              },
+              "Under": {
+                "price": 1.99,
+                "point": 2.75,
+                "prob": 48.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "AC Milan": {
+                "price": 1.65
+              },
+              "Sassuolo": {
+                "price": 4.95
+              },
+              "Draw": {
+                "price": 4.15
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.65,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.22,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "AC Milan": {
+                "price": 1.65
+              },
+              "Sassuolo": {
+                "price": 4.95
+              },
+              "Draw": {
+                "price": 4.15
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.65,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.22,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "AC Milan": 1.639,
+        "Sassuolo": 4.622,
+        "Draw": 4.143
+      },
+      "true_probs": {
+        "AC Milan": 57.1,
+        "Sassuolo": 20.3,
+        "Draw": 22.6
+      },
+      "other_markets": {
+        "spreads": {
+          "AC Milan": {
+            "price": 1.83,
+            "point": -0.75,
+            "prob": 52.6
+          },
+          "Sassuolo": {
+            "price": 2.03,
+            "point": 0.75,
+            "prob": 47.4
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.85,
+            "point": 2.75,
+            "prob": 51.8
+          },
+          "Under": {
+            "price": 1.99,
+            "point": 2.75,
+            "prob": 48.2
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "AC Milan": 1.639,
+        "Sassuolo": 4.622,
+        "Draw": 4.143
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377356+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "AC Milan": 1.639,
+          "Sassuolo": 4.622,
+          "Draw": 4.143
+        }
+      ]
+    },
+    "bb624cb4bdfb721401d5a3d3017c921e": {
+      "id": "bb624cb4bdfb721401d5a3d3017c921e",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Bologna",
+      "away_team": "Cagliari",
+      "commence_time": "2026-05-03T13:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Bologna": {
+                "price": 1.58
+              },
+              "Cagliari": {
+                "price": 5.54
+              },
+              "Draw": {
+                "price": 4.1
+              }
+            },
+            "spreads": {
+              "Bologna": {
+                "price": 1.78,
+                "point": -0.75,
+                "prob": 54.2
+              },
+              "Cagliari": {
+                "price": 2.11,
+                "point": 0.75,
+                "prob": 45.8
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.99,
+                "point": 2.5,
+                "prob": 48.2
+              },
+              "Under": {
+                "price": 1.85,
+                "point": 2.5,
+                "prob": 51.8
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "Bologna": {
+                "price": 1.62
+              },
+              "Cagliari": {
+                "price": 5.4
+              },
+              "Draw": {
+                "price": 3.95
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.95,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.82,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Bologna": {
+                "price": 1.62
+              },
+              "Cagliari": {
+                "price": 5.4
+              },
+              "Draw": {
+                "price": 3.95
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.95,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.82,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Bologna": 1.584,
+        "Cagliari": 5.295,
+        "Draw": 3.937
+      },
+      "true_probs": {
+        "Bologna": 58.8,
+        "Cagliari": 17.6,
+        "Draw": 23.6
+      },
+      "other_markets": {
+        "spreads": {
+          "Bologna": {
+            "price": 1.78,
+            "point": -0.75,
+            "prob": 54.2
+          },
+          "Cagliari": {
+            "price": 2.11,
+            "point": 0.75,
+            "prob": 45.8
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.99,
+            "point": 2.5,
+            "prob": 48.2
+          },
+          "Under": {
+            "price": 1.85,
+            "point": 2.5,
+            "prob": 51.8
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Bologna": 1.584,
+        "Cagliari": 5.295,
+        "Draw": 3.937
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377358+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Bologna": 1.584,
+          "Cagliari": 5.295,
+          "Draw": 3.937
+        }
+      ]
+    },
+    "0e2c25e2571199e6ecea64d94bcb8980": {
+      "id": "0e2c25e2571199e6ecea64d94bcb8980",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Juventus",
+      "away_team": "Hellas Verona",
+      "commence_time": "2026-05-03T13:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Hellas Verona": {
+                "price": 10.68
+              },
+              "Juventus": {
+                "price": 1.27
+              },
+              "Draw": {
+                "price": 5.77
+              }
+            },
+            "spreads": {
+              "Hellas Verona": {
+                "price": 1.9,
+                "point": 1.5,
+                "prob": 50.5
+              },
+              "Juventus": {
+                "price": 1.94,
+                "point": -1.5,
+                "prob": 49.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.91,
+                "point": 2.75,
+                "prob": 50.3
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 2.75,
+                "prob": 49.7
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "Hellas Verona": {
+                "price": 9.8
+              },
+              "Juventus": {
+                "price": 1.31
+              },
+              "Draw": {
+                "price": 5.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.7,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.12,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Hellas Verona": {
+                "price": 9.8
+              },
+              "Juventus": {
+                "price": 1.31
+              },
+              "Draw": {
+                "price": 5.4
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.7,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.12,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Hellas Verona": 9.225,
+        "Juventus": 1.288,
+        "Draw": 5.316
+      },
+      "true_probs": {
+        "Hellas Verona": 10.1,
+        "Juventus": 72.4,
+        "Draw": 17.5
+      },
+      "other_markets": {
+        "spreads": {
+          "Hellas Verona": {
+            "price": 1.9,
+            "point": 1.5,
+            "prob": 50.5
+          },
+          "Juventus": {
+            "price": 1.94,
+            "point": -1.5,
+            "prob": 49.5
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.91,
+            "point": 2.75,
+            "prob": 50.3
+          },
+          "Under": {
+            "price": 1.93,
+            "point": 2.75,
+            "prob": 49.7
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Hellas Verona": 9.225,
+        "Juventus": 1.288,
+        "Draw": 5.316
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377366+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Hellas Verona": 9.225,
+          "Juventus": 1.288,
+          "Draw": 5.316
+        }
+      ],
+      "weather": {
+        "temp": 13.1,
+        "wind": 3.7,
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
+      },
+      "ai_analysis": "【💡 推薦：Juventus 讓 1.5 贏 】\n\n考量 Juventus 72.4% 的極高真實勝率，以及 Hellas Verona 僅 10.1% 的較低勝率，此盤口應可看好主隊。雖然缺乏歷史交手及近期戰績，但結合穩定盤口與無不利天氣因素，Juventus 在主場應能取得較大勝分。AI 自我學習參考中，70-80% 勝率區間命中率為 50%，謹慎看待，但 Juventus 勝率在此區間內，仍有一定參考價值。",
+      "analysis_source": "gemini"
+    },
+    "97da76ec8cc9cdf87a1876d7557d43f2": {
+      "id": "97da76ec8cc9cdf87a1876d7557d43f2",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Inter Milan",
+      "away_team": "Parma",
+      "commence_time": "2026-05-03T13:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Inter Milan": {
+                "price": 1.22
+              },
+              "Parma": {
+                "price": 11.11
+              },
+              "Draw": {
+                "price": 6.46
+              }
+            },
+            "spreads": {
+              "Inter Milan": {
+                "price": 1.95,
+                "point": -1.75,
+                "prob": 49.1
+              },
+              "Parma": {
+                "price": 1.88,
+                "point": 1.75,
+                "prob": 50.9
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.01,
+                "point": 3.25,
+                "prob": 47.5
+              },
+              "Under": {
+                "price": 1.82,
+                "point": 3.25,
+                "prob": 52.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Betsson",
+          "markets": {
+            "h2h": {
+              "Inter Milan": {
+                "price": 1.27
+              },
+              "Parma": {
+                "price": 10.5
+              },
+              "Draw": {
+                "price": 5.9
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.46,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.68,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Nordic Bet",
+          "markets": {
+            "h2h": {
+              "Inter Milan": {
+                "price": 1.27
+              },
+              "Parma": {
+                "price": 10.5
+              },
+              "Draw": {
+                "price": 5.9
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.46,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 2.68,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Inter Milan": 1.246,
+        "Parma": 10.012,
+        "Draw": 6.034
+      },
+      "true_probs": {
+        "Inter Milan": 75.1,
+        "Parma": 9.4,
+        "Draw": 15.5
+      },
+      "other_markets": {
+        "spreads": {
+          "Inter Milan": {
+            "price": 1.95,
+            "point": -1.75,
+            "prob": 49.1
+          },
+          "Parma": {
+            "price": 1.88,
+            "point": 1.75,
+            "prob": 50.9
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.01,
+            "point": 3.25,
+            "prob": 47.5
+          },
+          "Under": {
+            "price": 1.82,
+            "point": 3.25,
+            "prob": 52.5
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Inter Milan": 1.246,
+        "Parma": 10.012,
+        "Draw": 6.034
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377368+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Inter Milan": 1.246,
+          "Parma": 10.012,
+          "Draw": 6.034
+        }
+      ],
+      "weather": {
+        "temp": 14.7,
+        "wind": 1.6,
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
+      },
+      "ai_analysis": "【💡 推薦：國際米蘭 -1.75】\n\n國際米蘭擁有壓倒性的主場勝率與實力優勢，面對實力懸殊的帕爾馬，主場大勝可期。儘管讓分盤 -1.75 門檻較高，但考慮到主隊的進攻火力，仍有機會輕鬆過關。然而，本場比賽勝率區間（70-80%）的AI歷史命中率僅為50%，建議您降低投注信心，謹慎評估。盤口和賠率均無顯著變動，缺乏聰明錢訊號，近期戰績未知也增加不確定性。",
+      "analysis_source": "gemini"
+    },
+    "f89c91a6be76eca19fb7a47f67c3e5b6": {
+      "id": "f89c91a6be76eca19fb7a47f67c3e5b6",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "Cremonese",
+      "away_team": "Lazio",
+      "commence_time": "2026-05-04T13:30:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Cremonese": {
+                "price": 3.48
+              },
+              "Lazio": {
+                "price": 2.12
+              },
+              "Draw": {
+                "price": 3.42
+              }
+            },
+            "spreads": {
+              "Cremonese": {
+                "price": 2.02,
+                "point": 0.25,
+                "prob": 47.7
+              },
+              "Lazio": {
+                "price": 1.84,
+                "point": -0.25,
+                "prob": 52.3
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.05,
+                "point": 2.5,
+                "prob": 46.8
+              },
+              "Under": {
+                "price": 1.8,
+                "point": 2.5,
+                "prob": 53.2
+              }
+            }
+          }
+        },
+        {
+          "name": "Marathon Bet",
+          "markets": {
+            "h2h": {
+              "Cremonese": {
+                "price": 3.55
+              },
+              "Lazio": {
+                "price": 2.12
+              },
+              "Draw": {
+                "price": 3.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (FR)",
+          "markets": {
+            "h2h": {
+              "Cremonese": {
+                "price": 3.2
+              },
+              "Lazio": {
+                "price": 1.98
+              },
+              "Draw": {
+                "price": 3.2
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Cremonese": 3.444,
+        "Lazio": 2.059,
+        "Draw": 3.394
+      },
+      "true_probs": {
+        "Cremonese": 27.1,
+        "Lazio": 45.4,
+        "Draw": 27.5
+      },
+      "other_markets": {
+        "spreads": {
+          "Cremonese": {
+            "price": 2.02,
+            "point": 0.25,
+            "prob": 47.7
+          },
+          "Lazio": {
+            "price": 1.84,
+            "point": -0.25,
+            "prob": 52.3
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.05,
+            "point": 2.5,
+            "prob": 46.8
+          },
+          "Under": {
+            "price": 1.8,
+            "point": 2.5,
+            "prob": 53.2
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Cremonese": 3.444,
+        "Lazio": 2.059,
+        "Draw": 3.394
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377372+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "Cremonese": 3.444,
+          "Lazio": 2.059,
+          "Draw": 3.394
+        }
+      ]
+    },
+    "607bd701c9fdd9952ad391bbf5543997": {
+      "id": "607bd701c9fdd9952ad391bbf5543997",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "義甲 Serie A",
+      "home_team": "AS Roma",
+      "away_team": "Fiorentina",
+      "commence_time": "2026-05-04T18:45:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "AS Roma": {
+                "price": 1.74
+              },
+              "Fiorentina": {
+                "price": 4.56
+              },
+              "Draw": {
+                "price": 3.86
+              }
+            },
+            "spreads": {
+              "AS Roma": {
+                "price": 1.97,
+                "point": -0.75,
+                "prob": 48.8
+              },
+              "Fiorentina": {
+                "price": 1.88,
+                "point": 0.75,
+                "prob": 51.2
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.9,
+                "point": 2.5,
+                "prob": 50.4
+              },
+              "Under": {
+                "price": 1.93,
+                "point": 2.5,
+                "prob": 49.6
+              }
+            }
+          }
+        },
+        {
+          "name": "Marathon Bet",
+          "markets": {
+            "h2h": {
+              "AS Roma": {
+                "price": 1.76
+              },
+              "Fiorentina": {
+                "price": 4.7
+              },
+              "Draw": {
+                "price": 3.9
+              }
+            }
+          }
+        },
+        {
+          "name": "1xBet",
+          "markets": {
+            "h2h": {
+              "AS Roma": {
+                "price": 1.8
+              },
+              "Fiorentina": {
+                "price": 4.8
+              },
+              "Draw": {
+                "price": 3.98
+              }
+            },
+            "spreads": {
+              "AS Roma": {
+                "price": 2.99,
+                "point": -1.5
+              },
+              "Fiorentina": {
+                "price": 1.34,
+                "point": 1.5
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 1.96,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.99,
+                "point": 2.5
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "AS Roma": 1.724,
+        "Fiorentina": 4.462,
+        "Draw": 3.742
+      },
+      "true_probs": {
+        "AS Roma": 54.1,
+        "Fiorentina": 20.9,
+        "Draw": 24.9
+      },
+      "other_markets": {
+        "spreads": {
+          "AS Roma": {
+            "price": 1.97,
+            "point": -0.75,
+            "prob": 48.8
+          },
+          "Fiorentina": {
+            "price": 1.88,
+            "point": 0.75,
+            "prob": 51.2
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 1.9,
+            "point": 2.5,
+            "prob": 50.4
+          },
+          "Under": {
+            "price": 1.93,
+            "point": 2.5,
+            "prob": 49.6
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "AS Roma": 1.724,
+        "Fiorentina": 4.462,
+        "Draw": 3.742
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-04-20T11:42:36.377375+08:00",
+      "odds_timeline": [
+        {
+          "time": "04/20 11:42",
+          "AS Roma": 1.724,
+          "Fiorentina": 4.462,
+          "Draw": 3.742
+        }
+      ],
+      "weather": {
+        "temp": 13.6,
+        "wind": 3.1,
+        "rain": 0.0,
+        "condition": "☀️ 晴朗",
+        "impact": ""
+      }
     }
   },
   "leagues": {
     "NBA": [
-      "ef6021edff80a85fe2dae5cf3530d9d4",
-      "e777e2f049a5c85aed96a220a2cfe924",
-      "a52365fe7f7123df1c4220d9591a6da2",
-      "00d1efd43d0790297fb68684a9171191",
-      "a1b444bd00a27cbae3cf7ca3bf75a3f0",
-      "273905d6a4ae9217ec0734b66a0eb28b",
-      "d1a7a6e7b024f888e922a62b14fcf466",
       "04e3ad1ccbad6419ac711ff120fd5cbe",
-      "d3d28b764e5099920880de59a45e82cf"
+      "680084e4612c197a1cf4170d82ba6f10",
+      "273905d6a4ae9217ec0734b66a0eb28b",
+      "ef6021edff80a85fe2dae5cf3530d9d4",
+      "a52365fe7f7123df1c4220d9591a6da2",
+      "c9bc6bcae048283407d1cb53995eee8e",
+      "0ce48ecb61f40bc3bd784adfe7f8e811",
+      "a1b444bd00a27cbae3cf7ca3bf75a3f0",
+      "e777e2f049a5c85aed96a220a2cfe924",
+      "d1a7a6e7b024f888e922a62b14fcf466",
+      "d3d28b764e5099920880de59a45e82cf",
+      "00d1efd43d0790297fb68684a9171191"
     ],
-    "西甲 La Liga": [
-      "548f901ac0c811c39953f7e3769040cb",
-      "a6a0d55b933b3bb01c4ba789f4444783",
-      "445c97066158652824e10b05bc53c6ae",
-      "a5462613d6a6b17b8f0d92b23f97e070",
-      "7759c10d8fefa09122099f380241a8be",
-      "ce727a41a47d5e86ddee97c7cd14928d",
-      "36ffdc7f877a0da88068dfe5343c629b",
-      "a3f979b998f70bcf99bcee41c65f90a5",
-      "889999898c80c9a8b977eaad80d7f918",
-      "a6b698d15158568e491da1405e17a1d3",
-      "dcc73a8a22fc0f052bd085be3f7e1bbf",
-      "5f9d3da4f9116d7f74b873d6d8c5b5b5",
-      "7af046b7a51c309f8f2f6c820e7bcb11",
-      "c208f9c1d251de9006fd23a7e9cfa948",
-      "7d04b13a6988f1d0c565ed53ce9263b7",
-      "b68fd46a853603c38e3f4750b40181a0",
-      "af844c8833e6de4db916dd52c7b28095",
-      "4c05627297ffdfd1bb17dfcc1dd3b6d6",
-      "fee736ef555102544f70b322b548a2cf",
-      "e8aec0c2da8f35ce251f9a1e905624b2"
+    "義甲 Serie A": [
+      "9439cff81cd6fd6de1e7046a3b49d8a8",
+      "3f0e9a96dbc83fd4b0c62cd12357b6a8",
+      "16fa5da1e64cdb028c84396beecbb633",
+      "0e2c25e2571199e6ecea64d94bcb8980",
+      "20842ac2a58d66de639f359e26217e33",
+      "1645356fdf0baa021e2808442260afb3",
+      "5744a34d60a47f720af59a055dab12c5",
+      "2457832a9a6bc5d539672aa3f6537d3b",
+      "8b2db66328633438dcd0b0cb30f8f3df",
+      "97da76ec8cc9cdf87a1876d7557d43f2",
+      "b0d1e670b682b0ed37d6b0bc271efa6a",
+      "8a9614a1c1dd66d813d98f08f3d7efd8",
+      "161f9baeab748dcfa4d2df893f14b25b",
+      "aa8294b91a1920474d420d34851aaceb",
+      "607bd701c9fdd9952ad391bbf5543997",
+      "bb624cb4bdfb721401d5a3d3017c921e",
+      "f89c91a6be76eca19fb7a47f67c3e5b6",
+      "df605bb6aea644247b5ce9fe90713252",
+      "d1280e2e5067d1465f49862c52c1bdbc",
+      "29cc5ddc31a11f7556978b323ed103fc",
+      "5eff5e865a8a2ca920a09854d927b852"
     ]
   },
   "news": {
     "nba": [
       {
-        "title": "LeBron 扮演「三威脅」角色，期盼在首戰爆冷",
+        "title": "現場直播；Spurs (馬刺) 主場迎戰 Trail Blazers (拓荒者) 總冠軍賽第一戰",
+        "link": "https://www.espn.com/nba/game/_/gameId/401869194/trail-blazers-spurs",
+        "published": "Sun, 19 Apr 2026 23:28:10 EST",
+        "summary": "null",
+        "title_zh": "現場直播；Spurs (馬刺) 主場迎戰 Trail Blazers (拓荒者) 總冠軍賽第一戰",
+        "title_en": "Follow live; Spurs host Trail Blazers in Game 1"
+      },
+      {
+        "title": "Magic (魔術) 爆冷擊敗頭號種子 Pistons (活塞)，贏下第一戰",
+        "link": "https://www.espn.com/nba/story/_/id/48536482/magic-stun-top-seeded-pistons-upset-game-1",
+        "published": "Sun, 19 Apr 2026 21:31:53 EST",
+        "summary": "The Magic extended the NBA's longest home playoff losing streak after upsetting the No. 1 seed Detroit Pistons in Game 1 of their first-round series.",
+        "title_zh": "Magic (魔術) 爆冷擊敗頭號種子 Pistons (活塞)，贏下第一戰",
+        "title_en": "Magic stun top-seeded Pistons with Game 1 upset"
+      },
+      {
+        "title": "Wembanyama (文班亞馬) 加入 SGA (吉爾傑斯-亞歷山大)、Jokic (約基奇) 成 MVP 決賽名單",
+        "link": "https://www.espn.com/nba/story/_/id/48535860/wembanyama-gilgeous-alexander-jokic-named-mvp-finalists",
+        "published": "Sun, 19 Apr 2026 21:31:54 EST",
+        "summary": "Shai Gilgeous-Alexander, Nikola Jokic and Victor Wembanyama were named finalists for this season's Most Valuable Player award.",
+        "title_zh": "Wembanyama (文班亞馬) 加入 SGA (吉爾傑斯-亞歷山大)、Jokic (約基奇) 成 MVP 決賽名單",
+        "title_en": "Wembanyama joins SGA, Jokic as MVP finalist"
+      },
+      {
+        "title": "Thunder (雷霆) 贏下第一戰，預期 Suns (太陽) 將會「變得更好」",
+        "link": "https://www.espn.com/nba/story/_/id/48536050/oklahoma-city-thunder-dominant-opener-rout-phoenix-suns",
+        "published": "Sun, 19 Apr 2026 21:31:54 EST",
+        "summary": "The Oklahoma City Thunder, the NBA's defending champions and the No. 1 seed in the Western Conference, opened their latest postseason run Sunday afternoon with a dominant 119-84 performance at the Pay",
+        "title_zh": "Thunder (雷霆) 贏下第一戰，預期 Suns (太陽) 將會「變得更好」",
+        "title_en": "Thunder take Game 1, expect Suns 'to get better'"
+      },
+      {
+        "title": "Sixers (七六人) 面臨熟悉的結局，C's (塞爾提克) 與 Tatum (塔圖姆) 佔據主導",
+        "link": "https://www.espn.com/nba/story/_/id/48534372/76ers-face-familiar-playoff-fate-celtics-dominate-game-1",
+        "published": "Sun, 19 Apr 2026 21:31:54 EST",
+        "summary": "The Celtics are off to a good start in their hopes to hand Philadelphia its seventh straight series loss between the rivals.",
+        "title_zh": "Sixers (七六人) 面臨熟悉的結局，C's (塞爾提克) 與 Tatum (塔圖姆) 佔據主導",
+        "title_en": "Sixers face familiar fate as C's, Tatum dominate"
+      },
+      {
+        "title": "LeBron (詹姆斯) 展現「三威脅」贏下第一戰的爆冷勝利",
         "link": "https://www.espn.com/nba/story/_/id/48528333/luke-kennard-lebron-james-team-upset-rockets-opener",
-        "published": "Sun, 19 Apr 2026 10:26:32 EST",
+        "published": "Sun, 19 Apr 2026 21:31:54 EST",
         "summary": "With Luka Doncic and Austin Reaves sidelined, LeBron James ignited the Lakers' offense with \"a little bit of everything,\" posting 19 points, 13 assists, 8 rebounds and 2 steals in a Game 1 upset of th",
-        "title_zh": "LeBron 扮演「三威脅」角色，期盼在首戰爆冷",
+        "title_zh": "LeBron (詹姆斯) 展現「三威脅」贏下第一戰的爆冷勝利",
         "title_en": "LeBron plays 'triple threat' to spring Game 1 upset"
       },
       {
-        "title": "Murray 的罰球主宰惹惱 Wolves，助 Nuggets 贏球",
-        "link": "https://www.espn.com/nba/story/_/id/48527044/murray-16-16-night-line-lifts-nuggets-game-1-win",
-        "published": "Sun, 19 Apr 2026 10:26:32 EST",
-        "summary": "Jamal Murray had a tremendous night at the free throw line, making all 16 of his attempts to carry the Nuggets past the Timberwolves in Game 1, during which Nikola Jokic and Aaron Gordon had a quiet f",
-        "title_zh": "Murray 的罰球主宰惹惱 Wolves，助 Nuggets 贏球",
-        "title_en": "Murray's FT dominance irks Wolves, lifts Nuggets"
-      },
-      {
-        "title": "Barkley：Jordan 的裂痕正在癒合，計劃打高爾夫",
+        "title": "Barkley (巴克利)：Jordan (喬丹) 的裂痕正在緩和，已計劃進行高爾夫賽",
         "link": "https://www.espn.com/nba/story/_/id/48531302/charles-barkley-talking-michael-jordan-again-rift",
-        "published": "Sun, 19 Apr 2026 10:26:32 EST",
+        "published": "Sun, 19 Apr 2026 21:31:54 EST",
         "summary": "Charles Barkley says he and Michael Jordan are talking again after nearly 15 years and that the two plan to play golf together in the offseason.",
-        "title_zh": "Barkley：Jordan 的裂痕正在癒合，計劃打高爾夫",
+        "title_zh": "Barkley (巴克利)：Jordan (喬丹) 的裂痕正在緩和，已計劃進行高爾夫賽",
         "title_en": "Barkley: Jordan rift easing, golf game planned"
       },
       {
-        "title": "Brunson 振奮士氣，Knicks 贏得「艱辛勝利」",
-        "link": "https://www.espn.com/nba/story/_/id/48528923/jalen-brunson-nets-28-points-knicks-outlast-hawks-game-1",
-        "published": "Sun, 19 Apr 2026 10:26:32 EST",
-        "summary": "Jalen Brunson scored 22 of his game-high 28 points in the first half as the Knicks posted a 113-102 victory over the Hawks in Game 1 of their Eastern Conference first-round series.",
-        "title_zh": "Brunson 振奮士氣，Knicks 贏得「艱辛勝利」",
-        "title_en": "Buoyed by Brunson, Knicks seal 'hard-fought win'"
+        "title": "📸 NBA 季後賽比賽中的名人現身",
+        "link": "https://www.espn.com/nba/story/_/id/48514336/nba-playoffs-2026-celebrity-sightings",
+        "published": "Sun, 19 Apr 2026 21:31:54 EST",
+        "summary": "Celebrities have been out in style courtside at the NBA playoffs.",
+        "title_zh": "📸 NBA 季後賽比賽中的名人現身",
+        "title_en": "📸 Celebrity sightings at NBA playoffs games"
       },
       {
-        "title": "Spurs 受到 Popovich 演說的激勵與啟發",
-        "link": "https://www.espn.com/nba/story/_/id/48522561/gregg-popovich-addresses-spurs-prior-playoff-series-vs-portland",
-        "published": "Sun, 19 Apr 2026 10:26:32 EST",
-        "summary": "Hall of Famer and former coach Gregg Popovich, who continues to rehab from a stroke, addressed the Spurs prior to their playoff series against the Trail Blazers.",
-        "title_zh": "Spurs 受到 Popovich 演說的激勵與啟發",
-        "title_en": "Spurs motivated, inspired by Popovich address"
-      },
-      {
-        "title": "Kerr 談未來：這些職位都有「保存期限」",
-        "link": "https://www.espn.com/nba/story/_/id/48519533/warriors-kerr-mull-future-knows-jobs-expiration-dates",
-        "published": "Sun, 19 Apr 2026 10:26:32 EST",
-        "summary": "Steve Kerr acknowledged his future with the Warriors was uncertain following a season-ending loss to the Suns, saying, \"When the run ends, sometimes it's time for new blood and new ideas.\"",
-        "title_zh": "Kerr 談未來：這些職位都有「保存期限」",
-        "title_en": "Kerr on future: These jobs have 'expiration date'"
-      },
-      {
-        "title": "🏆 NBA 季後賽：預測整個賽程表",
-        "link": "https://www.espn.com/nba/story/_/id/48476034/2026-nba-playoff-predicting-series-including-finals",
-        "published": "Sun, 19 Apr 2026 10:26:31 EST",
-        "summary": "ESPN's Zach Kram decides each NBA series in the playoffs through the Finals. Who will square off in June?",
-        "title_zh": "🏆 NBA 季後賽：預測整個賽程表",
-        "title_en": "🏆 NBA playoffs: Predicting the entire bracket"
-      },
-      {
-        "title": "東區季後賽回顧：Celtics 以 32 分之差痛宰 Sixers",
-        "link": "https://www.espn.com/nba/story/_/id/48506456/2026-nba-playoffs-eastern-conference-round-one-takeaways",
-        "published": "Sun, 19 Apr 2026 15:53:21 EST",
-        "summary": "Here's what has stood out from the latest playoff games of the Eastern Conference's first round.",
-        "title_zh": "東區季後賽回顧：Celtics 以 32 分之差痛宰 Sixers",
-        "title_en": "East playoff takeaways: Celtics dominate Sixers in 32-point drubbing"
-      },
-      {
-        "title": "回顧：Lakers 克服傷病，Murray 展現身手助 Nuggets",
+        "title": "西區季後賽總結：Thunder (雷霆) 在第一戰大勝 Suns (太陽)",
         "link": "https://www.espn.com/nba/story/_/id/48506452/2026-nba-playoffs-western-conference-round-one-takeaways",
-        "published": "Sun, 19 Apr 2026 15:53:21 EST",
+        "published": "Sun, 19 Apr 2026 21:33:08 EST",
         "summary": "Here's what has stood out from the latest playoff games of the Western Conference's first round.",
-        "title_zh": "回顧：Lakers 克服傷病，Murray 展現身手助 Nuggets",
-        "title_en": "Takeaways: Lakers overcome injuries, Murray shows out for Nuggets"
+        "title_zh": "西區季後賽總結：Thunder (雷霆) 在第一戰大勝 Suns (太陽)",
+        "title_en": "West playoff takeaways: Thunder blow out Suns in Game 1 win"
       },
       {
-        "title": "「空檔年拿下 50 勝」：Jaylen Brown 如何讓 Celtics 重返爭冠行列",
-        "link": "https://www.espn.com/nba/story/_/id/48430297/how-jaylen-brown-turbocharged-boston-celtics-back-title-contention-jayson-tatum",
-        "published": "Sun, 19 Apr 2026 13:06:41 EST",
-        "summary": "Between memorizing the astrological signs of his teammates and undergoing extreme underwater training, Brown didn't need to be a hero in Boston. He simply needed to lead. \"I'm not going to make myself",
-        "title_zh": "「空檔年拿下 50 勝」：Jaylen Brown 如何讓 Celtics 重返爭冠行列",
-        "title_en": "'50 wins in a gap year': How Jaylen Brown turbocharged the Celtics back to title contention"
+        "title": "東區季後賽總結：Magic (魔術) 爆冷擊敗 Pistons (活塞)，Celtics (塞爾提克) 壓制 Sixers (七六人)",
+        "link": "https://www.espn.com/nba/story/_/id/48506456/2026-nba-playoffs-eastern-conference-round-one-takeaways",
+        "published": "Sun, 19 Apr 2026 21:33:09 EST",
+        "summary": "Here's what has stood out from the latest playoff games of the Eastern Conference's first round.",
+        "title_zh": "東區季後賽總結：Magic (魔術) 爆冷擊敗 Pistons (活塞)，Celtics (塞爾提克) 壓制 Sixers (七六人)",
+        "title_en": "East playoff takeaways: Magic shock Pistons, Celtics dominate Sixers"
       }
     ],
     "soccer": [
       {
-        "title": "觀看：今日賽事 (Match of the Day)",
-        "link": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 19 Apr 2026 22:46:14 GMT",
-        "summary": "Arsenal travel to Manchester City, and there's a Merseyside derby.",
-        "title_zh": "觀看：今日賽事 (Match of the Day)",
-        "title_en": "Watch: Match of the Day"
-      },
-      {
-        "title": "Man City 擊敗 Arsenal 後，現在是聯賽冠軍熱門嗎？",
+        "title": "Man City (曼城) 擊敗 Arsenal (阿森納) 後，現在是奪冠熱門嗎？",
         "link": "https://www.bbc.com/sport/football/articles/c1kr1jk0wnpo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Apr 2026 19:35:20 GMT",
         "summary": "Erling Haaland's winning goal, the explosion of noise, the reaction at full-time - are Man City now favourites to win the Premier League title?",
-        "title_zh": "Man City 擊敗 Arsenal 後，現在是聯賽冠軍熱門嗎？",
+        "title_zh": "Man City (曼城) 擊敗 Arsenal (阿森納) 後，現在是奪冠熱門嗎？",
         "title_en": "Are Man City now title favourites after win over Arsenal?"
       },
       {
-        "title": "Man City 擊敗 Arsenal，縮小與榜首差距",
+        "title": "Man City (曼城) 擊敗 Arsenal (阿森納)，縮小爭冠差距",
         "link": "https://www.bbc.com/sport/football/videos/c203ek521wno?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Apr 2026 19:20:04 GMT",
         "summary": "Erling Haaland and Rayan Cherki strike as Manchester City beat league leaders Arsenal to close the gap to three points with a game in hand and pile more pressure on Mikel Arteta's side.",
-        "title_zh": "Man City 擊敗 Arsenal，縮小與榜首差距",
+        "title_zh": "Man City (曼城) 擊敗 Arsenal (阿森納)，縮小爭冠差距",
         "title_en": "Man City beat Arsenal to close gap in title race"
       },
       {
-        "title": "Arteta 必須證明他不會被記住為 Arsenal 的「差一點先生」",
+        "title": "Arteta (阿爾特塔) 必須證明他不會被記住為 Arsenal (阿森納) 的「差一點先生」",
         "link": "https://www.bbc.com/sport/football/articles/cg40d145zgeo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Apr 2026 20:03:55 GMT",
         "summary": "Arsenal and manager Mikel Arteta may still have a season of glory - but must prove they are not 'nearly men' after Manchester City loss, says chief football writer Phil McNulty.",
-        "title_zh": "Arteta 必須證明他不會被記住為 Arsenal 的「差一點先生」",
+        "title_zh": "Arteta (阿爾特塔) 必須證明他不會被記住為 Arsenal (阿森納) 的「差一點先生」",
         "title_en": "Arteta must prove he won't be remembered as Arsenal's 'nearly man'"
       },
       {
-        "title": "Liverpool 球迷的夢幻德比戰結果，但 Slot 的夏天依然充滿挑戰",
+        "title": "對 Liverpool (利物浦) 球迷而言是夢幻般的德比結果，但對 Slot (斯洛特) 而言，這將是一個關鍵的夏天",
         "link": "https://www.bbc.com/sport/football/articles/c9qd94rzr01o?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Apr 2026 17:03:09 GMT",
         "summary": "Liverpool's 100th-minute winner at Everton moves the Reds closer to a Champions League spot - but issues still remain.",
-        "title_zh": "Liverpool 球迷的夢幻德比戰結果，但 Slot 的夏天依然充滿挑戰",
+        "title_zh": "對 Liverpool (利物浦) 球迷而言是夢幻般的德比結果，但對 Slot (斯洛特) 而言，這將是一個關鍵的夏天",
         "title_en": "Dream derby result for Liverpool fans but huge summer ahead for Slot"
       },
       {
-        "title": "創紀錄的 Bayern 贏得德甲冠軍 - 現在目標三冠王",
+        "title": "「偶然或選擇，他們都契合了」——為什麼 Man City (曼城) 將是冠軍",
+        "link": "https://www.bbc.com/sport/football/articles/c5y7vwnvegzo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 19 Apr 2026 22:41:46 GMT",
+        "summary": "Match of the Day pundit Danny Murphy explains why he thinks Manchester City will beat Arsenal to the Premier League title.",
+        "title_zh": "「偶然或選擇，他們都契合了」——為什麼 Man City (曼城) 將是冠軍",
+        "title_en": "'By chance or choice, they have clicked' - why Man City will be champions"
+      },
+      {
+        "title": "創紀錄的 Bayern (拜仁) 贏得德甲冠軍——接下來是三冠王",
         "link": "https://www.bbc.com/sport/football/articles/cq8wpln78eqo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Apr 2026 19:05:10 GMT",
         "summary": "Free-scoring Bayern Munich swept to the German title for the 35th time. Now their sights turn towards completing the Treble.",
-        "title_zh": "創紀錄的 Bayern 贏得德甲冠軍 - 現在目標三冠王",
+        "title_zh": "創紀錄的 Bayern (拜仁) 贏得德甲冠軍——接下來是三冠王",
         "title_en": "Record-breaking Bayern win Bundesliga - now for the Treble"
       },
       {
-        "title": "為何不老球星 Forrest 是 Celtic 的不滅影響者",
+        "title": "為什麼常青樹 Forrest (福雷斯特) 是 Celtic (凱爾特人) 持久影響力的來源",
         "link": "https://www.bbc.com/sport/football/articles/c5yw6068l05o?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Apr 2026 17:23:53 GMT",
         "summary": "Veteran winger James Forrest remains Celtic's constant, the great survivor and the enduring influencer, writes Tom English.",
-        "title_zh": "為何不老球星 Forrest 是 Celtic 的不滅影響者",
+        "title_zh": "為什麼常青樹 Forrest (福雷斯特) 是 Celtic (凱爾特人) 持久影響力的來源",
         "title_en": "Why evergreen Forrest is Celtic's enduring influencer"
       },
       {
-        "title": "Arsenal & Chelsea 覬覦 Bergvall - 週一八卦",
+        "title": "Arsenal (阿森納) & Chelsea (切爾西) 對 Bergvall (貝格瓦爾) 感興趣——週一消息",
         "link": "https://www.bbc.com/sport/football/articles/c33l0vl5xyzo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 19 Apr 2026 20:58:20 GMT",
+        "published": "Sun, 19 Apr 2026 21:53:08 GMT",
         "summary": "Arsenal and Chelsea are among the clubs interested in Tottenham's Lucas Bergvall, while Paris St-Germain hold talks with Arsenal's Gabriel Martinelli.",
-        "title_zh": "Arsenal & Chelsea 覬覦 Bergvall - 週一八卦",
+        "title_zh": "Arsenal (阿森納) & Chelsea (切爾西) 對 Bergvall (貝格瓦爾) 感興趣——週一消息",
         "title_en": "Arsenal & Chelsea keen on Bergvall - Monday's gossip"
       },
       {
-        "title": "Arsenal 缺乏致命終結者，是否會導致他們錯失聯賽冠軍？",
-        "link": "https://www.bbc.com/sport/football/articles/cvg0vpmd1xzo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 19 Apr 2026 20:27:44 GMT",
-        "summary": "Arsenal's lack of killer instinct is looking like it could damage their chance of a first league title in 22 years.",
-        "title_zh": "Arsenal 缺乏致命終結者，是否會導致他們錯失聯賽冠軍？",
-        "title_en": "Will lack of a ruthless match-winner cost Arsenal the title?"
-      },
-      {
-        "title": "歐冠冠軍幾乎塵埃落定，但歐洲席位爭奪戰比以往更激烈",
+        "title": "歐冠幾乎塵埃落定，但歐洲席位的爭奪比以往任何時候都激烈",
         "link": "https://www.bbc.com/sport/football/articles/c8dln4zl1dyo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Apr 2026 19:11:15 GMT",
-        "summary": "Scrolling further down the table, the Europa League and Europa Conference League spots are anyone's guess.",
-        "title_zh": "歐冠冠軍幾乎塵埃落定，但歐洲席位爭奪戰比以往更激烈",
+        "summary": "Scrolling down the Premier League table, the Europa League and Europa Conference League spots are still anyone's guess.",
+        "title_zh": "歐冠幾乎塵埃落定，但歐洲席位的爭奪比以往任何時候都激烈",
         "title_en": "Champions League almost sewn up but race for Europe tighter than ever"
+      },
+      {
+        "title": "Forest (諾丁漢森林) 的英雄 Gibbs-White (吉布斯-懷特) 讓夏季追求者 Spurs (熱刺) 陷入更深的危險",
+        "link": "https://www.bbc.com/sport/football/articles/cvg09l0y72no?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 19 Apr 2026 16:56:06 GMT",
+        "summary": "Morgan Gibbs-White's hat-trick for Nottingham Forest serves as another painful reminder of Tottenham's failed pursuit of the striker last summer.",
+        "title_zh": "Forest (諾丁漢森林) 的英雄 Gibbs-White (吉布斯-懷特) 讓夏季追求者 Spurs (熱刺) 陷入更深的危險",
+        "title_en": "Forest hero Gibbs-White plunges summer suitors Spurs into deeper danger"
       }
     ]
   },
   "significant_changes": [
-    "ef6021edff80a85fe2dae5cf3530d9d4",
-    "e777e2f049a5c85aed96a220a2cfe924",
     "04e3ad1ccbad6419ac711ff120fd5cbe",
     "273905d6a4ae9217ec0734b66a0eb28b",
     "a1b444bd00a27cbae3cf7ca3bf75a3f0",
     "a52365fe7f7123df1c4220d9591a6da2",
     "d1a7a6e7b024f888e922a62b14fcf466",
+    "680084e4612c197a1cf4170d82ba6f10",
     "d3d28b764e5099920880de59a45e82cf",
-    "ce727a41a47d5e86ddee97c7cd14928d",
-    "445c97066158652824e10b05bc53c6ae",
-    "af844c8833e6de4db916dd52c7b28095",
-    "36ffdc7f877a0da88068dfe5343c629b",
-    "7d04b13a6988f1d0c565ed53ce9263b7",
-    "a6b698d15158568e491da1405e17a1d3",
-    "5f9d3da4f9116d7f74b873d6d8c5b5b5",
-    "548f901ac0c811c39953f7e3769040cb",
-    "b68fd46a853603c38e3f4750b40181a0"
+    "c9bc6bcae048283407d1cb53995eee8e",
+    "0ce48ecb61f40bc3bd784adfe7f8e811",
+    "20842ac2a58d66de639f359e26217e33",
+    "29cc5ddc31a11f7556978b323ed103fc",
+    "5744a34d60a47f720af59a055dab12c5",
+    "161f9baeab748dcfa4d2df893f14b25b",
+    "b0d1e670b682b0ed37d6b0bc271efa6a",
+    "8b2db66328633438dcd0b0cb30f8f3df",
+    "3f0e9a96dbc83fd4b0c62cd12357b6a8",
+    "aa8294b91a1920474d420d34851aaceb",
+    "0e2c25e2571199e6ecea64d94bcb8980",
+    "97da76ec8cc9cdf87a1876d7557d43f2"
   ],
   "stats": {
-    "total_matches": 28,
-    "significant_changes_count": 17,
-    "api_remaining": "90"
+    "total_matches": 30,
+    "significant_changes_count": 19,
+    "api_remaining": "74"
   },
   "snapshots": [
     {
@@ -5535,6 +9039,10 @@
     {
       "time": "2026-04-20T05:48:32.357192+08:00",
       "matches_count": 29
+    },
+    {
+      "time": "2026-04-20T11:45:35.741300+08:00",
+      "matches_count": 53
     }
   ]
 }
