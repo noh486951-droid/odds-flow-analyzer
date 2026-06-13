@@ -512,7 +512,7 @@ function openMatchDetail(matchId) {
   if (h2h.length > 0) {
     h2hHtml = `<table class="h2h-table">
       <tr><th>日期</th><th>主隊</th><th>比分</th><th>客隊</th></tr>
-      ${h2h.map(h => `<tr><td>${h.date}</td><td>${h.home}</td><td class="h2h-score">${h.score}</td><td>${h.away}</td></tr>`).join('')}
+      ${h2h.map(h => `<tr><td>${h.date}</td><td>${formatTeamName(h.home)}</td><td class="h2h-score">${h.score}</td><td>${formatTeamName(h.away)}</td></tr>`).join('')}
     </table>`;
   }
 

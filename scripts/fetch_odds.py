@@ -1143,7 +1143,9 @@ def analyze_with_ai(matches_with_changes, news_items):
                         print(f"  ⚠️ {model_name}: 回應文字為空")
                         continue
 
-                    match["ai_analysis"] = analysis_text
+                    # Parse AI-grounded H2H and Form if missing
+                    cleaned_analysis = parse_ai_h2h_and_form(match, analysis_text)
+                    match["ai_analysis"] = cleaned_analysis
                     match["analysis_source"] = "gemini"
                     print(f"  🤖 [{i+1}/{len(matches_to_analyze)}] AI 分析完成 ({model_name} via {key_label}): {match['home_team']} vs {match['away_team']}")
                     success = True
@@ -1363,9 +1365,93 @@ def build_analysis_prompt(match, news_items, performance_context=""):
 【📊 雙方進球機率：XX%】
 【🎯 預測比分：主隊 X:Y 客隊 (預估此比分機率：Z%)】
 【⚽ 大小球推薦：大/小 X.5】
-請控制在 320 字以內。
+如果本賽事的歷史交手紀錄顯示「無歷史交手資料」或近期戰績資料不足，請額外利用 Google 搜尋查出兩隊最近 1-3 次交手歷史與近五場勝負（用英文隊名與英文縮寫），並在最後附加上這三行欄位：
+【📊 H2H交手：YYYY-MM-DD 主隊 X-Y 客隊 | YYYY-MM-DD 主隊 A-B 客隊】
+【📊 近期主隊戰績：W-L-D-W-L】
+【📊 近期客隊戰績：L-W-D-L-W】
+請控制在 350 字以內。
 """
     return prompt
+
+
+def parse_ai_h2h_and_form(match, analysis_text):
+    """從 AI 的分析文本中，解析出 H2H 與 Form 並注入至賽事物件"""
+    # 1. H2H交手
+    h2h_match = re.search(r"【📊\s*H2H交手：(.*?)】", analysis_text)
+    if h2h_match:
+        h2h_str = h2h_match.group(1).strip()
+        h2h_list = []
+        parts = h2h_str.split("|")
+        for part in parts:
+            part = part.strip()
+            if not part:
+                continue
+            # Regex match YYYY-MM-DD Home Score Away
+            m = re.match(r"(\d{4}-\d{2}-\d{2})\s+(.*?)\s+(\d+-\d+)\s+(.*)", part)
+            if m:
+                h2h_list.append({
+                    "date": m.group(1).strip(),
+                    "home": m.group(2).strip(),
+                    "score": m.group(3).strip(),
+                    "away": m.group(4).strip()
+                })
+            else:
+                # Fallback: simple token parsing
+                tokens = part.split()
+                if len(tokens) >= 4:
+                    score_idx = -1
+                    for idx, token in enumerate(tokens):
+                        if '-' in token and token.replace('-', '').isdigit():
+                            score_idx = idx
+                            break
+                    if score_idx != -1:
+                        date = tokens[0]
+                        home = " ".join(tokens[1:score_idx])
+                        score = tokens[score_idx]
+                        away = " ".join(tokens[score_idx+1:])
+                        h2h_list.append({
+                            "date": date,
+                            "home": home,
+                            "score": score,
+                            "away": away
+                        })
+        if h2h_list and (not match.get("h2h_history") or len(match.get("h2h_history", [])) == 0):
+            match["h2h_history"] = h2h_list
+
+    # 2. 近期主客隊戰績
+    home_form_match = re.search(r"【📊\s*近期主隊戰績：(.*?)】", analysis_text)
+    if home_form_match:
+        record = home_form_match.group(1).strip().replace("-", "")
+        record = "".join([c for c in record.upper() if c in ("W", "L", "D")])
+        if record and (not match.get("home_form") or not match["home_form"].get("record")):
+            match["home_form"] = {
+                "record": record,
+                "wins": record.count("W"),
+                "losses": record.count("L"),
+                "home_record": "",
+                "away_record": "",
+                "details": []
+            }
+            
+    away_form_match = re.search(r"【📊\s*近期客隊戰績：(.*?)】", analysis_text)
+    if away_form_match:
+        record = away_form_match.group(1).strip().replace("-", "")
+        record = "".join([c for c in record.upper() if c in ("W", "L", "D")])
+        if record and (not match.get("away_form") or not match["away_form"].get("record")):
+            match["away_form"] = {
+                "record": record,
+                "wins": record.count("W"),
+                "losses": record.count("L"),
+                "home_record": "",
+                "away_record": "",
+                "details": []
+            }
+
+    # Clean up from text
+    cleaned_text = re.sub(r"【📊\s*H2H交手：.*?】", "", analysis_text)
+    cleaned_text = re.sub(r"【📊\s*近期主隊戰績：.*?】", "", cleaned_text)
+    cleaned_text = re.sub(r"【📊\s*近期客隊戰績：.*?】", "", cleaned_text)
+    return cleaned_text.strip()
 
 
 def add_fallback_analysis(matches):
