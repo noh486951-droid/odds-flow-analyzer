@@ -315,6 +315,25 @@ body {
   margin: auto 0.5rem;
 }
 
+.date-filter-dropdown {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 2px solid #D1D5DB;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #FFFFFF;
+  color: var(--text-main);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.date-filter-dropdown:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
 .matches-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));

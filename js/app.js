@@ -411,8 +411,24 @@ function createMatchCard(match) {
         ${formHtml}
         ${probHtml}
         ${aiHtml}
-
-        <div class="card-footer-hint">📋 點擊查看完整分析</div>
+        <div class="card-footer-hint" style="
+          text-align: center;
+          font-size: 0.95rem;
+          font-weight: 700;
+          color: #FFFFFF !important;
+          background: linear-gradient(135deg, #2563EB, #3B82F6) !important;
+          padding: 0.65rem;
+          margin-top: 1rem;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.4rem;
+          border: none !important;
+          opacity: 1 !important;
+          cursor: pointer;
+        ">📋 點擊查看完整分析</div>
       </div>
     `;
   } catch (error) {

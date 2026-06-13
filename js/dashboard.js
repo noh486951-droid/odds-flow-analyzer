@@ -5,6 +5,7 @@ window.DashboardController = {
   init() {
     this.currentFilter = 'all';
     this.isHighProbMode = false;
+    this.selectedDate = 'all';
     this.grid = document.getElementById('matchesGrid');
     
     // League Filters (Excluding toggle buttons)
@@ -12,6 +13,9 @@ window.DashboardController = {
     
     // High Prob Toggle
     this.highProbBtn = document.getElementById('highProbFilter');
+    
+    // Date Dropdown Filter
+    this.dateFilter = document.getElementById('dateFilter');
     
     // Listen for data loaded event
     document.addEventListener('dataLoaded', (e) => {
@@ -29,6 +33,16 @@ window.DashboardController = {
         }
       });
     });
+    
+    // Setup date filter dropdown listener
+    if (this.dateFilter) {
+      this.dateFilter.addEventListener('change', (e) => {
+        this.selectedDate = e.target.value;
+        if (AppState.currentData) {
+          this.render(AppState.currentData);
+        }
+      });
+    }
     
     // Setup high probability toggle
     if (this.highProbBtn) {
@@ -52,9 +66,52 @@ window.DashboardController = {
       return;
     }
     
+    // Helper to get local date string in Taipei timezone
+    const getLocalDateStr = (isoString) => {
+      const d = new Date(isoString);
+      const formatter = new Intl.DateTimeFormat('zh-TW', {
+        timeZone: 'Asia/Taipei',
+        month: 'numeric',
+        day: 'numeric',
+        weekday: 'short'
+      });
+      return formatter.format(d).replace(/週(.)/, '($1)');
+    };
+    
+    // Populate date dropdown once or when matches list loads
+    if (this.dateFilter && !this.isPopulatingDates) {
+      this.isPopulatingDates = true;
+      const currentVal = this.dateFilter.value || 'all';
+      
+      const sortedAllMatches = Object.values(data.matches).sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
+      const uniqueDates = [];
+      sortedAllMatches.forEach(m => {
+        const dStr = getLocalDateStr(m.commence_time);
+        if (!uniqueDates.includes(dStr)) {
+          uniqueDates.push(dStr);
+        }
+      });
+      
+      let optionsHtml = '<option value="all">全部日期</option>';
+      uniqueDates.forEach(date => {
+        optionsHtml += `<option value="${date}">${date}</option>`;
+      });
+      this.dateFilter.innerHTML = optionsHtml;
+      
+      if (uniqueDates.includes(currentVal)) {
+        this.dateFilter.value = currentVal;
+        this.selectedDate = currentVal;
+      } else {
+        this.dateFilter.value = 'all';
+        this.selectedDate = 'all';
+      }
+      this.isPopulatingDates = false;
+    }
+    
     const matches = Object.values(data.matches);
     let filtered = matches;
     
+    // 1. Filter by League
     if (this.currentFilter !== 'all') {
       filtered = matches.filter(m => {
         const league = (m.league || '').toLowerCase();
@@ -63,6 +120,13 @@ window.DashboardController = {
           return league.includes('world') || league.includes('世足') || league.includes('fifa');
         }
         return league.includes(filter);
+      });
+    }
+    
+    // 2. Filter by Date
+    if (this.selectedDate && this.selectedDate !== 'all') {
+      filtered = filtered.filter(m => {
+        return getLocalDateStr(m.commence_time) === this.selectedDate;
       });
     }
     

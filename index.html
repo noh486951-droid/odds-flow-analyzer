@@ -13,7 +13,7 @@
   <meta name="theme-color" content="#F3F4F6">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="stylesheet" href="css/style.css?v=1.9.5">
+  <link rel="stylesheet" href="css/style.css?v=1.9.6">
 </head>
 <body>
   <!-- 背景動畫 -->
@@ -78,6 +78,13 @@
       <div class="filter-bar" id="leagueFilter">
         <button class="filter-btn active" data-league="all">全部</button>
         <button class="filter-btn" data-league="world_cup">⚽ 世足賽</button>
+        <div class="filter-divider"></div>
+        <div class="date-filter-wrap" style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-weight: 700; font-size: 0.9rem; color: var(--text-muted);">🗓️ 日期:</span>
+          <select id="dateFilter" class="date-filter-dropdown">
+            <option value="all">全部日期</option>
+          </select>
+        </div>
         <div class="filter-divider"></div>
         <button class="filter-btn toggle-btn" id="highProbFilter" title="僅顯示任一盤口真實勝率 ≥ 60% 且 AI 已完成分析的焦點賽事">💎 高勝率 <span class="filter-hint">≥60%</span></button>
       </div>

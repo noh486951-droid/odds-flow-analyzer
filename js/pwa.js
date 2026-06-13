@@ -19,7 +19,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // ============================================================
 //  版本更新說明 + PWA 引導
 // ============================================================
-const CURRENT_VERSION = "1.9.5";
+const CURRENT_VERSION = "1.9.6";
 
 function showReleaseNotes() {
   // 每個版本只顯示一次
@@ -68,6 +68,10 @@ function showReleaseNotes() {
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
             <span style="background:#E0E7FF; color:#4F46E5; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">📱</span>
             分析內頁 UI/字體加大與質感提升
+          </li>
+          <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
+            <span style="background:#FEF3C7; color:#D97706; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🗓️</span>
+            即時看板新增日期篩選器
           </li>
         </ul>
       </div>
