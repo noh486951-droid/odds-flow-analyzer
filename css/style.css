@@ -382,9 +382,9 @@ body {
 }
 
 .team-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-main);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111827;
 }
 
 /* Odds Display */
@@ -392,10 +392,10 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 0.3rem 0.5rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--glass-border);
+  background: #E5E7EB;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #D1D5DB;
 }
 
 .odds-current {
@@ -432,9 +432,9 @@ body {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.85rem;
-  color: var(--primary);
-  font-weight: 600;
+  font-size: 1.05rem;
+  color: #1e3a8a;
+  font-weight: 800;
   margin-bottom: 0.5rem;
 }
 
@@ -498,9 +498,9 @@ body {
 }
 
 .prob-title {
-  color: var(--text-muted);
-  font-weight: normal;
-  font-size: 0.75rem;
+  color: #1e3a8a;
+  font-weight: 800;
+  font-size: 0.9rem;
 }
 
 .prob-bar {
