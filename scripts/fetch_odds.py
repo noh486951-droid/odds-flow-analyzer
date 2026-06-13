@@ -1850,11 +1850,22 @@ def main():
             print("\n⚠️ 本次無賽事數據，結束執行")
             return
 
-        # 4. 偵測變動
-        print("\n🔍 偵測賠率變動...")
+        # 4. 篩選 36 小時內開打的賽事 (全面 AI 分析)
+        print("\n🔍 篩選 36 小時內開打的賽事...")
         matches_with_changes = detect_changes(all_matches, existing_data)
-        significant = get_significant_changes(matches_with_changes)
-        print(f"  📈 共 {len(significant)} 場比賽有顯著變動")
+        now_utc = datetime.now(timezone.utc)
+        significant = []
+        for match in matches_with_changes:
+            commence_time_str = match.get("commence_time")
+            if commence_time_str:
+                try:
+                    commence_time = datetime.fromisoformat(commence_time_str.replace('Z', '+00:00'))
+                    time_diff = (commence_time - now_utc).total_seconds() / 3600
+                    if -2 <= time_diff <= 36:  # 包含剛開打不久的比賽
+                        significant.append(match)
+                except ValueError:
+                    pass
+        print(f"  📈 共 {len(significant)} 場比賽在 36 小時內開打 (作為 AI 分析目標)")
 
     # 5. 抓取新聞
     print("\n📰 抓取最新新聞...")
@@ -1933,9 +1944,8 @@ def main():
     gemini_key_manager.reset()
 
     if significant:
-        # v1.8.4: 智慧選取邏輯 — 分聯賽配額 + 優先分析尚未分析過的場次
-        key_count = len(gemini_key_manager.keys)
-        MAX_AI = 3 if key_count == 1 else (5 if key_count == 2 else 7)
+        # 改為全面分析模式 (無限制 MAX_AI，所有 36 小時內比賽皆分析)
+        MAX_AI = len(significant)
 
         # 1. 排序優先級：尚未分析過的排前面 → 再按勝率排
         def sort_key(m):
@@ -1946,7 +1956,7 @@ def main():
         significant.sort(key=sort_key)
         ai_targets = significant[:MAX_AI]
 
-        print(f"\n🤖 啟動 AI 分析... (符合條件 {len(significant)} 場, 取 {len(ai_targets)} 場)")
+        print(f"\n🤖 啟動 AI 全面分析... (共 {len(ai_targets)} 場)")
 
         consecutive_failures = 0
         for idx, match in enumerate(ai_targets):
