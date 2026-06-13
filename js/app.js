@@ -1026,6 +1026,10 @@ function clearHighlights() {
   document.querySelectorAll('.tour-parent-elevate').forEach(el => {
     el.classList.remove('tour-parent-elevate');
   });
+  const existingBackdrop = document.getElementById('tour-guide-backdrop');
+  if (existingBackdrop) existingBackdrop.remove();
+  const existingOverlay = document.getElementById('tour-guide-overlay');
+  if (existingOverlay) existingOverlay.remove();
 }
 
 function updateTourCardPosition(targetEl) {
@@ -1045,15 +1049,17 @@ function updateTourCardPosition(targetEl) {
   }
 }
 
-
 function startAppTour() {
   currentTourStep = 0;
   showTourStep(0);
 }
 
 function showTourStep(stepIndex) {
-  const existing = document.getElementById('tour-guide-overlay');
-  if (existing) existing.remove();
+  // 清除舊有的 backdrop 與 overlay
+  const existingBackdrop = document.getElementById('tour-guide-backdrop');
+  if (existingBackdrop) existingBackdrop.remove();
+  const existingOverlay = document.getElementById('tour-guide-overlay');
+  if (existingOverlay) existingOverlay.remove();
 
   if (stepIndex >= tourSteps.length) {
     localStorage.setItem('tour_completed', 'true');
@@ -1070,11 +1076,20 @@ function showTourStep(stepIndex) {
     }
   }
 
+  // 1. 建立獨立遮罩 (z-index: 9998)，避免與高亮元素或對話框層級衝突
+  const backdrop = document.createElement('div');
+  backdrop.id = 'tour-guide-backdrop';
+  backdrop.style.cssText = `
+    position: fixed; inset: 0; z-index: 9998;
+    background: rgba(15, 23, 42, 0.55);
+    pointer-events: none;
+  `;
+
+  // 2. 建立對話框容器 (z-index: 10002)，絕對高於高亮元素 (z-index: 10000)
   const overlay = document.createElement('div');
   overlay.id = 'tour-guide-overlay';
   overlay.style.cssText = `
-    position: fixed; inset: 0; z-index: 9999;
-    background: rgba(15, 23, 42, 0.55);
+    position: fixed; inset: 0; z-index: 10002;
     display: flex; justify-content: center; align-items: flex-end;
     pointer-events: none;
     padding: 2rem;
@@ -1127,6 +1142,7 @@ function showTourStep(stepIndex) {
     </div>
   `;
 
+  document.body.appendChild(backdrop);
   document.body.appendChild(overlay);
 
   // 延遲尋找目標元素並套用高亮，以確保畫面切換與 DOM 渲染完成
@@ -1151,7 +1167,6 @@ function showTourStep(stepIndex) {
   }, 150);
 
   document.getElementById('tourSkipBtn').addEventListener('click', () => {
-    overlay.remove();
     clearHighlights();
     localStorage.setItem('tour_completed', 'true');
   });

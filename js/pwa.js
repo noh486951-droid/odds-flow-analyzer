@@ -29,7 +29,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // ============================================================
 //  版本更新說明 + PWA 引導
 // ============================================================
-const CURRENT_VERSION = "2.0.5";
+const CURRENT_VERSION = "2.0.6";
 
 function showReleaseNotes() {
   console.log("showReleaseNotes triggered. current version:", CURRENT_VERSION);

@@ -1807,7 +1807,7 @@ body {
    ============================================================ */
 .tour-highlight {
   position: relative !important;
-  z-index: 10001 !important;
+  z-index: 10000 !important;
   box-shadow: 0 0 0 3px #6366F1, 0 0 20px rgba(99, 102, 241, 0.8) !important;
   border-color: #6366F1 !important;
   outline: 3px solid #6366F1 !important;
@@ -1836,7 +1836,8 @@ body {
 /* Elevate headers only to bypass stacking contexts */
 .tour-parent-elevate {
   position: relative !important;
-  z-index: 10000 !important;
+  z-index: 9999 !important;
 }
+
 
 
