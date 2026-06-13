@@ -1801,3 +1801,37 @@ body {
 .result-miss-border .match-card {
   border-color: rgba(231, 76, 60, 0.4) !important;
 }
+
+/* ============================================================
+   Onboarding Tour Spotlight Highlights
+   ============================================================ */
+.tour-highlight {
+  position: relative !important;
+  z-index: 10001 !important;
+  box-shadow: 0 0 0 3px #6366F1, 0 0 20px rgba(99, 102, 241, 0.8) !important;
+  border-color: #6366F1 !important;
+  outline: 3px solid #6366F1 !important;
+  outline-offset: 2px !important;
+  animation: tourGlowPulse 2s infinite ease-in-out !important;
+  transition: all 0.3s ease !important;
+  pointer-events: auto !important;
+}
+
+@keyframes tourGlowPulse {
+  0%, 100% {
+    outline-color: rgba(99, 102, 241, 0.9);
+    box-shadow: 0 0 0 3px #6366F1, 0 0 20px rgba(99, 102, 241, 0.7) !important;
+  }
+  50% {
+    outline-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.3), 0 0 10px rgba(99, 102, 241, 0.3) !important;
+  }
+}
+
+/* Elevate ancestors to bypass stacking context limitations and prevent clipping */
+.tour-parent-active {
+  position: relative !important;
+  z-index: 10000 !important;
+  overflow: visible !important;
+}
+

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'oddsflow-cache-v2';
+const CACHE_NAME = 'oddsflow-cache-v5';
 
 self.addEventListener('install', event => {
   self.skipWaiting();

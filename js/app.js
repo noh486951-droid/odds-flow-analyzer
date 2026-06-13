@@ -127,10 +127,22 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 載入即時數據
   await fetchCurrentData();
 
-  // 自動開啟導覽 (如果是第一次拜訪)
-  if (localStorage.getItem('tour_completed') !== 'true') {
-    setTimeout(startAppTour, 1500);
-  }
+  // 定義延遲/順序化啟動導覽的全域函式
+  window.triggerAppTourIfPossible = function() {
+    if (localStorage.getItem('tour_completed') !== 'true') {
+      // 確保沒有其他引導彈窗擋著，才開啟導覽
+      if (!document.getElementById('release-notes-overlay') && !document.getElementById('pwa-guide-overlay')) {
+        startAppTour();
+      }
+    }
+  };
+
+  // 自動開啟導覽 (延遲嘗試，以便讓公告與 PWA 引導優先載入)
+  setTimeout(() => {
+    if (typeof window.triggerAppTourIfPossible === 'function') {
+      window.triggerAppTourIfPossible();
+    }
+  }, 2000);
 });
 
 function setupNavigation() {
@@ -926,51 +938,95 @@ const tourSteps = [
     title: "👋 歡迎使用 Odds Flow 分析器",
     desc: "這是由 AI 驅動的運彩盤口分析系統，整合即時看板、盤口走勢、AI 數據預估對照表與串關計算。讓我用 30 秒帶您熟悉核心功能！",
     view: "dashboard",
+    target: ".logo",
     buttonText: "🚀 開始導覽"
   },
   {
     title: "📊 即時看板：變動與警示",
     desc: "在此展示所有進行中的賽事。當盤口賠率相較初盤有顯著變動時，系統會自動以紅框標示，並在卡片頂部亮起輪休、疲勞或資金流警示。",
     view: "dashboard",
+    target: "#matchesGrid .match-card:first-child",
     buttonText: "下一頁"
   },
   {
     title: "📅 智能篩選：精準過濾",
     desc: "您可以使用日期下拉選單，或點擊「💎 高勝率」快速過濾出任一盤口真實勝率 ≥ 60% 且具備 AI 分析的焦點賽事。",
     view: "dashboard",
+    target: "#leagueFilter",
     buttonText: "下一頁"
   },
   {
     title: "🤖 AI 勝率與預測數據表",
     desc: "每場比賽底部均有真實勝率體力條。點擊「查看完整分析」即可閱讀 AI 預估比分（含信心度）、大小球，以及本次新增的勝平負與進球率預估對照表！",
     view: "dashboard",
+    target: "#matchesGrid .match-card:first-child .true-prob-container",
     buttonText: "下一頁"
   },
   {
     title: "📅 歷史回顧：回測與戰績",
     desc: "選擇過去的日期，即可查看完賽比數，並統計 AI 預測的精準命中率（包含命中、未中、和局）。AI 也會自動上網搜尋補全當日交手紀錄。",
     view: "history",
+    target: ".history-controls",
     buttonText: "下一頁"
   },
   {
     title: "🗓️ 台灣賽程：開賽追蹤",
     desc: "此專區將所有世足比賽時間自動轉換為台北時間 (UTC+8)，讓您隨時隨地精準掌握開賽時間。",
     view: "schedule",
+    target: ".schedule-container",
     buttonText: "下一頁"
   },
   {
     title: "🧮 串關計算機：投注規劃",
     desc: "可自由新增多關賽事賠率，自動為您計算串關總倍率、投注總獎金與淨利潤，是您投注規劃的得力助手。",
     view: "calculator",
+    target: ".calculator-container",
     buttonText: "下一頁"
   },
   {
     title: "🎉 導覽完成！",
     desc: "您已掌握 Odds Flow 的所有核心功能。隨時可以點擊導航欄最後的「重看導覽」按鈕再次閱讀。祝您投注順利、百戰百勝！",
     view: "dashboard",
+    target: "#nav-tour",
     buttonText: "開始體驗"
   }
 ];
+
+function highlightElement(el) {
+  clearHighlights();
+  if (!el) return;
+  
+  el.classList.add('tour-highlight');
+  
+  // 向上尋找所有可能需要提升 z-index 與設定 overflow: visible 的祖先元素
+  let parent = el.parentElement;
+  while (parent && parent !== document.body) {
+    const style = window.getComputedStyle(parent);
+    if (
+      style.position !== 'static' || 
+      style.overflow === 'hidden' || 
+      parent.classList.contains('header') || 
+      parent.classList.contains('view-panel') || 
+      parent.id === 'matchesGrid' ||
+      parent.classList.contains('main-content')
+    ) {
+      parent.classList.add('tour-parent-active');
+    }
+    parent = parent.parentElement;
+  }
+  
+  // 平滑捲動至畫面中央
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function clearHighlights() {
+  document.querySelectorAll('.tour-highlight').forEach(el => {
+    el.classList.remove('tour-highlight');
+  });
+  document.querySelectorAll('.tour-parent-active').forEach(el => {
+    el.classList.remove('tour-parent-active');
+  });
+}
 
 function startAppTour() {
   currentTourStep = 0;
@@ -983,6 +1039,7 @@ function showTourStep(stepIndex) {
 
   if (stepIndex >= tourSteps.length) {
     localStorage.setItem('tour_completed', 'true');
+    clearHighlights();
     return;
   }
 
@@ -999,7 +1056,7 @@ function showTourStep(stepIndex) {
   overlay.id = 'tour-guide-overlay';
   overlay.style.cssText = `
     position: fixed; inset: 0; z-index: 9999;
-    background: rgba(15, 23, 42, 0.4);
+    background: rgba(15, 23, 42, 0.55);
     display: flex; justify-content: center; align-items: flex-end;
     pointer-events: none;
     padding: 2rem;
@@ -1054,8 +1111,27 @@ function showTourStep(stepIndex) {
 
   document.body.appendChild(overlay);
 
+  // 延遲尋找目標元素並套用高亮，以確保畫面切換與 DOM 渲染完成
+  setTimeout(() => {
+    if (step.target) {
+      let el = document.querySelector(step.target);
+      if (!el && step.target.includes('.match-card:first-child')) {
+        // 容錯機制：若尚未渲染出 match-card，以 grid 作為備用高亮目標
+        el = document.getElementById('matchesGrid');
+      }
+      if (el) {
+        highlightElement(el);
+      } else {
+        clearHighlights();
+      }
+    } else {
+      clearHighlights();
+    }
+  }, 150);
+
   document.getElementById('tourSkipBtn').addEventListener('click', () => {
     overlay.remove();
+    clearHighlights();
     localStorage.setItem('tour_completed', 'true');
   });
 
@@ -1063,4 +1139,5 @@ function showTourStep(stepIndex) {
     showTourStep(stepIndex + 1);
   });
 }
+
 

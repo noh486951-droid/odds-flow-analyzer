@@ -1,3 +1,13 @@
+// 檢查 URL 參數以重置導覽與公告狀態 (方便測試)
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has('reset') || urlParams.has('debug')) {
+  localStorage.removeItem('release_notes_seen');
+  localStorage.removeItem('pwa_prompt_dismissed');
+  localStorage.removeItem('tour_completed');
+  localStorage.removeItem('ios_pwa_dismissed');
+  console.log("Onboarding state reset via URL parameter.");
+}
+
 // 註冊 Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
@@ -19,12 +29,17 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // ============================================================
 //  版本更新說明 + PWA 引導
 // ============================================================
-const CURRENT_VERSION = "2.0.0";
+const CURRENT_VERSION = "2.0.3";
 
 function showReleaseNotes() {
+  console.log("showReleaseNotes triggered. current version:", CURRENT_VERSION);
   // 每個版本只顯示一次
   if (localStorage.getItem('release_notes_seen') === CURRENT_VERSION) {
-    checkAndShowPWA();
+    console.log("Release notes already seen for", CURRENT_VERSION);
+    const shown = checkAndShowPWA();
+    if (!shown && typeof window.triggerAppTourIfPossible === 'function') {
+      window.triggerAppTourIfPossible();
+    }
     return;
   }
 
@@ -87,7 +102,12 @@ function showReleaseNotes() {
   document.getElementById('closeNotesBtn').addEventListener('click', () => {
     overlay.remove();
     localStorage.setItem('release_notes_seen', CURRENT_VERSION);
-    setTimeout(checkAndShowPWA, 500);
+    setTimeout(() => {
+      const shown = checkAndShowPWA();
+      if (!shown && typeof window.triggerAppTourIfPossible === 'function') {
+        window.triggerAppTourIfPossible();
+      }
+    }, 500);
   });
 }
 
@@ -97,18 +117,24 @@ function checkAndShowPWA() {
   const isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator.standalone);
   const isAndroidStandalone = window.matchMedia('(display-mode: standalone)').matches;
 
-  // 如果已經是獨立應用模式，則不用提示
-  if (isInStandaloneMode || isAndroidStandalone) return;
+  console.log("checkAndShowPWA: isIos:", isIos, "standalone:", isInStandaloneMode, "androidStandalone:", isAndroidStandalone, "ua:", ua);
 
-  // 如果是行動裝置，顯示統一的安裝引導視窗
+  // 如果已經是獨立應用模式，則不用提示
+  if (isInStandaloneMode || isAndroidStandalone) return false;
+
+  // 如果是行動裝置，且尚未點擊「我知道了」，顯示統一的安裝引導視窗
   if (isIos || /android|mobile/.test(ua)) {
+    if (localStorage.getItem('pwa_prompt_dismissed') === 'true') {
+      console.log("PWA guide previously dismissed.");
+      return false;
+    }
     showUnifiedPwaModal();
+    return true;
   }
+  return false;
 }
 
 function showUnifiedPwaModal() {
-  if (localStorage.getItem('pwa_prompt_dismissed') === 'true') return;
-
   const overlay = document.createElement('div');
   overlay.id = 'pwa-guide-overlay';
   overlay.style.cssText = `
@@ -141,7 +167,7 @@ function showUnifiedPwaModal() {
       <div style="text-align: center;">
         <span style="font-size: 2.5rem;">📱</span>
         <h2 style="color: #0F172A; font-size: 1.35rem; font-weight: 800; margin-top: 0.5rem; margin-bottom: 0.25rem;">
-          安裝 Odds Flow Web App
+          安裝 Odds Flow Web App (PWA)
         </h2>
         <p style="color: #64748B; font-size: 0.85rem; line-height: 1.45; max-width: 400px; margin: 0 auto;">
           將程式加入主畫面，享有全螢幕、獨立視窗與更流暢的運彩分析體驗
@@ -237,6 +263,10 @@ function showUnifiedPwaModal() {
     overlay.remove();
     style.remove();
     localStorage.setItem('pwa_prompt_dismissed', 'true');
+    // PWA 關閉後，啟動導覽
+    if (typeof window.triggerAppTourIfPossible === 'function') {
+      window.triggerAppTourIfPossible();
+    }
   };
 
   document.getElementById('pwaCloseBtn').addEventListener('click', close);
@@ -254,22 +284,13 @@ function showUnifiedPwaModal() {
       }
     });
   }
-}color:#1F2937; line-height:2;">
-          <li>點擊底部 <strong>分享按鈕</strong> ⬆️</li>
-          <li>選擇 <strong>「加入主畫面」</strong> ➕</li>
-        </ol>
-      </div>
-    </div>
-  `;
-  document.body.appendChild(modal);
-
-  document.getElementById('iosPwaCloseBtn').addEventListener('click', () => {
-    modal.remove();
-    localStorage.setItem('ios_pwa_dismissed', 'true');
-  });
 }
 
-// 頁面載入後啟動
-window.addEventListener('DOMContentLoaded', () => {
+// 頁面載入後啟動 (支援即時檢測 DOM readyState)
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(showReleaseNotes, 800);
+  });
+} else {
   setTimeout(showReleaseNotes, 800);
-});
+}
