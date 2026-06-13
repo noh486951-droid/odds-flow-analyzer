@@ -16,130 +16,192 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
 });
 
+// ============================================================
+//  版本更新說明 + PWA 引導
+// ============================================================
+const CURRENT_VERSION = "1.9.2";
+
 function showReleaseNotes() {
-  const version = "1.8.5";
-  if (localStorage.getItem('release_notes_seen') === version) {
+  // 每個版本只顯示一次
+  if (localStorage.getItem('release_notes_seen') === CURRENT_VERSION) {
     checkAndShowPWA();
     return;
   }
 
-  const modal = document.createElement('div');
-  modal.className = 'pwa-ios-modal'; // 重用黑色半透明背景
-  modal.style.zIndex = '3000';
-  modal.style.alignItems = 'center';
-  modal.innerHTML = `
-    <div class="modal-card" style="position:relative; z-index:3001; max-width:500px; width:90%; padding:2rem; text-align:left; background:var(--bg-card); border-radius:16px; border:1px solid var(--border);">
-      <h2 style="color:var(--primary); margin-bottom:1rem; font-size:1.5rem; text-align:center;">🎉 版本更新 v1.8.5</h2>
-      <ul style="line-height:1.8; margin-left:1.5rem; color:var(--text-main); font-size:1.05rem; margin-bottom:1.5rem;">
-        <li>✨ <strong>全新明亮主題</strong>：清晰好閱讀，不傷眼</li>
-        <li>📱 <strong>App 模式</strong>：支援一鍵安裝到手機桌面</li>
-        <li>🗓️ <strong>台灣賽程表</strong>：自動轉換本地時間 (UTC+8)</li>
-        <li>🤖 <strong>AI 搜網升級</strong>：自動參考網路鄉民看好度與風向</li>
-        <li>📊 <strong>歷史回顧擴充</strong>：新增 12、13 號賽事回顧</li>
-      </ul>
-      <button id="closeNotesBtn" style="width:100%; background:var(--primary); color:#fff; padding:1rem; border:none; border-radius:8px; font-size:1.1rem; cursor:pointer; font-weight:bold; box-shadow:0 4px 12px rgba(37, 99, 235, 0.3);">開始體驗</button>
+  const overlay = document.createElement('div');
+  overlay.id = 'release-notes-overlay';
+  overlay.style.cssText = `
+    position:fixed; inset:0; z-index:9999;
+    background:rgba(0,0,0,0.6);
+    display:flex; justify-content:center; align-items:center;
+    backdrop-filter:blur(4px);
+  `;
+  overlay.innerHTML = `
+    <div style="
+      background:#FFFFFF; border:2px solid #D1D5DB; border-radius:16px;
+      max-width:480px; width:90%; padding:2rem; position:relative;
+      box-shadow:0 20px 60px rgba(0,0,0,0.3); animation:modalSlideIn 0.3s ease;
+    ">
+      <div style="text-align:center; margin-bottom:1.5rem;">
+        <div style="font-size:2.5rem; margin-bottom:0.5rem;">⚽</div>
+        <h2 style="color:#1F2937; font-size:1.5rem; font-weight:800; margin-bottom:0.25rem;">
+          Odds Flow v${CURRENT_VERSION}
+        </h2>
+        <p style="color:#6B7280; font-size:0.9rem;">世足盤口分析系統已更新</p>
+      </div>
+
+      <div style="background:#F9FAFB; border:1px solid #E5E7EB; border-radius:12px; padding:1.25rem; margin-bottom:1.5rem;">
+        <div style="font-size:0.85rem; color:#6B7280; font-weight:600; margin-bottom:0.75rem; text-transform:uppercase; letter-spacing:1px;">更新內容</div>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+          <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
+            <span style="background:#DBEAFE; color:#2563EB; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🎨</span>
+            全新 UI 介面大改版
+          </li>
+          <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
+            <span style="background:#D1FAE5; color:#16A34A; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🤖</span>
+            AI 整合網友風向分析
+          </li>
+          <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
+            <span style="background:#FEF3C7; color:#D97706; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🗓️</span>
+            台灣賽程表 (UTC+8)
+          </li>
+          <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
+            <span style="background:#FCE7F3; color:#DB2777; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">📱</span>
+            支援手機 App 模式
+          </li>
+          <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
+            <span style="background:#E0E7FF; color:#4F46E5; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">📊</span>
+            歷史回顧擴充 (11~13號)
+          </li>
+        </ul>
+      </div>
+
+      <button id="closeNotesBtn" style="
+        width:100%; background:#1F2937; color:#FFFFFF;
+        padding:0.9rem; border:none; border-radius:10px;
+        font-size:1.1rem; cursor:pointer; font-weight:700;
+        transition:all 0.2s;
+      " onmouseover="this.style.background='#374151'" onmouseout="this.style.background='#1F2937'">
+        開始使用
+      </button>
     </div>
   `;
-  document.body.appendChild(modal);
+  document.body.appendChild(overlay);
 
   document.getElementById('closeNotesBtn').addEventListener('click', () => {
-    modal.remove();
-    localStorage.setItem('release_notes_seen', version);
-    setTimeout(checkAndShowPWA, 600); // 關閉後再顯示 PWA 提示
+    overlay.remove();
+    localStorage.setItem('release_notes_seen', CURRENT_VERSION);
+    setTimeout(checkAndShowPWA, 500);
   });
 }
 
 function checkAndShowPWA() {
-  const isIos = /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+  const ua = window.navigator.userAgent.toLowerCase();
+  const isIos = /iphone|ipad|ipod/.test(ua);
   const isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator.standalone);
+  const isAndroidStandalone = window.matchMedia('(display-mode: standalone)').matches;
 
-  if (isInStandaloneMode) return; // 已經是 App 模式就不干擾
+  if (isInStandaloneMode || isAndroidStandalone) return;
 
   if (isIos) {
     showIosInstallPrompt();
-  } else {
-    const isMobile = /android|mobile/.test(window.navigator.userAgent.toLowerCase());
+  } else if (/android|mobile/.test(ua)) {
     if (deferredPrompt) {
       showAndroidInstallPrompt();
-    } else if (isMobile) {
-      showGenericAndroidPrompt();
+    } else {
+      showGenericMobilePrompt();
     }
   }
 }
 
 function showAndroidInstallPrompt() {
   if (localStorage.getItem('pwa_prompt_dismissed')) return;
-
-  const banner = document.createElement('div');
-  banner.className = 'pwa-banner';
-  banner.innerHTML = `
-    <div class="pwa-content">
-      <span class="pwa-icon">⚽</span>
-      <div>
-        <div class="pwa-title">取得全螢幕體驗</div>
-        <div class="pwa-desc">一鍵安裝世足分析 App</div>
-      </div>
-    </div>
-    <div class="pwa-actions">
-      <button id="pwaInstallBtn" class="pwa-btn-install">安裝</button>
-      <button id="pwaCloseBtn" class="pwa-btn-close">✕</button>
-    </div>
-  `;
+  const banner = createPwaBanner(
+    '取得全螢幕 App 體驗',
+    '一鍵安裝到手機桌面',
+    true
+  );
   document.body.appendChild(banner);
-
-  document.getElementById('pwaInstallBtn').addEventListener('click', async () => {
-    banner.remove();
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      console.log(\`User response to the install prompt: \${outcome}\`);
-      deferredPrompt = null;
-    }
-  });
-
-  document.getElementById('pwaCloseBtn').addEventListener('click', () => {
-    banner.remove();
-    localStorage.setItem('pwa_prompt_dismissed', 'true');
-  });
 }
 
-function showGenericAndroidPrompt() {
+function showGenericMobilePrompt() {
   if (localStorage.getItem('pwa_prompt_dismissed')) return;
+  const banner = createPwaBanner(
+    '取得全螢幕 App 體驗',
+    '點擊瀏覽器選單 (⋮) → 「加到主畫面」',
+    false
+  );
+  document.body.appendChild(banner);
+}
+
+function createPwaBanner(title, desc, hasInstall) {
   const banner = document.createElement('div');
   banner.className = 'pwa-banner';
   banner.innerHTML = `
     <div class="pwa-content">
       <span class="pwa-icon">⚽</span>
       <div>
-        <div class="pwa-title">取得全螢幕 App 體驗</div>
-        <div class="pwa-desc">點擊瀏覽器選單 (⋮) 選擇「加到主畫面」</div>
+        <div class="pwa-title">${title}</div>
+        <div class="pwa-desc">${desc}</div>
       </div>
     </div>
     <div class="pwa-actions">
-      <button id="pwaCloseBtn" class="pwa-btn-close">✕</button>
+      ${hasInstall ? '<button id="pwaInstallBtn" class="pwa-btn-install">安裝</button>' : ''}
+      <button class="pwa-btn-close" onclick="this.closest(\'.pwa-banner\').remove(); localStorage.setItem(\'pwa_prompt_dismissed\',\'true\');">✕</button>
     </div>
   `;
-  document.body.appendChild(banner);
-  document.getElementById('pwaCloseBtn').addEventListener('click', () => {
-    banner.remove();
-    localStorage.setItem('pwa_prompt_dismissed', 'true');
-  });
+
+  if (hasInstall) {
+    setTimeout(() => {
+      const btn = document.getElementById('pwaInstallBtn');
+      if (btn) {
+        btn.addEventListener('click', async () => {
+          banner.remove();
+          if (deferredPrompt) {
+            deferredPrompt.prompt();
+            await deferredPrompt.userChoice;
+            deferredPrompt = null;
+          }
+        });
+      }
+    }, 100);
+  }
+  return banner;
 }
 
 function showIosInstallPrompt() {
   if (localStorage.getItem('ios_pwa_dismissed')) return;
 
   const modal = document.createElement('div');
-  modal.className = 'pwa-ios-modal';
+  modal.style.cssText = `
+    position:fixed; inset:0; z-index:9999;
+    background:rgba(0,0,0,0.6);
+    display:flex; justify-content:center; align-items:flex-end;
+    backdrop-filter:blur(4px);
+  `;
   modal.innerHTML = `
-    <div class="pwa-ios-content">
-      <button id="iosPwaCloseBtn" class="pwa-btn-close" style="position:absolute; right:15px; top:15px; color:var(--text-muted);">✕</button>
-      <h3 style="color:var(--text-main); margin-bottom:10px;">💡 蘋果手機專屬</h3>
-      <p style="color:var(--text-muted); margin-bottom:15px;">想要獲得無干擾的全螢幕 App 體驗嗎？</p>
-      <div style="background:rgba(0,0,0,0.05); padding:1rem; border-radius:12px;">
-        <ol style="text-align:left; margin:0 0 0 20px; font-size:1rem; color:var(--text-main); line-height:1.6;">
-          <li>點擊瀏覽器底部的 <strong>分享</strong> 按鈕 <svg viewBox="0 0 50 50" width="18" height="18" style="vertical-align:middle; color:var(--primary);"><path fill="currentColor" d="M25,2 L25,25 M15,12 L25,2 L35,12 M10,20 L10,40 C10,45 15,48 25,48 C35,48 40,45 40,40 L40,20" stroke="currentColor" stroke-width="4" fill="none"/></svg></li>
-          <li>往下滑動並選擇 <strong>「加入主畫面」</strong> ⊕</li>
+    <div style="
+      background:#FFFFFF; width:100%; padding:2rem;
+      border-radius:20px 20px 0 0; position:relative;
+      box-shadow:0 -10px 30px rgba(0,0,0,0.2);
+    ">
+      <button id="iosPwaCloseBtn" style="
+        position:absolute; right:15px; top:15px;
+        background:#E5E7EB; border:none; width:32px; height:32px;
+        border-radius:50%; font-size:1.2rem; cursor:pointer; color:#6B7280;
+      ">✕</button>
+
+      <h3 style="color:#1F2937; margin-bottom:0.75rem; font-size:1.3rem; font-weight:700; text-align:center;">
+        📱 加入主畫面
+      </h3>
+      <p style="color:#6B7280; margin-bottom:1rem; text-align:center; font-size:0.95rem;">
+        享受無干擾的全螢幕 App 體驗
+      </p>
+
+      <div style="background:#F9FAFB; padding:1.25rem; border-radius:12px; border:1px solid #E5E7EB;">
+        <ol style="margin:0 0 0 1.25rem; font-size:1.05rem; color:#1F2937; line-height:2;">
+          <li>點擊底部 <strong>分享按鈕</strong> ⬆️</li>
+          <li>選擇 <strong>「加入主畫面」</strong> ➕</li>
         </ol>
       </div>
     </div>
@@ -152,7 +214,7 @@ function showIosInstallPrompt() {
   });
 }
 
+// 頁面載入後啟動
 window.addEventListener('DOMContentLoaded', () => {
-  // 延遲 800 毫秒後顯示版本說明，避免網頁還沒渲染完就跳出
   setTimeout(showReleaseNotes, 800);
 });
