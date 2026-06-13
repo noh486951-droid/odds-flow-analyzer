@@ -551,7 +551,25 @@ body {
 }
 
 /* ============================================================
-  color-scheme: dark;
+   History Controls
+   ============================================================ */
+.history-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.date-picker {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 1rem;
+  color-scheme: light;
 }
 
 .date-nav-btn {
@@ -812,10 +830,164 @@ body {
     padding-bottom: 0.2rem;
   }
   
-  .matches-grid {
-    grid-template-columns: 1fr;
+  .stats-bar {
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+.card-footer-hint {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--border);
+}
+
+/* ============================================================
+   PWA Prompts
+   ============================================================ */
+.pwa-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-card);
+  border-top: 1px solid var(--primary);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.pwa-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pwa-icon {
+  font-size: 2rem;
+}
+
+.pwa-title {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.pwa-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.pwa-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pwa-btn-install {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pwa-btn-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.pwa-ios-modal {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2000;
+}
+
+.pwa-ios-content {
+  background: var(--bg-card);
+  width: 100%;
+  padding: 2rem;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.2);
+}
+
+/* ============================================================
+   Schedule List (Centered & Enlarged)
+   ============================================================ */
+.schedule-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.schedule-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(255,255,255,0.8);
+  border: 2px solid var(--glass-border);
+  border-top: 4px solid var(--primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.schedule-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-glow);
+}
+
+.schedule-time {
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.schedule-teams {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.8rem;
+}
+
+.schedule-league {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  background: rgba(0,0,0,0.05);
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+}
+
 /* 60% 以上高勝率發光特效 */
 .gold-prob {
   color: #f1c40f !important;
@@ -1355,7 +1527,7 @@ body {
 .score-value {
   font-size: 1.4rem;
   font-weight: 900;
-  color: #fff;
+  color: var(--primary);
   letter-spacing: 3px;
 }
 
