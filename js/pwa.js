@@ -29,7 +29,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // ============================================================
 //  版本更新說明 + PWA 引導
 // ============================================================
-const CURRENT_VERSION = "2.0.7";
+const CURRENT_VERSION = "2.0.8";
 
 function showReleaseNotes() {
   console.log("showReleaseNotes triggered. current version:", CURRENT_VERSION);
@@ -46,15 +46,18 @@ function showReleaseNotes() {
   const overlay = document.createElement('div');
   overlay.id = 'release-notes-overlay';
   overlay.style.cssText = `
-    position:fixed; inset:0; z-index:9999;
+    position:fixed; top:0; left:0; right:0; bottom:0; z-index:9999;
     background:rgba(0,0,0,0.6);
     display:flex; justify-content:center; align-items:center;
     backdrop-filter:blur(4px);
+    padding:1rem;
+    box-sizing:border-box;
   `;
   overlay.innerHTML = `
     <div style="
       background:#FFFFFF; border:2px solid #D1D5DB; border-radius:16px;
-      max-width:480px; width:90%; padding:2rem; position:relative;
+      max-width:480px; width:100%; padding:1.5rem 1.25rem; position:relative;
+      box-sizing:border-box;
       box-shadow:0 20px 60px rgba(0,0,0,0.3); animation:modalSlideIn 0.3s ease;
     ">
       <div style="text-align:center; margin-bottom:1.5rem;">
@@ -138,17 +141,19 @@ function showUnifiedPwaModal() {
   const overlay = document.createElement('div');
   overlay.id = 'pwa-guide-overlay';
   overlay.style.cssText = `
-    position: fixed; inset: 0; z-index: 9999;
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999;
     background: rgba(15, 23, 42, 0.65);
     display: flex; justify-content: center; align-items: center;
     backdrop-filter: blur(8px);
-    padding: 1.25rem;
+    padding: 1rem;
+    box-sizing: border-box;
   `;
 
   overlay.innerHTML = `
     <div style="
       background: #FFFFFF; border: 1px solid rgba(226, 232, 240, 0.8); border-radius: 20px;
-      max-width: 540px; width: 100%; padding: 1.75rem; position: relative;
+      max-width: 540px; width: 100%; padding: 1.5rem 1.25rem; position: relative;
+      box-sizing: border-box;
       box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.3);
       animation: modalSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex; flex-direction: column; gap: 1.25rem;

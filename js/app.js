@@ -1085,7 +1085,7 @@ function showTourStep(stepIndex) {
   const backdrop = document.createElement('div');
   backdrop.id = 'tour-guide-backdrop';
   backdrop.style.cssText = `
-    position: fixed; inset: 0; z-index: 9998;
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9998;
     background: rgba(15, 23, 42, 0.55);
     pointer-events: none;
   `;
@@ -1094,16 +1094,18 @@ function showTourStep(stepIndex) {
   const overlay = document.createElement('div');
   overlay.id = 'tour-guide-overlay';
   overlay.style.cssText = `
-    position: fixed; inset: 0; z-index: 10002;
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 10002;
     display: flex; justify-content: center; align-items: flex-end;
     pointer-events: none;
-    padding: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
   `;
 
   overlay.innerHTML = `
     <div style="
       background: #1E2442; border: 1.5px solid #6366F1; border-radius: 20px;
-      max-width: 480px; width: 100%; padding: 1.75rem; position: relative;
+      max-width: 480px; width: 100%; padding: 1.5rem 1.25rem; position: relative;
+      box-sizing: border-box;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
       animation: modalSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex; flex-direction: column; gap: 1rem;
