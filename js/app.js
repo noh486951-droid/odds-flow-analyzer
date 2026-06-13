@@ -144,6 +144,58 @@ function updateGlobalUI(data) {
 // ============================================================
 // Shared UI Components
 // ============================================================
+function renderTrueProbsBar(trueProbs, homeTeam, awayTeam) {
+  if (!trueProbs || Object.keys(trueProbs).length === 0) return '';
+  
+  const probHome = trueProbs[homeTeam] || 0;
+  const probAway = trueProbs[awayTeam] || 0;
+  const probDraw = trueProbs['Draw'] || trueProbs.Draw || 0;
+  
+  if (probHome === 0 && probAway === 0 && probDraw === 0) return '';
+  
+  const total = probHome + probAway + probDraw;
+  const pctHome = total > 0 ? (probHome / total) * 100 : 0;
+  const pctDraw = total > 0 ? (probDraw / total) * 100 : 0;
+  const pctAway = total > 0 ? (probAway / total) * 100 : 0;
+  
+  let drawLabelHtml = '';
+  let drawSegmentHtml = '';
+  
+  if (probDraw > 0) {
+    drawLabelHtml = `
+      <span class="prob-lbl-item draw-lbl">
+        <span class="prob-dot" style="background-color: #94A3B8;"></span>
+        和局 ${probDraw.toFixed(1)}%
+      </span>
+    `;
+    drawSegmentHtml = `<div class="prob-seg seg-draw" style="width: ${pctDraw}%" title="和局 ${probDraw.toFixed(1)}%"></div>`;
+  }
+  
+  return `
+    <div class="true-prob-container">
+      <div class="true-prob-header">
+        <span class="prob-title-text">🤖 AI 真實勝率預測</span>
+      </div>
+      <div class="true-prob-bar">
+        <div class="prob-seg seg-home" style="width: ${pctHome}%" title="主勝 ${probHome.toFixed(1)}%"></div>
+        ${drawSegmentHtml}
+        <div class="prob-seg seg-away" style="width: ${pctAway}%" title="客勝 ${probAway.toFixed(1)}%"></div>
+      </div>
+      <div class="true-prob-labels">
+        <span class="prob-lbl-item home-lbl">
+          <span class="prob-dot" style="background-color: #10B981;"></span>
+          主勝 ${probHome.toFixed(1)}%
+        </span>
+        ${drawLabelHtml}
+        <span class="prob-lbl-item away-lbl">
+          <span class="prob-dot" style="background-color: #3B82F6;"></span>
+          客勝 ${probAway.toFixed(1)}%
+        </span>
+      </div>
+    </div>
+  `;
+}
+
 function createMatchCard(match) {
   try {
     const isSig = isSignificantChange(match) ? 'is-significant' : '';
@@ -194,7 +246,7 @@ function createMatchCard(match) {
     // 晉級與輪休標籤
     let advHtml = '';
     if (match.advancement_status) {
-      advHtml = `<div class="alert-tag" style="background:var(--warning);color:#000;">⚠️ 輪休風險</div>`;
+      advHtml = `<div class="alert-tag rotation-tag" title="${match.advancement_status}">⚠️ 輪休風險</div>`;
     }
 
     // Elo 差距標籤
@@ -266,23 +318,7 @@ function createMatchCard(match) {
     }
 
     // 勝率進度條
-    let probHtml = '';
-    if (match.true_probs && Object.keys(match.true_probs).length > 0) {
-      const probHome = match.true_probs[match.home_team] || 50;
-      const probAway = match.true_probs[match.away_team] || 50;
-      probHtml = `
-        <div class="prob-container">
-          <div class="prob-labels">
-            <span class="${getGoldClass(probHome)}" style="color: var(--primary)">${probHome.toFixed(1)}%</span>
-            <span class="prob-title">AI 真實勝率</span>
-            <span class="${getGoldClass(probAway)}" style="color: var(--warning)">${probAway.toFixed(1)}%</span>
-          </div>
-          <div class="prob-bar">
-            <div class="prob-fill" style="width: ${probHome}%"></div>
-          </div>
-        </div>
-      `;
-    }
+    const probHtml = renderTrueProbsBar(match.true_probs, match.home_team, match.away_team);
 
     let aiHtml = '';
     if (match.ai_analysis) {
@@ -543,10 +579,19 @@ function openMatchDetail(matchId) {
     aiHtml = `<div class="ai-content modal-ai">${displayAnalysis}</div>`;
   }
 
-  // Prob bar
-  const probHome = match.true_probs?.[match.home_team] || 50;
-  const probAway = match.true_probs?.[match.away_team] || 50;
-  const getGoldClass = (prob) => prob >= 60.0 ? 'gold-prob' : '';
+  // 晉級與輪休警告
+  let advModalHtml = '';
+  if (match.advancement_status) {
+    advModalHtml = `
+      <div class="modal-rotation-alert">
+        <span class="warning-icon">⚠️</span>
+        <div class="warning-content">
+          <div class="warning-title">主力輪休／晉級狀態警示</div>
+          <div class="warning-desc">${match.advancement_status}</div>
+        </div>
+      </div>
+    `;
+  }
 
   content.innerHTML = `
     <div class="modal-header-bar">
@@ -555,14 +600,8 @@ function openMatchDetail(matchId) {
     </div>
     <div class="modal-meta">${match.league} | 開賽: ${formatTime(match.commence_time)}</div>
 
-    <div class="modal-prob-bar">
-      <div class="prob-labels">
-        <span class="${getGoldClass(probHome)}" style="color:var(--primary)">${probHome.toFixed(1)}%</span>
-        <span class="prob-title">真實勝率</span>
-        <span class="${getGoldClass(probAway)}" style="color:var(--warning)">${probAway.toFixed(1)}%</span>
-      </div>
-      <div class="prob-bar"><div class="prob-fill" style="width:${probHome}%"></div></div>
-    </div>
+    ${renderTrueProbsBar(match.true_probs, match.home_team, match.away_team)}
+    ${advModalHtml}
 
     ${fatigueHtml}
     ${sharpModalHtml}

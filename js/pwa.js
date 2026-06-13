@@ -19,7 +19,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // ============================================================
 //  版本更新說明 + PWA 引導
 // ============================================================
-const CURRENT_VERSION = "1.9.3";
+const CURRENT_VERSION = "1.9.4";
 
 function showReleaseNotes() {
   // 每個版本只顯示一次
@@ -54,24 +54,20 @@ function showReleaseNotes() {
         <div style="font-size:0.85rem; color:#6B7280; font-weight:600; margin-bottom:0.75rem; text-transform:uppercase; letter-spacing:1px;">更新內容</div>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#DBEAFE; color:#2563EB; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🎨</span>
-            全新 UI 介面大改版
+            <span style="background:#D1FAE5; color:#16A34A; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🔋</span>
+            AI 真實勝率體力條 (滿格色彩)
           </li>
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#D1FAE5; color:#16A34A; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🤖</span>
-            AI 整合網友風向分析
+            <span style="background:#FEE2E2; color:#DC2626; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">⚠️</span>
+            輪休與晉級警示 (呼吸光與內頁提示)
           </li>
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#FEF3C7; color:#D97706; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🗓️</span>
-            台灣賽程表 (UTC+8)
+            <span style="background:#DBEAFE; color:#2563EB; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">📋</span>
+            查看完整分析按鈕化 (加亮放大)
           </li>
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#FCE7F3; color:#DB2777; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">📱</span>
-            支援手機 App 模式
-          </li>
-          <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#E0E7FF; color:#4F46E5; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">📊</span>
-            歷史回顧擴充 (11~13號)
+            <span style="background:#E0E7FF; color:#4F46E5; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">📱</span>
+            分析內頁 UI/字體加大與質感提升
           </li>
         </ul>
       </div>
