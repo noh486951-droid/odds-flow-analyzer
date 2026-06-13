@@ -1026,11 +1026,16 @@ function clearHighlights() {
   document.querySelectorAll('.tour-parent-elevate').forEach(el => {
     el.classList.remove('tour-parent-elevate');
   });
+}
+
+function terminateTour() {
+  clearHighlights();
   const existingBackdrop = document.getElementById('tour-guide-backdrop');
   if (existingBackdrop) existingBackdrop.remove();
   const existingOverlay = document.getElementById('tour-guide-overlay');
   if (existingOverlay) existingOverlay.remove();
 }
+
 
 function updateTourCardPosition(targetEl) {
   const overlay = document.getElementById('tour-guide-overlay');
@@ -1063,7 +1068,7 @@ function showTourStep(stepIndex) {
 
   if (stepIndex >= tourSteps.length) {
     localStorage.setItem('tour_completed', 'true');
-    clearHighlights();
+    terminateTour();
     return;
   }
 
@@ -1167,7 +1172,7 @@ function showTourStep(stepIndex) {
   }, 150);
 
   document.getElementById('tourSkipBtn').addEventListener('click', () => {
-    clearHighlights();
+    terminateTour();
     localStorage.setItem('tour_completed', 'true');
   });
 
