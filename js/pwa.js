@@ -97,105 +97,164 @@ function checkAndShowPWA() {
   const isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator.standalone);
   const isAndroidStandalone = window.matchMedia('(display-mode: standalone)').matches;
 
+  // 如果已經是獨立應用模式，則不用提示
   if (isInStandaloneMode || isAndroidStandalone) return;
 
-  if (isIos) {
-    showIosInstallPrompt();
-  } else if (/android|mobile/.test(ua)) {
-    if (deferredPrompt) {
-      showAndroidInstallPrompt();
-    } else {
-      showGenericMobilePrompt();
-    }
+  // 如果是行動裝置，顯示統一的安裝引導視窗
+  if (isIos || /android|mobile/.test(ua)) {
+    showUnifiedPwaModal();
   }
 }
 
-function showAndroidInstallPrompt() {
-  if (localStorage.getItem('pwa_prompt_dismissed')) return;
-  const banner = createPwaBanner(
-    '取得全螢幕 App 體驗',
-    '一鍵安裝到手機桌面',
-    true
-  );
-  document.body.appendChild(banner);
-}
+function showUnifiedPwaModal() {
+  if (localStorage.getItem('pwa_prompt_dismissed') === 'true') return;
 
-function showGenericMobilePrompt() {
-  if (localStorage.getItem('pwa_prompt_dismissed')) return;
-  const banner = createPwaBanner(
-    '取得全螢幕 App 體驗',
-    '點擊瀏覽器選單 (⋮) → 「加到主畫面」',
-    false
-  );
-  document.body.appendChild(banner);
-}
-
-function createPwaBanner(title, desc, hasInstall) {
-  const banner = document.createElement('div');
-  banner.className = 'pwa-banner';
-  banner.innerHTML = `
-    <div class="pwa-content">
-      <span class="pwa-icon">⚽</span>
-      <div>
-        <div class="pwa-title">${title}</div>
-        <div class="pwa-desc">${desc}</div>
-      </div>
-    </div>
-    <div class="pwa-actions">
-      ${hasInstall ? '<button id="pwaInstallBtn" class="pwa-btn-install">安裝</button>' : ''}
-      <button class="pwa-btn-close" onclick="this.closest(\'.pwa-banner\').remove(); localStorage.setItem(\'pwa_prompt_dismissed\',\'true\');">✕</button>
-    </div>
+  const overlay = document.createElement('div');
+  overlay.id = 'pwa-guide-overlay';
+  overlay.style.cssText = `
+    position: fixed; inset: 0; z-index: 9999;
+    background: rgba(15, 23, 42, 0.65);
+    display: flex; justify-content: center; align-items: center;
+    backdrop-filter: blur(8px);
+    padding: 1.25rem;
   `;
 
-  if (hasInstall) {
-    setTimeout(() => {
-      const btn = document.getElementById('pwaInstallBtn');
-      if (btn) {
-        btn.addEventListener('click', async () => {
-          banner.remove();
-          if (deferredPrompt) {
-            deferredPrompt.prompt();
-            await deferredPrompt.userChoice;
-            deferredPrompt = null;
-          }
-        });
-      }
-    }, 100);
-  }
-  return banner;
-}
-
-function showIosInstallPrompt() {
-  if (localStorage.getItem('ios_pwa_dismissed')) return;
-
-  const modal = document.createElement('div');
-  modal.style.cssText = `
-    position:fixed; inset:0; z-index:9999;
-    background:rgba(0,0,0,0.6);
-    display:flex; justify-content:center; align-items:flex-end;
-    backdrop-filter:blur(4px);
-  `;
-  modal.innerHTML = `
+  overlay.innerHTML = `
     <div style="
-      background:#FFFFFF; width:100%; padding:2rem;
-      border-radius:20px 20px 0 0; position:relative;
-      box-shadow:0 -10px 30px rgba(0,0,0,0.2);
+      background: #FFFFFF; border: 1px solid rgba(226, 232, 240, 0.8); border-radius: 20px;
+      max-width: 540px; width: 100%; padding: 1.75rem; position: relative;
+      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.3);
+      animation: modalSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex; flex-direction: column; gap: 1.25rem;
+      font-family: system-ui, -apple-system, sans-serif;
     ">
-      <button id="iosPwaCloseBtn" style="
-        position:absolute; right:15px; top:15px;
-        background:#E5E7EB; border:none; width:32px; height:32px;
-        border-radius:50%; font-size:1.2rem; cursor:pointer; color:#6B7280;
-      ">✕</button>
+      <!-- 關閉按鈕 -->
+      <button id="pwaCloseBtn" style="
+        position: absolute; right: 16px; top: 16px;
+        background: #F1F5F9; border: none; width: 32px; height: 32px;
+        border-radius: 50%; font-size: 1rem; cursor: pointer; color: #64748B;
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.2s;
+      " onmouseover="this.style.background='#E2E8F0'" onmouseout="this.style.background='#F1F5F9'">✕</button>
 
-      <h3 style="color:#1F2937; margin-bottom:0.75rem; font-size:1.3rem; font-weight:700; text-align:center;">
-        📱 加入主畫面
-      </h3>
-      <p style="color:#6B7280; margin-bottom:1rem; text-align:center; font-size:0.95rem;">
-        享受無干擾的全螢幕 App 體驗
-      </p>
+      <!-- 頭部 -->
+      <div style="text-align: center;">
+        <span style="font-size: 2.5rem;">📱</span>
+        <h2 style="color: #0F172A; font-size: 1.35rem; font-weight: 800; margin-top: 0.5rem; margin-bottom: 0.25rem;">
+          安裝 Odds Flow Web App
+        </h2>
+        <p style="color: #64748B; font-size: 0.85rem; line-height: 1.45; max-width: 400px; margin: 0 auto;">
+          將程式加入主畫面，享有全螢幕、獨立視窗與更流暢的運彩分析體驗
+        </p>
+      </div>
 
-      <div style="background:#F9FAFB; padding:1.25rem; border-radius:12px; border:1px solid #E5E7EB;">
-        <ol style="margin:0 0 0 1.25rem; font-size:1.05rem; color:#1F2937; line-height:2;">
+      <!-- 雙欄內容 -->
+      <div class="pwa-columns-wrap" style="
+        display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
+        border-top: 1px solid #F1F5F9; border-bottom: 1px solid #F1F5F9;
+        padding: 1.25rem 0;
+      ">
+        <!-- Android 欄位 -->
+        <div style="
+          background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px;
+          padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem;
+        ">
+          <h3 style="color: #10B981; font-size: 0.95rem; font-weight: 800; display: flex; align-items: center; gap: 0.35rem; margin: 0;">
+            🤖 Android 系統
+          </h3>
+          <div style="font-size: 0.85rem; color: #334155; line-height: 1.6; flex: 1; display: flex; flex-direction: column; gap: 0.5rem;">
+            <p style="margin: 0; font-weight: bold; color: #0F172A;">推薦方式：</p>
+            ${deferredPrompt ? `
+              <button id="pwaOneClickInstallBtn" style="
+                width: 100%; background: #10B981; color: #FFFFFF;
+                border: none; padding: 0.55rem; border-radius: 8px;
+                font-weight: 700; cursor: pointer; transition: all 0.2s;
+                font-size: 0.85rem; text-align: center;
+                box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
+              " onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10B981'">
+                ⚡ 一鍵快速安裝
+              </button>
+            ` : `
+              <span style="color:#64748B; font-size: 0.8rem; display:block; background:#E2E8F0; padding:6px 8px; border-radius:6px; text-align:center; font-weight: 600;">
+                ( 點擊下方按鈕即可安裝 )
+              </span>
+            `}
+            
+            <p style="margin: 0.25rem 0 0 0; border-top: 1px dashed #CBD5E1; padding-top: 0.5rem; font-weight: bold; color: #0F172A;">手動安裝方式：</p>
+            <ol style="margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.8rem; color: #475569;">
+              <li>點擊 Chrome 右上角選單按鈕（<code>⋮</code> 圖示）</li>
+              <li>選擇 <strong>「加到主畫面」</strong> 或 <strong>「安裝應用程式」</strong></li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- iOS 欄位 -->
+        <div style="
+          background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px;
+          padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem;
+        ">
+          <h3 style="color: #2563EB; font-size: 0.95rem; font-weight: 800; display: flex; align-items: center; gap: 0.35rem; margin: 0;">
+            🍎 iOS / iPhone
+          </h3>
+          <div style="font-size: 0.85rem; color: #334155; line-height: 1.6; flex: 1; display: flex; flex-direction: column; gap: 0.5rem;">
+            <p style="margin: 0; font-weight: bold; color: #0F172A;">Safari 安裝步驟：</p>
+            <ol style="margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.8rem; color: #475569;">
+              <li>使用 Safari 瀏覽器打開本站</li>
+              <li>點擊底部工具列的 <strong>「分享」</strong> 按鈕（⬆️ 分享圖示）</li>
+              <li>在選單中向下滑動，點擊 <strong>「加入主畫面」</strong>（➕ 圖示）</li>
+              <li>確認名稱並點擊右上角的 <strong>「新增」</strong></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- 底部按鈕 -->
+      <button id="pwaCloseNotesBtn" style="
+        width: 100%; background: #0F172A; color: #FFFFFF;
+        padding: 0.8rem; border: none; border-radius: 10px;
+        font-size: 0.95rem; cursor: pointer; font-weight: 700;
+        transition: all 0.2s;
+      " onmouseover="this.style.background='#1E293B'" onmouseout="this.style.background='#0F172A'">
+        我知道了，暫不安裝
+      </button>
+    </div>
+  `;
+
+  // 手機版自動垂直排列樣式
+  const style = document.createElement('style');
+  style.innerHTML = `
+    @media (max-width: 520px) {
+      .pwa-columns-wrap {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+  document.body.appendChild(overlay);
+
+  const close = () => {
+    overlay.remove();
+    style.remove();
+    localStorage.setItem('pwa_prompt_dismissed', 'true');
+  };
+
+  document.getElementById('pwaCloseBtn').addEventListener('click', close);
+  document.getElementById('pwaCloseNotesBtn').addEventListener('click', close);
+
+  const oneClickBtn = document.getElementById('pwaOneClickInstallBtn');
+  if (oneClickBtn) {
+    oneClickBtn.addEventListener('click', async () => {
+      overlay.remove();
+      style.remove();
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+      }
+    });
+  }
+}color:#1F2937; line-height:2;">
           <li>點擊底部 <strong>分享按鈕</strong> ⬆️</li>
           <li>選擇 <strong>「加入主畫面」</strong> ➕</li>
         </ol>
