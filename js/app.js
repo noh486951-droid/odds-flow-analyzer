@@ -91,9 +91,14 @@ const TEAM_NAME_ZH = {
   "North Macedonia": "北馬其頓",
   "Montenegro": "蒙特內哥羅",
   "Bosnia and Herzegovina": "波士尼亞與赫塞哥維納",
+  "Bosnia & Herzegovina": "波士尼亞與赫塞哥維納",
   "South Africa": "南非",
   "Ivory Coast": "象牙海岸",
-  "Côte d'Ivoire": "象牙海岸"
+  "Côte d'Ivoire": "象牙海岸",
+  "DR Congo": "民主剛果",
+  "Jordan": "約旦",
+  "USA": "美國",
+  "Uzbekistan": "烏茲別克"
 };
 
 /** 取得中文隊名，找不到就回傳原文 */
