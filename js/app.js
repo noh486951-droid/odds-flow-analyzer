@@ -1028,6 +1028,24 @@ function clearHighlights() {
   });
 }
 
+function updateTourCardPosition(targetEl) {
+  const overlay = document.getElementById('tour-guide-overlay');
+  if (!overlay || !targetEl) return;
+
+  const rect = targetEl.getBoundingClientRect();
+  const centerY = rect.top + rect.height / 2;
+  const viewportHeight = window.innerHeight;
+
+  if (centerY > viewportHeight / 2) {
+    // 目標在畫面下半部，將導覽對話框移到最上方，避免遮擋
+    overlay.style.alignItems = 'flex-start';
+  } else {
+    // 目標在畫面上半部，將導覽對話框移到最下方
+    overlay.style.alignItems = 'flex-end';
+  }
+}
+
+
 function startAppTour() {
   currentTourStep = 0;
   showTourStep(0);
@@ -1121,6 +1139,9 @@ function showTourStep(stepIndex) {
       }
       if (el) {
         highlightElement(el);
+        // 立即計算位置，並在 300ms (滾動完成後) 再次校正位置，確保不遮擋
+        updateTourCardPosition(el);
+        setTimeout(() => updateTourCardPosition(el), 300);
       } else {
         clearHighlights();
       }
