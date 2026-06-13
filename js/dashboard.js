@@ -59,9 +59,8 @@ window.DashboardController = {
       filtered = matches.filter(m => {
         const league = (m.league || '').toLowerCase();
         const filter = this.currentFilter.toLowerCase();
-        // 如果是 soccer，涵蓋所有包含 'epl', 'la liga', 'ucl' 等的聯賽
-        if (filter === 'soccer') {
-          return !league.includes('nba') && !league.includes('basketball');
+        if (filter === 'world_cup') {
+          return league.includes('world') || league.includes('世足') || league.includes('fifa');
         }
         return league.includes(filter);
       });

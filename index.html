@@ -69,8 +69,7 @@
       <!-- 聯賽篩選 -->
       <div class="filter-bar" id="leagueFilter">
         <button class="filter-btn active" data-league="all">全部</button>
-        <button class="filter-btn" data-league="NBA">🏀 NBA</button>
-        <button class="filter-btn" data-league="soccer">⚽ 足球</button>
+        <button class="filter-btn" data-league="world_cup">⚽ 世足賽</button>
         <div class="filter-divider"></div>
         <button class="filter-btn toggle-btn" id="highProbFilter" title="僅顯示任一盤口真實勝率 ≥ 60% 且 AI 已完成分析的焦點賽事">💎 高勝率 <span class="filter-hint">≥60%</span></button>
       </div>
@@ -136,15 +135,9 @@
     <!-- ===== 新聞快遞 ===== -->
     <section class="view-panel" id="view-news">
       <div class="news-columns">
-        <div class="news-column">
-          <h3 class="news-col-title">🏀 NBA 新聞</h3>
-          <div class="news-list" id="nbaNewsList">
-            <div class="loading-state"><div class="spinner"></div></div>
-          </div>
-        </div>
-        <div class="news-column">
-          <h3 class="news-col-title">⚽ 足球新聞</h3>
-          <div class="news-list" id="soccerNewsList">
+        <div class="news-column" style="width: 100%;">
+          <h3 class="news-col-title">⚽ 世足最新消息</h3>
+          <div class="news-list" id="worldCupNewsList">
             <div class="loading-state"><div class="spinner"></div></div>
           </div>
         </div>

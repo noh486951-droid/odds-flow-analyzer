@@ -13,7 +13,14 @@ from google import genai
 from google.genai import types
 from datetime import datetime, timezone, timedelta
 import time as time_module
+import sys
 
+# 修正 Windows 終端機 Emoji 輸出編碼問題
+if sys.stdout.encoding != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 # TheSportsDB 免費 API (不需註冊)
 SPORTSDB_BASE = "https://www.thesportsdb.com/api/v1/json/3"
 SPORTSDB_CACHE = {}  # team_name -> team_id cache
@@ -46,36 +53,22 @@ TZ_TAIPEI = timezone(timedelta(hours=8))
 # The Odds API 設定
 ODDS_API_BASE = "https://api.the-odds-api.com/v4/sports"
 
-# 要追蹤的聯賽 (輪替策略: 每次抓 NBA + 1個足球聯賽)
+# 要追蹤的聯賽 (世足賽專屬)
 LEAGUES = {
-    "basketball_nba": "NBA",
-    "soccer_epl": "英超 EPL",
-    "soccer_spain_la_liga": "西甲 La Liga",
-    "soccer_uefa_champs_league": "歐冠 UCL",
-    "soccer_italy_serie_a": "義甲 Serie A",
-    "soccer_germany_bundesliga": "德甲 Bundesliga",
+    "soccer_fifa_world_cup": "世足 FIFA World Cup",
 }
 
-# 足球聯賽輪替清單
+# 足球聯賽輪替清單 (相容用)
 SOCCER_LEAGUES = [
-    "soccer_epl",
-    "soccer_spain_la_liga",
-    "soccer_uefa_champs_league",
-    "soccer_italy_serie_a",
-    "soccer_germany_bundesliga",
+    "soccer_fifa_world_cup",
 ]
 
 # 變動門檻 (超過此值才觸發 AI 分析)
 ODDS_CHANGE_THRESHOLD = 0.05  # 5%
 
-# 新聞 RSS 來源 (中文優先、英文補充)
+# 新聞 RSS 來源 (世足/足球專屬)
 NEWS_RSS = {
-    "nba": [
-        "https://tw.news.yahoo.com/rss/nba",
-        "https://www.espn.com/espn/rss/nba/news",
-        "https://sports.yahoo.com/nba/rss.xml",
-    ],
-    "soccer": [
+    "world_cup": [
         "https://tw.news.yahoo.com/rss/soccer",
         "http://feeds.bbci.co.uk/sport/football/rss.xml",
         "https://www.espn.com/espn/rss/soccer/news",
@@ -960,7 +953,7 @@ def translate_news_titles(news_dict):
     all_titles = []
     title_map = {}  # index -> (category, item_index)
     
-    for category in ["nba", "soccer"]:
+    for category in ["world_cup"]:
         for i, item in enumerate(news_dict.get(category, [])):
             title = item.get("title", "")
             # 只翻譯英文標題 (簡單判斷: 包含拉丁字母且無中文)
@@ -1571,8 +1564,7 @@ def build_output(all_matches, news, significant_matches):
         "matches": {},
         "leagues": {},
         "news": {
-            "nba": [],
-            "soccer": [],
+            "world_cup": [],
         },
         "significant_changes": [],
         "stats": {
@@ -1597,8 +1589,7 @@ def build_output(all_matches, news, significant_matches):
         output["leagues"][league].append(match_id)
 
     # 新聞
-    output["news"]["nba"] = news.get("nba", [])[:10]
-    output["news"]["soccer"] = news.get("soccer", [])[:10]
+    output["news"]["world_cup"] = news.get("world_cup", [])[:10]
 
     # 顯著變動
     output["significant_changes"] = [m["id"] for m in significant_matches]
@@ -1754,9 +1745,9 @@ def main():
     print("\n📂 載入現有數據...")
     existing_data = load_json(CURRENT_FILE)
 
-    # 2. 決定本次要抓取的聯賽 (NBA + 輪替1個足球聯賽)
-    soccer_league = get_current_soccer_league()
-    leagues_to_fetch = ["basketball_nba", soccer_league]
+    # 2. 決定本次要抓取的聯賽
+    soccer_league = "soccer_fifa_world_cup"
+    leagues_to_fetch = [soccer_league]
 
     # ── DEBUG 模式: 跳過 Odds API，用快取資料 ──
     if DEBUG_SKIP_ODDS:
@@ -1773,7 +1764,7 @@ def main():
         significant = get_significant_changes(matches_with_changes)
         print(f"  📈 共 {len(significant)} 場比賽符合 AI 分析門檻 (勝率 ≥ 60%)")
     else:
-        print(f"\n📡 本次抓取: NBA + {LEAGUES[soccer_league]}")
+        print(f"\n📡 本次抓取: {LEAGUES.get(soccer_league, soccer_league)}")
         key_count = len(key_manager.keys)
         mode_str = f"{key_count} Key 模式" if key_count >= 2 else "單 Key 模式"
         print(f"  🔑 Odds API Key 數量: {key_count} ({mode_str})")
@@ -1802,10 +1793,9 @@ def main():
     # 5. 抓取新聞
     print("\n📰 抓取最新新聞...")
     news = {
-        "nba": fetch_news("nba"),
-        "soccer": fetch_news("soccer"),
+        "world_cup": fetch_news("world_cup"),
     }
-    print(f"  NBA 新聞: {len(news['nba'])} 則, 足球新聞: {len(news['soccer'])} 則")
+    print(f"  世足新聞: {len(news['world_cup'])} 則")
 
     # 5.1 翻譯英文新聞標題 (批量 1 次 API 呼叫)
     # 注意：翻譯失敗不應影響後續 AI 分析，所以用 try-except 包起來
@@ -1821,7 +1811,7 @@ def main():
 
     # 5.5 傷兵篩選
     print("\n🏥 篩選傷兵資訊...")
-    all_news = news["nba"] + news["soccer"]
+    all_news = news["world_cup"]
     injury_count = 0
     for match in matches_with_changes:
         injuries = filter_injury_news(all_news, match["home_team"], match["away_team"])
@@ -1830,9 +1820,7 @@ def main():
             injury_count += len(injuries)
     print(f"  🏥 共發現 {injury_count} 則傷兵相關新聞")
 
-    # 5.6 NBA 背靠背偵測
-    print("\n😴 偵測 NBA 背靠背...")
-    detect_back_to_back(matches_with_changes)
+    # 5.6 NBA 背靠背偵測已移除
 
     # 5.7 TheSportsDB: H2H + 近5場戰績 (只對前8場比賽抓取，避免速率限制)
     print("\n📊 抓取 H2H 交手紀錄與近期戰績...")
@@ -1880,53 +1868,20 @@ def main():
         key_count = len(gemini_key_manager.keys)
         MAX_AI = 3 if key_count == 1 else (5 if key_count == 2 else 7)
 
-        # 1. 分成 NBA 和足球兩組
-        nba_matches = [m for m in significant if "nba" in m.get("sport_key", "").lower() or "basketball" in m.get("sport_key", "").lower()]
-        soccer_matches = [m for m in significant if m not in nba_matches]
-
-        # 2. 排序優先級：尚未分析過的排前面 → 再按勝率排
+        # 1. 排序優先級：尚未分析過的排前面 → 再按勝率排
         def sort_key(m):
             already_analyzed = 1 if m.get("analysis_source") == "gemini" else 0
             max_prob = max(m.get("true_probs", {}).values(), default=50)
             return (already_analyzed, -max_prob)  # 未分析的排前面，同狀態內按勝率高排前
 
-        nba_matches.sort(key=sort_key)
-        soccer_matches.sort(key=sort_key)
+        significant.sort(key=sort_key)
+        ai_targets = significant[:MAX_AI]
 
-        # 3. 分配配額：確保兩邊都有名額
-        if nba_matches and soccer_matches:
-            # 至少各保留 2 個名額（有足球時）
-            soccer_quota = max(2, MAX_AI // 3)  # 至少 2 場足球
-            nba_quota = MAX_AI - soccer_quota
-            # 如果某邊不夠，把名額讓給另一邊
-            if len(nba_matches) < nba_quota:
-                soccer_quota += (nba_quota - len(nba_matches))
-                nba_quota = len(nba_matches)
-            if len(soccer_matches) < soccer_quota:
-                nba_quota += (soccer_quota - len(soccer_matches))
-                soccer_quota = len(soccer_matches)
-        elif soccer_matches:
-            soccer_quota = MAX_AI
-            nba_quota = 0
-        else:
-            nba_quota = MAX_AI
-            soccer_quota = 0
+        print(f"\n🤖 啟動 AI 分析... (符合條件 {len(significant)} 場, 取 {len(ai_targets)} 場)")
 
-        ai_targets = nba_matches[:nba_quota] + soccer_matches[:soccer_quota]
-        # 混合排序，讓分析結果交替出現
-        ai_targets.sort(key=sort_key)
-
-        nba_count = sum(1 for m in ai_targets if "nba" in m.get("sport_key", "").lower() or "basketball" in m.get("sport_key", "").lower())
-        soccer_count = len(ai_targets) - nba_count
-        print(f"\n🤖 啟動 AI 分析... (符合條件 {len(significant)} 場, 取 {len(ai_targets)} 場: NBA {nba_count} + 足球 {soccer_count})")
-
-        # 根據聯賽類型選擇新聞
         consecutive_failures = 0
         for idx, match in enumerate(ai_targets):
-            if "nba" in match.get("sport_key", ""):
-                relevant_news = news["nba"]
-            else:
-                relevant_news = news["soccer"]
+            relevant_news = news["world_cup"]
             print(f"\n  --- 分析第 {idx+1}/{len(ai_targets)} 場: {match['home_team']} vs {match['away_team']} ({match.get('league','')}) ---")
             analyze_with_ai([match], relevant_news)
 
