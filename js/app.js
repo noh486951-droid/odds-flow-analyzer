@@ -126,6 +126,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // 載入即時數據
   await fetchCurrentData();
+
+  // 自動開啟導覽 (如果是第一次拜訪)
+  if (localStorage.getItem('tour_completed') !== 'true') {
+    setTimeout(startAppTour, 1500);
+  }
 });
 
 function setupNavigation() {
@@ -134,19 +139,29 @@ function setupNavigation() {
   
   navBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
+      const targetBtn = e.currentTarget;
+      const targetView = targetBtn.getAttribute('data-view');
+      
+      // 如果按鈕是導覽，跳過面板切換與 active class 更新
+      if (!targetView) return;
+      
       // Update active button
       navBtns.forEach(b => b.classList.remove('active'));
-      const targetBtn = e.currentTarget;
       targetBtn.classList.add('active');
-      
-      // Update active panel
-      const targetView = targetBtn.getAttribute('data-view');
       AppState.activeView = targetView;
       
       panels.forEach(p => p.classList.remove('active'));
       document.getElementById(`view-${targetView}`).classList.add('active');
     });
   });
+
+  // 綁定導覽按鈕
+  const tourBtn = document.getElementById('nav-tour');
+  if (tourBtn) {
+    tourBtn.addEventListener('click', () => {
+      startAppTour();
+    });
+  }
 }
 
 // ============================================================
@@ -901,3 +916,151 @@ function initParticles() {
     `;
   });
 }
+
+// ============================================================
+// Onboarding Guided Tour
+// ============================================================
+let currentTourStep = 0;
+const tourSteps = [
+  {
+    title: "👋 歡迎使用 Odds Flow 分析器",
+    desc: "這是由 AI 驅動的運彩盤口分析系統，整合即時看板、盤口走勢、AI 數據預估對照表與串關計算。讓我用 30 秒帶您熟悉核心功能！",
+    view: "dashboard",
+    buttonText: "🚀 開始導覽"
+  },
+  {
+    title: "📊 即時看板：變動與警示",
+    desc: "在此展示所有進行中的賽事。當盤口賠率相較初盤有顯著變動時，系統會自動以紅框標示，並在卡片頂部亮起輪休、疲勞或資金流警示。",
+    view: "dashboard",
+    buttonText: "下一頁"
+  },
+  {
+    title: "📅 智能篩選：精準過濾",
+    desc: "您可以使用日期下拉選單，或點擊「💎 高勝率」快速過濾出任一盤口真實勝率 ≥ 60% 且具備 AI 分析的焦點賽事。",
+    view: "dashboard",
+    buttonText: "下一頁"
+  },
+  {
+    title: "🤖 AI 勝率與預測數據表",
+    desc: "每場比賽底部均有真實勝率體力條。點擊「查看完整分析」即可閱讀 AI 預估比分（含信心度）、大小球，以及本次新增的勝平負與進球率預估對照表！",
+    view: "dashboard",
+    buttonText: "下一頁"
+  },
+  {
+    title: "📅 歷史回顧：回測與戰績",
+    desc: "選擇過去的日期，即可查看完賽比數，並統計 AI 預測的精準命中率（包含命中、未中、和局）。AI 也會自動上網搜尋補全當日交手紀錄。",
+    view: "history",
+    buttonText: "下一頁"
+  },
+  {
+    title: "🗓️ 台灣賽程：開賽追蹤",
+    desc: "此專區將所有世足比賽時間自動轉換為台北時間 (UTC+8)，讓您隨時隨地精準掌握開賽時間。",
+    view: "schedule",
+    buttonText: "下一頁"
+  },
+  {
+    title: "🧮 串關計算機：投注規劃",
+    desc: "可自由新增多關賽事賠率，自動為您計算串關總倍率、投注總獎金與淨利潤，是您投注規劃的得力助手。",
+    view: "calculator",
+    buttonText: "下一頁"
+  },
+  {
+    title: "🎉 導覽完成！",
+    desc: "您已掌握 Odds Flow 的所有核心功能。隨時可以點擊導航欄最後的「重看導覽」按鈕再次閱讀。祝您投注順利、百戰百勝！",
+    view: "dashboard",
+    buttonText: "開始體驗"
+  }
+];
+
+function startAppTour() {
+  currentTourStep = 0;
+  showTourStep(0);
+}
+
+function showTourStep(stepIndex) {
+  const existing = document.getElementById('tour-guide-overlay');
+  if (existing) existing.remove();
+
+  if (stepIndex >= tourSteps.length) {
+    localStorage.setItem('tour_completed', 'true');
+    return;
+  }
+
+  const step = tourSteps[stepIndex];
+  
+  if (step.view) {
+    const navBtn = document.getElementById(`nav-${step.view}`);
+    if (navBtn) {
+      navBtn.click();
+    }
+  }
+
+  const overlay = document.createElement('div');
+  overlay.id = 'tour-guide-overlay';
+  overlay.style.cssText = `
+    position: fixed; inset: 0; z-index: 9999;
+    background: rgba(15, 23, 42, 0.4);
+    display: flex; justify-content: center; align-items: flex-end;
+    pointer-events: none;
+    padding: 2rem;
+  `;
+
+  overlay.innerHTML = `
+    <div style="
+      background: #1E2442; border: 1.5px solid #6366F1; border-radius: 20px;
+      max-width: 480px; width: 100%; padding: 1.75rem; position: relative;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      animation: modalSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex; flex-direction: column; gap: 1rem;
+      pointer-events: auto;
+      color: #FFFFFF;
+      font-family: system-ui, -apple-system, sans-serif;
+    ">
+      <!-- 步驟數 -->
+      <div style="color: #818CF8; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px;">
+        第 ${stepIndex + 1} 步 / 共 ${tourSteps.length} 步
+      </div>
+
+      <!-- 標題 -->
+      <h3 style="margin: 0; color: #FFFFFF; font-size: 1.25rem; font-weight: 800;">
+        ${step.title}
+      </h3>
+
+      <!-- 說明文 -->
+      <p style="margin: 0; color: #E2E8F0; font-size: 0.95rem; line-height: 1.55;">
+        ${step.desc}
+      </p>
+
+      <!-- 按鈕區 -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
+        <button id="tourSkipBtn" style="
+          background: transparent; border: none; color: #94A3B8;
+          font-size: 0.9rem; font-weight: 600; cursor: pointer; padding: 0.5rem;
+          transition: color 0.2s;
+        " onmouseover="this.style.color='#CBD5E1'" onmouseout="this.style.color='#94A3B8'">
+          跳過導覽
+        </button>
+        <button id="tourNextBtn" style="
+          background: linear-gradient(135deg, #818CF8, #6366F1); color: #FFFFFF;
+          border: none; padding: 0.6rem 1.4rem; border-radius: 10px;
+          font-weight: 700; cursor: pointer; transition: all 0.2s;
+          font-size: 0.95rem; box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+        " onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform='translateY(0)'">
+          ${step.buttonText}
+        </button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  document.getElementById('tourSkipBtn').addEventListener('click', () => {
+    overlay.remove();
+    localStorage.setItem('tour_completed', 'true');
+  });
+
+  document.getElementById('tourNextBtn').addEventListener('click', () => {
+    showTourStep(stepIndex + 1);
+  });
+}
+
