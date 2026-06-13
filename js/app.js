@@ -330,13 +330,25 @@ function createMatchCard(match) {
         displayAnalysis = 'AI 分析暫時無法使用，請參考勝率數據判斷。';
       }
       
-      // 擷取預測比分 Highlight
-      let scorePredictionHtml = '';
-      const scoreMatch = displayAnalysis.match(/預測比分：(.*)/);
+      // 擷取預測比分與大小球 Highlight
+      let predictionHighlightsHtml = '';
+      const scoreMatch = displayAnalysis.match(/預測比分：([^】\n]*)/);
+      const ouMatch = displayAnalysis.match(/大小球推薦：([^】\n]*)/);
+      
+      let highlights = [];
       if (scoreMatch) {
-        scorePredictionHtml = `<div style="margin-top: 8px; padding: 6px; background: rgba(88, 166, 255, 0.15); border-radius: 4px; font-weight: bold; color: var(--primary);">🎯 預測比分：${scoreMatch[1].replace(/】/g, '')}</div>`;
-        displayAnalysis = displayAnalysis.replace(/🎯.*預測比分：.*/g, '');
-        displayAnalysis = displayAnalysis.replace(/【🎯.*預測比分：.*/g, '');
+        highlights.push(`🎯 預測比分：${scoreMatch[1].replace(/】/g, '').trim()}`);
+        displayAnalysis = displayAnalysis.replace(/【?🎯\s*預測比分：[^】\n]*】?/g, '');
+      }
+      if (ouMatch) {
+        highlights.push(`⚽ 大小推薦：${ouMatch[1].replace(/】/g, '').trim()}`);
+        displayAnalysis = displayAnalysis.replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '');
+      }
+      
+      if (highlights.length > 0) {
+        predictionHighlightsHtml = `<div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">` +
+          highlights.map(h => `<div style="padding: 6px; background: rgba(37, 99, 235, 0.08); border: 1px solid rgba(37, 99, 235, 0.15); border-radius: 6px; font-weight: bold; color: var(--primary); font-size: 0.95rem;">${h}</div>`).join('') +
+          `</div>`;
       }
 
       const shortAnalysis = displayAnalysis.length > 120 
@@ -349,7 +361,7 @@ function createMatchCard(match) {
           </div>
           <div class="ai-content">
             ${shortAnalysis}
-            ${scorePredictionHtml}
+            ${predictionHighlightsHtml}
           </div>
         </div>
       `;
@@ -576,7 +588,30 @@ function openMatchDetail(matchId) {
     } else if (displayAnalysis.includes('API 錯誤') || displayAnalysis.includes('failed')) {
       displayAnalysis = 'AI 分析暫時無法使用，請參考勝率數據判斷。';
     }
-    aiHtml = `<div class="ai-content modal-ai">${displayAnalysis}</div>`;
+    
+    // Extract predicted score and over/under
+    let modalHighlightsHtml = '';
+    const scoreMatch = displayAnalysis.match(/預測比分：([^】\n]*)/);
+    const ouMatch = displayAnalysis.match(/大小球推薦：([^】\n]*)/);
+    let modalHighlights = [];
+    
+    if (scoreMatch) {
+      modalHighlights.push(`<div style="flex: 1; min-width: 200px; padding: 0.75rem; background: rgba(37, 99, 235, 0.08); border: 1.5px solid rgba(37, 99, 235, 0.2); border-radius: 8px; font-weight: 800; color: var(--primary); text-align: center; font-size: 1.1rem;">🎯 預測比分：${scoreMatch[1].replace(/】/g, '').trim()}</div>`);
+      displayAnalysis = displayAnalysis.replace(/【?🎯\s*預測比分：[^】\n]*】?/g, '');
+    }
+    if (ouMatch) {
+      modalHighlights.push(`<div style="flex: 1; min-width: 200px; padding: 0.75rem; background: rgba(16, 185, 129, 0.08); border: 1.5px solid rgba(16, 185, 129, 0.2); border-radius: 8px; font-weight: 800; color: #059669; text-align: center; font-size: 1.1rem;">⚽ 大小推薦：${ouMatch[1].replace(/】/g, '').trim()}</div>`);
+      displayAnalysis = displayAnalysis.replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '');
+    }
+    
+    if (modalHighlights.length > 0) {
+      modalHighlightsHtml = `<div style="display: flex; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap;">${modalHighlights.join('')}</div>`;
+    }
+    
+    aiHtml = `
+      ${modalHighlightsHtml}
+      <div class="ai-content modal-ai">${displayAnalysis}</div>
+    `;
   }
 
   // 晉級與輪休警告

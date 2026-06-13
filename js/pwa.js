@@ -19,7 +19,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // ============================================================
 //  版本更新說明 + PWA 引導
 // ============================================================
-const CURRENT_VERSION = "1.9.4";
+const CURRENT_VERSION = "1.9.5";
 
 function showReleaseNotes() {
   // 每個版本只顯示一次

@@ -929,14 +929,7 @@ body {
   }
 }
 
-.card-footer-hint {
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-top: 1rem;
-  padding-top: 0.5rem;
-  border-top: 1px dashed var(--border);
-}
+/* Duplicate card-footer-hint removed to prevent overriding newer styles */
 
 /* ============================================================
    PWA Prompts
@@ -1232,10 +1225,10 @@ body {
   text-align: center;
   font-size: 0.95rem;
   font-weight: 700;
-  color: #FFFFFF;
-  background: linear-gradient(135deg, var(--primary), #3b82f6);
-  padding: 0.6rem;
-  margin-top: 0.8rem;
+  color: #FFFFFF !important;
+  background: linear-gradient(135deg, var(--primary), #3b82f6) !important;
+  padding: 0.65rem;
+  margin-top: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
   transition: all 0.2s ease;
@@ -1243,11 +1236,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
+  border: none !important;
+  opacity: 1 !important;
 }
 
 .match-card:hover .card-footer-hint {
-  opacity: 1;
-  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  background: linear-gradient(135deg, #1d4ed8, #2563eb) !important;
   transform: translateY(-1px);
   box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
 }
