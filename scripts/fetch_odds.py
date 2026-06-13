@@ -1322,19 +1322,33 @@ def build_analysis_prompt(match, news_items, performance_context=""):
         direction = "↑" if ch > 0 else "↓" if ch < 0 else "→"
         prompt += f"- {team}: 初盤 {op} → 現盤 {cur} ({direction} {ch:+.3f}, {pct:+.2f}%)\n"
 
+    # 進階數據
+    elo_diff = match.get("elo_diff", 0)
+    adv_status = match.get("advancement_status", "")
+    xg_stats = match.get("xg_stats", {})
+    rlm = match.get("reverse_line_movement", [])
+    
+    advanced_text = f"""
+- Elo 積分差距: {elo_diff} (正值代表主隊較強)
+- 晉級與輪休狀態: {adv_status if adv_status else '無特殊輪休情報'}
+- xG (預期進球): 主隊 {xg_stats.get('home', {}).get('for')}進/{xg_stats.get('home', {}).get('against')}失, 客隊 {xg_stats.get('away', {}).get('for')}進/{xg_stats.get('away', {}).get('against')}失
+- 反向指標偵測: {', '.join(rlm) if rlm else '無明顯反向移動'}
+"""
+
     prompt += f"""
+## 世足進階數據 (Phase 2)
+{advanced_text}
+
 ## 最新相關新聞
 {news_text}
 
 {performance_context}
 
 ## 你的任務
-1. 結合所有資訊（勝率、盤口走勢、急速移動、傷兵、疲勞、主客場、H2H、天氣），在開頭給出【💡 投注推薦】。
-2. 用 2~3 句話說明推薦原因，必須提到你考量了哪些關鍵因素。
-3. 若有急速移動或聰明錢訊號，特別強調。若盤口走勢顯示單向大幅移動，分析可能原因。
-4. 若有傷兵、背靠背、或惡劣天氣，必須提醒對盤口的影響。
-5. 若【AI 自我學習參考】顯示當前勝率區間的歷史命中率偏低，請在分析中主動提醒，並降低信心程度。
-6. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因。控制在 150 字以內。
+1. 結合所有資訊（勝率、盤口走勢、反向指標、傷兵、輪休可能、Elo 實力、xG火力），給出【💡 投注推薦】。
+2. 用 2~3 句話說明推薦原因，若有確保晉級輪休主力的可能性、或是反向指標，請特別強調。
+3. **你必須在結尾給出一個具體的「預測比分」！**
+4. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因。最後一行必須是【🎯 預測比分：主隊 X:Y 客隊】。控制在 150 字以內。
 """
     return prompt
 
@@ -1728,6 +1742,58 @@ def judge_ai_recommendation(match, home_score, away_score):
 # ============================================================
 # 主流程
 # ============================================================
+# ============================================================
+# 世足進階指標 (Phase 2)
+# ============================================================
+def get_world_cup_elo(team_name):
+    elo_ratings = {
+        "Argentina": 2140, "France": 2120, "Brazil": 2100, "Spain": 2080, "England": 2060,
+        "Germany": 2050, "Portugal": 2040, "Netherlands": 2030, "Italy": 2020, "Croatia": 2010,
+        "Uruguay": 1980, "Belgium": 1970, "Colombia": 1960, "Morocco": 1950,
+        "Japan": 1900, "South Korea": 1880, "United States": 1860, "Mexico": 1850,
+    }
+    return elo_ratings.get(team_name, 1700)
+
+def get_xg_trends(team_name):
+    xg_data = {
+        "Argentina": {"for": 2.1, "against": 0.8},
+        "France": {"for": 2.3, "against": 1.1},
+        "Brazil": {"for": 2.5, "against": 0.9},
+        "Spain": {"for": 1.8, "against": 0.6},
+        "England": {"for": 1.9, "against": 0.7},
+    }
+    return xg_data.get(team_name, {"for": 1.2, "against": 1.2})
+
+def detect_advanced_metrics(matches_with_changes):
+    print("\n🧠 計算世足進階指標 (Elo, xG, 輪休與反向指標)...")
+    for match in matches_with_changes:
+        home = match["home_team"]
+        away = match["away_team"]
+        
+        home_elo = get_world_cup_elo(home)
+        away_elo = get_world_cup_elo(away)
+        match["elo_diff"] = home_elo - away_elo
+        
+        match["xg_stats"] = {
+            "home": get_xg_trends(home),
+            "away": get_xg_trends(away)
+        }
+        
+        match["reverse_line_movement"] = []
+        for team, pct in match.get("change_pct", {}).items():
+            prob = match.get("true_probs", {}).get(team, 50)
+            if prob > 60 and pct > 3.0: 
+                match["reverse_line_movement"].append(
+                    f"🚨 散戶看好但盤口逆行 ({team} 賠率上升 {pct:.1f}%)"
+                )
+        
+        match["advancement_status"] = ""
+        if home_elo - away_elo > 300:
+            match["advancement_status"] = f"⚠️ {home} 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。"
+        elif away_elo - home_elo > 300:
+            match["advancement_status"] = f"⚠️ {away} 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。"
+
+
 def main():
     print("=" * 60)
     print(f"🏀⚽ 運彩盤口變動追蹤器 - {get_now().strftime('%Y/%m/%d %H:%M')}")
@@ -1845,6 +1911,9 @@ def main():
         print(f"  🔥 發現 {sharp_count} 場有急速移動!")
     else:
         print("  ✅ 無急速移動")
+
+    # 5.8.5 世足進階指標 (Phase 2)
+    detect_advanced_metrics(matches_with_changes)
 
     # 5.9 足球天氣查詢 (僅足球賽事)
     print("\n☁️ 查詢足球賽事天氣...")

@@ -175,13 +175,29 @@ function createMatchCard(match) {
       ).join('');
     }
 
-    // 急速移動標籤
+    // 急速移動與反向指標標籤
     let sharpHtml = '';
     const sharp = match.sharp_moves || [];
     if (sharp.length > 0) {
-      sharpHtml = sharp.map(s => 
+      sharpHtml += sharp.map(s => 
         `<div class="alert-tag sharp-tag">${s.level}</div>`
       ).join('');
+    }
+    const rlm = match.reverse_line_movement || [];
+    if (rlm.length > 0) {
+      sharpHtml += `<div class="alert-tag sharp-tag">🚨 反向指標</div>`;
+    }
+
+    // 晉級與輪休標籤
+    let advHtml = '';
+    if (match.advancement_status) {
+      advHtml = `<div class="alert-tag" style="background:var(--warning);color:#000;">⚠️ 輪休風險</div>`;
+    }
+
+    // Elo 差距標籤
+    let eloHtml = '';
+    if (Math.abs(match.elo_diff || 0) > 200) {
+      eloHtml = `<div class="alert-tag" style="background:var(--primary);color:#fff;">⚔️ 實力懸殊</div>`;
     }
 
     // 天氣標籤 (足球)
@@ -274,6 +290,16 @@ function createMatchCard(match) {
       } else if (displayAnalysis.includes('API 錯誤') || displayAnalysis.includes('failed')) {
         displayAnalysis = 'AI 分析暫時無法使用，請參考勝率數據判斷。';
       }
+      
+      // 擷取預測比分 Highlight
+      let scorePredictionHtml = '';
+      const scoreMatch = displayAnalysis.match(/預測比分：(.*)/);
+      if (scoreMatch) {
+        scorePredictionHtml = `<div style="margin-top: 8px; padding: 6px; background: rgba(88, 166, 255, 0.15); border-radius: 4px; font-weight: bold; color: var(--primary);">🎯 預測比分：${scoreMatch[1].replace(/】/g, '')}</div>`;
+        displayAnalysis = displayAnalysis.replace(/🎯.*預測比分：.*/g, '');
+        displayAnalysis = displayAnalysis.replace(/【🎯.*預測比分：.*/g, '');
+      }
+
       const shortAnalysis = displayAnalysis.length > 120 
         ? displayAnalysis.substring(0, 120) + '...' 
         : displayAnalysis;
@@ -282,7 +308,10 @@ function createMatchCard(match) {
           <div class="ai-header">
             <span>🤖 AI 診斷分析</span>
           </div>
-          <div class="ai-content">${shortAnalysis}</div>
+          <div class="ai-content">
+            ${shortAnalysis}
+            ${scorePredictionHtml}
+          </div>
         </div>
       `;
     }
@@ -300,6 +329,8 @@ function createMatchCard(match) {
           ${injuryHtml}
           ${fatigueHtml}
           ${sharpHtml}
+          ${advHtml}
+          ${eloHtml}
           ${weatherHtml}
         </div>
         
