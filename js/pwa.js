@@ -19,7 +19,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // ============================================================
 //  版本更新說明 + PWA 引導
 // ============================================================
-const CURRENT_VERSION = "1.9.8";
+const CURRENT_VERSION = "1.9.9";
 
 function showReleaseNotes() {
   // 每個版本只顯示一次
@@ -54,12 +54,12 @@ function showReleaseNotes() {
         <div style="font-size:0.85rem; color:#6B7280; font-weight:600; margin-bottom:0.75rem; text-transform:uppercase; letter-spacing:1px;">更新內容</div>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#D1FAE5; color:#16A34A; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🛠️</span>
-            介面 UI 變白修正 (修正 CSS 變數)
+            <span style="background:#D1FAE5; color:#16A34A; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🤖</span>
+            新增 AI 數據預估對照表 (勝平負/最可能比分/進球率)
           </li>
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#FEF3C7; color:#D97706; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🏆</span>
-            歷史回顧補入 6/12 與 6/13 完賽比數
+            <span style="background:#FEF3C7; color:#D97706; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🎯</span>
+            AI 預測比分包含信心百分比顯示
           </li>
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
             <span style="background:#DBEAFE; color:#2563EB; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🇹🇼</span>

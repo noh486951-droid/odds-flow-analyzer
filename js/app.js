@@ -383,18 +383,26 @@ function createMatchCard(match) {
       
       // 擷取預測比分與大小球 Highlight
       let predictionHighlightsHtml = '';
-      const scoreMatch = displayAnalysis.match(/預測比分：([^】\n]*)/);
-      const ouMatch = displayAnalysis.match(/大小球推薦：([^】\n]*)/);
+      const scoreMatch = displayAnalysis.match(/【?🎯\s*預測比分：([^】\n]*)/);
+      const ouMatch = displayAnalysis.match(/【?⚽\s*大小球推薦：([^】\n]*)/);
       
       let highlights = [];
       if (scoreMatch) {
         highlights.push(`🎯 預測比分：${scoreMatch[1].replace(/】/g, '').trim()}`);
-        displayAnalysis = displayAnalysis.replace(/【?🎯\s*預測比分：[^】\n]*】?/g, '');
       }
       if (ouMatch) {
         highlights.push(`⚽ 大小推薦：${ouMatch[1].replace(/】/g, '').trim()}`);
-        displayAnalysis = displayAnalysis.replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '');
       }
+      
+      // 清理所有分析中含括號的欄位，以免顯示在卡片預覽文字中
+      displayAnalysis = displayAnalysis
+        .replace(/【?🤖\s*勝平負判斷：[^】\n]*】?/g, '')
+        .replace(/【?🎯\s*最可能比分：[^】\n]*】?/g, '')
+        .replace(/【?📊\s*至少1球機率：[^】\n]*】?/g, '')
+        .replace(/【?📊\s*至少2球機率：[^】\n]*】?/g, '')
+        .replace(/【?📊\s*雙方進球機率：[^】\n]*】?/g, '')
+        .replace(/【?🎯\s*預測比分：[^】\n]*】?/g, '')
+        .replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '');
       
       if (highlights.length > 0) {
         predictionHighlightsHtml = `<div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">` +
@@ -658,25 +666,69 @@ function openMatchDetail(matchId) {
     
     // Extract predicted score and over/under
     let modalHighlightsHtml = '';
-    const scoreMatch = displayAnalysis.match(/預測比分：([^】\n]*)/);
-    const ouMatch = displayAnalysis.match(/大小球推薦：([^】\n]*)/);
+    const scoreMatch = displayAnalysis.match(/【?🎯\s*預測比分：([^】\n]*)/);
+    const ouMatch = displayAnalysis.match(/【?⚽\s*大小球推薦：([^】\n]*)/);
     let modalHighlights = [];
     
     if (scoreMatch) {
       modalHighlights.push(`<div style="flex: 1; min-width: 200px; padding: 0.75rem; background: rgba(37, 99, 235, 0.08); border: 1.5px solid rgba(37, 99, 235, 0.2); border-radius: 8px; font-weight: 800; color: var(--primary); text-align: center; font-size: 1.1rem;">🎯 預測比分：${scoreMatch[1].replace(/】/g, '').trim()}</div>`);
-      displayAnalysis = displayAnalysis.replace(/【?🎯\s*預測比分：[^】\n]*】?/g, '');
     }
     if (ouMatch) {
       modalHighlights.push(`<div style="flex: 1; min-width: 200px; padding: 0.75rem; background: rgba(16, 185, 129, 0.08); border: 1.5px solid rgba(16, 185, 129, 0.2); border-radius: 8px; font-weight: 800; color: #059669; text-align: center; font-size: 1.1rem;">⚽ 大小推薦：${ouMatch[1].replace(/】/g, '').trim()}</div>`);
-      displayAnalysis = displayAnalysis.replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '');
     }
     
     if (modalHighlights.length > 0) {
       modalHighlightsHtml = `<div style="display: flex; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap;">${modalHighlights.join('')}</div>`;
     }
+
+    // Extract table prediction fields
+    const wdlMatch = displayAnalysis.match(/【?🤖\s*勝平負判斷：([^】\n]*)/);
+    const optScoresMatch = displayAnalysis.match(/【?🎯\s*最可能比分：([^】\n]*)/);
+    const prob1Match = displayAnalysis.match(/【?📊\s*至少1球機率：([^】\n]*)/);
+    const prob2Match = displayAnalysis.match(/【?📊\s*至少2球機率：([^】\n]*)/);
+    const bttsMatch = displayAnalysis.match(/【?📊\s*雙方進球機率：([^】\n]*)/);
+
+    let aiPredictTable = '';
+    if (wdlMatch || optScoresMatch || prob1Match || prob2Match || bttsMatch) {
+      const wdl = wdlMatch ? wdlMatch[1].trim() : '--';
+      const optScores = optScoresMatch ? optScoresMatch[1].trim() : '--';
+      const prob1 = prob1Match ? prob1Match[1].trim() : '--';
+      const prob2 = prob2Match ? prob2Match[1].trim() : '--';
+      const btts = bttsMatch ? bttsMatch[1].trim() : '--';
+      
+      aiPredictTable = `
+        <div class="ai-predict-table" style="width:100%; border:1px solid rgba(226, 232, 240, 0.8); border-radius:12px; background:var(--bg-main); overflow:hidden; margin-bottom:1.2rem; box-shadow:var(--shadow-sm);">
+          <div class="table-grid-header" style="display:grid; grid-template-columns:repeat(5, 1fr); background:#0F172A; color:#FFFFFF; font-weight:700; padding:0.65rem; text-align:center; font-size:0.85rem; letter-spacing:0.5px;">
+            <div>勝平負判斷</div>
+            <div>最可能比分</div>
+            <div>至少 1 球</div>
+            <div>至少 2 球</div>
+            <div>雙方進球</div>
+          </div>
+          <div class="table-grid-body" style="display:grid; grid-template-columns:repeat(5, 1fr); padding:0.85rem; text-align:center; font-weight:800; color:var(--text-main); background:var(--bg-card); align-items:center; font-size:0.95rem; border-top:1px solid rgba(226, 232, 240, 0.8);">
+            <div style="color:#2563EB;">${wdl}</div>
+            <div style="color:var(--text-main);">${optScores}</div>
+            <div style="color:#10B981;">${prob1}</div>
+            <div style="color:#F59E0B;">${prob2}</div>
+            <div style="color:#EF4444;">${btts}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Clean up all prediction fields from textual paragraph
+    displayAnalysis = displayAnalysis
+      .replace(/【?🤖\s*勝平負判斷：[^】\n]*】?/g, '')
+      .replace(/【?🎯\s*最可能比分：[^】\n]*】?/g, '')
+      .replace(/【?📊\s*至少1球機率：[^】\n]*】?/g, '')
+      .replace(/【?📊\s*至少2球機率：[^】\n]*】?/g, '')
+      .replace(/【?📊\s*雙方進球機率：[^】\n]*】?/g, '')
+      .replace(/【?🎯\s*預測比分：[^】\n]*】?/g, '')
+      .replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '');
     
     aiHtml = `
       ${modalHighlightsHtml}
+      ${aiPredictTable}
       <div class="ai-content modal-ai">${displayAnalysis}</div>
     `;
   }
