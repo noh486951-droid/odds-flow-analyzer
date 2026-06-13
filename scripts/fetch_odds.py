@@ -1127,7 +1127,10 @@ def analyze_with_ai(matches_with_changes, news_items):
                     response = client.models.generate_content(
                         model=model_name,
                         contents=prompt,
-                        config=types.GenerateContentConfig(safety_settings=safety_settings)
+                        config=types.GenerateContentConfig(
+                            safety_settings=safety_settings,
+                            tools=[{"google_search": {}}]
+                        )
                     )
 
                     # 安全地取得回應文字
@@ -1346,9 +1349,10 @@ def build_analysis_prompt(match, news_items, performance_context=""):
 
 ## 你的任務
 1. 結合所有資訊（勝率、盤口走勢、反向指標、傷兵、輪休可能、Elo 實力、xG火力），給出【💡 投注推薦】。
-2. 用 2~3 句話說明推薦原因，若有確保晉級輪休主力的可能性、或是反向指標，請特別強調。
-3. **你必須在結尾給出一個具體的「預測比分」！**
-4. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因。最後一行必須是【🎯 預測比分：主隊 X:Y 客隊】。控制在 150 字以內。
+2. **[重要]** 請使用 Google 搜尋（Google Search Tool）去查詢這場賽事的「網友評估勝率」與「網路風向（如 PTT、Reddit、各大論壇）」，並將搜尋到的散戶風向寫入分析中。
+3. 用 2~3 句話說明推薦原因，若有確保晉級輪休主力的可能性、或是反向指標，請特別強調。
+4. **你必須在結尾給出一個具體的「預測比分」！**
+5. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因與網友風向。最後一行必須是【🎯 預測比分：主隊 X:Y 客隊】。控制在 200 字以內。
 """
     return prompt
 
