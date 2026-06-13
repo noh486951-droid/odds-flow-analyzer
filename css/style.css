@@ -2,9 +2,9 @@
    Design Tokens & Base
    ============================================================ */
   /* Colors - Modern Light Theme (White-Grey) */
-  --bg-main: #F3F4F6;
-  --bg-card: rgba(255, 255, 255, 0.85);
-  --bg-card-hover: rgba(255, 255, 255, 1);
+  --bg-main: #EBEDF0;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FFFFFF;
   --bg-input: #FFFFFF;
   
   --text-main: #1F2937;
@@ -20,15 +20,16 @@
   --danger-bg: rgba(220, 38, 38, 0.1);
   --warning: #D97706;
   
-  --border: rgba(209, 213, 219, 0.8);
-  --glass-border: rgba(255, 255, 255, 0.5);
+  --border: #D1D5DB;
+  --glass-border: #D1D5DB;
   
   /* Typography */
   --font-sans: 'Inter', 'Noto Sans TC', -apple-system, sans-serif;
   
   /* Effects */
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
   --shadow-glow: 0 0 20px var(--primary-glow);
   
   --radius-sm: 8px;
@@ -110,7 +111,7 @@ body {
 .logo h1 {
   font-size: 1.25rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #fff, #8B949E);
+  background: linear-gradient(90deg, #1F2937, #4B5563);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -135,10 +136,10 @@ body {
 .nav {
   display: flex;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: #E5E7EB;
   padding: 0.25rem;
   border-radius: var(--radius-full);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--border);
 }
 
 .nav-btn {
@@ -159,13 +160,13 @@ body {
 
 .nav-btn:hover {
   color: var(--text-main);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .nav-btn.active {
-  color: var(--text-main);
+  color: #FFFFFF;
   background: var(--primary);
-  box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
 }
 
 .header-meta {
@@ -193,21 +194,21 @@ body {
 
 .stat-card {
   background: var(--bg-card);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
   transition: var(--transition);
 }
 
 .stat-card:hover {
   transform: translateY(-2px);
-  border-color: var(--border);
-  background: var(--bg-card-hover);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
 }
 
 .stat-card.highlight {
@@ -316,13 +317,13 @@ body {
   gap: 1.5rem;
 }
 
-/* Match Card Glassmorphism */
+/* Match Card */
 .match-card {
   background: var(--bg-card);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 1.5rem;
-  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -331,8 +332,7 @@ body {
 .match-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
-  border-color: var(--border);
-  background: var(--bg-card-hover);
+  border-color: var(--primary);
 }
 
 /* Significant Change Glow */
@@ -361,11 +361,11 @@ body {
 }
 
 .match-league {
-  background: rgba(255, 255, 255, 0.1);
+  background: #E5E7EB;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   color: var(--text-main);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .match-teams {
@@ -461,8 +461,8 @@ body {
 }
 
 .market-tag {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--glass-border);
+  background: #F3F4F6;
+  border: 1px solid var(--border);
   color: var(--text-muted);
   font-size: 0.75rem;
   padding: 0.2rem 0.5rem;
@@ -534,7 +534,7 @@ body {
 .spinner {
   width: 40px;
   height: 40px;
-  border: 3px solid rgba(255, 255, 255, 0.1);
+  border: 3px solid #E5E7EB;
   border-radius: 50%;
   border-top-color: var(--primary);
   animation: spin 1s ease-in-out infinite;
@@ -601,10 +601,10 @@ body {
   max-width: 800px;
   margin: 0 auto;
   background: var(--bg-card);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 2rem;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
 }
 
 .calc-header {
@@ -664,7 +664,7 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: #F3F4F6;
   padding: 1rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
@@ -691,7 +691,7 @@ body {
 
 .btn-add-leg {
   width: 100%;
-  background: rgba(255, 255, 255, 0.05);
+  background: #F9FAFB;
   border: 1px dashed var(--border);
   color: var(--text-main);
   padding: 1rem;
@@ -705,12 +705,12 @@ body {
 }
 
 .btn-add-leg:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #E5E7EB;
   border-color: var(--text-muted);
 }
 
 .calc-result {
-  background: rgba(0, 0, 0, 0.3);
+  background: #F3F4F6;
   border-radius: var(--radius-md);
   padding: 1.5rem;
   border: 1px solid var(--border);
@@ -721,7 +721,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .result-row:last-child {
@@ -805,10 +805,10 @@ body {
   text-align: center;
   padding: 2rem 2rem;
   margin-top: 2rem;
-  border-top: 1px solid rgba(88, 166, 255, 0.15);
+  border-top: 1px solid var(--border);
   color: var(--text-muted);
   font-size: 0.9rem;
-  background: rgba(11, 14, 20, 0.95);
+  background: #FFFFFF;
 }
 
 
@@ -1078,10 +1078,10 @@ body {
 
 .card-footer-hint {
   text-align: center;
-  font-size: 0.7rem;
-  color: var(--text-dim);
+  font-size: 0.8rem;
+  color: var(--text-muted);
   padding-top: 0.5rem;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: opacity 0.2s;
 }
 
@@ -1109,9 +1109,9 @@ body {
 .modal-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .modal-card {
@@ -1147,7 +1147,7 @@ body {
 }
 
 .modal-close-btn {
-  background: rgba(255,255,255,0.1);
+  background: #E5E7EB;
   border: none;
   color: var(--text-dim, #8b949e);
   font-size: 1.2rem;
@@ -1417,7 +1417,7 @@ body {
   font-size: 0.85rem;
   color: var(--text-muted);
   font-style: italic;
-  background: rgba(255,255,255,0.03);
+  background: #F3F4F6;
   border: 1px dashed var(--border);
   border-radius: 8px;
   padding: 0.75rem 1rem;
@@ -1476,7 +1476,7 @@ body {
 .history-stat-card {
   flex: 1;
   min-width: 120px;
-  background: var(--card-bg);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1rem;
@@ -1484,6 +1484,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.3rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .stat-emoji {
