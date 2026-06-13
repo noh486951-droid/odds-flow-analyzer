@@ -1352,7 +1352,7 @@ def build_analysis_prompt(match, news_items, performance_context=""):
 2. **[重要]** 請使用 Google 搜尋（Google Search Tool）去查詢這場賽事的「網友評估勝率」與「網路風向（如 PTT、Reddit、各大論壇）」，並將搜尋到的散戶風向寫入分析中。
 3. 用 2~3 句話說明推薦原因，若有確保晉級輪休主力的可能性、或是反向指標，請特別強調。
 4. **你必須在結尾給出一個具體的「預測比分」與「大小球推薦」（例如：大 2.5 或 小 2.5）！**
-5. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因與網友風向。倒數第二行必須是【🎯 預測比分：主隊 X:Y 客隊】，最後一行必須是【⚽ 大小球推薦：大/小 X.5】。控制在 250 字以內。
+5. 回答格式：第一行【💡 推薦：xxx】，第二行起說明原因與網友風向。倒數第二行必須是【🎯 預測比分：主隊 X:Y 客隊 (預估此比分機率：Z%)】，最後一行必須是【⚽ 大小球推薦：大/小 X.5】。控制在 250 字以內。
 """
     return prompt
 
@@ -1951,11 +1951,11 @@ def main():
         # 改為全面分析模式 (無限制 MAX_AI，所有 36 小時內比賽皆分析)
         MAX_AI = len(significant)
 
-        # 1. 排序優先級：尚未分析過的排前面 → 再按勝率排
+        # 1. 排序優先級：尚未分析過的排前面 → 再按開賽時間排序 (時間近的優先)
         def sort_key(m):
             already_analyzed = 1 if m.get("analysis_source") == "gemini" else 0
-            max_prob = max(m.get("true_probs", {}).values(), default=50)
-            return (already_analyzed, -max_prob)  # 未分析的排前面，同狀態內按勝率高排前
+            commence = m.get("commence_time", "9999-12-31T23:59:59Z")
+            return (already_analyzed, commence)  # 未分析的排前面，同狀態內按開賽時間由近到遠排前
 
         significant.sort(key=sort_key)
         ai_targets = significant[:MAX_AI]
