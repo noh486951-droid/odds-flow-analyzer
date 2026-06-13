@@ -998,19 +998,16 @@ function highlightElement(el) {
   
   el.classList.add('tour-highlight');
   
-  // 向上尋找所有可能需要提升 z-index 與設定 overflow: visible 的祖先元素
+  // 向上尋找需要調整的祖先元素
   let parent = el.parentElement;
   while (parent && parent !== document.body) {
     const style = window.getComputedStyle(parent);
-    if (
-      style.position !== 'static' || 
-      style.overflow === 'hidden' || 
-      parent.classList.contains('header') || 
-      parent.classList.contains('view-panel') || 
-      parent.id === 'matchesGrid' ||
-      parent.classList.contains('main-content')
-    ) {
+    if (style.overflow === 'hidden') {
       parent.classList.add('tour-parent-active');
+    }
+    // 只有 header 等具有固定 z-index 堆疊上下文的特定祖先才需要提升 z-index
+    if (parent.classList.contains('header')) {
+      parent.classList.add('tour-parent-elevate');
     }
     parent = parent.parentElement;
   }
@@ -1025,6 +1022,9 @@ function clearHighlights() {
   });
   document.querySelectorAll('.tour-parent-active').forEach(el => {
     el.classList.remove('tour-parent-active');
+  });
+  document.querySelectorAll('.tour-parent-elevate').forEach(el => {
+    el.classList.remove('tour-parent-elevate');
   });
 }
 
