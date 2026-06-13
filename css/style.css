@@ -136,16 +136,16 @@ body {
 .nav {
   display: flex;
   gap: 0.35rem;
-  background: #1F2937;
+  background: #FFFFFF;
   padding: 0.3rem;
   border-radius: var(--radius-full);
-  border: none;
+  border: 2px solid #D1D5DB;
 }
 
 .nav-btn {
   background: transparent;
   border: none;
-  color: #9CA3AF;
+  color: #4B5563;
   font-family: inherit;
   font-size: 0.9rem;
   font-weight: 500;
@@ -159,13 +159,13 @@ body {
 }
 
 .nav-btn:hover {
-  color: #FFFFFF;
-  background: rgba(255, 255, 255, 0.1);
+  color: #1F2937;
+  background: #F3F4F6;
 }
 
 .nav-btn.active {
-  color: #1F2937;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  background: #1F2937;
   font-weight: 600;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
@@ -264,25 +264,28 @@ body {
 
 
 .filter-btn {
-  background: var(--bg-input);
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  padding: 0.4rem 1rem;
+  background: #FFFFFF;
+  border: 2px solid #D1D5DB;
+  color: #4B5563;
+  padding: 0.5rem 1.2rem;
   border-radius: var(--radius-sm);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
 }
 
 .filter-btn:hover {
-  background: var(--bg-card-hover);
-  color: var(--text-main);
+  background: #F3F4F6;
+  color: #1F2937;
+  border-color: #9CA3AF;
 }
 
 .filter-btn.active {
-  background: rgba(88, 166, 255, 0.15);
-  border-color: var(--primary);
-  color: var(--primary);
+  background: #1F2937;
+  border-color: #1F2937;
+  color: #FFFFFF;
+  font-weight: 600;
 }
 
 /* High Prob Toggle Button */
@@ -773,13 +776,15 @@ body {
 }
 
 .news-item {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: #FFFFFF;
+  border: 2px solid #D1D5DB;
+  border-left: 5px solid var(--primary);
   border-radius: var(--radius-sm);
-  padding: 1.25rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
   transition: var(--transition);
   display: block;
   text-decoration: none;
+  box-shadow: var(--shadow-sm);
 }
 
 .news-item:hover {
@@ -956,9 +961,9 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: rgba(255,255,255,0.8);
-  border: 2px solid var(--glass-border);
-  border-top: 4px solid var(--primary);
+  background: #FFFFFF;
+  border: 2px solid #D1D5DB;
+  border-left: 5px solid var(--primary);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
