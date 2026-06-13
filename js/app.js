@@ -136,6 +136,9 @@ function updateGlobalUI(data) {
   
   // 渲染新聞
   renderNews(data.news);
+  
+  // 渲染賽程表
+  renderSchedule(data);
 }
 
 // ============================================================
@@ -643,6 +646,52 @@ function renderNews(newsData) {
   };
   
   renderList(newsData.world_cup, 'worldCupNewsList');
+}
+
+// ============================================================
+// Schedule Rendering (Taiwan Time)
+// ============================================================
+function renderSchedule(data) {
+  const container = document.getElementById('scheduleList');
+  if (!container) return;
+  if (!data || !data.matches || Object.keys(data.matches).length === 0) {
+    container.innerHTML = '<div class="empty-state">目前無賽程資料</div>';
+    return;
+  }
+
+  // 將 object 轉為 array 並按時間排序
+  const matches = Object.values(data.matches).sort((a, b) => {
+    return new Date(a.commence_time) - new Date(b.commence_time);
+  });
+
+  const formatter = new Intl.DateTimeFormat('zh-TW', {
+    timeZone: 'Asia/Taipei',
+    month: 'numeric',
+    day: 'numeric',
+    weekday: 'short',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+  });
+
+  const html = matches.map(match => {
+    const d = new Date(match.commence_time);
+    let timeStr = formatter.format(d);
+    // 替換 "週三" 為 "(三)"
+    timeStr = timeStr.replace(/週(.)/, '($1)');
+
+    return `
+      <div class="schedule-item" onclick="openMatchDetail('${match.id}')" style="cursor:pointer;" title="點擊查看分析">
+        <div class="schedule-time">${timeStr}</div>
+        <div class="schedule-teams">
+          ${formatTeamName(match.home_team)} <span style="color:var(--text-muted);font-size:0.9rem;margin:0 10px;">vs</span> ${formatTeamName(match.away_team)}
+        </div>
+        <div class="schedule-league">${match.league || '世足賽'}</div>
+      </div>
+    `;
+  }).join('');
+
+  container.innerHTML = html;
 }
 
 // ============================================================
