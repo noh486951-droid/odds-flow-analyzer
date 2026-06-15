@@ -1,586 +1,7 @@
 {
-  "last_updated": "2026-06-15T06:07:29.462485+08:00",
-  "last_updated_display": "2026/06/15 06:07 (台北時間)",
+  "last_updated": "2026-06-15T10:56:44.582613+08:00",
+  "last_updated_display": "2026/06/15 10:56 (台北時間)",
   "matches": {
-    "32ec06abda2398ac41501c86eb9aa376": {
-      "id": "32ec06abda2398ac41501c86eb9aa376",
-      "sport_key": "soccer_fifa_world_cup",
-      "league": "世足 FIFA World Cup",
-      "home_team": "Netherlands",
-      "away_team": "Japan",
-      "commence_time": "2026-06-14T20:00:00Z",
-      "bookmakers": [
-        {
-          "name": "BetMGM",
-          "markets": {
-            "h2h": {
-              "Japan": {
-                "price": 41.0
-              },
-              "Netherlands": {
-                "price": 26.0
-              },
-              "Draw": {
-                "price": 1.03
-              }
-            }
-          }
-        },
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Japan": {
-                "price": 28.0
-              },
-              "Netherlands": {
-                "price": 21.0
-              },
-              "Draw": {
-                "price": 1.02
-              }
-            }
-          }
-        },
-        {
-          "name": "Pinnacle",
-          "markets": {
-            "h2h": {
-              "Japan": {
-                "price": 9.33
-              },
-              "Netherlands": {
-                "price": 7.85
-              },
-              "Draw": {
-                "price": 1.22
-              }
-            },
-            "spreads": {
-              "Japan": {
-                "price": 2.11,
-                "point": -0.0,
-                "prob": 45.8
-              },
-              "Netherlands": {
-                "price": 1.78,
-                "point": 0.0,
-                "prob": 54.2
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 4.69,
-                "point": 4.5,
-                "prob": 20.5
-              },
-              "Under": {
-                "price": 1.21,
-                "point": 4.5,
-                "prob": 79.5
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Japan": 24.366,
-        "Netherlands": 18.039,
-        "Draw": 1.048
-      },
-      "true_probs": {
-        "Japan": 3.9,
-        "Netherlands": 5.3,
-        "Draw": 90.8
-      },
-      "other_markets": {
-        "spreads": {
-          "Japan": {
-            "price": 2.11,
-            "point": -0.0,
-            "prob": 45.8
-          },
-          "Netherlands": {
-            "price": 1.78,
-            "point": 0.0,
-            "prob": 54.2
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 4.69,
-            "point": 4.5,
-            "prob": 20.5
-          },
-          "Under": {
-            "price": 1.21,
-            "point": 4.5,
-            "prob": 79.5
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Japan": 3.783,
-        "Netherlands": 1.987,
-        "Draw": 3.593
-      },
-      "first_seen": "2026-06-13T12:40:29.351220+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Japan": 20.583,
-        "Netherlands": 16.052,
-        "Draw": -2.545
-      },
-      "change_pct": {
-        "Japan": 544.09,
-        "Netherlands": 807.85,
-        "Draw": -70.83
-      },
-      "is_value_bet": true,
-      "odds_timeline": [
-        {
-          "time": "06/13 12:40",
-          "Japan": 3.783,
-          "Netherlands": 1.987,
-          "Draw": 3.593
-        },
-        {
-          "time": "06/13 16:12",
-          "Japan": 3.781,
-          "Netherlands": 1.99,
-          "Draw": 3.59
-        },
-        {
-          "time": "06/13 16:30",
-          "Japan": 3.781,
-          "Netherlands": 1.99,
-          "Draw": 3.59
-        },
-        {
-          "time": "06/13 19:09",
-          "Japan": 3.765,
-          "Netherlands": 1.995,
-          "Draw": 3.582
-        },
-        {
-          "time": "06/13 21:29",
-          "Japan": 3.751,
-          "Netherlands": 1.998,
-          "Draw": 3.584
-        },
-        {
-          "time": "06/14 00:09",
-          "Japan": 3.753,
-          "Netherlands": 1.998,
-          "Draw": 3.582
-        },
-        {
-          "time": "06/14 03:10",
-          "Japan": 3.756,
-          "Netherlands": 1.999,
-          "Draw": 3.578
-        },
-        {
-          "time": "06/14 05:57",
-          "Japan": 3.768,
-          "Netherlands": 1.999,
-          "Draw": 3.564
-        },
-        {
-          "time": "06/14 10:49",
-          "Japan": 3.742,
-          "Netherlands": 2.004,
-          "Draw": 3.572
-        },
-        {
-          "time": "06/14 15:17",
-          "Japan": 3.718,
-          "Netherlands": 2.031,
-          "Draw": 3.557
-        },
-        {
-          "time": "06/14 19:24",
-          "Japan": 3.708,
-          "Netherlands": 2.046,
-          "Draw": 3.538
-        },
-        {
-          "time": "06/14 21:42",
-          "Japan": 3.71,
-          "Netherlands": 2.063,
-          "Draw": 3.469
-        },
-        {
-          "time": "06/15 00:17",
-          "Japan": 3.718,
-          "Netherlands": 2.073,
-          "Draw": 3.443
-        },
-        {
-          "time": "06/15 03:12",
-          "Japan": 3.666,
-          "Netherlands": 2.092,
-          "Draw": 3.429
-        },
-        {
-          "time": "06/15 06:03",
-          "Japan": 24.366,
-          "Netherlands": 18.039,
-          "Draw": 1.048
-        }
-      ],
-      "h2h_history": [],
-      "home_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-06-08",
-            "opponent": "Uzbekistan",
-            "score": "2-1",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-05-31",
-            "opponent": "Iceland",
-            "score": "1-0",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "sharp_moves": [
-        {
-          "team": "Draw",
-          "move_pct": -69.44,
-          "from": 3.429,
-          "to": 1.048,
-          "level": "💰 聪明錢訊號",
-          "message": "Draw 賠率 3.43→1.05 (-69.4%)"
-        }
-      ],
-      "elo_diff": 130,
-      "xg_stats": {
-        "home": {
-          "for": 1.2,
-          "against": 1.2
-        },
-        "away": {
-          "for": 1.2,
-          "against": 1.2
-        }
-      },
-      "reverse_line_movement": [],
-      "advancement_status": ""
-    },
-    "05752bb341e197001387b64f3a06b9b2": {
-      "id": "05752bb341e197001387b64f3a06b9b2",
-      "sport_key": "soccer_fifa_world_cup",
-      "league": "世足 FIFA World Cup",
-      "home_team": "Ivory Coast",
-      "away_team": "Ecuador",
-      "commence_time": "2026-06-14T23:00:00Z",
-      "bookmakers": [
-        {
-          "name": "FanDuel",
-          "markets": {
-            "h2h": {
-              "Ecuador": {
-                "price": 2.45
-              },
-              "Ivory Coast": {
-                "price": 3.4
-              },
-              "Draw": {
-                "price": 2.85
-              }
-            }
-          }
-        },
-        {
-          "name": "BetMGM",
-          "markets": {
-            "h2h": {
-              "Ecuador": {
-                "price": 2.45
-              },
-              "Ivory Coast": {
-                "price": 3.25
-              },
-              "Draw": {
-                "price": 2.85
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.62,
-                "point": 1.5,
-                "prob": 59.2
-              },
-              "Under": {
-                "price": 2.35,
-                "point": 1.5,
-                "prob": 40.8
-              }
-            }
-          }
-        },
-        {
-          "name": "Pinnacle",
-          "markets": {
-            "h2h": {
-              "Ecuador": {
-                "price": 2.53
-              },
-              "Ivory Coast": {
-                "price": 3.48
-              },
-              "Draw": {
-                "price": 2.95
-              }
-            },
-            "spreads": {
-              "Ecuador": {
-                "price": 2.12,
-                "point": -0.25,
-                "prob": 46.3
-              },
-              "Ivory Coast": {
-                "price": 1.83,
-                "point": 0.25,
-                "prob": 53.7
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.85,
-                "point": 1.75
-              },
-              "Under": {
-                "price": 2.07,
-                "point": 1.75
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Ecuador": 2.506,
-        "Ivory Coast": 3.347,
-        "Draw": 2.903
-      },
-      "true_probs": {
-        "Ecuador": 38.3,
-        "Ivory Coast": 28.7,
-        "Draw": 33.0
-      },
-      "other_markets": {
-        "spreads": {
-          "Ecuador": {
-            "price": 2.12,
-            "point": -0.25,
-            "prob": 46.3
-          },
-          "Ivory Coast": {
-            "price": 1.83,
-            "point": 0.25,
-            "prob": 53.7
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.62,
-            "point": 1.5,
-            "prob": 59.2
-          },
-          "Under": {
-            "price": 2.35,
-            "point": 1.5,
-            "prob": 40.8
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Ecuador": 2.415,
-        "Ivory Coast": 3.606,
-        "Draw": 2.821
-      },
-      "first_seen": "2026-06-13T12:40:29.351223+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Ecuador": 0.091,
-        "Ivory Coast": -0.259,
-        "Draw": 0.082
-      },
-      "change_pct": {
-        "Ecuador": 3.77,
-        "Ivory Coast": -7.18,
-        "Draw": 2.91
-      },
-      "is_value_bet": true,
-      "odds_timeline": [
-        {
-          "time": "06/13 12:40",
-          "Ecuador": 2.415,
-          "Ivory Coast": 3.606,
-          "Draw": 2.821
-        },
-        {
-          "time": "06/13 16:12",
-          "Ecuador": 2.413,
-          "Ivory Coast": 3.612,
-          "Draw": 2.819
-        },
-        {
-          "time": "06/13 16:30",
-          "Ecuador": 2.413,
-          "Ivory Coast": 3.612,
-          "Draw": 2.819
-        },
-        {
-          "time": "06/13 19:09",
-          "Ecuador": 2.394,
-          "Ivory Coast": 3.634,
-          "Draw": 2.833
-        },
-        {
-          "time": "06/13 21:29",
-          "Ecuador": 2.393,
-          "Ivory Coast": 3.631,
-          "Draw": 2.834
-        },
-        {
-          "time": "06/14 00:09",
-          "Ecuador": 2.393,
-          "Ivory Coast": 3.622,
-          "Draw": 2.834
-        },
-        {
-          "time": "06/14 03:10",
-          "Ecuador": 2.401,
-          "Ivory Coast": 3.624,
-          "Draw": 2.831
-        },
-        {
-          "time": "06/14 05:57",
-          "Ecuador": 2.42,
-          "Ivory Coast": 3.571,
-          "Draw": 2.84
-        },
-        {
-          "time": "06/14 10:49",
-          "Ecuador": 2.471,
-          "Ivory Coast": 3.479,
-          "Draw": 2.835
-        },
-        {
-          "time": "06/14 15:17",
-          "Ecuador": 2.537,
-          "Ivory Coast": 3.321,
-          "Draw": 2.875
-        },
-        {
-          "time": "06/14 19:24",
-          "Ecuador": 2.586,
-          "Ivory Coast": 3.274,
-          "Draw": 2.852
-        },
-        {
-          "time": "06/14 21:42",
-          "Ecuador": 2.569,
-          "Ivory Coast": 3.262,
-          "Draw": 2.869
-        },
-        {
-          "time": "06/15 00:17",
-          "Ecuador": 2.569,
-          "Ivory Coast": 3.268,
-          "Draw": 2.875
-        },
-        {
-          "time": "06/15 03:12",
-          "Ecuador": 2.595,
-          "Ivory Coast": 3.247,
-          "Draw": 2.868
-        },
-        {
-          "time": "06/15 06:03",
-          "Ecuador": 2.506,
-          "Ivory Coast": 3.347,
-          "Draw": 2.903
-        }
-      ],
-      "h2h_history": [
-        {
-          "date": "2006-05-28",
-          "home": "Ivory Coast",
-          "score": "1-1",
-          "away": "Ecuador (友誼賽)"
-        }
-      ],
-      "home_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-01-06",
-            "opponent": "Burkina Faso",
-            "score": "3-0",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-06-07",
-            "opponent": "Guatemala",
-            "score": "3-0",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "elo_diff": 0,
-      "xg_stats": {
-        "home": {
-          "for": 1.2,
-          "against": 1.2
-        },
-        "away": {
-          "for": 1.2,
-          "against": 1.2
-        }
-      },
-      "reverse_line_movement": [],
-      "advancement_status": "",
-      "ai_analysis": "【💡 推薦：和局 & 小 1.5 球】\n\n綜合所有資訊，這場世足賽預計將是一場防守至上的低進球數賽事。儘管厄瓜多在真實勝率上略佔優勢（38.3% 對 28.7%），且市場賠率也將其視為微幅領先，但雙方Elo積分差距為零，顯示實力接近。網路風向與專家普遍預期本場比賽將會非常膠著，和局的呼聲極高，甚至有許多分析師預測將是0-0或1-0的局面。\n\n兩隊在防守端都表現出色：厄瓜多在資格賽18場中僅失5球，象牙海岸在預選賽中保持不失球紀錄。雖然比賽資訊中提供的xG（預期進球：主客隊各1.2進/1.2失）暗示總進球數可能達到2.4，但這與大小分盤口1.5以及網路壓倒性的低進球預期存在顯著衝突，因此我們更傾向相信市場與專家對防守大戰的判斷，推薦小球。考慮到厄瓜多近期19場不敗的紀錄以及兩隊堅固的防線，和局或是厄瓜多小勝的可能性最高。\n\n【🤖 勝平負判斷：雙平 / 客小優】\n【🎯 最可能比分：0-0、1-0】\n【📊 至少1球機率：85%】\n【📊 至少2球機率：35%】\n【📊 雙方進球機率：25%】\n【🎯 預測比分：主隊 0:0 客隊 (預估此比分機率：25%)】\n【⚽ 大小球推薦：小 1.5】",
-      "analysis_source": "gemini"
-    },
     "b55f9569de3f4d731bc5537ff5ff43e4": {
       "id": "b55f9569de3f4d731bc5537ff5ff43e4",
       "sport_key": "soccer_fifa_world_cup",
@@ -594,25 +15,25 @@
           "markets": {
             "h2h": {
               "Sweden": {
-                "price": 1.88
+                "price": 1.27
               },
               "Tunisia": {
-                "price": 4.6
+                "price": 15.0
               },
               "Draw": {
-                "price": 3.5
+                "price": 4.75
               }
             },
             "totals": {
               "Over": {
-                "price": 2.14,
-                "point": 2.5,
-                "prob": 44.0
+                "price": 2.33,
+                "point": 4.5,
+                "prob": 40.3
               },
               "Under": {
-                "price": 1.68,
-                "point": 2.5,
-                "prob": 56.0
+                "price": 1.57,
+                "point": 4.5,
+                "prob": 59.7
               }
             }
           }
@@ -622,23 +43,23 @@
           "markets": {
             "h2h": {
               "Sweden": {
-                "price": 1.92
+                "price": 1.3
               },
               "Tunisia": {
-                "price": 4.75
+                "price": 13.75
               },
               "Draw": {
-                "price": 3.45
+                "price": 5.0
               }
             },
             "totals": {
               "Over": {
-                "price": 2.22,
-                "point": 2.5
+                "price": 2.25,
+                "point": 4.5
               },
               "Under": {
-                "price": 1.76,
-                "point": 2.5
+                "price": 1.65,
+                "point": 4.5
               }
             }
           }
@@ -648,51 +69,51 @@
           "markets": {
             "h2h": {
               "Sweden": {
-                "price": 1.87
+                "price": 1.29
               },
               "Tunisia": {
-                "price": 4.6
+                "price": 12.0
               },
               "Draw": {
-                "price": 3.3
+                "price": 4.6
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Sweden": 1.903,
-        "Tunisia": 4.463,
-        "Draw": 3.411
+        "Sweden": 1.277,
+        "Tunisia": 13.693,
+        "Draw": 4.7
       },
       "true_probs": {
-        "Sweden": 50.4,
-        "Tunisia": 21.5,
-        "Draw": 28.1
+        "Sweden": 73.3,
+        "Tunisia": 6.8,
+        "Draw": 19.9
       },
       "other_markets": {
         "spreads": {
           "Sweden": {
-            "price": 1.92,
-            "point": -0.5,
-            "prob": 51.1
+            "price": 2.16,
+            "point": -0.25,
+            "prob": 44.9
           },
           "Tunisia": {
-            "price": 2.01,
-            "point": 0.5,
-            "prob": 48.9
+            "price": 1.76,
+            "point": 0.25,
+            "prob": 55.1
           }
         },
         "totals": {
           "Over": {
-            "price": 2.14,
-            "point": 2.5,
-            "prob": 44.0
+            "price": 2.33,
+            "point": 4.5,
+            "prob": 40.3
           },
           "Under": {
-            "price": 1.68,
-            "point": 2.5,
-            "prob": 56.0
+            "price": 1.57,
+            "point": 4.5,
+            "prob": 59.7
           }
         },
         "btts": {}
@@ -705,16 +126,16 @@
       "first_seen": "2026-06-13T12:40:29.351229+08:00",
       "is_new": false,
       "odds_change": {
-        "Sweden": 0.009,
-        "Tunisia": 0.096,
-        "Draw": -0.059
+        "Sweden": -0.617,
+        "Tunisia": 9.326,
+        "Draw": 1.23
       },
       "change_pct": {
-        "Sweden": 0.48,
-        "Tunisia": 2.2,
-        "Draw": -1.7
+        "Sweden": -32.58,
+        "Tunisia": 213.56,
+        "Draw": 35.45
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "06/13 12:40",
@@ -805,9 +226,21 @@
           "Sweden": 1.903,
           "Tunisia": 4.463,
           "Draw": 3.411
+        },
+        {
+          "time": "06/15 10:53",
+          "Sweden": 1.277,
+          "Tunisia": 13.693,
+          "Draw": 4.7
         }
       ],
       "h2h_history": [
+        {
+          "date": "2003-02-12",
+          "home": "突尼西亞",
+          "score": "1-0",
+          "away": "瑞典"
+        },
         {
           "date": "1999-02-10",
           "home": "突尼西亞",
@@ -818,12 +251,6 @@
           "date": "1992-04-22",
           "home": "突尼西亞",
           "score": "0-1",
-          "away": "瑞典"
-        },
-        {
-          "date": "1976-02-28",
-          "home": "突尼西亞",
-          "score": "1-1",
           "away": "瑞典"
         }
       ],
@@ -859,6 +286,16 @@
           }
         ]
       },
+      "sharp_moves": [
+        {
+          "team": "Sweden",
+          "move_pct": -32.9,
+          "from": 1.903,
+          "to": 1.277,
+          "level": "💰 聪明錢訊號",
+          "message": "Sweden 賠率 1.90→1.28 (-32.9%)"
+        }
+      ],
       "elo_diff": 0,
       "xg_stats": {
         "home": {
@@ -872,7 +309,7 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_analysis": "【💡 推薦：主勝】\n\n這場比賽，瑞典的真實勝率（50.4%）遠高於突尼西亞（21.5%），且盤口顯示瑞典讓 -0.5，顯示市場對瑞典較為看好。儘管突尼西亞近期戰績（含客場）一勝難求，但他們在世界盃資格賽中的表現不錯，曾以七勝一平一負的成績晉級。網路上討論的風向認為，瑞典的攻擊線，特別是Viktor Gyökeres和Alexander Isak，是他們的優勢所在，能夠對突尼西亞的防線造成威脅。然而，瑞典近期防守端表現不穩，近11場比賽未嘗一場零封。突尼西亞在資格賽中表現出色，但友誼賽中的慘敗（如0-5負於比利時）令人擔憂。歷史交手紀錄顯示，雙方近四次交手，瑞典2勝1平1負佔優，且多為小比分賽事。綜合來看，瑞典在實力與盤口上佔優，但突尼西亞的進攻潛力不容小覷，預計會是一場有進球的比賽。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-1、1-0】\n【📊 至少1球機率：85%】\n【📊 至少2球機率：60%】\n【📊 雙方進球機率：55%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：18%)】\n【⚽ 大小球推薦：大 2.5】",
+      "ai_analysis": "【💡 推薦：瑞典勝】\n\n根據瑞典高達73.3%的真實勝率，以及盤口賠率顯示瑞典獨贏賠率從1.90急速下降至1.28，這是一個強烈的「聰明錢訊號」，表明市場資金大舉湧向瑞典勝出。儘管瑞典近期戰績有所起伏，防守端不穩（連續11場失球），但面對突尼西亞的火力不足（近5場比賽僅攻入1球，不計友誼賽慘敗比利時），瑞典的強大進攻火力（特別是Alexander Isak和Viktor Gyökeres）應能突破防線。網路風向雖然對瑞典勝出抱有期待但略顯謹慎，認為比賽可能呈現低比分，如Reddit論壇上的網友預測瑞典1-0突尼西亞。然而，突尼西亞在最近與比利時的友誼賽中以0-5慘敗，暴露了其防守上的潛在問題，這使得瑞典贏球的可能性更大。本AI分析模型在勝率80%+區間有100%的穩定命中率，儘管瑞典勝率略低於此，但趨勢明確支持主勝。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0、2-1】\n【📊 至少1球機率：94%】\n【📊 至少2球機率：78%】\n【📊 雙方進球機率：45%】\n【🎯 預測比分：主隊 2:0 客隊 (預估此比分機率：25%)】\n【⚽ 大小球推薦：小 4.5】",
       "analysis_source": "gemini"
     },
     "c54f00b11925751d2b62988775c6c239": {
@@ -888,10 +325,10 @@
           "markets": {
             "h2h": {
               "Cape Verde": {
-                "price": 23.0
+                "price": 26.0
               },
               "Spain": {
-                "price": 1.1
+                "price": 1.09
               },
               "Draw": {
                 "price": 10.0
@@ -899,14 +336,14 @@
             },
             "totals": {
               "Over": {
-                "price": 1.98,
+                "price": 2.0,
                 "point": 3.5,
-                "prob": 48.6
+                "prob": 48.1
               },
               "Under": {
-                "price": 1.87,
+                "price": 1.85,
                 "point": 3.5,
-                "prob": 51.4
+                "prob": 51.9
               }
             }
           }
@@ -922,83 +359,61 @@
                 "price": 1.07
               },
               "Draw": {
-                "price": 15.0
+                "price": 14.0
               }
             }
           }
         },
         {
-          "name": "Pinnacle",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "Cape Verde": {
-                "price": 22.56
+                "price": 27.0
               },
               "Spain": {
-                "price": 1.08
+                "price": 1.09
               },
               "Draw": {
-                "price": 11.97
-              }
-            },
-            "spreads": {
-              "Cape Verde": {
-                "price": 1.96,
-                "point": 2.5,
-                "prob": 49.0
-              },
-              "Spain": {
-                "price": 1.88,
-                "point": -2.5,
-                "prob": 51.0
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.93,
-                "point": 3.5
-              },
-              "Under": {
-                "price": 1.9,
-                "point": 3.5
+                "price": 11.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Cape Verde": 25.932,
-        "Spain": 1.088,
-        "Draw": 12.241
+        "Cape Verde": 27.806,
+        "Spain": 1.084,
+        "Draw": 12.246
       },
       "true_probs": {
-        "Cape Verde": 3.7,
-        "Spain": 88.4,
+        "Cape Verde": 3.5,
+        "Spain": 88.7,
         "Draw": 7.9
       },
       "other_markets": {
         "spreads": {
           "Cape Verde": {
-            "price": 1.96,
+            "price": 2.0,
             "point": 2.5,
-            "prob": 49.0
+            "prob": 48.1
           },
           "Spain": {
-            "price": 1.88,
+            "price": 1.85,
             "point": -2.5,
-            "prob": 51.0
+            "prob": 51.9
           }
         },
         "totals": {
           "Over": {
-            "price": 1.98,
+            "price": 2.0,
             "point": 3.5,
-            "prob": 48.6
+            "prob": 48.1
           },
           "Under": {
-            "price": 1.87,
+            "price": 1.85,
             "point": 3.5,
-            "prob": 51.4
+            "prob": 51.9
           }
         },
         "btts": {}
@@ -1011,14 +426,14 @@
       "first_seen": "2026-06-13T12:40:29.351235+08:00",
       "is_new": false,
       "odds_change": {
-        "Cape Verde": -0.777,
-        "Spain": -0.001,
-        "Draw": 0.881
+        "Cape Verde": 1.097,
+        "Spain": -0.005,
+        "Draw": 0.886
       },
       "change_pct": {
-        "Cape Verde": -2.91,
-        "Spain": -0.09,
-        "Draw": 7.76
+        "Cape Verde": 4.11,
+        "Spain": -0.46,
+        "Draw": 7.8
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1111,6 +526,12 @@
           "Cape Verde": 25.932,
           "Spain": 1.088,
           "Draw": 12.241
+        },
+        {
+          "time": "06/15 10:53",
+          "Cape Verde": 27.806,
+          "Spain": 1.084,
+          "Draw": 12.246
         }
       ],
       "h2h_history": [],
@@ -1159,7 +580,7 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "⚠️ Spain 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。",
-      "ai_analysis": "【💡 推薦：西班牙讓分 2.5 球，大分 3.5】\n\n分析顯示，西班牙在實力上對卡維角形成壓倒性優勢，真實勝率高達88.4%，Elo積分差距顯著。網路風向與專家評估普遍預期西班牙將輕鬆獲勝，許多觀點傾向於西班牙大比分勝出，甚至預測比分會落在4-0或4-1，並建議投注西班牙贏球且總進球數大於3.5球。儘管世足賽首場比賽且西班牙可能在確定晉級後輪休主力，但以其強大的板凳深度與過去在資格賽中多場大勝的紀錄來看，即便輪休也足以打穿讓分盤。AI自我學習數據也顯示，在相似條件下的歷史賽事中，西班牙曾以4-0擊敗卡維角，德國亦有7-1和3-0的大勝紀錄，進一步強化了高比分賽果的可能性。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：4-0、3-0、4-1】\n【📊 至少1球機率：99%】\n【📊 至少2球機率：95%】\n【📊 雙方進球機率：30%】\n【🎯 預測比分：主隊 4:0 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：大 3.5】",
+      "ai_analysis": "【💡 推薦：西班牙 讓分盤 -2.5】\n\n本場世界盃H組首戰，西班牙擁有壓倒性的真實勝率 (88.7%) 和Elo積分優勢 (380分)，各項數據均指向其將輕鬆取勝。讓分盤口雖然高達主讓2.5球，但考量到西班牙強大的預期進球(xG 1.8)及穩固的防守(xG失球0.6)，以及這是小組賽的首場比賽，他們將力求取得開門紅並爭取更多淨勝球，不大可能出現大幅輪休主力。網路輿論及多數預測皆認為西班牙將以多球優勢擊敗佛得角，甚至有預測4-0、5-0的比分出現。儘管佛得角近期防守有所提升且首次晉級世界盃戰意十足，但實力差距懸殊，難以抵擋西班牙的攻勢，因此看好西班牙能順利穿盤。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：3-0、4-0】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：85%】\n【📊 雙方進球機率：20%】\n【🎯 預測比分：主隊 4:0 客隊 (預估此比分機率：18%)】\n【⚽ 大小球推薦：大 3.5】",
       "analysis_source": "gemini"
     },
     "fbfb95c62003fd6d828b309f96ee1f9b": {
@@ -1175,10 +596,10 @@
           "markets": {
             "h2h": {
               "Belgium": {
-                "price": 1.62
+                "price": 1.61
               },
               "Egypt": {
-                "price": 5.25
+                "price": 5.5
               },
               "Draw": {
                 "price": 3.9
@@ -1188,12 +609,12 @@
               "Over": {
                 "price": 2.0,
                 "point": 2.5,
-                "prob": 47.8
+                "prob": 48.1
               },
               "Under": {
-                "price": 1.83,
+                "price": 1.85,
                 "point": 2.5,
-                "prob": 52.2
+                "prob": 51.9
               }
             }
           }
@@ -1215,77 +636,55 @@
           }
         },
         {
-          "name": "Pinnacle",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "Belgium": {
-                "price": 1.63
+                "price": 1.61
               },
               "Egypt": {
-                "price": 5.75
+                "price": 5.9
               },
               "Draw": {
-                "price": 4.01
-              }
-            },
-            "spreads": {
-              "Belgium": {
-                "price": 1.83,
-                "point": -0.75,
-                "prob": 53.4
-              },
-              "Egypt": {
-                "price": 2.1,
-                "point": 0.75,
-                "prob": 46.6
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.04,
-                "point": 2.5
-              },
-              "Under": {
-                "price": 1.86,
-                "point": 2.5
+                "price": 3.98
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Belgium": 1.616,
-        "Egypt": 5.733,
-        "Draw": 3.98
+        "Belgium": 1.612,
+        "Egypt": 5.797,
+        "Draw": 3.979
       },
       "true_probs": {
-        "Belgium": 59.2,
-        "Egypt": 16.7,
+        "Belgium": 59.4,
+        "Egypt": 16.5,
         "Draw": 24.1
       },
       "other_markets": {
         "spreads": {
           "Belgium": {
-            "price": 1.83,
-            "point": -0.75,
-            "prob": 53.4
+            "price": 2.1,
+            "point": -1.0,
+            "prob": 46.6
           },
           "Egypt": {
-            "price": 2.1,
-            "point": 0.75,
-            "prob": 46.6
+            "price": 1.83,
+            "point": 1.0,
+            "prob": 53.4
           }
         },
         "totals": {
           "Over": {
             "price": 2.0,
             "point": 2.5,
-            "prob": 47.8
+            "prob": 48.1
           },
           "Under": {
-            "price": 1.83,
+            "price": 1.85,
             "point": 2.5,
-            "prob": 52.2
+            "prob": 51.9
           }
         },
         "btts": {}
@@ -1298,14 +697,14 @@
       "first_seen": "2026-06-13T12:40:29.351239+08:00",
       "is_new": false,
       "odds_change": {
-        "Belgium": 0.002,
-        "Egypt": 0.009,
-        "Draw": 0.014
+        "Belgium": -0.002,
+        "Egypt": 0.073,
+        "Draw": 0.013
       },
       "change_pct": {
-        "Belgium": 0.12,
-        "Egypt": 0.16,
-        "Draw": 0.35
+        "Belgium": -0.12,
+        "Egypt": 1.28,
+        "Draw": 0.33
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1398,6 +797,12 @@
           "Belgium": 1.616,
           "Egypt": 5.733,
           "Draw": 3.98
+        },
+        {
+          "time": "06/15 10:53",
+          "Belgium": 1.612,
+          "Egypt": 5.797,
+          "Draw": 3.979
         }
       ],
       "h2h_history": [
@@ -1465,7 +870,7 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_analysis": "【💡 推薦：比利時讓分 -0.75】\n\n根據數據分析，比利時在真實勝率（59.2%）、Elo積分差距（270）及近期戰績（4勝1和）上均明顯優於埃及。雖然兩隊過去四次友誼賽交手埃及取得三勝，包括最近一次在2022年以2-1擊敗比利時，但世足賽的強度與重要性不同，專業分析普遍看好比利時能在此役取勝。網路風向與各家運彩分析也普遍認為比利時將會是分組第一，且預期將會贏球。考量讓分盤為比利時 -0.75，預期比利時能至少贏一球，甚至贏兩球以上的機率也存在，因此推薦比利時讓分。同時，由於比利時強大的攻擊火力以及埃及有Salah坐鎮的反擊能力，本場比賽有機會出現較多進球。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-1、2-0】\n【📊 至少1球機率：98%】\n【📊 至少2球機率：85%】\n【📊 雙方進球機率：55%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：12%)】\n【⚽ 大小球推薦：大 2.5】",
+      "ai_analysis": "【💡 推薦：主讓 -1.0，比利時勝】\n\n根據全面的賽事資訊，比利時儘管黃金一代球員年齡增長，但在真實勝率（59.4%）、Elo積分差距（270）、以及市場盤口走勢（比利時賠率微降，埃及賠率上升）上均顯示明顯優勢。網路風向與各家分析師普遍看好比利時獲勝，不少人預計總進球數會超過2.5球。然而，埃及雖然過去對戰比利時友誼賽紀錄略佔優勢（最近一次2022年以2-1擊敗比利時），且擁有以薩拉赫為核心的穩固防守與反擊能力，但整體戰力仍不及比利時。考慮到比利時近期強勁的攻擊火力（近四場友誼賽攻入13球）以及其分組賽領先的期望，主讓-1.0球仍值得支持。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0、2-1】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：80%】\n【📊 雙方進球機率：55%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：12%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "64b91c5f2db61c7358a4f05459e83c52": {
@@ -1484,22 +889,22 @@
                 "price": 7.0
               },
               "Uruguay": {
-                "price": 1.45
+                "price": 1.48
               },
               "Draw": {
-                "price": 4.33
+                "price": 4.1
               }
             },
             "totals": {
               "Over": {
-                "price": 2.05,
+                "price": 2.1,
                 "point": 2.5,
-                "prob": 46.3
+                "prob": 45.7
               },
               "Under": {
                 "price": 1.77,
                 "point": 2.5,
-                "prob": 53.7
+                "prob": 54.3
               }
             }
           }
@@ -1509,7 +914,7 @@
           "markets": {
             "h2h": {
               "Saudi Arabia": {
-                "price": 7.0
+                "price": 7.5
               },
               "Uruguay": {
                 "price": 1.48
@@ -1521,53 +926,31 @@
           }
         },
         {
-          "name": "Pinnacle",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "Saudi Arabia": {
-                "price": 7.56
+                "price": 7.6
               },
               "Uruguay": {
                 "price": 1.48
               },
               "Draw": {
-                "price": 4.31
-              }
-            },
-            "spreads": {
-              "Saudi Arabia": {
-                "price": 2.09,
-                "point": 1.0,
-                "prob": 46.7
-              },
-              "Uruguay": {
-                "price": 1.83,
-                "point": -1.0,
-                "prob": 53.3
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.86,
-                "point": 2.25
-              },
-              "Under": {
-                "price": 2.03,
-                "point": 2.25
+                "price": 4.25
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Saudi Arabia": 7.578,
-        "Uruguay": 1.465,
-        "Draw": 4.323
+        "Saudi Arabia": 7.506,
+        "Uruguay": 1.474,
+        "Draw": 4.256
       },
       "true_probs": {
-        "Saudi Arabia": 12.6,
-        "Uruguay": 65.3,
-        "Draw": 22.1
+        "Saudi Arabia": 12.7,
+        "Uruguay": 64.8,
+        "Draw": 22.4
       },
       "other_markets": {
         "spreads": {
@@ -1584,14 +967,14 @@
         },
         "totals": {
           "Over": {
-            "price": 2.05,
+            "price": 2.1,
             "point": 2.5,
-            "prob": 46.3
+            "prob": 45.7
           },
           "Under": {
             "price": 1.77,
             "point": 2.5,
-            "prob": 53.7
+            "prob": 54.3
           }
         },
         "btts": {}
@@ -1604,14 +987,14 @@
       "first_seen": "2026-06-13T12:40:29.351241+08:00",
       "is_new": false,
       "odds_change": {
-        "Saudi Arabia": -0.499,
-        "Uruguay": 0.038,
-        "Draw": -0.151
+        "Saudi Arabia": -0.571,
+        "Uruguay": 0.047,
+        "Draw": -0.218
       },
       "change_pct": {
-        "Saudi Arabia": -6.18,
-        "Uruguay": 2.66,
-        "Draw": -3.38
+        "Saudi Arabia": -7.07,
+        "Uruguay": 3.29,
+        "Draw": -4.87
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -1704,26 +1087,32 @@
           "Saudi Arabia": 7.578,
           "Uruguay": 1.465,
           "Draw": 4.323
+        },
+        {
+          "time": "06/15 10:53",
+          "Saudi Arabia": 7.506,
+          "Uruguay": 1.474,
+          "Draw": 4.256
         }
       ],
       "h2h_history": [
         {
           "date": "2018-06-20",
-          "home": "烏拉圭",
-          "score": "1-0",
-          "away": "沙烏地阿拉伯"
+          "home": "主隊",
+          "score": "0-1",
+          "away": "客隊"
         },
         {
           "date": "2014-10-10",
-          "home": "沙烏地阿拉伯",
+          "home": "主隊",
           "score": "1-1",
-          "away": "烏拉圭"
+          "away": "客隊"
         },
         {
           "date": "2002-03-27",
-          "home": "沙烏地阿拉伯",
+          "home": "主隊",
           "score": "3-2",
-          "away": "烏拉圭"
+          "away": "客隊"
         }
       ],
       "home_form": {
@@ -1769,9 +1158,11 @@
           "against": 1.2
         }
       },
-      "reverse_line_movement": [],
+      "reverse_line_movement": [
+        "🚨 散戶看好但盤口逆行 (Uruguay 賠率上升 3.3%)"
+      ],
       "advancement_status": "",
-      "ai_analysis": "【💡 推薦：烏拉圭 讓分 -1.0】\n\n根據各項數據分析，烏拉圭在此次世界盃對陣沙烏地阿拉伯的比賽中，是壓倒性的強隊。烏拉圭的真實勝率高達 65.3%，遠高於沙烏地阿拉伯的 12.6%，且 Elo 積分差距達 -280 (烏拉圭較強)，顯示其在實力上的巨大優勢。多家網路預測平台也一致看好烏拉圭，例如 VSiN 將烏拉圭視為獨贏盤 -212 至 -205 的熱門隊伍，並推薦烏拉圭讓分 -1.0。KickOff UK 的演算法甚至預測烏拉圭有 67% 的勝率。\n\n雖然盤口走勢顯示烏拉圭賠率略微上升，沙烏地阿拉伯賠率略微下降，可能暗示部分資金流向沙烏地阿拉伯或平手，但烏拉圭仍是市場上的主要熱門。網友風向普遍認為這將是一場低進球數的比賽，許多分析師預測比分會是 1-0 或 2-0。 烏拉圭近期的比賽也傾向於低進球數 (最近 20 場比賽中有 15 場總進球數小於等於 2 球，平均每場 1.7 球)，而沙烏地阿拉伯則可能採取防守反擊策略。 綜合判斷，烏拉圭應能憑藉其整體實力與戰術紀律取得勝利，並有機會淨勝兩球。\n\n【🤖 勝平負判斷：客勝】\n【🎯 最可能比分：1-0, 2-0】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：74%】\n【📊 雙方進球機率：43%】\n【🎯 預測比分：主隊 0:2 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：小 2.5】",
+      "ai_analysis": "【💡 投注推薦】客勝\n\nUruguay 在各項數據上都明顯優於 Saudi Arabia，真實勝率高達 64.8%，而 Saudi Arabia 僅有 12.7%。儘管盤口走勢顯示 Uruguay 的賠率略有上升，但這很可能是因為散戶資金的湧入，形成「反向指標」的假象。網路論壇如 Reddit 上，討論熱度不高，顯示散戶對此場比賽並無明顯一面倒的看法，使得盤口數據的參考價值提高。Uruguay 近期戰績穩定，且在僅有的交手紀錄中取得勝利，綜合來看，Uruguay 獲勝的機率較高。\n\n【🤖 勝平負判斷：客勝】\n【🎯 最可能比分：0-2、1-2】\n【📊 至少1球機率：75%】\n【📊 至少2球機率：55%】\n【📊 雙方進球機率：40%】\n【🎯 預測比分：客隊 2:0 主隊 (預估此比分機率：25%)】\n【⚽ 大小球推薦：小 2.5】",
       "analysis_source": "gemini"
     },
     "ec51b9c44ad5e34552f3ab53f7262813": {
@@ -1787,25 +1178,25 @@
           "markets": {
             "h2h": {
               "Iran": {
-                "price": 1.96
+                "price": 1.95
               },
               "New Zealand": {
-                "price": 4.33
+                "price": 4.37
               },
               "Draw": {
-                "price": 3.39
+                "price": 3.41
               }
             },
             "spreads": {
               "Iran": {
-                "price": 1.97,
+                "price": 1.96,
                 "point": -0.5,
-                "prob": 49.5
+                "prob": 49.7
               },
               "New Zealand": {
-                "price": 1.93,
+                "price": 1.94,
                 "point": 0.5,
-                "prob": 50.5
+                "prob": 50.3
               }
             },
             "totals": {
@@ -1830,10 +1221,10 @@
                 "price": 1.91
               },
               "New Zealand": {
-                "price": 4.2
+                "price": 4.4
               },
               "Draw": {
-                "price": 3.25
+                "price": 3.2
               }
             },
             "totals": {
@@ -1849,43 +1240,43 @@
           }
         },
         {
-          "name": "FanDuel",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "Iran": {
-                "price": 1.91
+                "price": 1.93
               },
               "New Zealand": {
-                "price": 4.5
+                "price": 4.45
               },
               "Draw": {
-                "price": 3.3
+                "price": 3.35
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Iran": 1.91,
-        "New Zealand": 4.446,
-        "Draw": 3.365
+        "Iran": 1.923,
+        "New Zealand": 4.419,
+        "Draw": 3.357
       },
       "true_probs": {
-        "Iran": 50.1,
-        "New Zealand": 21.5,
-        "Draw": 28.4
+        "Iran": 49.8,
+        "New Zealand": 21.7,
+        "Draw": 28.5
       },
       "other_markets": {
         "spreads": {
           "Iran": {
-            "price": 1.97,
+            "price": 1.96,
             "point": -0.5,
-            "prob": 49.5
+            "prob": 49.7
           },
           "New Zealand": {
-            "price": 1.93,
+            "price": 1.94,
             "point": 0.5,
-            "prob": 50.5
+            "prob": 50.3
           }
         },
         "totals": {
@@ -1910,14 +1301,14 @@
       "first_seen": "2026-06-13T12:40:29.351247+08:00",
       "is_new": false,
       "odds_change": {
-        "Iran": 0.086,
-        "New Zealand": -0.28,
-        "Draw": -0.132
+        "Iran": 0.099,
+        "New Zealand": -0.307,
+        "Draw": -0.14
       },
       "change_pct": {
-        "Iran": 4.71,
-        "New Zealand": -5.92,
-        "Draw": -3.77
+        "Iran": 5.43,
+        "New Zealand": -6.5,
+        "Draw": -4.0
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -2010,20 +1401,26 @@
           "Iran": 1.91,
           "New Zealand": 4.446,
           "Draw": 3.365
+        },
+        {
+          "time": "06/15 10:53",
+          "Iran": 1.923,
+          "New Zealand": 4.419,
+          "Draw": 3.357
         }
       ],
       "h2h_history": [
         {
-          "date": "1973-08-12",
-          "home": "Iran",
-          "score": "0-0",
-          "away": "New Zealand"
+          "date": "2003-10-12",
+          "home": "",
+          "score": "2003-10-12",
+          "away": "3-0 Iran vs New Zealand"
         },
         {
-          "date": "2003-10-12",
-          "home": "Iran",
-          "score": "3-0",
-          "away": "New Zealand"
+          "date": "1973-08-12",
+          "home": "",
+          "score": "1973-08-12",
+          "away": "0-0 Iran vs New Zealand"
         }
       ],
       "home_form": {
@@ -2043,12 +1440,20 @@
         ]
       },
       "away_form": {
-        "record": "LLWLL",
+        "record": "W",
         "wins": 1,
-        "losses": 4,
-        "home_record": "",
+        "losses": 0,
+        "home_record": "W",
         "away_record": "",
-        "details": []
+        "details": [
+          {
+            "date": "2026-03-30",
+            "opponent": "Chile",
+            "score": "4-1",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
       },
       "elo_diff": 0,
       "xg_stats": {
@@ -2063,7 +1468,7 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_analysis": "【💡 推薦：主讓 -0.5】\n\n本次世足賽伊朗對陣紐西蘭的比賽，伊朗在各方面數據上均佔據優勢。其真實勝率高達50.1%，遠超紐西蘭的21.5%。儘管盤口走勢顯示伊朗的獨贏賠率略有上升，但市場主流意見和專家分析普遍看好伊朗獲勝。網路上，許多網友及專業分析師皆認為伊朗憑藉其豐富的大賽經驗、穩固的防守以及如塔雷米（Mehdi Taremi）這樣的頂級射手，有能力在這場比賽中取得勝利。例如，有預測直接給出伊朗讓球-0.5勝，比分預估2-0。紐西蘭雖然重返世界盃舞台，但近期戰績不佳，近五場僅一勝，且面對強隊時進攻端常顯疲軟，後防線也存在經驗不足的問題。考慮到伊朗必須在小組賽中爭取積分以求晉級的強烈動機，以及AI自我學習數據顯示對80%+勝率區間有100%的命中率，本場比賽伊朗獲勝的機會很高。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0、1-0】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：70%】\n【📊 雙方進球機率：40%】\n【🎯 預測比分：主隊 2:0 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：小 2.0】",
+      "ai_analysis": "【💡 推薦：Iran 讓分 -0.5】\n\n這場比賽，伊朗隊在「真實勝率」上以 49.8% 遙遙領先紐西蘭的 21.7%，且近期狀態也較為穩定。儘管紐西蘭近期取得一場勝利，但對手強度不足，且近期客場表現不佳。盤口方面，伊朗讓 -0.5 的讓分盤顯示市場對其較為看好，獨贏賠率也顯示伊朗有上升趨勢，反觀紐西蘭賠率則持續走低。網路風向方面，PTT 和 Reddit 等論壇的討論多數認為伊朗會贏下這場比賽，有部分伊朗球迷也表達對球隊的憂慮，但整體仍傾向伊朗較有優勢。考量到以上因素，伊朗讓分過盤的機率較高。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0、1-0】\n【📊 至少1球機率：75%】\n【📊 至少2球機率：45%】\n【📊 雙方進球機率：30%】\n【🎯 預測比分：主隊 2:0 客隊 (預估此比分機率：25%)】\n【⚽ 大小球推薦：小 2.0】",
       "analysis_source": "gemini"
     },
     "73a4fcd14cc9766b9b9bfd50b8ca153a": {
@@ -2119,53 +1524,31 @@
           }
         },
         {
-          "name": "Pinnacle",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "France": {
                 "price": 1.48
               },
               "Senegal": {
-                "price": 7.22
+                "price": 7.2
               },
               "Draw": {
-                "price": 4.49
-              }
-            },
-            "spreads": {
-              "France": {
-                "price": 1.83,
-                "point": -1.0,
-                "prob": 53.4
-              },
-              "Senegal": {
-                "price": 2.1,
-                "point": 1.0,
-                "prob": 46.6
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.98,
-                "point": 2.5
-              },
-              "Under": {
-                "price": 1.91,
-                "point": 2.5
+                "price": 4.4
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "France": 1.47,
-        "Senegal": 7.19,
-        "Draw": 4.415
+        "France": 1.466,
+        "Senegal": 7.237,
+        "Draw": 4.427
       },
       "true_probs": {
-        "France": 65.0,
-        "Senegal": 13.3,
-        "Draw": 21.7
+        "France": 65.2,
+        "Senegal": 13.2,
+        "Draw": 21.6
       },
       "other_markets": {
         "spreads": {
@@ -2202,14 +1585,14 @@
       "first_seen": "2026-06-13T12:40:29.351252+08:00",
       "is_new": false,
       "odds_change": {
-        "France": 0.002,
-        "Senegal": -0.07,
-        "Draw": 0.007
+        "France": -0.002,
+        "Senegal": -0.023,
+        "Draw": 0.019
       },
       "change_pct": {
-        "France": 0.14,
-        "Senegal": -0.96,
-        "Draw": 0.16
+        "France": -0.14,
+        "Senegal": -0.32,
+        "Draw": 0.43
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -2302,24 +1685,46 @@
           "France": 1.47,
           "Senegal": 7.19,
           "Draw": 4.415
+        },
+        {
+          "time": "06/15 10:53",
+          "France": 1.466,
+          "Senegal": 7.237,
+          "Draw": 4.427
         }
       ],
       "h2h_history": [],
       "home_form": {
-        "record": "",
-        "wins": 0,
+        "record": "W",
+        "wins": 1,
         "losses": 0,
-        "home_record": "",
+        "home_record": "W",
         "away_record": "",
-        "details": []
+        "details": [
+          {
+            "date": "2026-06-08",
+            "opponent": "N.Ireland",
+            "score": "3-1",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
       },
       "away_form": {
-        "record": "",
-        "wins": 0,
+        "record": "W",
+        "wins": 1,
         "losses": 0,
-        "home_record": "",
+        "home_record": "W",
         "away_record": "",
-        "details": []
+        "details": [
+          {
+            "date": "2026-03-31",
+            "opponent": "Gambia",
+            "score": "3-1",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
       },
       "elo_diff": 420,
       "xg_stats": {
@@ -2372,6 +1777,22 @@
           }
         },
         {
+          "name": "Marathon Bet",
+          "markets": {
+            "h2h": {
+              "Iraq": {
+                "price": 17.25
+              },
+              "Norway": {
+                "price": 1.18
+              },
+              "Draw": {
+                "price": 7.3
+              }
+            }
+          }
+        },
+        {
           "name": "BetMGM",
           "markets": {
             "h2h": {
@@ -2396,33 +1817,17 @@
               }
             }
           }
-        },
-        {
-          "name": "Everygame",
-          "markets": {
-            "h2h": {
-              "Iraq": {
-                "price": 15.0
-              },
-              "Norway": {
-                "price": 1.18
-              },
-              "Draw": {
-                "price": 7.5
-              }
-            }
-          }
         }
       ],
       "avg_odds": {
-        "Iraq": 15.227,
-        "Norway": 1.19,
-        "Draw": 7.175
+        "Iraq": 15.353,
+        "Norway": 1.189,
+        "Draw": 7.243
       },
       "true_probs": {
-        "Iraq": 6.3,
-        "Norway": 80.4,
-        "Draw": 13.3
+        "Iraq": 6.2,
+        "Norway": 80.5,
+        "Draw": 13.2
       },
       "other_markets": {
         "spreads": {
@@ -2459,14 +1864,14 @@
       "first_seen": "2026-06-13T12:40:29.351255+08:00",
       "is_new": false,
       "odds_change": {
-        "Iraq": 0.635,
-        "Norway": -0.012,
-        "Draw": 0.233
+        "Iraq": 0.761,
+        "Norway": -0.013,
+        "Draw": 0.301
       },
       "change_pct": {
-        "Iraq": 4.35,
-        "Norway": -1.0,
-        "Draw": 3.36
+        "Iraq": 5.22,
+        "Norway": -1.08,
+        "Draw": 4.34
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -2559,8 +1964,31 @@
           "Iraq": 15.227,
           "Norway": 1.19,
           "Draw": 7.175
+        },
+        {
+          "time": "06/15 10:53",
+          "Iraq": 15.353,
+          "Norway": 1.189,
+          "Draw": 7.243
         }
       ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
+      "away_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
       "elo_diff": 0,
       "xg_stats": {
         "home": {
@@ -2628,53 +2056,31 @@
           }
         },
         {
-          "name": "Pinnacle",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "Algeria": {
-                "price": 9.33
+                "price": 9.5
               },
               "Argentina": {
                 "price": 1.4
               },
               "Draw": {
-                "price": 4.57
-              }
-            },
-            "spreads": {
-              "Algeria": {
-                "price": 1.96,
-                "point": 1.25,
-                "prob": 49.7
-              },
-              "Argentina": {
-                "price": 1.94,
-                "point": -1.25,
-                "prob": 50.3
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.01,
-                "point": 2.5
-              },
-              "Under": {
-                "price": 1.88,
-                "point": 2.5
+                "price": 4.5
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Algeria": 8.961,
+        "Algeria": 9.009,
         "Argentina": 1.39,
-        "Draw": 4.639
+        "Draw": 4.625
       },
       "true_probs": {
-        "Algeria": 10.7,
+        "Algeria": 10.6,
         "Argentina": 68.7,
-        "Draw": 20.6
+        "Draw": 20.7
       },
       "other_markets": {
         "spreads": {
@@ -2711,14 +2117,14 @@
       "first_seen": "2026-06-13T12:40:29.351257+08:00",
       "is_new": false,
       "odds_change": {
-        "Algeria": 0.055,
+        "Algeria": 0.103,
         "Argentina": -0.002,
-        "Draw": 0.016
+        "Draw": 0.002
       },
       "change_pct": {
-        "Algeria": 0.62,
+        "Algeria": 1.16,
         "Argentina": -0.14,
-        "Draw": 0.35
+        "Draw": 0.04
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -2811,8 +2217,31 @@
           "Algeria": 8.961,
           "Argentina": 1.39,
           "Draw": 4.639
+        },
+        {
+          "time": "06/15 10:53",
+          "Algeria": 9.009,
+          "Argentina": 1.39,
+          "Draw": 4.625
         }
       ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
+      "away_form": {
+        "record": "",
+        "wins": 0,
+        "losses": 0,
+        "home_record": "",
+        "away_record": "",
+        "details": []
+      },
       "elo_diff": 440,
       "xg_stats": {
         "home": {
@@ -2917,9 +2346,9 @@
         }
       ],
       "avg_odds": {
-        "Austria": 1.338,
-        "Jordan": 8.912,
-        "Draw": 5.363
+        "Austria": 1.337,
+        "Jordan": 8.888,
+        "Draw": 5.366
       },
       "true_probs": {
         "Austria": 71.4,
@@ -2961,14 +2390,14 @@
       "first_seen": "2026-06-13T12:40:29.351259+08:00",
       "is_new": false,
       "odds_change": {
-        "Austria": 0.016,
-        "Jordan": -0.392,
-        "Draw": -0.166
+        "Austria": 0.015,
+        "Jordan": -0.416,
+        "Draw": -0.163
       },
       "change_pct": {
-        "Austria": 1.21,
-        "Jordan": -4.21,
-        "Draw": -3.0
+        "Austria": 1.13,
+        "Jordan": -4.47,
+        "Draw": -2.95
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -3061,6 +2490,12 @@
           "Austria": 1.338,
           "Jordan": 8.912,
           "Draw": 5.363
+        },
+        {
+          "time": "06/15 10:53",
+          "Austria": 1.337,
+          "Jordan": 8.888,
+          "Draw": 5.366
         }
       ],
       "elo_diff": 0,
@@ -3101,14 +2536,14 @@
             },
             "totals": {
               "Over": {
-                "price": 1.71,
+                "price": 1.7,
                 "point": 2.5,
-                "prob": 55.8
+                "prob": 56.2
               },
               "Under": {
-                "price": 2.16,
+                "price": 2.18,
                 "point": 2.5,
-                "prob": 44.2
+                "prob": 43.8
               }
             }
           }
@@ -3147,38 +2582,38 @@
         }
       ],
       "avg_odds": {
-        "DR Congo": 10.848,
-        "Portugal": 1.284,
-        "Draw": 5.657
+        "DR Congo": 10.798,
+        "Portugal": 1.287,
+        "Draw": 5.652
       },
       "true_probs": {
         "DR Congo": 8.8,
-        "Portugal": 74.3,
+        "Portugal": 74.2,
         "Draw": 16.9
       },
       "other_markets": {
         "spreads": {
           "DR Congo": {
-            "price": 2.02,
+            "price": 2.03,
             "point": 1.5,
-            "prob": 48.3
+            "prob": 48.1
           },
           "Portugal": {
-            "price": 1.89,
+            "price": 1.88,
             "point": -1.5,
-            "prob": 51.7
+            "prob": 51.9
           }
         },
         "totals": {
           "Over": {
-            "price": 1.71,
+            "price": 1.7,
             "point": 2.5,
-            "prob": 55.8
+            "prob": 56.2
           },
           "Under": {
-            "price": 2.16,
+            "price": 2.18,
             "point": 2.5,
-            "prob": 44.2
+            "prob": 43.8
           }
         },
         "btts": {}
@@ -3191,14 +2626,14 @@
       "first_seen": "2026-06-13T12:40:29.351262+08:00",
       "is_new": false,
       "odds_change": {
-        "DR Congo": -0.064,
-        "Portugal": 0.001,
-        "Draw": -0.011
+        "DR Congo": -0.114,
+        "Portugal": 0.004,
+        "Draw": -0.016
       },
       "change_pct": {
-        "DR Congo": -0.59,
-        "Portugal": 0.08,
-        "Draw": -0.19
+        "DR Congo": -1.04,
+        "Portugal": 0.31,
+        "Draw": -0.28
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -3291,6 +2726,12 @@
           "DR Congo": 10.848,
           "Portugal": 1.284,
           "Draw": 5.657
+        },
+        {
+          "time": "06/15 10:53",
+          "DR Congo": 10.798,
+          "Portugal": 1.287,
+          "Draw": 5.652
         }
       ],
       "elo_diff": 340,
@@ -3360,52 +2801,30 @@
           }
         },
         {
-          "name": "Pinnacle",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "Croatia": {
-                "price": 4.96
+                "price": 4.95
               },
               "England": {
                 "price": 1.73
               },
               "Draw": {
-                "price": 3.89
-              }
-            },
-            "spreads": {
-              "Croatia": {
-                "price": 1.93,
-                "point": 0.75,
-                "prob": 50.6
-              },
-              "England": {
-                "price": 1.98,
-                "point": -0.75,
-                "prob": 49.4
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.93,
-                "point": 2.25
-              },
-              "Under": {
-                "price": 1.96,
-                "point": 2.25
+                "price": 3.82
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Croatia": 5.059,
-        "England": 1.716,
+        "Croatia": 5.045,
+        "England": 1.718,
         "Draw": 3.784
       },
       "true_probs": {
-        "Croatia": 18.9,
-        "England": 55.8,
+        "Croatia": 19.0,
+        "England": 55.7,
         "Draw": 25.3
       },
       "other_markets": {
@@ -3443,13 +2862,13 @@
       "first_seen": "2026-06-13T12:40:29.351264+08:00",
       "is_new": false,
       "odds_change": {
-        "Croatia": 0.123,
-        "England": -0.01,
+        "Croatia": 0.109,
+        "England": -0.008,
         "Draw": -0.005
       },
       "change_pct": {
-        "Croatia": 2.49,
-        "England": -0.58,
+        "Croatia": 2.21,
+        "England": -0.46,
         "Draw": -0.13
       },
       "is_value_bet": false,
@@ -3543,6 +2962,12 @@
           "Croatia": 5.059,
           "England": 1.716,
           "Draw": 3.784
+        },
+        {
+          "time": "06/15 10:53",
+          "Croatia": 5.045,
+          "England": 1.718,
+          "Draw": 3.784
         }
       ],
       "elo_diff": 50,
@@ -3612,39 +3037,17 @@
           }
         },
         {
-          "name": "Pinnacle",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "Ghana": {
-                "price": 2.2
+                "price": 2.15
               },
               "Panama": {
-                "price": 3.43
+                "price": 3.46
               },
               "Draw": {
-                "price": 3.47
-              }
-            },
-            "spreads": {
-              "Ghana": {
-                "price": 1.91,
-                "point": -0.25,
-                "prob": 51.2
-              },
-              "Panama": {
-                "price": 2.0,
-                "point": 0.25,
-                "prob": 48.8
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.04,
-                "point": 2.25
-              },
-              "Under": {
-                "price": 1.85,
-                "point": 2.25
+                "price": 3.48
               }
             }
           }
@@ -3653,7 +3056,7 @@
       "avg_odds": {
         "Ghana": 2.166,
         "Panama": 3.453,
-        "Draw": 3.392
+        "Draw": 3.395
       },
       "true_probs": {
         "Ghana": 44.1,
@@ -3697,12 +3100,12 @@
       "odds_change": {
         "Ghana": 0.014,
         "Panama": -0.013,
-        "Draw": -0.005
+        "Draw": -0.002
       },
       "change_pct": {
         "Ghana": 0.65,
         "Panama": -0.38,
-        "Draw": -0.15
+        "Draw": -0.06
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -3795,6 +3198,12 @@
           "Ghana": 2.166,
           "Panama": 3.453,
           "Draw": 3.392
+        },
+        {
+          "time": "06/15 10:53",
+          "Ghana": 2.166,
+          "Panama": 3.453,
+          "Draw": 3.395
         }
       ],
       "elo_diff": 0,
@@ -3864,65 +3273,43 @@
           }
         },
         {
-          "name": "Pinnacle",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "Colombia": {
                 "price": 1.39
               },
               "Uzbekistan": {
-                "price": 9.24
+                "price": 9.3
               },
               "Draw": {
-                "price": 4.76
-              }
-            },
-            "spreads": {
-              "Colombia": {
-                "price": 1.92,
-                "point": -1.25,
-                "prob": 50.8
-              },
-              "Uzbekistan": {
-                "price": 1.98,
-                "point": 1.25,
-                "prob": 49.2
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.97,
-                "point": 2.5
-              },
-              "Under": {
-                "price": 1.92,
-                "point": 2.5
+                "price": 4.65
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Colombia": 1.382,
-        "Uzbekistan": 8.941,
-        "Draw": 4.685
+        "Colombia": 1.383,
+        "Uzbekistan": 8.938,
+        "Draw": 4.682
       },
       "true_probs": {
         "Colombia": 69.0,
         "Uzbekistan": 10.7,
-        "Draw": 20.3
+        "Draw": 20.4
       },
       "other_markets": {
         "spreads": {
           "Colombia": {
             "price": 1.92,
             "point": -1.25,
-            "prob": 50.8
+            "prob": 50.9
           },
           "Uzbekistan": {
-            "price": 1.98,
+            "price": 1.99,
             "point": 1.25,
-            "prob": 49.2
+            "prob": 49.1
           }
         },
         "totals": {
@@ -3947,14 +3334,14 @@
       "first_seen": "2026-06-13T12:40:29.351273+08:00",
       "is_new": false,
       "odds_change": {
-        "Colombia": -0.001,
-        "Uzbekistan": 0.031,
-        "Draw": -0.004
+        "Colombia": 0.0,
+        "Uzbekistan": 0.028,
+        "Draw": -0.007
       },
       "change_pct": {
-        "Colombia": -0.07,
-        "Uzbekistan": 0.35,
-        "Draw": -0.09
+        "Colombia": 0.0,
+        "Uzbekistan": 0.31,
+        "Draw": -0.15
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -4047,6 +3434,12 @@
           "Colombia": 1.382,
           "Uzbekistan": 8.941,
           "Draw": 4.685
+        },
+        {
+          "time": "06/15 10:53",
+          "Colombia": 1.383,
+          "Uzbekistan": 8.938,
+          "Draw": 4.682
         }
       ],
       "elo_diff": -260,
@@ -4143,13 +3536,13 @@
         }
       ],
       "avg_odds": {
-        "Czech Republic": 1.762,
-        "South Africa": 4.639,
-        "Draw": 3.756
+        "Czech Republic": 1.763,
+        "South Africa": 4.638,
+        "Draw": 3.758
       },
       "true_probs": {
         "Czech Republic": 54.1,
-        "South Africa": 20.5,
+        "South Africa": 20.6,
         "Draw": 25.4
       },
       "other_markets": {
@@ -4187,14 +3580,14 @@
       "first_seen": "2026-06-13T12:40:29.351276+08:00",
       "is_new": false,
       "odds_change": {
-        "Czech Republic": 0.014,
-        "South Africa": -0.014,
-        "Draw": -0.021
+        "Czech Republic": 0.015,
+        "South Africa": -0.015,
+        "Draw": -0.019
       },
       "change_pct": {
-        "Czech Republic": 0.8,
-        "South Africa": -0.3,
-        "Draw": -0.56
+        "Czech Republic": 0.86,
+        "South Africa": -0.32,
+        "Draw": -0.5
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -4287,12 +3680,18 @@
           "Czech Republic": 1.762,
           "South Africa": 4.639,
           "Draw": 3.756
+        },
+        {
+          "time": "06/15 10:53",
+          "Czech Republic": 1.763,
+          "South Africa": 4.638,
+          "Draw": 3.758
         }
       ],
       "injury_alerts": [
         {
           "team": "South Africa",
-          "title": "Southgate (修夫基) 談論世界盃評述：「我會避席」",
+          "title": "Southgate 談論世界盃賽評：「我會迴避」",
           "link": "https://www.bbc.com/sport/football/articles/cp8lv1png5no?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -4390,7 +3789,7 @@
         }
       ],
       "avg_odds": {
-        "Bosnia & Herzegovina": 6.033,
+        "Bosnia & Herzegovina": 6.037,
         "Switzerland": 1.572,
         "Draw": 4.056
       },
@@ -4434,12 +3833,12 @@
       "first_seen": "2026-06-13T12:40:29.351278+08:00",
       "is_new": false,
       "odds_change": {
-        "Bosnia & Herzegovina": 0.207,
+        "Bosnia & Herzegovina": 0.211,
         "Switzerland": -0.004,
         "Draw": 0.046
       },
       "change_pct": {
-        "Bosnia & Herzegovina": 3.55,
+        "Bosnia & Herzegovina": 3.62,
         "Switzerland": -0.25,
         "Draw": 1.15
       },
@@ -4534,6 +3933,12 @@
           "Bosnia & Herzegovina": 6.033,
           "Switzerland": 1.572,
           "Draw": 4.056
+        },
+        {
+          "time": "06/15 10:53",
+          "Bosnia & Herzegovina": 6.037,
+          "Switzerland": 1.572,
+          "Draw": 4.056
         }
       ],
       "elo_diff": 0,
@@ -4579,13 +3984,13 @@
           "markets": {
             "h2h": {
               "Canada": {
-                "price": 1.26
+                "price": 1.24
               },
               "Qatar": {
-                "price": 12.5
+                "price": 13.0
               },
               "Draw": {
-                "price": 5.75
+                "price": 6.0
               }
             }
           }
@@ -4595,39 +4000,39 @@
           "markets": {
             "h2h": {
               "Canada": {
-                "price": 1.27
+                "price": 1.25
               },
               "Qatar": {
                 "price": 14.0
               },
               "Draw": {
-                "price": 6.0
+                "price": 6.4
               }
             },
             "totals": {
               "Over": {
-                "price": 1.83,
+                "price": 1.76,
                 "point": 2.5,
-                "prob": 52.2
+                "prob": 54.4
               },
               "Under": {
-                "price": 2.0,
+                "price": 2.1,
                 "point": 2.5,
-                "prob": 47.8
+                "prob": 45.6
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Canada": 1.273,
-        "Qatar": 11.657,
-        "Draw": 5.628
+        "Canada": 1.27,
+        "Qatar": 11.724,
+        "Draw": 5.677
       },
       "true_probs": {
-        "Canada": 74.9,
-        "Qatar": 8.2,
-        "Draw": 16.9
+        "Canada": 75.1,
+        "Qatar": 8.1,
+        "Draw": 16.8
       },
       "other_markets": {
         "spreads": {
@@ -4644,14 +4049,14 @@
         },
         "totals": {
           "Over": {
-            "price": 1.83,
+            "price": 1.76,
             "point": 2.5,
-            "prob": 52.2
+            "prob": 54.4
           },
           "Under": {
-            "price": 2.0,
+            "price": 2.1,
             "point": 2.5,
-            "prob": 47.8
+            "prob": 45.6
           }
         },
         "btts": {}
@@ -4664,14 +4069,14 @@
       "first_seen": "2026-06-13T12:40:29.351283+08:00",
       "is_new": false,
       "odds_change": {
-        "Canada": -0.023,
-        "Qatar": 1.072,
-        "Draw": 0.335
+        "Canada": -0.026,
+        "Qatar": 1.139,
+        "Draw": 0.384
       },
       "change_pct": {
-        "Canada": -1.77,
-        "Qatar": 10.13,
-        "Draw": 6.33
+        "Canada": -2.01,
+        "Qatar": 10.76,
+        "Draw": 7.25
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -4764,6 +4169,12 @@
           "Canada": 1.273,
           "Qatar": 11.657,
           "Draw": 5.628
+        },
+        {
+          "time": "06/15 10:53",
+          "Canada": 1.27,
+          "Qatar": 11.724,
+          "Draw": 5.677
         }
       ],
       "elo_diff": 0,
@@ -4860,9 +4271,9 @@
         }
       ],
       "avg_odds": {
-        "Mexico": 1.971,
-        "South Korea": 4.115,
-        "Draw": 3.328
+        "Mexico": 1.973,
+        "South Korea": 4.121,
+        "Draw": 3.327
       },
       "true_probs": {
         "Mexico": 48.3,
@@ -4872,14 +4283,14 @@
       "other_markets": {
         "spreads": {
           "Mexico": {
-            "price": 2.0,
+            "price": 1.94,
             "point": -0.5,
-            "prob": 47.2
+            "prob": 48.5
           },
           "South Korea": {
-            "price": 1.79,
+            "price": 1.83,
             "point": 0.5,
-            "prob": 52.8
+            "prob": 51.5
           }
         },
         "totals": {
@@ -4904,14 +4315,14 @@
       "first_seen": "2026-06-13T12:40:29.351285+08:00",
       "is_new": false,
       "odds_change": {
-        "Mexico": -0.022,
-        "South Korea": 0.103,
-        "Draw": 0.008
+        "Mexico": -0.02,
+        "South Korea": 0.109,
+        "Draw": 0.007
       },
       "change_pct": {
-        "Mexico": -1.1,
-        "South Korea": 2.57,
-        "Draw": 0.24
+        "Mexico": -1.0,
+        "South Korea": 2.72,
+        "Draw": 0.21
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -5004,12 +4415,18 @@
           "Mexico": 1.971,
           "South Korea": 4.115,
           "Draw": 3.328
+        },
+        {
+          "time": "06/15 10:53",
+          "Mexico": 1.973,
+          "South Korea": 4.121,
+          "Draw": 3.327
         }
       ],
       "injury_alerts": [
         {
           "team": "South Korea",
-          "title": "Southgate (修夫基) 談論世界盃評述：「我會避席」",
+          "title": "Southgate 談論世界盃賽評：「我會迴避」",
           "link": "https://www.bbc.com/sport/football/articles/cp8lv1png5no?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -5067,7 +4484,7 @@
             },
             "h2h_lay": {
               "Australia": {
-                "price": 6.0
+                "price": 6.2
               },
               "USA": {
                 "price": 1.64
@@ -5096,26 +4513,26 @@
         }
       ],
       "avg_odds": {
-        "Australia": 5.447,
-        "USA": 1.593,
-        "Draw": 4.173
+        "Australia": 5.472,
+        "USA": 1.592,
+        "Draw": 4.18
       },
       "true_probs": {
-        "Australia": 17.5,
-        "USA": 59.7,
+        "Australia": 17.4,
+        "USA": 59.8,
         "Draw": 22.8
       },
       "other_markets": {
         "spreads": {
           "Australia": {
-            "price": 1.44,
-            "point": 1.5,
-            "prob": 65.4
+            "price": 2.29,
+            "point": 0.5,
+            "prob": 41.1
           },
           "USA": {
-            "price": 2.72,
-            "point": -1.5,
-            "prob": 34.6
+            "price": 1.6,
+            "point": -0.5,
+            "prob": 58.9
           }
         },
         "totals": {
@@ -5140,14 +4557,14 @@
       "first_seen": "2026-06-13T12:40:29.351288+08:00",
       "is_new": false,
       "odds_change": {
-        "Australia": -0.079,
-        "USA": 0.023,
-        "Draw": -0.013
+        "Australia": -0.054,
+        "USA": 0.022,
+        "Draw": -0.006
       },
       "change_pct": {
-        "Australia": -1.43,
-        "USA": 1.46,
-        "Draw": -0.31
+        "Australia": -0.98,
+        "USA": 1.4,
+        "Draw": -0.14
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -5240,6 +4657,12 @@
           "Australia": 5.447,
           "USA": 1.593,
           "Draw": 4.173
+        },
+        {
+          "time": "06/15 10:53",
+          "Australia": 5.472,
+          "USA": 1.592,
+          "Draw": 4.18
         }
       ],
       "elo_diff": 0,
@@ -5336,13 +4759,13 @@
         }
       ],
       "avg_odds": {
-        "Morocco": 1.754,
-        "Scotland": 5.01,
-        "Draw": 3.575
+        "Morocco": 1.756,
+        "Scotland": 4.998,
+        "Draw": 3.567
       },
       "true_probs": {
-        "Morocco": 54.3,
-        "Scotland": 19.0,
+        "Morocco": 54.2,
+        "Scotland": 19.1,
         "Draw": 26.7
       },
       "other_markets": {
@@ -5380,14 +4803,14 @@
       "first_seen": "2026-06-13T12:40:29.351290+08:00",
       "is_new": false,
       "odds_change": {
-        "Morocco": -0.213,
-        "Scotland": 0.899,
-        "Draw": 0.3
+        "Morocco": -0.211,
+        "Scotland": 0.887,
+        "Draw": 0.292
       },
       "change_pct": {
-        "Morocco": -10.83,
-        "Scotland": 21.87,
-        "Draw": 9.16
+        "Morocco": -10.73,
+        "Scotland": 21.58,
+        "Draw": 8.92
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -5480,6 +4903,12 @@
           "Morocco": 1.754,
           "Scotland": 5.01,
           "Draw": 3.575
+        },
+        {
+          "time": "06/15 10:53",
+          "Morocco": 1.756,
+          "Scotland": 4.998,
+          "Draw": 3.567
         }
       ],
       "elo_diff": -250,
@@ -5509,25 +4938,25 @@
           "markets": {
             "h2h": {
               "Brazil": {
-                "price": 1.1
+                "price": 1.11
               },
               "Haiti": {
-                "price": 25.0
+                "price": 23.0
               },
               "Draw": {
-                "price": 10.5
+                "price": 10.0
               }
             },
             "totals": {
               "Over": {
-                "price": 1.93,
+                "price": 1.96,
                 "point": 3.5,
-                "prob": 48.5
+                "prob": 47.9
               },
               "Under": {
-                "price": 1.82,
+                "price": 1.8,
                 "point": 3.5,
-                "prob": 51.5
+                "prob": 52.1
               }
             }
           }
@@ -5578,19 +5007,19 @@
                 "price": 1.09
               },
               "Haiti": {
-                "price": 23.0
+                "price": 21.0
               },
               "Draw": {
-                "price": 10.0
+                "price": 9.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.89,
+                "price": 1.93,
                 "point": 3.5
               },
               "Under": {
-                "price": 1.78,
+                "price": 1.76,
                 "point": 3.5
               }
             }
@@ -5598,14 +5027,14 @@
         }
       ],
       "avg_odds": {
-        "Brazil": 1.103,
-        "Haiti": 21.677,
-        "Draw": 10.422
+        "Brazil": 1.106,
+        "Haiti": 21.864,
+        "Draw": 10.242
       },
       "true_probs": {
-        "Brazil": 86.5,
+        "Brazil": 86.3,
         "Haiti": 4.4,
-        "Draw": 9.1
+        "Draw": 9.3
       },
       "other_markets": {
         "spreads": {
@@ -5622,14 +5051,14 @@
         },
         "totals": {
           "Over": {
-            "price": 1.93,
+            "price": 1.96,
             "point": 3.5,
-            "prob": 48.5
+            "prob": 47.9
           },
           "Under": {
-            "price": 1.82,
+            "price": 1.8,
             "point": 3.5,
-            "prob": 51.5
+            "prob": 52.1
           }
         },
         "btts": {}
@@ -5642,14 +5071,14 @@
       "first_seen": "2026-06-13T12:40:29.351292+08:00",
       "is_new": false,
       "odds_change": {
-        "Brazil": 0.033,
-        "Haiti": -7.265,
-        "Draw": -2.124
+        "Brazil": 0.036,
+        "Haiti": -7.078,
+        "Draw": -2.304
       },
       "change_pct": {
-        "Brazil": 3.08,
-        "Haiti": -25.1,
-        "Draw": -16.93
+        "Brazil": 3.36,
+        "Haiti": -24.46,
+        "Draw": -18.36
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -5742,6 +5171,12 @@
           "Brazil": 1.103,
           "Haiti": 21.677,
           "Draw": 10.422
+        },
+        {
+          "time": "06/15 10:53",
+          "Brazil": 1.106,
+          "Haiti": 21.864,
+          "Draw": 10.242
         }
       ],
       "elo_diff": 400,
@@ -5756,7 +5191,7 @@
         }
       },
       "reverse_line_movement": [
-        "🚨 散戶看好但盤口逆行 (Brazil 賠率上升 3.1%)"
+        "🚨 散戶看好但盤口逆行 (Brazil 賠率上升 3.4%)"
       ],
       "advancement_status": "⚠️ Brazil 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。"
     },
@@ -5862,13 +5297,13 @@
         }
       ],
       "avg_odds": {
-        "Paraguay": 3.9,
-        "Turkey": 2.024,
-        "Draw": 3.321
+        "Paraguay": 3.887,
+        "Turkey": 2.027,
+        "Draw": 3.322
       },
       "true_probs": {
-        "Paraguay": 24.4,
-        "Turkey": 47.0,
+        "Paraguay": 24.5,
+        "Turkey": 46.9,
         "Draw": 28.6
       },
       "other_markets": {
@@ -5906,14 +5341,14 @@
       "first_seen": "2026-06-13T12:40:29.351297+08:00",
       "is_new": false,
       "odds_change": {
-        "Paraguay": 0.039,
-        "Turkey": -0.007,
-        "Draw": 0.094
+        "Paraguay": 0.026,
+        "Turkey": -0.004,
+        "Draw": 0.095
       },
       "change_pct": {
-        "Paraguay": 1.01,
-        "Turkey": -0.34,
-        "Draw": 2.91
+        "Paraguay": 0.67,
+        "Turkey": -0.2,
+        "Draw": 2.94
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -6006,6 +5441,12 @@
           "Paraguay": 3.9,
           "Turkey": 2.024,
           "Draw": 3.321
+        },
+        {
+          "time": "06/15 10:53",
+          "Paraguay": 3.887,
+          "Turkey": 2.027,
+          "Draw": 3.322
         }
       ],
       "elo_diff": 0,
@@ -6112,12 +5553,12 @@
         }
       ],
       "avg_odds": {
-        "Netherlands": 1.646,
-        "Sweden": 5.22,
-        "Draw": 4.014
+        "Netherlands": 1.647,
+        "Sweden": 5.201,
+        "Draw": 4.012
       },
       "true_probs": {
-        "Netherlands": 58.0,
+        "Netherlands": 57.9,
         "Sweden": 18.3,
         "Draw": 23.8
       },
@@ -6156,14 +5597,14 @@
       "first_seen": "2026-06-13T12:40:29.351305+08:00",
       "is_new": false,
       "odds_change": {
-        "Netherlands": 0.021,
-        "Sweden": 0.024,
-        "Draw": 0.015
+        "Netherlands": 0.022,
+        "Sweden": 0.005,
+        "Draw": 0.013
       },
       "change_pct": {
-        "Netherlands": 1.29,
-        "Sweden": 0.46,
-        "Draw": 0.38
+        "Netherlands": 1.35,
+        "Sweden": 0.1,
+        "Draw": 0.33
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -6256,6 +5697,12 @@
           "Netherlands": 1.646,
           "Sweden": 5.22,
           "Draw": 4.014
+        },
+        {
+          "time": "06/15 10:53",
+          "Netherlands": 1.647,
+          "Sweden": 5.201,
+          "Draw": 4.012
         }
       ],
       "elo_diff": 330,
@@ -6362,26 +5809,26 @@
         }
       ],
       "avg_odds": {
-        "Germany": 1.546,
-        "Ivory Coast": 5.7,
-        "Draw": 4.316
+        "Germany": 1.554,
+        "Ivory Coast": 5.586,
+        "Draw": 4.321
       },
       "true_probs": {
-        "Germany": 61.4,
-        "Ivory Coast": 16.6,
+        "Germany": 61.1,
+        "Ivory Coast": 17.0,
         "Draw": 22.0
       },
       "other_markets": {
         "spreads": {
           "Germany": {
-            "price": 1.55,
+            "price": 1.56,
             "point": -0.5,
-            "prob": 60.9
+            "prob": 60.4
           },
           "Ivory Coast": {
-            "price": 2.41,
+            "price": 2.38,
             "point": 0.5,
-            "prob": 39.1
+            "prob": 39.6
           }
         },
         "totals": {
@@ -6406,14 +5853,14 @@
       "first_seen": "2026-06-13T12:40:29.351307+08:00",
       "is_new": false,
       "odds_change": {
-        "Germany": 0.009,
-        "Ivory Coast": -0.004,
-        "Draw": 0.026
+        "Germany": 0.017,
+        "Ivory Coast": -0.118,
+        "Draw": 0.031
       },
       "change_pct": {
-        "Germany": 0.59,
-        "Ivory Coast": -0.07,
-        "Draw": 0.61
+        "Germany": 1.11,
+        "Ivory Coast": -2.07,
+        "Draw": 0.72
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -6506,6 +5953,12 @@
           "Germany": 1.546,
           "Ivory Coast": 5.7,
           "Draw": 4.316
+        },
+        {
+          "time": "06/15 10:53",
+          "Germany": 1.554,
+          "Ivory Coast": 5.586,
+          "Draw": 4.321
         }
       ],
       "elo_diff": 350,
@@ -6535,13 +5988,13 @@
           "markets": {
             "h2h": {
               "Curaçao": {
-                "price": 12.5
+                "price": 14.5
               },
               "Ecuador": {
-                "price": 1.1
+                "price": 1.08
               },
               "Draw": {
-                "price": 7.75
+                "price": 8.0
               }
             }
           }
@@ -6551,25 +6004,25 @@
           "markets": {
             "h2h": {
               "Curaçao": {
-                "price": 18.0
+                "price": 21.0
               },
               "Ecuador": {
-                "price": 1.16
+                "price": 1.12
               },
               "Draw": {
-                "price": 7.5
+                "price": 9.0
               }
             },
             "totals": {
               "Over": {
-                "price": 1.57,
-                "point": 2.5,
-                "prob": 59.6
+                "price": 2.32,
+                "point": 3.5,
+                "prob": 40.4
               },
               "Under": {
-                "price": 2.32,
-                "point": 2.5,
-                "prob": 40.4
+                "price": 1.57,
+                "point": 3.5,
+                "prob": 59.6
               }
             }
           }
@@ -6579,22 +6032,22 @@
           "markets": {
             "h2h": {
               "Curaçao": {
-                "price": 17.0
+                "price": 20.0
               },
               "Ecuador": {
-                "price": 1.15
+                "price": 1.11
               },
               "Draw": {
-                "price": 7.5
+                "price": 8.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.55,
+                "price": 1.47,
                 "point": 2.5
               },
               "Under": {
-                "price": 2.28,
+                "price": 2.48,
                 "point": 2.5
               }
             }
@@ -6602,38 +6055,38 @@
         }
       ],
       "avg_odds": {
-        "Curaçao": 18.08,
-        "Ecuador": 1.143,
-        "Draw": 8.386
+        "Curaçao": 21.654,
+        "Ecuador": 1.116,
+        "Draw": 9.309
       },
       "true_probs": {
-        "Curaçao": 5.3,
-        "Ecuador": 83.4,
-        "Draw": 11.4
+        "Curaçao": 4.4,
+        "Ecuador": 85.4,
+        "Draw": 10.2
       },
       "other_markets": {
         "spreads": {
           "Curaçao": {
-            "price": 1.65,
+            "price": 1.75,
             "point": 2.5,
-            "prob": 57.3
+            "prob": 53.9
           },
           "Ecuador": {
-            "price": 2.21,
+            "price": 2.05,
             "point": -2.5,
-            "prob": 42.7
+            "prob": 46.1
           }
         },
         "totals": {
           "Over": {
-            "price": 1.57,
-            "point": 2.5,
-            "prob": 59.6
+            "price": 2.32,
+            "point": 3.5,
+            "prob": 40.4
           },
           "Under": {
-            "price": 2.32,
-            "point": 2.5,
-            "prob": 40.4
+            "price": 1.57,
+            "point": 3.5,
+            "prob": 59.6
           }
         },
         "btts": {}
@@ -6646,16 +6099,16 @@
       "first_seen": "2026-06-13T12:40:29.351310+08:00",
       "is_new": false,
       "odds_change": {
-        "Curaçao": 3.727,
-        "Ecuador": -0.046,
-        "Draw": 1.459
+        "Curaçao": 7.301,
+        "Ecuador": -0.073,
+        "Draw": 2.382
       },
       "change_pct": {
-        "Curaçao": 25.97,
-        "Ecuador": -3.87,
-        "Draw": 21.06
+        "Curaçao": 50.87,
+        "Ecuador": -6.14,
+        "Draw": 34.39
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "06/13 12:40",
@@ -6746,6 +6199,12 @@
           "Curaçao": 18.08,
           "Ecuador": 1.143,
           "Draw": 8.386
+        },
+        {
+          "time": "06/15 10:53",
+          "Curaçao": 21.654,
+          "Ecuador": 1.116,
+          "Draw": 9.309
         }
       ],
       "elo_diff": 0,
@@ -6775,25 +6234,25 @@
           "markets": {
             "h2h": {
               "Japan": {
-                "price": 1.7
+                "price": 1.65
               },
               "Tunisia": {
-                "price": 5.3
+                "price": 5.6
               },
               "Draw": {
-                "price": 3.65
+                "price": 3.75
               }
             },
             "totals": {
               "Over": {
-                "price": 2.14,
+                "price": 2.12,
                 "point": 2.5,
-                "prob": 44.0
+                "prob": 44.5
               },
               "Under": {
-                "price": 1.68,
+                "price": 1.7,
                 "point": 2.5,
-                "prob": 56.0
+                "prob": 55.5
               }
             }
           }
@@ -6803,22 +6262,22 @@
           "markets": {
             "h2h": {
               "Japan": {
-                "price": 1.67
+                "price": 1.63
               },
               "Tunisia": {
-                "price": 5.2
+                "price": 5.5
               },
               "Draw": {
-                "price": 3.55
+                "price": 3.65
               }
             },
             "totals": {
               "Over": {
-                "price": 2.08,
+                "price": 2.06,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.64,
+                "price": 1.66,
                 "point": 2.5
               }
             }
@@ -6829,22 +6288,22 @@
           "markets": {
             "h2h": {
               "Japan": {
-                "price": 1.73
+                "price": 1.68
               },
               "Tunisia": {
-                "price": 5.6
+                "price": 6.0
               },
               "Draw": {
-                "price": 3.8
+                "price": 3.9
               }
             },
             "totals": {
               "Over": {
-                "price": 2.14,
+                "price": 2.12,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.68,
+                "price": 1.7,
                 "point": 2.5
               }
             }
@@ -6852,38 +6311,38 @@
         }
       ],
       "avg_odds": {
-        "Japan": 1.679,
-        "Tunisia": 5.566,
-        "Draw": 3.646
+        "Japan": 1.64,
+        "Tunisia": 5.935,
+        "Draw": 3.729
       },
       "true_probs": {
-        "Japan": 56.7,
-        "Tunisia": 17.1,
-        "Draw": 26.1
+        "Japan": 58.3,
+        "Tunisia": 16.1,
+        "Draw": 25.6
       },
       "other_markets": {
         "spreads": {
           "Japan": {
-            "price": 1.67,
+            "price": 1.65,
             "point": -0.5,
-            "prob": 56.5
+            "prob": 57.3
           },
           "Tunisia": {
-            "price": 2.17,
+            "price": 2.21,
             "point": 0.5,
-            "prob": 43.5
+            "prob": 42.7
           }
         },
         "totals": {
           "Over": {
-            "price": 2.14,
+            "price": 2.12,
             "point": 2.5,
-            "prob": 44.0
+            "prob": 44.5
           },
           "Under": {
-            "price": 1.68,
+            "price": 1.7,
             "point": 2.5,
-            "prob": 56.0
+            "prob": 55.5
           }
         },
         "btts": {}
@@ -6896,14 +6355,14 @@
       "first_seen": "2026-06-13T12:40:29.351312+08:00",
       "is_new": false,
       "odds_change": {
-        "Japan": -0.015,
-        "Tunisia": 0.238,
-        "Draw": 0.06
+        "Japan": -0.054,
+        "Tunisia": 0.607,
+        "Draw": 0.143
       },
       "change_pct": {
-        "Japan": -0.89,
-        "Tunisia": 4.47,
-        "Draw": 1.67
+        "Japan": -3.19,
+        "Tunisia": 11.39,
+        "Draw": 3.99
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -6996,6 +6455,12 @@
           "Japan": 1.679,
           "Tunisia": 5.566,
           "Draw": 3.646
+        },
+        {
+          "time": "06/15 10:53",
+          "Japan": 1.64,
+          "Tunisia": 5.935,
+          "Draw": 3.729
         }
       ],
       "elo_diff": -200,
@@ -7114,14 +6579,14 @@
         }
       ],
       "avg_odds": {
-        "Saudi Arabia": 23.875,
+        "Saudi Arabia": 23.946,
         "Spain": 1.103,
-        "Draw": 9.724
+        "Draw": 9.78
       },
       "true_probs": {
         "Saudi Arabia": 4.0,
-        "Spain": 86.2,
-        "Draw": 9.8
+        "Spain": 86.3,
+        "Draw": 9.7
       },
       "other_markets": {
         "spreads": {
@@ -7158,14 +6623,14 @@
       "first_seen": "2026-06-13T12:40:29.351315+08:00",
       "is_new": false,
       "odds_change": {
-        "Saudi Arabia": 0.005,
+        "Saudi Arabia": 0.076,
         "Spain": 0.006,
-        "Draw": -0.071
+        "Draw": -0.015
       },
       "change_pct": {
-        "Saudi Arabia": 0.02,
+        "Saudi Arabia": 0.32,
         "Spain": 0.55,
-        "Draw": -0.72
+        "Draw": -0.15
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -7258,6 +6723,12 @@
           "Saudi Arabia": 23.875,
           "Spain": 1.103,
           "Draw": 9.724
+        },
+        {
+          "time": "06/15 10:53",
+          "Saudi Arabia": 23.946,
+          "Spain": 1.103,
+          "Draw": 9.78
         }
       ],
       "elo_diff": 380,
@@ -7357,12 +6828,12 @@
       ],
       "avg_odds": {
         "Belgium": 1.392,
-        "Iran": 8.056,
-        "Draw": 4.732
+        "Iran": 8.081,
+        "Draw": 4.734
       },
       "true_probs": {
         "Belgium": 68.2,
-        "Iran": 11.8,
+        "Iran": 11.7,
         "Draw": 20.1
       },
       "other_markets": {
@@ -7401,13 +6872,13 @@
       "is_new": false,
       "odds_change": {
         "Belgium": -0.004,
-        "Iran": 0.146,
-        "Draw": 0.085
+        "Iran": 0.171,
+        "Draw": 0.087
       },
       "change_pct": {
         "Belgium": -0.29,
-        "Iran": 1.85,
-        "Draw": 1.83
+        "Iran": 2.16,
+        "Draw": 1.87
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -7500,6 +6971,12 @@
           "Belgium": 1.392,
           "Iran": 8.056,
           "Draw": 4.732
+        },
+        {
+          "time": "06/15 10:53",
+          "Belgium": 1.392,
+          "Iran": 8.081,
+          "Draw": 4.734
         }
       ],
       "elo_diff": 270,
@@ -7596,14 +7073,14 @@
         }
       ],
       "avg_odds": {
-        "Cape Verde": 7.503,
-        "Uruguay": 1.427,
-        "Draw": 4.495
+        "Cape Verde": 7.543,
+        "Uruguay": 1.429,
+        "Draw": 4.507
       },
       "true_probs": {
         "Cape Verde": 12.6,
-        "Uruguay": 66.3,
-        "Draw": 21.1
+        "Uruguay": 66.4,
+        "Draw": 21.0
       },
       "other_markets": {
         "spreads": {
@@ -7640,14 +7117,14 @@
       "first_seen": "2026-06-13T12:40:29.351321+08:00",
       "is_new": false,
       "odds_change": {
-        "Cape Verde": 0.182,
-        "Uruguay": -0.005,
-        "Draw": 0.049
+        "Cape Verde": 0.222,
+        "Uruguay": -0.003,
+        "Draw": 0.061
       },
       "change_pct": {
-        "Cape Verde": 2.49,
-        "Uruguay": -0.35,
-        "Draw": 1.1
+        "Cape Verde": 3.03,
+        "Uruguay": -0.21,
+        "Draw": 1.37
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -7740,6 +7217,12 @@
           "Cape Verde": 7.503,
           "Uruguay": 1.427,
           "Draw": 4.495
+        },
+        {
+          "time": "06/15 10:53",
+          "Cape Verde": 7.543,
+          "Uruguay": 1.429,
+          "Draw": 4.507
         }
       ],
       "elo_diff": 280,
@@ -7847,7 +7330,7 @@
       ],
       "avg_odds": {
         "Egypt": 1.729,
-        "New Zealand": 4.788,
+        "New Zealand": 4.79,
         "Draw": 3.696
       },
       "true_probs": {
@@ -7891,12 +7374,12 @@
       "is_new": false,
       "odds_change": {
         "Egypt": -0.003,
-        "New Zealand": 0.021,
+        "New Zealand": 0.023,
         "Draw": 0.006
       },
       "change_pct": {
         "Egypt": -0.17,
-        "New Zealand": 0.44,
+        "New Zealand": 0.48,
         "Draw": 0.16
       },
       "is_value_bet": false,
@@ -7989,6 +7472,12 @@
           "time": "06/15 06:03",
           "Egypt": 1.729,
           "New Zealand": 4.788,
+          "Draw": 3.696
+        },
+        {
+          "time": "06/15 10:53",
+          "Egypt": 1.729,
+          "New Zealand": 4.79,
           "Draw": 3.696
         }
       ],
@@ -8086,9 +7575,9 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 1.611,
-        "Austria": 5.589,
-        "Draw": 3.864
+        "Argentina": 1.612,
+        "Austria": 5.593,
+        "Draw": 3.863
       },
       "true_probs": {
         "Argentina": 58.6,
@@ -8130,14 +7619,14 @@
       "first_seen": "2026-06-13T12:40:29.351326+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.014,
-        "Austria": 0.103,
-        "Draw": 0.034
+        "Argentina": -0.013,
+        "Austria": 0.107,
+        "Draw": 0.033
       },
       "change_pct": {
-        "Argentina": -0.86,
-        "Austria": 1.88,
-        "Draw": 0.89
+        "Argentina": -0.8,
+        "Austria": 1.95,
+        "Draw": 0.86
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -8230,6 +7719,12 @@
           "Argentina": 1.611,
           "Austria": 5.589,
           "Draw": 3.864
+        },
+        {
+          "time": "06/15 10:53",
+          "Argentina": 1.612,
+          "Austria": 5.593,
+          "Draw": 3.863
         }
       ],
       "elo_diff": 440,
@@ -8262,7 +7757,7 @@
                 "price": 1.1
               },
               "Iraq": {
-                "price": 23.0
+                "price": 21.0
               },
               "Draw": {
                 "price": 9.0
@@ -8290,7 +7785,7 @@
                 "price": 1.13
               },
               "Iraq": {
-                "price": 26.0
+                "price": 25.0
               },
               "Draw": {
                 "price": 10.5
@@ -8326,12 +7821,12 @@
         }
       ],
       "avg_odds": {
-        "France": 1.11,
+        "France": 1.111,
         "Iraq": 24.998,
-        "Draw": 9.034
+        "Draw": 9.022
       },
       "true_probs": {
-        "France": 85.7,
+        "France": 85.6,
         "Iraq": 3.8,
         "Draw": 10.5
       },
@@ -8370,14 +7865,14 @@
       "first_seen": "2026-06-13T12:40:29.351328+08:00",
       "is_new": false,
       "odds_change": {
-        "France": -0.002,
+        "France": -0.001,
         "Iraq": 0.594,
-        "Draw": 0.221
+        "Draw": 0.209
       },
       "change_pct": {
-        "France": -0.18,
+        "France": -0.09,
         "Iraq": 2.43,
-        "Draw": 2.51
+        "Draw": 2.37
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -8470,6 +7965,12 @@
           "France": 1.11,
           "Iraq": 24.998,
           "Draw": 9.034
+        },
+        {
+          "time": "06/15 10:53",
+          "France": 1.111,
+          "Iraq": 24.998,
+          "Draw": 9.022
         }
       ],
       "elo_diff": 420,
@@ -8588,9 +8089,9 @@
         }
       ],
       "avg_odds": {
-        "Norway": 2.118,
-        "Senegal": 3.355,
-        "Draw": 3.468
+        "Norway": 2.121,
+        "Senegal": 3.359,
+        "Draw": 3.471
       },
       "true_probs": {
         "Norway": 44.6,
@@ -8632,14 +8133,14 @@
       "first_seen": "2026-06-13T12:40:29.351332+08:00",
       "is_new": false,
       "odds_change": {
-        "Norway": -0.005,
-        "Senegal": 0.015,
-        "Draw": 0.013
+        "Norway": -0.002,
+        "Senegal": 0.019,
+        "Draw": 0.016
       },
       "change_pct": {
-        "Norway": -0.24,
-        "Senegal": 0.45,
-        "Draw": 0.38
+        "Norway": -0.09,
+        "Senegal": 0.57,
+        "Draw": 0.46
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -8732,6 +8233,12 @@
           "Norway": 2.118,
           "Senegal": 3.355,
           "Draw": 3.468
+        },
+        {
+          "time": "06/15 10:53",
+          "Norway": 2.121,
+          "Senegal": 3.359,
+          "Draw": 3.471
         }
       ],
       "elo_diff": 0,
@@ -8851,7 +8358,7 @@
       ],
       "avg_odds": {
         "Algeria": 1.491,
-        "Jordan": 6.646,
+        "Jordan": 6.654,
         "Draw": 4.235
       },
       "true_probs": {
@@ -8895,12 +8402,12 @@
       "is_new": false,
       "odds_change": {
         "Algeria": -0.02,
-        "Jordan": 0.308,
+        "Jordan": 0.316,
         "Draw": 0.063
       },
       "change_pct": {
         "Algeria": -1.32,
-        "Jordan": 4.86,
+        "Jordan": 4.99,
         "Draw": 1.51
       },
       "is_value_bet": false,
@@ -8993,6 +8500,12 @@
           "time": "06/15 06:03",
           "Algeria": 1.491,
           "Jordan": 6.646,
+          "Draw": 4.235
+        },
+        {
+          "time": "06/15 10:53",
+          "Algeria": 1.491,
+          "Jordan": 6.654,
           "Draw": 4.235
         }
       ],
@@ -9102,9 +8615,9 @@
         }
       ],
       "avg_odds": {
-        "Portugal": 1.235,
-        "Uzbekistan": 11.629,
-        "Draw": 6.194
+        "Portugal": 1.237,
+        "Uzbekistan": 11.711,
+        "Draw": 6.191
       },
       "true_probs": {
         "Portugal": 76.6,
@@ -9146,14 +8659,14 @@
       "first_seen": "2026-06-13T12:40:29.351339+08:00",
       "is_new": false,
       "odds_change": {
-        "Portugal": 0.0,
-        "Uzbekistan": 0.365,
-        "Draw": -0.031
+        "Portugal": 0.002,
+        "Uzbekistan": 0.447,
+        "Draw": -0.034
       },
       "change_pct": {
-        "Portugal": 0.0,
-        "Uzbekistan": 3.24,
-        "Draw": -0.5
+        "Portugal": 0.16,
+        "Uzbekistan": 3.97,
+        "Draw": -0.55
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -9246,6 +8759,12 @@
           "Portugal": 1.235,
           "Uzbekistan": 11.629,
           "Draw": 6.194
+        },
+        {
+          "time": "06/15 10:53",
+          "Portugal": 1.237,
+          "Uzbekistan": 11.711,
+          "Draw": 6.191
         }
       ],
       "elo_diff": 340,
@@ -9342,13 +8861,13 @@
         }
       ],
       "avg_odds": {
-        "England": 1.315,
-        "Ghana": 9.32,
-        "Draw": 5.241
+        "England": 1.313,
+        "Ghana": 9.421,
+        "Draw": 5.246
       },
       "true_probs": {
-        "England": 71.8,
-        "Ghana": 10.1,
+        "England": 72.0,
+        "Ghana": 10.0,
         "Draw": 18.0
       },
       "other_markets": {
@@ -9386,14 +8905,14 @@
       "first_seen": "2026-06-13T12:40:29.351342+08:00",
       "is_new": false,
       "odds_change": {
-        "England": 0.003,
-        "Ghana": -0.11,
-        "Draw": -0.026
+        "England": 0.001,
+        "Ghana": -0.009,
+        "Draw": -0.021
       },
       "change_pct": {
-        "England": 0.23,
-        "Ghana": -1.17,
-        "Draw": -0.49
+        "England": 0.08,
+        "Ghana": -0.1,
+        "Draw": -0.4
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -9486,6 +9005,12 @@
           "England": 1.315,
           "Ghana": 9.32,
           "Draw": 5.241
+        },
+        {
+          "time": "06/15 10:53",
+          "England": 1.313,
+          "Ghana": 9.421,
+          "Draw": 5.246
         }
       ],
       "elo_diff": 360,
@@ -9583,12 +9108,12 @@
       ],
       "avg_odds": {
         "Croatia": 1.543,
-        "Panama": 6.465,
-        "Draw": 3.883
+        "Panama": 6.494,
+        "Draw": 3.882
       },
       "true_probs": {
-        "Croatia": 61.1,
-        "Panama": 14.6,
+        "Croatia": 61.2,
+        "Panama": 14.5,
         "Draw": 24.3
       },
       "other_markets": {
@@ -9627,13 +9152,13 @@
       "is_new": false,
       "odds_change": {
         "Croatia": -0.001,
-        "Panama": 0.014,
-        "Draw": 0.007
+        "Panama": 0.043,
+        "Draw": 0.006
       },
       "change_pct": {
         "Croatia": -0.06,
-        "Panama": 0.22,
-        "Draw": 0.18
+        "Panama": 0.67,
+        "Draw": 0.15
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -9726,6 +9251,12 @@
           "Croatia": 1.543,
           "Panama": 6.465,
           "Draw": 3.883
+        },
+        {
+          "time": "06/15 10:53",
+          "Croatia": 1.543,
+          "Panama": 6.494,
+          "Draw": 3.882
         }
       ],
       "elo_diff": -310,
@@ -9823,11 +9354,11 @@
       ],
       "avg_odds": {
         "Colombia": 1.454,
-        "DR Congo": 7.501,
-        "Draw": 4.227
+        "DR Congo": 7.518,
+        "Draw": 4.23
       },
       "true_probs": {
-        "Colombia": 65.0,
+        "Colombia": 65.1,
         "DR Congo": 12.6,
         "Draw": 22.4
       },
@@ -9867,13 +9398,13 @@
       "is_new": false,
       "odds_change": {
         "Colombia": -0.007,
-        "DR Congo": 0.197,
-        "Draw": 0.056
+        "DR Congo": 0.214,
+        "Draw": 0.059
       },
       "change_pct": {
         "Colombia": -0.48,
-        "DR Congo": 2.7,
-        "Draw": 1.34
+        "DR Congo": 2.93,
+        "Draw": 1.41
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -9966,6 +9497,12 @@
           "Colombia": 1.454,
           "DR Congo": 7.501,
           "Draw": 4.227
+        },
+        {
+          "time": "06/15 10:53",
+          "Colombia": 1.454,
+          "DR Congo": 7.518,
+          "Draw": 4.23
         }
       ],
       "elo_diff": 260,
@@ -10064,9 +9601,9 @@
         }
       ],
       "avg_odds": {
-        "Bosnia & Herzegovina": 1.542,
-        "Qatar": 6.102,
-        "Draw": 3.962
+        "Bosnia & Herzegovina": 1.545,
+        "Qatar": 6.11,
+        "Draw": 3.966
       },
       "true_probs": {
         "Bosnia & Herzegovina": 60.9,
@@ -10108,14 +9645,14 @@
       "first_seen": "2026-06-13T12:40:29.351353+08:00",
       "is_new": false,
       "odds_change": {
-        "Bosnia & Herzegovina": -0.061,
-        "Qatar": 0.467,
-        "Draw": 0.217
+        "Bosnia & Herzegovina": -0.058,
+        "Qatar": 0.475,
+        "Draw": 0.221
       },
       "change_pct": {
-        "Bosnia & Herzegovina": -3.81,
-        "Qatar": 8.29,
-        "Draw": 5.79
+        "Bosnia & Herzegovina": -3.62,
+        "Qatar": 8.43,
+        "Draw": 5.9
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -10208,6 +9745,12 @@
           "Bosnia & Herzegovina": 1.542,
           "Qatar": 6.102,
           "Draw": 3.962
+        },
+        {
+          "time": "06/15 10:53",
+          "Bosnia & Herzegovina": 1.545,
+          "Qatar": 6.11,
+          "Draw": 3.966
         }
       ],
       "elo_diff": 0,
@@ -10306,13 +9849,13 @@
         }
       ],
       "avg_odds": {
-        "Canada": 3.466,
-        "Switzerland": 2.111,
-        "Draw": 3.324
+        "Canada": 3.47,
+        "Switzerland": 2.113,
+        "Draw": 3.321
       },
       "true_probs": {
         "Canada": 27.1,
-        "Switzerland": 44.6,
+        "Switzerland": 44.5,
         "Draw": 28.3
       },
       "other_markets": {
@@ -10350,14 +9893,14 @@
       "first_seen": "2026-06-13T12:40:29.351355+08:00",
       "is_new": false,
       "odds_change": {
-        "Canada": -0.009,
-        "Switzerland": 0.014,
-        "Draw": 0.022
+        "Canada": -0.005,
+        "Switzerland": 0.016,
+        "Draw": 0.019
       },
       "change_pct": {
-        "Canada": -0.26,
-        "Switzerland": 0.67,
-        "Draw": 0.67
+        "Canada": -0.14,
+        "Switzerland": 0.76,
+        "Draw": 0.58
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -10450,6 +9993,12 @@
           "Canada": 3.466,
           "Switzerland": 2.111,
           "Draw": 3.324
+        },
+        {
+          "time": "06/15 10:53",
+          "Canada": 3.47,
+          "Switzerland": 2.113,
+          "Draw": 3.321
         }
       ],
       "elo_diff": 0,
@@ -10546,14 +10095,14 @@
         }
       ],
       "avg_odds": {
-        "Brazil": 1.422,
-        "Scotland": 6.54,
-        "Draw": 4.782
+        "Brazil": 1.423,
+        "Scotland": 6.579,
+        "Draw": 4.779
       },
       "true_probs": {
         "Brazil": 66.0,
-        "Scotland": 14.4,
-        "Draw": 19.6
+        "Scotland": 14.3,
+        "Draw": 19.7
       },
       "other_markets": {
         "spreads": {
@@ -10590,14 +10139,14 @@
       "first_seen": "2026-06-13T12:40:29.351357+08:00",
       "is_new": false,
       "odds_change": {
-        "Brazil": -0.018,
-        "Scotland": -0.012,
-        "Draw": 0.243
+        "Brazil": -0.017,
+        "Scotland": 0.027,
+        "Draw": 0.24
       },
       "change_pct": {
-        "Brazil": -1.25,
-        "Scotland": -0.18,
-        "Draw": 5.35
+        "Brazil": -1.18,
+        "Scotland": 0.41,
+        "Draw": 5.29
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -10690,6 +10239,12 @@
           "Brazil": 1.422,
           "Scotland": 6.54,
           "Draw": 4.782
+        },
+        {
+          "time": "06/15 10:53",
+          "Brazil": 1.423,
+          "Scotland": 6.579,
+          "Draw": 4.779
         }
       ],
       "elo_diff": -400,
@@ -10764,13 +10319,13 @@
         }
       ],
       "avg_odds": {
-        "Haiti": 9.704,
+        "Haiti": 9.796,
         "Morocco": 1.302,
-        "Draw": 5.235
+        "Draw": 5.25
       },
       "true_probs": {
-        "Haiti": 9.7,
-        "Morocco": 72.3,
+        "Haiti": 9.6,
+        "Morocco": 72.4,
         "Draw": 18.0
       },
       "other_markets": {
@@ -10808,14 +10363,14 @@
       "first_seen": "2026-06-13T12:40:29.351359+08:00",
       "is_new": false,
       "odds_change": {
-        "Haiti": 0.525,
+        "Haiti": 0.617,
         "Morocco": -0.023,
-        "Draw": 0.253
+        "Draw": 0.268
       },
       "change_pct": {
-        "Haiti": 5.72,
+        "Haiti": 6.72,
         "Morocco": -1.74,
-        "Draw": 5.08
+        "Draw": 5.38
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -10908,6 +10463,12 @@
           "Haiti": 9.704,
           "Morocco": 1.302,
           "Draw": 5.235
+        },
+        {
+          "time": "06/15 10:53",
+          "Haiti": 9.796,
+          "Morocco": 1.302,
+          "Draw": 5.25
         }
       ],
       "elo_diff": 250,
@@ -11006,12 +10567,12 @@
         }
       ],
       "avg_odds": {
-        "Czech Republic": 4.52,
-        "Mexico": 1.793,
-        "Draw": 3.478
+        "Czech Republic": 4.524,
+        "Mexico": 1.796,
+        "Draw": 3.482
       },
       "true_probs": {
-        "Czech Republic": 20.7,
+        "Czech Republic": 20.8,
         "Mexico": 52.3,
         "Draw": 27.0
       },
@@ -11050,14 +10611,14 @@
       "first_seen": "2026-06-13T12:40:29.351366+08:00",
       "is_new": false,
       "odds_change": {
-        "Czech Republic": 0.062,
-        "Mexico": -0.009,
-        "Draw": 0.021
+        "Czech Republic": 0.066,
+        "Mexico": -0.006,
+        "Draw": 0.025
       },
       "change_pct": {
-        "Czech Republic": 1.39,
-        "Mexico": -0.5,
-        "Draw": 0.61
+        "Czech Republic": 1.48,
+        "Mexico": -0.33,
+        "Draw": 0.72
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -11150,6 +10711,12 @@
           "Czech Republic": 4.52,
           "Mexico": 1.793,
           "Draw": 3.478
+        },
+        {
+          "time": "06/15 10:53",
+          "Czech Republic": 4.524,
+          "Mexico": 1.796,
+          "Draw": 3.482
         }
       ],
       "elo_diff": -150,
@@ -11248,9 +10815,9 @@
         }
       ],
       "avg_odds": {
-        "South Africa": 5.57,
-        "South Korea": 1.587,
-        "Draw": 3.888
+        "South Africa": 5.584,
+        "South Korea": 1.59,
+        "Draw": 3.894
       },
       "true_probs": {
         "South Africa": 16.8,
@@ -11292,14 +10859,14 @@
       "first_seen": "2026-06-13T12:40:29.351369+08:00",
       "is_new": false,
       "odds_change": {
-        "South Africa": 0.019,
-        "South Korea": -0.004,
-        "Draw": 0.028
+        "South Africa": 0.033,
+        "South Korea": -0.001,
+        "Draw": 0.034
       },
       "change_pct": {
-        "South Africa": 0.34,
-        "South Korea": -0.25,
-        "Draw": 0.73
+        "South Africa": 0.59,
+        "South Korea": -0.06,
+        "Draw": 0.88
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -11392,12 +10959,18 @@
           "South Africa": 5.57,
           "South Korea": 1.587,
           "Draw": 3.888
+        },
+        {
+          "time": "06/15 10:53",
+          "South Africa": 5.584,
+          "South Korea": 1.59,
+          "Draw": 3.894
         }
       ],
       "injury_alerts": [
         {
           "team": "South Africa",
-          "title": "Southgate (修夫基) 談論世界盃評述：「我會避席」",
+          "title": "Southgate 談論世界盃賽評：「我會迴避」",
           "link": "https://www.bbc.com/sport/football/articles/cp8lv1png5no?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -11428,13 +11001,13 @@
           "markets": {
             "h2h": {
               "Curaçao": {
-                "price": 10.0
+                "price": 10.5
               },
               "Ivory Coast": {
-                "price": 1.1
+                "price": 1.08
               },
               "Draw": {
-                "price": 5.7
+                "price": 5.9
               }
             }
           }
@@ -11460,50 +11033,50 @@
           "markets": {
             "h2h": {
               "Curaçao": {
-                "price": 12.0
+                "price": 13.5
               },
               "Ivory Coast": {
-                "price": 1.2
+                "price": 1.18
               },
               "Draw": {
-                "price": 7.8
+                "price": 8.2
               }
             },
             "h2h_lay": {
               "Curaçao": {
-                "price": 23.0
+                "price": 27.0
               },
               "Ivory Coast": {
-                "price": 1.26
+                "price": 1.24
               },
               "Draw": {
-                "price": 9.6
+                "price": 10.0
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Curaçao": 14.999,
-        "Ivory Coast": 1.162,
-        "Draw": 7.305
+        "Curaçao": 16.382,
+        "Ivory Coast": 1.152,
+        "Draw": 7.532
       },
       "true_probs": {
-        "Curaçao": 6.3,
-        "Ivory Coast": 80.9,
-        "Draw": 12.9
+        "Curaçao": 5.7,
+        "Ivory Coast": 81.7,
+        "Draw": 12.5
       },
       "other_markets": {
         "spreads": {
           "Curaçao": {
             "price": 1.62,
             "point": 2.5,
-            "prob": 58.7
+            "prob": 57.8
           },
           "Ivory Coast": {
-            "price": 2.3,
+            "price": 2.22,
             "point": -2.5,
-            "prob": 41.3
+            "prob": 42.2
           }
         },
         "totals": {
@@ -11528,16 +11101,16 @@
       "first_seen": "2026-06-13T12:40:29.351372+08:00",
       "is_new": false,
       "odds_change": {
-        "Curaçao": 2.067,
-        "Ivory Coast": -0.053,
-        "Draw": 1.173
+        "Curaçao": 3.45,
+        "Ivory Coast": -0.063,
+        "Draw": 1.4
       },
       "change_pct": {
-        "Curaçao": 15.98,
-        "Ivory Coast": -4.36,
-        "Draw": 19.13
+        "Curaçao": 26.68,
+        "Ivory Coast": -5.19,
+        "Draw": 22.83
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "06/13 12:40",
@@ -11628,6 +11201,12 @@
           "Curaçao": 14.999,
           "Ivory Coast": 1.162,
           "Draw": 7.305
+        },
+        {
+          "time": "06/15 10:53",
+          "Curaçao": 16.382,
+          "Ivory Coast": 1.152,
+          "Draw": 7.532
         }
       ],
       "elo_diff": 0,
@@ -11660,7 +11239,7 @@
                 "price": 3.9
               },
               "Germany": {
-                "price": 1.6
+                "price": 1.58
               },
               "Draw": {
                 "price": 3.3
@@ -11673,13 +11252,13 @@
           "markets": {
             "h2h": {
               "Ecuador": {
-                "price": 4.66
+                "price": 4.91
               },
               "Germany": {
                 "price": 1.68
               },
               "Draw": {
-                "price": 3.92
+                "price": 3.73
               }
             },
             "spreads": {
@@ -11726,14 +11305,14 @@
         }
       ],
       "avg_odds": {
-        "Ecuador": 4.609,
-        "Germany": 1.726,
-        "Draw": 3.694
+        "Ecuador": 4.694,
+        "Germany": 1.711,
+        "Draw": 3.746
       },
       "true_probs": {
-        "Ecuador": 20.3,
-        "Germany": 54.3,
-        "Draw": 25.4
+        "Ecuador": 20.0,
+        "Germany": 54.9,
+        "Draw": 25.1
       },
       "other_markets": {
         "spreads": {
@@ -11770,14 +11349,14 @@
       "first_seen": "2026-06-13T12:40:29.351374+08:00",
       "is_new": false,
       "odds_change": {
-        "Ecuador": -0.031,
-        "Germany": 0.005,
-        "Draw": -0.018
+        "Ecuador": 0.054,
+        "Germany": -0.01,
+        "Draw": 0.034
       },
       "change_pct": {
-        "Ecuador": -0.67,
-        "Germany": 0.29,
-        "Draw": -0.48
+        "Ecuador": 1.16,
+        "Germany": -0.58,
+        "Draw": 0.92
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -11870,6 +11449,12 @@
           "Ecuador": 4.609,
           "Germany": 1.726,
           "Draw": 3.694
+        },
+        {
+          "time": "06/15 10:53",
+          "Ecuador": 4.694,
+          "Germany": 1.711,
+          "Draw": 3.746
         }
       ],
       "elo_diff": -350,
@@ -11895,63 +11480,87 @@
       "commence_time": "2026-06-25T23:00:00Z",
       "bookmakers": [
         {
-          "name": "Winamax (DE)",
-          "markets": {
-            "h2h": {
-              "Japan": {
-                "price": 1.9
-              },
-              "Sweden": {
-                "price": 3.3
-              },
-              "Draw": {
-                "price": 3.15
-              }
-            }
-          }
-        },
-        {
           "name": "Tipico",
           "markets": {
             "h2h": {
               "Japan": {
-                "price": 2.0
+                "price": 1.93
               },
               "Sweden": {
-                "price": 3.5
+                "price": 3.7
               },
               "Draw": {
-                "price": 3.3
+                "price": 3.4
               }
             }
           }
         },
         {
-          "name": "Winamax (FR)",
+          "name": "FanDuel",
           "markets": {
             "h2h": {
               "Japan": {
-                "price": 1.84
+                "price": 2.05
               },
               "Sweden": {
-                "price": 3.15
+                "price": 3.6
               },
               "Draw": {
-                "price": 3.05
+                "price": 3.5
+              }
+            }
+          }
+        },
+        {
+          "name": "GTbets",
+          "markets": {
+            "h2h": {
+              "Japan": {
+                "price": 2.1
+              },
+              "Sweden": {
+                "price": 3.59
+              },
+              "Draw": {
+                "price": 3.53
+              }
+            },
+            "spreads": {
+              "Japan": {
+                "price": 2.03,
+                "point": -0.5,
+                "prob": 46.4
+              },
+              "Sweden": {
+                "price": 1.76,
+                "point": 0.5,
+                "prob": 53.6
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.04,
+                "point": 2.5,
+                "prob": 46.3
+              },
+              "Under": {
+                "price": 1.76,
+                "point": 2.5,
+                "prob": 53.7
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Japan": 2.057,
-        "Sweden": 3.54,
-        "Draw": 3.361
+        "Japan": 2.086,
+        "Sweden": 3.57,
+        "Draw": 3.391
       },
       "true_probs": {
-        "Japan": 45.6,
-        "Sweden": 26.5,
-        "Draw": 27.9
+        "Japan": 45.5,
+        "Sweden": 26.6,
+        "Draw": 28.0
       },
       "other_markets": {
         "spreads": {
@@ -11988,14 +11597,14 @@
       "first_seen": "2026-06-13T12:40:29.351376+08:00",
       "is_new": false,
       "odds_change": {
-        "Japan": -0.016,
-        "Sweden": 0.052,
-        "Draw": 0.002
+        "Japan": 0.013,
+        "Sweden": 0.082,
+        "Draw": 0.032
       },
       "change_pct": {
-        "Japan": -0.77,
-        "Sweden": 1.49,
-        "Draw": 0.06
+        "Japan": 0.63,
+        "Sweden": 2.35,
+        "Draw": 0.95
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -12088,6 +11697,12 @@
           "Japan": 2.057,
           "Sweden": 3.54,
           "Draw": 3.361
+        },
+        {
+          "time": "06/15 10:53",
+          "Japan": 2.086,
+          "Sweden": 3.57,
+          "Draw": 3.391
         }
       ],
       "elo_diff": 200,
@@ -12112,22 +11727,6 @@
       "away_team": "Netherlands",
       "commence_time": "2026-06-25T23:00:00Z",
       "bookmakers": [
-        {
-          "name": "Winamax (FR)",
-          "markets": {
-            "h2h": {
-              "Netherlands": {
-                "price": 1.37
-              },
-              "Tunisia": {
-                "price": 5.1
-              },
-              "Draw": {
-                "price": 3.8
-              }
-            }
-          }
-        },
         {
           "name": "FanDuel",
           "markets": {
@@ -12172,28 +11771,44 @@
             },
             "totals": {
               "Over": {
-                "price": 1.88,
+                "price": 1.82,
                 "point": 2.5,
-                "prob": 50.0
+                "prob": 51.9
               },
               "Under": {
-                "price": 1.88,
+                "price": 1.96,
                 "point": 2.5,
-                "prob": 50.0
+                "prob": 48.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Marathon Bet",
+          "markets": {
+            "h2h": {
+              "Netherlands": {
+                "price": 1.49
+              },
+              "Tunisia": {
+                "price": 6.95
+              },
+              "Draw": {
+                "price": 4.4
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Netherlands": 1.469,
-        "Tunisia": 6.527,
-        "Draw": 4.312
+        "Netherlands": 1.472,
+        "Tunisia": 6.748,
+        "Draw": 4.372
       },
       "true_probs": {
-        "Netherlands": 63.9,
-        "Tunisia": 14.4,
-        "Draw": 21.8
+        "Netherlands": 64.3,
+        "Tunisia": 14.0,
+        "Draw": 21.7
       },
       "other_markets": {
         "spreads": {
@@ -12210,14 +11825,14 @@
         },
         "totals": {
           "Over": {
-            "price": 1.88,
+            "price": 1.82,
             "point": 2.5,
-            "prob": 50.0
+            "prob": 51.9
           },
           "Under": {
-            "price": 1.88,
+            "price": 1.96,
             "point": 2.5,
-            "prob": 50.0
+            "prob": 48.1
           }
         },
         "btts": {}
@@ -12230,14 +11845,14 @@
       "first_seen": "2026-06-13T12:40:29.351378+08:00",
       "is_new": false,
       "odds_change": {
-        "Netherlands": -0.023,
-        "Tunisia": 0.207,
-        "Draw": 0.086
+        "Netherlands": -0.02,
+        "Tunisia": 0.428,
+        "Draw": 0.146
       },
       "change_pct": {
-        "Netherlands": -1.54,
-        "Tunisia": 3.28,
-        "Draw": 2.04
+        "Netherlands": -1.34,
+        "Tunisia": 6.77,
+        "Draw": 3.45
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -12330,6 +11945,12 @@
           "Netherlands": 1.469,
           "Tunisia": 6.527,
           "Draw": 4.312
+        },
+        {
+          "time": "06/15 10:53",
+          "Netherlands": 1.472,
+          "Tunisia": 6.748,
+          "Draw": 4.372
         }
       ],
       "elo_diff": -330,
@@ -12404,9 +12025,9 @@
         }
       ],
       "avg_odds": {
-        "Australia": 3.425,
-        "Paraguay": 2.134,
-        "Draw": 3.236
+        "Australia": 3.43,
+        "Paraguay": 2.136,
+        "Draw": 3.237
       },
       "true_probs": {
         "Australia": 27.3,
@@ -12416,14 +12037,14 @@
       "other_markets": {
         "spreads": {
           "Australia": {
-            "price": 1.7,
+            "price": 1.71,
             "point": 0.5,
-            "prob": 55.5
+            "prob": 55.1
           },
           "Paraguay": {
-            "price": 2.12,
+            "price": 2.1,
             "point": -0.5,
-            "prob": 44.5
+            "prob": 44.9
           }
         },
         "totals": {
@@ -12448,14 +12069,14 @@
       "first_seen": "2026-06-13T12:40:29.351383+08:00",
       "is_new": false,
       "odds_change": {
-        "Australia": -0.066,
-        "Paraguay": -0.006,
-        "Draw": 0.055
+        "Australia": -0.061,
+        "Paraguay": -0.004,
+        "Draw": 0.056
       },
       "change_pct": {
-        "Australia": -1.89,
-        "Paraguay": -0.28,
-        "Draw": 1.73
+        "Australia": -1.75,
+        "Paraguay": -0.19,
+        "Draw": 1.76
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -12548,6 +12169,12 @@
           "Australia": 3.425,
           "Paraguay": 2.134,
           "Draw": 3.236
+        },
+        {
+          "time": "06/15 10:53",
+          "Australia": 3.43,
+          "Paraguay": 2.136,
+          "Draw": 3.237
         }
       ],
       "elo_diff": 0,
@@ -12604,14 +12231,14 @@
             },
             "spreads": {
               "Turkey": {
-                "price": 2.64,
-                "point": -0.5,
-                "prob": 35.8
+                "price": 1.57,
+                "point": 0.5,
+                "prob": 60.2
               },
               "USA": {
-                "price": 1.47,
-                "point": 0.5,
-                "prob": 64.2
+                "price": 2.37,
+                "point": -0.5,
+                "prob": 39.8
               }
             },
             "totals": {
@@ -12646,26 +12273,26 @@
         }
       ],
       "avg_odds": {
-        "Turkey": 2.727,
-        "USA": 2.398,
-        "Draw": 3.55
+        "Turkey": 2.725,
+        "USA": 2.396,
+        "Draw": 3.542
       },
       "true_probs": {
         "Turkey": 34.4,
         "USA": 39.1,
-        "Draw": 26.4
+        "Draw": 26.5
       },
       "other_markets": {
         "spreads": {
           "Turkey": {
-            "price": 2.64,
-            "point": -0.5,
-            "prob": 35.8
+            "price": 1.57,
+            "point": 0.5,
+            "prob": 60.2
           },
           "USA": {
-            "price": 1.47,
-            "point": 0.5,
-            "prob": 64.2
+            "price": 2.37,
+            "point": -0.5,
+            "prob": 39.8
           }
         },
         "totals": {
@@ -12690,14 +12317,14 @@
       "first_seen": "2026-06-13T12:40:29.351385+08:00",
       "is_new": false,
       "odds_change": {
-        "Turkey": 0.1,
-        "USA": -0.103,
-        "Draw": 0.084
+        "Turkey": 0.098,
+        "USA": -0.105,
+        "Draw": 0.076
       },
       "change_pct": {
-        "Turkey": 3.81,
-        "USA": -4.12,
-        "Draw": 2.42
+        "Turkey": 3.73,
+        "USA": -4.2,
+        "Draw": 2.19
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -12790,6 +12417,12 @@
           "Turkey": 2.727,
           "USA": 2.398,
           "Draw": 3.55
+        },
+        {
+          "time": "06/15 10:53",
+          "Turkey": 2.725,
+          "USA": 2.396,
+          "Draw": 3.542
         }
       ],
       "elo_diff": 0,
@@ -12888,14 +12521,14 @@
         }
       ],
       "avg_odds": {
-        "France": 1.812,
-        "Norway": 4.229,
-        "Draw": 3.574
+        "France": 1.81,
+        "Norway": 4.241,
+        "Draw": 3.586
       },
       "true_probs": {
-        "France": 51.7,
+        "France": 51.8,
         "Norway": 22.1,
-        "Draw": 26.2
+        "Draw": 26.1
       },
       "other_markets": {
         "spreads": {
@@ -12932,14 +12565,14 @@
       "first_seen": "2026-06-13T12:40:29.351387+08:00",
       "is_new": false,
       "odds_change": {
-        "France": 0.001,
-        "Norway": -0.01,
-        "Draw": 0.004
+        "France": -0.001,
+        "Norway": 0.002,
+        "Draw": 0.016
       },
       "change_pct": {
-        "France": 0.06,
-        "Norway": -0.24,
-        "Draw": 0.11
+        "France": -0.06,
+        "Norway": 0.05,
+        "Draw": 0.45
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -13032,6 +12665,12 @@
           "France": 1.812,
           "Norway": 4.229,
           "Draw": 3.574
+        },
+        {
+          "time": "06/15 10:53",
+          "France": 1.81,
+          "Norway": 4.241,
+          "Draw": 3.586
         }
       ],
       "elo_diff": -420,
@@ -13130,13 +12769,13 @@
         }
       ],
       "avg_odds": {
-        "Iraq": 7.783,
+        "Iraq": 7.825,
         "Senegal": 1.395,
-        "Draw": 4.492
+        "Draw": 4.507
       },
       "true_probs": {
         "Iraq": 12.0,
-        "Senegal": 67.1,
+        "Senegal": 67.2,
         "Draw": 20.8
       },
       "other_markets": {
@@ -13174,14 +12813,14 @@
       "first_seen": "2026-06-13T12:40:29.351389+08:00",
       "is_new": false,
       "odds_change": {
-        "Iraq": 0.091,
+        "Iraq": 0.133,
         "Senegal": -0.003,
-        "Draw": 0.013
+        "Draw": 0.028
       },
       "change_pct": {
-        "Iraq": 1.18,
+        "Iraq": 1.73,
         "Senegal": -0.21,
-        "Draw": 0.29
+        "Draw": 0.63
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -13274,6 +12913,12 @@
           "Iraq": 7.783,
           "Senegal": 1.395,
           "Draw": 4.492
+        },
+        {
+          "time": "06/15 10:53",
+          "Iraq": 7.825,
+          "Senegal": 1.395,
+          "Draw": 4.507
         }
       ],
       "elo_diff": 0,
@@ -13348,9 +12993,9 @@
         }
       ],
       "avg_odds": {
-        "Cape Verde": 2.438,
+        "Cape Verde": 2.443,
         "Saudi Arabia": 2.67,
-        "Draw": 3.541
+        "Draw": 3.544
       },
       "true_probs": {
         "Cape Verde": 38.4,
@@ -13360,14 +13005,14 @@
       "other_markets": {
         "spreads": {
           "Cape Verde": {
-            "price": 2.45,
-            "point": -0.5,
-            "prob": 38.4
+            "price": 1.49,
+            "point": 0.5,
+            "prob": 63.3
           },
           "Saudi Arabia": {
-            "price": 1.53,
-            "point": 0.5,
-            "prob": 61.6
+            "price": 2.57,
+            "point": -0.5,
+            "prob": 36.7
           }
         },
         "totals": {
@@ -13392,14 +13037,14 @@
       "first_seen": "2026-06-13T12:40:29.351393+08:00",
       "is_new": false,
       "odds_change": {
-        "Cape Verde": 0.155,
+        "Cape Verde": 0.16,
         "Saudi Arabia": -0.245,
-        "Draw": 0.071
+        "Draw": 0.074
       },
       "change_pct": {
-        "Cape Verde": 6.79,
+        "Cape Verde": 7.01,
         "Saudi Arabia": -8.4,
-        "Draw": 2.05
+        "Draw": 2.13
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -13492,6 +13137,12 @@
           "Cape Verde": 2.438,
           "Saudi Arabia": 2.67,
           "Draw": 3.541
+        },
+        {
+          "time": "06/15 10:53",
+          "Cape Verde": 2.443,
+          "Saudi Arabia": 2.67,
+          "Draw": 3.544
         }
       ],
       "elo_diff": 0,
@@ -13566,12 +13217,12 @@
         }
       ],
       "avg_odds": {
-        "Spain": 1.614,
-        "Uruguay": 5.255,
-        "Draw": 3.882
+        "Spain": 1.615,
+        "Uruguay": 5.26,
+        "Draw": 3.887
       },
       "true_probs": {
-        "Spain": 58.0,
+        "Spain": 58.1,
         "Uruguay": 17.8,
         "Draw": 24.1
       },
@@ -13610,14 +13261,14 @@
       "first_seen": "2026-06-13T12:40:29.351398+08:00",
       "is_new": false,
       "odds_change": {
-        "Spain": -0.003,
-        "Uruguay": -0.037,
-        "Draw": 0.017
+        "Spain": -0.002,
+        "Uruguay": -0.032,
+        "Draw": 0.022
       },
       "change_pct": {
-        "Spain": -0.19,
-        "Uruguay": -0.7,
-        "Draw": 0.44
+        "Spain": -0.12,
+        "Uruguay": -0.6,
+        "Draw": 0.57
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -13710,6 +13361,12 @@
           "Spain": 1.614,
           "Uruguay": 5.255,
           "Draw": 3.882
+        },
+        {
+          "time": "06/15 10:53",
+          "Spain": 1.615,
+          "Uruguay": 5.26,
+          "Draw": 3.887
         }
       ],
       "elo_diff": -100,
@@ -13791,50 +13448,30 @@
           }
         },
         {
-          "name": "Pinnacle",
+          "name": "Marathon Bet",
           "markets": {
             "h2h": {
               "Belgium": {
-                "price": 1.27
+                "price": 1.3
               },
               "New Zealand": {
-                "price": 9.32
+                "price": 10.5
               },
               "Draw": {
-                "price": 5.6
-              }
-            },
-            "spreads": {
-              "Belgium": {
-                "price": 1.86,
-                "point": -1.5
-              },
-              "New Zealand": {
-                "price": 1.93,
-                "point": 1.5
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.84,
-                "point": 2.75
-              },
-              "Under": {
-                "price": 1.95,
-                "point": 2.75
+                "price": 5.65
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Belgium": 1.28,
-        "New Zealand": 9.53,
-        "Draw": 5.434
+        "Belgium": 1.283,
+        "New Zealand": 9.495,
+        "Draw": 5.454
       },
       "true_probs": {
         "Belgium": 73.0,
-        "New Zealand": 9.8,
+        "New Zealand": 9.9,
         "Draw": 17.2
       },
       "other_markets": {
@@ -13872,14 +13509,14 @@
       "first_seen": "2026-06-13T12:40:29.351400+08:00",
       "is_new": false,
       "odds_change": {
-        "Belgium": 0.006,
-        "New Zealand": -0.12,
-        "Draw": -0.082
+        "Belgium": 0.009,
+        "New Zealand": -0.155,
+        "Draw": -0.062
       },
       "change_pct": {
-        "Belgium": 0.47,
-        "New Zealand": -1.24,
-        "Draw": -1.49
+        "Belgium": 0.71,
+        "New Zealand": -1.61,
+        "Draw": -1.12
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -13972,6 +13609,12 @@
           "Belgium": 1.28,
           "New Zealand": 9.53,
           "Draw": 5.434
+        },
+        {
+          "time": "06/15 10:53",
+          "Belgium": 1.283,
+          "New Zealand": 9.495,
+          "Draw": 5.454
         }
       ],
       "elo_diff": -270,
@@ -14070,9 +13713,9 @@
         }
       ],
       "avg_odds": {
-        "Egypt": 2.217,
-        "Iran": 3.525,
-        "Draw": 3.013
+        "Egypt": 2.22,
+        "Iran": 3.53,
+        "Draw": 3.015
       },
       "true_probs": {
         "Egypt": 42.3,
@@ -14114,14 +13757,14 @@
       "first_seen": "2026-06-13T12:40:29.351403+08:00",
       "is_new": false,
       "odds_change": {
-        "Egypt": -0.008,
-        "Iran": 0.0,
-        "Draw": 0.004
+        "Egypt": -0.005,
+        "Iran": 0.005,
+        "Draw": 0.006
       },
       "change_pct": {
-        "Egypt": -0.36,
-        "Iran": 0.0,
-        "Draw": 0.13
+        "Egypt": -0.22,
+        "Iran": 0.14,
+        "Draw": 0.2
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -14214,6 +13857,12 @@
           "Egypt": 2.217,
           "Iran": 3.525,
           "Draw": 3.013
+        },
+        {
+          "time": "06/15 10:53",
+          "Egypt": 2.22,
+          "Iran": 3.53,
+          "Draw": 3.015
         }
       ],
       "elo_diff": 0,
@@ -14289,25 +13938,25 @@
       ],
       "avg_odds": {
         "Croatia": 1.628,
-        "Ghana": 5.436,
-        "Draw": 3.728
+        "Ghana": 5.453,
+        "Draw": 3.736
       },
       "true_probs": {
-        "Croatia": 57.6,
+        "Croatia": 57.7,
         "Ghana": 17.2,
-        "Draw": 25.2
+        "Draw": 25.1
       },
       "other_markets": {
         "spreads": {
           "Croatia": {
-            "price": 2.75,
-            "point": -1.5,
-            "prob": 34.4
+            "price": 1.62,
+            "point": -0.5,
+            "prob": 58.1
           },
           "Ghana": {
-            "price": 1.44,
-            "point": 1.5,
-            "prob": 65.6
+            "price": 2.25,
+            "point": 0.5,
+            "prob": 41.9
           }
         },
         "totals": {
@@ -14333,13 +13982,13 @@
       "is_new": false,
       "odds_change": {
         "Croatia": -0.003,
-        "Ghana": 0.014,
-        "Draw": 0.0
+        "Ghana": 0.031,
+        "Draw": 0.008
       },
       "change_pct": {
         "Croatia": -0.18,
-        "Ghana": 0.26,
-        "Draw": 0.0
+        "Ghana": 0.57,
+        "Draw": 0.21
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -14432,6 +14081,12 @@
           "Croatia": 1.628,
           "Ghana": 5.436,
           "Draw": 3.728
+        },
+        {
+          "time": "06/15 10:53",
+          "Croatia": 1.628,
+          "Ghana": 5.453,
+          "Draw": 3.736
         }
       ],
       "elo_diff": 310,
@@ -14506,13 +14161,13 @@
         }
       ],
       "avg_odds": {
-        "England": 1.27,
-        "Panama": 9.458,
-        "Draw": 5.91
+        "England": 1.269,
+        "Panama": 9.567,
+        "Draw": 5.921
       },
       "true_probs": {
-        "England": 74.1,
-        "Panama": 10.0,
+        "England": 74.2,
+        "Panama": 9.8,
         "Draw": 15.9
       },
       "other_markets": {
@@ -14530,14 +14185,14 @@
         },
         "totals": {
           "Over": {
-            "price": 1.68,
+            "price": 1.62,
             "point": 2.5,
-            "prob": 56.6
+            "prob": 58.4
           },
           "Under": {
-            "price": 2.19,
+            "price": 2.27,
             "point": 2.5,
-            "prob": 43.4
+            "prob": 41.6
           }
         },
         "btts": {}
@@ -14550,14 +14205,14 @@
       "first_seen": "2026-06-13T12:40:29.351407+08:00",
       "is_new": false,
       "odds_change": {
-        "England": -0.003,
-        "Panama": 0.161,
-        "Draw": 0.012
+        "England": -0.004,
+        "Panama": 0.27,
+        "Draw": 0.023
       },
       "change_pct": {
-        "England": -0.24,
-        "Panama": 1.73,
-        "Draw": 0.2
+        "England": -0.31,
+        "Panama": 2.9,
+        "Draw": 0.39
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -14650,6 +14305,12 @@
           "England": 1.27,
           "Panama": 9.458,
           "Draw": 5.91
+        },
+        {
+          "time": "06/15 10:53",
+          "England": 1.269,
+          "Panama": 9.567,
+          "Draw": 5.921
         }
       ],
       "elo_diff": -360,
@@ -14746,26 +14407,26 @@
         }
       ],
       "avg_odds": {
-        "Colombia": 3.462,
-        "Portugal": 2.112,
-        "Draw": 3.281
+        "Colombia": 3.469,
+        "Portugal": 2.115,
+        "Draw": 3.282
       },
       "true_probs": {
-        "Colombia": 27.1,
+        "Colombia": 27.0,
         "Portugal": 44.4,
         "Draw": 28.6
       },
       "other_markets": {
         "spreads": {
           "Colombia": {
-            "price": 1.71,
-            "point": 0.5,
-            "prob": 55.1
+            "price": 3.39,
+            "point": -0.5,
+            "prob": 27.9
           },
           "Portugal": {
-            "price": 2.1,
-            "point": -0.5,
-            "prob": 44.9
+            "price": 1.31,
+            "point": 0.5,
+            "prob": 72.1
           }
         },
         "totals": {
@@ -14790,14 +14451,14 @@
       "first_seen": "2026-06-13T12:40:29.351409+08:00",
       "is_new": false,
       "odds_change": {
-        "Colombia": -0.01,
-        "Portugal": -0.001,
-        "Draw": 0.007
+        "Colombia": -0.003,
+        "Portugal": 0.002,
+        "Draw": 0.008
       },
       "change_pct": {
-        "Colombia": -0.29,
-        "Portugal": -0.05,
-        "Draw": 0.21
+        "Colombia": -0.09,
+        "Portugal": 0.09,
+        "Draw": 0.24
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -14890,6 +14551,12 @@
           "Colombia": 3.462,
           "Portugal": 2.112,
           "Draw": 3.281
+        },
+        {
+          "time": "06/15 10:53",
+          "Colombia": 3.469,
+          "Portugal": 2.115,
+          "Draw": 3.282
         }
       ],
       "elo_diff": -80,
@@ -14964,9 +14631,9 @@
         }
       ],
       "avg_odds": {
-        "DR Congo": 2.3,
-        "Uzbekistan": 3.087,
-        "Draw": 3.224
+        "DR Congo": 2.302,
+        "Uzbekistan": 3.09,
+        "Draw": 3.23
       },
       "true_probs": {
         "DR Congo": 40.7,
@@ -14976,14 +14643,14 @@
       "other_markets": {
         "spreads": {
           "DR Congo": {
-            "price": 2.28,
+            "price": 2.26,
             "point": -0.5,
-            "prob": 41.4
+            "prob": 41.8
           },
           "Uzbekistan": {
-            "price": 1.61,
+            "price": 1.62,
             "point": 0.5,
-            "prob": 58.6
+            "prob": 58.2
           }
         },
         "totals": {
@@ -15008,14 +14675,14 @@
       "first_seen": "2026-06-13T12:40:29.351414+08:00",
       "is_new": false,
       "odds_change": {
-        "DR Congo": 0.003,
-        "Uzbekistan": -0.012,
-        "Draw": -0.001
+        "DR Congo": 0.005,
+        "Uzbekistan": -0.009,
+        "Draw": 0.005
       },
       "change_pct": {
-        "DR Congo": 0.13,
-        "Uzbekistan": -0.39,
-        "Draw": -0.03
+        "DR Congo": 0.22,
+        "Uzbekistan": -0.29,
+        "Draw": 0.16
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -15108,6 +14775,12 @@
           "DR Congo": 2.3,
           "Uzbekistan": 3.087,
           "Draw": 3.224
+        },
+        {
+          "time": "06/15 10:53",
+          "DR Congo": 2.302,
+          "Uzbekistan": 3.09,
+          "Draw": 3.23
         }
       ],
       "elo_diff": 0,
@@ -15206,9 +14879,9 @@
         }
       ],
       "avg_odds": {
-        "Algeria": 3.561,
-        "Austria": 2.145,
-        "Draw": 3.13
+        "Algeria": 3.568,
+        "Austria": 2.149,
+        "Draw": 3.131
       },
       "true_probs": {
         "Algeria": 26.3,
@@ -15250,14 +14923,14 @@
       "first_seen": "2026-06-13T12:40:29.351416+08:00",
       "is_new": false,
       "odds_change": {
-        "Algeria": -0.008,
-        "Austria": 0.005,
-        "Draw": -0.004
+        "Algeria": -0.001,
+        "Austria": 0.009,
+        "Draw": -0.003
       },
       "change_pct": {
-        "Algeria": -0.22,
-        "Austria": 0.23,
-        "Draw": -0.13
+        "Algeria": -0.03,
+        "Austria": 0.42,
+        "Draw": -0.1
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -15350,6 +15023,12 @@
           "Algeria": 3.561,
           "Austria": 2.145,
           "Draw": 3.13
+        },
+        {
+          "time": "06/15 10:53",
+          "Algeria": 3.568,
+          "Austria": 2.149,
+          "Draw": 3.131
         }
       ],
       "elo_diff": 0,
@@ -15425,13 +15104,13 @@
       ],
       "avg_odds": {
         "Argentina": 1.184,
-        "Jordan": 13.59,
-        "Draw": 6.763
+        "Jordan": 13.709,
+        "Draw": 6.78
       },
       "true_probs": {
-        "Argentina": 79.2,
-        "Jordan": 6.9,
-        "Draw": 13.9
+        "Argentina": 79.3,
+        "Jordan": 6.8,
+        "Draw": 13.8
       },
       "other_markets": {
         "spreads": {
@@ -15469,13 +15148,13 @@
       "is_new": false,
       "odds_change": {
         "Argentina": 0.001,
-        "Jordan": -0.365,
-        "Draw": -0.023
+        "Jordan": -0.246,
+        "Draw": -0.006
       },
       "change_pct": {
         "Argentina": 0.08,
-        "Jordan": -2.62,
-        "Draw": -0.34
+        "Jordan": -1.76,
+        "Draw": -0.09
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -15568,6 +15247,12 @@
           "Argentina": 1.184,
           "Jordan": 13.59,
           "Draw": 6.763
+        },
+        {
+          "time": "06/15 10:53",
+          "Argentina": 1.184,
+          "Jordan": 13.709,
+          "Draw": 6.78
         }
       ],
       "elo_diff": -440,
@@ -15587,8 +15272,6 @@
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "32ec06abda2398ac41501c86eb9aa376",
-      "05752bb341e197001387b64f3a06b9b2",
       "b55f9569de3f4d731bc5537ff5ff43e4",
       "c54f00b11925751d2b62988775c6c239",
       "fbfb95c62003fd6d828b309f96ee1f9b",
@@ -15655,89 +15338,88 @@
   "news": {
     "world_cup": [
       {
-        "title": "Real Madrid (皇家馬德里) 同意以 5,180 萬英鎊簽下 Chelsea (車路士) 的 Cucurella (古古列拿)",
+        "title": "Amad 攻入致勝一球，象牙海岸擊敗厄瓜多",
+        "link": "https://www.bbc.com/sport/football/videos/cx2dyrzwk2vo?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 15 Jun 2026 01:50:27 GMT",
+        "summary": "Manchester United winger Amad Diallo scored a superb 90th-minute winner as Ivory Coast beat Ecuador in Philadelphia.",
+        "title_zh": "Amad 攻入致勝一球，象牙海岸擊敗厄瓜多",
+        "title_en": "Amad scores late winner as Ivory Coast beat Ecuador"
+      },
+      {
+        "title": "皇家馬德里 (Real Madrid) 以 5180 萬英鎊簽下切爾西 (Chelsea) 的 Cucurella",
         "link": "https://www.bbc.com/sport/football/articles/cx2xp7gv09lo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 14 Jun 2026 16:41:39 GMT",
         "summary": "Real Madrid have agreed a deal worth up to £51.8m to sign Chelsea defender Marc Cucurella after the World Cup.",
-        "title_zh": "Real Madrid (皇家馬德里) 同意以 5,180 萬英鎊簽下 Chelsea (車路士) 的 Cucurella (古古列拿)",
+        "title_zh": "皇家馬德里 (Real Madrid) 以 5180 萬英鎊簽下切爾西 (Chelsea) 的 Cucurella",
         "title_en": "Real Madrid agree £51.8m deal for Chelsea's Cucurella"
       },
       {
-        "title": "Southgate (修夫基) 談論世界盃評述：「我會避席」",
+        "title": "Southgate 談論世界盃賽評：「我會迴避」",
         "link": "https://www.bbc.com/sport/football/articles/cp8lv1png5no?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 14 Jun 2026 20:57:45 GMT",
         "summary": "Former England manager Sir Gareth Southgate says he turned down work as a pundit at the World Cup because he did not think it would be \"helpful\" to the side's chances.",
-        "title_zh": "Southgate (修夫基) 談論世界盃評述：「我會避席」",
+        "title_zh": "Southgate 談論世界盃賽評：「我會迴避」",
         "title_en": "'I'll be staying out of the way' - Southgate on World Cup punditry"
       },
       {
-        "title": "英格蘭對克羅埃西亞的裁判被 Tuchel (杜曹) 評為 E 級",
+        "title": "日本兩度落後扳平，與荷蘭踢成平手",
+        "link": "https://www.bbc.com/sport/football/videos/cnv9dzl62g6o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 14 Jun 2026 22:45:02 GMT",
+        "summary": "Daichi Kamada's late header rescues a deserved point for Japan against the Netherlands in their opening World Cup game in Dallas.",
+        "title_zh": "日本兩度落後扳平，與荷蘭踢成平手",
+        "title_en": "Japan come from behind twice to draw with Netherlands"
+      },
+      {
+        "title": "英格蘭對克羅埃西亞裁判被 Tuchel 評為 E 級",
         "link": "https://www.bbc.com/sport/football/articles/ckg8z2k2yplo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 14 Jun 2026 20:45:29 GMT",
         "summary": "Clement Turpin is appointed referee for England's opening World Cup game against Croatia on Wednesday - and was once labelled a \"Grade E\" official by head coach Thomas Tuchel.",
-        "title_zh": "英格蘭對克羅埃西亞的裁判被 Tuchel (杜曹) 評為 E 級",
+        "title_zh": "英格蘭對克羅埃西亞裁判被 Tuchel 評為 E 級",
         "title_en": "England-Croatia referee was called Grade E by Tuchel"
       },
       {
-        "title": "讓蘇格蘭重返世界盃的閃耀之星，年僅 20 歲",
+        "title": "蘇格蘭 (Scotland) 世界盃回歸之夜的閃耀之星，年僅 20 歲",
         "link": "https://www.bbc.com/sport/football/articles/clyrepwp0gno?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 14 Jun 2026 12:06:50 GMT",
         "summary": "Ben Gannon-Doak wasn't born when Scotland last played at the men's World Cup. But the 20-year-old was at the heart of their long-awaited return and their first win at the tournament in 36 years as he ",
-        "title_zh": "讓蘇格蘭重返世界盃的閃耀之星，年僅 20 歲",
+        "title_zh": "蘇格蘭 (Scotland) 世界盃回歸之夜的閃耀之星，年僅 20 歲",
         "title_en": "The 20-year-old who stole the show on Scotland's World Cup return"
       },
       {
-        "title": "Arsenal (阿仙奴) 與 Liverpool (利物浦) 洽談 Bouaddi (布奧迪) – 週一體壇流言",
-        "link": "https://www.bbc.com/sport/football/articles/c621q422lepo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 14 Jun 2026 21:23:57 GMT",
-        "summary": "Arsenal and Liverpool are keen on Lille midfielder Ayyoub Bouaddi, Manchester City target a move for Everton defender Jarrad Branthwaite, plus more.",
-        "title_zh": "Arsenal (阿仙奴) 與 Liverpool (利物浦) 洽談 Bouaddi (布奧迪) – 週一體壇流言",
-        "title_en": "Arsenal & Liverpool in Bouaddi talks - Monday's gossip"
-      },
-      {
-        "title": "Arbeloa (阿爾比奧爾), Mourinho (摩連奴), Silva (施華) 互換位置 – 經紀人是關鍵",
+        "title": "Arbeloa、Mourinho、Silva 互換位置 - 經紀人是關鍵",
         "link": "https://www.bbc.com/sport/football/articles/c7vydyv472go?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 14 Jun 2026 17:44:18 GMT",
         "summary": "Alvaro Arbeloa, Jose Mourinho and Marco Silva are replacing each other at Fulham, Real Madrid and Benfica - with one super-agent key to the swaps.",
-        "title_zh": "Arbeloa (阿爾比奧爾), Mourinho (摩連奴), Silva (施華) 互換位置 – 經紀人是關鍵",
+        "title_zh": "Arbeloa、Mourinho、Silva 互換位置 - 經紀人是關鍵",
         "title_en": "Arbeloa, Mourinho, Silva trading places - with agent key to swaps"
       },
       {
-        "title": "Summerville (科寧·桑馬維爾) 射入「火燙」進球，荷蘭重新領先",
-        "link": "https://www.bbc.com/sport/football/videos/c1jypd85k0go?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 14 Jun 2026 21:56:26 GMT",
-        "summary": "Crysencio Summerville's \"sizzler\" of a goal helps Netherlands retake the lead against Japan in their Group F fixture at the 2026 World Cup.",
-        "title_zh": "Summerville (科寧·桑馬維爾) 射入「火燙」進球，荷蘭重新領先",
-        "title_en": "Summerville scores 'sizzler' as Netherlands retake lead"
-      },
-      {
-        "title": "Porro (樸路) 與 Tottenham (熱刺) 簽下新長約",
-        "link": "https://www.bbc.com/sport/football/articles/c4gy9g3xjx2o?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 14 Jun 2026 18:00:27 GMT",
-        "summary": "Tottenham Hotspur right-back Pedro Porro signs a new, long-term contract with the club understood to be valid until 2031.",
-        "title_zh": "Porro (樸路) 與 Tottenham (熱刺) 簽下新長約",
-        "title_en": "Porro signs new long-term Tottenham contract"
-      },
-      {
-        "title": "BBC Sport (英國廣播公司體育) 評論員選出英格蘭世界盃正選陣容 – 你會選誰？",
+        "title": "BBC Sport 賽評選出世界盃英格蘭陣容 - 你會選誰？",
         "link": "https://www.bbc.com/sport/football/articles/c8r2l12jjz7o?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 14 Jun 2026 11:04:53 GMT",
         "summary": "Thomas Tuchel will pick his first England World Cup team on Wednesday, when the Three Lions take on Croatia. BBC Sport pundits choose their starting XIs - who would you pick?",
-        "title_zh": "BBC Sport (英國廣播公司體育) 評論員選出英格蘭世界盃正選陣容 – 你會選誰？",
+        "title_zh": "BBC Sport 賽評選出世界盃英格蘭陣容 - 你會選誰？",
         "title_en": "BBC Sport pundits choose England World Cup XIs - who would you pick?"
       },
       {
-        "title": "Havertz (夏維斯) 梅開二度，德國大勝庫拉索",
-        "link": "https://www.bbc.com/sport/football/videos/c74y83g7jqxo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 14 Jun 2026 20:01:23 GMT",
-        "summary": "Four-time winners Germany overcome a brief scare from World Cup debutants Curacao before turning on the style to win their Group E opener in Houston.",
-        "title_zh": "Havertz (夏維斯) 梅開二度，德國大勝庫拉索",
-        "title_en": "Havertz scores twice as Germany thrash Curacao"
+        "title": "Porro 與托特納姆熱刺 (Tottenham) 簽下長約",
+        "link": "https://www.bbc.com/sport/football/articles/c4gy9g3xjx2o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 14 Jun 2026 18:00:27 GMT",
+        "summary": "Tottenham Hotspur right-back Pedro Porro signs a new, long-term contract with the club understood to be valid until 2031.",
+        "title_zh": "Porro 與托特納姆熱刺 (Tottenham) 簽下長約",
+        "title_en": "Porro signs new long-term Tottenham contract"
+      },
+      {
+        "title": "Vinicius Jr 的閃耀是否掩蓋了巴西隊的問題？",
+        "link": "https://www.bbc.com/sport/football/articles/cjdge0dr9rgo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 14 Jun 2026 01:56:24 GMT",
+        "summary": "Vinicius Jr scores a wonder goal to rescue his side but Brazil's performance against Morocco raises more questions than answers.",
+        "title_zh": "Vinicius Jr 的閃耀是否掩蓋了巴西隊的問題？",
+        "title_en": "Has Vinicius Jr brilliance just papered over the Brazilian cracks?"
       }
     ]
   },
   "significant_changes": [
-    "05752bb341e197001387b64f3a06b9b2",
     "b55f9569de3f4d731bc5537ff5ff43e4",
     "c54f00b11925751d2b62988775c6c239",
     "fbfb95c62003fd6d828b309f96ee1f9b",
@@ -15745,8 +15427,8 @@
     "ec51b9c44ad5e34552f3ab53f7262813"
   ],
   "stats": {
-    "total_matches": 63,
-    "significant_changes_count": 6,
-    "api_remaining": "374"
+    "total_matches": 61,
+    "significant_changes_count": 5,
+    "api_remaining": "366"
   }
 }
