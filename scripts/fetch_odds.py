@@ -1807,9 +1807,16 @@ def format_performance_context(stats, similar_matches):
 # ============================================================
 # 資料彙整與儲存
 # ============================================================
-def build_output(all_matches, news, significant_matches):
-    """彙整所有資料為最終輸出格式"""
+def build_output(all_matches, news, significant_matches, existing_data=None, leagues_to_fetch=None):
+    """彙整所有資料為最終輸出格式，並保留其他非本次抓取聯賽的現有賽事"""
     now = get_now()
+
+    # 1. 提取本次未抓取聯賽的現有賽事以作保留
+    retained_matches = {}
+    if existing_data and "matches" in existing_data and leagues_to_fetch:
+        for mid, m in existing_data["matches"].items():
+            if m.get("sport_key") not in leagues_to_fetch:
+                retained_matches[mid] = m
 
     output = {
         "last_updated": now.isoformat(),
@@ -1821,12 +1828,20 @@ def build_output(all_matches, news, significant_matches):
         },
         "significant_changes": [],
         "stats": {
-            "total_matches": len(all_matches),
-            "significant_changes_count": len(significant_matches),
+            "total_matches": 0,
+            "significant_changes_count": 0,
         },
     }
 
-    # 按聯賽分組
+    # 2. 注入被保留的其他聯賽賽事
+    for mid, match in retained_matches.items():
+        output["matches"][mid] = match
+        league = match.get("league", "未知")
+        if league not in output["leagues"]:
+            output["leagues"][league] = []
+        output["leagues"][league].append(mid)
+
+    # 3. 寫入本次新抓取的賽事 (若有重疊，以新的為準)
     for match in all_matches:
         match_id = match["id"]
         league = match.get("league", "未知")
@@ -1839,13 +1854,22 @@ def build_output(all_matches, news, significant_matches):
 
         if league not in output["leagues"]:
             output["leagues"][league] = []
-        output["leagues"][league].append(match_id)
+        if match_id not in output["leagues"][league]:
+            output["leagues"][league].append(match_id)
 
     # 新聞
     output["news"]["world_cup"] = news.get("world_cup", [])[:10]
 
-    # 顯著變動
-    output["significant_changes"] = [m["id"] for m in significant_matches]
+    # 4. 彙整顯著變動：本次顯著變動 + 保留賽事中原有的顯著變動
+    sig_ids = [m["id"] for m in significant_matches]
+    if existing_data and "significant_changes" in existing_data:
+        for mid in existing_data["significant_changes"]:
+            if mid in output["matches"] and mid not in sig_ids:
+                sig_ids.append(mid)
+
+    output["significant_changes"] = sig_ids
+    output["stats"]["total_matches"] = len(output["matches"])
+    output["stats"]["significant_changes_count"] = len(sig_ids)
 
     return output
 
@@ -2271,7 +2295,7 @@ def main():
 
     # 7. 彙整並儲存
     print("\n💾 儲存數據...")
-    output = build_output(matches_with_changes, news, significant)
+    output = build_output(matches_with_changes, news, significant, existing_data=existing_data, leagues_to_fetch=leagues_to_fetch)
     output["stats"]["api_remaining"] = api_remaining
     save_json(CURRENT_FILE, output)
     print(f"  ✅ 即時數據已更新: {CURRENT_FILE}")
