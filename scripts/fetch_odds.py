@@ -53,21 +53,14 @@ TZ_TAIPEI = timezone(timedelta(hours=8))
 # The Odds API 設定
 ODDS_API_BASE = "https://api.the-odds-api.com/v4/sports"
 
-# 要追蹤的聯賽 (世足賽與多聯賽)
+# 要追蹤的聯賽 (世足賽專屬)
 LEAGUES = {
     "soccer_fifa_world_cup": "世足 FIFA World Cup",
-    "soccer_epl": "英超 English Premier League",
-    "soccer_uefa_champs_league": "歐冠 UEFA Champions League",
-    "soccer_usa_mls": "美職聯 Major League Soccer",
-    "basketball_nba": "NBA 美職籃",
 }
 
 # 足球聯賽輪替清單 (相容用)
 SOCCER_LEAGUES = [
     "soccer_fifa_world_cup",
-    "soccer_epl",
-    "soccer_uefa_champs_league",
-    "soccer_usa_mls",
 ]
 
 # 變動門檻 (超過此值才觸發 AI 分析)
@@ -2114,9 +2107,9 @@ def main():
     print("\n📂 載入現有數據...")
     existing_data = load_json(CURRENT_FILE)
 
-    # 2. 決定本次要抓取的聯賽 (分時輪替足球聯賽 + 籃球 NBA，節省 API 點數)
-    soccer_league = get_current_soccer_league()
-    leagues_to_fetch = [soccer_league, "basketball_nba"]
+    # 2. 決定本次要抓取的聯賽 (世足賽專屬)
+    soccer_league = "soccer_fifa_world_cup"
+    leagues_to_fetch = [soccer_league]
 
     # ── DEBUG 模式: 跳過 Odds API，用快取資料 ──
     if DEBUG_SKIP_ODDS:
