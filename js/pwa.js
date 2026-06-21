@@ -29,7 +29,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // ============================================================
 //  版本更新說明 + PWA 引導
 // ============================================================
-const CURRENT_VERSION = "2.0.8";
+const CURRENT_VERSION = "2.1.0";
 
 function showReleaseNotes() {
   console.log("showReleaseNotes triggered. current version:", CURRENT_VERSION);
@@ -61,31 +61,35 @@ function showReleaseNotes() {
       box-shadow:0 20px 60px rgba(0,0,0,0.3); animation:modalSlideIn 0.3s ease;
     ">
       <div style="text-align:center; margin-bottom:1.5rem;">
-        <div style="font-size:2.5rem; margin-bottom:0.5rem;">⚽</div>
+        <div style="font-size:2.5rem; margin-bottom:0.5rem;">💎</div>
         <h2 style="color:#1F2937; font-size:1.5rem; font-weight:800; margin-bottom:0.25rem;">
           Odds Flow v${CURRENT_VERSION}
         </h2>
-        <p style="color:#6B7280; font-size:0.9rem;">世足盤口分析系統已更新</p>
+        <p style="color:#6B7280; font-size:0.9rem;">賠率期望值與價值投注系統已更新</p>
       </div>
 
       <div style="background:#F9FAFB; border:1px solid #E5E7EB; border-radius:12px; padding:1.25rem; margin-bottom:1.5rem;">
         <div style="font-size:0.85rem; color:#6B7280; font-weight:600; margin-bottom:0.75rem; text-transform:uppercase; letter-spacing:1px;">更新內容</div>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#E0E7FF; color:#4F46E5; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🚀</span>
-            新增功能導覽 (點擊導航欄最後「重看導覽」可重播)
+            <span style="background:#FEF3C7; color:#D97706; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">💎</span>
+            新增單場<strong>價值投注 (EV)</strong> 與凱利資金配置 (Beta)
           </li>
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#D1FAE5; color:#16A34A; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🤖</span>
-            新增 AI 數據預估對照表 (勝平負/最可能比分/進球率)
+            <span style="background:#DBEAFE; color:#2563EB; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🛡️</span>
+            最低報價家數門檻與中位數賠率異常值過濾
           </li>
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#FEF3C7; color:#D97706; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🎯</span>
-            AI 預測比分包含信心百分比與聯網 H2H 歷史補全
+            <span style="background:#D1FAE5; color:#16A34A; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🧠</span>
+            動態 ELO 與 xG 數據（由 Gemini 聯網搜尋自動更新）
           </li>
           <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
-            <span style="background:#DBEAFE; color:#2563EB; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🎨</span>
-            即時看板導航按鈕黑色底高級感優化
+            <span style="background:#FEE2E2; color:#EF4444; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">⚠️</span>
+            串關計算機新增數學與指數風險警示
+          </li>
+          <li style="display:flex; align-items:center; gap:0.5rem; font-size:1rem; color:#1F2937;">
+            <span style="background:#E0E7FF; color:#4F46E5; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0;">🎯</span>
+            重構結果精準判定，大幅提升歷史命中 (HIT) 準確度
           </li>
         </ul>
       </div>
