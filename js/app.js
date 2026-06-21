@@ -286,8 +286,12 @@ function createMatchCard(match) {
     const homeChange = calculateChangeClass(homeOdds, homeOpen);
     const awayChange = calculateChangeClass(awayOdds, awayOpen);
 
-    // 價值注徽章
-    const isValueBetHtml = match.is_value_bet ? '<div class="value-bet-badge">💎 價值注警示</div>' : '';
+    // 價值注徽章 (增強展示，標記 EV)
+    let isValueBetHtml = '';
+    if (match.is_value_bet && !match.insufficient_data) {
+      const evPct = ((match.ai_ev || 0) * 100).toFixed(1);
+      isValueBetHtml = `<div class="value-bet-badge" style="background: linear-gradient(135deg, #F59E0B, #D97706) !important; color:#fff !important; font-weight: bold; border-radius: 6px; padding: 4px 8px; box-shadow: 0 2px 4px rgba(217, 119, 6, 0.3);">💎 價值投注 (EV +${evPct}%)</div>`;
+    }
 
     // 顯著變動標籤 (對應左側紅色邊框)
     const isSigBadgeHtml = isSig ? '<div class="sig-change-badge" title="賠率在開盤後已出現大幅移動（變動幅度 > 5%）">📉 盤口急變</div>' : '';
@@ -319,6 +323,10 @@ function createMatchCard(match) {
     const rlm = match.reverse_line_movement || [];
     if (rlm.length > 0) {
       sharpHtml += `<div class="alert-tag sharp-tag">🚨 反向指標</div>`;
+    }
+    // 報價不足標籤
+    if (match.insufficient_data) {
+      sharpHtml += `<div class="alert-tag" style="background:rgba(239,68,68,0.15);color:#EF4444;border:1px solid rgba(239,68,68,0.25);">⚠️ 報價不足 3 家</div>`;
     }
 
     // 晉級與輪休標籤
@@ -395,8 +403,17 @@ function createMatchCard(match) {
       if (yesPrice) otherMarketsHtml += `<span class="market-tag">雙進(是) ${yesPrice}${probStr}</span>`;
     }
 
-    // 勝率進度條
-    const probHtml = renderTrueProbsBar(match.true_probs, match.home_team, match.away_team);
+    // 勝率進度條 (處理不足家數)
+    let probHtml = '';
+    if (match.insufficient_data) {
+      probHtml = `
+        <div class="true-prob-container" style="padding: 10px; background: rgba(239, 68, 68, 0.03); border: 1px dashed rgba(239, 68, 68, 0.15); border-radius: 8px; text-align: center; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.85rem; color: #EF4444; font-weight: 600;">⚠️ 報價博彩商不足 3 家，暫不評估</span>
+        </div>
+      `;
+    } else {
+      probHtml = renderTrueProbsBar(match.true_probs, match.home_team, match.away_team);
+    }
 
     let aiHtml = '';
     if (match.ai_analysis) {
@@ -429,7 +446,11 @@ function createMatchCard(match) {
         .replace(/【?📊\s*至少2球機率：[^】\n]*】?/g, '')
         .replace(/【?📊\s*雙方進球機率：[^】\n]*】?/g, '')
         .replace(/【?🎯\s*預測比分：[^】\n]*】?/g, '')
-        .replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '');
+        .replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '')
+        .replace(/【?📊\s*AI\s*評估[^】\n]*】?/g, '')
+        .replace(/【?📊\s*推薦投注[^】\n]*】?/g, '')
+        .replace(/【?📊\s*推薦項[^】\n]*】?/g, '')
+        .replace(/\(說明:[^)]*\)/g, '');
       
       if (highlights.length > 0) {
         predictionHighlightsHtml = `<div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">` +
@@ -743,7 +764,6 @@ function openMatchDetail(matchId) {
       `;
     }
 
-    // Clean up all prediction fields from textual paragraph
     displayAnalysis = displayAnalysis
       .replace(/【?🤖\s*勝平負判斷：[^】\n]*】?/g, '')
       .replace(/【?🎯\s*最可能比分：[^】\n]*】?/g, '')
@@ -751,7 +771,11 @@ function openMatchDetail(matchId) {
       .replace(/【?📊\s*至少2球機率：[^】\n]*】?/g, '')
       .replace(/【?📊\s*雙方進球機率：[^】\n]*】?/g, '')
       .replace(/【?🎯\s*預測比分：[^】\n]*】?/g, '')
-      .replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '');
+      .replace(/【?⚽\s*大小球推薦：[^】\n]*】?/g, '')
+      .replace(/【?📊\s*AI\s*評估[^】\n]*】?/g, '')
+      .replace(/【?📊\s*推薦投注[^】\n]*】?/g, '')
+      .replace(/【?📊\s*推薦項[^】\n]*】?/g, '')
+      .replace(/\(說明:[^)]*\)/g, '');
     
     aiHtml = `
       ${modalHighlightsHtml}
@@ -774,6 +798,92 @@ function openMatchDetail(matchId) {
     `;
   }
 
+  // 實驗性價值投注評估面板
+  let valueBetPanelHtml = '';
+  if (match.ai_ev !== undefined && match.ai_rec_prob !== undefined && !match.insufficient_data) {
+    const isValue = match.is_value_bet;
+    const evPct = (match.ai_ev * 100).toFixed(1);
+    const kellyPct = ((match.kelly_ratio || 0) * 100).toFixed(1);
+    const halfKellyPct = ((match.half_kelly_ratio || 0) * 100).toFixed(1);
+    const recProbPct = (match.ai_rec_prob * 100).toFixed(1);
+    const recOdds = match.rec_odds || 0;
+    const recTarget = match.ai_rec_target || '未知標的';
+    const recLine = match.ai_rec_line && match.ai_rec_line !== 'N/A' ? ` (${match.ai_rec_line})` : '';
+
+    const badgeStyle = isValue 
+      ? 'background: linear-gradient(135deg, #F59E0B, #D97706); color:#fff;'
+      : 'background: #475569; color:#cbd5e1;';
+    const badgeText = isValue ? '💎 偵測到價值投注' : '📊 期望值為負/無優勢';
+
+    valueBetPanelHtml = `
+      <div class="modal-section" style="
+        border: 1px solid rgba(245, 158, 11, 0.25);
+        border-radius: 12px;
+        padding: 1.25rem;
+        background: rgba(245, 158, 11, 0.03);
+        margin-bottom: 1.5rem;
+      ">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+          <h3 style="margin: 0; color: #F59E0B; display: flex; align-items: center; gap: 0.4rem; font-size: 1.1rem;">🎯 期望值與資金配置 (實驗性 Beta)</h3>
+          <span style="font-size: 0.8rem; padding: 4px 10px; border-radius: 50px; font-weight: bold; ${badgeStyle}">${badgeText}</span>
+        </div>
+        
+        <div class="value-bet-grid" style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+          gap: 0.75rem;
+          margin-bottom: 1rem;
+        ">
+          <div style="background: var(--bg-card); padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(226, 232, 240, 0.1); text-align: center;">
+            <div style="font-size: 0.8rem; color: #94A3B8; margin-bottom: 4px;">推薦下注項</div>
+            <div style="font-size: 1rem; font-weight: 800; color: #F59E0B;">${recTarget}${recLine}</div>
+          </div>
+          <div style="background: var(--bg-card); padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(226, 232, 240, 0.1); text-align: center;">
+            <div style="font-size: 0.8rem; color: #94A3B8; margin-bottom: 4px;">AI 預估勝率</div>
+            <div style="font-size: 1.1rem; font-weight: 800; color: #10B981;">${recProbPct}%</div>
+          </div>
+          <div style="background: var(--bg-card); padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(226, 232, 240, 0.1); text-align: center;">
+            <div style="font-size: 0.8rem; color: #94A3B8; margin-bottom: 4px;">盤口賠率</div>
+            <div style="font-size: 1.1rem; font-weight: 800; color: #3B82F6;">${recOdds.toFixed(2)}</div>
+          </div>
+          <div style="background: var(--bg-card); padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(226, 232, 240, 0.1); text-align: center;">
+            <div style="font-size: 0.8rem; color: #94A3B8; margin-bottom: 4px;">預期期望值 (EV)</div>
+            <div style="font-size: 1.1rem; font-weight: 800; color: ${isValue ? '#10B981' : '#EF4444'};">${isValue ? '+' : ''}${evPct}%</div>
+          </div>
+          <div style="background: var(--bg-card); padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(226, 232, 240, 0.1); text-align: center;">
+            <div style="font-size: 0.8rem; color: #94A3B8; margin-bottom: 4px;">安全凱利比例</div>
+            <div style="font-size: 1.1rem; font-weight: 800; color: ${isValue ? '#F59E0B' : '#94A3B8'};">${isValue ? halfKellyPct + '%' : '0.0%'}</div>
+          </div>
+        </div>
+
+        <div style="
+          background: rgba(239, 68, 68, 0.05);
+          border: 1px solid rgba(239, 68, 68, 0.15);
+          border-radius: 8px;
+          padding: 0.75rem;
+          font-size: 0.8rem;
+          color: #EF4444;
+          line-height: 1.4;
+        ">
+          <strong>⚠️ 實驗性 Beta 模型與校準聲明：</strong><br>
+          本期望值與凱利公式比例為<strong>實驗性 (未校準)</strong> 功能。大型語言模型 (LLM) 對隨機運動賽事的概率估計常有<strong>過度自信 (Overconfidence)</strong> 偏差。本數據目前僅做為模型回測與統計分析累積使用，<strong>請勿做為實際高額投注的決策依據</strong>。
+        </div>
+      </div>
+    `;
+  }
+
+  // 詳情勝率條
+  let detailProbHtml = '';
+  if (match.insufficient_data) {
+    detailProbHtml = `
+      <div class="true-prob-container" style="padding: 12px; background: rgba(239, 68, 68, 0.04); border: 1px dashed rgba(239, 68, 68, 0.15); border-radius: 8px; text-align: center; margin-bottom: 1rem;">
+        <span style="font-size: 0.9rem; color: #EF4444; font-weight: 600;">⚠️ 報價博彩商不足 3 家，數據不足暫不評估。</span>
+      </div>
+    `;
+  } else {
+    detailProbHtml = renderTrueProbsBar(match.true_probs, match.home_team, match.away_team);
+  }
+
   content.innerHTML = `
     <div class="modal-header-bar">
       <h2>${formatTeamName(match.home_team)} vs ${formatTeamName(match.away_team)}</h2>
@@ -781,7 +891,8 @@ function openMatchDetail(matchId) {
     </div>
     <div class="modal-meta">${match.league} | 開賽: ${formatTime(match.commence_time)}</div>
 
-    ${renderTrueProbsBar(match.true_probs, match.home_team, match.away_team)}
+    ${detailProbHtml}
+    ${valueBetPanelHtml}
     ${advModalHtml}
 
     ${fatigueHtml}

@@ -53,14 +53,21 @@ TZ_TAIPEI = timezone(timedelta(hours=8))
 # The Odds API 設定
 ODDS_API_BASE = "https://api.the-odds-api.com/v4/sports"
 
-# 要追蹤的聯賽 (世足賽專屬)
+# 要追蹤的聯賽 (世足賽與多聯賽)
 LEAGUES = {
     "soccer_fifa_world_cup": "世足 FIFA World Cup",
+    "soccer_epl": "英超 English Premier League",
+    "soccer_uefa_champs_league": "歐冠 UEFA Champions League",
+    "soccer_usa_mls": "美職聯 Major League Soccer",
+    "basketball_nba": "NBA 美職籃",
 }
 
 # 足球聯賽輪替清單 (相容用)
 SOCCER_LEAGUES = [
     "soccer_fifa_world_cup",
+    "soccer_epl",
+    "soccer_uefa_champs_league",
+    "soccer_usa_mls",
 ]
 
 # 變動門檻 (超過此值才觸發 AI 分析)
@@ -222,7 +229,7 @@ def fetch_odds(sport_key):
     for attempt in range(len(key_manager.keys)):
         params = {
             "apiKey": key_manager.get_key(),
-            "regions": "us,eu",
+            "regions": "eu",
             "markets": markets,
             "oddsFormat": "decimal",
         }
@@ -342,14 +349,23 @@ def parse_odds_data(raw_data, sport_key):
             implied_sum = sum(1/p for p in outcomes.values() if p > 0)
             return {k: round((1/p) / implied_sum * 100, 1) for k, p in outcomes.items() if p > 0 and implied_sum > 0}
             
-        match["true_probs"] = calc_probs(avg_odds)
+        if match.get("insufficient_data") or not avg_odds:
+            match["avg_odds"] = {}
+            match["true_probs"] = {}
+            match["insufficient_data"] = True
+        else:
+            match["true_probs"] = calc_probs(avg_odds)
         
         # 計算其他盤口的真實機率寫入 other_markets
         for mk in ["spreads", "totals"]:
             if mk in other_markets and other_markets[mk]:
-                market_probs = calc_probs({k: v.get("price", 0) for k, v in other_markets[mk].items()})
-                for k in other_markets[mk]:
-                    other_markets[mk][k]["prob"] = market_probs.get(k, 50.0)
+                if match.get("insufficient_data"):
+                    for k in other_markets[mk]:
+                        other_markets[mk][k]["prob"] = 50.0
+                else:
+                    market_probs = calc_probs({k: v.get("price", 0) for k, v in other_markets[mk].items()})
+                    for k in other_markets[mk]:
+                        other_markets[mk][k]["prob"] = market_probs.get(k, 50.0)
                     
         match["other_markets"] = other_markets
         
@@ -358,10 +374,30 @@ def parse_odds_data(raw_data, sport_key):
     return matches
 
 
+def filter_odds_outliers(prices):
+    """剔除因 live 盤或個別博彩商錯誤報出的極端異常賠率 (中位數絕對偏差過濾法簡化版)"""
+    if len(prices) < 3:
+        return prices
+    sorted_prices = sorted(prices)
+    n = len(sorted_prices)
+    median = sorted_prices[n // 2] if n % 2 == 1 else (sorted_prices[n // 2 - 1] + sorted_prices[n // 2]) / 2.0
+    
+    filtered = []
+    for p in prices:
+        if median <= 2.0:
+            # 熱門/均衡盤口，容忍度較小 (60% ~ 150%)
+            if 0.6 * median <= p <= 1.5 * median:
+                filtered.append(p)
+        else:
+            # 冷門/高賠盤口，容忍度稍寬 (50% ~ 200%)
+            if 0.5 * median <= p <= 2.0 * median:
+                filtered.append(p)
+    return filtered if len(filtered) >= 2 else prices
+
+
 def calculate_average_odds(match):
     """計算所有博彩商的平均賠率並提取其他盤口資料"""
-    h2h_totals = {}
-    h2h_counts = {}
+    h2h_prices = {}
     other_markets = {"spreads": {}, "totals": {}, "btts": {}}
 
     for bm in match.get("bookmakers", []):
@@ -370,8 +406,7 @@ def calculate_average_odds(match):
         for team, data in h2h.items():
             price = data.get("price", 0)
             if price > 0:
-                h2h_totals[team] = h2h_totals.get(team, 0) + price
-                h2h_counts[team] = h2h_counts.get(team, 0) + 1
+                h2h_prices.setdefault(team, []).append(price)
         
         # 抓取第一家有開盤的資料做代表
         for mk in ["spreads", "totals", "btts"]:
@@ -379,8 +414,27 @@ def calculate_average_odds(match):
                 other_markets[mk] = markets[mk]
 
     avg = {}
-    for team in h2h_totals:
-        avg[team] = round(h2h_totals[team] / h2h_counts[team], 3)
+    insufficient = False
+    
+    if not h2h_prices:
+        insufficient = True
+    else:
+        for team, prices in h2h_prices.items():
+            # 最低有效報價家數門檻：少於 3 家則此場不予採用以防失真
+            if len(prices) < 3:
+                insufficient = True
+                break
+            
+            # 使用過濾後的價格列表計算平均值
+            filtered_prices = filter_odds_outliers(prices)
+            if len(filtered_prices) < 2:
+                insufficient = True
+                break
+            avg[team] = round(sum(filtered_prices) / len(filtered_prices), 3)
+
+    if insufficient:
+        match["insufficient_data"] = True
+        return {}, other_markets
 
     return avg, other_markets
 
@@ -485,6 +539,8 @@ def get_significant_changes(matches):
     """篩選出勝率超過 60% 的比賽進行 AI 分析 (節省 Token)"""
     significant = []
     for match in matches:
+        if match.get("insufficient_data"):
+            continue
         is_high_prob = False
         
         # 1. 檢查獨贏勝率
@@ -1341,7 +1397,7 @@ def build_analysis_prompt(match, news_items, performance_context=""):
 """
 
     prompt += f"""
-## 世足進階數據 (Phase 2)
+## 進階數據 (Phase 2)
 {advanced_text}
 
 ## 最新相關新聞
@@ -1349,15 +1405,15 @@ def build_analysis_prompt(match, news_items, performance_context=""):
 
 {performance_context}
 
-## 你的任務
-1. 結合所有資訊（勝率、盤口走勢、反向指標、傷兵、輪休可能、Elo 實力、xG火力），給出【💡 投注推薦】。
-2. **[重要]** 請使用 Google 搜尋（Google Search Tool）去查詢這場賽事的「網友評估勝率」與「網路風向（如 PTT、Reddit、各大論壇）」，並將搜尋到的散戶風向寫入分析中。
-3. 用 2~3 句話說明推薦原因，若有確保晉級輪休主力的可能性、或是反向指標，請特別強調。
-4. **你必須在分析的最後，給出包含勝平負主判斷、最可能比分、進球機率預估與大小球推薦等指標！**
-5. 回答格式如下：
-第一行：【💡 推薦：xxx】
-第二行起：說明推薦原因與網友風向。
-結尾必須精確包含以下標記欄位（每行一個，請根據數據預估填入）：
+## 你的任務與核心指南
+1. **[重要] 獨立客觀評估**：系統提供的「真實勝率」僅是莊家賠率去水後的隱含機率，不代表客觀真實勝算。你必須結合傷兵、Elo、xG 與你透過搜尋得到的即時情報，獨立客估並判定該賽事的真實勝算。
+2. **[數據校準] 獲取真實 ELO / xG**：若系統提供的數據為預設值 (Elo 1700, xG 1.2)，你必須使用 **Google Search Tool** 去查詢該聯賽球隊在 FIFA 官方最新排名、Clubelo、Opta 等知名體育數據平台上的真實 Elo 積分與近期預期進球 (xG)。請在分析理由中**註明數據出處**。
+3. **[反向指標偵測] 散戶情緒**：請使用 Google Search 查詢這場賽事的網路輿論風向（如 PTT、Reddit、各大論壇）。**請記住，散戶情緒在博弈理論中通常是反向指標**（莊家常為吸引散戶熱度而設計誘盤）。若發現散戶風向熱烈看好某隊，但盤口賠率卻在向相反方向移動（即 RLM 逆向盤口移動），應將其視為尋找價值投注（Value Bet）的信號。
+4. **結合資訊給出【💡 投注推薦】**，用 2~3 句話說明原因，若有晉級輪休、散戶反向對立，請特別強調。
+5. **回答格式規範**：
+   - 第一行：【💡 推薦：xxx】
+   - 第二行起：說明推薦原因、查詢到的數據來源與網友風向。
+   - 結尾必須精確包含以下標記欄位（每行一個，請根據你的獨立評估與數據填入，**不得遺漏**）：
 【🤖 勝平負判斷：主勝 / 客勝 / 雙平 / 客小優 等】
 【🎯 最可能比分：X-Y、A-B】
 【📊 至少1球機率：XX%】
@@ -1365,17 +1421,29 @@ def build_analysis_prompt(match, news_items, performance_context=""):
 【📊 雙方進球機率：XX%】
 【🎯 預測比分：主隊 X:Y 客隊 (預估此比分機率：Z%)】
 【⚽ 大小球推薦：大/小 X.5】
+【📊 AI 評估主隊真實 Elo：XXXX】
+【📊 AI 評估客隊真實 Elo：XXXX】
+【📊 AI 評估主隊近期 xG：X.XX】
+【📊 AI 評估客隊近期 xG：X.XX】
+【📊 推薦投注標的：主勝 / 客勝 / 和局 / 大球 / 小球 / 主讓 / 客讓】
+【📊 推薦投注門檻值：X.5 / -Y.5】(若非大小球或讓分，請填寫 N/A)
+【📊 AI 預估推薦項勝率：XX%】
+(說明: 請根據你對你所推薦之項目的把握度，給出一個客觀預估的勝率，如 65%)
+【📊 推薦項盤口賠率：X.XX】
+(說明: 請直接從盤口賠率/附加盤口資訊中，抄錄你所推薦項目對應的盤口賠率，如 1.85)
+
 如果本賽事的歷史交手紀錄顯示「無歷史交手資料」或近期戰績資料不足，請額外利用 Google 搜尋查出兩隊最近 1-3 次交手歷史與近五場勝負（用英文隊名與英文縮寫），並在最後附加上這三行欄位：
 【📊 H2H交手：YYYY-MM-DD 主隊 X-Y 客隊 | YYYY-MM-DD 主隊 A-B 客隊】
 【📊 近期主隊戰績：W-L-D-W-L】
 【📊 近期客隊戰績：L-W-D-L-W】
-請控制在 350 字以內。
+
+請控制在 400 字以內。
 """
     return prompt
 
 
 def parse_ai_h2h_and_form(match, analysis_text):
-    """從 AI 的分析文本中，解析出 H2H 與 Form 並注入至賽事物件"""
+    """從 AI 的分析文本中，解析出 H2H、Form、真實 ELO/xG、推薦投注項及機率，並計算 EV 和 Kelly 份額"""
     # 1. H2H交手
     h2h_match = re.search(r"【📊\s*H2H交手：(.*?)】", analysis_text)
     if h2h_match:
@@ -1447,10 +1515,80 @@ def parse_ai_h2h_and_form(match, analysis_text):
                 "details": []
             }
 
-    # Clean up from text
+    # 3. 解析 Elo 與 xG 並回寫
+    home_elo_match = re.search(r"【📊\s*AI 評估主隊真實 Elo：\s*(\d+)】", analysis_text)
+    away_elo_match = re.search(r"【📊\s*AI 評估客隊真實 Elo：\s*(\d+)】", analysis_text)
+    if home_elo_match and away_elo_match:
+        try:
+            h_elo = int(home_elo_match.group(1).strip())
+            a_elo = int(away_elo_match.group(1).strip())
+            match["elo_diff"] = h_elo - a_elo
+        except ValueError:
+            pass
+
+    home_xg_match = re.search(r"【📊\s*AI 評估主隊近期 xG：\s*([\d.]+)】", analysis_text)
+    away_xg_match = re.search(r"【📊\s*AI 評估客隊近期 xG：\s*([\d.]+)】", analysis_text)
+    if home_xg_match or away_xg_match:
+        match["xg_stats"] = match.get("xg_stats", {"home": {"for": 1.2, "against": 1.2}, "away": {"for": 1.2, "against": 1.2}})
+        if home_xg_match:
+            try:
+                match["xg_stats"]["home"]["for"] = float(home_xg_match.group(1).strip())
+            except ValueError:
+                pass
+        if away_xg_match:
+            try:
+                match["xg_stats"]["away"]["for"] = float(away_xg_match.group(1).strip())
+            except ValueError:
+                pass
+
+    # 4. 解析投注推薦資訊 (EV / Kelly 計算)
+    rec_target_match = re.search(r"【📊\s*推薦投注標的：\s*(.+?)】", analysis_text)
+    rec_line_match = re.search(r"【📊\s*推薦投注門檻值：\s*(.+?)】", analysis_text)
+    rec_prob_match = re.search(r"【📊\s*AI 預估推薦項勝率：\s*(\d+)%?】", analysis_text)
+    rec_odds_match = re.search(r"【📊\s*推薦項盤口賠率：\s*([\d.]+)】", analysis_text)
+
+    if rec_target_match:
+        match["ai_rec_target"] = rec_target_match.group(1).strip()
+    if rec_line_match:
+        match["ai_rec_line"] = rec_line_match.group(1).strip()
+
+    if rec_prob_match and rec_odds_match:
+        try:
+            prob_val = float(rec_prob_match.group(1).strip()) / 100.0
+            odds_val = float(rec_odds_match.group(1).strip())
+            if prob_val > 0 and odds_val > 1.0:
+                ev = prob_val * odds_val - 1.0
+                match["ai_rec_prob"] = prob_val
+                match["rec_odds"] = odds_val
+                match["ai_ev"] = round(ev, 3)
+                
+                # 計算 Kelly 份額
+                kelly = ev / (odds_val - 1.0)
+                match["kelly_ratio"] = round(kelly, 4)
+                match["half_kelly_ratio"] = round(0.5 * kelly, 4)
+                
+                if ev > 0:
+                    match["is_value_bet"] = True
+                else:
+                    match["is_value_bet"] = False
+        except ValueError:
+            pass
+
+    # 清理所有標籤，讓網頁渲染保持美觀
     cleaned_text = re.sub(r"【📊\s*H2H交手：.*?】", "", analysis_text)
     cleaned_text = re.sub(r"【📊\s*近期主隊戰績：.*?】", "", cleaned_text)
     cleaned_text = re.sub(r"【📊\s*近期客隊戰績：.*?】", "", cleaned_text)
+    cleaned_text = re.sub(r"【📊\s*AI 評估主隊真實 Elo：.*?】", "", cleaned_text)
+    cleaned_text = re.sub(r"【📊\s*AI 評估客隊真實 Elo：.*?】", "", cleaned_text)
+    cleaned_text = re.sub(r"【📊\s*AI 評估主隊近期 xG：.*?】", "", cleaned_text)
+    cleaned_text = re.sub(r"【📊\s*AI 評估客隊近期 xG：.*?】", "", cleaned_text)
+    cleaned_text = re.sub(r"【📊\s*推薦投注標的：.*?】", "", cleaned_text)
+    cleaned_text = re.sub(r"【📊\s*推薦投注門檻值：.*?】", "", cleaned_text)
+    cleaned_text = re.sub(r"【📊\s*AI 預估推薦項勝率：.*?】", "", cleaned_text)
+    cleaned_text = re.sub(r"【📊\s*推薦項盤口賠率：.*?】", "", cleaned_text)
+    
+    # 移除可能夾帶的說明文字
+    cleaned_text = re.sub(r"\(說明:.*?\)", "", cleaned_text)
     return cleaned_text.strip()
 
 
@@ -1796,7 +1934,49 @@ def update_archive_scores(score_data):
 
 
 def judge_ai_recommendation(match, home_score, away_score):
-    """判定 AI 推薦是否命中"""
+    """判定 AI 推薦是否命中 (優先使用結構化標的進行判斷，相容歷史 fallback 模式)"""
+    target = match.get("ai_rec_target")
+    line_str = match.get("ai_rec_line", "N/A")
+    total_score = home_score + away_score
+    
+    if target:
+        target = target.strip()
+        line_val = 0.0
+        if line_str and line_str != "N/A":
+            try:
+                line_val = float(line_str)
+            except ValueError:
+                pass
+                
+        # 1. 獨贏 / 勝平負
+        if "主勝" in target:
+            return "HIT" if home_score > away_score else "MISS"
+        elif "客勝" in target:
+            return "HIT" if away_score > home_score else "MISS"
+        elif "和局" in target or "平局" in target:
+            return "HIT" if home_score == away_score else "MISS"
+            
+        # 2. 大小球
+        elif "大球" in target or ("大" in target and "讓" not in target):
+            return "HIT" if total_score > line_val else "MISS"
+        elif "小球" in target or ("小" in target and "讓" not in target):
+            return "HIT" if total_score < line_val else "MISS"
+            
+        # 3. 讓分盤
+        elif "主讓" in target:
+            if home_score + line_val > away_score:
+                return "HIT"
+            elif home_score + line_val < away_score:
+                return "MISS"
+            return "PUSH"
+        elif "客讓" in target:
+            if away_score + line_val > home_score:
+                return "HIT"
+            elif away_score + line_val < home_score:
+                return "MISS"
+            return "PUSH"
+
+    # ── Fallback: 舊版正則表達式模糊匹配 ──
     analysis = match.get("ai_analysis", "")
     if not analysis or "fallback" in match.get("analysis_source", ""):
         return "N/A"
@@ -1807,13 +1987,11 @@ def judge_ai_recommendation(match, home_score, away_score):
         return "N/A"
     
     rec = rec_match.group(1).strip()
-    total_score = home_score + away_score
     
     # 判定讓分 (Spread)
     spread_match = re.search(r"主讓\s*([-+]?\d+\.?\d*)", rec)
     if spread_match:
         spread = float(spread_match.group(1))
-        # 主隊得分 + 讓分 > 客隊得分 => 主讓命中
         if home_score + spread > away_score:
             return "HIT"
         elif home_score + spread < away_score:
@@ -1833,9 +2011,9 @@ def judge_ai_recommendation(match, home_score, away_score):
     # 判定獨贏
     home = match.get("home_team", "")
     away = match.get("away_team", "")
-    if home in rec:
+    if home and home in rec:
         return "HIT" if home_score > away_score else "MISS"
-    if away in rec:
+    if away and away in rec:
         return "HIT" if away_score > home_score else "MISS"
     
     return "N/A"
@@ -1912,9 +2090,9 @@ def main():
     print("\n📂 載入現有數據...")
     existing_data = load_json(CURRENT_FILE)
 
-    # 2. 決定本次要抓取的聯賽
-    soccer_league = "soccer_fifa_world_cup"
-    leagues_to_fetch = [soccer_league]
+    # 2. 決定本次要抓取的聯賽 (分時輪替足球聯賽 + 籃球 NBA，節省 API 點數)
+    soccer_league = get_current_soccer_league()
+    leagues_to_fetch = [soccer_league, "basketball_nba"]
 
     # ── DEBUG 模式: 跳過 Odds API，用快取資料 ──
     if DEBUG_SKIP_ODDS:
@@ -1931,7 +2109,7 @@ def main():
         significant = get_significant_changes(matches_with_changes)
         print(f"  📈 共 {len(significant)} 場比賽符合 AI 分析門檻 (勝率 ≥ 60%)")
     else:
-        print(f"\n📡 本次抓取: {LEAGUES.get(soccer_league, soccer_league)}")
+        print(f"\n📡 本次抓取: {', '.join(LEAGUES.get(lk, lk) for lk in leagues_to_fetch)}")
         key_count = len(key_manager.keys)
         mode_str = f"{key_count} Key 模式" if key_count >= 2 else "單 Key 模式"
         print(f"  🔑 Odds API Key 數量: {key_count} ({mode_str})")
