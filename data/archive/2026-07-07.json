@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-07T03:46:45.343119+08:00",
-  "last_updated_display": "2026/07/07 03:46 (台北時間)",
+  "last_updated": "2026-07-07T06:09:11.378603+08:00",
+  "last_updated_display": "2026/07/07 06:09 (台北時間)",
   "matches": {
     "16ed3adcf661b3a9bea39871a2d204df": {
       "id": "16ed3adcf661b3a9bea39871a2d204df",
@@ -335,7 +335,10 @@
       "kelly_ratio": 0.2769,
       "half_kelly_ratio": 0.1384,
       "ai_analysis": "【💡 推薦：大球 1.5】\n\n這場世足賽事，雖然兩隊在歷史交手紀錄上較為平淡，但近期兩隊的進攻火力都有顯著提升。根據最新的 xG 數據顯示，客隊 Spain 的預期進攻能力（1.8進/0.6失）明顯優於主隊 Portugal（1.2進/1.2失），這表明 Spain 在創造進攻機會和防守穩定性上都表現得更好。盤口數據也顯示，Draw 的賠率有急速下滑的跡象，這可能暗示著市場對和局的預期降低，轉向看好某一方勝出或有更多進攻。考量到兩隊的進攻潛力以及盤口數據的移動，預期本場比賽將有超過 1.5 球的出現。\n\n【🤖 勝平負判斷：客小優】\n【🎯 最可能比分：1-2、0-1】\n【📊 至少1球機率：85%】\n【📊 至少2球機率：60%】\n【📊 雙方進球機率：55%】\n【🎯 預測比分：主隊 1:2 客隊 (預估此比分機率：25%)】\n【⚽ 大小球推薦：大 1.5】",
-      "analysis_source": "gemini"
+      "analysis_source": "gemini",
+      "final_score": "0-1",
+      "completed": true,
+      "ai_result": "MISS"
     },
     "810f80b3ae79f5e86b3747ca15718ed8": {
       "id": "810f80b3ae79f5e86b3747ca15718ed8",
@@ -350,13 +353,13 @@
           "markets": {
             "h2h": {
               "Belgium": {
-                "price": 2.8
+                "price": 2.85
               },
               "USA": {
-                "price": 2.5
+                "price": 2.55
               },
               "Draw": {
-                "price": 3.4
+                "price": 3.3
               }
             }
           }
@@ -366,13 +369,13 @@
           "markets": {
             "h2h": {
               "Belgium": {
-                "price": 2.75
+                "price": 2.8
               },
               "USA": {
                 "price": 2.6
               },
               "Draw": {
-                "price": 3.5
+                "price": 3.4
               }
             },
             "totals": {
@@ -394,13 +397,13 @@
           "markets": {
             "h2h": {
               "Belgium": {
-                "price": 2.88
+                "price": 2.9
               },
               "USA": {
                 "price": 2.6
               },
               "Draw": {
-                "price": 3.5
+                "price": 3.4
               }
             },
             "totals": {
@@ -409,7 +412,7 @@
                 "point": 2.5
               },
               "Under": {
-                "price": 2.28,
+                "price": 2.3,
                 "point": 2.5
               }
             }
@@ -417,26 +420,26 @@
         }
       ],
       "avg_odds": {
-        "Belgium": 2.823,
-        "USA": 2.53,
-        "Draw": 3.462
+        "Belgium": 2.836,
+        "USA": 2.534,
+        "Draw": 3.424
       },
       "true_probs": {
-        "Belgium": 34.1,
-        "USA": 38.1,
-        "Draw": 27.8
+        "Belgium": 33.9,
+        "USA": 38.0,
+        "Draw": 28.1
       },
       "other_markets": {
         "spreads": {
           "Belgium": {
-            "price": 2.02,
+            "price": 2.03,
             "point": 0.0,
-            "prob": 47.3
+            "prob": 46.9
           },
           "USA": {
-            "price": 1.81,
+            "price": 1.79,
             "point": 0.0,
-            "prob": 52.7
+            "prob": 53.1
           }
         },
         "totals": {
@@ -461,23 +464,17 @@
       "first_seen": "2026-07-02T10:31:25.509136+08:00",
       "is_new": false,
       "odds_change": {
-        "Belgium": 0.193,
-        "USA": -0.066,
-        "Draw": 0.015
+        "Belgium": 0.206,
+        "USA": -0.062,
+        "Draw": -0.023
       },
       "change_pct": {
-        "Belgium": 7.34,
-        "USA": -2.54,
-        "Draw": 0.44
+        "Belgium": 7.83,
+        "USA": -2.39,
+        "Draw": -0.67
       },
       "is_value_bet": false,
       "odds_timeline": [
-        {
-          "time": "07/04 05:58",
-          "Belgium": 2.621,
-          "USA": 2.73,
-          "Draw": 3.376
-        },
         {
           "time": "07/04 10:04",
           "Belgium": 2.602,
@@ -591,6 +588,12 @@
           "Belgium": 2.823,
           "USA": 2.53,
           "Draw": 3.462
+        },
+        {
+          "time": "07/07 06:07",
+          "Belgium": 2.836,
+          "USA": 2.534,
+          "Draw": 3.424
         }
       ],
       "h2h_history": [
@@ -601,15 +604,15 @@
           "away": "Belgium"
         },
         {
-          "date": "2014-07-02",
+          "date": "2014-07-01",
           "home": "Belgium",
           "score": "2-1",
-          "away": "USA"
+          "away": "USA (AET)"
         },
         {
-          "date": "2013-05-30",
+          "date": "1930-07-13",
           "home": "USA",
-          "score": "2-4",
+          "score": "3-0",
           "away": "Belgium"
         }
       ],
@@ -645,22 +648,22 @@
           }
         ]
       },
-      "elo_diff": -270,
+      "elo_diff": -80,
       "xg_stats": {
         "home": {
-          "for": 1.2,
+          "for": 1.25,
           "against": 1.2
         },
         "away": {
-          "for": 1.2,
+          "for": 1.25,
           "against": 1.2
         }
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "和局 / 客勝 / 小球",
-      "ai_rec_line": "N/A",
-      "ai_analysis": "## 💡 投注推薦：\n\n看好 Belgium 在讓分盤 (主讓 0.0) 上能夠至少不敗，甚至有機會贏下比賽。賠率變動也顯示 Belgium 賠率持續上升，而 USA 賠率下降，顯示市場對 Belgium 的信心增加。\n\n## 分析說明：\n\n儘管 USA 在本屆世足賽中展現出不錯的韌性，且擁有主場優勢，但 Belgium 在歷史交手紀錄上佔有明顯優勢，近五次對戰全數獲勝，且在 2014 年世界盃淘汰 USA 的經驗，可能在心理層面上有所加持。\n\nElo 積分方面，Belgium (1869) 略高於 USA (根據最近一次搜尋到的數據，USA 在 ELO 排名中約為 17 名，而 Belgium 為 17 名，但 Belgium 的 Elo 積分通常高於 USA，具體數值未能精確取得，但根據 2026年6月26日的數據，Belgium 為 1869 分 )。儘管系統提供的 Elo 積分差距為 -270 (USA 較強)，但實際數據顯示 Belgium 積分更高，這表示 USA 的真實 Elo 積分可能被低估，或 Belgium 的 Elo 積分被高估。考慮到 Belgium 在此前的比賽中表現出的韌性（例如對陣塞內加爾的驚險逆轉勝），以及 USA 在小組賽最後一場對陣土耳其的失利（3-2），Belgium 在精神和戰術上可能更為穩定。\n\n雖然 USA 的 Folarin Balogun 被解禁可以上場，這是一個利好消息，但 Belgium 隊內擁有 De Bruyne 和 Lukaku 等經驗豐富的球員，他們曾在 2014 年淘汰 USA。綜合來看，Belgium 的歷史交手紀錄、球員經驗以及盤口賠率的細微移動，都顯示出 Belgium 具有較高的勝算或至少不敗的可能。\n\n【🤖 勝平負判斷：客小優】\n【🎯 最可能比分：1-1、0-1、1-2】\n【📊 至少1球機率：75%】\n【📊 至少2球機率：45%】\n【📊 雙方進球機率：55%】\n【🎯 預測比分：USA 1:1 Belgium (預估此比分機率：25%)】\n【⚽ 大小球推薦：小 2.5】",
+      "ai_rec_target": "主勝 / 大球",
+      "ai_rec_line": "N/A / 2.5",
+      "ai_analysis": "## 【💡 投注推薦】\n推薦選擇「主勝」或「大 2.5 」。美國隊在主場有地利之便，且近期進攻火力不俗，加上 Folarin Balogun 的歸隊，預期能與比利時展開一場進攻對決。\n\n## 分析說明\n這場比賽的賠率走勢顯示，雖然初盤比利時稍有優勢，但隨著 Folarin Balogun 的禁賽解除，美國隊的獨贏賠率不斷下降，顯示市場對美國隊的信心增強。Elo 積分方面，比利時的 Elo 積分為 1869，排名第 17，而美國隊的 Elo 積分則較低，根據一篇 2025 年 9 月的文章，美國隊當時排名第 49，最新的 Elo 數據難以確定，但兩隊存在明顯差距。\n\n預期進球 (xG) 方面，根據 FotMob 的數據，比利時在 2026 世界盃的 xG 為 8.6，而美國隊的 xG 為 5.5。這顯示比利時在創造進攻機會上稍有優勢，但美國隊的效率不錯，場均進球數為 2.5。\n\n歷史交手紀錄顯示，比利時在近期的交手中佔據絕對優勢，近六場對戰美國隊皆獲勝，包括今年三月的友誼賽以 5-2 大勝。然而，美國隊在主場作戰，加上近期贏球的氣勢，以及 Folarin Balogun 的關鍵復出，都為他們注入了強心針。\n\n從盤口走勢和網友討論來看，Folarin Balogun 的禁賽解除是影響盤口最關鍵的因素，使得美國隊的勝率預期大幅提升。儘管比利時整體實力稍強，但美國隊的主場優勢和進攻火力，以及大量資金湧入「大球」的趨勢，預示著這將是一場進球大戰，雙方都有機會取勝。\n\n綜合以上資訊，考量到美國隊的主場優勢、近期狀態以及 Balogun 的歸隊，加上比利時近期比賽也出現過落後追分的狀況（對塞內加爾），預計這場比賽將非常開放，進球數有望超過 2.5 球。\n\n【🤖 勝平負判斷：主勝 / 客勝 / 雙平 / 客小優】\n【🎯 最可能比分：2-1, 3-2】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：85%】\n【📊 雙方進球機率：70%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：30%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "190922affd0be754bfefd71548dbf90d": {
@@ -730,10 +733,10 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.33
+                "price": 1.35
               },
               "Egypt": {
-                "price": 10.5
+                "price": 9.5
               },
               "Draw": {
                 "price": 4.9
@@ -743,14 +746,14 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 1.364,
-        "Egypt": 9.795,
-        "Draw": 4.823
+        "Argentina": 1.367,
+        "Egypt": 9.712,
+        "Draw": 4.794
       },
       "true_probs": {
-        "Argentina": 70.3,
-        "Egypt": 9.8,
-        "Draw": 19.9
+        "Argentina": 70.1,
+        "Egypt": 9.9,
+        "Draw": 20.0
       },
       "other_markets": {
         "spreads": {
@@ -787,16 +790,16 @@
       "first_seen": "2026-07-04T10:04:34.654158+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": 0.006,
-        "Egypt": 0.637,
-        "Draw": 0.021
+        "Argentina": 0.009,
+        "Egypt": 0.554,
+        "Draw": -0.008
       },
       "change_pct": {
-        "Argentina": 0.44,
-        "Egypt": 6.96,
-        "Draw": 0.44
+        "Argentina": 0.66,
+        "Egypt": 6.05,
+        "Draw": -0.17
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "07/04 10:04",
@@ -911,9 +914,22 @@
           "Argentina": 1.364,
           "Egypt": 9.795,
           "Draw": 4.823
+        },
+        {
+          "time": "07/07 06:07",
+          "Argentina": 1.367,
+          "Egypt": 9.712,
+          "Draw": 4.794
         }
       ],
-      "h2h_history": [],
+      "h2h_history": [
+        {
+          "date": "2008-03-26",
+          "home": "阿根廷",
+          "score": "2-0",
+          "away": "埃及"
+        }
+      ],
       "home_form": {
         "record": "W",
         "wins": 1,
@@ -959,9 +975,14 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "⚠️ Argentina 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。",
-      "ai_rec_target": "主讓",
-      "ai_rec_line": "-1.5",
-      "ai_analysis": "【💡 推薦：主讓 -1.5】\n\n根據數據分析，阿根廷的真實勝率高達70.3%，Elo積分比埃及高出440分，且預期進球數(xG)為2.1進/0.8失，遠優於埃及的1.2進/1.2失，顯示其在攻防兩端都具備壓倒性優勢。儘管盤口賠率顯示阿根廷略有升水，但考慮到兩隊巨大的實力差距以及近期盤口走勢，莊家可能藉此引導資金流向，若阿根廷未大幅輪休主力，穿盤機會仍然很高。需特別留意阿根廷是否已提前晉級而進行輪休，若無此情況，實力面足以覆蓋讓分盤。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0, 3-0】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：75%】\n【📊 雙方進球機率：30%】\n【🎯 預測比分：主隊 2:0 客隊 (預估此比分機率：18%)】\n【⚽ 大小球推薦：小 2.5】",
+      "ai_rec_target": "主勝",
+      "ai_rec_line": "N/A",
+      "ai_rec_prob": 0.75,
+      "rec_odds": 1.369,
+      "ai_ev": 0.027,
+      "kelly_ratio": 0.0725,
+      "half_kelly_ratio": 0.0362,
+      "ai_analysis": "【💡 推薦：主勝 (Argentina 獲勝)】\n\n阿根廷目前世界排名第一，而埃及排名第26，實力差距顯著。儘管阿根廷在上一場比賽中進入延長賽，但其在世界盃的連續獲勝紀錄以及對陣非洲球隊的強勢表現（八連勝）仍顯示其穩定性。埃及雖然是本屆賽事的黑馬，但面對阿根廷的強大攻防能力，預計難以全身而退。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0、3-0、2-1】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：65%】\n【📊 雙方進球機率：40%】\n【🎯 預測比分：阿根廷 2:0 埃及 (預估此比分機率：25%)】\n【⚽ 大小球推薦：小 2.5】",
       "analysis_source": "gemini"
     },
     "a6da973c5749ce60adab77d64b3664f4": {
@@ -977,13 +998,13 @@
           "markets": {
             "h2h": {
               "Colombia": {
-                "price": 2.25
+                "price": 2.23
               },
               "Switzerland": {
                 "price": 3.65
               },
               "Draw": {
-                "price": 3.0
+                "price": 3.05
               }
             }
           }
@@ -1012,60 +1033,60 @@
                 "price": 2.2
               },
               "Switzerland": {
-                "price": 3.6
+                "price": 3.55
               },
               "Draw": {
-                "price": 2.95
+                "price": 3.0
               }
             },
             "totals": {
               "Over": {
-                "price": 2.33,
+                "price": 2.25,
                 "point": 2.5,
-                "prob": 39.3
+                "prob": 40.8
               },
               "Under": {
-                "price": 1.51,
+                "price": 1.55,
                 "point": 2.5,
-                "prob": 60.7
+                "prob": 59.2
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Colombia": 2.284,
-        "Switzerland": 3.562,
-        "Draw": 3.086
+        "Colombia": 2.286,
+        "Switzerland": 3.552,
+        "Draw": 3.096
       },
       "true_probs": {
         "Colombia": 42.0,
-        "Switzerland": 26.9,
-        "Draw": 31.1
+        "Switzerland": 27.0,
+        "Draw": 31.0
       },
       "other_markets": {
         "spreads": {
           "Colombia": {
-            "price": 2.2,
+            "price": 2.28,
             "point": -0.5,
-            "prob": 42.1
+            "prob": 41.8
           },
           "Switzerland": {
-            "price": 1.6,
+            "price": 1.64,
             "point": 0.5,
-            "prob": 57.9
+            "prob": 58.2
           }
         },
         "totals": {
           "Over": {
-            "price": 2.33,
+            "price": 2.25,
             "point": 2.5,
-            "prob": 39.3
+            "prob": 40.8
           },
           "Under": {
-            "price": 1.51,
+            "price": 1.55,
             "point": 2.5,
-            "prob": 60.7
+            "prob": 59.2
           }
         },
         "btts": {}
@@ -1078,14 +1099,14 @@
       "first_seen": "2026-07-04T14:12:07.294605+08:00",
       "is_new": false,
       "odds_change": {
-        "Colombia": 0.063,
-        "Switzerland": 0.121,
-        "Draw": -0.11
+        "Colombia": 0.065,
+        "Switzerland": 0.111,
+        "Draw": -0.1
       },
       "change_pct": {
-        "Colombia": 2.84,
-        "Switzerland": 3.52,
-        "Draw": -3.44
+        "Colombia": 2.93,
+        "Switzerland": 3.23,
+        "Draw": -3.13
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -1196,20 +1217,32 @@
           "Colombia": 2.284,
           "Switzerland": 3.562,
           "Draw": 3.086
+        },
+        {
+          "time": "07/07 06:07",
+          "Colombia": 2.286,
+          "Switzerland": 3.552,
+          "Draw": 3.096
         }
       ],
       "h2h_history": [
         {
-          "date": "1994-06-26",
-          "home": "瑞士",
-          "score": "0-2",
-          "away": "哥倫比亞"
+          "date": "2007-03-25",
+          "home": "Colombia",
+          "score": "3-1",
+          "away": "Switzerland"
         },
         {
-          "date": "2007-03-25",
-          "home": "哥倫比亞",
-          "score": "3-1",
-          "away": "瑞士"
+          "date": "1994-06-26",
+          "home": "Switzerland",
+          "score": "0-2",
+          "away": "Colombia"
+        },
+        {
+          "date": "1991-02-03",
+          "home": "Switzerland",
+          "score": "3-2",
+          "away": "Colombia"
         }
       ],
       "home_form": {
@@ -1247,24 +1280,24 @@
       "elo_diff": -119,
       "xg_stats": {
         "home": {
-          "for": 0.77,
+          "for": 2.2,
           "against": 1.2
         },
         "away": {
-          "for": 0.74,
+          "for": 1.48,
           "against": 1.2
         }
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "客勝",
-      "ai_rec_line": "N/A",
-      "ai_rec_prob": 0.55,
-      "rec_odds": 2.284,
-      "ai_ev": 0.256,
-      "kelly_ratio": 0.1995,
-      "half_kelly_ratio": 0.0998,
-      "ai_analysis": "【💡 推薦：客勝】\n\n哥倫比亞在進攻端和防守端都展現出較為穩定的狀態，尤其是在防守端，他們在本屆世界盃小組賽至今僅失一球，顯示出極佳的組織和紀律性。儘管瑞士在進攻端有較多進球，但他們的防守相對較為鬆散，且有幾場比賽未能保持清白之身。歷史交手紀錄上，哥倫比亞略佔優勢，近期的盤口走勢和獨贏賠率也略微偏向哥倫比亞，綜合考量，客隊哥倫比亞獲勝的機會較大。\n\n【🤖 勝平負判斷：客勝】\n【🎯 最可能比分：0-1、1-2】\n【📊 至少1球機率：65%】\n【📊 至少2球機率：35%】\n【📊 雙方進球機率：40%】\n【🎯 預測比分：哥倫比亞 1:0 瑞士 (預估此比分機率：15%)】\n【⚽ 大小球推薦：小 2.5】\n(資料來源: World Football Elo Ratings)\n(資料來源: World Football Elo Ratings)\n(資料來源: FotMob)\n(資料來源: FotMob)\n\n\n\n(資料來源: 盤口走勢)\n(資料來源: Sports Mole)\n(資料來源: Flashscore)\n(資料來源: Flashscore)",
+      "ai_rec_target": "小球",
+      "ai_rec_line": "2.5",
+      "ai_rec_prob": 0.58,
+      "rec_odds": 2.1,
+      "ai_ev": 0.218,
+      "kelly_ratio": 0.1982,
+      "half_kelly_ratio": 0.0991,
+      "ai_analysis": "【💡 推薦：小球 2.5】\n\n哥倫比亞在本屆世界盃展現了強大的防守能力，四場比賽僅失一球。儘管瑞士在進攻端表現活躍，但面對哥倫比亞嚴密的防線，預計難以創造太多破門機會。歷史交手紀錄顯示兩隊對戰總進球數偏低，加上淘汰賽的謹慎策略，本場比賽極可能是一場進球數不多的戰術對決。\n\n【🤖 勝平負判斷：客小優】\n【🎯 最可能比分：0-1、1-1】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：60%】\n【📊 雙方進球機率：40%】\n【🎯 預測比分：主隊 0:1 客隊 (預估此比分機率：18%)】\n【⚽ 大小球推薦：小 2.5】",
       "analysis_source": "gemini"
     },
     "b6e926d7f026782b9cab2fa02b823d92": {
@@ -1347,9 +1380,9 @@
         }
       ],
       "avg_odds": {
-        "France": 1.59,
-        "Morocco": 6.314,
-        "Draw": 3.894
+        "France": 1.588,
+        "Morocco": 6.277,
+        "Draw": 3.889
       },
       "true_probs": {
         "France": 60.2,
@@ -1359,14 +1392,14 @@
       "other_markets": {
         "spreads": {
           "France": {
-            "price": 2.7,
-            "point": -1.5,
-            "prob": 35.3
+            "price": 1.6,
+            "point": -0.5,
+            "prob": 59.6
           },
           "Morocco": {
-            "price": 1.47,
-            "point": 1.5,
-            "prob": 64.7
+            "price": 2.36,
+            "point": 0.5,
+            "prob": 40.4
           }
         },
         "totals": {
@@ -1391,14 +1424,14 @@
       "first_seen": "2026-07-05T10:13:06.407125+08:00",
       "is_new": false,
       "odds_change": {
-        "France": 0.005,
-        "Morocco": 0.119,
-        "Draw": -0.062
+        "France": 0.003,
+        "Morocco": 0.082,
+        "Draw": -0.067
       },
       "change_pct": {
-        "France": 0.32,
-        "Morocco": 1.92,
-        "Draw": -1.57
+        "France": 0.19,
+        "Morocco": 1.32,
+        "Draw": -1.69
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1473,6 +1506,12 @@
           "France": 1.59,
           "Morocco": 6.314,
           "Draw": 3.894
+        },
+        {
+          "time": "07/07 06:07",
+          "France": 1.588,
+          "Morocco": 6.277,
+          "Draw": 3.889
         }
       ],
       "h2h_history": [],
@@ -1551,25 +1590,25 @@
           "markets": {
             "h2h": {
               "England": {
-                "price": 1.93
+                "price": 1.95
               },
               "Norway": {
                 "price": 4.1
               },
               "Draw": {
-                "price": 3.65
+                "price": 3.75
               }
             },
             "totals": {
               "Over": {
-                "price": 1.8,
+                "price": 1.72,
                 "point": 2.5,
-                "prob": 53.1
+                "prob": 55.4
               },
               "Under": {
-                "price": 2.04,
+                "price": 2.14,
                 "point": 2.5,
-                "prob": 46.9
+                "prob": 44.6
               }
             }
           }
@@ -1592,14 +1631,14 @@
         }
       ],
       "avg_odds": {
-        "England": 1.913,
-        "Norway": 4.035,
-        "Draw": 3.665
+        "England": 1.911,
+        "Norway": 4.027,
+        "Draw": 3.683
       },
       "true_probs": {
-        "England": 50.1,
+        "England": 50.2,
         "Norway": 23.8,
-        "Draw": 26.1
+        "Draw": 26.0
       },
       "other_markets": {
         "spreads": {
@@ -1616,14 +1655,14 @@
         },
         "totals": {
           "Over": {
-            "price": 1.8,
+            "price": 1.72,
             "point": 2.5,
-            "prob": 53.1
+            "prob": 55.4
           },
           "Under": {
-            "price": 2.04,
+            "price": 2.14,
             "point": 2.5,
-            "prob": 46.9
+            "prob": 44.6
           }
         },
         "btts": {}
@@ -1636,14 +1675,14 @@
       "first_seen": "2026-07-06T15:04:01.130104+08:00",
       "is_new": false,
       "odds_change": {
-        "England": -0.066,
-        "Norway": 0.139,
-        "Draw": 0.111
+        "England": -0.068,
+        "Norway": 0.131,
+        "Draw": 0.129
       },
       "change_pct": {
-        "England": -3.34,
-        "Norway": 3.57,
-        "Draw": 3.12
+        "England": -3.44,
+        "Norway": 3.36,
+        "Draw": 3.63
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1670,6 +1709,12 @@
           "England": 1.913,
           "Norway": 4.035,
           "Draw": 3.665
+        },
+        {
+          "time": "07/07 06:07",
+          "England": 1.911,
+          "Norway": 4.027,
+          "Draw": 3.683
         }
       ],
       "h2h_history": [],
@@ -1722,31 +1767,47 @@
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "e66e4478b739fa0657a7a11235e1fcee",
+      "a6da973c5749ce60adab77d64b3664f4",
+      "190922affd0be754bfefd71548dbf90d",
       "b6e926d7f026782b9cab2fa02b823d92",
       "16ed3adcf661b3a9bea39871a2d204df",
       "810f80b3ae79f5e86b3747ca15718ed8",
-      "a6da973c5749ce60adab77d64b3664f4",
-      "190922affd0be754bfefd71548dbf90d"
+      "e66e4478b739fa0657a7a11235e1fcee"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "川普確認曾要求國際足協(Fifa)審查Balogun禁賽令",
+        "title": "川普證實曾要求國際足總(Fifa)審查Balogun禁賽",
         "link": "https://www.bbc.co.uk/sport/football/articles/c1myykx0gmxo?at_medium=RSS&at_campaign=rss",
         "published": "Mon, 06 Jul 2026 19:06:34 GMT",
         "summary": "President Donald Trump confirms he asked Fifa to review United States striker Folarin Balogun's one-match suspension at the World Cup.",
-        "title_zh": "川普確認曾要求國際足協(Fifa)審查Balogun禁賽令",
+        "title_zh": "川普證實曾要求國際足總(Fifa)審查Balogun禁賽",
         "title_en": "Trump confirms he asked Fifa to review Balogun ban"
       },
       {
-        "title": "James預計將重返挪威(Norway)四強賽",
+        "title": "英格蘭足總(FA)考慮就Quansah紅牌上訴",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cz0jjz830g3o?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 06 Jul 2026 20:15:41 GMT",
+        "summary": "The Football Association is considering whether to appeal after England defender Jarell Quansah's red card against Mexico.",
+        "title_zh": "英格蘭足總(FA)考慮就Quansah紅牌上訴",
+        "title_en": "FA considering appeal after Quansah red card"
+      },
+      {
+        "title": "James預計將回歸挪威(Norway)四強賽",
         "link": "https://www.bbc.co.uk/sport/football/articles/cx2xxl6772no?at_medium=RSS&at_campaign=rss",
         "published": "Mon, 06 Jul 2026 17:37:05 GMT",
         "summary": "England manager Thomas Tuchel expects Reece James to be available for the World Cup quarter-final against Norway on Saturday.",
-        "title_zh": "James預計將重返挪威(Norway)四強賽",
+        "title_zh": "James預計將回歸挪威(Norway)四強賽",
         "title_en": "James expected to return for Norway quarter-final"
+      },
+      {
+        "title": "Mbappé譴責巴拉圭(Paraguay)參議員的種族歧視貼文",
+        "link": "https://www.bbc.co.uk/sport/football/articles/ckg557wxrzro?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 06 Jul 2026 18:58:18 GMT",
+        "summary": "France forward Kylian Mbappe condemns a Paraguayan senator as \"despicable\" and unworthy of her position after she made a number of racist remarks mocking his origin and education.",
+        "title_zh": "Mbappé譴責巴拉圭(Paraguay)參議員的種族歧視貼文",
+        "title_en": "Mbappe condemns racist posts from Paraguay senator"
       },
       {
         "title": "熱刺(Tottenham)以1億英鎊簽下紐卡索(Newcastle)的Tonali",
@@ -1757,36 +1818,20 @@
         "title_en": "Tottenham seal £100m move for Newcastle's Tonali"
       },
       {
-        "title": "英格蘭(England)如何透過五場小型比賽擊敗墨西哥(Mexico)",
+        "title": "英格蘭(England)如何透過五場小比賽擊敗墨西哥(Mexico)",
         "link": "https://www.bbc.co.uk/sport/football/articles/cqx113327eyo?at_medium=RSS&at_campaign=rss",
         "published": "Mon, 06 Jul 2026 11:57:53 GMT",
         "summary": "The tactical breakdown of how Thomas Tuchel's 10-man England pulled off a remarkable World Cup win in a hostile Mexico City.",
-        "title_zh": "英格蘭(England)如何透過五場小型比賽擊敗墨西哥(Mexico)",
+        "title_zh": "英格蘭(England)如何透過五場小比賽擊敗墨西哥(Mexico)",
         "title_en": "How England used five mini games to beat Mexico"
       },
       {
-        "title": "Starmer介入墨西哥(Mexico)-英格蘭(England)開球時間爭議",
+        "title": "Starmer介入關於墨西哥(Mexico)-英格蘭(England)開球時間的爭議",
         "link": "https://www.bbc.co.uk/news/articles/cjwgggp28dlo?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 06 Jul 2026 17:12:06 GMT",
+        "published": "Mon, 06 Jul 2026 21:08:35 GMT",
         "summary": "Fifa had been set to bring the match forward by six hours, due to a forecast of thunderstorms.",
-        "title_zh": "Starmer介入墨西哥(Mexico)-英格蘭(England)開球時間爭議",
+        "title_zh": "Starmer介入關於墨西哥(Mexico)-英格蘭(England)開球時間的爭議",
         "title_en": "Starmer intervened in row over Mexico-England kick-off time"
-      },
-      {
-        "title": "Mbappe譴責巴拉圭(Paraguay)參議員的種族歧視言論",
-        "link": "https://www.bbc.co.uk/sport/football/articles/ckg557wxrzro?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 06 Jul 2026 18:58:18 GMT",
-        "summary": "France forward Kylian Mbappe condemns a Paraguayan senator as \"despicable\" and unworthy of her position after she made a number of racist remarks mocking his origin and education.",
-        "title_zh": "Mbappe譴責巴拉圭(Paraguay)參議員的種族歧視言論",
-        "title_en": "Mbappe condemns racist posts from Paraguay senator"
-      },
-      {
-        "title": "英格蘭(England)英雄們誕生的難忘之夜",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cjrgg07p8dlo?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 06 Jul 2026 05:51:10 GMT",
-        "summary": "On a spine-tingling night of drama, emotion and pure theatre in one of sport's most atmospheric arenas, England delivered one of their greatest performances.",
-        "title_zh": "英格蘭(England)英雄們誕生的難忘之夜",
-        "title_en": "An incredible night when England heroes were made"
       },
       {
         "title": "Henderson預計將接受手腕傷勢手術",
@@ -1797,33 +1842,32 @@
         "title_en": "Henderson expected to have surgery on injured wrist"
       },
       {
-        "title": "英格蘭(England)在Azteca的史詩之夜如何展開",
-        "link": "https://www.bbc.co.uk/sport/football/videos/c9q225nn0dqo?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 06 Jul 2026 11:05:52 GMT",
-        "summary": "Relive all the drama from England’s 3-2 win over Mexico, as Thomas Tuchel’s team progressed to a quarter-final meeting with Norway on Saturday.",
-        "title_zh": "英格蘭(England)在Azteca的史詩之夜如何展開",
-        "title_en": "How England's epic night at the Azteca unfolded"
+        "title": "英格蘭(England)英雄誕生之夜",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cjrgg07p8dlo?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 06 Jul 2026 05:51:10 GMT",
+        "summary": "On a spine-tingling night of drama, emotion and pure theatre in one of sport's most atmospheric arenas, England delivered one of their greatest performances.",
+        "title_zh": "英格蘭(England)英雄誕生之夜",
+        "title_en": "An incredible night when England heroes were made"
       },
       {
-        "title": "我是誰？猜猜世界盃(World Cup)球星No 29",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c4g4je2erl0o?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 06 Jul 2026 15:48:17 GMT",
-        "summary": "Will you get today's player in as few attempts as possible?",
-        "title_zh": "我是誰？猜猜世界盃(World Cup)球星No 29",
-        "title_en": "Who am I? Guess World Cup star No 29"
+        "title": "Merino的致勝球助西班牙(Spain)擊敗葡萄牙(Portugal)晉級八強",
+        "link": "https://www.bbc.co.uk/sport/football/videos/cx2338eg1ndo?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 06 Jul 2026 21:46:32 GMT",
+        "summary": "Spain leave it late as super-sub Mikel Merino scores a stoppage-time winner to send his side into the quarter-finals, ending Cristiano Ronaldo's hopes of World Cup glory.",
+        "title_zh": "Merino的致勝球助西班牙(Spain)擊敗葡萄牙(Portugal)晉級八強",
+        "title_en": "Spain into quarter-finals after Merino's late winner against Portugal"
       }
     ]
   },
   "significant_changes": [
-    "16ed3adcf661b3a9bea39871a2d204df",
     "810f80b3ae79f5e86b3747ca15718ed8",
     "190922affd0be754bfefd71548dbf90d",
     "a6da973c5749ce60adab77d64b3664f4"
   ],
   "stats": {
-    "total_matches": 6,
-    "significant_changes_count": 4,
-    "api_remaining": "302"
+    "total_matches": 5,
+    "significant_changes_count": 3,
+    "api_remaining": "297"
   },
   "snapshots": [
     {
@@ -1832,6 +1876,10 @@
     },
     {
       "time": "2026-07-07T03:46:45.399371+08:00",
+      "matches_count": 6
+    },
+    {
+      "time": "2026-07-07T06:09:11.438651+08:00",
       "matches_count": 6
     }
   ]
