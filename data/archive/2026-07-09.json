@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-09T19:49:17.453261+08:00",
-  "last_updated_display": "2026/07/09 19:49 (台北時間)",
+  "last_updated": "2026-07-09T22:37:28.507947+08:00",
+  "last_updated_display": "2026/07/09 22:37 (台北時間)",
   "matches": {
     "b6e926d7f026782b9cab2fa02b823d92": {
       "id": "b6e926d7f026782b9cab2fa02b823d92",
@@ -31,10 +31,10 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 1.6
+                "price": 1.61
               },
               "Morocco": {
-                "price": 7.0
+                "price": 6.75
               },
               "Draw": {
                 "price": 3.95
@@ -42,14 +42,14 @@
             },
             "totals": {
               "Over": {
-                "price": 1.96,
+                "price": 1.97,
                 "point": 2.5,
-                "prob": 47.7
+                "prob": 47.6
               },
               "Under": {
                 "price": 1.79,
                 "point": 2.5,
-                "prob": 52.3
+                "prob": 52.4
               }
             }
           }
@@ -59,10 +59,10 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 1.6
+                "price": 1.61
               },
               "Morocco": {
-                "price": 7.0
+                "price": 6.75
               },
               "Draw": {
                 "price": 3.95
@@ -70,11 +70,11 @@
             },
             "totals": {
               "Over": {
-                "price": 2.0,
+                "price": 2.02,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.83,
+                "price": 1.82,
                 "point": 2.5
               }
             }
@@ -82,38 +82,38 @@
         }
       ],
       "avg_odds": {
-        "France": 1.581,
-        "Morocco": 6.603,
-        "Draw": 3.93
+        "France": 1.585,
+        "Morocco": 6.544,
+        "Draw": 3.923
       },
       "true_probs": {
-        "France": 60.9,
-        "Morocco": 14.6,
+        "France": 60.7,
+        "Morocco": 14.7,
         "Draw": 24.5
       },
       "other_markets": {
         "spreads": {
           "France": {
-            "price": 1.58,
+            "price": 1.6,
             "point": -0.5,
-            "prob": 60.2
+            "prob": 59.5
           },
           "Morocco": {
-            "price": 2.39,
+            "price": 2.35,
             "point": 0.5,
-            "prob": 39.8
+            "prob": 40.5
           }
         },
         "totals": {
           "Over": {
-            "price": 1.96,
+            "price": 1.97,
             "point": 2.5,
-            "prob": 47.7
+            "prob": 47.6
           },
           "Under": {
             "price": 1.79,
             "point": 2.5,
-            "prob": 52.3
+            "prob": 52.4
           }
         },
         "btts": {}
@@ -126,23 +126,17 @@
       "first_seen": "2026-07-05T10:13:06.407125+08:00",
       "is_new": false,
       "odds_change": {
-        "France": -0.004,
-        "Morocco": 0.408,
-        "Draw": -0.026
+        "France": 0.0,
+        "Morocco": 0.349,
+        "Draw": -0.033
       },
       "change_pct": {
-        "France": -0.25,
-        "Morocco": 6.59,
-        "Draw": -0.66
+        "France": 0.0,
+        "Morocco": 5.63,
+        "Draw": -0.83
       },
       "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/07 03:44",
-          "France": 1.59,
-          "Morocco": 6.314,
-          "Draw": 3.894
-        },
         {
           "time": "07/07 06:07",
           "France": 1.588,
@@ -256,6 +250,12 @@
           "France": 1.581,
           "Morocco": 6.603,
           "Draw": 3.93
+        },
+        {
+          "time": "07/09 22:35",
+          "France": 1.585,
+          "Morocco": 6.544,
+          "Draw": 3.923
         }
       ],
       "injury_alerts": [
@@ -263,25 +263,26 @@
           "team": "Morocco",
           "title": "Olise yellow card stands as Saibari out for Morocco",
           "link": "https://www.bbc.co.uk/sport/football/articles/c78y0j7vvg8o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "team": "Morocco",
-          "title": "'This oxygen is spreading' - inside Morocco's mission to become a powerhouse",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cewqqxz4ye9o?at_medium=RSS&at_campaign=rss"
         }
       ],
       "h2h_history": [
         {
           "date": "2022-12-14",
-          "home": "法國",
+          "home": "France",
           "score": "2-0",
-          "away": "摩洛哥"
+          "away": "Morocco"
         },
         {
           "date": "2007-11-16",
-          "home": "法國",
+          "home": "France",
           "score": "2-2",
-          "away": "摩洛哥"
+          "away": "Morocco"
+        },
+        {
+          "date": "2000-06-06",
+          "home": "Morocco",
+          "score": "1-5",
+          "away": "France"
         }
       ],
       "home_form": {
@@ -319,24 +320,24 @@
       "elo_diff": 170,
       "xg_stats": {
         "home": {
-          "for": 2.15,
+          "for": 2.3,
           "against": 1.1
         },
         "away": {
-          "for": 1.35,
+          "for": 1.2,
           "against": 1.2
         }
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "主勝",
-      "ai_rec_line": "N/A",
-      "ai_rec_prob": 0.7,
-      "rec_odds": 1.581,
-      "ai_ev": 0.107,
-      "kelly_ratio": 0.1836,
-      "half_kelly_ratio": 0.0918,
-      "ai_analysis": "【💡 推薦：主勝】\n\n法國隊在近年對摩洛哥的交手紀錄中佔有優勢，且在2026世界盃賽場上展現出強勁的進攻火力與穩健的防守，場均進球數和預期進球數均高於對手。儘管摩洛哥隊近期狀態不錯，但法國隊的整體實力、大賽經驗及近期表現，使其更有可能贏得比賽。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0、3-1、2-1】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：75%】\n【📊 雙方進球機率：55%】\n【🎯 預測比分：法國 2:1 摩洛哥 (預估此比分機率：25%)】\n【⚽ 大小球推薦：大 2.5】",
+      "ai_rec_target": "主讓",
+      "ai_rec_line": "-0.5",
+      "ai_rec_prob": 0.65,
+      "rec_odds": 1.585,
+      "ai_ev": 0.03,
+      "kelly_ratio": 0.0517,
+      "half_kelly_ratio": 0.0259,
+      "ai_analysis": "【💡 推薦：主讓 -0.5】\n\n法國隊在世足賽中展現出壓倒性的實力，近期五戰全勝並攻入14球，進攻火力強勁。儘管摩洛哥以堅固防守聞名，並在近期比賽中表現出色（4勝1平0負），但其進攻端核心球員Saibari的缺陣將削弱其反擊威脅。歷史交手紀錄顯示法國隊對摩洛哥有明顯優勢，最近一次是在2022年世足賽準決賽中以2-0擊敗摩洛哥。綜合考量Elo積分、xG數據與盤口走勢，法國隊主讓-0.5的盤口仍具備投注價值。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-1、2-0】\n【📊 至少1球機率：97%】\n【📊 至少2球機率：86%】\n【📊 雙方進球機率：60%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：9.6%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "fca257de4583bd4bc592e8b2a8f24ad7": {
@@ -428,22 +429,22 @@
           "markets": {
             "h2h": {
               "Belgium": {
-                "price": 5.79
+                "price": 5.63
               },
               "Spain": {
-                "price": 1.67
+                "price": 1.69
               },
               "Draw": {
-                "price": 4.13
+                "price": 4.09
               }
             },
             "spreads": {
               "Belgium": {
-                "price": 1.46,
+                "price": 1.48,
                 "point": 1.5
               },
               "Spain": {
-                "price": 2.85,
+                "price": 2.79,
                 "point": -1.5
               }
             },
@@ -461,12 +462,12 @@
         }
       ],
       "avg_odds": {
-        "Belgium": 5.549,
-        "Spain": 1.644,
+        "Belgium": 5.505,
+        "Spain": 1.642,
         "Draw": 3.963
       },
       "true_probs": {
-        "Belgium": 17.3,
+        "Belgium": 17.4,
         "Spain": 58.4,
         "Draw": 24.2
       },
@@ -505,16 +506,16 @@
       "first_seen": "2026-07-07T10:13:22.492014+08:00",
       "is_new": false,
       "odds_change": {
-        "Belgium": 0.158,
-        "Spain": -0.01,
+        "Belgium": 0.114,
+        "Spain": -0.012,
         "Draw": 0.034
       },
       "change_pct": {
-        "Belgium": 2.93,
-        "Spain": -0.6,
+        "Belgium": 2.11,
+        "Spain": -0.73,
         "Draw": 0.87
       },
-      "is_value_bet": true,
+      "is_value_bet": false,
       "odds_timeline": [
         {
           "time": "07/07 10:13",
@@ -623,6 +624,12 @@
           "Belgium": 5.549,
           "Spain": 1.644,
           "Draw": 3.963
+        },
+        {
+          "time": "07/09 22:35",
+          "Belgium": 5.505,
+          "Spain": 1.642,
+          "Draw": 3.963
         }
       ],
       "h2h_history": [
@@ -677,7 +684,7 @@
           }
         ]
       },
-      "elo_diff": 136,
+      "elo_diff": 110,
       "xg_stats": {
         "home": {
           "for": 1.8,
@@ -690,14 +697,9 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "主勝",
-      "ai_rec_line": "N/A",
-      "ai_rec_prob": 0.7,
-      "rec_odds": 1.644,
-      "ai_ev": 0.151,
-      "kelly_ratio": 0.2342,
-      "half_kelly_ratio": 0.1171,
-      "ai_analysis": "【💡 推薦：主勝】\n\n本場世足淘汰賽，西班牙無論在FIFA世界排名、歷史交手紀錄還是近期整體表現上，均展現出明顯優勢。西班牙目前FIFA排名世界第三（Elo評估約1892.28分），而比利時則排名第九（Elo評估約1756.51分）。兩隊歷史上交手22次，西班牙取得12勝5和5負的戰績，且在最近五次對陣中均取得勝利，其中包括2016年一場2-0的友誼賽勝仗。\n\n從近期戰績來看，西班牙在本屆世界盃表現穩健，5場比賽取得4勝1和，且防守極為出色，在淘汰賽階段連續保持零封。比利時雖然在十六強賽以4-1大勝美國晉級，但小組賽表現略顯不穩，且網路輿論普遍認為比利時的進攻表現受惠於對手失誤，面對西班牙嚴密的防線恐難以突破。西班牙預期進球(xG)為1.8、預期失球0.6，優於比利時的預期進球1.2、預期失球1.2。盤口賠率變動也顯示市場對西班牙的信心增加。綜合分析，西班牙有望在主場擊敗比利時。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0、1-0】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：75%】\n【📊 雙方進球機率：45%】\n【🎯 預測比分：主隊 2:0 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：小 2.75】",
+      "ai_rec_target": "主讓",
+      "ai_rec_line": "-0.75",
+      "ai_analysis": "## 比賽分析與投注推薦\n\n### 賽事概覽\n本場世足賽八強戰由實力強勁的西班牙迎戰比利時。西班牙在歷史交手紀錄上佔據絕對優勢，且近期在世界盃表現出色，防線固若金湯。比利時雖整體戰績不俗並擁有強大進攻火力，但本場比賽面臨主力中場傷缺的挑戰，這對其戰術部署將產生影響。\n\n### 戰隊分析\n**西班牙 (主隊)**\n西班牙隊在本屆世界盃展現出令人驚嘆的防守能力，至今已在世界盃賽事中連續五場保持不失球，守門員烏奈·西蒙更創下609分鐘不失球的紀錄。他們在世界盃小組賽及淘汰賽中取得了四勝一和的成績 (W-W-W-W-D)。歷史交手紀錄方面，西班牙對比利時擁有壓倒性優勢，在22次交鋒中取得12勝5和5負，且近期連續五次擊敗比利時，總比分高達13-1。進攻端，西班牙的預期進球 (xG) 為1.8球，失球為0.6球，顯示其攻守平衡且效率極高。\n\n**比利時 (客隊)**\n比利時在各項賽事中保持著18場不敗的紀錄，在世界盃淘汰賽首輪以4-1大勝美國，展現了強大的進攻火力。然而，其在小組賽階段表現略顯不穩定，有三場比賽以平局收場。本場比賽比利時將面臨重大傷病影響，主力中場阿馬杜·奧納納因傷缺席剩餘賽事，這將削弱其中場控制力與防守硬度。比利時的預期進球 (xG) 為1.2球，失球為1.2球。\n\n### 盤口走勢與市場情緒\n獨贏賠率顯示市場對西班牙的信心持續上升，其賠率從初盤1.654下降至現盤1.642 (↓ -0.012, -0.73%)。同時，比利時的賠率則略有上升。網路輿論普遍看好西班牙獲勝，有球迷甚至大手筆投注西班牙奪冠，EA Sports的模擬結果也預測西班牙將是本屆世界盃冠軍。儘管市場熱度傾向西班牙，但賠率的微幅變動並未構成明顯的反向指標。\n\n### 綜合判斷與投注推薦\n綜合考量西班牙在歷史交手、近期戰績、防守質量及Elo積分上的優勢，加上比利時主力中場的傷缺，西班牙在本場比賽中勝算極高。雖然讓分盤主讓0.75，但鑑於西班牙近期多場比賽淨勝球超過1球，且防守穩固，有望打穿盤口。預計這將是一場西班牙以小比分取勝的比賽。\n\n【💡 推薦：主讓 0.75】\n推薦原因：西班牙防線穩固，近期保持多場零失球，且歷史交手紀錄佔優。比利時主力中場傷缺將影響其攻防平衡，西班牙有望憑藉其整體實力及主場優勢（賽事於洛杉磯舉行）戰勝對手並打穿讓分盤。\n\n---\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：85%】\n【📊 雙方進球機率：35%】\n【🎯 預測比分：主隊 2:0 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：小 2.75】\n\n\n\n\n\n\n\n\n\n---",
       "analysis_source": "gemini"
     },
     "e66e4478b739fa0657a7a11235e1fcee": {
@@ -770,9 +772,9 @@
         }
       ],
       "avg_odds": {
-        "England": 1.87,
-        "Norway": 4.196,
-        "Draw": 3.719
+        "England": 1.868,
+        "Norway": 4.192,
+        "Draw": 3.71
       },
       "true_probs": {
         "England": 51.3,
@@ -814,23 +816,17 @@
       "first_seen": "2026-07-06T15:04:01.130104+08:00",
       "is_new": false,
       "odds_change": {
-        "England": -0.109,
-        "Norway": 0.3,
-        "Draw": 0.165
+        "England": -0.111,
+        "Norway": 0.296,
+        "Draw": 0.156
       },
       "change_pct": {
-        "England": -5.51,
-        "Norway": 7.7,
-        "Draw": 4.64
+        "England": -5.61,
+        "Norway": 7.6,
+        "Draw": 4.39
       },
       "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/07 03:44",
-          "England": 1.913,
-          "Norway": 4.035,
-          "Draw": 3.665
-        },
         {
           "time": "07/07 06:07",
           "England": 1.911,
@@ -944,6 +940,12 @@
           "England": 1.87,
           "Norway": 4.196,
           "Draw": 3.719
+        },
+        {
+          "time": "07/09 22:35",
+          "England": 1.868,
+          "Norway": 4.192,
+          "Draw": 3.71
         }
       ],
       "h2h_history": [],
@@ -1006,35 +1008,7 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.71
-              },
-              "Switzerland": {
-                "price": 6.0
-              },
-              "Draw": {
-                "price": 3.65
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.2,
-                "point": 2.5,
-                "prob": 42.7
-              },
-              "Under": {
-                "price": 1.64,
-                "point": 2.5,
-                "prob": 57.3
-              }
-            }
-          }
-        },
-        {
-          "name": "PMU (FR)",
-          "markets": {
-            "h2h": {
-              "Argentina": {
-                "price": 1.68
+                "price": 1.73
               },
               "Switzerland": {
                 "price": 5.8
@@ -1045,7 +1019,35 @@
             },
             "totals": {
               "Over": {
-                "price": 2.16,
+                "price": 2.23,
+                "point": 2.5,
+                "prob": 42.2
+              },
+              "Under": {
+                "price": 1.63,
+                "point": 2.5,
+                "prob": 57.8
+              }
+            }
+          }
+        },
+        {
+          "name": "PMU (FR)",
+          "markets": {
+            "h2h": {
+              "Argentina": {
+                "price": 1.7
+              },
+              "Switzerland": {
+                "price": 5.75
+              },
+              "Draw": {
+                "price": 3.65
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.17,
                 "point": 2.5
               },
               "Under": {
@@ -1060,10 +1062,10 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.71
+                "price": 1.73
               },
               "Switzerland": {
-                "price": 6.0
+                "price": 5.8
               },
               "Draw": {
                 "price": 3.65
@@ -1083,38 +1085,38 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 1.7,
-        "Switzerland": 5.661,
-        "Draw": 3.582
+        "Argentina": 1.705,
+        "Switzerland": 5.628,
+        "Draw": 3.584
       },
       "true_probs": {
-        "Argentina": 56.3,
-        "Switzerland": 16.9,
+        "Argentina": 56.2,
+        "Switzerland": 17.0,
         "Draw": 26.7
       },
       "other_markets": {
         "spreads": {
           "Argentina": {
-            "price": 1.7,
+            "price": 1.72,
             "point": -0.5,
-            "prob": 56.0
+            "prob": 55.4
           },
           "Switzerland": {
-            "price": 2.16,
+            "price": 2.14,
             "point": 0.5,
-            "prob": 44.0
+            "prob": 44.6
           }
         },
         "totals": {
           "Over": {
-            "price": 2.2,
+            "price": 2.23,
             "point": 2.5,
-            "prob": 42.7
+            "prob": 42.2
           },
           "Under": {
-            "price": 1.64,
+            "price": 1.63,
             "point": 2.5,
-            "prob": 57.3
+            "prob": 57.8
           }
         },
         "btts": {}
@@ -1127,14 +1129,14 @@
       "first_seen": "2026-07-08T09:53:36.883740+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.028,
-        "Switzerland": 0.262,
-        "Draw": 0.041
+        "Argentina": -0.023,
+        "Switzerland": 0.229,
+        "Draw": 0.043
       },
       "change_pct": {
-        "Argentina": -1.62,
-        "Switzerland": 4.85,
-        "Draw": 1.16
+        "Argentina": -1.33,
+        "Switzerland": 4.24,
+        "Draw": 1.21
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1203,6 +1205,12 @@
           "Argentina": 1.7,
           "Switzerland": 5.661,
           "Draw": 3.582
+        },
+        {
+          "time": "07/09 22:35",
+          "Argentina": 1.705,
+          "Switzerland": 5.628,
+          "Draw": 3.584
         }
       ],
       "injury_alerts": [
@@ -1267,19 +1275,61 @@
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "fca257de4583bd4bc592e8b2a8f24ad7",
-      "200d9cd5eda092c7eb778cc104cd2fd2",
       "e66e4478b739fa0657a7a11235e1fcee",
-      "b6e926d7f026782b9cab2fa02b823d92"
+      "fca257de4583bd4bc592e8b2a8f24ad7",
+      "b6e926d7f026782b9cab2fa02b823d92",
+      "200d9cd5eda092c7eb778cc104cd2fd2"
     ]
   },
   "news": {
     "world_cup": [
       {
+        "title": "I've changed my mind, we might actually be able to win this thing - Shearer",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cz6vz34yv82o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Jul 2026 14:19:13 GMT",
+        "summary": "Alan Shearer explains why he now has belief and confidence that England can go further in this World Cup than he thought."
+      },
+      {
         "title": "Are France beatable? - BBC experts have their say",
         "link": "https://www.bbc.co.uk/sport/football/articles/c20y4d7g1dvo?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 09 Jul 2026 11:36:10 GMT",
-        "summary": "France are the overwhelming favourites to win the World Cup. BBC Sport asks some of its reporters in America what they think?"
+        "summary": "France are the overwhelming favourites to win the World Cup. BBC Sport's reporters in America look for chinks in their armour."
+      },
+      {
+        "title": "'It was good vibes in there' - Stones on viral prank",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cdej0znl156o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Jul 2026 10:53:47 GMT",
+        "summary": "John Stones talks about the viral dressing-room injury prank that left England boss Thomas Tuchel briefly stunned."
+      },
+      {
+        "title": "Man Utd plan naming rights deal for new stadium",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cql1w0kkv16o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Jul 2026 14:07:17 GMT",
+        "summary": "Manchester United will look at the potential of a naming rights deal for the 'new' Old Trafford as part of their \"sanity, not vanity\" approach to the £2bn stadium plans."
+      },
+      {
+        "title": "Meslier joins Arsenal on free transfer after Leeds exit",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cq51xj4pjwwo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Jul 2026 14:33:22 GMT",
+        "summary": "Arsenal seal the signing of former Leeds United goalkeeper Illan Meslier on a free transfer."
+      },
+      {
+        "title": "Olise yellow card stands as Saibari out for Morocco",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c78y0j7vvg8o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Jul 2026 07:28:30 GMT",
+        "summary": "France fail in their bid to have forward Michael Olise's yellow card overturned, while Morocco are without Ismael Saibari for the quarter-final at Boston Stadium."
+      },
+      {
+        "title": "Newcastle sign teenager Steur from Ajax for £23m",
+        "link": "https://www.bbc.co.uk/sport/football/articles/ckg060ewpp8o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Jul 2026 12:00:19 GMT",
+        "summary": "Newcastle United sign teenage midfielder Sean Steur from Ajax in a deal worth up to £23m."
+      },
+      {
+        "title": "Chris Sutton's World Cup quarter-final predictions",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c15y1j32jxko?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 08 Jul 2026 22:34:48 GMT",
+        "summary": "BBC Sport's football expert Chris Sutton gives his predictions for the quarter-final ties at the 2026 World Cup, including England against Norway."
       },
       {
         "title": "How Kane and Haaland compare - who would you pick?",
@@ -1292,48 +1342,6 @@
         "link": "https://www.bbc.co.uk/sport/football/articles/cx2dzkjnye3o?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 09 Jul 2026 10:59:16 GMT",
         "summary": "Is Rafa Benitez a realistic contender to replace Steve Clarke as Scotland head coach or would the Spaniard's likely salary demands be an obvious stumbling block?"
-      },
-      {
-        "title": "Olise yellow card stands as Saibari out for Morocco",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c78y0j7vvg8o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Jul 2026 07:28:30 GMT",
-        "summary": "France fail in their bid to have forward Michael Olise's yellow card overturned, while Morocco are without Ismael Saibari for the quarter-final at Boston Stadium."
-      },
-      {
-        "title": "'It was good vibes in there' - Stones on viral prank",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cdej0znl156o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Jul 2026 10:53:47 GMT",
-        "summary": "John Stones talks about the viral dressing-room injury prank that left England boss Thomas Tuchel briefly stunned."
-      },
-      {
-        "title": "Chris Sutton's World Cup quarter-final predictions",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c15y1j32jxko?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 08 Jul 2026 22:34:48 GMT",
-        "summary": "BBC Sport's football expert Chris Sutton gives his predictions for the quarter-final ties at the 2026 World Cup, including England against Norway."
-      },
-      {
-        "title": "'This oxygen is spreading' - inside Morocco's mission to become a powerhouse",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cewqqxz4ye9o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Jul 2026 07:50:17 GMT",
-        "summary": "Morocco face France in the 2026 World Cup quarter-finals on Thursday as the Atlas Lions look to reach the last four once again."
-      },
-      {
-        "title": "Nobody can question integrity of World Cup referees - Collina",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cze9z1307p2o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Jul 2026 07:35:33 GMT",
-        "summary": "World Cup officials are not \"influenced by anyone\" and \"nobody can question the integrity\" when it comes to decision-making, says Fifa chief refereeing officer Pierluigi Collina."
-      },
-      {
-        "title": "Man Utd agree £50m deal for Chelsea's Santos",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cr7xkgd8vdko?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 08 Jul 2026 17:09:53 GMT",
-        "summary": "Manchester United agree a £50m deal with Chelsea for their Brazilian midfielder Andrey Santos."
-      },
-      {
-        "title": "Arsenal target Guimaraes asks to leave Newcastle",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c77yg781lr8o?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 08 Jul 2026 17:52:11 GMT",
-        "summary": "Newcastle midfielder Bruno Guimaraes asks to leave the club with Arsenal accelerating their interest in the 28-year-old."
       }
     ]
   },
@@ -1344,7 +1352,7 @@
   "stats": {
     "total_matches": 4,
     "significant_changes_count": 2,
-    "api_remaining": "207"
+    "api_remaining": "202"
   },
   "snapshots": [
     {
@@ -1369,6 +1377,10 @@
     },
     {
       "time": "2026-07-09T19:49:17.509394+08:00",
+      "matches_count": 4
+    },
+    {
+      "time": "2026-07-09T22:37:28.554360+08:00",
       "matches_count": 4
     }
   ]
