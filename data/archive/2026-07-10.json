@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-10T10:07:04.396638+08:00",
-  "last_updated_display": "2026/07/10 10:07 (台北時間)",
+  "last_updated": "2026-07-10T14:36:17.066070+08:00",
+  "last_updated_display": "2026/07/10 14:36 (台北時間)",
   "matches": {
     "b6e926d7f026782b9cab2fa02b823d92": {
       "id": "b6e926d7f026782b9cab2fa02b823d92",
@@ -330,37 +330,37 @@
           "markets": {
             "h2h": {
               "Belgium": {
-                "price": 5.47
+                "price": 5.57
               },
               "Spain": {
-                "price": 1.66
+                "price": 1.65
               },
               "Draw": {
-                "price": 3.95
+                "price": 3.98
               }
             },
             "spreads": {
               "Belgium": {
-                "price": 2.06,
+                "price": 2.09,
                 "point": 0.75,
-                "prob": 47.4
+                "prob": 46.7
               },
               "Spain": {
-                "price": 1.86,
+                "price": 1.83,
                 "point": -0.75,
-                "prob": 52.6
+                "prob": 53.3
               }
             },
             "totals": {
               "Over": {
-                "price": 2.06,
+                "price": 2.03,
                 "point": 2.75,
-                "prob": 47.0
+                "prob": 47.8
               },
               "Under": {
-                "price": 1.83,
+                "price": 1.86,
                 "point": 2.75,
-                "prob": 53.0
+                "prob": 52.2
               }
             }
           }
@@ -406,32 +406,32 @@
           "markets": {
             "h2h": {
               "Belgium": {
-                "price": 5.62
+                "price": 5.77
               },
               "Spain": {
-                "price": 1.69
+                "price": 1.67
               },
               "Draw": {
-                "price": 4.06
+                "price": 4.12
               }
             },
             "spreads": {
               "Belgium": {
-                "price": 1.47,
+                "price": 1.49,
                 "point": 1.5
               },
               "Spain": {
-                "price": 2.81,
+                "price": 2.73,
                 "point": -1.5
               }
             },
             "totals": {
               "Over": {
-                "price": 1.82,
+                "price": 1.81,
                 "point": 2.5
               },
               "Under": {
-                "price": 2.05,
+                "price": 2.07,
                 "point": 2.5
               }
             }
@@ -439,38 +439,38 @@
         }
       ],
       "avg_odds": {
-        "Belgium": 5.487,
-        "Spain": 1.645,
-        "Draw": 3.967
+        "Belgium": 5.6,
+        "Spain": 1.639,
+        "Draw": 3.981
       },
       "true_probs": {
-        "Belgium": 17.5,
-        "Spain": 58.3,
+        "Belgium": 17.2,
+        "Spain": 58.7,
         "Draw": 24.2
       },
       "other_markets": {
         "spreads": {
           "Belgium": {
-            "price": 2.06,
+            "price": 2.09,
             "point": 0.75,
-            "prob": 47.4
+            "prob": 46.7
           },
           "Spain": {
-            "price": 1.86,
+            "price": 1.83,
             "point": -0.75,
-            "prob": 52.6
+            "prob": 53.3
           }
         },
         "totals": {
           "Over": {
-            "price": 2.06,
+            "price": 2.03,
             "point": 2.75,
-            "prob": 47.0
+            "prob": 47.8
           },
           "Under": {
-            "price": 1.83,
+            "price": 1.86,
             "point": 2.75,
-            "prob": 53.0
+            "prob": 52.2
           }
         },
         "btts": {}
@@ -483,23 +483,17 @@
       "first_seen": "2026-07-07T10:13:22.492014+08:00",
       "is_new": false,
       "odds_change": {
-        "Belgium": 0.096,
-        "Spain": -0.009,
-        "Draw": 0.038
+        "Belgium": 0.209,
+        "Spain": -0.015,
+        "Draw": 0.052
       },
       "change_pct": {
-        "Belgium": 1.78,
-        "Spain": -0.54,
-        "Draw": 0.97
+        "Belgium": 3.88,
+        "Spain": -0.91,
+        "Draw": 1.32
       },
       "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/07 22:10",
-          "Belgium": 5.618,
-          "Spain": 1.624,
-          "Draw": 4.008
-        },
         {
           "time": "07/08 01:06",
           "Belgium": 5.686,
@@ -613,27 +607,32 @@
           "Belgium": 5.487,
           "Spain": 1.645,
           "Draw": 3.967
-        }
-      ],
-      "injury_alerts": [
+        },
         {
-          "team": "Belgium",
-          "title": "US 證實 Pulisic 在對陣 Belgium 的比賽中腿部骨折",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cq613v53emlo?at_medium=RSS&at_campaign=rss"
+          "time": "07/10 14:35",
+          "Belgium": 5.6,
+          "Spain": 1.639,
+          "Draw": 3.981
         }
       ],
       "h2h_history": [
         {
-          "date": "1990-06-21",
-          "home": "主隊 Spain",
+          "date": "1990-01-01",
+          "home": "主隊",
           "score": "2-1",
-          "away": "Belgium"
+          "away": "客隊"
         },
         {
-          "date": "1986-06-22",
-          "home": "主隊 Belgium",
+          "date": "1986-06-15",
+          "home": "主隊",
           "score": "1-1",
-          "away": "Spain (Pen: 5-4)"
+          "away": "客隊 (PK: Belgium wins)"
+        },
+        {
+          "date": "1921-01-01",
+          "home": "主隊",
+          "score": "2-0",
+          "away": "客隊"
         }
       ],
       "home_form": {
@@ -668,7 +667,7 @@
           }
         ]
       },
-      "elo_diff": 249,
+      "elo_diff": 133,
       "xg_stats": {
         "home": {
           "for": 1.8,
@@ -684,11 +683,11 @@
       "ai_rec_target": "主勝",
       "ai_rec_line": "N/A",
       "ai_rec_prob": 0.7,
-      "rec_odds": 1.64,
-      "ai_ev": 0.148,
-      "kelly_ratio": 0.2312,
-      "half_kelly_ratio": 0.1156,
-      "ai_analysis": "【💡 推薦：主勝 (Spain Win)】\n\nSpain enters this quarter-final match as the strong favorite, backed by a formidable defense that has not conceded a single goal throughout the tournament. Their superior Elo rating (2159 as of July 5, 2026, according to World Football Elo Ratings) and consistent xG (1.8 in/0.6 out provided by the prompt, with external sources suggesting Spain's xG against has been exceptionally low) further solidify their advantage. While Belgium has shown attacking prowess, Spain's defensive solidity and overall better form, as reflected in their recent wins and higher win rate in similar past matchups, make them the more reliable bet. The injury to Pulisic further weakens Belgium's attacking options.\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0, 1-0, 3-0】\n【📊 至少1球機率：85%】\n【📊 至少2球機率：55%】\n【📊 雙方進球機率：35%】\n【🎯 預測比分：主隊 2:0 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：小 2.75】",
+      "rec_odds": 1.639,
+      "ai_ev": 0.147,
+      "kelly_ratio": 0.2305,
+      "half_kelly_ratio": 0.1153,
+      "ai_analysis": "## 💡 投注推薦: Spain 讓 0.75\n\nSpain 在本次世界盃展現了強勁的防守實力，至今尚未失球，且近期狀態極佳，保持著長達 36 場比賽的不敗紀錄。 儘管 Belgium 在上一場比賽表現出色，但 Spain 的整體實力和穩定性更勝一籌。Spain 在歷史交鋒中也佔據絕對優勢，近 11 場對陣 Belgium 的比賽保持不敗，其中贏下 9 場。 考慮到 Spain 強大的進攻與防守數據，以及其在關鍵時刻的穩定表現，讓分盤 Spain 讓 0.75 是一個不錯的選擇。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：Spain 2-0 Belgium, Spain 1-0 Belgium】\n【📊 至少1球機率：85%】\n【📊 至少2球機率：60%】\n【📊 雙方進球機率：25%】\n【🎯 預測比分：主隊 2:0 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：小 2.75】",
       "analysis_source": "gemini"
     },
     "e66e4478b739fa0657a7a11235e1fcee": {
@@ -720,10 +719,10 @@
           "markets": {
             "h2h": {
               "England": {
-                "price": 1.91
+                "price": 1.93
               },
               "Norway": {
-                "price": 4.3
+                "price": 4.25
               },
               "Draw": {
                 "price": 3.7
@@ -761,13 +760,13 @@
         }
       ],
       "avg_odds": {
-        "England": 1.873,
-        "Norway": 4.17,
-        "Draw": 3.703
+        "England": 1.879,
+        "Norway": 4.151,
+        "Draw": 3.704
       },
       "true_probs": {
-        "England": 51.2,
-        "Norway": 23.0,
+        "England": 51.0,
+        "Norway": 23.1,
         "Draw": 25.9
       },
       "other_markets": {
@@ -805,23 +804,17 @@
       "first_seen": "2026-07-06T15:04:01.130104+08:00",
       "is_new": false,
       "odds_change": {
-        "England": -0.106,
-        "Norway": 0.274,
-        "Draw": 0.149
+        "England": -0.1,
+        "Norway": 0.255,
+        "Draw": 0.15
       },
       "change_pct": {
-        "England": -5.36,
-        "Norway": 7.03,
-        "Draw": 4.19
+        "England": -5.05,
+        "Norway": 6.55,
+        "Draw": 4.22
       },
       "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/07 22:10",
-          "England": 1.893,
-          "Norway": 4.079,
-          "Draw": 3.698
-        },
         {
           "time": "07/08 01:06",
           "England": 1.887,
@@ -935,6 +928,12 @@
           "England": 1.873,
           "Norway": 4.17,
           "Draw": 3.703
+        },
+        {
+          "time": "07/10 14:35",
+          "England": 1.879,
+          "Norway": 4.151,
+          "Draw": 3.704
         }
       ],
       "h2h_history": [],
@@ -997,25 +996,25 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.68
+                "price": 1.71
               },
               "Switzerland": {
-                "price": 6.4
+                "price": 6.1
               },
               "Draw": {
-                "price": 3.65
+                "price": 3.6
               }
             },
             "totals": {
               "Over": {
-                "price": 2.18,
+                "price": 2.2,
                 "point": 2.5,
-                "prob": 43.1
+                "prob": 42.7
               },
               "Under": {
-                "price": 1.65,
+                "price": 1.64,
                 "point": 2.5,
-                "prob": 56.9
+                "prob": 57.3
               }
             }
           }
@@ -1025,22 +1024,22 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.65
+                "price": 1.68
               },
               "Switzerland": {
-                "price": 6.25
+                "price": 6.0
               },
               "Draw": {
-                "price": 3.65
+                "price": 3.6
               }
             },
             "totals": {
               "Over": {
-                "price": 2.12,
+                "price": 2.16,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.62,
+                "price": 1.6,
                 "point": 2.5
               }
             }
@@ -1051,22 +1050,22 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.68
+                "price": 1.71
               },
               "Switzerland": {
-                "price": 6.4
+                "price": 6.1
               },
               "Draw": {
-                "price": 3.65
+                "price": 3.6
               }
             },
             "totals": {
               "Over": {
-                "price": 2.23,
+                "price": 2.25,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.68,
+                "price": 1.66,
                 "point": 2.5
               }
             }
@@ -1074,13 +1073,13 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 1.69,
-        "Switzerland": 5.766,
-        "Draw": 3.593
+        "Argentina": 1.695,
+        "Switzerland": 5.74,
+        "Draw": 3.586
       },
       "true_probs": {
-        "Argentina": 56.7,
-        "Switzerland": 16.6,
+        "Argentina": 56.6,
+        "Switzerland": 16.7,
         "Draw": 26.7
       },
       "other_markets": {
@@ -1098,14 +1097,14 @@
         },
         "totals": {
           "Over": {
-            "price": 2.18,
+            "price": 2.2,
             "point": 2.5,
-            "prob": 43.1
+            "prob": 42.7
           },
           "Under": {
-            "price": 1.65,
+            "price": 1.64,
             "point": 2.5,
-            "prob": 56.9
+            "prob": 57.3
           }
         },
         "btts": {}
@@ -1118,14 +1117,14 @@
       "first_seen": "2026-07-08T09:53:36.883740+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.038,
-        "Switzerland": 0.367,
-        "Draw": 0.052
+        "Argentina": -0.033,
+        "Switzerland": 0.341,
+        "Draw": 0.045
       },
       "change_pct": {
-        "Argentina": -2.2,
-        "Switzerland": 6.8,
-        "Draw": 1.47
+        "Argentina": -1.91,
+        "Switzerland": 6.32,
+        "Draw": 1.27
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1224,13 +1223,12 @@
           "Argentina": 1.69,
           "Switzerland": 5.766,
           "Draw": 3.593
-        }
-      ],
-      "injury_alerts": [
+        },
         {
-          "team": "Switzerland",
-          "title": "觀看 Switzerland 對陣 Colombia 互射十二碼的每一球",
-          "link": "https://www.bbc.co.uk/sport/football/videos/cn0vn94je8qo?at_medium=RSS&at_campaign=rss"
+          "time": "07/10 14:35",
+          "Argentina": 1.695,
+          "Switzerland": 5.74,
+          "Draw": 3.586
         }
       ],
       "h2h_history": [],
@@ -1283,93 +1281,93 @@
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "fca257de4583bd4bc592e8b2a8f24ad7",
-      "b6e926d7f026782b9cab2fa02b823d92",
+      "200d9cd5eda092c7eb778cc104cd2fd2",
       "e66e4478b739fa0657a7a11235e1fcee",
-      "200d9cd5eda092c7eb778cc104cd2fd2"
+      "fca257de4583bd4bc592e8b2a8f24ad7",
+      "b6e926d7f026782b9cab2fa02b823d92"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "法國隊輕鬆晉級準決賽 - 這可能是史上最強的 Les Bleus 嗎？",
+        "title": "法國輕鬆晉級四強，這會是史上最強的 Les Bleus 嗎？",
         "link": "https://www.bbc.co.uk/sport/football/articles/c4gy74978myo?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Jul 2026 00:43:10 GMT",
         "summary": "World Cup winners in 1998 and 2018, France have created another special team and in beating Morocco showed why they are favourites to win the 2026 competition.",
-        "title_zh": "法國隊輕鬆晉級準決賽 - 這可能是史上最強的 Les Bleus 嗎？",
+        "title_zh": "法國輕鬆晉級四強，這會是史上最強的 Les Bleus 嗎？",
         "title_en": "France cruise into semi-finals - could this be the best Les Bleus ever?"
       },
       {
-        "title": "罰球到底怎麼了 - 是時候終止「結巴」了嗎？",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cg74k39rp4vo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Jul 2026 00:02:46 GMT",
-        "summary": "Kylian Mbappe's penalty miss in France's win against Morocco is the latest example of a player missing a penalty after stuttering in the run-up.",
-        "title_zh": "罰球到底怎麼了 - 是時候終止「結巴」了嗎？",
-        "title_en": "What's going on with penalties - is it time to end the 'stutter'?"
-      },
-      {
-        "title": "Guehi 因腿筋受傷，對挪威隊比賽成疑",
+        "title": "Guehi (格伊) 恐缺席挪威之戰，Rice (賴斯) 染病",
         "link": "https://www.bbc.co.uk/sport/football/articles/c3eyqdwq392o?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 09 Jul 2026 22:33:14 GMT",
         "summary": "England defender Marc Guehi is managing a slight hamstring injury and could miss Saturday's Norway quarter-final.",
-        "title_zh": "Guehi 因腿筋受傷，對挪威隊比賽成疑",
-        "title_en": "Guehi a doubt for Norway game with hamstring injury"
+        "title_zh": "Guehi (格伊) 恐缺席挪威之戰，Rice (賴斯) 染病",
+        "title_en": "Guehi a doubt for Norway game and Rice ill with bug"
       },
       {
-        "title": "我改變主意了，我們或許真的能贏下這次比賽 - Shearer",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cz6vz34yv82o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Jul 2026 14:19:13 GMT",
-        "summary": "Alan Shearer explains why he now has belief and confidence that England can go further in this World Cup than he thought.",
-        "title_zh": "我改變主意了，我們或許真的能贏下這次比賽 - Shearer",
-        "title_en": "I've changed my mind, we might actually be able to win this thing - Shearer"
+        "title": "罰球出了什麼問題？是時候終結「結巴式」助跑了嗎？",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cg74k39rp4vo?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 10 Jul 2026 00:02:46 GMT",
+        "summary": "Kylian Mbappe's penalty miss in France's win against Morocco is the latest example of a player missing a penalty after stuttering in the run-up.",
+        "title_zh": "罰球出了什麼問題？是時候終結「結巴式」助跑了嗎？",
+        "title_en": "What's going on with penalties - is it time to end the 'stutter'?"
       },
       {
-        "title": "Quansah 因墨西哥紅牌被禁賽兩場",
+        "title": "Quansah (奎恩薩) 因墨西哥紅牌遭禁賽兩場",
         "link": "https://www.bbc.co.uk/sport/football/articles/cjdgvrnn5n3o?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 09 Jul 2026 21:16:10 GMT",
         "summary": "England defender Jarell Quansah receives a two-match ban for his red card against Mexico.",
-        "title_zh": "Quansah 因墨西哥紅牌被禁賽兩場",
+        "title_zh": "Quansah (奎恩薩) 因墨西哥紅牌遭禁賽兩場",
         "title_en": "Quansah banned for two games after Mexico red card"
       },
       {
-        "title": "挪威隊的 Haaland 在四分之一決賽前呼籲媒體對英格蘭施壓",
+        "title": "出生在里茲，在挪威磨練 - Haaland (哈蘭德) 的世界即將碰撞",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cd7pqdyy9v2o?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 10 Jul 2026 05:47:23 GMT",
+        "summary": "Erling Haaland has guided Norway to their first World Cup since 1998. So what is it like being a global name from a nation with a population of just 5.5 million?",
+        "title_zh": "出生在里茲，在挪威磨練 - Haaland (哈蘭德) 的世界即將碰撞",
+        "title_en": "Born in Leeds, crafted in Norway - Haaland's worlds about to collide"
+      },
+      {
+        "title": "Monga (蒙加) 有多強？他在 Man City (曼城) 能扮演什麼角色？",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cdr4vvlp7d0o?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 10 Jul 2026 06:06:42 GMT",
+        "summary": "Manchester City appear to have struck an early blow on Arsenal by agreeing a deal to sign teenage starlet Jeremy Monga from Leicester City.",
+        "title_zh": "Monga (蒙加) 有多強？他在 Man City (曼城) 能扮演什麼角色？",
+        "title_en": "How good is Monga and what role could he play at Man City?"
+      },
+      {
+        "title": "我改變主意了，我們或許真的能贏下這場比賽 - Shearer (希勒)",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cz6vz34yv82o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 09 Jul 2026 14:19:13 GMT",
+        "summary": "Alan Shearer explains why he now has belief and confidence that England can go further in this World Cup than he thought.",
+        "title_zh": "我改變主意了，我們或許真的能贏下這場比賽 - Shearer (希勒)",
+        "title_en": "I've changed my mind, we might actually be able to win this thing - Shearer"
+      },
+      {
+        "title": "我是誰？猜猜世界盃球星 No. 33",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cwy20q7wd3go?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 10 Jul 2026 05:20:12 GMT",
+        "summary": "Will you get today's player in as few attempts as possible?",
+        "title_zh": "我是誰？猜猜世界盃球星 No. 33",
+        "title_en": "Who am I? Guess World Cup star No 33"
+      },
+      {
+        "title": "挪威的 Haaland (哈蘭德) 呼籲在四強賽前對英格蘭施加媒體壓力",
         "link": "https://www.bbc.co.uk/sport/football/articles/cj3gd8rg628o?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 09 Jul 2026 22:01:51 GMT",
         "summary": "Norway striker Erling Haaland says all the pressure is on England before the two sides' World Cup quarter-final on Saturday.",
-        "title_zh": "挪威隊的 Haaland 在四分之一決賽前呼籲媒體對英格蘭施壓",
+        "title_zh": "挪威的 Haaland (哈蘭德) 呼籲在四強賽前對英格蘭施加媒體壓力",
         "title_en": "Norway's Haaland calls for media pressure on England before quarter-final"
       },
       {
-        "title": "Klopp 透露 Liverpool 如何試圖簽下 Mbappé",
+        "title": "Klopp (克洛普) 透露 Liverpool (利物浦) 如何試圖簽下 Mbappe (姆巴佩)",
         "link": "https://www.bbc.co.uk/sport/football/articles/cpd3052gjvxo?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 09 Jul 2026 23:42:41 GMT",
         "summary": "Jurgen Klopp says he \"flew around in a circle\" in a private plane with Kylian Mbappe and his family when he tried to sign him for Liverpool a decade ago.",
-        "title_zh": "Klopp 透露 Liverpool 如何試圖簽下 Mbappé",
+        "title_zh": "Klopp (克洛普) 透露 Liverpool (利物浦) 如何試圖簽下 Mbappe (姆巴佩)",
         "title_en": "Klopp reveals how Liverpool tried to sign Mbappe"
-      },
-      {
-        "title": "Man Utd 計劃為新球場簽署冠名權協議",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cql1w0kkv16o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Jul 2026 14:07:17 GMT",
-        "summary": "Manchester United will look at the potential of a naming rights deal for the 'new' Old Trafford as part of their \"sanity, not vanity\" approach to the £2bn stadium plans.",
-        "title_zh": "Man Utd 計劃為新球場簽署冠名權協議",
-        "title_en": "Man Utd plan naming rights deal for new stadium"
-      },
-      {
-        "title": "Spurs 為 Kolo Muani 開價 - 週五流言",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cz6vz91n7e5o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Jul 2026 20:41:50 GMT",
-        "summary": "Tottenham make an offer for Randal Kolo Muani but Juventus remain favourites to sign the forward, Arsenal are ready to finalise a deal for Christos Tzolis, Marcus Rashford's future at Barcelona could ",
-        "title_zh": "Spurs 為 Kolo Muani 開價 - 週五流言",
-        "title_en": "Spurs make offer for Kolo Muani - Friday gossip"
-      },
-      {
-        "title": "Premier League 季前賽 - 你的球隊將對陣誰？",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cn59deldv70o?at_medium=RSS&at_campaign=rss",
-        "published": "Thu, 09 Jul 2026 16:05:27 GMT",
-        "summary": "The World Cup is still going on but Premier League clubs will soon begin their pre-season friendlies - who is your club taking on and when?",
-        "title_zh": "Premier League 季前賽 - 你的球隊將對陣誰？",
-        "title_en": "Premier League pre-season - who are your club playing?"
       }
     ]
   },
@@ -1379,7 +1377,7 @@
   "stats": {
     "total_matches": 3,
     "significant_changes_count": 1,
-    "api_remaining": "182"
+    "api_remaining": "177"
   },
   "snapshots": [
     {
@@ -1396,6 +1394,10 @@
     },
     {
       "time": "2026-07-10T10:07:04.453512+08:00",
+      "matches_count": 4
+    },
+    {
+      "time": "2026-07-10T14:36:17.121667+08:00",
       "matches_count": 4
     }
   ]
