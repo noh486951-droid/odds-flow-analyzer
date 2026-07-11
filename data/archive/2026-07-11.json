@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-11T09:53:17.316305+08:00",
-  "last_updated_display": "2026/07/11 09:53 (台北時間)",
+  "last_updated": "2026-07-11T13:34:27.608913+08:00",
+  "last_updated_display": "2026/07/11 13:34 (台北時間)",
   "matches": {
     "fca257de4583bd4bc592e8b2a8f24ad7": {
       "id": "fca257de4583bd4bc592e8b2a8f24ad7",
@@ -370,10 +370,10 @@
           "markets": {
             "h2h": {
               "England": {
-                "price": 1.86
+                "price": 1.88
               },
               "Norway": {
-                "price": 3.95
+                "price": 3.85
               },
               "Draw": {
                 "price": 3.65
@@ -414,10 +414,10 @@
           "markets": {
             "h2h": {
               "England": {
-                "price": 1.86
+                "price": 1.9
               },
               "Norway": {
-                "price": 4.0
+                "price": 3.85
               },
               "Draw": {
                 "price": 3.7
@@ -427,26 +427,26 @@
         }
       ],
       "avg_odds": {
-        "England": 1.892,
-        "Norway": 4.099,
-        "Draw": 3.711
+        "England": 1.906,
+        "Norway": 4.021,
+        "Draw": 3.708
       },
       "true_probs": {
-        "England": 50.7,
-        "Norway": 23.4,
+        "England": 50.3,
+        "Norway": 23.8,
         "Draw": 25.9
       },
       "other_markets": {
         "spreads": {
           "England": {
-            "price": 1.87,
+            "price": 1.9,
             "point": -0.5,
-            "prob": 50.8
+            "prob": 50.1
           },
           "Norway": {
-            "price": 1.93,
+            "price": 1.91,
             "point": 0.5,
-            "prob": 49.2
+            "prob": 49.9
           }
         },
         "totals": {
@@ -471,23 +471,17 @@
       "first_seen": "2026-07-06T15:04:01.130104+08:00",
       "is_new": false,
       "odds_change": {
-        "England": -0.087,
-        "Norway": 0.203,
-        "Draw": 0.157
+        "England": -0.073,
+        "Norway": 0.125,
+        "Draw": 0.154
       },
       "change_pct": {
-        "England": -4.4,
-        "Norway": 5.21,
-        "Draw": 4.42
+        "England": -3.69,
+        "Norway": 3.21,
+        "Draw": 4.33
       },
       "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/08 18:55",
-          "England": 1.867,
-          "Norway": 4.177,
-          "Draw": 3.729
-        },
         {
           "time": "07/08 21:43",
           "England": 1.872,
@@ -601,6 +595,12 @@
           "England": 1.892,
           "Norway": 4.099,
           "Draw": 3.711
+        },
+        {
+          "time": "07/11 13:32",
+          "England": 1.906,
+          "Norway": 4.021,
+          "Draw": 3.708
         }
       ],
       "h2h_history": [
@@ -612,14 +612,14 @@
         },
         {
           "date": "2012-05-26",
-          "home": "主隊 England",
-          "score": "1-0",
-          "away": "Norway"
+          "home": "主隊 Norway",
+          "score": "0-1",
+          "away": "England"
         },
         {
-          "date": "1993-06-02",
+          "date": "1995-10-11",
           "home": "主隊 Norway",
-          "score": "2-0",
+          "score": "0-0",
           "away": "England"
         }
       ],
@@ -655,7 +655,7 @@
           }
         ]
       },
-      "elo_diff": -100,
+      "elo_diff": -40,
       "xg_stats": {
         "home": {
           "for": 1.2,
@@ -670,12 +670,12 @@
       "advancement_status": "⚠️ England 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。",
       "ai_rec_target": "客勝",
       "ai_rec_line": "N/A",
-      "ai_rec_prob": 0.65,
-      "rec_odds": 1.892,
-      "ai_ev": 0.23,
-      "kelly_ratio": 0.2576,
-      "half_kelly_ratio": 0.1288,
-      "ai_analysis": "【💡 推薦：客勝 (England)】\n\n挪威（Norway）的進攻端表現出色，尤其擁有像哈蘭德（Haaland）這樣的頂級射手，但其防守端存在明顯的漏洞。英格蘭（England）陣容深度和比賽經驗更勝一籌，隊內擁有貝林厄姆（Bellingham）和凱恩（Kane）等關鍵球員，進攻端也極具威脅。儘管挪威在晉級過程中展現了韌性，但英格蘭在面對強度更高的比賽時，其戰術執行力和抗壓能力更為穩定。盤口賠率也持續向英格蘭傾斜，顯示市場更看好英格蘭。\n\n【🤖 勝平負判斷：客勝】\n【🎯 最可能比分：1-2, 0-2】\n【📊 至少1球機率：85%】\n【📊 至少2球機率：60%】\n【📊 雙方進球機率：55%】\n【🎯 預測比分：Norway 1:2 England (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.5】",
+      "ai_rec_prob": 0.6,
+      "rec_odds": 1.906,
+      "ai_ev": 0.144,
+      "kelly_ratio": 0.1585,
+      "half_kelly_ratio": 0.0792,
+      "ai_analysis": "【💡 推薦：客勝】\n\n英格蘭隊在歷史交鋒紀錄中佔據絕對優勢，並且近期狀態也較為穩定。儘管挪威隊有表現出色的哈蘭德，但英格蘭隊整體實力、經驗和戰術體系更為成熟。盤口賠率雖有波動，但英格蘭仍是讓分方，顯示市場對其有所看好。考量到英格蘭隊的實力與經驗，以及其晉級的決心，看好英格蘭能夠贏下比賽。\n\n【🤖 勝平負判斷：客勝】\n【🎯 最可能比分：1-2、0-1】\n【📊 至少1球機率：85%】\n【📊 至少2球機率：55%】\n【📊 雙方進球機率：60%】\n【🎯 預測比分：主隊 1:2 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "200d9cd5eda092c7eb778cc104cd2fd2": {
@@ -704,12 +704,12 @@
               "Over": {
                 "price": 2.23,
                 "point": 2.5,
-                "prob": 42.1
+                "prob": 42.2
               },
               "Under": {
-                "price": 1.62,
+                "price": 1.63,
                 "point": 2.5,
-                "prob": 57.9
+                "prob": 57.8
               }
             }
           }
@@ -719,7 +719,7 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.65
+                "price": 1.66
               },
               "Switzerland": {
                 "price": 6.25
@@ -769,8 +769,8 @@
       ],
       "avg_odds": {
         "Argentina": 1.689,
-        "Switzerland": 5.809,
-        "Draw": 3.598
+        "Switzerland": 5.819,
+        "Draw": 3.592
       },
       "true_probs": {
         "Argentina": 56.8,
@@ -794,12 +794,12 @@
           "Over": {
             "price": 2.23,
             "point": 2.5,
-            "prob": 42.1
+            "prob": 42.2
           },
           "Under": {
-            "price": 1.62,
+            "price": 1.63,
             "point": 2.5,
-            "prob": 57.9
+            "prob": 57.8
           }
         },
         "btts": {}
@@ -813,22 +813,16 @@
       "is_new": false,
       "odds_change": {
         "Argentina": -0.039,
-        "Switzerland": 0.41,
-        "Draw": 0.057
+        "Switzerland": 0.42,
+        "Draw": 0.051
       },
       "change_pct": {
         "Argentina": -2.26,
-        "Switzerland": 7.59,
-        "Draw": 1.61
+        "Switzerland": 7.78,
+        "Draw": 1.44
       },
       "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/08 18:55",
-          "Argentina": 1.72,
-          "Switzerland": 5.517,
-          "Draw": 3.548
-        },
         {
           "time": "07/08 21:43",
           "Argentina": 1.714,
@@ -942,20 +936,32 @@
           "Argentina": 1.689,
           "Switzerland": 5.809,
           "Draw": 3.598
+        },
+        {
+          "time": "07/11 13:32",
+          "Argentina": 1.689,
+          "Switzerland": 5.819,
+          "Draw": 3.592
         }
       ],
       "h2h_history": [
         {
           "date": "2014-07-01",
-          "home": "阿根廷",
+          "home": "Argentina",
           "score": "1-0",
-          "away": "瑞士"
+          "away": "Switzerland"
         },
         {
-          "date": "1966-07-19",
-          "home": "阿根廷",
-          "score": "2-0",
-          "away": "瑞士"
+          "date": "2012-02-29",
+          "home": "Switzerland",
+          "score": "1-3",
+          "away": "Argentina"
+        },
+        {
+          "date": "2007-06-02",
+          "home": "Switzerland",
+          "score": "1-1",
+          "away": "Argentina"
         }
       ],
       "home_form": {
@@ -990,7 +996,7 @@
           }
         ]
       },
-      "elo_diff": 243,
+      "elo_diff": 440,
       "xg_stats": {
         "home": {
           "for": 2.1,
@@ -1005,12 +1011,12 @@
       "advancement_status": "⚠️ Argentina 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。",
       "ai_rec_target": "主讓",
       "ai_rec_line": "-0.5",
-      "ai_rec_prob": 0.65,
-      "rec_odds": 1.69,
-      "ai_ev": 0.099,
-      "kelly_ratio": 0.1428,
-      "half_kelly_ratio": 0.0714,
-      "ai_analysis": "【💡 推薦：阿根廷 讓 -0.5】\n\n阿根廷目前世界排名第一，Elo積分高達2128分，近期賽事表現強勢，xG值也顯著優於瑞士（2.1 vs 1.2）。儘管瑞士防守穩固，但阿根廷在進攻端火力強大，且過往對戰紀錄對瑞士保持不敗。考量阿根廷的整體實力、進攻效率及盤口讓分幅度，推薦阿根廷讓分過盤。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-0、3-1】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：70%】\n【📊 雙方進球機率：45%】\n【🎯 預測比分：阿根廷 2:1 瑞士 (預估此比分機率：20%)】\n【⚽ 大小球推薦：大 2.5】",
+      "ai_rec_prob": 0.68,
+      "rec_odds": 1.689,
+      "ai_ev": 0.149,
+      "kelly_ratio": 0.2156,
+      "half_kelly_ratio": 0.1078,
+      "ai_analysis": "💡 推薦：主讓 -0.5\n阿根廷在世足賽中展現出強大的進攻火力，特別是梅西的關鍵作用。儘管瑞士防守紀律嚴謹，且近期戰績不俗，但阿根廷的Elo積分優勢、歷史交手紀錄的完全壓制，以及市場賠率傾向主勝的走勢，都顯示阿根廷有能力在常規時間內取勝。考慮到瑞士隊有傷病疑慮且陣容深度不如阿根廷，看好阿根廷能順利晉級。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-1、1-0】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：84%】\n【📊 雙方進球機率：61%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：9.75%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "f9aa13a662d1658e5a02cfc06d6a2d73": {
@@ -1070,25 +1076,25 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 2.44
+                "price": 2.43
               },
               "Spain": {
-                "price": 3.16
+                "price": 3.17
               },
               "Draw": {
-                "price": 3.26
+                "price": 3.27
               }
             },
             "spreads": {
               "France": {
-                "price": 2.09,
+                "price": 2.08,
                 "point": -0.25,
-                "prob": 46.7
+                "prob": 46.9
               },
               "Spain": {
-                "price": 1.83,
+                "price": 1.84,
                 "point": 0.25,
-                "prob": 53.3
+                "prob": 53.1
               }
             },
             "totals": {
@@ -1105,26 +1111,26 @@
         }
       ],
       "avg_odds": {
-        "France": 2.305,
-        "Spain": 3.264,
-        "Draw": 3.294
+        "France": 2.328,
+        "Spain": 3.234,
+        "Draw": 3.269
       },
       "true_probs": {
-        "France": 41.6,
-        "Spain": 29.4,
-        "Draw": 29.1
+        "France": 41.1,
+        "Spain": 29.6,
+        "Draw": 29.3
       },
       "other_markets": {
         "spreads": {
           "France": {
-            "price": 2.09,
+            "price": 2.08,
             "point": -0.25,
-            "prob": 46.7
+            "prob": 46.9
           },
           "Spain": {
-            "price": 1.83,
+            "price": 1.84,
             "point": 0.25,
-            "prob": 53.3
+            "prob": 53.1
           }
         },
         "totals": {
@@ -1149,14 +1155,14 @@
       "first_seen": "2026-07-11T05:53:09.968666+08:00",
       "is_new": false,
       "odds_change": {
-        "France": -0.024,
-        "Spain": 0.027,
-        "Draw": -0.004
+        "France": -0.001,
+        "Spain": -0.003,
+        "Draw": -0.029
       },
       "change_pct": {
-        "France": -1.03,
-        "Spain": 0.83,
-        "Draw": -0.12
+        "France": -0.04,
+        "Spain": -0.09,
+        "Draw": -0.88
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -1171,12 +1177,18 @@
           "France": 2.305,
           "Spain": 3.264,
           "Draw": 3.294
+        },
+        {
+          "time": "07/11 13:32",
+          "France": 2.328,
+          "Spain": 3.234,
+          "Draw": 3.269
         }
       ],
       "injury_alerts": [
         {
           "team": "France",
-          "title": "法國 (France) 輕鬆擊敗摩洛哥 (Morocco) 晉級四強",
+          "title": "法國 (France) 擊敗摩洛哥 (Morocco) 晉級四強",
           "link": "https://www.bbc.co.uk/sport/football/videos/crm0ry2nemmo?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -1230,52 +1242,52 @@
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "fca257de4583bd4bc592e8b2a8f24ad7",
       "f9aa13a662d1658e5a02cfc06d6a2d73",
+      "e66e4478b739fa0657a7a11235e1fcee",
       "200d9cd5eda092c7eb778cc104cd2fd2",
-      "e66e4478b739fa0657a7a11235e1fcee"
+      "fca257de4583bd4bc592e8b2a8f24ad7"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "Merino 再成奇兵 - 西班牙 (Spain) 靜待 Lamine Yamal 登場",
+        "title": "Merino 再成奇兵 - 西班牙 (Spain) 靜待 Lamine Yamal 閃耀",
         "link": "https://www.bbc.co.uk/sport/football/articles/cvg50pvejzdo?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Jul 2026 23:29:52 GMT",
         "summary": "Mikel Merino came off the bench to send Spain into the World Cup semi-finals - but Lamine Yamal is still waiting for his moment to truly shine.",
-        "title_zh": "Merino 再成奇兵 - 西班牙 (Spain) 靜待 Lamine Yamal 登場",
+        "title_zh": "Merino 再成奇兵 - 西班牙 (Spain) 靜待 Lamine Yamal 閃耀",
         "title_en": "Merino the unlikely hero again - as Spain wait for Lamine Yamal show"
       },
       {
-        "title": "Lammens 失誤斷送比利時 (Belgium) 黃金一代",
+        "title": "Lammens 的失誤預示比利時 (Belgium) 黃金一代的終結",
         "link": "https://www.bbc.co.uk/sport/football/articles/c4gy107g38eo?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Jul 2026 23:14:51 GMT",
         "summary": "Belgium's World Cup campaign ends after Senne Lammens' error against Spain - could it all be over for their golden generation too?",
-        "title_zh": "Lammens 失誤斷送比利時 (Belgium) 黃金一代",
+        "title_zh": "Lammens 的失誤預示比利時 (Belgium) 黃金一代的終結",
         "title_en": "Lammens' error spells end for Belgium's golden generation"
       },
       {
-        "title": "Merino 絕殺助西班牙 (Spain) 淘汰比利時 (Belgium) 晉級四強",
-        "link": "https://www.bbc.co.uk/sport/videos/cd0m9e88g0vo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Jul 2026 22:01:20 GMT",
-        "summary": "Mikel Merino emerges as Spain's hero yet again as the substitute scores in the 88th minute to stun Belgium and set up a World Cup semi-final against France.",
-        "title_zh": "Merino 絕殺助西班牙 (Spain) 淘汰比利時 (Belgium) 晉級四強",
-        "title_en": "Spain into semi-finals at expense of Belgium after Merino's late winner"
+        "title": "截至目前，英格蘭 (England) 2026 世界盃所有進球",
+        "link": "https://www.bbc.co.uk/sport/videos/cewqex0vl85o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 05:13:35 GMT",
+        "summary": "As England gear up to face Norway at the Miami Stadium for the World Cup quarter-finals, re-live all the goals that got Thomas Tuchel's side there.",
+        "title_zh": "截至目前，英格蘭 (England) 2026 世界盃所有進球",
+        "title_en": "All the goals from England's 2026 World Cup campaign so far"
       },
       {
-        "title": "英格蘭 (England) 的 Guehi, Rice & James 備戰挪威 (Norway) 賽事",
+        "title": "英格蘭 (England) 的 Guehi、Rice 和 James 在對挪威 (Norway) 賽前皆參與訓練",
         "link": "https://www.bbc.co.uk/sport/football/articles/c3eyqdwq392o?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Jul 2026 22:06:14 GMT",
         "summary": "Midfielder Declan Rice and defenders Marc Guehi and Reece James all train with England on the eve of Saturday's World Cup quarter-final against Norway.",
-        "title_zh": "英格蘭 (England) 的 Guehi, Rice & James 備戰挪威 (Norway) 賽事",
+        "title_zh": "英格蘭 (England) 的 Guehi、Rice 和 James 在對挪威 (Norway) 賽前皆參與訓練",
         "title_en": "England's Guehi, Rice & James all train before Norway game"
       },
       {
-        "title": "挪威 (Norway) 主帥：英格蘭 (England) 熱門晉級四強",
+        "title": "挪威 (Norway) 主帥：英格蘭 (England) 是晉級四強的熱門",
         "link": "https://www.bbc.co.uk/sport/football/articles/cq61n2gqqv0o?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Jul 2026 20:10:44 GMT",
         "summary": "England are favourites to reach the semi-finals of the World Cup, Norway boss Stale Solbakken has told BBC Sport.",
-        "title_zh": "挪威 (Norway) 主帥：英格蘭 (England) 熱門晉級四強",
+        "title_zh": "挪威 (Norway) 主帥：英格蘭 (England) 是晉級四強的熱門",
         "title_en": "England favourites to reach semis, says Norway boss"
       },
       {
@@ -1287,35 +1299,35 @@
         "title_en": "Man Utd's Ederson move in doubt"
       },
       {
-        "title": "足壇最佳兄弟情：Bellingham 與 Haaland 為何打破常規",
+        "title": "足壇最棒的兄弟情：為何 Bellingham 和 Haaland 獨樹一幟",
         "link": "https://www.bbc.co.uk/news/articles/cz9l8pzxv7vo?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Jul 2026 19:53:49 GMT",
         "summary": "The two players have won an army of admirers from social media clips for their honesty in interviews.",
-        "title_zh": "足壇最佳兄弟情：Bellingham 與 Haaland 為何打破常規",
+        "title_zh": "足壇最棒的兄弟情：為何 Bellingham 和 Haaland 獨樹一幟",
         "title_en": "Football's best bromance: Why Bellingham and Haaland break the mould"
       },
       {
-        "title": "英格蘭 (England) 如何阻止挪威 (Norway) 及 Haaland？",
+        "title": "英格蘭 (England) 如何阻止挪威 (Norway) - 以及 Haaland？",
         "link": "https://www.bbc.co.uk/sport/football/articles/c621jyxkvzko?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Jul 2026 12:39:21 GMT",
         "summary": "As England prepare to face Norway in a World Cup quarter-final on Saturday, how can Thomas Tuchel's side handle the main threat - star striker Erling Haaland?",
-        "title_zh": "英格蘭 (England) 如何阻止挪威 (Norway) 及 Haaland？",
+        "title_zh": "英格蘭 (England) 如何阻止挪威 (Norway) - 以及 Haaland？",
         "title_en": "How do England stop Norway - and Haaland?"
       },
       {
-        "title": "世界盃 (World Cup) 電子郵件引發阿根廷 (Argentine) 足協擔憂",
+        "title": "阿根廷 (Argentine) 足協因世界盃郵件擔憂遭駭",
         "link": "https://www.bbc.co.uk/sport/football/articles/cx2j3dglq5jo?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Jul 2026 17:26:14 GMT",
         "summary": "Argentina's football association signals it may have suffered a cyber attack after emails from its accounts reportedly criticised refereeing in the dramatic win against Egypt at the World Cup.",
-        "title_zh": "世界盃 (World Cup) 電子郵件引發阿根廷 (Argentine) 足協擔憂",
+        "title_zh": "阿根廷 (Argentine) 足協因世界盃郵件擔憂遭駭",
         "title_en": "Hacking worry for Argentine FA over World Cup emails"
       },
       {
-        "title": "Jesus 與 Ronaldo 重聚，成為葡萄牙 (Portugal) 新任主帥",
+        "title": "Jesus 擔任葡萄牙 (Portugal) 新任總教練，與 Ronaldo 再度重逢",
         "link": "https://www.bbc.co.uk/sport/football/articles/c3eyl9pvxj1o?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 10 Jul 2026 15:41:59 GMT",
         "summary": "Jorge Jesus is named Portugal's new head coach on a four-year contract to run through to the 2030 World Cup.",
-        "title_zh": "Jesus 與 Ronaldo 重聚，成為葡萄牙 (Portugal) 新任主帥",
+        "title_zh": "Jesus 擔任葡萄牙 (Portugal) 新任總教練，與 Ronaldo 再度重逢",
         "title_en": "Jesus reunites with Ronaldo as new Portugal head coach"
       }
     ]
@@ -1327,7 +1339,7 @@
   "stats": {
     "total_matches": 3,
     "significant_changes_count": 2,
-    "api_remaining": "147"
+    "api_remaining": "142"
   },
   "snapshots": [
     {
@@ -1344,6 +1356,10 @@
     },
     {
       "time": "2026-07-11T09:53:17.372583+08:00",
+      "matches_count": 4
+    },
+    {
+      "time": "2026-07-11T13:34:27.665984+08:00",
       "matches_count": 4
     }
   ]
