@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-12T02:48:50.788276+08:00",
-  "last_updated_display": "2026/07/12 02:48 (台北時間)",
+  "last_updated": "2026-07-12T05:42:20.670190+08:00",
+  "last_updated_display": "2026/07/12 05:42 (台北時間)",
   "matches": {
     "e66e4478b739fa0657a7a11235e1fcee": {
       "id": "e66e4478b739fa0657a7a11235e1fcee",
@@ -8,20 +8,20 @@
       "league": "世足 FIFA World Cup",
       "home_team": "Norway",
       "away_team": "England",
-      "commence_time": "2026-07-11T21:00:00Z",
+      "commence_time": "2026-07-11T21:01:00Z",
       "bookmakers": [
         {
           "name": "Winamax (FR)",
           "markets": {
             "h2h": {
               "England": {
-                "price": 1.9
+                "price": 3.4
               },
               "Norway": {
-                "price": 3.75
+                "price": 2.1
               },
               "Draw": {
-                "price": 3.8
+                "price": 2.85
               }
             }
           }
@@ -31,25 +31,25 @@
           "markets": {
             "h2h": {
               "England": {
-                "price": 1.95
+                "price": 3.3
               },
               "Norway": {
-                "price": 3.9
+                "price": 2.18
               },
               "Draw": {
-                "price": 3.9
+                "price": 3.15
               }
             },
             "totals": {
               "Over": {
-                "price": 1.67,
+                "price": 1.54,
                 "point": 2.5,
-                "prob": 57.2
+                "prob": 60.4
               },
               "Under": {
-                "price": 2.23,
+                "price": 2.35,
                 "point": 2.5,
-                "prob": 42.8
+                "prob": 39.6
               }
             }
           }
@@ -59,51 +59,51 @@
           "markets": {
             "h2h": {
               "England": {
-                "price": 1.92
+                "price": 3.5
               },
               "Norway": {
-                "price": 3.85
+                "price": 2.15
               },
               "Draw": {
-                "price": 3.8
+                "price": 2.95
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "England": 1.935,
-        "Norway": 3.837,
-        "Draw": 3.79
+        "England": 3.361,
+        "Norway": 2.196,
+        "Draw": 3.105
       },
       "true_probs": {
-        "England": 49.6,
-        "Norway": 25.0,
-        "Draw": 25.3
+        "England": 27.7,
+        "Norway": 42.4,
+        "Draw": 30.0
       },
       "other_markets": {
         "spreads": {
           "England": {
-            "price": 1.93,
-            "point": -0.5,
-            "prob": 49.3
+            "price": 1.6,
+            "point": 0.5,
+            "prob": 57.3
           },
           "Norway": {
-            "price": 1.88,
-            "point": 0.5,
-            "prob": 50.7
+            "price": 2.15,
+            "point": -0.5,
+            "prob": 42.7
           }
         },
         "totals": {
           "Over": {
-            "price": 1.67,
+            "price": 1.54,
             "point": 2.5,
-            "prob": 57.2
+            "prob": 60.4
           },
           "Under": {
-            "price": 2.23,
+            "price": 2.35,
             "point": 2.5,
-            "prob": 42.8
+            "prob": 39.6
           }
         },
         "btts": {}
@@ -116,23 +116,17 @@
       "first_seen": "2026-07-06T15:04:01.130104+08:00",
       "is_new": false,
       "odds_change": {
-        "England": -0.044,
-        "Norway": -0.059,
-        "Draw": 0.236
+        "England": 1.382,
+        "Norway": -1.7,
+        "Draw": -0.449
       },
       "change_pct": {
-        "England": -2.22,
-        "Norway": -1.51,
-        "Draw": 6.64
+        "England": 69.83,
+        "Norway": -43.63,
+        "Draw": -12.63
       },
       "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/09 14:36",
-          "England": 1.872,
-          "Norway": 4.189,
-          "Draw": 3.719
-        },
         {
           "time": "07/09 19:47",
           "England": 1.87,
@@ -246,26 +240,32 @@
           "England": 1.935,
           "Norway": 3.837,
           "Draw": 3.79
+        },
+        {
+          "time": "07/12 05:41",
+          "England": 3.361,
+          "Norway": 2.196,
+          "Draw": 3.105
         }
       ],
       "h2h_history": [
         {
-          "date": "2014-09-03",
-          "home": "主隊 England",
-          "score": "1-0",
-          "away": "Norway"
+          "date": "1993-10-13",
+          "home": "主隊",
+          "score": "2-0",
+          "away": "客隊"
         },
         {
-          "date": "2012-05-26",
-          "home": "主隊 Norway",
-          "score": "0-1",
-          "away": "England"
+          "date": "1992-10-14",
+          "home": "主隊",
+          "score": "1-1",
+          "away": "客隊"
         },
         {
-          "date": "1995-10-11",
-          "home": "主隊 Norway",
-          "score": "0-0",
-          "away": "England"
+          "date": "1981-09-09",
+          "home": "主隊",
+          "score": "2-1",
+          "away": "客隊"
         }
       ],
       "home_form": {
@@ -300,27 +300,45 @@
           }
         ]
       },
-      "elo_diff": -36,
+      "sharp_moves": [
+        {
+          "team": "Norway",
+          "move_pct": -42.77,
+          "from": 3.837,
+          "to": 2.196,
+          "level": "💰 聪明錢訊號",
+          "message": "Norway 賠率 3.84→2.20 (-42.8%)"
+        },
+        {
+          "team": "Draw",
+          "move_pct": -18.07,
+          "from": 3.79,
+          "to": 3.105,
+          "level": "💰 聪明錢訊號",
+          "message": "Draw 賠率 3.79→3.10 (-18.1%)"
+        }
+      ],
+      "elo_diff": -306,
       "xg_stats": {
         "home": {
-          "for": 1.2,
+          "for": 1.83,
           "against": 1.2
         },
         "away": {
-          "for": 1.9,
+          "for": 1.93,
           "against": 0.7
         }
       },
       "reverse_line_movement": [],
       "advancement_status": "⚠️ England 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。",
-      "ai_rec_target": "大球",
-      "ai_rec_line": "2.5",
-      "ai_rec_prob": 0.68,
-      "rec_odds": 1.928,
-      "ai_ev": 0.311,
-      "kelly_ratio": 0.3352,
-      "half_kelly_ratio": 0.1676,
-      "ai_analysis": "【💡 推薦：大小分 2.5 大球】\n\n儘管挪威隊在進攻端表現出色，甚至在淘汰賽階段展現了驚人的韌性，但他們在防守端顯露出明顯的弱點，特別是面對進攻強勢的英格蘭隊時，預計將會失球。英格蘭隊的進攻火力強大，擁有哈里·凱恩、裘德·貝林厄姆等頂級得分手，且近期狀態火熱，場均進球數可觀。考量到雙方都有能力進球，且英格蘭隊近期的比賽也常常出現較多進球，本場比賽的總進球數超過2.5球的可能性較高。\n\n【🤖 勝平負判斷：客小優】\n【🎯 最可能比分：2-1、3-1、2-2】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：75%】\n【📊 雙方進球機率：60%】\n【🎯 預測比分：英格蘭 2:1 挪威 (預估此比分機率：25%)】\n【⚽ 大小球推薦：大 2.5】",
+      "ai_rec_target": "England 讓分盤勝",
+      "ai_rec_line": "-0.5",
+      "ai_rec_prob": 0.6,
+      "rec_odds": 1.93,
+      "ai_ev": 0.158,
+      "kelly_ratio": 0.1699,
+      "half_kelly_ratio": 0.0849,
+      "ai_analysis": "## 💡 投注推薦\nEngland 讓分盤勝 (客讓 -0.5)。儘管 Norway 在賽前被低估，且近期表現搶眼，但 England 在面對強隊時展現出更穩定的攻擊火力與防守韌性，盤口數據顯示 England 仍是較被看好的一方。\n\n**推薦投注標的：** England 讓分盤勝\n**推薦投注門檻值：** -0.5\n**推薦項盤口賠率：** 1.93 (根據 07/11 18:09 的盤口)\n\n---\n\n**賽事分析：**\n\n此場世足 FIFA World Cup 的比賽，由 Norway 主場迎戰 England。\n\n**數據校準與深度分析：**\n*   **Elo 積分：** 根據 World Football Elo Ratings ()，England 的 Elo 積分為 2055 ()，排名世界第四，而 Norway 的 Elo 評級為 1749 ()，顯示 England 在整體實力上具有明顯優勢。\n*   **xG (預期進球)：** 根據 GoalStatsLab，Norway 近期 xG 為 1.83 ()，而 England 的 xG 在 2026 賽季為 1.93 ()， England 在進攻效率上略有優勢。\n*   **近期戰績：** Norway 近期五場比賽 3 勝 2 負 ()，其中包含擊敗巴西的驚奇演出 ()。England 近期五場比賽 4 勝 1 平 ()，展現出穩定的得分能力。\n*   **盤口與賠率走勢：** 盤口從開賽初 England 賠率 1.93 ()，在 07/12 05:41 時段出現大幅波動，England 賠率一度飆升至 3.361，Norway 賠率則降至 2.196，顯示市場對 Norway 的信心增加。然而，急速移動偵測顯示「聪明钱訊號」對 Norway 賠率 3.84→2.20 (-42.8%) 的移動，這可能預示著市場的預期正在轉變。但最新的獨贏賠率顯示 England 賠率回落至 3.361，Norway 賠率也回升至 2.196，顯示盤口仍有拉鋸。\n\n**賽事情報與輿論風向：**\n*   **晉級與輪休狀態：** 系統提示 England 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補 ()。這點需要特別關注，可能影響 England 的實際戰力。\n*   **散戶情緒 (網路輿論)：** 挪威球迷對此役充滿期待，甚至有人認為 England 壓力更大，因為 Norway「沒有什麼可輸的」，且 Erling Haaland 被視為關鍵 X 因子 ()。這種「無壓力」的心態對 Norway 或許有正面作用。然而，England 龐大的球迷群在 Miami 聚集，顯示出對球隊的強烈支持與晉級決心 ()。\n\n**綜合判斷：**\n儘管 Norway 近期表現驚艷，且具有「黑馬」的姿態，但 England 在整體實力、Elo 評級以及歷史交手紀錄上（England 7 勝 2 負 3 平 ()）都佔據優勢。盤口在比賽日的早盤出現劇烈波動，但最終仍趨於穩定，England 讓分盤仍有一定價值。考慮到 England 的進攻端（如 Harry Kane 的進球數）和防守端的穩定性 ()，加上 Norway 可能存在的輪休風險（儘管在此淘汰賽階段可能性較低，但仍需留意），England 在讓分盤上仍有贏下的機會。\n\n【🤖 勝平負判斷：客小優】\n【🎯 最可能比分：1-2、0-1】\n【📊 至少1球機率：85%】\n【📊 至少2球機率：55%】\n【📊 雙方進球機率：45%】\n【🎯 預測比分：主隊 1:2 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：小 2.5】",
       "analysis_source": "gemini"
     },
     "200d9cd5eda092c7eb778cc104cd2fd2": {
@@ -336,10 +354,10 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.71
+                "price": 1.7
               },
               "Switzerland": {
-                "price": 6.0
+                "price": 6.25
               },
               "Draw": {
                 "price": 3.65
@@ -364,10 +382,10 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.68
+                "price": 1.67
               },
               "Switzerland": {
-                "price": 6.0
+                "price": 6.1
               },
               "Draw": {
                 "price": 3.65
@@ -390,10 +408,10 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 1.71
+                "price": 1.7
               },
               "Switzerland": {
-                "price": 6.0
+                "price": 6.25
               },
               "Draw": {
                 "price": 3.65
@@ -401,11 +419,11 @@
             },
             "totals": {
               "Over": {
-                "price": 2.32,
+                "price": 2.33,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.63,
+                "price": 1.62,
                 "point": 2.5
               }
             }
@@ -413,14 +431,14 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 1.705,
-        "Switzerland": 5.791,
-        "Draw": 3.559
+        "Argentina": 1.706,
+        "Switzerland": 5.821,
+        "Draw": 3.553
       },
       "true_probs": {
         "Argentina": 56.4,
-        "Switzerland": 16.6,
-        "Draw": 27.0
+        "Switzerland": 16.5,
+        "Draw": 27.1
       },
       "other_markets": {
         "spreads": {
@@ -457,23 +475,17 @@
       "first_seen": "2026-07-08T09:53:36.883740+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.023,
-        "Switzerland": 0.392,
-        "Draw": 0.018
+        "Argentina": -0.022,
+        "Switzerland": 0.422,
+        "Draw": 0.012
       },
       "change_pct": {
-        "Argentina": -1.33,
-        "Switzerland": 7.26,
-        "Draw": 0.51
+        "Argentina": -1.27,
+        "Switzerland": 7.82,
+        "Draw": 0.34
       },
       "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/09 14:36",
-          "Argentina": 1.708,
-          "Switzerland": 5.635,
-          "Draw": 3.582
-        },
         {
           "time": "07/09 19:47",
           "Argentina": 1.7,
@@ -587,12 +599,18 @@
           "Argentina": 1.705,
           "Switzerland": 5.791,
           "Draw": 3.559
+        },
+        {
+          "time": "07/12 05:41",
+          "Argentina": 1.706,
+          "Switzerland": 5.821,
+          "Draw": 3.553
         }
       ],
       "injury_alerts": [
         {
           "team": "Argentina",
-          "title": "阿根廷隊 (Argentina) 是否應該讓 Messi (梅西) 退出點球主罰？",
+          "title": "Should Argentina take Messi off penalties?",
           "link": "https://www.bbc.co.uk/sport/football/articles/c6214y2dlgno?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -629,27 +647,27 @@
           }
         ]
       },
-      "elo_diff": 417,
+      "elo_diff": 243,
       "xg_stats": {
         "home": {
           "for": 2.1,
           "against": 0.8
         },
         "away": {
-          "for": 1.2,
+          "for": 0.82,
           "against": 1.2
         }
       },
       "reverse_line_movement": [],
       "advancement_status": "⚠️ Argentina 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。",
-      "ai_rec_target": "主讓",
-      "ai_rec_line": "-0.5",
-      "ai_rec_prob": 0.6,
-      "rec_odds": 1.702,
-      "ai_ev": 0.021,
-      "kelly_ratio": 0.0302,
-      "half_kelly_ratio": 0.0151,
-      "ai_analysis": "## 【💡 投注推薦】\n\n推薦投注 **阿根廷讓分 -0.5**。阿根廷實力佔優，且過往對戰瑞士保持不敗。儘管瑞士防守穩固，但阿根廷在近期比賽中展現了強大的進攻火力，尤其是在比賽後期能夠扭轉戰局，這將是他們取勝的關鍵。\n\n**推薦原因：**\n阿根廷擁有更高的「真實勝率」56.4%，對比瑞士的16.6%，顯示出實力上的顯著優勢。儘管瑞士在防守端表現出色，近幾場比賽保持不失球，但阿根廷近期在進攻端表現搶眼，特別是其在比賽末段的逆轉能力，這點從對陣埃及時的3-2逆轉勝可見一斑。過往交手紀錄顯示阿根廷對瑞士保持不敗，這提供了心理上的優勢。儘管有提到阿根廷可能輪休主力，但面對瑞士這樣的對手，以及在世界盃淘汰賽階段，全力以赴的可能性更大。梅西在本屆賽事的進球數（8球）也顯示了他仍是球隊的進攻核心。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-1、1-0】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：65%】\n【📊 雙方進球機率：45%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：大 2.5】\n\n\n\n\n\n\n\n\n\n**附加說明：**\n梅西在本屆世界盃的表現非常出色，已經打入8球，是賽事的最佳射手，他不太可能退出點球主罰。 儘管有「晉級與輪休狀態」的警示，但考慮到這是世界盃的淘汰賽階段，且對手是瑞士，阿根廷不太可能大幅輪休主力。 歷史交手紀錄顯示阿根廷對瑞士從未輸過。",
+      "ai_rec_target": "大球",
+      "ai_rec_line": "2.5",
+      "ai_rec_prob": 0.65,
+      "rec_odds": 1.706,
+      "ai_ev": 0.109,
+      "kelly_ratio": 0.1542,
+      "half_kelly_ratio": 0.0771,
+      "ai_analysis": "## 💡 推薦：大球 (2.5球)\n\n**分析原因：**\n阿根廷近期比賽展現強勁的進攻火力，但防守端也出現鬆動，近兩場淘汰賽都有失球。瑞士雖然防守穩健，但面對阿根廷的進攻也可能難以完全守住。兩隊近期比賽總體進球數傾向較多，預計此場比賽將有至少3個進球。\n\n**數據來源與網友風向：**\n多數分析師和投注者看好阿根廷勝出，但對於總進球數的預期存在分歧。賽事分析指出，阿根廷的進攻能力與瑞士可能出現的防守空檔，使得大球成為一個值得關注的選項。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：3-1、2-1】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：80%】\n【📊 雙方進球機率：60%】\n【🎯 預測比分：主隊 3:1 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "f9aa13a662d1658e5a02cfc06d6a2d73": {
@@ -663,17 +681,6 @@
         {
           "name": "William Hill",
           "markets": {
-            "h2h": {
-              "France": {
-                "price": 2.3
-              },
-              "Spain": {
-                "price": 3.0
-              },
-              "Draw": {
-                "price": 3.1
-              }
-            },
             "totals": {
               "Over": {
                 "price": 1.95,
@@ -744,14 +751,14 @@
         }
       ],
       "avg_odds": {
-        "France": 2.368,
-        "Spain": 3.21,
-        "Draw": 3.245
+        "France": 2.351,
+        "Spain": 3.239,
+        "Draw": 3.263
       },
       "true_probs": {
-        "France": 40.5,
-        "Spain": 29.9,
-        "Draw": 29.6
+        "France": 40.9,
+        "Spain": 29.7,
+        "Draw": 29.5
       },
       "other_markets": {
         "spreads": {
@@ -788,14 +795,14 @@
       "first_seen": "2026-07-11T05:53:09.968666+08:00",
       "is_new": false,
       "odds_change": {
-        "France": 0.039,
-        "Spain": -0.027,
-        "Draw": -0.053
+        "France": 0.022,
+        "Spain": 0.002,
+        "Draw": -0.035
       },
       "change_pct": {
-        "France": 1.67,
-        "Spain": -0.83,
-        "Draw": -1.61
+        "France": 0.94,
+        "Spain": 0.06,
+        "Draw": -1.06
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -846,6 +853,12 @@
           "France": 2.368,
           "Spain": 3.21,
           "Draw": 3.245
+        },
+        {
+          "time": "07/12 05:41",
+          "France": 2.351,
+          "Spain": 3.239,
+          "Draw": 3.263
         }
       ],
       "h2h_history": [],
@@ -898,92 +911,72 @@
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "e66e4478b739fa0657a7a11235e1fcee",
+      "f9aa13a662d1658e5a02cfc06d6a2d73",
       "200d9cd5eda092c7eb778cc104cd2fd2",
-      "f9aa13a662d1658e5a02cfc06d6a2d73"
+      "e66e4478b739fa0657a7a11235e1fcee"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "Guehi (圭伊) 和 Stones (斯通斯) 將為英格蘭隊在世界盃八強賽先發",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c7vyp994jjgo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 18:46:16 GMT",
-        "summary": "Marc Guehi has won his fitness race and is expected to be fit for England's World Cup quarter-final against Norway, with John Stones set to play alongside the central defender.",
-        "title_zh": "Guehi (圭伊) 和 Stones (斯通斯) 將為英格蘭隊在世界盃八強賽先發",
-        "title_en": "Guehi and Stones set to start for England in World Cup quarter-final"
-      },
-      {
-        "title": "英格蘭隊在邁阿密炎熱天氣下迎戰挪威隊前，有雷陣雨的風險",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cx2jzl3zxpzo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 05:08:35 GMT",
-        "summary": "Alongside high temperatures as England face Norway in Miami, there is a risk of thunderstorms, especially near the start of their World Cup quarter-final.",
-        "title_zh": "英格蘭隊在邁阿密炎熱天氣下迎戰挪威隊前，有雷陣雨的風險",
-        "title_en": "Risk of thunderstorms before England face Norway in Miami heat"
-      },
-      {
-        "title": "嘿，Jude (貝林厄姆): 貝林厄姆重返英格蘭隊不可或缺",
-        "link": "https://www.bbc.co.uk/sport/football/articles/ckg47l8nl7jo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 07:54:32 GMT",
-        "summary": "Before tonight's quarter-final against Norway, senior football correspondent Sami Mokbel charts Jude Bellingham's remarkable resurgence with England at the World Cup.",
-        "title_zh": "嘿，Jude (貝林厄姆): 貝林厄姆重返英格蘭隊不可或缺",
-        "title_en": "Hey Jude: Bellingham's return to England indispensability"
-      },
-      {
-        "title": "南非世界盃中場球員 Adams (亞當斯) 逝世，年僅25歲",
+        "title": "South Africa World Cup midfielder Adams dies aged 25",
         "link": "https://www.bbc.co.uk/sport/football/articles/cr47y5nvrqlo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 14:47:47 GMT",
-        "summary": "South Africa and Mamelodi Sundowns midfielder Jayden Adams dies at the age of 25, just weeks after featuring for his country at the World Cup.",
-        "title_zh": "南非世界盃中場球員 Adams (亞當斯) 逝世，年僅25歲",
-        "title_en": "South Africa World Cup midfielder Adams dies aged 25"
+        "summary": "South Africa and Mamelodi Sundowns midfielder Jayden Adams dies at the age of 25, just weeks after featuring for his country at the World Cup."
       },
       {
-        "title": "Klopp (克洛普) 同意接替 Nagelsmann (納格爾斯曼) 擔任德國隊教練",
+        "title": "Klopp agrees to replace Nagelsmann as Germany coach",
         "link": "https://www.bbc.co.uk/sport/football/articles/ced44061g8qo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 14:48:39 GMT",
-        "summary": "Jurgen Klopp agrees a deal in principle to become the new head coach of Germany's men's national team after the resignation of Julian Nagelsmann.",
-        "title_zh": "Klopp (克洛普) 同意接替 Nagelsmann (納格爾斯曼) 擔任德國隊教練",
-        "title_en": "Klopp agrees to replace Nagelsmann as Germany coach"
+        "summary": "Jurgen Klopp agrees a deal in principle to become the new head coach of Germany's men's national team after the resignation of Julian Nagelsmann."
       },
       {
-        "title": "色彩斑斕、備受爭議且意義重大 - 前切爾西 (Chelsea) 和里茲 (Leeds) 隊老闆 Bates (貝茨) 逝世",
+        "title": "Colourful, controversial and significant - ex-Chelsea and Leeds owner Bates dies",
         "link": "https://www.bbc.co.uk/sport/football/articles/c4gy1ve57d5o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 16:28:15 GMT",
-        "summary": "Former Chelsea and Leeds owner Ken Bates, who has died aged 94, was a colourful and controversial figure - but also a significant one for English football, writes Phil McNulty.",
-        "title_zh": "色彩斑斕、備受爭議且意義重大 - 前切爾西 (Chelsea) 和里茲 (Leeds) 隊老闆 Bates (貝茨) 逝世",
-        "title_en": "Colourful, controversial and significant - ex-Chelsea and Leeds owner Bates dies"
+        "summary": "Former Chelsea and Leeds owner Ken Bates, who has died aged 94, was a colourful and controversial figure - but also a significant one for English football, writes Phil McNulty."
       },
       {
-        "title": "是時候給打破紀錄的 Pickford (皮克福德) 他應得的讚譽了嗎？",
+        "title": "Hey Jude: Bellingham's return to England indispensability",
+        "link": "https://www.bbc.co.uk/sport/football/articles/ckg47l8nl7jo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 07:54:32 GMT",
+        "summary": "Before tonight's quarter-final against Norway, senior football correspondent Sami Mokbel charts Jude Bellingham's remarkable resurgence with England at the World Cup."
+      },
+      {
+        "title": "Is it time to give record-breaker Pickford the credit he deserves?",
         "link": "https://www.bbc.co.uk/sport/football/articles/cj9gknxm91vo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 05:55:32 GMT",
-        "summary": "Is it time to finally give England keeper Jordan Pickford the credit he deserves as he enters the World Cup history books, asks chief football writer Phil McNulty.",
-        "title_zh": "是時候給打破紀錄的 Pickford (皮克福德) 他應得的讚譽了嗎？",
-        "title_en": "Is it time to give record-breaker Pickford the credit he deserves?"
+        "summary": "Is it time to finally give England keeper Jordan Pickford the credit he deserves as he enters the World Cup history books, asks chief football writer Phil McNulty."
       },
       {
-        "title": "阿根廷隊 (Argentina) 是否應該讓 Messi (梅西) 退出點球主罰？",
+        "title": "Garnacho absent from Chelsea pre-season training",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cr47ykwr7zgo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 13:10:36 GMT",
+        "summary": "Alejandro Garnacho has not yet joined up with Chelsea for pre-season as the club actively look to sell the winger."
+      },
+      {
+        "title": "When the World Cup finishes, the football continues on BBC Sport",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c9w2zr9wzj1o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 06:03:35 GMT",
+        "summary": "When the World Cup ends we'll still have loads of great content every day as we build up to the new football season."
+      },
+      {
+        "title": "Man Utd and Liverpool want Gomes - Sunday's gossip",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cd0m9p5zd7lo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 19:24:34 GMT",
+        "summary": "Manchester United and Liverpool make Joao Gomes contact, Chelsea open talks over Jonathan Rowe, an MLS side are looking to sign Mohamed Salah, plus more."
+      },
+      {
+        "title": "Should Argentina take Messi off penalties?",
         "link": "https://www.bbc.co.uk/sport/football/articles/c6214y2dlgno?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 10:51:33 GMT",
-        "summary": "Lionel Messi keeps rewriting World Cup history, but after his latest miss from the spot, should Argentina hand penalty duties to someone else?",
-        "title_zh": "阿根廷隊 (Argentina) 是否應該讓 Messi (梅西) 退出點球主罰？",
-        "title_en": "Should Argentina take Messi off penalties?"
+        "summary": "Lionel Messi keeps rewriting World Cup history, but after his latest miss from the spot, should Argentina hand penalty duties to someone else?"
       },
       {
-        "title": "從阿森納 (Arsenal) 的噓聲到瑞士 (Swiss) 的淚水：Xhaka (札卡) 的救贖",
+        "title": "From Arsenal jeers to Swiss tears: Xhaka's redemption",
         "link": "https://www.bbc.co.uk/sport/football/articles/cy06zgdz728o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 11:58:58 GMT",
-        "summary": "Granit Xhaka has battled back from being booed by his own fans at Arsenal to being one of the most influential players for club and country as he looks to help Switzerland make history at the World Cu",
-        "title_zh": "從阿森納 (Arsenal) 的噓聲到瑞士 (Swiss) 的淚水：Xhaka (札卡) 的救贖",
-        "title_en": "From Arsenal jeers to Swiss tears: Xhaka's redemption"
-      },
-      {
-        "title": "伯恩茅斯 (Bournemouth) 的 Jimenez (希門尼斯) 在調查中，預計將外借至佛倫提那 (Fiorentina)",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cvgd7z5xjvno?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 17:06:11 GMT",
-        "summary": "Bournemouth defender Alex Jimenez - suspended by his club while they investigate social media allegations - is set for a loan move to Fiorentina.",
-        "title_zh": "伯恩茅斯 (Bournemouth) 的 Jimenez (希門尼斯) 在調查中，預計將外借至佛倫提那 (Fiorentina)",
-        "title_en": "Bournemouth's Jimenez set for Fiorentina loan amid investigation"
+        "summary": "Granit Xhaka has battled back from being booed by his own fans at Arsenal to being one of the most influential players for club and country as he looks to help Switzerland make history at the World Cu"
       }
     ]
   },
@@ -994,11 +987,15 @@
   "stats": {
     "total_matches": 3,
     "significant_changes_count": 2,
-    "api_remaining": "117"
+    "api_remaining": "112"
   },
   "snapshots": [
     {
       "time": "2026-07-12T02:48:50.836022+08:00",
+      "matches_count": 3
+    },
+    {
+      "time": "2026-07-12T05:42:20.725624+08:00",
       "matches_count": 3
     }
   ]
