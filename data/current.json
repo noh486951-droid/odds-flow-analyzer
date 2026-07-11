@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-11T15:43:33.965144+08:00",
-  "last_updated_display": "2026/07/11 15:43 (台北時間)",
+  "last_updated": "2026-07-11T18:11:41.921306+08:00",
+  "last_updated_display": "2026/07/11 18:11 (台北時間)",
   "matches": {
     "e66e4478b739fa0657a7a11235e1fcee": {
       "id": "e66e4478b739fa0657a7a11235e1fcee",
@@ -21,7 +21,7 @@
                 "price": 3.85
               },
               "Draw": {
-                "price": 3.7
+                "price": 3.8
               }
             }
           }
@@ -72,9 +72,9 @@
         }
       ],
       "avg_odds": {
-        "England": 1.928,
-        "Norway": 3.922,
-        "Draw": 3.732
+        "England": 1.93,
+        "Norway": 3.925,
+        "Draw": 3.736
       },
       "true_probs": {
         "England": 49.8,
@@ -116,23 +116,17 @@
       "first_seen": "2026-07-06T15:04:01.130104+08:00",
       "is_new": false,
       "odds_change": {
-        "England": -0.051,
-        "Norway": 0.026,
-        "Draw": 0.178
+        "England": -0.049,
+        "Norway": 0.029,
+        "Draw": 0.182
       },
       "change_pct": {
-        "England": -2.58,
-        "Norway": 0.67,
-        "Draw": 5.01
+        "England": -2.48,
+        "Norway": 0.74,
+        "Draw": 5.12
       },
-      "is_value_bet": true,
+      "is_value_bet": false,
       "odds_timeline": [
-        {
-          "time": "07/09 00:25",
-          "England": 1.876,
-          "Norway": 4.139,
-          "Draw": 3.719
-        },
         {
           "time": "07/09 03:10",
           "England": 1.87,
@@ -246,20 +240,39 @@
           "England": 1.928,
           "Norway": 3.922,
           "Draw": 3.732
+        },
+        {
+          "time": "07/11 18:09",
+          "England": 1.93,
+          "Norway": 3.925,
+          "Draw": 3.736
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Norway",
+          "title": "芬蘭（Finland）和挪威（Norway）值得關注的 Man Utd 年輕球員",
+          "link": "https://www.bbc.co.uk/sport/football/articles/c74yej43w97o?at_medium=RSS&at_campaign=rss"
         }
       ],
       "h2h_history": [
         {
           "date": "2014-09-03",
-          "home": "主隊",
-          "score": "0-0",
-          "away": "客隊"
+          "home": "England",
+          "score": "1-0",
+          "away": "Norway"
         },
         {
           "date": "2012-05-26",
-          "home": "主隊",
+          "home": "Norway",
           "score": "0-1",
-          "away": "客隊"
+          "away": "England"
+        },
+        {
+          "date": "1995-10-11",
+          "home": "Norway",
+          "score": "0-0",
+          "away": "England"
         }
       ],
       "home_form": {
@@ -294,10 +307,10 @@
           }
         ]
       },
-      "elo_diff": -306,
+      "elo_diff": -360,
       "xg_stats": {
         "home": {
-          "for": 1.28,
+          "for": 1.2,
           "against": 1.2
         },
         "away": {
@@ -307,14 +320,9 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "⚠️ England 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。",
-      "ai_rec_target": "客勝",
-      "ai_rec_line": "N/A",
-      "ai_rec_prob": 0.6,
-      "rec_odds": 1.928,
-      "ai_ev": 0.157,
-      "kelly_ratio": 0.169,
-      "half_kelly_ratio": 0.0845,
-      "ai_analysis": "## 💡 推薦：客勝 (England)\n\n挪威隊在本次世界盃展現了驚人的韌性，但面對實力強勁的英格蘭隊，預計將面臨嚴峻考驗。英格蘭隊在 FIFA 世界排名中位居第四，且近期狀態出色，進攻火力強大，尤其依賴哈利·肯恩和裘德·貝林漢姆的進攻。雖然挪威隊有艾林·哈蘭德這位頂級射手，但英格蘭隊在面對嚴格防守時展現了極高的效率，正如他們在對陣墨西哥的比賽中所證明的那樣，儘管 xG 數據顯示墨西哥佔優，英格蘭仍以高效的進攻取勝。考慮到英格蘭的整體實力、經驗以及陣容深度，他們更有機會拿下這場比賽。\n\n---\n\n【🤖 勝平負判斷：客勝】\n【🎯 最可能比分：0-2、1-2】\n【📊 至少1球機率：75%】\n【📊 至少2球機率：55%】\n【📊 雙方進球機率：45%】\n【🎯 預測比分：挪威 0:2 英格蘭 (預估此比分機率：20%)】\n【⚽ 大小球推薦：小 2.5】",
+      "ai_rec_target": "客勝 / 大球 / 雙方進球",
+      "ai_rec_line": "N/A / 2.5",
+      "ai_analysis": "【💡 推薦：客勝且雙方進球】\n\n英格蘭在各項數據上均展現壓倒性優勢，包括更高的真實勝率（49.8%）、顯著的Elo積分差距（客隊強360分）及更佳的預期進球（xG 1.9進/0.7失）。儘管挪威在淘汰賽階段爆冷擊敗巴西與象牙海岸，但其防線極為脆弱，在本屆世界盃五場比賽中已失21球且無一場零封。英格蘭在世界盃淘汰賽中也展現強大進攻火力，近期多場比賽均有失球但最終獲勝，顯示其防線並非無懈可擊，但攻擊能力足以彌補。考量到這是世界盃八強賽，雙方均會全力以赴，不存在輪休狀況。社群輿論也普遍看好英格蘭贏球，並預期雙方都有進球。\n\n【🤖 勝平負判斷：客勝】\n【🎯 最可能比分：1-2, 1-3】\n【📊 至少1球機率：99%】\n【📊 至少2球機率：95%】\n【📊 雙方進球機率：75%】\n【🎯 預測比分：主隊 1:2 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "200d9cd5eda092c7eb778cc104cd2fd2": {
@@ -407,12 +415,12 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 1.695,
-        "Switzerland": 5.815,
-        "Draw": 3.611
+        "Argentina": 1.696,
+        "Switzerland": 5.812,
+        "Draw": 3.604
       },
       "true_probs": {
-        "Argentina": 56.8,
+        "Argentina": 56.7,
         "Switzerland": 16.6,
         "Draw": 26.7
       },
@@ -451,23 +459,17 @@
       "first_seen": "2026-07-08T09:53:36.883740+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.033,
-        "Switzerland": 0.416,
-        "Draw": 0.07
+        "Argentina": -0.032,
+        "Switzerland": 0.413,
+        "Draw": 0.063
       },
       "change_pct": {
-        "Argentina": -1.91,
-        "Switzerland": 7.71,
-        "Draw": 1.98
+        "Argentina": -1.85,
+        "Switzerland": 7.65,
+        "Draw": 1.78
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/09 00:25",
-          "Argentina": 1.7,
-          "Switzerland": 5.676,
-          "Draw": 3.569
-        },
         {
           "time": "07/09 03:10",
           "Argentina": 1.715,
@@ -581,27 +583,39 @@
           "Argentina": 1.695,
           "Switzerland": 5.815,
           "Draw": 3.611
+        },
+        {
+          "time": "07/11 18:09",
+          "Argentina": 1.696,
+          "Switzerland": 5.812,
+          "Draw": 3.604
         }
       ],
       "injury_alerts": [
         {
           "team": "Argentina",
-          "title": "Romero 表示漏洞百出的阿根廷 (Argentina) 防守「困擾著我們」",
+          "title": "Romero 表示，失球多的阿根廷（Argentina）防線「讓我們很困擾」",
           "link": "https://www.espn.com/soccer/story/_/id/49329795/romero-argentina-bothered-leaky-defense-knockouts"
         }
       ],
       "h2h_history": [
         {
           "date": "2014-07-01",
-          "home": "阿根廷",
+          "home": "Argentina",
           "score": "1-0",
-          "away": "瑞士 (延長賽)"
+          "away": "Switzerland"
         },
         {
-          "date": "1966-07-19",
-          "home": "阿根廷",
-          "score": "2-0",
-          "away": "瑞士"
+          "date": "2012-02-29",
+          "home": "Switzerland",
+          "score": "1-3",
+          "away": "Argentina"
+        },
+        {
+          "date": "2007-06-02",
+          "home": "Switzerland",
+          "score": "1-1",
+          "away": "Argentina"
         }
       ],
       "home_form": {
@@ -649,9 +663,14 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "⚠️ Argentina 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。",
-      "ai_rec_target": "主讓",
+      "ai_rec_target": "主讓 -0.5",
       "ai_rec_line": "-0.5",
-      "ai_analysis": "【💡 推薦：Argentina 讓 -0.5 】\n\n阿根廷近期狀態絕佳，雖然防守端 Romero 語出「漏洞百出」的擔憂，但進攻火力強勁，預期進球數 (xG) 顯示主隊在進攻端有顯著優勢 (2.1 vs 1.2)。Elo 積分也顯示阿根廷 (2128) 遠勝瑞士 (1885)。盤口賠率也持續向阿根廷傾斜，顯示市場對阿根廷更有信心。瑞士近期戰績（近5場 L） 較為疲軟，面對強敵阿根廷，恐難以抵擋。\n\n【🤖 勝平負判斷：主勝 】\n【🎯 最可能比分：2-0、2-1、1-0 】\n【📊 至少1球機率：92% 】\n【📊 至少2球機率：65% 】\n【📊 雙方進球機率：40% 】\n【🎯 預測比分：阿根廷 2:0 瑞士 (預估此比分機率：15%) 】\n【⚽ 大小球推薦：小 2.5 】",
+      "ai_rec_prob": 0.68,
+      "rec_odds": 1.696,
+      "ai_ev": 0.153,
+      "kelly_ratio": 0.2202,
+      "half_kelly_ratio": 0.1101,
+      "ai_analysis": "【💡 推薦：主讓 -0.5】\n\n阿根廷作為本屆世界盃的衛冕冠軍及FIFA排名第一的隊伍，實力遠超世界排名第19的瑞士。兩隊歷史交手7次，阿根廷取得5勝2和，保持不敗的絕對優勢。雖然瑞士在本屆淘汰賽中展現了堅固的防線，對陣哥倫比亞時在正規時間內未失一球，但阿根廷擁有Lionel Messi領銜的強大攻擊線（本屆梅西已攻入8球），預期進球數（xG）高達2.1，遠超瑞士的1.2。儘管阿根廷後防大將Romero對近期失球表示擔憂，且在淘汰賽中曾有高比分獲勝（3-2）的情況，但作為八強關鍵戰，阿根廷將全力以赴，不會有主力輪休的考量。市場普遍看好阿根廷晉級，台灣運彩亦將阿根廷主勝賠率設為較低水平。綜合考量，阿根廷在正規時間內取勝機會濃厚。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-1】\n【📊 至少1球機率：96%】\n【📊 至少2球機率：84%】\n【📊 雙方進球機率：65%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：9.7%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "f9aa13a662d1658e5a02cfc06d6a2d73": {
@@ -698,10 +717,10 @@
                 "price": 2.3
               },
               "Spain": {
-                "price": 3.3
+                "price": 3.2
               },
               "Draw": {
-                "price": 3.2
+                "price": 3.3
               }
             }
           }
@@ -714,10 +733,10 @@
                 "price": 2.39
               },
               "Spain": {
-                "price": 3.25
+                "price": 3.26
               },
               "Draw": {
-                "price": 3.25
+                "price": 3.24
               }
             },
             "spreads": {
@@ -734,11 +753,11 @@
             },
             "totals": {
               "Over": {
-                "price": 1.93,
+                "price": 1.94,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.95,
+                "price": 1.94,
                 "point": 2.5
               }
             }
@@ -746,13 +765,13 @@
         }
       ],
       "avg_odds": {
-        "France": 2.351,
-        "Spain": 3.208,
-        "Draw": 3.254
+        "France": 2.345,
+        "Spain": 3.23,
+        "Draw": 3.26
       },
       "true_probs": {
-        "France": 40.7,
-        "Spain": 29.8,
+        "France": 40.9,
+        "Spain": 29.7,
         "Draw": 29.4
       },
       "other_markets": {
@@ -790,14 +809,14 @@
       "first_seen": "2026-07-11T05:53:09.968666+08:00",
       "is_new": false,
       "odds_change": {
-        "France": 0.022,
-        "Spain": -0.029,
-        "Draw": -0.044
+        "France": 0.016,
+        "Spain": -0.007,
+        "Draw": -0.038
       },
       "change_pct": {
-        "France": 0.94,
-        "Spain": -0.9,
-        "Draw": -1.33
+        "France": 0.69,
+        "Spain": -0.22,
+        "Draw": -1.15
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -824,17 +843,18 @@
           "France": 2.351,
           "Spain": 3.208,
           "Draw": 3.254
+        },
+        {
+          "time": "07/11 18:09",
+          "France": 2.345,
+          "Spain": 3.23,
+          "Draw": 3.26
         }
       ],
       "injury_alerts": [
         {
           "team": "France",
-          "title": "法國 (France) 擊敗摩洛哥 (Morocco) 晉級半決賽",
-          "link": "https://www.bbc.co.uk/sport/football/videos/crm0ry2nemmo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "team": "France",
-          "title": "西班牙 (Spain)  late strike 鎖定世界盃 (WC) 半決賽對陣法國 (France)...",
+          "title": "西班牙（Spain）隊 late 進球，鎖定與法國（France）的世界盃（World Cup）半決賽席位……",
           "link": "https://www.espn.com/soccer/story/_/id/49327290/spain-belgium-world-cup-quarterfinal-merino-semifinal-france"
         }
       ],
@@ -896,84 +916,84 @@
   "news": {
     "world_cup": [
       {
-        "title": "Merino 再次成為意想不到的英雄 - 西班牙 (Spain) 則在等待 Lamine Yamal 的表演",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cvg50pvejzdo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Jul 2026 23:29:52 GMT",
-        "summary": "Mikel Merino came off the bench to send Spain into the World Cup semi-finals - but Lamine Yamal is still waiting for his moment to truly shine.",
-        "title_zh": "Merino 再次成為意想不到的英雄 - 西班牙 (Spain) 則在等待 Lamine Yamal 的表演",
-        "title_en": "Merino the unlikely hero again - as Spain wait for Lamine Yamal show"
-      },
-      {
-        "title": "Lammens 的失誤預示著比利時 (Belgium) 黃金世代的終結",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c4gy107g38eo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Jul 2026 23:14:51 GMT",
-        "summary": "Belgium's World Cup campaign ends after Senne Lammens' error against Spain - could it all be over for their golden generation too?",
-        "title_zh": "Lammens 的失誤預示著比利時 (Belgium) 黃金世代的終結",
-        "title_en": "Lammens' error spells end for Belgium's golden generation"
-      },
-      {
-        "title": "是否該給創紀錄的 Pickford 他應得的讚譽？",
+        "title": "該給創紀錄的 Pickford 應有的讚譽了嗎？",
         "link": "https://www.bbc.co.uk/sport/football/articles/cj9gknxm91vo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 05:55:32 GMT",
         "summary": "Is it time to finally give England keeper Jordan Pickford the credit he deserves as he enters the World Cup history books, asks chief football writer Phil McNulty.",
-        "title_zh": "是否該給創紀錄的 Pickford 他應得的讚譽？",
+        "title_zh": "該給創紀錄的 Pickford 應有的讚譽了嗎？",
         "title_en": "Is it time to give record-breaker Pickford the credit he deserves?"
       },
       {
-        "title": "人工草皮與教練革命 - 挪威 (Norway) 如何塑造黃金世代",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cvge7299ygwo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 05:31:12 GMT",
-        "summary": "Artificial turf, investment from gambling and a coaching revolution based on collaboration over egos help Norway build a golden generation of players.",
-        "title_zh": "人工草皮與教練革命 - 挪威 (Norway) 如何塑造黃金世代",
-        "title_en": "Artificial turf & coaching revolution - how Norway shaped golden generation"
-      },
-      {
-        "title": "英格蘭 (England) 迎戰邁阿密 (Miami) 的開放式高溫 - 但挪威 (Norway) 佔優勢嗎？",
+        "title": "英格蘭（England）隊準備迎戰邁阿密（Miami）的戶外高溫——但挪威（Norway）是否佔有優勢？",
         "link": "https://www.bbc.co.uk/sport/football/articles/cx2jzl3zxpzo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 05:08:35 GMT",
         "summary": "England will head into unknown territory at this World Cup when they face Norway in Miami - playing in searing temperatures.",
-        "title_zh": "英格蘭 (England) 迎戰邁阿密 (Miami) 的開放式高溫 - 但挪威 (Norway) 佔優勢嗎？",
+        "title_zh": "英格蘭（England）隊準備迎戰邁阿密（Miami）的戶外高溫——但挪威（Norway）是否佔有優勢？",
         "title_en": "England set for open-air Miami heat - but do Norway hold the edge?"
       },
       {
-        "title": "英格蘭 (England) 2026 世界盃 (World Cup) 迄今所有進球",
-        "link": "https://www.bbc.co.uk/sport/videos/cewqex0vl85o?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 05:13:35 GMT",
-        "summary": "As England gear up to face Norway at the Miami Stadium for the World Cup quarter-finals, re-live all the goals that got Thomas Tuchel's side there.",
-        "title_zh": "英格蘭 (England) 2026 世界盃 (World Cup) 迄今所有進球",
-        "title_en": "All the goals from England's 2026 World Cup campaign so far"
+        "title": "Merino 再度成為意想不到的英雄——西班牙（Spain）隊正等待 Lamine Yamal 的表演",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cvg50pvejzdo?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 10 Jul 2026 23:29:52 GMT",
+        "summary": "Mikel Merino came off the bench to send Spain into the World Cup semi-finals - but Lamine Yamal is still waiting for his moment to truly shine.",
+        "title_zh": "Merino 再度成為意想不到的英雄——西班牙（Spain）隊正等待 Lamine Yamal 的表演",
+        "title_en": "Merino the unlikely hero again - as Spain wait for Lamine Yamal show"
       },
       {
-        "title": "英格蘭 (England) 的 Guehi、Rice 和 James 在對挪威 (Norway) 賽前都進行了訓練",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c3eyqdwq392o?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Jul 2026 22:06:14 GMT",
-        "summary": "Midfielder Declan Rice and defenders Marc Guehi and Reece James all train with England on the eve of Saturday's World Cup quarter-final against Norway.",
-        "title_zh": "英格蘭 (England) 的 Guehi、Rice 和 James 在對挪威 (Norway) 賽前都進行了訓練",
-        "title_en": "England's Guehi, Rice & James all train before Norway game"
+        "title": "人工草皮與教練革命——挪威（Norway）如何塑造黃金世代",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cvge7299ygwo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 05:31:12 GMT",
+        "summary": "Artificial turf, investment from gambling and a coaching revolution based on collaboration over egos help Norway build a golden generation of players.",
+        "title_zh": "人工草皮與教練革命——挪威（Norway）如何塑造黃金世代",
+        "title_en": "Artificial turf & coaching revolution - how Norway shaped golden generation"
       },
       {
-        "title": "挪威 (Norway) 主帥：英格蘭 (England) 是晉級半決賽的熱門",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cq61n2gqqv0o?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Jul 2026 20:10:44 GMT",
-        "summary": "England are favourites to reach the semi-finals of the World Cup, Norway boss Stale Solbakken has told BBC Sport.",
-        "title_zh": "挪威 (Norway) 主帥：英格蘭 (England) 是晉級半決賽的熱門",
-        "title_en": "England favourites to reach semis, says Norway boss"
+        "title": "Hey Jude：Bellingham 重返英格蘭（England）隊的不可或缺性",
+        "link": "https://www.bbc.co.uk/sport/football/articles/ckg47l8nl7jo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 07:54:32 GMT",
+        "summary": "Senior football correspondent Sami Mokbel charts Jude Bellingham's remarkable  resurgence with England at the World Cup.",
+        "title_zh": "Hey Jude：Bellingham 重返英格蘭（England）隊的不可或缺性",
+        "title_en": "Hey Jude: Bellingham's return to England indispensability"
       },
       {
-        "title": "曼聯 (Man Utd) 的 Ederson 轉會存疑",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c9d2z59596eo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Jul 2026 20:27:18 GMT",
-        "summary": "Manchester United's attempt to complete a £35m deal for Atalanta midfielder is in doubt",
-        "title_zh": "曼聯 (Man Utd) 的 Ederson 轉會存疑",
-        "title_en": "Man Utd's Ederson move in doubt"
+        "title": "我是誰？猜猜世界盃（World Cup）球星第 34 名",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cd0pmv2mr3jo?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 09:00:05 GMT",
+        "summary": "Will you get today's player in as few attempts as possible?",
+        "title_zh": "我是誰？猜猜世界盃（World Cup）球星第 34 名",
+        "title_en": "Who am I? Guess World Cup star No 34"
       },
       {
-        "title": "足壇最佳兄弟情：為何 Bellingham 和 Haaland 打破常規",
-        "link": "https://www.bbc.co.uk/news/articles/cz9l8pzxv7vo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 10 Jul 2026 19:53:49 GMT",
-        "summary": "The two players have won an army of admirers from social media clips and their honesty in interviews.",
-        "title_zh": "足壇最佳兄弟情：為何 Bellingham 和 Haaland 打破常規",
-        "title_en": "Football's best bromance: Why Bellingham and Haaland break the mould"
+        "title": "Lammens 的失誤宣告比利時（Belgium）黃金世代的終結",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c4gy107g38eo?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 10 Jul 2026 23:14:51 GMT",
+        "summary": "Belgium's World Cup campaign ends after Senne Lammens' error against Spain - could it all be over for their golden generation too?",
+        "title_zh": "Lammens 的失誤宣告比利時（Belgium）黃金世代的終結",
+        "title_en": "Lammens' error spells end for Belgium's golden generation"
+      },
+      {
+        "title": "世界盃（World Cup）結束後，足球賽事將在 BBC Sport 繼續",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c9w2zr9wzj1o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 06:03:35 GMT",
+        "summary": "When the World Cup ends we'll still have loads of great content every day as we build up to the new football season.",
+        "title_zh": "世界盃（World Cup）結束後，足球賽事將在 BBC Sport 繼續",
+        "title_en": "When the World Cup finishes, the football continues on BBC Sport"
+      },
+      {
+        "title": "Man City 簽下 17 歲的 Monga——他有多出色？",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cdr4vvlp7d0o?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 10 Jul 2026 06:06:42 GMT",
+        "summary": "Manchester City strike an early blow to Arsenal by signing teenager Jeremy Monga from Leicester City.",
+        "title_zh": "Man City 簽下 17 歲的 Monga——他有多出色？",
+        "title_en": "Man City sign Monga - how good is the 17-year-old?"
+      },
+      {
+        "title": "芬蘭（Finland）和挪威（Norway）值得關注的 Man Utd 年輕球員",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c74yej43w97o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 08:25:58 GMT",
+        "summary": "Manchester United's pre-season schedule begins before the World Cup final. Which so many senior players still missing, who are the youngsters who could impress?",
+        "title_zh": "芬蘭（Finland）和挪威（Norway）值得關注的 Man Utd 年輕球員",
+        "title_en": "The Man Utd youngsters to look out for in Finland and Norway"
       }
     ]
   },
@@ -984,6 +1004,6 @@
   "stats": {
     "total_matches": 3,
     "significant_changes_count": 2,
-    "api_remaining": "137"
+    "api_remaining": "132"
   }
 }
