@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-12T13:49:00.426157+08:00",
-  "last_updated_display": "2026/07/12 13:49 (台北時間)",
+  "last_updated": "2026-07-12T16:03:07.755709+08:00",
+  "last_updated_display": "2026/07/12 16:03 (台北時間)",
   "matches": {
     "f9aa13a662d1658e5a02cfc06d6a2d73": {
       "id": "f9aa13a662d1658e5a02cfc06d6a2d73",
@@ -35,10 +35,10 @@
                 "price": 2.3
               },
               "Spain": {
-                "price": 3.3
+                "price": 3.2
               },
               "Draw": {
-                "price": 3.2
+                "price": 3.3
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       ],
       "avg_odds": {
-        "France": 2.334,
-        "Spain": 3.265,
+        "France": 2.323,
+        "Spain": 3.276,
         "Draw": 3.274
       },
       "true_probs": {
-        "France": 41.2,
-        "Spain": 29.4,
-        "Draw": 29.4
+        "France": 41.3,
+        "Spain": 29.3,
+        "Draw": 29.3
       },
       "other_markets": {
         "spreads": {
@@ -127,13 +127,13 @@
       "first_seen": "2026-07-11T05:53:09.968666+08:00",
       "is_new": false,
       "odds_change": {
-        "France": 0.005,
-        "Spain": 0.028,
+        "France": -0.006,
+        "Spain": 0.039,
         "Draw": -0.024
       },
       "change_pct": {
-        "France": 0.21,
-        "Spain": 0.86,
+        "France": -0.26,
+        "Spain": 1.2,
         "Draw": -0.73
       },
       "is_value_bet": false,
@@ -203,12 +203,18 @@
           "France": 2.334,
           "Spain": 3.265,
           "Draw": 3.274
+        },
+        {
+          "time": "07/12 16:02",
+          "France": 2.323,
+          "Spain": 3.276,
+          "Draw": 3.274
         }
       ],
       "injury_alerts": [
         {
           "team": "France",
-          "title": "France (法國) 在輕鬆戰勝 Morocco (摩洛哥) 後晉級半決賽",
+          "title": "法國（France）擊敗摩洛哥（Morocco）後晉級準決賽",
           "link": "https://www.bbc.co.uk/sport/football/videos/crm0ry2nemmo?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -274,37 +280,37 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.13
+                "price": 3.16
               },
               "England": {
                 "price": 2.57
               },
               "Draw": {
-                "price": 3.04
+                "price": 3.06
               }
             },
             "spreads": {
               "Argentina": {
-                "price": 2.16,
-                "point": -0.0,
-                "prob": 44.9
+                "price": 1.77,
+                "point": 0.25,
+                "prob": 55.2
               },
               "England": {
-                "price": 1.76,
-                "point": 0.0,
-                "prob": 55.1
+                "price": 2.18,
+                "point": -0.25,
+                "prob": 44.8
               }
             },
             "totals": {
               "Over": {
                 "price": 2.07,
                 "point": 2.25,
-                "prob": 46.6
+                "prob": 46.9
               },
               "Under": {
-                "price": 1.81,
+                "price": 1.83,
                 "point": 2.25,
-                "prob": 53.4
+                "prob": 53.1
               }
             }
           }
@@ -353,38 +359,38 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 3.08,
-        "England": 2.518,
+        "Argentina": 3.085,
+        "England": 2.53,
         "Draw": 3.06
       },
       "true_probs": {
         "Argentina": 31.0,
-        "England": 37.9,
+        "England": 37.8,
         "Draw": 31.2
       },
       "other_markets": {
         "spreads": {
           "Argentina": {
-            "price": 2.16,
-            "point": -0.0,
-            "prob": 44.9
+            "price": 1.77,
+            "point": 0.25,
+            "prob": 55.2
           },
           "England": {
-            "price": 1.76,
-            "point": 0.0,
-            "prob": 55.1
+            "price": 2.18,
+            "point": -0.25,
+            "prob": 44.8
           }
         },
         "totals": {
           "Over": {
             "price": 2.07,
             "point": 2.25,
-            "prob": 46.6
+            "prob": 46.9
           },
           "Under": {
-            "price": 1.81,
+            "price": 1.83,
             "point": 2.25,
-            "prob": 53.4
+            "prob": 53.1
           }
         },
         "btts": {}
@@ -394,15 +400,30 @@
         "England": 2.518,
         "Draw": 3.06
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-07-12T13:48:25.940950+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Argentina": 0.005,
+        "England": 0.012,
+        "Draw": 0.0
+      },
+      "change_pct": {
+        "Argentina": 0.16,
+        "England": 0.48,
+        "Draw": 0.0
+      },
+      "is_value_bet": false,
       "odds_timeline": [
         {
           "time": "07/12 13:48",
           "Argentina": 3.08,
           "England": 2.518,
+          "Draw": 3.06
+        },
+        {
+          "time": "07/12 16:02",
+          "Argentina": 3.085,
+          "England": 2.53,
           "Draw": 3.06
         }
       ],
@@ -465,84 +486,84 @@
   "news": {
     "world_cup": [
       {
-        "title": "Bellingham 締造世界盃傳奇高度，Messi 緊隨其後",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cy5v6544ypxo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 04:35:19 GMT",
-        "summary": "Jude Bellingham again dazzles England and the World Cup with his brilliance, matching some records of the all-time greats.",
-        "title_zh": "Bellingham 締造世界盃傳奇高度，Messi 緊隨其後",
-        "title_en": "Bellingham reaching heights of World Cup legends with Messi next"
-      },
-      {
-        "title": "Tuchel 對「幸運」且「鬆懈」的 England (英格蘭) 感到憤怒 – 「心態」是否足夠？",
+        "title": "Tuchel對英格蘭（England）的「幸運」感到憤怒 - 但Bellingham為球員辯護",
         "link": "https://www.bbc.co.uk/sport/football/articles/ckg474ekv58o?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 12 Jul 2026 03:08:42 GMT",
         "summary": "England head coach Thomas Tuchel is praised by former England players for saying his players \"got lucky\" in World Cup quarter-final win over Norway - but match-winner Jude Bellingham disagrees.",
-        "title_zh": "Tuchel 對「幸運」且「鬆懈」的 England (英格蘭) 感到憤怒 – 「心態」是否足夠？",
-        "title_en": "Tuchel angry at 'lucky' and 'sloppy' England - can 'mentality' be enough?"
+        "title_zh": "Tuchel對英格蘭（England）的「幸運」感到憤怒 - 但Bellingham為球員辯護",
+        "title_en": "Tuchel angry at 'lucky' England - but Bellingham defends players"
       },
       {
-        "title": "「他將他們一路拖進了整個賽季」– England (英格蘭) 球員評分",
+        "title": "Bellingham創下世界盃（World Cup）傳奇高度，與Messi並駕齊驅",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cy5v6544ypxo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 12 Jul 2026 04:35:19 GMT",
+        "summary": "Jude Bellingham again dazzles England and the World Cup with his brilliance, matching some records of the all-time greats.",
+        "title_zh": "Bellingham創下世界盃（World Cup）傳奇高度，與Messi並駕齊驅",
+        "title_en": "Bellingham reaching heights of World Cup legends with Messi next"
+      },
+      {
+        "title": "「他將他們帶過了整個賽事」 - 英格蘭（England）球員評分",
         "link": "https://www.bbc.co.uk/sport/football/articles/ckg0qpjeeryo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 23:51:39 GMT",
         "summary": "BBC Sport's England reporter Alex Howell rates the players after the Three Lions beat Norway to reach the World Cup semi-finals.",
-        "title_zh": "「他將他們一路拖進了整個賽季」– England (英格蘭) 球員評分",
+        "title_zh": "「他將他們帶過了整個賽事」 - 英格蘭（England）球員評分",
         "title_en": "'He has dragged them through all tournament' - England player ratings"
       },
       {
-        "title": "「關鍵時刻的男人」– Bellingham 為 England (英格蘭) 取得領先",
+        "title": "塞內加爾（Senegal）總教練Thiaw在世界盃（World Cup）出局後被解僱",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cq81l29lj2zo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 12 Jul 2026 07:25:09 GMT",
+        "summary": "Senegal sack manager Pape Thiaw in the aftermath of the country's exit at the last-32 stage of the 2026 World Cup.",
+        "title_zh": "塞內加爾（Senegal）總教練Thiaw在世界盃（World Cup）出局後被解僱",
+        "title_en": "Senegal sack manager Thiaw in wake of World Cup exit"
+      },
+      {
+        "title": "我是誰？猜猜世界盃（World Cup）球星No. 35",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cx21gn50e08o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 12 Jul 2026 06:15:52 GMT",
+        "summary": "Will you get today's player in as few attempts as possible?",
+        "title_zh": "我是誰？猜猜世界盃（World Cup）球星No. 35",
+        "title_en": "Who am I? Guess World Cup star No 35"
+      },
+      {
+        "title": "「關鍵時刻的男人」 - Bellingham為英格蘭（England）取得領先",
         "link": "https://www.bbc.co.uk/sport/football/videos/c20yrd39ge8o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 23:46:44 GMT",
         "summary": "Jude Bellingham scores his second goal of the game to give England a 2-1 lead over Norway during extra time of their 2026 World Cup quarter-final in Miami.",
-        "title_zh": "「關鍵時刻的男人」– Bellingham 為 England (英格蘭) 取得領先",
+        "title_zh": "「關鍵時刻的男人」 - Bellingham為英格蘭（England）取得領先",
         "title_en": "'Man of all the moments' - Bellingham gives England the lead"
       },
       {
-        "title": "Embolo 因誤認身份規則被紅牌驅逐",
+        "title": "Embolo因誤認身份規則被紅牌罰下",
         "link": "https://www.bbc.co.uk/sport/football/articles/ckg0k5gdr79o?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 12 Jul 2026 04:22:57 GMT",
         "summary": "Switzerland's Breel Embolo becomes first player to be sent off as a result of a new law for mistaken identity at the World Cup.",
-        "title_zh": "Embolo 因誤認身份規則被紅牌驅逐",
+        "title_zh": "Embolo因誤認身份規則被紅牌罰下",
         "title_en": "Embolo sent off as result of mistaken identity rule"
       },
       {
-        "title": "球是否在 England (英格蘭) 進球前擊中 Spidercam？Snicko 說沒有 – Norway (挪威) 不確定",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cd95335dp10o?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 02:20:21 GMT",
-        "summary": "Norway's World Cup campaign ends in a quarter-final defeat by England, but they leave frustrated, arguing that Jude Bellingham's equaliser should not have counted.",
-        "title_zh": "球是否在 England (英格蘭) 進球前擊中 Spidercam？Snicko 說沒有 – Norway (挪威) 不確定",
-        "title_en": "Did ball hit spidercam before England goal? Snicko says not - Norway unsure"
-      },
-      {
-        "title": "BBC 將轉播 England (英格蘭) 的世界盃半決賽",
+        "title": "BBC將轉播英格蘭（England）世界盃（World Cup）準決賽",
         "link": "https://www.bbc.co.uk/sport/football/articles/cx268mlg3lgo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 23:47:11 GMT",
         "summary": "England's World Cup semi-final against Argentina will be broadcast live on BBC One and BBC iPlayer.",
-        "title_zh": "BBC 將轉播 England (英格蘭) 的世界盃半決賽",
+        "title_zh": "BBC將轉播英格蘭（England）世界盃（World Cup）準決賽",
         "title_en": "BBC to show England's World Cup semi-final"
       },
       {
-        "title": "VAR 推翻 England (英格蘭) 點球是否正確？",
+        "title": "VAR推翻英格蘭（England）罰球是否正確？",
         "link": "https://www.bbc.co.uk/sport/football/videos/c3dyj7j48v9o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 23:46:41 GMT",
         "summary": "England have a penalty overturned following a VAR review after Djed Spence was judged to have initiated the contact with Norway's Oscar Bobb during the first half of extra time in Miami.",
-        "title_zh": "VAR 推翻 England (英格蘭) 點球是否正確？",
+        "title_zh": "VAR推翻英格蘭（England）罰球是否正確？",
         "title_en": "Was VAR right to overturn England penalty?"
       },
       {
-        "title": "為 England (英格蘭) 的世界盃半決賽選出你的先發 XI",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cz75x4jgddpo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 01:38:05 GMT",
-        "summary": "England are through to the World Cup semi-finals, but who would you pick in your starting XI?",
-        "title_zh": "為 England (英格蘭) 的世界盃半決賽選出你的先發 XI",
-        "title_en": "Pick your England XI for World Cup semi-final"
-      },
-      {
-        "title": "研究顯示，足球運動員更容易罹患憂鬱症和焦慮症",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cn59nnkyy2go?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 05:09:55 GMT",
-        "summary": "A new study finds evidence of reduced brain volume in former elite footballers, who also report difficulties with thinking skills and decision-making.",
-        "title_zh": "研究顯示，足球運動員更容易罹患憂鬱症和焦慮症",
-        "title_en": "Footballers more likely to suffer depression and anxiety - study"
+        "title": "英格蘭（England）2026年世界盃（World Cup）至今所有進球",
+        "link": "https://www.bbc.co.uk/sport/videos/cewqex0vl85o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 05:13:35 GMT",
+        "summary": "As England gear up to face Norway at the Miami Stadium for the World Cup quarter-finals, re-live all the goals that got Thomas Tuchel's side there.",
+        "title_zh": "英格蘭（England）2026年世界盃（World Cup）至今所有進球",
+        "title_en": "All the goals from England's 2026 World Cup campaign so far"
       }
     ]
   },
@@ -550,6 +571,6 @@
   "stats": {
     "total_matches": 2,
     "significant_changes_count": 0,
-    "api_remaining": "102"
+    "api_remaining": "97"
   }
 }
