@@ -1,352 +1,7 @@
 {
-  "last_updated": "2026-07-12T09:55:43.127094+08:00",
-  "last_updated_display": "2026/07/12 09:55 (台北時間)",
+  "last_updated": "2026-07-12T13:49:00.426157+08:00",
+  "last_updated_display": "2026/07/12 13:49 (台北時間)",
   "matches": {
-    "200d9cd5eda092c7eb778cc104cd2fd2": {
-      "id": "200d9cd5eda092c7eb778cc104cd2fd2",
-      "sport_key": "soccer_fifa_world_cup",
-      "league": "世足 FIFA World Cup",
-      "home_team": "Argentina",
-      "away_team": "Switzerland",
-      "commence_time": "2026-07-12T01:00:00Z",
-      "bookmakers": [
-        {
-          "name": "Unibet (NL)",
-          "markets": {
-            "h2h": {
-              "Argentina": {
-                "price": 1.25
-              },
-              "Switzerland": {
-                "price": 16.0
-              },
-              "Draw": {
-                "price": 4.7
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.33,
-                "point": 2.5,
-                "prob": 39.9
-              },
-              "Under": {
-                "price": 1.55,
-                "point": 2.5,
-                "prob": 60.1
-              }
-            }
-          }
-        },
-        {
-          "name": "PMU (FR)",
-          "markets": {
-            "h2h": {
-              "Argentina": {
-                "price": 1.25
-              },
-              "Switzerland": {
-                "price": 16.0
-              },
-              "Draw": {
-                "price": 4.7
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.3,
-                "point": 2.5
-              },
-              "Under": {
-                "price": 1.5,
-                "point": 2.5
-              }
-            }
-          }
-        },
-        {
-          "name": "Unibet (SE)",
-          "markets": {
-            "h2h": {
-              "Argentina": {
-                "price": 1.25
-              },
-              "Switzerland": {
-                "price": 16.0
-              },
-              "Draw": {
-                "price": 4.7
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 2.33,
-                "point": 2.5
-              },
-              "Under": {
-                "price": 1.55,
-                "point": 2.5
-              }
-            }
-          }
-        }
-      ],
-      "avg_odds": {
-        "Argentina": 1.241,
-        "Switzerland": 16.13,
-        "Draw": 4.971
-      },
-      "true_probs": {
-        "Argentina": 75.4,
-        "Switzerland": 5.8,
-        "Draw": 18.8
-      },
-      "other_markets": {
-        "spreads": {
-          "Argentina": {
-            "price": 2.3,
-            "point": -1.5,
-            "prob": 41.0
-          },
-          "Switzerland": {
-            "price": 1.6,
-            "point": 1.5,
-            "prob": 59.0
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 2.33,
-            "point": 2.5,
-            "prob": 39.9
-          },
-          "Under": {
-            "price": 1.55,
-            "point": 2.5,
-            "prob": 60.1
-          }
-        },
-        "btts": {}
-      },
-      "opening_odds": {
-        "Argentina": 1.728,
-        "Switzerland": 5.399,
-        "Draw": 3.541
-      },
-      "first_seen": "2026-07-08T09:53:36.883740+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Argentina": -0.487,
-        "Switzerland": 10.731,
-        "Draw": 1.43
-      },
-      "change_pct": {
-        "Argentina": -28.18,
-        "Switzerland": 198.76,
-        "Draw": 40.38
-      },
-      "is_value_bet": true,
-      "odds_timeline": [
-        {
-          "time": "07/09 22:35",
-          "Argentina": 1.705,
-          "Switzerland": 5.628,
-          "Draw": 3.584
-        },
-        {
-          "time": "07/10 01:13",
-          "Argentina": 1.702,
-          "Switzerland": 5.634,
-          "Draw": 3.597
-        },
-        {
-          "time": "07/10 03:24",
-          "Argentina": 1.698,
-          "Switzerland": 5.63,
-          "Draw": 3.605
-        },
-        {
-          "time": "07/10 06:15",
-          "Argentina": 1.696,
-          "Switzerland": 5.749,
-          "Draw": 3.59
-        },
-        {
-          "time": "07/10 10:06",
-          "Argentina": 1.69,
-          "Switzerland": 5.766,
-          "Draw": 3.593
-        },
-        {
-          "time": "07/10 14:35",
-          "Argentina": 1.695,
-          "Switzerland": 5.74,
-          "Draw": 3.586
-        },
-        {
-          "time": "07/10 19:43",
-          "Argentina": 1.69,
-          "Switzerland": 5.771,
-          "Draw": 3.605
-        },
-        {
-          "time": "07/10 22:03",
-          "Argentina": 1.694,
-          "Switzerland": 5.763,
-          "Draw": 3.595
-        },
-        {
-          "time": "07/11 00:50",
-          "Argentina": 1.69,
-          "Switzerland": 5.789,
-          "Draw": 3.603
-        },
-        {
-          "time": "07/11 03:17",
-          "Argentina": 1.688,
-          "Switzerland": 5.811,
-          "Draw": 3.61
-        },
-        {
-          "time": "07/11 05:53",
-          "Argentina": 1.689,
-          "Switzerland": 5.813,
-          "Draw": 3.602
-        },
-        {
-          "time": "07/11 09:52",
-          "Argentina": 1.689,
-          "Switzerland": 5.809,
-          "Draw": 3.598
-        },
-        {
-          "time": "07/11 13:32",
-          "Argentina": 1.689,
-          "Switzerland": 5.819,
-          "Draw": 3.592
-        },
-        {
-          "time": "07/11 15:42",
-          "Argentina": 1.695,
-          "Switzerland": 5.815,
-          "Draw": 3.611
-        },
-        {
-          "time": "07/11 18:09",
-          "Argentina": 1.696,
-          "Switzerland": 5.812,
-          "Draw": 3.604
-        },
-        {
-          "time": "07/11 20:58",
-          "Argentina": 1.697,
-          "Switzerland": 5.715,
-          "Draw": 3.608
-        },
-        {
-          "time": "07/11 23:45",
-          "Argentina": 1.702,
-          "Switzerland": 5.816,
-          "Draw": 3.581
-        },
-        {
-          "time": "07/12 02:47",
-          "Argentina": 1.705,
-          "Switzerland": 5.791,
-          "Draw": 3.559
-        },
-        {
-          "time": "07/12 05:41",
-          "Argentina": 1.706,
-          "Switzerland": 5.821,
-          "Draw": 3.553
-        },
-        {
-          "time": "07/12 09:55",
-          "Argentina": 1.241,
-          "Switzerland": 16.13,
-          "Draw": 4.971
-        }
-      ],
-      "h2h_history": [
-        {
-          "date": "2014-06-30",
-          "home": "主隊",
-          "score": "1-0",
-          "away": "客隊"
-        },
-        {
-          "date": "1966-07-19",
-          "home": "主隊",
-          "score": "2-0",
-          "away": "客隊"
-        }
-      ],
-      "home_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-07-07",
-            "opponent": "Egypt",
-            "score": "3-2",
-            "result": "W",
-            "venue": "主"
-          }
-        ]
-      },
-      "away_form": {
-        "record": "L",
-        "wins": 0,
-        "losses": 1,
-        "home_record": "L",
-        "away_record": "",
-        "details": [
-          {
-            "date": "2026-07-07",
-            "opponent": "Colombia",
-            "score": "0-0",
-            "result": "L",
-            "venue": "主"
-          }
-        ]
-      },
-      "sharp_moves": [
-        {
-          "team": "Argentina",
-          "move_pct": -27.26,
-          "from": 1.706,
-          "to": 1.241,
-          "level": "💰 聪明錢訊號",
-          "message": "Argentina 賠率 1.71→1.24 (-27.3%)"
-        }
-      ],
-      "elo_diff": 290,
-      "xg_stats": {
-        "home": {
-          "for": 2.1,
-          "against": 0.8
-        },
-        "away": {
-          "for": 1.2,
-          "against": 1.2
-        }
-      },
-      "reverse_line_movement": [],
-      "advancement_status": "⚠️ Argentina 實力輾壓，若已確定晉級極有可能大幅輪休主力上替補。",
-      "ai_rec_target": "大球",
-      "ai_rec_line": "2.5",
-      "ai_rec_prob": 0.65,
-      "rec_odds": 1.7,
-      "ai_ev": 0.105,
-      "kelly_ratio": 0.15,
-      "half_kelly_ratio": 0.075,
-      "ai_analysis": "【💡 推薦：大球 2.5】\n\n阿根廷與瑞士的比賽，儘管瑞士在防守端表現穩健，但阿根廷在進攻端火力全開，且近期比賽有出現較多失球，預計雙方都有機會進球，總進球數有望超過 2.5 球。阿根廷的 Elo 積分為 2175，近期 xG 為 2.1，而瑞士的 Elo 積分為 1885，近期 xG 為 1.2。盤口也顯示大球的機率較高，特別是阿根廷展現出的進攻能力，讓比賽更有可能出現較多進球。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：3-1、2-0】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：75%】\n【📊 雙方進球機率：55%】\n【🎯 預測比分：主隊 3:1 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.5】",
-      "analysis_source": "gemini"
-    },
     "f9aa13a662d1658e5a02cfc06d6a2d73": {
       "id": "f9aa13a662d1658e5a02cfc06d6a2d73",
       "sport_key": "soccer_fifa_world_cup",
@@ -380,10 +35,10 @@
                 "price": 2.3
               },
               "Spain": {
-                "price": 3.2
+                "price": 3.3
               },
               "Draw": {
-                "price": 3.3
+                "price": 3.2
               }
             }
           }
@@ -393,34 +48,34 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 2.36
+                "price": 2.34
               },
               "Spain": {
-                "price": 3.29
+                "price": 3.32
               },
               "Draw": {
-                "price": 3.27
+                "price": 3.28
               }
             },
             "spreads": {
               "France": {
-                "price": 2.03,
+                "price": 2.01,
                 "point": -0.25,
-                "prob": 48.1
+                "prob": 48.6
               },
               "Spain": {
-                "price": 1.88,
+                "price": 1.9,
                 "point": 0.25,
-                "prob": 51.9
+                "prob": 51.4
               }
             },
             "totals": {
               "Over": {
-                "price": 1.94,
+                "price": 1.93,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.94,
+                "price": 1.95,
                 "point": 2.5
               }
             }
@@ -428,26 +83,26 @@
         }
       ],
       "avg_odds": {
-        "France": 2.324,
-        "Spain": 3.279,
-        "Draw": 3.268
+        "France": 2.334,
+        "Spain": 3.265,
+        "Draw": 3.274
       },
       "true_probs": {
-        "France": 41.3,
-        "Spain": 29.3,
+        "France": 41.2,
+        "Spain": 29.4,
         "Draw": 29.4
       },
       "other_markets": {
         "spreads": {
           "France": {
-            "price": 2.03,
+            "price": 2.01,
             "point": -0.25,
-            "prob": 48.1
+            "prob": 48.6
           },
           "Spain": {
-            "price": 1.88,
+            "price": 1.9,
             "point": 0.25,
-            "prob": 51.9
+            "prob": 51.4
           }
         },
         "totals": {
@@ -472,14 +127,14 @@
       "first_seen": "2026-07-11T05:53:09.968666+08:00",
       "is_new": false,
       "odds_change": {
-        "France": -0.005,
-        "Spain": 0.042,
-        "Draw": -0.03
+        "France": 0.005,
+        "Spain": 0.028,
+        "Draw": -0.024
       },
       "change_pct": {
-        "France": -0.21,
-        "Spain": 1.3,
-        "Draw": -0.91
+        "France": 0.21,
+        "Spain": 0.86,
+        "Draw": -0.73
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -542,6 +197,19 @@
           "France": 2.324,
           "Spain": 3.279,
           "Draw": 3.268
+        },
+        {
+          "time": "07/12 13:48",
+          "France": 2.334,
+          "Spain": 3.265,
+          "Draw": 3.274
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "France",
+          "title": "France (法國) 在輕鬆戰勝 Morocco (摩洛哥) 後晉級半決賽",
+          "link": "https://www.bbc.co.uk/sport/football/videos/crm0ry2nemmo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "h2h_history": [],
@@ -589,105 +257,299 @@
         }
       },
       "reverse_line_movement": [],
-      "advancement_status": ""
+      "advancement_status": "",
+      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
+      "analysis_source": "rule_based"
+    },
+    "ced22494ae0bbb8cc4f7108bf6f493df": {
+      "id": "ced22494ae0bbb8cc4f7108bf6f493df",
+      "sport_key": "soccer_fifa_world_cup",
+      "league": "世足 FIFA World Cup",
+      "home_team": "England",
+      "away_team": "Argentina",
+      "commence_time": "2026-07-15T19:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Pinnacle",
+          "markets": {
+            "h2h": {
+              "Argentina": {
+                "price": 3.13
+              },
+              "England": {
+                "price": 2.57
+              },
+              "Draw": {
+                "price": 3.04
+              }
+            },
+            "spreads": {
+              "Argentina": {
+                "price": 2.16,
+                "point": -0.0,
+                "prob": 44.9
+              },
+              "England": {
+                "price": 1.76,
+                "point": 0.0,
+                "prob": 55.1
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.07,
+                "point": 2.25,
+                "prob": 46.6
+              },
+              "Under": {
+                "price": 1.81,
+                "point": 2.25,
+                "prob": 53.4
+              }
+            }
+          }
+        },
+        {
+          "name": "PMU (FR)",
+          "markets": {
+            "h2h": {
+              "Argentina": {
+                "price": 3.05
+              },
+              "England": {
+                "price": 2.48
+              },
+              "Draw": {
+                "price": 2.95
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.23,
+                "point": 2.5
+              },
+              "Under": {
+                "price": 1.56,
+                "point": 2.5
+              }
+            }
+          }
+        },
+        {
+          "name": "LeoVegas (SE)",
+          "markets": {
+            "h2h": {
+              "Argentina": {
+                "price": 3.1
+              },
+              "England": {
+                "price": 2.5
+              },
+              "Draw": {
+                "price": 3.0
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Argentina": 3.08,
+        "England": 2.518,
+        "Draw": 3.06
+      },
+      "true_probs": {
+        "Argentina": 31.0,
+        "England": 37.9,
+        "Draw": 31.2
+      },
+      "other_markets": {
+        "spreads": {
+          "Argentina": {
+            "price": 2.16,
+            "point": -0.0,
+            "prob": 44.9
+          },
+          "England": {
+            "price": 1.76,
+            "point": 0.0,
+            "prob": 55.1
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.07,
+            "point": 2.25,
+            "prob": 46.6
+          },
+          "Under": {
+            "price": 1.81,
+            "point": 2.25,
+            "prob": 53.4
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Argentina": 3.08,
+        "England": 2.518,
+        "Draw": 3.06
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-07-12T13:48:25.940950+08:00",
+      "odds_timeline": [
+        {
+          "time": "07/12 13:48",
+          "Argentina": 3.08,
+          "England": 2.518,
+          "Draw": 3.06
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-07-01",
+            "opponent": "DR Congo",
+            "score": "2-1",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-07-07",
+            "opponent": "Egypt",
+            "score": "3-2",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "elo_diff": -80,
+      "xg_stats": {
+        "home": {
+          "for": 1.9,
+          "against": 0.7
+        },
+        "away": {
+          "for": 2.1,
+          "against": 0.8
+        }
+      },
+      "reverse_line_movement": [],
+      "advancement_status": "",
+      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
+      "analysis_source": "rule_based"
     }
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "200d9cd5eda092c7eb778cc104cd2fd2",
-      "f9aa13a662d1658e5a02cfc06d6a2d73"
+      "f9aa13a662d1658e5a02cfc06d6a2d73",
+      "ced22494ae0bbb8cc4f7108bf6f493df"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "「他一路帶領球隊闖過整個錦標賽」 - 英格蘭球員評分",
+        "title": "Bellingham 締造世界盃傳奇高度，Messi 緊隨其後",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cy5v6544ypxo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 12 Jul 2026 04:35:19 GMT",
+        "summary": "Jude Bellingham again dazzles England and the World Cup with his brilliance, matching some records of the all-time greats.",
+        "title_zh": "Bellingham 締造世界盃傳奇高度，Messi 緊隨其後",
+        "title_en": "Bellingham reaching heights of World Cup legends with Messi next"
+      },
+      {
+        "title": "Tuchel 對「幸運」且「鬆懈」的 England (英格蘭) 感到憤怒 – 「心態」是否足夠？",
+        "link": "https://www.bbc.co.uk/sport/football/articles/ckg474ekv58o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 12 Jul 2026 03:08:42 GMT",
+        "summary": "England head coach Thomas Tuchel is praised by former England players for saying his players \"got lucky\" in World Cup quarter-final win over Norway - but match-winner Jude Bellingham disagrees.",
+        "title_zh": "Tuchel 對「幸運」且「鬆懈」的 England (英格蘭) 感到憤怒 – 「心態」是否足夠？",
+        "title_en": "Tuchel angry at 'lucky' and 'sloppy' England - can 'mentality' be enough?"
+      },
+      {
+        "title": "「他將他們一路拖進了整個賽季」– England (英格蘭) 球員評分",
         "link": "https://www.bbc.co.uk/sport/football/articles/ckg0qpjeeryo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 23:51:39 GMT",
         "summary": "BBC Sport's England reporter Alex Howell rates the players after the Three Lions beat Norway to reach the World Cup semi-finals.",
-        "title_zh": "「他一路帶領球隊闖過整個錦標賽」 - 英格蘭球員評分",
+        "title_zh": "「他將他們一路拖進了整個賽季」– England (英格蘭) 球員評分",
         "title_en": "'He has dragged them through all tournament' - England player ratings"
       },
       {
-        "title": "「關鍵時刻的關鍵人物」 - Bellingham (貝林漢) 為英格蘭取得領先",
+        "title": "「關鍵時刻的男人」– Bellingham 為 England (英格蘭) 取得領先",
         "link": "https://www.bbc.co.uk/sport/football/videos/c20yrd39ge8o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 23:46:44 GMT",
         "summary": "Jude Bellingham scores his second goal of the game to give England a 2-1 lead over Norway during extra time of their 2026 World Cup quarter-final in Miami.",
-        "title_zh": "「關鍵時刻的關鍵人物」 - Bellingham (貝林漢) 為英格蘭取得領先",
+        "title_zh": "「關鍵時刻的男人」– Bellingham 為 England (英格蘭) 取得領先",
         "title_en": "'Man of all the moments' - Bellingham gives England the lead"
       },
       {
-        "title": "BBC 將轉播英格蘭世界盃準決賽",
+        "title": "Embolo 因誤認身份規則被紅牌驅逐",
+        "link": "https://www.bbc.co.uk/sport/football/articles/ckg0k5gdr79o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 12 Jul 2026 04:22:57 GMT",
+        "summary": "Switzerland's Breel Embolo becomes first player to be sent off as a result of a new law for mistaken identity at the World Cup.",
+        "title_zh": "Embolo 因誤認身份規則被紅牌驅逐",
+        "title_en": "Embolo sent off as result of mistaken identity rule"
+      },
+      {
+        "title": "球是否在 England (英格蘭) 進球前擊中 Spidercam？Snicko 說沒有 – Norway (挪威) 不確定",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cd95335dp10o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 12 Jul 2026 02:20:21 GMT",
+        "summary": "Norway's World Cup campaign ends in a quarter-final defeat by England, but they leave frustrated, arguing that Jude Bellingham's equaliser should not have counted.",
+        "title_zh": "球是否在 England (英格蘭) 進球前擊中 Spidercam？Snicko 說沒有 – Norway (挪威) 不確定",
+        "title_en": "Did ball hit spidercam before England goal? Snicko says not - Norway unsure"
+      },
+      {
+        "title": "BBC 將轉播 England (英格蘭) 的世界盃半決賽",
         "link": "https://www.bbc.co.uk/sport/football/articles/cx268mlg3lgo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 23:47:11 GMT",
-        "summary": "England's World Cup semi-final against Argentina or Switzerland will be broadcast live on BBC One and BBC iPlayer.",
-        "title_zh": "BBC 將轉播英格蘭世界盃準決賽",
+        "summary": "England's World Cup semi-final against Argentina will be broadcast live on BBC One and BBC iPlayer.",
+        "title_zh": "BBC 將轉播 England (英格蘭) 的世界盃半決賽",
         "title_en": "BBC to show England's World Cup semi-final"
       },
       {
-        "title": "還有誰？Bellingham (貝林漢) 如何再次變得不可或缺",
-        "link": "https://www.bbc.co.uk/sport/football/articles/ckg47l8nl7jo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 00:06:50 GMT",
-        "summary": "Senior football correspondent Sami Mokbel charts Jude Bellingham's remarkable resurgence with England at the World Cup.",
-        "title_zh": "還有誰？Bellingham (貝林漢) 如何再次變得不可或缺",
-        "title_en": "Who else? How Bellingham became indispensable again"
-      },
-      {
-        "title": "VAR 推翻英格蘭罰球的判決是否正確？",
+        "title": "VAR 推翻 England (英格蘭) 點球是否正確？",
         "link": "https://www.bbc.co.uk/sport/football/videos/c3dyj7j48v9o?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 11 Jul 2026 23:46:41 GMT",
         "summary": "England have a penalty overturned following a VAR review after Djed Spence was judged to have initiated the contact with Norway's Oscar Bobb during the first half of extra time in Miami.",
-        "title_zh": "VAR 推翻英格蘭罰球的判決是否正確？",
+        "title_zh": "VAR 推翻 England (英格蘭) 點球是否正確？",
         "title_en": "Was VAR right to overturn England penalty?"
       },
       {
-        "title": "為世界盃準決賽選出你的英格蘭先發 XI",
+        "title": "為 England (英格蘭) 的世界盃半決賽選出你的先發 XI",
         "link": "https://www.bbc.co.uk/sport/football/articles/cz75x4jgddpo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 12 Jul 2026 01:38:05 GMT",
         "summary": "England are through to the World Cup semi-finals, but who would you pick in your starting XI?",
-        "title_zh": "為世界盃準決賽選出你的英格蘭先發 XI",
+        "title_zh": "為 England (英格蘭) 的世界盃半決賽選出你的先發 XI",
         "title_en": "Pick your England XI for World Cup semi-final"
       },
       {
-        "title": "Fifa (國際足協) 官員拒絕回答 BBC 有關 Balogun (巴洛貢) 禁賽問題",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c4gy1j87e1yo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 22:45:41 GMT",
-        "summary": "The head of Fifa's disciplinary committee refuses to answer BBC questions about the decision-making process which led to United States striker Folarin Balogun avoiding a ban after being sent off.",
-        "title_zh": "Fifa (國際足協) 官員拒絕回答 BBC 有關 Balogun (巴洛貢) 禁賽問題",
-        "title_en": "Fifa official refuses to answer BBC's Balogun ban questions"
-      },
-      {
-        "title": "南非世界盃中場 Adams (亞當斯) 逝世，年僅 25 歲",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cr47y5nvrqlo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 14:47:47 GMT",
-        "summary": "South Africa and Mamelodi Sundowns midfielder Jayden Adams dies at the age of 25, just weeks after featuring for his country at the World Cup.",
-        "title_zh": "南非世界盃中場 Adams (亞當斯) 逝世，年僅 25 歲",
-        "title_en": "South Africa World Cup midfielder Adams dies aged 25"
-      },
-      {
-        "title": "Klopp (高普) 同意接替 Nagelsmann (納格爾斯曼) 擔任德國教練",
-        "link": "https://www.bbc.co.uk/sport/football/articles/ced44061g8qo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 14:48:39 GMT",
-        "summary": "Jurgen Klopp agrees a deal in principle to become the new head coach of Germany's men's national team after the resignation of Julian Nagelsmann.",
-        "title_zh": "Klopp (高普) 同意接替 Nagelsmann (納格爾斯曼) 擔任德國教練",
-        "title_en": "Klopp agrees to replace Nagelsmann as Germany coach"
-      },
-      {
-        "title": "阿根廷中場傳奇 Rattin (拉汀) 逝世，享壽 89 歲",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cwy09z3qlppo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 11 Jul 2026 22:24:27 GMT",
-        "summary": "Argentina great Antonio Rattin, whose sending-off at the 1966 World Cup led to the introduction of red and yellow cards, dies aged 89.",
-        "title_zh": "阿根廷中場傳奇 Rattin (拉汀) 逝世，享壽 89 歲",
-        "title_en": "Argentina midfield great Rattin dies aged 89"
+        "title": "研究顯示，足球運動員更容易罹患憂鬱症和焦慮症",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cn59nnkyy2go?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 12 Jul 2026 05:09:55 GMT",
+        "summary": "A new study finds evidence of reduced brain volume in former elite footballers, who also report difficulties with thinking skills and decision-making.",
+        "title_zh": "研究顯示，足球運動員更容易罹患憂鬱症和焦慮症",
+        "title_en": "Footballers more likely to suffer depression and anxiety - study"
       }
     ]
   },
-  "significant_changes": [
-    "200d9cd5eda092c7eb778cc104cd2fd2"
-  ],
+  "significant_changes": [],
   "stats": {
     "total_matches": 2,
-    "significant_changes_count": 1,
-    "api_remaining": "107"
+    "significant_changes_count": 0,
+    "api_remaining": "102"
   }
 }
