@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-13T17:35:43.725172+08:00",
-  "last_updated_display": "2026/07/13 17:35 (台北時間)",
+  "last_updated": "2026-07-13T22:11:58.859920+08:00",
+  "last_updated_display": "2026/07/13 22:11 (台北時間)",
   "matches": {
     "f9aa13a662d1658e5a02cfc06d6a2d73": {
       "id": "f9aa13a662d1658e5a02cfc06d6a2d73",
@@ -59,7 +59,7 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 2.37
+                "price": 2.36
               },
               "Spain": {
                 "price": 3.31
@@ -82,7 +82,7 @@
             },
             "totals": {
               "Over": {
-                "price": 1.89,
+                "price": 1.9,
                 "point": 2.5
               },
               "Under": {
@@ -94,9 +94,9 @@
         }
       ],
       "avg_odds": {
-        "France": 2.324,
+        "France": 2.328,
         "Spain": 3.263,
-        "Draw": 3.279
+        "Draw": 3.277
       },
       "true_probs": {
         "France": 41.3,
@@ -138,23 +138,17 @@
       "first_seen": "2026-07-11T05:53:09.968666+08:00",
       "is_new": false,
       "odds_change": {
-        "France": -0.005,
+        "France": -0.001,
         "Spain": 0.026,
-        "Draw": -0.019
+        "Draw": -0.021
       },
       "change_pct": {
-        "France": -0.21,
+        "France": -0.04,
         "Spain": 0.8,
-        "Draw": -0.58
+        "Draw": -0.64
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/11 05:53",
-          "France": 2.329,
-          "Spain": 3.237,
-          "Draw": 3.298
-        },
         {
           "time": "07/11 09:52",
           "France": 2.305,
@@ -268,6 +262,12 @@
           "France": 2.324,
           "Spain": 3.263,
           "Draw": 3.279
+        },
+        {
+          "time": "07/13 22:10",
+          "France": 2.328,
+          "Spain": 3.263,
+          "Draw": 3.277
         }
       ],
       "h2h_history": [
@@ -286,7 +286,7 @@
         {
           "date": "2021-10-10",
           "home": "Spain",
-          "score": "1-2",
+          "score": "2-1",
           "away": "France"
         }
       ],
@@ -322,7 +322,7 @@
           }
         ]
       },
-      "elo_diff": 40,
+      "elo_diff": 65,
       "xg_stats": {
         "home": {
           "for": 2.3,
@@ -335,9 +335,14 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "客讓",
-      "ai_rec_line": "+0.25",
-      "ai_analysis": "這是一場世足盃四強賽的歐洲強權對決，由攻擊火力強大的法國對陣防守穩固的西班牙。儘管莊家隱含勝率略為看好法國（41.3%），但綜合分析近期表現、歷史交手紀錄以及網路輿論，西班牙在本次對決中可能被市場低估。\n\n西班牙在最近四次與法國的交手中贏得其中三場，包括2024年歐洲國家盃準決賽（2-1）和2025年歐洲國家聯賽準決賽（5-4）。這顯示西班牙在關鍵時刻對陣法國時具備心理優勢和戰術有效性。此外，西班牙在本屆世界盃的防守表現極為出色，六場比賽僅失一球，而法國則攻入16球失2球。\n\n儘管法國擁有更高的Elo積分差距（40）和預期進球數xG（主隊 2.3進/1.1失），但西班牙的預期失球數xG僅為0.6，遠低於法國的1.1，顯示其防線非常堅固。網路輿論普遍認為法國是熱門，但也有不少聲音指出西班牙被低估，認為這是一場「五五波」的比賽，西班牙的控球和防守有望限制法國的進攻火力。\n\n考量到西班牙近期在對陣法國的比賽中展現出的競爭力，以及他們在本屆賽事中滴水不漏的防守，結合盤口走勢中法國獨贏賠率輕微下降但西班牙賠率略升，可能存在價值投注。因此，推薦投注客隊西班牙受讓 +0.25，這將涵蓋西班牙獲勝或平局兩種情況，風險相對較低。\n\n【💡 推薦：客讓 +0.25】\n西班牙在近期的關鍵對決中多次戰勝法國，且本屆世界盃防守異常穩固。儘管法國進攻強大，但西班牙有能力透過控球和嚴密防守來限制對手，盤口賠率可能低估了西班牙的勝算。\n\n【🤖 勝平負判斷：客小優 / 雙平】\n【🎯 最可能比分：1-1, 1-2】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：80%】\n【📊 雙方進球機率：70%】\n【🎯 預測比分：主隊 1:2 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.5】\n\n\n\n\n\n\n\n\n\n (World Cup 2026: 6連勝)\n (World Cup 2026: 5勝1平)",
+      "ai_rec_target": "主勝",
+      "ai_rec_line": "N/A",
+      "ai_rec_prob": 0.6,
+      "rec_odds": 2.328,
+      "ai_ev": 0.397,
+      "kelly_ratio": 0.2988,
+      "half_kelly_ratio": 0.1494,
+      "ai_analysis": "【💡 推薦：主勝】\n法國在本屆世界盃展現出強大的整體實力與進攻火力，尤其在淘汰賽階段連續三場在正規時間內取勝且零失球，士氣與狀態皆處於巔峰。儘管西班牙防守堅固且近期對戰紀錄佔優，但其晉級過程較為艱辛，且在八強賽才首次失球，顯示其防線並非密不透風。綜合考量Elo積分、xG數據以及市場普遍看好法國的趨勢，法國有望在正規時間內擊敗西班牙晉級決賽。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-1】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：80%】\n【📊 雙方進球機率：65%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "ced22494ae0bbb8cc4f7108bf6f493df": {
@@ -353,37 +358,37 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.1
+                "price": 3.13
               },
               "England": {
                 "price": 2.69
               },
               "Draw": {
-                "price": 2.95
+                "price": 2.92
               }
             },
             "spreads": {
               "Argentina": {
-                "price": 2.1,
+                "price": 2.12,
                 "point": -0.0,
-                "prob": 46.4
+                "prob": 46.1
               },
               "England": {
-                "price": 1.82,
+                "price": 1.81,
                 "point": 0.0,
-                "prob": 53.6
+                "prob": 53.9
               }
             },
             "totals": {
               "Over": {
-                "price": 2.02,
+                "price": 2.06,
                 "point": 2.25,
-                "prob": 48.2
+                "prob": 47.2
               },
               "Under": {
-                "price": 1.88,
+                "price": 1.84,
                 "point": 2.25,
-                "prob": 51.8
+                "prob": 52.8
               }
             }
           }
@@ -393,18 +398,18 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.0
+                "price": 3.05
               },
               "England": {
                 "price": 2.6
               },
               "Draw": {
-                "price": 3.0
+                "price": 2.9
               }
             },
             "totals": {
               "Over": {
-                "price": 2.23,
+                "price": 2.25,
                 "point": 2.5
               },
               "Under": {
@@ -422,48 +427,48 @@
                 "price": 3.05
               },
               "England": {
-                "price": 2.63
+                "price": 2.65
               },
               "Draw": {
-                "price": 2.95
+                "price": 2.88
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Argentina": 3.052,
-        "England": 2.628,
-        "Draw": 2.996
+        "Argentina": 3.053,
+        "England": 2.643,
+        "Draw": 2.973
       },
       "true_probs": {
         "Argentina": 31.4,
-        "England": 36.5,
-        "Draw": 32.0
+        "England": 36.3,
+        "Draw": 32.3
       },
       "other_markets": {
         "spreads": {
           "Argentina": {
-            "price": 2.1,
+            "price": 2.12,
             "point": -0.0,
-            "prob": 46.4
+            "prob": 46.1
           },
           "England": {
-            "price": 1.82,
+            "price": 1.81,
             "point": 0.0,
-            "prob": 53.6
+            "prob": 53.9
           }
         },
         "totals": {
           "Over": {
-            "price": 2.02,
+            "price": 2.06,
             "point": 2.25,
-            "prob": 48.2
+            "prob": 47.2
           },
           "Under": {
-            "price": 1.88,
+            "price": 1.84,
             "point": 2.25,
-            "prob": 51.8
+            "prob": 52.8
           }
         },
         "btts": {}
@@ -476,14 +481,14 @@
       "first_seen": "2026-07-12T13:48:25.940950+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.028,
-        "England": 0.11,
-        "Draw": -0.064
+        "Argentina": -0.027,
+        "England": 0.125,
+        "Draw": -0.087
       },
       "change_pct": {
-        "Argentina": -0.91,
-        "England": 4.37,
-        "Draw": -2.09
+        "Argentina": -0.88,
+        "England": 4.96,
+        "Draw": -2.84
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -546,12 +551,18 @@
           "Argentina": 3.052,
           "England": 2.628,
           "Draw": 2.996
+        },
+        {
+          "time": "07/13 22:10",
+          "Argentina": 3.053,
+          "England": 2.643,
+          "Draw": 2.973
         }
       ],
       "injury_alerts": [
         {
           "team": "England",
-          "title": "這是前所未有的時代 - 英格蘭（England）應好好享受",
+          "title": "這是前所未有的時刻 - 英格蘭（England）應該好好享受",
           "link": "https://www.bbc.co.uk/sport/football/articles/c932rqverkvo?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -605,91 +616,91 @@
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "ced22494ae0bbb8cc4f7108bf6f493df",
-      "f9aa13a662d1658e5a02cfc06d6a2d73"
+      "f9aa13a662d1658e5a02cfc06d6a2d73",
+      "ced22494ae0bbb8cc4f7108bf6f493df"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "這是前所未有的時代 - 英格蘭（England）應好好享受",
+        "title": "曼聯（Man Utd）簽下4800萬鎊的桑托斯（Santos），並接近簽下泰利曼斯（Tielemans）",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cn07dpgkj4eo?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 13 Jul 2026 14:09:00 GMT",
+        "summary": "Manchester United sign Andrey Santos from Chelsea and are in advanced talks with Aston Villa for Youri Tielemans.",
+        "title_zh": "曼聯（Man Utd）簽下4800萬鎊的桑托斯（Santos），並接近簽下泰利曼斯（Tielemans）",
+        "title_en": "Man Utd sign £48m Santos and close in on Tielemans"
+      },
+      {
+        "title": "最具效率？最具創意？空中優勢最佳？比較近四場",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cx2k9qj2nyvo?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 13 Jul 2026 11:05:25 GMT",
+        "summary": "BBC Sport compares statistics for France, Spain, Argentina and England in the World Cup so far as the semi-finalists prepare to meet.",
+        "title_zh": "最具效率？最具創意？空中優勢最佳？比較近四場",
+        "title_en": "Most clinical? Least creative? Best in the air? Comparing the last four"
+      },
+      {
+        "title": "Iraola：我想打造一支讓球迷感到驕傲的利物浦（Liverpool）球隊",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c5yz1xx14wpo?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 13 Jul 2026 12:54:09 GMT",
+        "summary": "Andoni Iraola wants to give Liverpool fans \"a team that they can be proud of\" and says he is ready for the responsibility of such a big job.",
+        "title_zh": "Iraola：我想打造一支讓球迷感到驕傲的利物浦（Liverpool）球隊",
+        "title_en": "I want to give fans a Liverpool team to be proud of - Iraola"
+      },
+      {
+        "title": "Chris Sutton 的世界盃準決賽預測",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c4gynmr6vjro?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 13 Jul 2026 09:55:54 GMT",
+        "summary": "BBC Sport's football expert Chris Sutton gives his predictions for the semi-final ties at the 2026 World Cup.",
+        "title_zh": "Chris Sutton 的世界盃準決賽預測",
+        "title_en": "Chris Sutton's World Cup semi-final predictions"
+      },
+      {
+        "title": "這是前所未有的時刻 - 英格蘭（England）應該好好享受",
         "link": "https://www.bbc.co.uk/sport/football/articles/c932rqverkvo?at_medium=RSS&at_campaign=rss",
         "published": "Mon, 13 Jul 2026 05:25:22 GMT",
         "summary": "A record of four semi-finals in the past five international tournaments for England is outstanding. It is time to accept that this is where England belong.",
-        "title_zh": "這是前所未有的時代 - 英格蘭（England）應好好享受",
+        "title_zh": "這是前所未有的時刻 - 英格蘭（England）應該好好享受",
         "title_en": "These are unprecedented times - England should enjoy them"
       },
       {
-        "title": "「我們可以達到另一個層次」 - Kane（凱恩）力挺感到挫敗的 Tuchel（圖赫爾）",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cy04xjlg5p4o?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 18:18:22 GMT",
-        "summary": "Captain Harry Kane says England \"have another level we can reach\" as they bid to win the World Cup for the first time since 1966.",
-        "title_zh": "「我們可以達到另一個層次」 - Kane（凱恩）力挺感到挫敗的 Tuchel（圖赫爾）",
-        "title_en": "'We have another level we can reach' - Kane defends frustrated Tuchel"
-      },
-      {
-        "title": "借來的鞋子，沒有金靴 - 世界盃（World Cup）史上最偉大射手的故事",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c621xndyd7no?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 13 Jul 2026 06:57:04 GMT",
-        "summary": "Just Fontaine's record of 13 goals in a single World Cup has stood for decades, but he never played in the tournament again after injury ended his career at the age of 28.",
-        "title_zh": "借來的鞋子，沒有金靴 - 世界盃（World Cup）史上最偉大射手的故事",
-        "title_en": "Borrowed shoes, no Golden Boot - the story of the World Cup's greatest scorer"
-      },
-      {
-        "title": "英格蘭（England）的飛行里程數是準決賽隊伍中最高 - 這重要嗎？",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cj4g7v9e51jo?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 13 Jul 2026 07:30:25 GMT",
-        "summary": "England have travelled far more than rivals France and Argentina as World Cup 2026 tests teams across North America.",
-        "title_zh": "英格蘭（England）的飛行里程數是準決賽隊伍中最高 - 這重要嗎？",
-        "title_en": "England top air miles among semi-finalists - does it matter?"
-      },
-      {
-        "title": "BBC（英國廣播公司）專家選出英格蘭（England）世界盃（World Cup）準決賽最佳 XI - 你同意嗎？",
+        "title": "BBC 專家選出他們心中的英格蘭（England）世界盃準決賽最佳 XI - 您同意嗎？",
         "link": "https://www.bbc.co.uk/sport/football/articles/cz75x4jgddpo?at_medium=RSS&at_campaign=rss",
         "published": "Mon, 13 Jul 2026 09:05:27 GMT",
         "summary": "England are through to the World Cup semi-finals, but who would you pick in your starting XI?",
-        "title_zh": "BBC（英國廣播公司）專家選出英格蘭（England）世界盃（World Cup）準決賽最佳 XI - 你同意嗎？",
+        "title_zh": "BBC 專家選出他們心中的英格蘭（England）世界盃準決賽最佳 XI - 您同意嗎？",
         "title_en": "BBC experts pick their England World Cup semi-final XI - do you agree?"
       },
       {
-        "title": "Infantino（因凡蒂諾）為 64 隊世界盃（World Cup）敞開大門",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cj9gm31jwg8o?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 19:18:56 GMT",
-        "summary": "Plans for a 64-team men's world cup are set to be picked up and assessed in detail after the 2026 tournament with Fifa boss Gianni Infantino saying football needs to be \"for the whole world\".",
-        "title_zh": "Infantino（因凡蒂諾）為 64 隊世界盃（World Cup）敞開大門",
-        "title_en": "Infantino opens door to 64-team World Cup"
+        "title": "借來的鞋子，沒有金靴 - 世界盃史上最偉大射手的傳奇",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c621xndyd7no?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 13 Jul 2026 06:57:04 GMT",
+        "summary": "Just Fontaine's record of 13 goals in a single World Cup has stood for decades, but he never played in the tournament again after injury ended his career at the age of 28.",
+        "title_zh": "借來的鞋子，沒有金靴 - 世界盃史上最偉大射手的傳奇",
+        "title_en": "Borrowed shoes, no Golden Boot - the story of the World Cup's greatest scorer"
       },
       {
-        "title": "Tuchel（圖赫爾）對英格蘭（England）的表現不滿 - 那為何他們持續獲勝？",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c7vy25lqll6o?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 12:19:03 GMT",
-        "summary": "Football tactics correspondent Umir Irfan examines why England are still winning games despite Thomas Tuchel insisting performances are not good.",
-        "title_zh": "Tuchel（圖赫爾）對英格蘭（England）的表現不滿 - 那為何他們持續獲勝？",
-        "title_en": "Tuchel unhappy with England display - so why do they keep winning?"
+        "title": "阿根廷（Argentina）將穿藍色客場球衣對陣英格蘭（England）",
+        "link": "https://www.bbc.co.uk/sport/football/articles/czx5v2p7qkgo?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 13 Jul 2026 12:14:11 GMT",
+        "summary": "Argentina will wear their navy blue away strip and England their all-white home strip when the two sides face each other in the World Cup semi-finals on Wednesday.",
+        "title_zh": "阿根廷（Argentina）將穿藍色客場球衣對陣英格蘭（England）",
+        "title_en": "Argentina to wear blue away kit against England"
       },
       {
-        "title": "「我們都應該興奮」 - Messi（梅西）將迎來首次與英格蘭（England）的對決",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cvgexz4qdlgo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 04:48:18 GMT",
-        "summary": "Lionel Messi is set for his first match against England after Argentina beat Switzerland in the World Cup quarter-finals.",
-        "title_zh": "「我們都應該興奮」 - Messi（梅西）將迎來首次與英格蘭（England）的對決",
-        "title_en": "'We should all be excited' - Messi set for first England meeting"
+        "title": "警長呼籲英國（UK）的英格蘭（England）球迷",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c5yz1zeyk8ko?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 13 Jul 2026 14:02:45 GMT",
+        "summary": "Police urge England fans at home to follow the example of supporters in the United States after several incidents over the weekend.",
+        "title_zh": "警長呼籲英國（UK）的英格蘭（England）球迷",
+        "title_en": "Police chief makes plea to England fans in UK"
       },
       {
-        "title": "「上帝之手」，Beckham（貝克漢）和「神獸」- 阿根廷（Argentina）與英格蘭（England）的世界盃（World Cup）宿敵",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c621y75w2x2o?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 10:10:33 GMT",
-        "summary": "As England and Argentina prepare to go head-to-head in Wednesday's World Cup semi-final, BBC Sport looks at their footballing rivalry.",
-        "title_zh": "「上帝之手」，Beckham（貝克漢）和「神獸」- 阿根廷（Argentina）與英格蘭（England）的世界盃（World Cup）宿敵",
-        "title_en": "'Animals', Hand of God and Beckham - Argentina and England's World Cup rivalry"
-      },
-      {
-        "title": "我是誰？猜猜世界盃（World Cup）球星 No. 36",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c62elldp6l7o?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 13 Jul 2026 05:29:30 GMT",
-        "summary": "Will you get today's player in as few attempts as possible?",
-        "title_zh": "我是誰？猜猜世界盃（World Cup）球星 No. 36",
-        "title_en": "Who am I? Guess World Cup star No 36"
+        "title": "西班牙（Spain）後衛 Leon 加入倫敦城獅子女（London City Lionesses）",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c20ynnvyx4yo?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 13 Jul 2026 11:01:16 GMT",
+        "summary": "Spain defender Mapi Leon joins London City Lionesses on a three-year deal following her exit from Barcelona.",
+        "title_zh": "西班牙（Spain）後衛 Leon 加入倫敦城獅子女（London City Lionesses）",
+        "title_en": "Spain defender Leon joins London City Lionesses"
       }
     ]
   },
@@ -699,7 +710,7 @@
   "stats": {
     "total_matches": 2,
     "significant_changes_count": 1,
-    "api_remaining": "57"
+    "api_remaining": "52"
   },
   "snapshots": [
     {
@@ -720,6 +731,10 @@
     },
     {
       "time": "2026-07-13T17:35:43.781905+08:00",
+      "matches_count": 2
+    },
+    {
+      "time": "2026-07-13T22:11:58.913071+08:00",
       "matches_count": 2
     }
   ]
