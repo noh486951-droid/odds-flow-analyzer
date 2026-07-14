@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-15T00:10:18.569134+08:00",
-  "last_updated_display": "2026/07/15 00:10 (台北時間)",
+  "last_updated": "2026-07-15T03:07:11.998326+08:00",
+  "last_updated_display": "2026/07/15 03:07 (台北時間)",
   "matches": {
     "f9aa13a662d1658e5a02cfc06d6a2d73": {
       "id": "f9aa13a662d1658e5a02cfc06d6a2d73",
@@ -18,10 +18,10 @@
                 "price": 2.38
               },
               "Spain": {
-                "price": 2.9
+                "price": 3.0
               },
               "Draw": {
-                "price": 3.3
+                "price": 3.1
               }
             },
             "totals": {
@@ -43,10 +43,10 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 2.35
+                "price": 2.4
               },
               "Spain": {
-                "price": 3.3
+                "price": 3.1
               },
               "Draw": {
                 "price": 3.1
@@ -59,34 +59,34 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 2.51
+                "price": 2.64
               },
               "Spain": {
-                "price": 3.3
+                "price": 3.21
               },
               "Draw": {
-                "price": 3.1
+                "price": 2.99
               }
             },
             "spreads": {
               "France": {
-                "price": 2.12,
+                "price": 2.23,
                 "point": -0.25,
-                "prob": 46.3
+                "prob": 44.1
               },
               "Spain": {
-                "price": 1.83,
+                "price": 1.76,
                 "point": 0.25,
-                "prob": 53.7
+                "prob": 55.9
               }
             },
             "totals": {
               "Over": {
-                "price": 1.95,
+                "price": 1.93,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.95,
+                "price": 1.98,
                 "point": 2.5
               }
             }
@@ -94,26 +94,26 @@
         }
       ],
       "avg_odds": {
-        "France": 2.416,
-        "Spain": 3.25,
-        "Draw": 3.14
+        "France": 2.52,
+        "Spain": 3.112,
+        "Draw": 2.936
       },
       "true_probs": {
-        "France": 39.8,
-        "Spain": 29.6,
-        "Draw": 30.6
+        "France": 37.5,
+        "Spain": 30.4,
+        "Draw": 32.2
       },
       "other_markets": {
         "spreads": {
           "France": {
-            "price": 2.12,
+            "price": 2.23,
             "point": -0.25,
-            "prob": 46.3
+            "prob": 44.1
           },
           "Spain": {
-            "price": 1.83,
+            "price": 1.76,
             "point": 0.25,
-            "prob": 53.7
+            "prob": 55.9
           }
         },
         "totals": {
@@ -138,23 +138,17 @@
       "first_seen": "2026-07-11T05:53:09.968666+08:00",
       "is_new": false,
       "odds_change": {
-        "France": 0.087,
-        "Spain": 0.013,
-        "Draw": -0.158
+        "France": 0.191,
+        "Spain": -0.125,
+        "Draw": -0.362
       },
       "change_pct": {
-        "France": 3.74,
-        "Spain": 0.4,
-        "Draw": -4.79
+        "France": 8.2,
+        "Spain": -3.86,
+        "Draw": -10.98
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/12 13:48",
-          "France": 2.334,
-          "Spain": 3.265,
-          "Draw": 3.274
-        },
         {
           "time": "07/12 16:02",
           "France": 2.323,
@@ -268,26 +262,39 @@
           "France": 2.416,
           "Spain": 3.25,
           "Draw": 3.14
+        },
+        {
+          "time": "07/15 03:05",
+          "France": 2.52,
+          "Spain": 3.112,
+          "Draw": 2.936
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "France",
+          "title": "法國（France）晉級準決賽的全部入球",
+          "link": "https://www.bbc.co.uk/sport/football/videos/c23yj388pryo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "h2h_history": [
         {
           "date": "2025-06-05",
-          "home": "Spain",
-          "score": "5-4",
-          "away": "France"
+          "home": "主隊",
+          "score": "4-5",
+          "away": "客隊"
         },
         {
           "date": "2024-07-09",
-          "home": "Spain",
-          "score": "2-1",
-          "away": "France"
+          "home": "主隊",
+          "score": "1-2",
+          "away": "客隊"
         },
         {
           "date": "2021-10-10",
-          "home": "Spain",
-          "score": "1-2",
-          "away": "France"
+          "home": "主隊",
+          "score": "2-1",
+          "away": "客隊"
         }
       ],
       "home_form": {
@@ -322,7 +329,7 @@
           }
         ]
       },
-      "elo_diff": 40,
+      "elo_diff": -27,
       "xg_stats": {
         "home": {
           "for": 2.3,
@@ -337,7 +344,12 @@
       "advancement_status": "",
       "ai_rec_target": "大球",
       "ai_rec_line": "2.5",
-      "ai_analysis": "💡 推薦：大球 2.5\n\n本場世界盃準決賽，法國與西班牙的對決預計將是一場進攻火力與防守韌性的激烈碰撞。儘管西班牙在本屆世界盃防守異常出色，僅失1球且預期失球數(xGA)極低，但法國擁有強大的進攻線，預期進球(xG)高達2.3 [系統提供數據]。更重要的是，兩隊近期在競技賽事交手時，往往出現大量進球，過去三場比賽平均每場產生5個進球，且雙方都有進球。此外，觀察到台灣運彩論壇中，有玩家針對莊家推薦小分的「反向指標」操作，建議投注大球，這也為大球提供了額外的支持。\n\n【🤖 勝平負判斷：雙平 / 主小優】\n【🎯 最可能比分：2-1、1-1】\n【📊 至少1球機率：98%】\n【📊 至少2球機率：85%】\n【📊 雙方進球機率：70%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：8%)】\n【⚽ 大小球推薦：大 2.5】",
+      "ai_rec_prob": 0.65,
+      "rec_odds": 1.9,
+      "ai_ev": 0.235,
+      "kelly_ratio": 0.2611,
+      "half_kelly_ratio": 0.1306,
+      "ai_analysis": "## 💡 推薦：大球 2.5\n\n### 分析理由\n這場世足準決賽，法國與西班牙的對決，從數據來看，雙方都有相當的進攻能力。法國近期表現強勢，尤其在進攻端火力全開，場均預期進球數 (xG) 顯示其具備持續製造進攻機會的能力。西班牙同樣擁有不俗的進攻數據，雖然整體 xG 可能略低於法國，但其控球率和傳導能力也常能創造得分機會。\n\n歷史交手紀錄顯示，這兩支隊伍的比賽往往進球較多，近期的交鋒中有出現過 5-4 的比賽結果。這表明雙方在對攻時，都有能力撕開對手的防線。儘管雙方都有穩健的防守，但準決賽的壓力下，進攻端更容易有所發揮。綜合考量雙方的進攻實力、歷史交手紀錄的得分趨勢，以及比賽的重要性可能帶來的開放性，推薦投注「大球 2.5」。\n\n### 數據來源\n- Elo 積分差距: 40\n- 近期 xG: 法國 2.3進/1.1失, 西班牙 1.8進/0.6失\n- 歷史交手紀錄: 包含高比分比賽 (如 5-4)\n\n### 網友風向\n目前網友普遍認為這是一場勢均力敵的比賽，但也有不少人期待一場進球大戰，尤其提到雙方在進攻端的火力。\n\n【🤖 勝平負判斷：雙平】\n【🎯 最可能比分：2-2, 3-2】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：75%】\n【📊 雙方進球機率：65%】\n【🎯 預測比分：主隊 2:2 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     },
     "ced22494ae0bbb8cc4f7108bf6f493df": {
@@ -353,25 +365,25 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.12
+                "price": 3.11
               },
               "England": {
-                "price": 2.7
+                "price": 2.73
               },
               "Draw": {
-                "price": 2.93
+                "price": 2.9
               }
             },
             "spreads": {
               "Argentina": {
-                "price": 2.11,
+                "price": 2.09,
                 "point": -0.0,
-                "prob": 46.3
+                "prob": 46.7
               },
               "England": {
-                "price": 1.82,
+                "price": 1.83,
                 "point": 0.0,
-                "prob": 53.7
+                "prob": 53.3
               }
             },
             "totals": {
@@ -396,10 +408,10 @@
                 "price": 3.0
               },
               "England": {
-                "price": 2.6
+                "price": 2.65
               },
               "Draw": {
-                "price": 3.0
+                "price": 2.95
               }
             },
             "totals": {
@@ -408,7 +420,7 @@
                 "point": 2.5
               },
               "Under": {
-                "price": 1.56,
+                "price": 1.55,
                 "point": 2.5
               }
             }
@@ -419,39 +431,39 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.05
+                "price": 3.0
               },
               "England": {
-                "price": 2.63
+                "price": 2.7
               },
               "Draw": {
-                "price": 2.95
+                "price": 2.88
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Argentina": 3.047,
-        "England": 2.666,
-        "Draw": 2.976
+        "Argentina": 3.042,
+        "England": 2.69,
+        "Draw": 2.949
       },
       "true_probs": {
         "Argentina": 31.6,
-        "England": 36.1,
-        "Draw": 32.3
+        "England": 35.8,
+        "Draw": 32.6
       },
       "other_markets": {
         "spreads": {
           "Argentina": {
-            "price": 2.11,
+            "price": 2.09,
             "point": -0.0,
-            "prob": 46.3
+            "prob": 46.7
           },
           "England": {
-            "price": 1.82,
+            "price": 1.83,
             "point": 0.0,
-            "prob": 53.7
+            "prob": 53.3
           }
         },
         "totals": {
@@ -476,23 +488,17 @@
       "first_seen": "2026-07-12T13:48:25.940950+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.033,
-        "England": 0.148,
-        "Draw": -0.084
+        "Argentina": -0.038,
+        "England": 0.172,
+        "Draw": -0.111
       },
       "change_pct": {
-        "Argentina": -1.07,
-        "England": 5.88,
-        "Draw": -2.75
+        "Argentina": -1.23,
+        "England": 6.83,
+        "Draw": -3.63
       },
-      "is_value_bet": false,
+      "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/12 13:48",
-          "Argentina": 3.08,
-          "England": 2.518,
-          "Draw": 3.06
-        },
         {
           "time": "07/12 16:02",
           "Argentina": 3.085,
@@ -606,9 +612,28 @@
           "Argentina": 3.047,
           "England": 2.666,
           "Draw": 2.976
+        },
+        {
+          "time": "07/15 03:05",
+          "Argentina": 3.042,
+          "England": 2.69,
+          "Draw": 2.949
         }
       ],
-      "h2h_history": [],
+      "h2h_history": [
+        {
+          "date": "2002-06-07",
+          "home": "Argentina",
+          "score": "0-1",
+          "away": "England"
+        },
+        {
+          "date": "1998-06-30",
+          "home": "Argentina",
+          "score": "2-2",
+          "away": "England (阿根廷點球勝)"
+        }
+      ],
       "home_form": {
         "record": "W",
         "wins": 1,
@@ -656,7 +681,12 @@
       "advancement_status": "",
       "ai_rec_target": "客勝",
       "ai_rec_line": "N/A",
-      "ai_analysis": "【💡 推薦：客勝 (Argentina)】\n\n阿根廷近期狀態絕佳，在近10場比賽中保持全勝，且場均進球數高達3球。儘管英格蘭擁有不錯的Elo積分 (2097)，但阿根廷的Elo積分更高 (2175)，且在FIFA世界排名中位居第一。此外，阿根廷近期xG數據 (2.1進/0.8失) [附加資訊] 優於英格蘭 (1.9進/0.7失) [附加資訊]，顯示其進攻效率和防守穩定性都更勝一籌。從盤口走勢和獨贏賠率變動來看，雖然英格蘭賠率有所上升，但阿根廷的盤口整體穩定，顯示市場對其信心不減。\n\n【🤖 勝平負判斷：客勝 】\n【🎯 最可能比分：1-2、0-1 】\n【📊 至少1球機率：85% 】\n【📊 至少2球機率：60% 】\n【📊 雙方進球機率：45% 】\n【🎯 預測比分：阿根廷 2:1 英格蘭 (預估此比分機率：20%) 】\n【⚽ 大小球推薦：小 2.25 】",
+      "ai_rec_prob": 0.4,
+      "rec_odds": 3.042,
+      "ai_ev": 0.217,
+      "kelly_ratio": 0.1062,
+      "half_kelly_ratio": 0.0531,
+      "ai_analysis": "本場世足盃四強賽，英格蘭與阿根廷的對決預計將是一場激烈且充滿看點的比賽。根據最新數據分析，阿根廷目前在FIFA世界排名中位居第一，而英格蘭則排名第四。在Elo積分方面，阿根廷以2175分略優於英格蘭的2095分。\n\n兩隊近期狀態都非常出色，阿根廷在世界盃中取得五連勝的完美戰績，而英格蘭也保持四勝一和的不敗紀錄。阿根廷的預期進球(xG)數據略高於英格蘭（2.1進/0.8失 vs 1.9進/0.7失），且在進攻火力上，阿根廷在五場比賽中攻入17球，優於英格蘭的13球。\n\n從盤口走勢來看，阿根廷的獨贏賠率微幅下降，而英格蘭的賠率則顯著上升，平手賠率也略有下降。這可能反映市場資金流向阿根廷或平局，即便網路輿論對英格蘭仍抱有一定期待，但莊家賠率的逆向移動（RLM）暗示阿根廷不敗可能存在價值。多數分析師也建議支持阿根廷至少不敗。考量阿根廷在關鍵時刻的取勝能力以及梅西的出色表現，他們在這場比賽中至少能立於不敗之地。\n\n【💡 推薦：客勝】\n儘管英格蘭實力強勁，但阿根廷憑藉更高的FIFA排名、Elo積分優勢、更好的xG數據以及穩定的盤口走向，預計能克服挑戰。\n\n【🤖 勝平負判斷：客小優】\n【🎯 最可能比分：1-2, 1-1】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：85%】\n【📊 雙方進球機率：70%】\n【🎯 預測比分：主隊 1:2 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：大 2.25】",
       "analysis_source": "gemini"
     }
   },
@@ -669,84 +699,84 @@
   "news": {
     "world_cup": [
       {
-        "title": "Barry 從 Accrington Stanley 到世界盃準決賽的旅程",
+        "title": "曼聯（Man Utd）以3500萬英鎊從阿士東維拉（Aston Villa）簽下Tielemans",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c9929gzdl2go?at_medium=RSS&at_campaign=rss",
+        "published": "Tue, 14 Jul 2026 18:45:08 GMT",
+        "summary": "Manchester United complete the signing of Youri Tielemans from Aston Villa on a five-year deal.",
+        "title_zh": "曼聯（Man Utd）以3500萬英鎊從阿士東維拉（Aston Villa）簽下Tielemans",
+        "title_en": "Man Utd sign Tielemans for £35m from Aston Villa"
+      },
+      {
+        "title": "維拉（Villa）因「Visit Rwanda」協議面臨體育洗白警告",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cm20211g25lo?at_medium=RSS&at_campaign=rss",
+        "published": "Tue, 14 Jul 2026 18:44:04 GMT",
+        "summary": "Aston Villa are warned their new £20m-a-year sponsorship deal with Visit Rwanda will be used by the nation to sportswash its human rights record.",
+        "title_zh": "維拉（Villa）因「Visit Rwanda」協議面臨體育洗白警告",
+        "title_en": "Villa warned over sportswashing after Visit Rwanda deal"
+      },
+      {
+        "title": "Balogun 在禁賽解除後預計將引發爭議",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cx262x3rmx2o?at_medium=RSS&at_campaign=rss",
+        "published": "Tue, 14 Jul 2026 17:02:17 GMT",
+        "summary": "United States striker Folarin Balogun knew the decision by Fifa to suspend his one-game ban at the World Cup was going to bring \"a lot of controversy\" and said it brought \"nerves\" on his team-mates.",
+        "title_zh": "Balogun 在禁賽解除後預計將引發爭議",
+        "title_en": "Balogun expected controversy after World Cup ban waived"
+      },
+      {
+        "title": "Barry 從雅士頓維拉（Accrington Stanley）到世界盃準決賽的旅程",
         "link": "https://www.bbc.co.uk/sport/football/articles/c4gyng8z8v2o?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 11:35:08 GMT",
         "summary": "His playing career peaked at Accrington Stanley - now Anthony Barry is Thomas Tuchel's right-hand man in England's bid for World Cup glory.",
-        "title_zh": "Barry 從 Accrington Stanley 到世界盃準決賽的旅程",
+        "title_zh": "Barry 從雅士頓維拉（Accrington Stanley）到世界盃準決賽的旅程",
         "title_en": "Barry's journey from Accrington Stanley to World Cup semi-final"
       },
       {
-        "title": "誰將贏得世界盃？準決賽球隊的觀點",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cjrgew3wv4xo?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 05:43:53 GMT",
-        "summary": "BBC Sport speaks to journalists and fans from the World Cup's four semi-finalists to see who they think will win the tournament.",
-        "title_zh": "誰將贏得世界盃？準決賽球隊的觀點",
-        "title_en": "Who will win the World Cup? The view from the semi-finalists"
-      },
-      {
-        "title": "Arsenal 同意 Trossard 轉會 Besiktas 的費用",
+        "title": "阿仙奴（Arsenal）同意以Trossard轉會比錫達斯（Besiktas）的費用",
         "link": "https://www.bbc.co.uk/sport/football/articles/cddldzme6g1o?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 14:11:47 GMT",
-        "summary": "Arsenal agree a transfer fee of about £17m (£20m euros) to sell Belgium forward Leandro Trossard to Beskitas.",
-        "title_zh": "Arsenal 同意 Trossard 轉會 Besiktas 的費用",
+        "summary": "Arsenal agree a transfer fee of about £17m (20m euros) to sell Belgium forward Leandro Trossard to Beskitas.",
+        "title_zh": "阿仙奴（Arsenal）同意以Trossard轉會比錫達斯（Besiktas）的費用",
         "title_en": "Arsenal agree fee for Trossard move to Besiktas"
       },
       {
-        "title": "為何阿根廷會唱有關英格蘭和福克蘭的歌？",
+        "title": "阿根廷（Argentina）為何唱關於英格蘭（England）和福克蘭群島的歌？",
         "link": "https://www.bbc.co.uk/sport/football/articles/c17y75qd8e4o?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 14:57:59 GMT",
         "summary": "While England see Argentina as football rivals, for Argentina the rivalry is much more than that.",
-        "title_zh": "為何阿根廷會唱有關英格蘭和福克蘭的歌？",
+        "title_zh": "阿根廷（Argentina）為何唱關於英格蘭（England）和福克蘭群島的歌？",
         "title_en": "Why do Argentina sing about England and the Falklands?"
       },
       {
-        "title": "英超規則限制世界盃防守——但非進攻",
+        "title": "友誼賽與提拔年輕球員——Alonso執教車路士（Chelsea）的首週",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c20yv3jmg01o?at_medium=RSS&at_campaign=rss",
+        "published": "Tue, 14 Jul 2026 17:44:27 GMT",
+        "summary": "Chelsea's entire pre-season is already mapped out by new boss Xabi Alonso, keen to make an early impact on his players before the season begins.",
+        "title_zh": "友誼賽與提拔年輕球員——Alonso執教車路士（Chelsea）的首週",
+        "title_en": "Secret friendlies and promoting youngsters - Alonso's first week at Chelsea"
+      },
+      {
+        "title": "英超（Premier League）規則管轄世界盃（World Cup）防守，而非進攻",
         "link": "https://www.bbc.co.uk/sport/football/articles/c5yzy9g501vo?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 15:19:17 GMT",
         "summary": "Do the World Cup semi-final line-ups show the world’s best attacking talent plays outside the Premier League?",
-        "title_zh": "英超規則限制世界盃防守——但非進攻",
+        "title_zh": "英超（Premier League）規則管轄世界盃（World Cup）防守，而非進攻",
         "title_en": "Premier League rules World Cup defences - but not attacks"
       },
       {
-        "title": "Bournemouth 以 2570 萬英鎊簽下前鋒 Rodriguez",
+        "title": "般茅（Bournemouth）以2570萬英鎊簽下前鋒Rodriguez",
         "link": "https://www.bbc.co.uk/sport/football/articles/c93239v347qo?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 15:28:51 GMT",
         "summary": "Bournemouth announce the signing of striker Alvaro Rodriguez from Spanish club Elche in a deal worth up to £25.7m.",
-        "title_zh": "Bournemouth 以 2570 萬英鎊簽下前鋒 Rodriguez",
+        "title_zh": "般茅（Bournemouth）以2570萬英鎊簽下前鋒Rodriguez",
         "title_en": "Bournemouth sign £25.7m striker Rodriguez"
       },
       {
-        "title": "Tielemans 進行體檢，Man Utd 尋找另一名中場",
-        "link": "https://www.bbc.co.uk/sport/football/articles/ckg4gqj5kk5o?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 11:52:08 GMT",
-        "summary": "Manchester United are still in the market for another midfielder despite the signing of Andrey Santos and impending arrival of Youri Tielemans.",
-        "title_zh": "Tielemans 進行體檢，Man Utd 尋找另一名中場",
-        "title_en": "Man Utd seek another midfielder as Tielemans has medical"
-      },
-      {
-        "title": "Lamine Yamal 對決 Mbappe：西甲球星準備在世界盃正面交鋒",
-        "link": "https://www.bbc.co.uk/sport/football/articles/clywep30z7jo?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 05:13:23 GMT",
-        "summary": "France face Spain for a place in the World Cup final on Tuesday, meaning a showdown between Kylian Mbappe and Lamine Yamal. Who comes out on top?",
-        "title_zh": "Lamine Yamal 對決 Mbappe：西甲球星準備在世界盃正面交鋒",
-        "title_en": "Lamine Yamal v Mbappe: La Liga stars set for World Cup showdown"
-      },
-      {
-        "title": "Brighton 以俱樂部創紀錄的 4600 萬英鎊從 Spurs 簽下 Vuskovic",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cy7370x2yp7o?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 10:08:08 GMT",
-        "summary": "Brighton sign Croatia defender Luka Vuskovic from Tottenham for a club record fee of £46m on a five-year contract, with an option for a further year.",
-        "title_zh": "Brighton 以俱樂部創紀錄的 4600 萬英鎊從 Spurs 簽下 Vuskovic",
-        "title_en": "Brighton sign Vuskovic from Spurs for club record £46m"
-      },
-      {
-        "title": "Everton 從 Leicester 簽下法國前鋒 Mouchon",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c8727e5d4ejo?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 15:44:03 GMT",
-        "summary": "Everton sign France forward Noemie Mouchon on a free transfer from Leicester City.",
-        "title_zh": "Everton 從 Leicester 簽下法國前鋒 Mouchon",
-        "title_en": "Everton sign France forward Mouchon from Leicester"
+        "title": "車路士（Chelsea）同意曼聯（Man Utd）前鋒Malard的轉會費用",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c62120n7y8jo?at_medium=RSS&at_campaign=rss",
+        "published": "Tue, 14 Jul 2026 18:35:30 GMT",
+        "summary": "Chelsea agree a deal worth about £850,000 to sign Manchester United striker Melvine Malard.",
+        "title_zh": "車路士（Chelsea）同意曼聯（Man Utd）前鋒Malard的轉會費用",
+        "title_en": "Chelsea agree fee for Man Utd striker Malard"
       }
     ]
   },
@@ -757,11 +787,15 @@
   "stats": {
     "total_matches": 2,
     "significant_changes_count": 2,
-    "api_remaining": "11"
+    "api_remaining": "8"
   },
   "snapshots": [
     {
       "time": "2026-07-15T00:10:18.626394+08:00",
+      "matches_count": 2
+    },
+    {
+      "time": "2026-07-15T03:07:12.053345+08:00",
       "matches_count": 2
     }
   ]
