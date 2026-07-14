@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-14T15:50:27.407387+08:00",
-  "last_updated_display": "2026/07/14 15:50 (台北時間)",
+  "last_updated": "2026-07-14T18:39:26.645277+08:00",
+  "last_updated_display": "2026/07/14 18:39 (台北時間)",
   "matches": {
     "f9aa13a662d1658e5a02cfc06d6a2d73": {
       "id": "f9aa13a662d1658e5a02cfc06d6a2d73",
@@ -15,10 +15,10 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 2.4
+                "price": 2.38
               },
               "Spain": {
-                "price": 2.8
+                "price": 2.9
               },
               "Draw": {
                 "price": 3.3
@@ -43,13 +43,13 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 2.35
+                "price": 2.3
               },
               "Spain": {
                 "price": 3.2
               },
               "Draw": {
-                "price": 3.2
+                "price": 3.3
               }
             }
           }
@@ -59,34 +59,34 @@
           "markets": {
             "h2h": {
               "France": {
-                "price": 2.5
+                "price": 2.44
               },
               "Spain": {
-                "price": 3.18
+                "price": 3.28
               },
               "Draw": {
-                "price": 3.2
+                "price": 3.21
               }
             },
             "spreads": {
               "France": {
-                "price": 2.12,
+                "price": 2.08,
                 "point": -0.25,
-                "prob": 46.1
+                "prob": 47.1
               },
               "Spain": {
-                "price": 1.81,
+                "price": 1.85,
                 "point": 0.25,
-                "prob": 53.9
+                "prob": 52.9
               }
             },
             "totals": {
               "Over": {
-                "price": 1.96,
+                "price": 1.99,
                 "point": 2.5
               },
               "Under": {
-                "price": 1.93,
+                "price": 1.92,
                 "point": 2.5
               }
             }
@@ -94,26 +94,26 @@
         }
       ],
       "avg_odds": {
-        "France": 2.424,
-        "Spain": 3.148,
-        "Draw": 3.236
+        "France": 2.392,
+        "Spain": 3.204,
+        "Draw": 3.22
       },
       "true_probs": {
-        "France": 39.7,
-        "Spain": 30.6,
-        "Draw": 29.7
+        "France": 40.2,
+        "Spain": 30.0,
+        "Draw": 29.8
       },
       "other_markets": {
         "spreads": {
           "France": {
-            "price": 2.12,
+            "price": 2.08,
             "point": -0.25,
-            "prob": 46.1
+            "prob": 47.1
           },
           "Spain": {
-            "price": 1.81,
+            "price": 1.85,
             "point": 0.25,
-            "prob": 53.9
+            "prob": 52.9
           }
         },
         "totals": {
@@ -138,23 +138,17 @@
       "first_seen": "2026-07-11T05:53:09.968666+08:00",
       "is_new": false,
       "odds_change": {
-        "France": 0.095,
-        "Spain": -0.089,
-        "Draw": -0.062
+        "France": 0.063,
+        "Spain": -0.033,
+        "Draw": -0.078
       },
       "change_pct": {
-        "France": 4.08,
-        "Spain": -2.75,
-        "Draw": -1.88
+        "France": 2.71,
+        "Spain": -1.02,
+        "Draw": -2.37
       },
-      "is_value_bet": true,
+      "is_value_bet": false,
       "odds_timeline": [
-        {
-          "time": "07/12 02:47",
-          "France": 2.368,
-          "Spain": 3.21,
-          "Draw": 3.245
-        },
         {
           "time": "07/12 05:41",
           "France": 2.351,
@@ -268,34 +262,22 @@
           "France": 2.424,
           "Spain": 3.148,
           "Draw": 3.236
+        },
+        {
+          "time": "07/14 18:38",
+          "France": 2.392,
+          "Spain": 3.204,
+          "Draw": 3.22
         }
       ],
       "injury_alerts": [
         {
           "team": "France",
-          "title": "挑戰者對決衛冕者：Spain (西班牙) 將與 France (法國) 爭奪決賽席位",
-          "link": "https://www.bbc.co.uk/sport/football/articles/clywep30z7jo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "team": "France",
-          "title": "France (法國) 晉級準決賽的所有進球",
+          "title": "法國 (France) 晉級準決賽的所有進球",
           "link": "https://www.bbc.co.uk/sport/football/videos/c23yj388pryo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "h2h_history": [
-        {
-          "date": "2025-06-05",
-          "home": "主隊 Spain",
-          "score": "5-4",
-          "away": "France"
-        },
-        {
-          "date": "2024-07-09",
-          "home": "主隊 Spain",
-          "score": "2-1",
-          "away": "France"
-        }
-      ],
+      "h2h_history": [],
       "home_form": {
         "record": "W",
         "wins": 1,
@@ -328,10 +310,10 @@
           }
         ]
       },
-      "elo_diff": -117,
+      "elo_diff": 40,
       "xg_stats": {
         "home": {
-          "for": 2.02,
+          "for": 2.3,
           "against": 1.1
         },
         "away": {
@@ -341,14 +323,7 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "主勝",
-      "ai_rec_line": "N/A",
-      "ai_rec_prob": 0.65,
-      "rec_odds": 2.368,
-      "ai_ev": 0.539,
-      "kelly_ratio": 0.3942,
-      "half_kelly_ratio": 0.1971,
-      "ai_analysis": "## 💡 投注推薦\n推薦法國隊獲勝，他們在進攻端火力全開，近期狀態極佳，且擁有更深厚的陣容深度，這將是他們連續第三次進入決賽的關鍵一步。\n\n**推薦理由：**\n法國隊在本次世界盃展現出強大的統治力，場均進球數和進攻效率都名列前茅。儘管西班牙隊防守穩固，但面對法國隊的多元化進攻，尤其是在姆巴佩領銜下的鋒線，將面臨嚴峻考驗。儘管西班牙隊在近期交手記錄中佔優，但法國隊在世界盃淘汰賽的經驗和穩定性更勝一籌。盤口數據和專家分析也普遍看好法國隊晉級。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：France 2-1 Spain】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：75%】\n【📊 雙方進球機率：60%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：25%)】\n【⚽ 大小球推薦：大 2.5】",
+      "ai_analysis": "## 💡 投注推薦：法國勝\n\n法國隊以其強大的進攻火力、在世足賽中的穩定表現以及 Kylian Mbappé 的出色狀態，成為本場比賽的熱門。儘管西班牙隊擁有堅固的防守和不敗的紀錄，但法國隊在關鍵比賽中的經驗和得分能力稍佔優勢。\n\n**推薦原因：**\n\n法國隊在本次世界盃中展現了驚人的進攻效率，場均進球數位居前列，並且在關鍵的淘汰賽階段表現穩定。Kylian Mbappé 更是以 8 個進球領跑射手榜，狀態火熱。雖然西班牙隊近期狀態極佳，保持了 36 場不敗的紀錄，且防守穩固，但面對火力全開的法國隊，尤其是在擁有 Mbappé 這樣決定性球員的陣容下，法國隊在 90 分鐘內取勝的可能性更高。盤口賠率也顯示法國隊略微領先，現盤賠率為 2.392。\n\n## 賭盤資訊\n**推薦投注標的：** 主勝\n**推薦投注門檻值：** N/A\n**AI 預估推薦項勝率：** 62%\n**推薦項盤口賠率：** 2.392\n\n**🤖 勝平負判斷：** 主勝\n**🎯 最可能比分：** 2-1, 1-0\n**📊 至少1球機率：** 95%\n**📊 至少2球機率：** 75%\n**📊 雙方進球機率：** 60%\n**🎯 預測比分：** 法國 2:1 西班牙 (預估此比分機率：15%)\n**⚽ 大小球推薦：** 大 2.5\n**📊 AI 評估主隊真實 Elo：** 1934 (根據 FIFA/Coco-Cola Elo 積分，法國為 1948.97，西班牙為 1934.79；World Football Elo Ratings 顯示法國與西班牙的 Elo 積分接近，約在 1900 區間)\n**📊 AI 評估客隊真實 Elo：** 1934\n**📊 AI 評估主隊近期 xG：** 1.8 (根據搜尋結果，法國隊在對陣摩洛哥時 xG 為 3.69，對陣巴拉圭為 1.45，顯示其進攻端有較高預期進球)\n**📊 AI 評估客隊近期 xG：** 1.8 (根據搜尋結果，西班牙隊在對陣比利時時 xG 為 1.96，對陣葡萄牙時為 1.77，顯示其進攻端也有不錯的預期進球)\n**📊 H2H交手：** 2025-06-05 西班牙 5-4 法國 | 2024-07-09 西班牙 2-1 法國 | 2021-10-10 西班牙 1-2 法國 (綜合搜尋結果，兩隊近期交手紀錄顯示西班牙佔有優勢，但這場是世足淘汰賽，過往交手數據僅供參考)\n**📊 近期主隊戰績：** W-W-W-W-W (法國隊在本次世界盃中保持全勝)\n**📊 近期客隊戰績：** W-W-W-W-D (西班牙隊近期狀態極佳，僅在小組賽有平局，其餘均為獲勝)",
       "analysis_source": "gemini"
     },
     "ced22494ae0bbb8cc4f7108bf6f493df": {
@@ -404,13 +379,13 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.1
+                "price": 3.0
               },
               "England": {
-                "price": 2.55
+                "price": 2.65
               },
               "Draw": {
-                "price": 2.9
+                "price": 2.88
               }
             },
             "totals": {
@@ -419,7 +394,7 @@
                 "point": 2.5
               },
               "Under": {
-                "price": 1.56,
+                "price": 1.55,
                 "point": 2.5
               }
             }
@@ -430,10 +405,10 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.15
+                "price": 3.05
               },
               "England": {
-                "price": 2.63
+                "price": 2.7
               },
               "Draw": {
                 "price": 2.85
@@ -443,14 +418,14 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 3.057,
-        "England": 2.645,
-        "Draw": 2.967
+        "Argentina": 3.045,
+        "England": 2.663,
+        "Draw": 2.954
       },
       "true_probs": {
-        "Argentina": 31.4,
-        "England": 36.3,
-        "Draw": 32.3
+        "Argentina": 31.5,
+        "England": 36.0,
+        "Draw": 32.5
       },
       "other_markets": {
         "spreads": {
@@ -487,14 +462,14 @@
       "first_seen": "2026-07-12T13:48:25.940950+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.023,
-        "England": 0.127,
-        "Draw": -0.093
+        "Argentina": -0.035,
+        "England": 0.145,
+        "Draw": -0.106
       },
       "change_pct": {
-        "Argentina": -0.75,
-        "England": 5.04,
-        "Draw": -3.04
+        "Argentina": -1.14,
+        "England": 5.76,
+        "Draw": -3.46
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -599,38 +574,32 @@
           "Argentina": 3.057,
           "England": 2.645,
           "Draw": 2.967
+        },
+        {
+          "time": "07/14 18:38",
+          "Argentina": 3.045,
+          "England": 2.663,
+          "Draw": 2.954
         }
       ],
       "h2h_history": [
         {
-          "date": "1962-06-02",
-          "home": "英格蘭",
-          "score": "3-1",
-          "away": "阿根廷"
-        },
-        {
-          "date": "1966-07-23",
-          "home": "英格蘭",
-          "score": "1-0",
-          "away": "阿根廷"
-        },
-        {
-          "date": "1986-06-22",
-          "home": "阿根廷",
-          "score": "2-1",
-          "away": "英格蘭"
-        },
-        {
-          "date": "1998-06-30",
-          "home": "阿根廷",
-          "score": "2-2",
-          "away": "英格蘭 (PK勝)"
+          "date": "2005-11-12",
+          "home": "主隊 England",
+          "score": "3-2",
+          "away": "客隊 Argentina"
         },
         {
           "date": "2002-06-07",
-          "home": "英格蘭",
-          "score": "1-0",
-          "away": "阿根廷"
+          "home": "主隊 Argentina",
+          "score": "0-1",
+          "away": "客隊 England"
+        },
+        {
+          "date": "1998-06-30",
+          "home": "主隊 Argentina",
+          "score": "2-2",
+          "away": "客隊 England (Argentina win 6-5 on penalties)"
         }
       ],
       "home_form": {
@@ -668,114 +637,114 @@
       "elo_diff": -78,
       "xg_stats": {
         "home": {
-          "for": 1.9,
+          "for": 1.6,
           "against": 0.7
         },
         "away": {
-          "for": 2.1,
+          "for": 1.65,
           "against": 0.8
         }
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "和局",
-      "ai_rec_line": "N/A",
-      "ai_rec_prob": 0.45,
-      "rec_odds": 2.967,
-      "ai_ev": 0.335,
-      "kelly_ratio": 0.1704,
-      "half_kelly_ratio": 0.0852,
-      "ai_analysis": "## 💡 投注推薦：和局\n\n這場英格蘭對陣阿根廷的世界盃準決賽，預計將會是一場勢均力敵的比賽。兩隊的實力非常接近，且在過往交手中，英格蘭略佔優勢，但阿根廷也曾多次取勝，尤其是在關鍵淘汰賽階段。考慮到兩隊都擁有強大的進攻火力（阿根廷 xG 2.1進/0.8失，英格蘭 xG 1.9進/0.7失），預計比賽將有較多進球機會，但同時雙方防守也相當穩固，進球將會十分艱難。盤口走勢顯示獨贏賠率變動不大，沒有明顯的方向性，和局的賠率在2.967，相對吸引人。綜合來看，雙方極有可能在法定時間內戰成平手，將比賽拖入延長賽。\n\n## 分析理由：\n英格蘭的 Elo 評分為 2097，而阿根廷的 Elo 評分為 2175，兩隊在 Elo 積分上非常接近，顯示實力相當。歷史交手紀錄顯示，英格蘭與阿根廷在世界盃交手過五次，英格蘭取得三勝，阿根廷兩勝（包含一次PK勝）。近期戰績方面，兩隊近期表現皆為 1勝0負（含主客場拆分），顯示近期狀態不俗。\n\n從進攻端來看，阿根廷的預期進球 (xG) 為 2.1，失球為 0.8，而英格蘭的 xG 為 1.9，失球為 0.7。這數據顯示兩隊都有很強的進攻能力，同時防守也較為穩固。大小分盤設定為 2.25，暗示著進球數可能不會非常懸殊，但雙方都有能力進球。\n\n盤口方面，獨贏賠率變動顯示 England 的賠率略有上升 (↑ +0.127)，而 Argentina 和 Draw 的賠率則下降 (↓ -0.023, ↓ -0.093)。這種盤口變動相對平穩，沒有明顯的資金流向指示。綜合以上因素，預計這場比賽將是一場膠著的戰鬥，最終以平局收場的可能性較高。\n\n## 賽事數據：\n【🤖 勝平負判斷：雙平】\n【🎯 最可能比分：1-1、2-1】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：70%】\n【📊 雙方進球機率：60%】\n【🎯 預測比分：英格蘭 1:1 阿根廷 (預估此比分機率：30%)】\n【⚽ 大小球推薦：小 2.25】",
+      "ai_rec_target": "大球",
+      "ai_rec_line": "2.5",
+      "ai_rec_prob": 0.65,
+      "rec_odds": 1.85,
+      "ai_ev": 0.203,
+      "kelly_ratio": 0.2382,
+      "half_kelly_ratio": 0.1191,
+      "ai_analysis": "【💡 推薦：大球 2.5】\n\n這場英格蘭對阿根廷的世足準決賽，儘管兩隊近期戰績看起來是 W (1勝0負)，但搜尋結果顯示雙方在國際賽事中進攻火力不俗，尤其是在淘汰賽階段，許多比賽都出現了進球。Messi 和 Kane/Bellingham 的對決，加上阿根廷近5場平均攻入2.8球，英格蘭近期也平均每場打進2.3球，兩隊都有能力在攻防轉換中找到機會。盤口賠率也暗示了進球的可能性，初盤和現盤都對大球有所傾向，因此推薦投注大球 2.5。\n\n【🤖 勝平負判斷：雙平】\n【🎯 最可能比分：2-2、1-1】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：75%】\n【📊 雙方進球機率：65%】\n【🎯 預測比分：主隊 2:2 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.5】",
       "analysis_source": "gemini"
     }
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "f9aa13a662d1658e5a02cfc06d6a2d73",
-      "ced22494ae0bbb8cc4f7108bf6f493df"
+      "ced22494ae0bbb8cc4f7108bf6f493df",
+      "f9aa13a662d1658e5a02cfc06d6a2d73"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "誰將贏得世界盃？來自準決賽隊伍的觀點",
+        "title": "誰將贏得世界盃？來自晉級四強隊伍的觀點",
         "link": "https://www.bbc.co.uk/sport/football/articles/cjrgew3wv4xo?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 05:43:53 GMT",
         "summary": "BBC Sport speaks to journalists and fans from the World Cup's four semi-finalists to see who they think will win the tournament.",
-        "title_zh": "誰將贏得世界盃？來自準決賽隊伍的觀點",
+        "title_zh": "誰將贏得世界盃？來自晉級四強隊伍的觀點",
         "title_en": "Who will win the World Cup? The view from the semi-finalists"
       },
       {
-        "title": "挑戰者對決衛冕者：Spain (西班牙) 將與 France (法國) 爭奪決賽席位",
+        "title": "Brighton 以俱樂部創紀錄的 4600 萬英鎊簽下 Spurs 的 Vuskovic",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cy7370x2yp7o?at_medium=RSS&at_campaign=rss",
+        "published": "Tue, 14 Jul 2026 10:08:08 GMT",
+        "summary": "Brighton sign Croatia defender Luka Vuskovic from Tottenham for a club record fee of £46m on a five-year contract, with an option for a further year.",
+        "title_zh": "Brighton 以俱樂部創紀錄的 4600 萬英鎊簽下 Spurs 的 Vuskovic",
+        "title_en": "Brighton sign Vuskovic from Spurs for club record £46m"
+      },
+      {
+        "title": "Lamine Yamal 對決 Mbappe：La Liga 明星們準備迎戰世界盃對決",
         "link": "https://www.bbc.co.uk/sport/football/articles/clywep30z7jo?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 05:13:23 GMT",
         "summary": "France face Spain for a place in the World Cup final on Tuesday, meaning a showdown between Kylian Mbappe and Lamine Yamal. Who comes out on top?",
-        "title_zh": "挑戰者對決衛冕者：Spain (西班牙) 將與 France (法國) 爭奪決賽席位",
-        "title_en": "Challenger v champion as Spain face France for place in final"
+        "title_zh": "Lamine Yamal 對決 Mbappe：La Liga 明星們準備迎戰世界盃對決",
+        "title_en": "Lamine Yamal v Mbappe: La Liga stars set for World Cup showdown"
       },
       {
-        "title": "England (英格蘭) 將在世界盃準決賽對 Rice (賴斯) 做出最後決定",
+        "title": "英格蘭將在最後關頭決定 Rice 是否參加世界盃準決賽",
         "link": "https://www.bbc.co.uk/sport/football/articles/ce8m996g9g1o?at_medium=RSS&at_campaign=rss",
         "published": "Mon, 13 Jul 2026 21:30:05 GMT",
         "summary": "England will make a late decision on whether Declan Rice is fit to start Wednesday's World Cup semi-final against Argentina.",
-        "title_zh": "England (英格蘭) 將在世界盃準決賽對 Rice (賴斯) 做出最後決定",
+        "title_zh": "英格蘭將在最後關頭決定 Rice 是否參加世界盃準決賽",
         "title_en": "England to make late call on Rice for World Cup semi-final"
       },
       {
-        "title": "England (英格蘭) 和 Argentina (阿根廷) 的對決將加強安保",
+        "title": "英格蘭 (England) 與阿根廷 (Argentina) 賽事加強安保",
         "link": "https://www.bbc.co.uk/sport/football/articles/clyey5glv4ko?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 07:14:16 GMT",
         "summary": "Authorities say there will be increased security measures in place for Wednesday's World Cup semi-final between England and Argentina in Atlanta.",
-        "title_zh": "England (英格蘭) 和 Argentina (阿根廷) 的對決將加強安保",
+        "title_zh": "英格蘭 (England) 與阿根廷 (Argentina) 賽事加強安保",
         "title_en": "Increased security for England and Argentina tie"
       },
       {
-        "title": "我是誰？猜猜世界盃球星 No 37",
+        "title": "前溫布頓冠軍 Bartoli 談論 Deschamps：一位贏家和摯友",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c77y2151e4go?at_medium=RSS&at_campaign=rss",
+        "published": "Tue, 14 Jul 2026 09:03:14 GMT",
+        "summary": "Former Wimbledon champion Marion Bartoli speaks about her friendship with France boss Didier Deschamps.",
+        "title_zh": "前溫布頓冠軍 Bartoli 談論 Deschamps：一位贏家和摯友",
+        "title_en": "A winner and true friend - ex-Wimbledon champion Bartoli on Deschamps"
+      },
+      {
+        "title": "我是誰？猜猜看世界盃明星 37 號",
         "link": "https://www.bbc.co.uk/sport/football/articles/c8e82462y7eo?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 05:25:53 GMT",
         "summary": "Will you get today's player in as few attempts as possible?",
-        "title_zh": "我是誰？猜猜世界盃球星 No 37",
+        "title_zh": "我是誰？猜猜看世界盃明星 37 號",
         "title_en": "Who am I? Guess World Cup star No 37"
       },
       {
-        "title": "Kane (凱恩) 表示 England (英格蘭) 「完全團結」，「製造分裂很容易」",
+        "title": "Kane 表示英格蘭「完全團結」，「製造分裂很容易」",
         "link": "https://www.bbc.co.uk/sport/football/articles/c8924433kjyo?at_medium=RSS&at_campaign=rss",
         "published": "Mon, 13 Jul 2026 22:08:56 GMT",
         "summary": "England captain Harry Kane says the squad are \"completely together\" before their World Cup semi-final against Argentina.",
-        "title_zh": "Kane (凱恩) 表示 England (英格蘭) 「完全團結」，「製造分裂很容易」",
+        "title_zh": "Kane 表示英格蘭「完全團結」，「製造分裂很容易」",
         "title_en": "'Easy to create divisions' - Kane says England are 'completely together'"
       },
       {
-        "title": "Deschamps (德尚) 預測 France (法國) 對 Spain (西班牙) 的準決賽將「精彩絕倫」",
+        "title": "Deschamps 預測法國 (France) 對西班牙 (Spain) 的精彩準決賽",
         "link": "https://www.bbc.co.uk/sport/football/articles/c79y29l32gxo?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 00:10:04 GMT",
         "summary": "France boss Didier Deschamps is predicting a \"spectacular\" semi-final when his exciting side take on Spain in a heavyweight World Cup showdown in Dallas.",
-        "title_zh": "Deschamps (德尚) 預測 France (法國) 對 Spain (西班牙) 的準決賽將「精彩絕倫」",
-        "title_en": "Deschamps predicts 'spectacular' France v Spain semi-final"
+        "title_zh": "Deschamps 預測法國 (France) 對西班牙 (Spain) 的精彩準決賽",
+        "title_en": "Deschamps predicts spectacular France v Spain semi-final"
       },
       {
-        "title": "London City (倫敦城) 的 Asllani (阿斯蘭尼) 將簽下一年的續約",
+        "title": "London City 的 Asllani 將簽下一年份的續約",
         "link": "https://www.bbc.co.uk/sport/football/articles/cj9ggg2z0l4o?at_medium=RSS&at_campaign=rss",
         "published": "Tue, 14 Jul 2026 07:27:27 GMT",
         "summary": "London City Lionesses captain Kosovare Asllani signs a one-year contract extension despite suffering a serious injury.",
-        "title_zh": "London City (倫敦城) 的 Asllani (阿斯蘭尼) 將簽下一年的續約",
+        "title_zh": "London City 的 Asllani 將簽下一年份的續約",
         "title_en": "London City's Asllani to sign one-year extension"
-      },
-      {
-        "title": "Alonso (阿隆索) 表示時間讓他去了 Chelsea (切爾西) 而非 Liverpool (利物浦)",
-        "link": "https://www.bbc.co.uk/sport/football/articles/czj8rzxrp88o?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 13 Jul 2026 19:00:16 GMT",
-        "summary": "Chelsea manager Xabi Alonso says his arrival at Stamford Bridge instead of Liverpool was \"about timings\".",
-        "title_zh": "Alonso (阿隆索) 表示時間讓他去了 Chelsea (切爾西) 而非 Liverpool (利物浦)",
-        "title_en": "Timing took me to Chelsea rather than Liverpool - Alonso"
-      },
-      {
-        "title": "Man Utd (曼聯) 以 4800 萬英鎊簽下 Santos (桑托斯)，並接近簽下 Tielemans (蒂勒曼斯)",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cn07dpgkj4eo?at_medium=RSS&at_campaign=rss",
-        "published": "Mon, 13 Jul 2026 14:09:00 GMT",
-        "summary": "Manchester United sign Andrey Santos from Chelsea and are in advanced talks with Aston Villa for Youri Tielemans.",
-        "title_zh": "Man Utd (曼聯) 以 4800 萬英鎊簽下 Santos (桑托斯)，並接近簽下 Tielemans (蒂勒曼斯)",
-        "title_en": "Man Utd sign £48m Santos and close in on Tielemans"
       }
     ]
   },
@@ -786,7 +755,7 @@
   "stats": {
     "total_matches": 2,
     "significant_changes_count": 2,
-    "api_remaining": "22"
+    "api_remaining": "17"
   },
   "snapshots": [
     {
@@ -811,6 +780,10 @@
     },
     {
       "time": "2026-07-14T15:50:27.463674+08:00",
+      "matches_count": 2
+    },
+    {
+      "time": "2026-07-14T18:39:26.703167+08:00",
       "matches_count": 2
     }
   ]
