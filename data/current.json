@@ -1,286 +1,155 @@
 {
-  "last_updated": "2026-07-16T02:58:06.448854+08:00",
-  "last_updated_display": "2026/07/16 02:58 (台北時間)",
+  "last_updated": "2026-07-16T05:51:27.639602+08:00",
+  "last_updated_display": "2026/07/16 05:51 (台北時間)",
   "matches": {
-    "ced22494ae0bbb8cc4f7108bf6f493df": {
-      "id": "ced22494ae0bbb8cc4f7108bf6f493df",
+    "7a49e7985534a5ff3428740d0b630fd7": {
+      "id": "7a49e7985534a5ff3428740d0b630fd7",
       "sport_key": "soccer_fifa_world_cup",
       "league": "世足 FIFA World Cup",
-      "home_team": "England",
-      "away_team": "Argentina",
-      "commence_time": "2026-07-15T19:00:00Z",
+      "home_team": "France",
+      "away_team": "England",
+      "commence_time": "2026-07-18T21:00:00Z",
       "bookmakers": [
         {
-          "name": "Pinnacle",
+          "name": "Winamax (DE)",
           "markets": {
             "h2h": {
-              "Argentina": {
-                "price": 3.15
-              },
               "England": {
-                "price": 2.71
+                "price": 3.25
+              },
+              "France": {
+                "price": 2.05
               },
               "Draw": {
-                "price": 2.96
+                "price": 3.6
               }
-            },
-            "spreads": {
-              "Argentina": {
-                "price": 2.13,
-                "point": -0.0,
-                "prob": 46.2
-              },
+            }
+          }
+        },
+        {
+          "name": "Winamax (FR)",
+          "markets": {
+            "h2h": {
               "England": {
-                "price": 1.83,
-                "point": 0.0,
-                "prob": 53.8
+                "price": 3.2
+              },
+              "France": {
+                "price": 2.05
+              },
+              "Draw": {
+                "price": 3.5
+              }
+            }
+          }
+        },
+        {
+          "name": "Unibet (SE)",
+          "markets": {
+            "h2h": {
+              "England": {
+                "price": 3.5
+              },
+              "France": {
+                "price": 2.12
+              },
+              "Draw": {
+                "price": 3.65
               }
             },
             "totals": {
               "Over": {
-                "price": 1.83,
-                "point": 2.0,
-                "prob": 53.2
+                "price": 1.64,
+                "point": 2.5,
+                "prob": 58.2
               },
               "Under": {
-                "price": 2.08,
-                "point": 2.0,
-                "prob": 46.8
-              }
-            }
-          }
-        },
-        {
-          "name": "Betclic (FR)",
-          "markets": {
-            "h2h": {
-              "Argentina": {
-                "price": 3.05
-              },
-              "England": {
-                "price": 2.7
-              },
-              "Draw": {
-                "price": 2.95
-              }
-            }
-          }
-        },
-        {
-          "name": "Tipico",
-          "markets": {
-            "h2h": {
-              "Argentina": {
-                "price": 2.85
-              },
-              "England": {
-                "price": 2.8
-              },
-              "Draw": {
-                "price": 2.9
+                "price": 2.28,
+                "point": 2.5,
+                "prob": 41.8
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Argentina": 3.04,
-        "England": 2.703,
-        "Draw": 2.921
+        "England": 3.425,
+        "France": 2.119,
+        "Draw": 3.534
       },
       "true_probs": {
-        "Argentina": 31.6,
-        "England": 35.5,
-        "Draw": 32.9
+        "England": 27.9,
+        "France": 45.1,
+        "Draw": 27.0
       },
       "other_markets": {
         "spreads": {
-          "Argentina": {
-            "price": 2.13,
-            "point": -0.0,
-            "prob": 46.2
-          },
           "England": {
-            "price": 1.83,
-            "point": 0.0,
-            "prob": 53.8
+            "price": 1.67,
+            "point": 0.5,
+            "prob": 55.5
+          },
+          "France": {
+            "price": 2.08,
+            "point": -0.5,
+            "prob": 44.5
           }
         },
         "totals": {
           "Over": {
-            "price": 1.83,
-            "point": 2.0,
-            "prob": 53.2
+            "price": 1.64,
+            "point": 2.5,
+            "prob": 58.2
           },
           "Under": {
-            "price": 2.08,
-            "point": 2.0,
-            "prob": 46.8
+            "price": 2.28,
+            "point": 2.5,
+            "prob": 41.8
           }
         },
         "btts": {}
       },
       "opening_odds": {
-        "Argentina": 3.08,
-        "England": 2.518,
-        "Draw": 3.06
+        "England": 3.425,
+        "France": 2.119,
+        "Draw": 3.534
       },
-      "first_seen": "2026-07-12T13:48:25.940950+08:00",
-      "is_new": false,
-      "odds_change": {
-        "Argentina": -0.04,
-        "England": 0.185,
-        "Draw": -0.139
-      },
-      "change_pct": {
-        "Argentina": -1.3,
-        "England": 7.35,
-        "Draw": -4.54
-      },
-      "is_value_bet": true,
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-07-16T05:50:52.458709+08:00",
       "odds_timeline": [
         {
-          "time": "07/13 17:34",
-          "Argentina": 3.052,
-          "England": 2.628,
-          "Draw": 2.996
-        },
-        {
-          "time": "07/13 22:10",
-          "Argentina": 3.053,
-          "England": 2.643,
-          "Draw": 2.973
-        },
-        {
-          "time": "07/14 01:08",
-          "Argentina": 3.044,
-          "England": 2.638,
-          "Draw": 2.974
-        },
-        {
-          "time": "07/14 03:14",
-          "Argentina": 3.046,
-          "England": 2.643,
-          "Draw": 2.971
-        },
-        {
-          "time": "07/14 05:47",
-          "Argentina": 3.048,
-          "England": 2.643,
-          "Draw": 2.971
-        },
-        {
-          "time": "07/14 09:44",
-          "Argentina": 3.045,
-          "England": 2.654,
-          "Draw": 2.962
-        },
-        {
-          "time": "07/14 13:22",
-          "Argentina": 3.045,
-          "England": 2.653,
-          "Draw": 2.973
-        },
-        {
-          "time": "07/14 15:49",
-          "Argentina": 3.057,
-          "England": 2.645,
-          "Draw": 2.967
-        },
-        {
-          "time": "07/14 18:38",
-          "Argentina": 3.045,
-          "England": 2.663,
-          "Draw": 2.954
-        },
-        {
-          "time": "07/14 21:12",
-          "Argentina": 3.052,
-          "England": 2.662,
-          "Draw": 2.953
-        },
-        {
-          "time": "07/15 00:08",
-          "Argentina": 3.047,
-          "England": 2.666,
-          "Draw": 2.976
-        },
-        {
-          "time": "07/15 03:05",
-          "Argentina": 3.042,
-          "England": 2.69,
-          "Draw": 2.949
-        },
-        {
-          "time": "07/15 05:50",
-          "Argentina": 2.982,
-          "England": 2.77,
-          "Draw": 2.916
-        },
-        {
-          "time": "07/15 09:40",
-          "Argentina": 3.027,
-          "England": 2.732,
-          "Draw": 2.922
-        },
-        {
-          "time": "07/15 13:23",
-          "Argentina": 3.03,
-          "England": 2.726,
-          "Draw": 2.924
-        },
-        {
-          "time": "07/15 15:52",
-          "Argentina": 3.026,
-          "England": 2.732,
-          "Draw": 2.927
-        },
-        {
-          "time": "07/15 18:42",
-          "Argentina": 3.031,
-          "England": 2.732,
-          "Draw": 2.936
-        },
-        {
-          "time": "07/15 21:16",
-          "Argentina": 3.033,
-          "England": 2.744,
-          "Draw": 2.923
-        },
-        {
-          "time": "07/16 00:14",
-          "Argentina": 3.061,
-          "England": 2.711,
-          "Draw": 2.93
-        },
-        {
-          "time": "07/16 02:57",
-          "Argentina": 3.04,
-          "England": 2.703,
-          "Draw": 2.921
+          "time": "07/16 05:50",
+          "England": 3.425,
+          "France": 2.119,
+          "Draw": 3.534
         }
       ],
-      "h2h_history": [
+      "injury_alerts": [
         {
-          "date": "2005-06-08",
-          "home": "英格蘭",
-          "score": "3-2",
-          "away": "阿根廷"
-        },
-        {
-          "date": "1998-06-30",
-          "home": "阿根廷",
-          "score": "2-2",
-          "away": "英格蘭 (PK勝)"
-        },
-        {
-          "date": "1998-06-07",
-          "home": "英格蘭",
-          "score": "0-1",
-          "away": "阿根廷"
+          "team": "England",
+          "title": "England與Argentina的國歌被蓋過",
+          "link": "https://www.bbc.co.uk/sport/football/videos/c04yw0dz035o?at_medium=RSS&at_campaign=rss"
         }
       ],
+      "h2h_history": [],
       "home_form": {
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "home_record": "L",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-07-14",
+            "opponent": "Spain",
+            "score": "0-2",
+            "result": "L",
+            "venue": "主"
+          }
+        ]
+      },
+      "away_form": {
         "record": "W",
         "wins": 1,
         "losses": 0,
@@ -290,6 +159,185 @@
           {
             "date": "2026-07-01",
             "opponent": "DR Congo",
+            "score": "2-1",
+            "result": "W",
+            "venue": "主"
+          }
+        ]
+      },
+      "elo_diff": 60,
+      "xg_stats": {
+        "home": {
+          "for": 2.3,
+          "against": 1.1
+        },
+        "away": {
+          "for": 1.9,
+          "against": 0.7
+        }
+      },
+      "reverse_line_movement": [],
+      "advancement_status": "",
+      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
+      "analysis_source": "rule_based"
+    },
+    "fb30113e43d113f1ace48b8563ba1ee9": {
+      "id": "fb30113e43d113f1ace48b8563ba1ee9",
+      "sport_key": "soccer_fifa_world_cup",
+      "league": "世足 FIFA World Cup",
+      "home_team": "Spain",
+      "away_team": "Argentina",
+      "commence_time": "2026-07-19T19:00:00Z",
+      "bookmakers": [
+        {
+          "name": "Betfair",
+          "markets": {
+            "h2h": {
+              "Argentina": {
+                "price": 3.8
+              },
+              "Spain": {
+                "price": 2.42
+              },
+              "Draw": {
+                "price": 3.05
+              }
+            },
+            "h2h_lay": {
+              "Argentina": {
+                "price": 3.85
+              },
+              "Spain": {
+                "price": 2.44
+              },
+              "Draw": {
+                "price": 3.1
+              }
+            }
+          }
+        },
+        {
+          "name": "Tipico",
+          "markets": {
+            "h2h": {
+              "Argentina": {
+                "price": 3.6
+              },
+              "Spain": {
+                "price": 2.3
+              },
+              "Draw": {
+                "price": 2.95
+              }
+            }
+          }
+        },
+        {
+          "name": "PMU (FR)",
+          "markets": {
+            "h2h": {
+              "Argentina": {
+                "price": 3.6
+              },
+              "Spain": {
+                "price": 2.15
+              },
+              "Draw": {
+                "price": 3.0
+              }
+            },
+            "totals": {
+              "Over": {
+                "price": 2.32,
+                "point": 2.5,
+                "prob": 39.7
+              },
+              "Under": {
+                "price": 1.53,
+                "point": 2.5,
+                "prob": 60.3
+              }
+            }
+          }
+        }
+      ],
+      "avg_odds": {
+        "Argentina": 3.633,
+        "Spain": 2.282,
+        "Draw": 3.052
+      },
+      "true_probs": {
+        "Argentina": 26.4,
+        "Spain": 42.1,
+        "Draw": 31.5
+      },
+      "other_markets": {
+        "spreads": {
+          "Argentina": {
+            "price": 1.95,
+            "point": 0.25,
+            "prob": 50.0
+          },
+          "Spain": {
+            "price": 1.95,
+            "point": -0.25,
+            "prob": 50.0
+          }
+        },
+        "totals": {
+          "Over": {
+            "price": 2.32,
+            "point": 2.5,
+            "prob": 39.7
+          },
+          "Under": {
+            "price": 1.53,
+            "point": 2.5,
+            "prob": 60.3
+          }
+        },
+        "btts": {}
+      },
+      "opening_odds": {
+        "Argentina": 3.633,
+        "Spain": 2.282,
+        "Draw": 3.052
+      },
+      "odds_change": {},
+      "change_pct": {},
+      "is_new": true,
+      "first_seen": "2026-07-16T05:50:52.458721+08:00",
+      "odds_timeline": [
+        {
+          "time": "07/16 05:50",
+          "Argentina": 3.633,
+          "Spain": 2.282,
+          "Draw": 3.052
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Argentina",
+          "title": "England與Argentina的國歌被蓋過",
+          "link": "https://www.bbc.co.uk/sport/football/videos/c04yw0dz035o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "team": "Argentina",
+          "title": "當年對陣Argentina罰球失手的David Batty後來怎樣了？",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cp9jn090kv2o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "h2h_history": [],
+      "home_form": {
+        "record": "W",
+        "wins": 1,
+        "losses": 0,
+        "home_record": "W",
+        "away_record": "",
+        "details": [
+          {
+            "date": "2026-07-10",
+            "opponent": "Belgium",
             "score": "2-1",
             "result": "W",
             "venue": "主"
@@ -312,11 +360,11 @@
           }
         ]
       },
-      "elo_diff": -78,
+      "elo_diff": -60,
       "xg_stats": {
         "home": {
-          "for": 1.9,
-          "against": 0.7
+          "for": 1.8,
+          "against": 0.6
         },
         "away": {
           "for": 2.1,
@@ -325,112 +373,104 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "和局",
-      "ai_rec_line": "N/A",
-      "ai_rec_prob": 0.45,
-      "rec_odds": 2.921,
-      "ai_ev": 0.314,
-      "kelly_ratio": 0.1637,
-      "half_kelly_ratio": 0.0818,
-      "ai_analysis": "## 💡 投注推薦：和局 (Draw)\n\n這場英格蘭對阿根廷的世足準決賽，盤口顯示雙方實力接近，且近期獨贏賠率變動顯示和局的賠率有所下降，這意味著市場對和局的可能性正在增加。綜合歷史交手紀錄、兩隊在淘汰賽階段的表現以及近期戰績，本場比賽極有可能進入延長賽甚至點球大戰，和局是一個值得關注的選項。\n\n**推薦理由：**\n過往兩隊交手紀錄膠著，且本屆賽事雙方晉級之路皆非一帆風順，都曾經歷硬仗與延長賽。盤口賠率顯示和局的可能性正在上升，加上兩隊都有力挽狂瀾的巨星，比賽結果難以預料，很有可能在正規時間內以平手收場。\n\n【🤖 勝平負判斷：雙平】\n【🎯 最可能比分：1-1, 2-2】\n【📊 至少1球機率：85%】\n【📊 至少2球機率：60%】\n【📊 雙方進球機率：70%】\n【🎯 預測比分：主隊 1:1 客隊 (預估此比分機率：25%)】\n【⚽ 大小球推薦：小 2.0】",
-      "analysis_source": "gemini"
+      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
+      "analysis_source": "rule_based"
     }
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "ced22494ae0bbb8cc4f7108bf6f493df"
+      "7a49e7985534a5ff3428740d0b630fd7",
+      "fb30113e43d113f1ace48b8563ba1ee9"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "Arsenal 前鋒 Trossard (托沙特) 以 1530 萬英鎊加盟 Besiktas (貝西克塔斯)",
+        "title": "Martinez終場頭槌助Argentina闖進世界盃決賽",
+        "link": "https://www.bbc.co.uk/sport/football/videos/ckg3184ymemo?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 21:18:38 GMT",
+        "summary": "Substitute Lautaro Martinez is in the right place at the right time to head home Lionel Messi's 92nd-minute cross to send Argentina to the World Cup final at the expense of England.",
+        "title_zh": "Martinez終場頭槌助Argentina闖進世界盃決賽",
+        "title_en": "Late Martinez header sends Argentina to World Cup final"
+      },
+      {
+        "title": "「換人沒有奏效」– England球員評分",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cx2w3rqp6w1o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 21:08:21 GMT",
+        "summary": "BBC Sport's England reporter Alex Howell rates the players after the Three Lions lost to Argentina in the World Cup semi-final.",
+        "title_zh": "「換人沒有奏效」– England球員評分",
+        "title_en": "'The change didn't work' - England player ratings"
+      },
+      {
+        "title": "兩場世界盃決賽將由BBC直播",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cp8xn7178x1o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 21:16:12 GMT",
+        "summary": "Saturday's World Cup third-place play-off between England and France and Sunday's World Cup final will both be  live on BBC TV.",
+        "title_zh": "兩場世界盃決賽將由BBC直播",
+        "title_en": "Final two World Cup matches to be shown live on BBC"
+      },
+      {
+        "title": "Arsenal前鋒Trossard以1530萬英鎊加盟Besiktas",
         "link": "https://www.bbc.co.uk/sport/football/articles/cddldzme6g1o?at_medium=RSS&at_campaign=rss",
         "published": "Wed, 15 Jul 2026 17:50:52 GMT",
         "summary": "Arsenal forward Leandro Trossard joins Besiktas on a three-year deal.",
-        "title_zh": "Arsenal 前鋒 Trossard (托沙特) 以 1530 萬英鎊加盟 Besiktas (貝西克塔斯)",
+        "title_zh": "Arsenal前鋒Trossard以1530萬英鎊加盟Besiktas",
         "title_en": "Arsenal forward Trossard joins Besiktas for £15.3m"
       },
       {
-        "title": "Sunderland (桑德蘭) 簽下比利時世界盃後衛 Meunier (梅尼耶)",
+        "title": "Sunderland簽下Belgium世界盃後衛Meunier",
         "link": "https://www.bbc.co.uk/sport/football/articles/cgjxjqpgq4xo?at_medium=RSS&at_campaign=rss",
         "published": "Wed, 15 Jul 2026 09:44:49 GMT",
         "summary": "Experienced Belgian defender Thomas Meunier signs for Sunderland after his contract with Lille comes to an end.",
-        "title_zh": "Sunderland (桑德蘭) 簽下比利時世界盃後衛 Meunier (梅尼耶)",
+        "title_zh": "Sunderland簽下Belgium世界盃後衛Meunier",
         "title_en": "Sunderland sign Belgium World Cup defender Meunier"
       },
       {
-        "title": "Bournemouth (伯恩茅斯) 與 Benfica (賓菲加) 後衛 Silva (席爾瓦) 進行會談",
+        "title": "Bournemouth正與Benfica後衛Silva進行會談",
         "link": "https://www.bbc.co.uk/sport/football/articles/crr8r4zvj5jo?at_medium=RSS&at_campaign=rss",
         "published": "Wed, 15 Jul 2026 09:22:33 GMT",
         "summary": "Bournemouth enter talks to sign Benfica and Portugal defender Antonio Silva as Marcos Senesi's replacement.",
-        "title_zh": "Bournemouth (伯恩茅斯) 與 Benfica (賓菲加) 後衛 Silva (席爾瓦) 進行會談",
+        "title_zh": "Bournemouth正與Benfica後衛Silva進行會談",
         "title_en": "Bournemouth in talks for Benfica defender Silva"
       },
       {
-        "title": "法醫發現 Stiles (史泰爾斯) 的腦部疾病由頭球引起",
+        "title": "驗屍官發現頭槌導致Stiles罹患腦部疾病",
         "link": "https://www.bbc.co.uk/news/articles/c5yzyygmxvgo?at_medium=RSS&at_campaign=rss",
         "published": "Wed, 15 Jul 2026 18:05:19 GMT",
         "summary": "England 1966 World Cup winner Nobby Stiles died with a condition caused by heading footballs, his inquest concludes.",
-        "title_zh": "法醫發現 Stiles (史泰爾斯) 的腦部疾病由頭球引起",
+        "title_zh": "驗屍官發現頭槌導致Stiles罹患腦部疾病",
         "title_en": "Headers caused Stiles' brain disease, coroner finds"
       },
       {
-        "title": "在阿根廷的點球失誤後，David Batty (大衛·巴蒂) 遭遇了什麼？",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cp9jn090kv2o?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 05:59:56 GMT",
-        "summary": "England midfielder David Batty quickly shook off his penalty miss against Argentina in 1998. As the two teams prepare to meet in the World Cup knockout stage again, BBC Sport asks: what happened to hi",
-        "title_zh": "在阿根廷的點球失誤後，David Batty (大衛·巴蒂) 遭遇了什麼？",
-        "title_en": "What happened to David Batty, who shook off penalty miss against Argentina?"
-      },
-      {
-        "title": "Man Utd (曼聯) 目標 Summerville (薩默維爾) - 週四流言",
+        "title": "Man Utd鎖定Summerville – 週四八卦",
         "link": "https://www.bbc.co.uk/sport/football/articles/c1mymdm2rp8o?at_medium=RSS&at_campaign=rss",
         "published": "Wed, 15 Jul 2026 18:53:17 GMT",
         "summary": "West Ham winger Crysencio Summerville is a target for Manchester United, Arsenal are preparing an offer for Norway winger Antonio Nusa, Everton consider moving for Manchester City's Rico Lewis, plus m",
-        "title_zh": "Man Utd (曼聯) 目標 Summerville (薩默維爾) - 週四流言",
+        "title_zh": "Man Utd鎖定Summerville – 週四八卦",
         "title_en": "Man Utd target Summerville - Thursday's gossip"
       },
       {
-        "title": "西班牙擊敗法國晉級世界盃決賽",
-        "link": "https://www.bbc.co.uk/sport/football/videos/cq6160n8y71o?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 21:32:59 GMT",
-        "summary": "Spain are into the 2026 World Cup final after goals from Mikel Oyarzabal and Pedro Porro see them convincingly beat France 2-0 in their semi-final in Dallas.",
-        "title_zh": "西班牙擊敗法國晉級世界盃決賽",
-        "title_en": "Spain into World Cup final with victory over France"
+        "title": "Hibs將在歐洲賽事中對陣Kosovan球隊Malisheva",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c78g554nnywo?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 16:42:53 GMT",
+        "summary": "Hibernian will face Malisheva in the second round of Conference League qualifying later this month after the Kosovan outfit beat Albanian side Vllaznia 6-2 on aggregate.",
+        "title_zh": "Hibs將在歐洲賽事中對陣Kosovan球隊Malisheva",
+        "title_en": "Hibs to face Kosovan side Malisheva in Europe"
       },
       {
-        "title": "Maradona (馬拉度納) 在 1986 年如何統治英格蘭",
-        "link": "https://www.bbc.co.uk/sport/football/videos/clyxj3x99l9o?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 18:58:20 GMT",
-        "summary": "Diego Maradona leads his Argentina team to victory against England in the quarter-final of the World Cup in 1986.",
-        "title_zh": "Maradona (馬拉度納) 在 1986 年如何統治英格蘭",
-        "title_en": "How Maradona dominated England in 1986"
-      },
-      {
-        "title": "阿根廷對英格蘭 2002 年 - Beckham (碧咸) 的救贖",
-        "link": "https://www.bbc.co.uk/sport/football/videos/cy5vxevngndo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 18:54:43 GMT",
-        "summary": "England meet Argentina in the group stage of the 2002 World Cup.",
-        "title_zh": "阿根廷對英格蘭 2002 年 - Beckham (碧咸) 的救贖",
-        "title_en": "Argentina v England 2002 - Redemption for Beckham"
-      },
-      {
-        "title": "阿根廷對英格蘭 1998 年 - Owen (歐文), Beckham (碧咸) 與點球的痛苦",
-        "link": "https://www.bbc.co.uk/sport/football/videos/cz75405qe3wo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 12 Jul 2026 18:51:53 GMT",
-        "summary": "England meet Argentina in the last 16 of the 1998 World Cup.",
-        "title_zh": "阿根廷對英格蘭 1998 年 - Owen (歐文), Beckham (碧咸) 與點球的痛苦",
-        "title_en": "Argentina v England 1998 - Owen, Beckham and penalty pain"
+        "title": "Fernandez踢進一球扳平，為Argentina得分",
+        "link": "https://www.bbc.co.uk/sport/football/videos/cj4kx9n4pv5o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 21:20:38 GMT",
+        "summary": "Enzo Fernandez equalises for Argentina against England in the 2026 World Cup semi final at the Atlanta Stadium.",
+        "title_zh": "Fernandez踢進一球扳平，為Argentina得分",
+        "title_en": "Fernandez fires in equaliser for Argentina"
       }
     ]
   },
-  "significant_changes": [
-    "ced22494ae0bbb8cc4f7108bf6f493df"
-  ],
+  "significant_changes": [],
   "stats": {
-    "total_matches": 1,
-    "significant_changes_count": 1,
-    "api_remaining": "460"
+    "total_matches": 2,
+    "significant_changes_count": 0,
+    "api_remaining": "455"
   }
 }
