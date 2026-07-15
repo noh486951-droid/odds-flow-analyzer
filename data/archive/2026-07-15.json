@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-15T13:23:48.086463+08:00",
-  "last_updated_display": "2026/07/15 13:23 (台北時間)",
+  "last_updated": "2026-07-15T15:54:33.448333+08:00",
+  "last_updated_display": "2026/07/15 15:54 (台北時間)",
   "matches": {
     "f9aa13a662d1658e5a02cfc06d6a2d73": {
       "id": "f9aa13a662d1658e5a02cfc06d6a2d73",
@@ -368,37 +368,37 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.05
+                "price": 3.09
               },
               "England": {
-                "price": 2.79
+                "price": 2.78
               },
               "Draw": {
-                "price": 2.89
+                "price": 2.91
               }
             },
             "spreads": {
               "Argentina": {
-                "price": 2.04,
+                "price": 2.07,
                 "point": -0.0,
-                "prob": 47.8
+                "prob": 47.3
               },
               "England": {
-                "price": 1.87,
+                "price": 1.86,
                 "point": 0.0,
-                "prob": 52.2
+                "prob": 52.7
               }
             },
             "totals": {
               "Over": {
-                "price": 1.79,
+                "price": 1.83,
                 "point": 2.0,
-                "prob": 54.2
+                "prob": 53.3
               },
               "Under": {
-                "price": 2.12,
+                "price": 2.09,
                 "point": 2.0,
-                "prob": 45.8
+                "prob": 46.7
               }
             }
           }
@@ -447,9 +447,9 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 3.03,
-        "England": 2.726,
-        "Draw": 2.924
+        "Argentina": 3.026,
+        "England": 2.732,
+        "Draw": 2.927
       },
       "true_probs": {
         "Argentina": 31.8,
@@ -459,26 +459,26 @@
       "other_markets": {
         "spreads": {
           "Argentina": {
-            "price": 2.04,
+            "price": 2.07,
             "point": -0.0,
-            "prob": 47.8
+            "prob": 47.3
           },
           "England": {
-            "price": 1.87,
+            "price": 1.86,
             "point": 0.0,
-            "prob": 52.2
+            "prob": 52.7
           }
         },
         "totals": {
           "Over": {
-            "price": 1.79,
+            "price": 1.83,
             "point": 2.0,
-            "prob": 54.2
+            "prob": 53.3
           },
           "Under": {
-            "price": 2.12,
+            "price": 2.09,
             "point": 2.0,
-            "prob": 45.8
+            "prob": 46.7
           }
         },
         "btts": {}
@@ -491,23 +491,17 @@
       "first_seen": "2026-07-12T13:48:25.940950+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.05,
-        "England": 0.208,
-        "Draw": -0.136
+        "Argentina": -0.054,
+        "England": 0.214,
+        "Draw": -0.133
       },
       "change_pct": {
-        "Argentina": -1.62,
-        "England": 8.26,
-        "Draw": -4.44
+        "Argentina": -1.75,
+        "England": 8.5,
+        "Draw": -4.35
       },
-      "is_value_bet": true,
+      "is_value_bet": false,
       "odds_timeline": [
-        {
-          "time": "07/12 23:51",
-          "Argentina": 3.061,
-          "England": 2.6,
-          "Draw": 3.0
-        },
         {
           "time": "07/13 02:53",
           "Argentina": 3.05,
@@ -621,14 +615,32 @@
           "Argentina": 3.03,
           "England": 2.726,
           "Draw": 2.924
+        },
+        {
+          "time": "07/15 15:52",
+          "Argentina": 3.026,
+          "England": 2.732,
+          "Draw": 2.927
+        }
+      ],
+      "injury_alerts": [
+        {
+          "team": "Argentina",
+          "title": "Mates, mate and freedom - how Argentina got the best out of Messi",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cx2j24y9jzyo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "team": "Argentina",
+          "title": "What happened to David Batty, who shook off penalty miss against Argentina?",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cp9jn090kv2o?at_medium=RSS&at_campaign=rss"
         }
       ],
       "h2h_history": [
         {
-          "date": "2005-11-12",
-          "home": "Argentina",
-          "score": "0-0",
-          "away": "England"
+          "date": "2005-11-10",
+          "home": "England",
+          "score": "3-2",
+          "away": "Argentina"
         },
         {
           "date": "2002-06-07",
@@ -640,7 +652,7 @@
           "date": "1998-06-30",
           "home": "Argentina",
           "score": "2-2",
-          "away": "England"
+          "away": "England (Argentina won 6-5 on penalties)"
         }
       ],
       "home_form": {
@@ -675,27 +687,27 @@
           }
         ]
       },
-      "elo_diff": -78,
+      "elo_diff": -80,
       "xg_stats": {
         "home": {
-          "for": 1.0,
+          "for": 1.9,
           "against": 0.7
         },
         "away": {
-          "for": 1.0,
+          "for": 2.1,
           "against": 0.8
         }
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "大球",
-      "ai_rec_line": "2.5",
-      "ai_rec_prob": 0.7,
-      "rec_odds": 1.85,
-      "ai_ev": 0.295,
-      "kelly_ratio": 0.3471,
-      "half_kelly_ratio": 0.1735,
-      "ai_analysis": "【💡 推薦：大球 2.5】\n\nEngland 與 Argentina 在世足歷史上多次交手，戰況激烈，兩隊近期進攻火力皆不俗，且都有得分能力強的球星，預期本場比賽將有較多進球。England 近期在淘汰賽階段雖有幾場比分接近，但進攻端表現穩定。Argentina 則在近期比賽中展現強勁的得分能力，連續多場比賽至少打入兩球。綜合以上進攻火力與近期賽事風格，看好總進球數能達到 3 球或以上。\n\n【🤖 勝平負判斷：雙平】\n【🎯 最可能比分：2-2、3-2】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：80%】\n【📊 雙方進球機率：70%】\n【🎯 預測比分：England 2:2 Argentina (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.5】",
+      "ai_rec_target": "和局",
+      "ai_rec_line": "N/A",
+      "ai_rec_prob": 0.34,
+      "rec_odds": 2.927,
+      "ai_ev": -0.005,
+      "kelly_ratio": -0.0025,
+      "half_kelly_ratio": -0.0013,
+      "ai_analysis": "【💡 推薦：和局】\n\n本場世足半決賽預計將是一場勢均力敵的對決。儘管阿根廷在國際足聯排名中位居世界第一，且根據Elo積分分析略佔優勢（阿根廷2175 vs 英格蘭2095），但英格蘭作為本次比賽的「主隊」且擁有優秀的進攻火力。兩隊近期在世界盃比賽中都展現了強大的得分能力，但也偶有艱難取勝的紀錄。盤口走勢顯示英格蘭的勝賠上升，而和局與阿根廷的勝賠則有所下降，這暗示市場對和局或阿根廷不敗的預期增強。考量到半決賽的緊張氛圍，加上多位專家也傾向於90分鐘內打平，因此和局是具備價值且合理的投注選項。此外，兩隊的xG數據和近期高比分的淘汰賽戰績也強烈指出，本場比賽至少會有兩顆進球，甚至更多。\n\n【🤖 勝平負判斷：雙平】\n【🎯 最可能比分：1-1】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：80%】\n【📊 雙方進球機率：65%】\n【🎯 預測比分：主隊 1:1 客隊 (預估此比分機率：18%)】\n【⚽ 大小球推薦：大球 2.0】",
       "analysis_source": "gemini"
     },
     "fb30113e43d113f1ace48b8563ba1ee9": {
@@ -935,93 +947,73 @@
   },
   "leagues": {
     "世足 FIFA World Cup": [
-      "ced22494ae0bbb8cc4f7108bf6f493df",
       "f9aa13a662d1658e5a02cfc06d6a2d73",
-      "fb30113e43d113f1ace48b8563ba1ee9",
-      "70337f0d573aa5893d60a9a5ceb4dd97"
+      "ced22494ae0bbb8cc4f7108bf6f493df",
+      "70337f0d573aa5893d60a9a5ceb4dd97",
+      "fb30113e43d113f1ace48b8563ba1ee9"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "團隊合作勝過個人光芒 - 柔韌的 Spain (西班牙) 如何擊潰 France (法國)",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cpv3v0gkw9vo?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 00:28:35 GMT",
-        "summary": "Spain have rather flown under the radar at the 2026 World Cup - but will they go all the way and win it?",
-        "title_zh": "團隊合作勝過個人光芒 - 柔韌的 Spain (西班牙) 如何擊潰 France (法國)",
-        "title_en": "A special team beats brilliant individuals - how silky Spain flattened France"
-      },
-      {
-        "title": "「極度高興」Deschamps (德尚) 迎來無人想要的告別賽",
-        "link": "https://www.bbc.co.uk/sport/football/articles/czx5x14v5w2o?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 23:15:55 GMT",
-        "summary": "Didier Deschamps' long, storied career with France will come to an end not how he would have wanted it - in Saturday's World Cup third-place play-off.",
-        "title_zh": "「極度高興」Deschamps (德尚) 迎來無人想要的告別賽",
-        "title_en": "'Extremely happy' Deschamps gets the farewell game no-one wants"
-      },
-      {
-        "title": "「98年之痛仍存，但這次 England (英格蘭) 或能不同」- Shearer (希勒)",
+        "title": "I still feel pain of '98 but this can be different for England - Shearer",
         "link": "https://www.bbc.co.uk/sport/football/articles/c6212j5zw3ko?at_medium=RSS&at_campaign=rss",
         "published": "Wed, 15 Jul 2026 05:02:28 GMT",
-        "summary": "England's defeat by Argentina at the 1998 World Cup still burns deep for Alan Shearer, but he explains why this team can take their chance to change their lives forever.",
-        "title_zh": "「98年之痛仍存，但這次 England (英格蘭) 或能不同」- Shearer (希勒)",
-        "title_en": "I still feel pain of '98 but this can be different for England - Shearer"
+        "summary": "England's defeat by Argentina at the 1998 World Cup still burns deep for Alan Shearer, but he explains why this team can take their chance to change their lives forever."
       },
       {
-        "title": "Spain (西班牙) 擊敗 France (法國) 晉級世界盃決賽",
-        "link": "https://www.bbc.co.uk/sport/football/videos/cq6160n8y71o?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 21:32:59 GMT",
-        "summary": "Spain are into the 2026 World Cup final after goals from Mikel Oyarzabal and Pedro Porro see them convincingly beat France 2-0 in their semi-final in Dallas.",
-        "title_zh": "Spain (西班牙) 擊敗 France (法國) 晉級世界盃決賽",
-        "title_en": "Spain into World Cup final with victory over France"
-      },
-      {
-        "title": "夥伴、朋友與自由 - Argentina (阿根廷) 如何讓 Messi (梅西) 發揮最佳",
+        "title": "Mates, mate and freedom - how Argentina got the best out of Messi",
         "link": "https://www.bbc.co.uk/sport/football/articles/cx2j24y9jzyo?at_medium=RSS&at_campaign=rss",
         "published": "Wed, 15 Jul 2026 05:02:40 GMT",
-        "summary": "Guillem Balague examines how the Argentina squad is built around Lionel Messi as they prepare to play against England in the World Cup semi-finals.",
-        "title_zh": "夥伴、朋友與自由 - Argentina (阿根廷) 如何讓 Messi (梅西) 發揮最佳",
-        "title_en": "Mates, mate and freedom - how Argentina got the best out of Messi"
+        "summary": "Guillem Balague examines how the Argentina squad is built around Lionel Messi as they prepare to play against England in the World Cup semi-finals."
       },
       {
-        "title": "England (英格蘭) 自1966年來最大戰役，三獅軍團接近不朽",
+        "title": "England's biggest match since 1966 as Three Lions close in on immortality",
         "link": "https://www.bbc.co.uk/sport/football/articles/c20y0zzdx9go?at_medium=RSS&at_campaign=rss",
         "published": "Wed, 15 Jul 2026 05:02:16 GMT",
-        "summary": "England face Argentina in the World Cup semi-finals on Wednesday - and BBC Sport's Phil McNulty explains why it is the Three Lions' biggest match since 1966.",
-        "title_zh": "England (英格蘭) 自1966年來最大戰役，三獅軍團接近不朽",
-        "title_en": "England's biggest match since 1966 as Three Lions close in on immortality"
+        "summary": "England face Argentina in the World Cup semi-finals on Wednesday - and BBC Sport's Phil McNulty explains why it is the Three Lions' biggest match since 1966."
       },
       {
-        "title": "「世界冠軍 Argentina (阿根廷) 在半決賽壓力巨大」- Guehi (奎伊)",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cp8l87vevj2o?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 00:18:30 GMT",
-        "summary": "England defender Marc Guehi insists the pressure is on Argentina as the Three Lions prepare to face the reigning champions in the World Cup semi-finals.",
-        "title_zh": "「世界冠軍 Argentina (阿根廷) 在半決賽壓力巨大」- Guehi (奎伊)",
-        "title_en": "Pressure is on world champions Argentina in semi-final - Guehi"
+        "title": "A special team beats brilliant individuals - how silky Spain flattened France",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cpv3v0gkw9vo?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 00:28:35 GMT",
+        "summary": "Spain have rather flown under the radar at the 2026 World Cup - but will they go all the way and win it?"
       },
       {
-        "title": "世界盃決賽半場休息時間可長達25分鐘",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c1wyw9wx19yo?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 22:01:52 GMT",
-        "summary": "The half-time break in Sunday's World Cup final is expected to last between 20 and 25 minutes.",
-        "title_zh": "世界盃決賽半場休息時間可長達25分鐘",
-        "title_en": "World Cup final half-time to last up to 25 minutes"
+        "title": "'Extremely happy' Deschamps gets the farewell game no-one wants",
+        "link": "https://www.bbc.co.uk/sport/football/articles/czx5x14v5w2o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 05:32:11 GMT",
+        "summary": "Didier Deschamps' long, storied career with France will come to an end not how he would have wanted it - in Saturday's World Cup third-place play-off."
       },
       {
-        "title": "誰在半決賽中「復活」？ France (法國) 對 Spain (西班牙) 球員評級",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c1dydqedp73o?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 21:10:54 GMT",
-        "summary": "Spain produce a masterclass to see off France and reach their first World Cup final since 2010 - but who were the stars?",
-        "title_zh": "誰在半決賽中「復活」？ France (法國) 對 Spain (西班牙) 球員評級",
-        "title_en": "Who 'came alive' in the semi-final? France v Spain player ratings"
+        "title": "Bellingham best player at World Cup - Rooney",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c5yzy0kl2gzo?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 05:40:35 GMT",
+        "summary": "Jude Bellingham has been the best player at the World Cup so far, says former England striker Wayne Rooney."
       },
       {
-        "title": "Henderson (亨德森) 和 Quansah (夸恩薩) 是 England (英格蘭) 對陣 Argentina (阿根廷) 的唯一缺席者",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c20y0gp3p70o?at_medium=RSS&at_campaign=rss",
-        "published": "Tue, 14 Jul 2026 20:16:52 GMT",
-        "summary": "Jordan Henderson and Jarell Quansah are set to be the only players unavailable for England's World Cup semi-final against Argentina.",
-        "title_zh": "Henderson (亨德森) 和 Quansah (夸恩薩) 是 England (英格蘭) 對陣 Argentina (阿根廷) 的唯一缺席者",
-        "title_en": "Henderson & Quansah only England absentees for Argentina"
+        "title": "Spain into World Cup final with victory over France",
+        "link": "https://www.bbc.co.uk/sport/football/videos/cq6160n8y71o?at_medium=RSS&at_campaign=rss",
+        "published": "Tue, 14 Jul 2026 21:32:59 GMT",
+        "summary": "Spain are into the 2026 World Cup final after goals from Mikel Oyarzabal and Pedro Porro see them convincingly beat France 2-0 in their semi-final in Dallas."
+      },
+      {
+        "title": "What happened to David Batty, who shook off penalty miss against Argentina?",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cp9jn090kv2o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 05:59:56 GMT",
+        "summary": "England midfielder David Batty quickly shook off his penalty miss against Argentina in 1998. As the two teams prepare to meet in the World Cup knockout stage again, BBC Sport asks: what happened to hi"
+      },
+      {
+        "title": "Keane was Kane's England team-mate - this week they are on different paths",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c30y0zqzvl5o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 07:39:09 GMT",
+        "summary": "Will Keane and Harry Kane used to be team-mates for England Under-19s - but this week the former strike partners are on very different paths."
+      },
+      {
+        "title": "Man Utd sign Tielemans for £35m from Aston Villa",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c9929gzdl2go?at_medium=RSS&at_campaign=rss",
+        "published": "Tue, 14 Jul 2026 18:45:08 GMT",
+        "summary": "Manchester United complete the signing of Youri Tielemans from Aston Villa on a five-year deal."
       }
     ]
   },
@@ -1031,7 +1023,7 @@
   "stats": {
     "total_matches": 1,
     "significant_changes_count": 1,
-    "api_remaining": "485"
+    "api_remaining": "480"
   },
   "snapshots": [
     {
@@ -1052,6 +1044,10 @@
     },
     {
       "time": "2026-07-15T13:23:48.143321+08:00",
+      "matches_count": 4
+    },
+    {
+      "time": "2026-07-15T15:54:33.502290+08:00",
       "matches_count": 4
     }
   ]
