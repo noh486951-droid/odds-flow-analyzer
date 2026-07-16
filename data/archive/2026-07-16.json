@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-16T05:51:27.639602+08:00",
-  "last_updated_display": "2026/07/16 05:51 (台北時間)",
+  "last_updated": "2026-07-16T09:51:10.910630+08:00",
+  "last_updated_display": "2026/07/16 09:51 (台北時間)",
   "matches": {
     "ced22494ae0bbb8cc4f7108bf6f493df": {
       "id": "ced22494ae0bbb8cc4f7108bf6f493df",
@@ -351,13 +351,13 @@
           "markets": {
             "h2h": {
               "England": {
-                "price": 3.25
+                "price": 3.45
               },
               "France": {
-                "price": 2.05
+                "price": 2.0
               },
               "Draw": {
-                "price": 3.6
+                "price": 3.7
               }
             }
           }
@@ -367,13 +367,13 @@
           "markets": {
             "h2h": {
               "England": {
-                "price": 3.2
+                "price": 3.45
               },
               "France": {
-                "price": 2.05
+                "price": 2.0
               },
               "Draw": {
-                "price": 3.5
+                "price": 3.7
               }
             }
           }
@@ -383,10 +383,10 @@
           "markets": {
             "h2h": {
               "England": {
-                "price": 3.5
+                "price": 3.9
               },
               "France": {
-                "price": 2.12
+                "price": 2.02
               },
               "Draw": {
                 "price": 3.65
@@ -394,52 +394,52 @@
             },
             "totals": {
               "Over": {
-                "price": 1.64,
-                "point": 2.5,
-                "prob": 58.2
+                "price": 2.35,
+                "point": 3.5,
+                "prob": 40.7
               },
               "Under": {
-                "price": 2.28,
-                "point": 2.5,
-                "prob": 41.8
+                "price": 1.61,
+                "point": 3.5,
+                "prob": 59.3
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "England": 3.425,
-        "France": 2.119,
-        "Draw": 3.534
+        "England": 3.634,
+        "France": 2.01,
+        "Draw": 3.677
       },
       "true_probs": {
-        "England": 27.9,
-        "France": 45.1,
-        "Draw": 27.0
+        "England": 26.3,
+        "France": 47.6,
+        "Draw": 26.0
       },
       "other_markets": {
         "spreads": {
           "England": {
-            "price": 1.67,
+            "price": 1.78,
             "point": 0.5,
-            "prob": 55.5
+            "prob": 52.0
           },
           "France": {
-            "price": 2.08,
+            "price": 1.93,
             "point": -0.5,
-            "prob": 44.5
+            "prob": 48.0
           }
         },
         "totals": {
           "Over": {
-            "price": 1.64,
-            "point": 2.5,
-            "prob": 58.2
+            "price": 2.35,
+            "point": 3.5,
+            "prob": 40.7
           },
           "Under": {
-            "price": 2.28,
-            "point": 2.5,
-            "prob": 41.8
+            "price": 1.61,
+            "point": 3.5,
+            "prob": 59.3
           }
         },
         "btts": {}
@@ -449,23 +449,31 @@
         "France": 2.119,
         "Draw": 3.534
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-07-16T05:50:52.458709+08:00",
+      "is_new": false,
+      "odds_change": {
+        "England": 0.209,
+        "France": -0.109,
+        "Draw": 0.143
+      },
+      "change_pct": {
+        "England": 6.1,
+        "France": -5.14,
+        "Draw": 4.05
+      },
+      "is_value_bet": true,
       "odds_timeline": [
         {
           "time": "07/16 05:50",
           "England": 3.425,
           "France": 2.119,
           "Draw": 3.534
-        }
-      ],
-      "injury_alerts": [
+        },
         {
-          "team": "England",
-          "title": "England與Argentina的國歌被蓋過",
-          "link": "https://www.bbc.co.uk/sport/football/videos/c04yw0dz035o?at_medium=RSS&at_campaign=rss"
+          "time": "07/16 09:50",
+          "England": 3.634,
+          "France": 2.01,
+          "Draw": 3.677
         }
       ],
       "h2h_history": [],
@@ -486,17 +494,17 @@
         ]
       },
       "away_form": {
-        "record": "W",
-        "wins": 1,
-        "losses": 0,
-        "home_record": "W",
+        "record": "L",
+        "wins": 0,
+        "losses": 1,
+        "home_record": "L",
         "away_record": "",
         "details": [
           {
-            "date": "2026-07-01",
-            "opponent": "DR Congo",
-            "score": "2-1",
-            "result": "W",
+            "date": "2026-07-15",
+            "opponent": "Argentina",
+            "score": "1-2",
+            "result": "L",
             "venue": "主"
           }
         ]
@@ -514,7 +522,7 @@
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
+      "ai_analysis": "England 賠率上升 6.1%，市場看淡該隊表現；France 賠率下降 5.1%，市場看好該隊表現。（系統自動判斷，建議搭配新聞自行分析）",
       "analysis_source": "rule_based"
     },
     "fb30113e43d113f1ace48b8563ba1ee9": {
@@ -530,10 +538,10 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.8
+                "price": 3.85
               },
               "Spain": {
-                "price": 2.42
+                "price": 2.38
               },
               "Draw": {
                 "price": 3.05
@@ -541,10 +549,10 @@
             },
             "h2h_lay": {
               "Argentina": {
-                "price": 3.85
+                "price": 3.9
               },
               "Spain": {
-                "price": 2.44
+                "price": 2.4
               },
               "Draw": {
                 "price": 3.1
@@ -557,13 +565,13 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.6
+                "price": 3.5
               },
               "Spain": {
-                "price": 2.3
+                "price": 2.25
               },
               "Draw": {
-                "price": 2.95
+                "price": 3.1
               }
             }
           }
@@ -573,63 +581,63 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.6
+                "price": 3.4
               },
               "Spain": {
-                "price": 2.15
+                "price": 2.28
               },
               "Draw": {
-                "price": 3.0
+                "price": 2.95
               }
             },
             "totals": {
               "Over": {
                 "price": 2.32,
                 "point": 2.5,
-                "prob": 39.7
+                "prob": 39.4
               },
               "Under": {
-                "price": 1.53,
+                "price": 1.51,
                 "point": 2.5,
-                "prob": 60.3
+                "prob": 60.6
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Argentina": 3.633,
-        "Spain": 2.282,
-        "Draw": 3.052
+        "Argentina": 3.561,
+        "Spain": 2.333,
+        "Draw": 3.029
       },
       "true_probs": {
-        "Argentina": 26.4,
-        "Spain": 42.1,
-        "Draw": 31.5
+        "Argentina": 27.0,
+        "Spain": 41.2,
+        "Draw": 31.8
       },
       "other_markets": {
         "spreads": {
           "Argentina": {
-            "price": 1.95,
+            "price": 1.92,
             "point": 0.25,
-            "prob": 50.0
+            "prob": 50.9
           },
           "Spain": {
-            "price": 1.95,
+            "price": 1.99,
             "point": -0.25,
-            "prob": 50.0
+            "prob": 49.1
           }
         },
         "totals": {
           "Over": {
             "price": 2.32,
             "point": 2.5,
-            "prob": 39.7
+            "prob": 39.4
           },
           "Under": {
-            "price": 1.53,
+            "price": 1.51,
             "point": 2.5,
-            "prob": 60.3
+            "prob": 60.6
           }
         },
         "btts": {}
@@ -639,28 +647,31 @@
         "Spain": 2.282,
         "Draw": 3.052
       },
-      "odds_change": {},
-      "change_pct": {},
-      "is_new": true,
       "first_seen": "2026-07-16T05:50:52.458721+08:00",
+      "is_new": false,
+      "odds_change": {
+        "Argentina": -0.072,
+        "Spain": 0.051,
+        "Draw": -0.023
+      },
+      "change_pct": {
+        "Argentina": -1.98,
+        "Spain": 2.23,
+        "Draw": -0.75
+      },
+      "is_value_bet": false,
       "odds_timeline": [
         {
           "time": "07/16 05:50",
           "Argentina": 3.633,
           "Spain": 2.282,
           "Draw": 3.052
-        }
-      ],
-      "injury_alerts": [
-        {
-          "team": "Argentina",
-          "title": "England與Argentina的國歌被蓋過",
-          "link": "https://www.bbc.co.uk/sport/football/videos/c04yw0dz035o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "team": "Argentina",
-          "title": "當年對陣Argentina罰球失手的David Batty後來怎樣了？",
-          "link": "https://www.bbc.co.uk/sport/football/articles/cp9jn090kv2o?at_medium=RSS&at_campaign=rss"
+          "time": "07/16 09:50",
+          "Argentina": 3.561,
+          "Spain": 2.333,
+          "Draw": 3.029
         }
       ],
       "h2h_history": [],
@@ -716,91 +727,91 @@
   "leagues": {
     "世足 FIFA World Cup": [
       "7a49e7985534a5ff3428740d0b630fd7",
-      "fb30113e43d113f1ace48b8563ba1ee9",
-      "ced22494ae0bbb8cc4f7108bf6f493df"
+      "ced22494ae0bbb8cc4f7108bf6f493df",
+      "fb30113e43d113f1ace48b8563ba1ee9"
     ]
   },
   "news": {
     "world_cup": [
       {
-        "title": "Martinez終場頭槌助Argentina闖進世界盃決賽",
-        "link": "https://www.bbc.co.uk/sport/football/videos/ckg3184ymemo?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 21:18:38 GMT",
-        "summary": "Substitute Lautaro Martinez is in the right place at the right time to head home Lionel Messi's 92nd-minute cross to send Argentina to the World Cup final at the expense of England.",
-        "title_zh": "Martinez終場頭槌助Argentina闖進世界盃決賽",
-        "title_en": "Late Martinez header sends Argentina to World Cup final"
+        "title": "「被動」與「崩潰」—— Tuchel（圖赫爾）的防守策略是否讓英格蘭付出代價？",
+        "link": "https://www.bbc.co.uk/sport/football/articles/ce8l15903k8o?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 16 Jul 2026 00:57:21 GMT",
+        "summary": "England went 1-0 up against Argentina before slumping to a heart-breaking semi-final defeat. But did boss Thomas Tuchel's \"negative\" tactics cost the Three Lions a place in the World Cup final?",
+        "title_zh": "「被動」與「崩潰」—— Tuchel（圖赫爾）的防守策略是否讓英格蘭付出代價？",
+        "title_en": "'Passive' and 'crumbled' - did Tuchel's defensive tactics cost England?"
       },
       {
-        "title": "「換人沒有奏效」– England球員評分",
+        "title": "為何英格蘭輸給阿根廷，感覺像是 60 年痛苦中最令人心碎的一場",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cj365n05mgdo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 16 Jul 2026 01:35:24 GMT",
+        "summary": "England's years of hurt will now stretch beyond 60, but the late collapse to a World Cup semi-final defeat by Argentina may be the most painful wound of all.",
+        "title_zh": "為何英格蘭輸給阿根廷，感覺像是 60 年痛苦中最令人心碎的一場",
+        "title_en": "Why England's loss to Argentina felt like most painful in 60 years of hurt"
+      },
+      {
+        "title": "「這就是為何他是王者」—— Messi（梅西）助阿根廷晉級第三次世界盃決賽",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c8jnl9zdzn2o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 23:42:19 GMT",
+        "summary": "BBC Sport looks at Lionel Messi's masterclass on the right wing to knock England out of the World Cup.",
+        "title_zh": "「這就是為何他是王者」—— Messi（梅西）助阿根廷晉級第三次世界盃決賽",
+        "title_en": "'That's why he's the king' - Messi sets up third World Cup final"
+      },
+      {
+        "title": "Burn（伯恩）表示，這場失利將長久困擾英格蘭",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c1k13mvgyljo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 16 Jul 2026 00:43:58 GMT",
+        "summary": "England defender Dan Burn says the World Cup semi-final defeat by Argentina will haunt him.",
+        "title_zh": "Burn（伯恩）表示，這場失利將長久困擾英格蘭",
+        "title_en": "Defeat will haunt England for a long time, says Burn"
+      },
+      {
+        "title": "阿根廷在準決賽中粉碎英格蘭的世界盃夢想",
+        "link": "https://www.bbc.co.uk/sport/football/videos/cwy059qwdg4o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 22:05:15 GMT",
+        "summary": "Argentina shatter England's World Cup dreams, scoring two late goals to come from behind and knock out Thomas Tuchel's side, in a dramatic semi-final in Atlanta.",
+        "title_zh": "阿根廷在準決賽中粉碎英格蘭的世界盃夢想",
+        "title_en": "Argentina shatter England's World Cup dreams in semi-final"
+      },
+      {
+        "title": "儘管英格蘭落敗，Tuchel（圖赫爾）仍獲足總支持",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cly5ljl414xo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 16 Jul 2026 00:33:35 GMT",
+        "summary": "Thomas Tuchel retains the backing of the Football Association despite England failing to reach the World Cup final.",
+        "title_zh": "儘管英格蘭落敗，Tuchel（圖赫爾）仍獲足總支持",
+        "title_en": "Tuchel retains FA backing despite England defeat"
+      },
+      {
+        "title": "阿根廷因準決賽後的「福克蘭群島」標語面臨紀律處分",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c935pgr4dklo?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 22:49:47 GMT",
+        "summary": "Argentina face the prospect of disciplinary action from Fifa after their players celebrate the World Cup semi-final win against England with a banner in support of their country's claims to the Falkla",
+        "title_zh": "阿根廷因準決賽後的「福克蘭群島」標語面臨紀律處分",
+        "title_en": "Argentina face disciplinary action over Falklands banner after semi-final"
+      },
+      {
+        "title": "「換人沒奏效」—— 英格蘭球員評分",
         "link": "https://www.bbc.co.uk/sport/football/articles/cx2w3rqp6w1o?at_medium=RSS&at_campaign=rss",
         "published": "Wed, 15 Jul 2026 21:08:21 GMT",
         "summary": "BBC Sport's England reporter Alex Howell rates the players after the Three Lions lost to Argentina in the World Cup semi-final.",
-        "title_zh": "「換人沒有奏效」– England球員評分",
+        "title_zh": "「換人沒奏效」—— 英格蘭球員評分",
         "title_en": "'The change didn't work' - England player ratings"
       },
       {
-        "title": "兩場世界盃決賽將由BBC直播",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cp8xn7178x1o?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 21:16:12 GMT",
-        "summary": "Saturday's World Cup third-place play-off between England and France and Sunday's World Cup final will both be  live on BBC TV.",
-        "title_zh": "兩場世界盃決賽將由BBC直播",
-        "title_en": "Final two World Cup matches to be shown live on BBC"
+        "title": "「無悔」—— Tuchel（圖赫爾）談英格蘭輸給阿根廷",
+        "link": "https://www.bbc.co.uk/sport/football/videos/c62v3q3qp99o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 15 Jul 2026 22:40:05 GMT",
+        "summary": "England manager Thomas Tuchel believes his team \"got too passive\" after scoring first in the World Cup semi-final against Argentina, which they lost 2-1 at Atlanta Stadium.",
+        "title_zh": "「無悔」—— Tuchel（圖赫爾）談英格蘭輸給阿根廷",
+        "title_en": "'No regrets' - Tuchel on England's defeat by Argentina"
       },
       {
-        "title": "Arsenal前鋒Trossard以1530萬英鎊加盟Besiktas",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cddldzme6g1o?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 17:50:52 GMT",
-        "summary": "Arsenal forward Leandro Trossard joins Besiktas on a three-year deal.",
-        "title_zh": "Arsenal前鋒Trossard以1530萬英鎊加盟Besiktas",
-        "title_en": "Arsenal forward Trossard joins Besiktas for £15.3m"
-      },
-      {
-        "title": "Sunderland簽下Belgium世界盃後衛Meunier",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cgjxjqpgq4xo?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 09:44:49 GMT",
-        "summary": "Experienced Belgian defender Thomas Meunier signs for Sunderland after his contract with Lille comes to an end.",
-        "title_zh": "Sunderland簽下Belgium世界盃後衛Meunier",
-        "title_en": "Sunderland sign Belgium World Cup defender Meunier"
-      },
-      {
-        "title": "Bournemouth正與Benfica後衛Silva進行會談",
-        "link": "https://www.bbc.co.uk/sport/football/articles/crr8r4zvj5jo?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 09:22:33 GMT",
-        "summary": "Bournemouth enter talks to sign Benfica and Portugal defender Antonio Silva as Marcos Senesi's replacement.",
-        "title_zh": "Bournemouth正與Benfica後衛Silva進行會談",
-        "title_en": "Bournemouth in talks for Benfica defender Silva"
-      },
-      {
-        "title": "驗屍官發現頭槌導致Stiles罹患腦部疾病",
-        "link": "https://www.bbc.co.uk/news/articles/c5yzyygmxvgo?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 18:05:19 GMT",
-        "summary": "England 1966 World Cup winner Nobby Stiles died with a condition caused by heading footballs, his inquest concludes.",
-        "title_zh": "驗屍官發現頭槌導致Stiles罹患腦部疾病",
-        "title_en": "Headers caused Stiles' brain disease, coroner finds"
-      },
-      {
-        "title": "Man Utd鎖定Summerville – 週四八卦",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c1mymdm2rp8o?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 18:53:17 GMT",
-        "summary": "West Ham winger Crysencio Summerville is a target for Manchester United, Arsenal are preparing an offer for Norway winger Antonio Nusa, Everton consider moving for Manchester City's Rico Lewis, plus m",
-        "title_zh": "Man Utd鎖定Summerville – 週四八卦",
-        "title_en": "Man Utd target Summerville - Thursday's gossip"
-      },
-      {
-        "title": "Hibs將在歐洲賽事中對陣Kosovan球隊Malisheva",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c78g554nnywo?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 16:42:53 GMT",
-        "summary": "Hibernian will face Malisheva in the second round of Conference League qualifying later this month after the Kosovan outfit beat Albanian side Vllaznia 6-2 on aggregate.",
-        "title_zh": "Hibs將在歐洲賽事中對陣Kosovan球隊Malisheva",
-        "title_en": "Hibs to face Kosovan side Malisheva in Europe"
-      },
-      {
-        "title": "Fernandez踢進一球扳平，為Argentina得分",
-        "link": "https://www.bbc.co.uk/sport/football/videos/cj4kx9n4pv5o?at_medium=RSS&at_campaign=rss",
-        "published": "Wed, 15 Jul 2026 21:20:38 GMT",
-        "summary": "Enzo Fernandez equalises for Argentina against England in the 2026 World Cup semi final at the Atlanta Stadium.",
-        "title_zh": "Fernandez踢進一球扳平，為Argentina得分",
-        "title_en": "Fernandez fires in equaliser for Argentina"
+        "title": "威廉王子告訴英格蘭「昂首挺胸」",
+        "link": "https://www.bbc.co.uk/news/articles/c5y68dgnylxo?at_medium=RSS&at_campaign=rss",
+        "published": "Thu, 16 Jul 2026 00:07:05 GMT",
+        "summary": "The Prince of Wales says England has \"inspired us all\" as he offers his commiserations over the loss to Argentina.",
+        "title_zh": "威廉王子告訴英格蘭「昂首挺胸」",
+        "title_en": "Prince William tells England to 'hold heads high'"
       }
     ]
   },
@@ -808,7 +819,7 @@
   "stats": {
     "total_matches": 2,
     "significant_changes_count": 0,
-    "api_remaining": "455"
+    "api_remaining": "450"
   },
   "snapshots": [
     {
@@ -821,6 +832,10 @@
     },
     {
       "time": "2026-07-16T05:51:27.732197+08:00",
+      "matches_count": 3
+    },
+    {
+      "time": "2026-07-16T09:51:10.966633+08:00",
       "matches_count": 3
     }
   ]
