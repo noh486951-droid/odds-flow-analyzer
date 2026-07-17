@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-18T00:09:23.686263+08:00",
-  "last_updated_display": "2026/07/18 00:09 (台北時間)",
+  "last_updated": "2026-07-18T02:56:08.805756+08:00",
+  "last_updated_display": "2026/07/18 02:56 (台北時間)",
   "matches": {
     "7a49e7985534a5ff3428740d0b630fd7": {
       "id": "7a49e7985534a5ff3428740d0b630fd7",
@@ -60,26 +60,26 @@
               "Over": {
                 "price": 2.12,
                 "point": 3.5,
-                "prob": 45.1
+                "prob": 44.9
               },
               "Under": {
-                "price": 1.74,
+                "price": 1.73,
                 "point": 3.5,
-                "prob": 54.9
+                "prob": 55.1
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "England": 3.788,
-        "France": 1.911,
-        "Draw": 3.923
+        "England": 3.833,
+        "France": 1.904,
+        "Draw": 3.908
       },
       "true_probs": {
-        "England": 25.3,
-        "France": 50.2,
-        "Draw": 24.5
+        "England": 25.0,
+        "France": 50.4,
+        "Draw": 24.6
       },
       "other_markets": {
         "spreads": {
@@ -98,12 +98,12 @@
           "Over": {
             "price": 2.12,
             "point": 3.5,
-            "prob": 45.1
+            "prob": 44.9
           },
           "Under": {
-            "price": 1.74,
+            "price": 1.73,
             "point": 3.5,
-            "prob": 54.9
+            "prob": 55.1
           }
         },
         "btts": {}
@@ -116,14 +116,14 @@
       "first_seen": "2026-07-16T05:50:52.458709+08:00",
       "is_new": false,
       "odds_change": {
-        "England": 0.363,
-        "France": -0.208,
-        "Draw": 0.389
+        "England": 0.408,
+        "France": -0.215,
+        "Draw": 0.374
       },
       "change_pct": {
-        "England": 10.6,
-        "France": -9.82,
-        "Draw": 11.01
+        "England": 11.91,
+        "France": -10.15,
+        "Draw": 10.58
       },
       "is_value_bet": true,
       "odds_timeline": [
@@ -216,21 +216,41 @@
           "England": 3.788,
           "France": 1.911,
           "Draw": 3.923
+        },
+        {
+          "time": "07/18 02:55",
+          "England": 3.833,
+          "France": 1.904,
+          "Draw": 3.908
         }
       ],
       "injury_alerts": [
         {
           "team": "England",
-          "title": "Five reasons for England to be cheerful despite World Cup exit",
-          "link": "https://www.bbc.co.uk/sport/football/articles/clyxllv7lmpo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "team": "England",
-          "title": "Argentina shatter England's World Cup dreams in semi-final",
+          "title": "阿根廷(Argentina) 在準決賽中粉碎了英格蘭(England) 的世界盃夢想",
           "link": "https://www.bbc.co.uk/sport/football/videos/cwy059qwdg4o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "h2h_history": [],
+      "h2h_history": [
+        {
+          "date": "2022-12-10",
+          "home": "主隊",
+          "score": "2-1",
+          "away": "客隊"
+        },
+        {
+          "date": "2015-11-17",
+          "home": "主隊",
+          "score": "0-2",
+          "away": "客隊"
+        },
+        {
+          "date": "1999-06-05",
+          "home": "主隊",
+          "score": "2-0",
+          "away": "客隊"
+        }
+      ],
       "home_form": {
         "record": "L",
         "wins": 0,
@@ -263,21 +283,28 @@
           }
         ]
       },
-      "elo_diff": 60,
+      "elo_diff": 43,
       "xg_stats": {
         "home": {
-          "for": 2.3,
+          "for": 2.11,
           "against": 1.1
         },
         "away": {
-          "for": 1.9,
+          "for": 1.86,
           "against": 0.7
         }
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_analysis": "AI 每日免費額度已用完，明天會自動恢復。請參考勝率數據自行判斷。",
-      "analysis_source": "fallback"
+      "ai_rec_target": "主勝",
+      "ai_rec_line": "N/A",
+      "ai_rec_prob": 0.6,
+      "rec_odds": 1.904,
+      "ai_ev": 0.142,
+      "kelly_ratio": 0.1575,
+      "half_kelly_ratio": 0.0788,
+      "ai_analysis": "England's recent World Cup semi-final exit to Argentina, losing 2-1 in a tight match, has clearly impacted their morale. They conceded two late goals after leading 1-0, a recurring theme in their recent semi-final appearances. Despite this disappointment, England has shown a strong overall performance in the tournament, with a strong Elo rating of 1828.02 as of June 2026, and their recent xG per match is around 1.86. France, on the other hand, was defeated by Spain in their semi-final and currently holds an Elo rating of 1870.7. France's xG per match is a strong 2.11. Historically, France has had the upper hand in recent encounters, winning their last World Cup meeting in 2022. While England has a higher \"true win rate\" according to the provided odds (50.4% vs 25.0%), the Elo ratings and recent xG data suggest France has a slight edge. The odds movement, with France's odds decreasing and England's increasing, also points towards a stronger perceived performance from France. Considering England's recent psychological blow and France's slightly superior statistical indicators, France is favored.\n\n【💡 推薦： France 獨贏】\n\n推薦理由：英格蘭在準決賽中因 late goals 而落敗，士氣可能受影響。法國在 Elo 評級和預期進球數據上略有優勢，且近期交手紀錄也佔上風。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：2-1、1-0】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：65%】\n【📊 雙方進球機率：45%】\n【🎯 預測比分：主隊 2:1 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：小 3.5】",
+      "analysis_source": "gemini"
     },
     "fb30113e43d113f1ace48b8563ba1ee9": {
       "id": "fb30113e43d113f1ace48b8563ba1ee9",
@@ -335,13 +362,13 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.66
+                "price": 3.7
               },
               "Spain": {
-                "price": 2.32
+                "price": 2.3
               },
               "Draw": {
-                "price": 3.07
+                "price": 3.08
               }
             },
             "spreads": {
@@ -372,14 +399,14 @@
         }
       ],
       "avg_odds": {
-        "Argentina": 3.581,
+        "Argentina": 3.572,
         "Spain": 2.306,
-        "Draw": 3.07
+        "Draw": 3.077
       },
       "true_probs": {
-        "Argentina": 26.9,
+        "Argentina": 27.0,
         "Spain": 41.8,
-        "Draw": 31.4
+        "Draw": 31.3
       },
       "other_markets": {
         "spreads": {
@@ -416,14 +443,14 @@
       "first_seen": "2026-07-16T05:50:52.458721+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.052,
+        "Argentina": -0.061,
         "Spain": 0.024,
-        "Draw": 0.018
+        "Draw": 0.025
       },
       "change_pct": {
-        "Argentina": -1.43,
+        "Argentina": -1.68,
         "Spain": 1.05,
-        "Draw": 0.59
+        "Draw": 0.82
       },
       "is_value_bet": false,
       "odds_timeline": [
@@ -516,12 +543,18 @@
           "Argentina": 3.581,
           "Spain": 2.306,
           "Draw": 3.07
+        },
+        {
+          "time": "07/18 02:55",
+          "Argentina": 3.572,
+          "Spain": 2.306,
+          "Draw": 3.077
         }
       ],
       "injury_alerts": [
         {
           "team": "Argentina",
-          "title": "Argentina shatter England's World Cup dreams in semi-final",
+          "title": "阿根廷(Argentina) 在準決賽中粉碎了英格蘭(England) 的世界盃夢想",
           "link": "https://www.bbc.co.uk/sport/football/videos/cwy059qwdg4o?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -582,64 +615,84 @@
   "news": {
     "world_cup": [
       {
-        "title": "Five reasons for England to be cheerful despite World Cup exit",
+        "title": "世界盃出局，英格蘭仍有五大樂觀理由",
         "link": "https://www.bbc.co.uk/sport/football/articles/clyxllv7lmpo?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 17 Jul 2026 13:45:13 GMT",
-        "summary": "Despite the heartbreak of a World Cup semi-final loss, there are plenty of reasons to be optimistic about England's footballing future."
+        "summary": "Despite the heartbreak of a World Cup semi-final loss, there are plenty of reasons to be optimistic about England's footballing future.",
+        "title_zh": "世界盃出局，英格蘭仍有五大樂觀理由",
+        "title_en": "Five reasons for England to be cheerful despite World Cup exit"
       },
       {
-        "title": "Keep calm and carry on - Spain trust team identity to deliver World Cup",
+        "title": "Villa (維拉) 完成俱樂部創紀錄的 Manzambi (曼贊比) 簽約",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cj365336l52o?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 17 Jul 2026 17:25:24 GMT",
+        "summary": "Unai Emery makes his first summer signing by bringing in Johan Manzambi for a club record fee of just over £50m.",
+        "title_zh": "Villa (維拉) 完成俱樂部創紀錄的 Manzambi (曼贊比) 簽約",
+        "title_en": "Villa complete club record Manzambi signing"
+      },
+      {
+        "title": "保持冷靜，繼續前行 - 西班牙(Spain) 相信團隊的身份將在世界盃奪冠",
         "link": "https://www.bbc.co.uk/sport/football/articles/czxedvre7ryo?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 17 Jul 2026 15:04:58 GMT",
-        "summary": "Former Spain captain Cesar Azpilicueta explains why Luis de la Fuente's side have confidence in the collective as they prepare for Sunday's World Cup final against Argentina."
+        "summary": "Former Spain captain Cesar Azpilicueta explains why Luis de la Fuente's side have confidence in the collective as they prepare for Sunday's World Cup final against Argentina.",
+        "title_zh": "保持冷靜，繼續前行 - 西班牙(Spain) 相信團隊的身份將在世界盃奪冠",
+        "title_en": "Keep calm and carry on - Spain trust team identity to deliver World Cup"
       },
       {
-        "title": "Tuchel did not deliver, but his time with England is not up - Shearer",
+        "title": "Tuchel (圖赫爾) 未能兌現承諾，但他在英格蘭(England) 的時間尚未結束 - Shearer (希勒)",
         "link": "https://www.bbc.co.uk/sport/football/articles/c8xnl908y28o?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 17 Jul 2026 11:00:24 GMT",
-        "summary": "Former England captain Alan Shearer says Three Lions boss Thomas Tuchel will not be fazed by criticism he has faced over the World Cup semi-final defeat."
+        "summary": "Former England captain Alan Shearer says Three Lions boss Thomas Tuchel will not be fazed by criticism he has faced over the World Cup semi-final defeat.",
+        "title_zh": "Tuchel (圖赫爾) 未能兌現承諾，但他在英格蘭(England) 的時間尚未結束 - Shearer (希勒)",
+        "title_en": "Tuchel did not deliver, but his time with England is not up - Shearer"
       },
       {
-        "title": "Leeds sign £34.1m defender Muharemovic",
+        "title": "Leeds (里茲) 以 3410 萬英鎊簽下後衛 Muharemovic (穆哈雷莫維奇)",
         "link": "https://www.bbc.co.uk/sport/football/articles/c9w0kl9rjpno?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 17 Jul 2026 16:00:06 GMT",
-        "summary": "Leeds United sign defender Tarik Muharemovic for £34.1m from Serie A side Sassuolo."
+        "summary": "Leeds United sign defender Tarik Muharemovic for £34.1m from Serie A side Sassuolo.",
+        "title_zh": "Leeds (里茲) 以 3410 萬英鎊簽下後衛 Muharemovic (穆哈雷莫維奇)",
+        "title_en": "Leeds sign £34.1m defender Muharemovic"
       },
       {
-        "title": "Liverpool midfielder Szoboszlai signs new five-year deal",
+        "title": "「混亂對陣冷靜」 - Sutton (薩頓) 的世界盃決賽與季軍預測",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c4g3zrgxkzdo?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 17 Jul 2026 16:26:43 GMT",
+        "summary": "BBC Sport's football expert Chris Sutton makes his prediction for Spain against Argentina in the World Cup final, and the bronze final between France and England.",
+        "title_zh": "「混亂對陣冷靜」 - Sutton (薩頓) 的世界盃決賽與季軍預測",
+        "title_en": "'Chaos v calm' - Sutton's World Cup final and third-place predictions"
+      },
+      {
+        "title": "阿根廷(Argentina) 在世界盃是否受到優待？",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cx2wkwd7e6go?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 17 Jul 2026 16:26:43 GMT",
+        "summary": "Egypt have alleged bias in favour of Argentina and favouritism towards their star player, Lionel Messi. Is this fair?",
+        "title_zh": "阿根廷(Argentina) 在世界盃是否受到優待？",
+        "title_en": "Are Argentina being treated favourably at World Cup?"
+      },
+      {
+        "title": "Liverpool (利物浦) 中場 Szoboszlai (索博斯洛伊) 簽下五年新約",
         "link": "https://www.bbc.co.uk/sport/football/articles/cx2rn4llxxno?at_medium=RSS&at_campaign=rss",
         "published": "Fri, 17 Jul 2026 14:03:30 GMT",
-        "summary": "Liverpool midfielder Dominik Szoboszlai signs a new five-year contract at Anfield."
+        "summary": "Liverpool midfielder Dominik Szoboszlai signs a new five-year contract at Anfield.",
+        "title_zh": "Liverpool (利物浦) 中場 Szoboszlai (索博斯洛伊) 簽下五年新約",
+        "title_en": "Liverpool midfielder Szoboszlai signs new five-year deal"
       },
       {
-        "title": "West Ham captain Bowen to stay at club",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cz64ww3j2yxo?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 17 Jul 2026 10:51:02 GMT",
-        "summary": "West Ham United captain Jarrod Bowen will stay at the club for the forthcoming season in the Championship."
-      },
-      {
-        "title": "Pele at the Azteca? England in '66? Ranking the best World Cup finals",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cgjx946py51o?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 17 Jul 2026 11:54:14 GMT",
-        "summary": "Pele and Brazil at the Azteca in 1970? Lionel Messi's first World Cup? England winning it on home soil in 1966? BBC Sport attempts to rank the best finals."
-      },
-      {
-        "title": "All 11 last-minute winners at the World Cup",
+        "title": "世界盃上全部 11 個最後一分鐘的致勝進球",
         "link": "https://www.bbc.co.uk/sport/football/videos/cp8xn9y46xdo?at_medium=RSS&at_campaign=rss",
         "published": "Thu, 16 Jul 2026 13:41:00 GMT",
-        "summary": "Watch all 11 winning goals scored in stoppage time at the 2026 Fifa World Cup."
+        "summary": "Watch all 11 winning goals scored in stoppage time at the 2026 Fifa World Cup.",
+        "title_zh": "世界盃上全部 11 個最後一分鐘的致勝進球",
+        "title_en": "All 11 last-minute winners at the World Cup"
       },
       {
-        "title": "How World Cup final could be pivotal in Ballon d'Or race",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c87ngl370p4o?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 17 Jul 2026 12:56:23 GMT",
-        "summary": "With the Ballon d'Or race tighter than ever before, BBC Sport looks at how the World Cup final could determine the 2026 winner."
-      },
-      {
-        "title": "Effort, spirit and moments - but do England lack all-round quality?",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cz64xyn4vz2o?at_medium=RSS&at_campaign=rss",
-        "published": "Fri, 17 Jul 2026 05:32:35 GMT",
-        "summary": "As England reflect on their World Cup semi-final defeat by Argentina, BBC Sport's Phil McNulty looks at what Thomas Tuchel's team were lacking."
+        "title": "West Ham (韋斯咸)隊長 Bowen (鮑恩) 將留隊",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cz64ww3j2yxo?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 17 Jul 2026 10:51:02 GMT",
+        "summary": "West Ham United captain Jarrod Bowen will stay at the club for the forthcoming season in the Championship.",
+        "title_zh": "West Ham (韋斯咸)隊長 Bowen (鮑恩) 將留隊",
+        "title_en": "West Ham captain Bowen to stay at club"
       }
     ]
   },
@@ -649,6 +702,6 @@
   "stats": {
     "total_matches": 2,
     "significant_changes_count": 1,
-    "api_remaining": "385"
+    "api_remaining": "380"
   }
 }
