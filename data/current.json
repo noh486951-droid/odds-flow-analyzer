@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-19T13:44:14.663009+08:00",
-  "last_updated_display": "2026/07/19 13:44 (台北時間)",
+  "last_updated": "2026-07-19T16:03:15.817094+08:00",
+  "last_updated_display": "2026/07/19 16:03 (台北時間)",
   "matches": {
     "fb30113e43d113f1ace48b8563ba1ee9": {
       "id": "fb30113e43d113f1ace48b8563ba1ee9",
@@ -15,7 +15,7 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.8
+                "price": 3.75
               },
               "Spain": {
                 "price": 2.38
@@ -26,7 +26,7 @@
             },
             "h2h_lay": {
               "Argentina": {
-                "price": 3.85
+                "price": 3.8
               },
               "Spain": {
                 "price": 2.4
@@ -58,13 +58,13 @@
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.73
+                "price": 3.69
               },
               "Spain": {
                 "price": 2.31
               },
               "Draw": {
-                "price": 3.04
+                "price": 3.07
               }
             },
             "spreads": {
@@ -81,28 +81,28 @@
             },
             "totals": {
               "Over": {
-                "price": 2.4,
+                "price": 2.36,
                 "point": 2.5,
-                "prob": 40.4
+                "prob": 41.1
               },
               "Under": {
-                "price": 1.63,
+                "price": 1.65,
                 "point": 2.5,
-                "prob": 59.6
+                "prob": 58.9
               }
             }
           }
         }
       ],
       "avg_odds": {
-        "Argentina": 3.604,
-        "Spain": 2.303,
-        "Draw": 3.051
+        "Argentina": 3.616,
+        "Spain": 2.308,
+        "Draw": 3.046
       },
       "true_probs": {
-        "Argentina": 26.7,
-        "Spain": 41.8,
-        "Draw": 31.5
+        "Argentina": 26.6,
+        "Spain": 41.7,
+        "Draw": 31.6
       },
       "other_markets": {
         "spreads": {
@@ -119,14 +119,14 @@
         },
         "totals": {
           "Over": {
-            "price": 2.4,
+            "price": 2.36,
             "point": 2.5,
-            "prob": 40.4
+            "prob": 41.1
           },
           "Under": {
-            "price": 1.63,
+            "price": 1.65,
             "point": 2.5,
-            "prob": 59.6
+            "prob": 58.9
           }
         },
         "btts": {}
@@ -139,23 +139,17 @@
       "first_seen": "2026-07-16T05:50:52.458721+08:00",
       "is_new": false,
       "odds_change": {
-        "Argentina": -0.029,
-        "Spain": 0.021,
-        "Draw": -0.001
+        "Argentina": -0.017,
+        "Spain": 0.026,
+        "Draw": -0.006
       },
       "change_pct": {
-        "Argentina": -0.8,
-        "Spain": 0.92,
-        "Draw": -0.03
+        "Argentina": -0.47,
+        "Spain": 1.14,
+        "Draw": -0.2
       },
       "is_value_bet": true,
       "odds_timeline": [
-        {
-          "time": "07/17 02:58",
-          "Argentina": 3.588,
-          "Spain": 2.312,
-          "Draw": 3.044
-        },
         {
           "time": "07/17 05:57",
           "Argentina": 3.605,
@@ -269,12 +263,18 @@
           "Argentina": 3.604,
           "Spain": 2.303,
           "Draw": 3.051
+        },
+        {
+          "time": "07/19 16:01",
+          "Argentina": 3.616,
+          "Spain": 2.308,
+          "Draw": 3.046
         }
       ],
       "injury_alerts": [
         {
           "team": "Argentina",
-          "title": "阿根廷（Argentina）在半決賽中粉碎英格蘭（England）隊的世界盃夢想",
+          "title": "Argentina shatter England's World Cup dreams in semi-final",
           "link": "https://www.bbc.co.uk/sport/football/videos/cwy059qwdg4o?at_medium=RSS&at_campaign=rss"
         }
       ],
@@ -286,10 +286,16 @@
           "away": "Argentina"
         },
         {
-          "date": "1966-07-13",
+          "date": "2010-09-07",
           "home": "Argentina",
+          "score": "4-1",
+          "away": "Spain"
+        },
+        {
+          "date": "2009-11-14",
+          "home": "Spain",
           "score": "2-1",
-          "away": "Spain (World Cup)"
+          "away": "Argentina"
         }
       ],
       "home_form": {
@@ -324,7 +330,7 @@
           }
         ]
       },
-      "elo_diff": 32,
+      "elo_diff": -21,
       "xg_stats": {
         "home": {
           "for": 1.8,
@@ -340,11 +346,11 @@
       "ai_rec_target": "主讓",
       "ai_rec_line": "-0.5",
       "ai_rec_prob": 0.48,
-      "rec_odds": 2.303,
-      "ai_ev": 0.105,
-      "kelly_ratio": 0.0809,
-      "half_kelly_ratio": 0.0405,
-      "ai_analysis": "【💡 推薦：主讓 0.5 (Spain)】\n\n西班牙在本屆世界盃展現了極佳的防守韌性，整個賽事至今僅失1球。儘管阿根廷擁有梅西領銜的強大攻擊線，且xG數據顯示其進攻火力強勁 (2.1進球xG)，但面對西班牙穩固的防線，預計難以輕易突破。國際足聯Elo排名也顯示西班牙略佔優勢 (主隊2232 vs 客隊2200)。市場賠率微幅向上修正西班牙的獨贏賠率，符合逆向盤口移動（RLM）的特徵，顯示在專家普遍看好西班牙的情況下，市場可能存在價值投注。考慮到決賽往往是低比分的拉鋸戰，西班牙憑藉其防守穩定性和整體戰術執行力，有機會在90分鐘內取得勝利。\n\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：1-0】\n【📊 至少1球機率：90%】\n【📊 至少2球機率：75%】\n【📊 雙方進球機率：45%】\n【🎯 預測比分：主隊 1:0 客隊 (預估此比分機率：18%)】\n【⚽ 大小球推薦：小 2.5】",
+      "rec_odds": 2.308,
+      "ai_ev": 0.108,
+      "kelly_ratio": 0.0824,
+      "half_kelly_ratio": 0.0412,
+      "ai_analysis": "身為專業的運動彩券分析師，我將針對這場世足賽事提供以下分析與投注建議：\n\n## 比賽分析\n\n本場世足決賽由攻守數據皆出色的西班牙對陣韌性十足的阿根廷。西班牙在淘汰賽階段展現了驚人的防守能力，近七場比賽僅失一球，並取得了六場零封勝利，其團隊配合與戰術紀律堪稱典範。阿根廷則以其強大的進攻火力聞名，本屆世界盃已攻入19球，並多次在落後情況下完成絕地反攻，展現了強大的冠軍底蘊和梅西的個人影響力。\n\n然而，西班牙在賽前遭遇了小插曲，其最後一次訓練因新澤西的惡劣天氣（雷暴）而被迫取消，改為室內訓練。相比之下，阿根廷雖然也受天氣影響，但選擇等待並完成了輕量戶外訓練。這可能對西班牙的賽前戰術部署造成輕微影響。\n\n盤口賠率顯示西班牙為此役熱門，但獨贏賠率略有上調（從2.282升至2.308），而阿根廷賠率則微幅下降（從3.633降至3.616）。這種逆向盤口移動（RLM）在莊家行為中可能暗示市場對西班牙的信心略有動搖，或對阿根廷產生了更多關注。儘管如此，西班牙仍是市場上的明顯熱門球隊。在大小分盤方面，大小2.5球，市場普遍看好小分，這與西班牙堅固的防線表現相符。\n\n考量到兩隊的風格，西班牙可能會嘗試控制比賽節奏，利用其精準的傳控瓦解阿根廷的防線；而阿根廷則會依賴梅西的創造力和前鋒的終結能力尋找反擊機會。預計這將是一場膠著且戰術性十足的對決，進球數可能不會太多。\n\n## 💡 投注推薦：【主讓 0.5】\n\n推薦理由：西班牙本屆賽事表現出極高的穩定性和防守強度，即便阿根廷韌性十足，在決賽面對如此嚴密的防守仍會面臨巨大挑戰。雖然西班牙訓練受到影響，但其整體實力與戰術紀律仍使其具備在90分鐘內取勝的能力。市場傾向小分也印證了比賽的僵持性，西班牙有望憑藉一到兩粒進球鎖定勝局。\n\n---\n【🤖 勝平負判斷：主勝】\n【🎯 最可能比分：1-0、2-0】\n【📊 至少1球機率：95%】\n【📊 至少2球機率：65%】\n【📊 雙方進球機率：45%】\n【🎯 預測比分：主隊 1:0 客隊 (預估此比分機率：20%)】\n【⚽ 大小球推薦：小 2.5】\n (資料來源：FIFA 世界排名)\n (資料來源：FIFA 世界排名)\n\n\n\n\n\n\n\n---\n\n (包含本屆世界盃淘汰賽階段戰績)\n (包含本屆世界盃淘汰賽階段戰績)",
       "analysis_source": "gemini"
     }
   },
@@ -356,84 +362,64 @@
   "news": {
     "world_cup": [
       {
-        "title": "近期最佳英格蘭隊？Rice 表示這是事實",
+        "title": "Best England team for a long time? That's a fact, says Rice",
         "link": "https://www.bbc.co.uk/sport/football/articles/c4g34gjmyl7o?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Jul 2026 02:29:00 GMT",
-        "summary": "Midfielder Declan Rice says \"this is the best England group for a very long time\" after the Three Lions secure a third-placed finish at the 2026 World Cup.",
-        "title_zh": "近期最佳英格蘭隊？Rice 表示這是事實",
-        "title_en": "Best England team for a long time? That's a fact, says Rice"
+        "summary": "Midfielder Declan Rice says \"this is the best England group for a very long time\" after they secure a third-placed finish at the World Cup."
       },
       {
-        "title": "英格蘭（England）在進球大戰中擊敗法國（France），贏得季軍",
+        "title": "England beat France in 10-goal thriller to win third-place play-off",
         "link": "https://www.bbc.co.uk/sport/football/videos/cm2gn7v4jljo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Jul 2026 01:12:34 GMT",
-        "summary": "Bukayo Saka scores a hat-trick as England beat France 6-4 in a thriller to record their best men's World Cup finish since 1966.",
-        "title_zh": "英格蘭（England）在進球大戰中擊敗法國（France），贏得季軍",
-        "title_en": "England beat France in 10-goal thriller to win third-place play-off"
+        "summary": "Bukayo Saka scores a hat-trick as England beat France 6-4 in a thriller to record their best men's World Cup finish since 1966."
       },
       {
-        "title": "英格蘭（England）隊史上最好的世界盃表現，但該如何評判？",
+        "title": "England's best World Cup for 60 years - but how should it be judged?",
         "link": "https://www.bbc.co.uk/sport/football/articles/c78g1p05025o?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Jul 2026 00:23:05 GMT",
-        "summary": "England have secured their best men's World Cup finish since winning the tournament 60 years ago. Is their performance at the 2026 edition being under-appreciated?",
-        "title_zh": "英格蘭（England）隊史上最好的世界盃表現，但該如何評判？",
-        "title_en": "England's best World Cup for 60 years - but how should it be judged?"
+        "summary": "England have secured their best men's World Cup finish since winning the tournament 60 years ago. Is their performance at the 2026 edition being under-appreciated?"
       },
       {
-        "title": "英格蘭（England）隊球員在世界盃的表現如何？",
+        "title": "How did England players rate during the World Cup?",
         "link": "https://www.bbc.co.uk/sport/football/articles/cx2jljx84rwo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 18 Jul 2026 23:31:46 GMT",
-        "summary": "BBC Sport England reporter Alex Howell assess how the Three Lions' players fared in North America.",
-        "title_zh": "英格蘭（England）隊球員在世界盃的表現如何？",
-        "title_en": "How did England players rate during the World Cup?"
+        "summary": "BBC Sport England reporter Alex Howell assess how the Three Lions' players fared in North America."
       },
       {
-        "title": "換你了，Messi（梅西）—— Mbappe（姆巴佩）領跑史詩級金靴獎爭奪戰",
+        "title": "Over to you, Messi - Mbappe leads Golden Boot race for the ages",
         "link": "https://www.bbc.co.uk/sport/football/articles/c89nl42dnpyo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 18 Jul 2026 23:48:40 GMT",
-        "summary": "Kylian Mbappe leads the Golden Boot race by two goals but Lionel Messi could yet overtake him in the World Cup final.",
-        "title_zh": "換你了，Messi（梅西）—— Mbappe（姆巴佩）領跑史詩級金靴獎爭奪戰",
-        "title_en": "Over to you, Messi - Mbappe leads Golden Boot race for the ages"
+        "summary": "Kylian Mbappe leads the Golden Boot race by two goals but Lionel Messi could yet overtake him in the World Cup final."
       },
       {
-        "title": "Chelsea（切爾西）以創紀錄的 1.17 億英鎊簽下 Villa（維拉）的 Rogers（羅傑斯）",
+        "title": "Chelsea agree record £117m deal for Villa's Rogers",
         "link": "https://www.bbc.co.uk/sport/football/articles/c0ej1jyy8yyo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 18 Jul 2026 18:02:48 GMT",
-        "summary": "Chelsea have agreed a club record £117m deal to sign England international midfielder Morgan Rogers from Aston Villa.",
-        "title_zh": "Chelsea（切爾西）以創紀錄的 1.17 億英鎊簽下 Villa（維拉）的 Rogers（羅傑斯）",
-        "title_en": "Chelsea agree record £117m deal for Villa's Rogers"
+        "summary": "Chelsea have agreed a club record £117m deal to sign England international midfielder Morgan Rogers from Aston Villa."
       },
       {
-        "title": "Bellingham（貝林厄姆）打破英格蘭（England）隊世界盃進球紀錄",
+        "title": "Bellingham breaks England World Cup goals record",
         "link": "https://www.bbc.co.uk/sport/football/articles/c0qvzqlp4pdo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Jul 2026 00:47:11 GMT",
-        "summary": "Jude Bellingham becomes the first Englishman to score seven goals at a single World Cup with a late strike against France.",
-        "title_zh": "Bellingham（貝林厄姆）打破英格蘭（England）隊世界盃進球紀錄",
-        "title_en": "Bellingham breaks England World Cup goals record"
+        "summary": "Jude Bellingham becomes the first Englishman to score seven goals at a single World Cup with a late strike against France."
       },
       {
-        "title": "飲水暫停不受歡迎，Wenger（溫格）表示 FIFA 將會審查",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c24m30v0gy9o?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 18 Jul 2026 21:42:23 GMT",
-        "summary": "Arsene Wenger says he accepts the hydration breaks introduced at the 2026 World Cup have not been popular and Fifa will review their impact after the tournament.",
-        "title_zh": "飲水暫停不受歡迎，Wenger（溫格）表示 FIFA 將會審查",
-        "title_en": "Hydration breaks not popular and Fifa will review - Wenger"
-      },
-      {
-        "title": "西班牙（Spain）隊世界盃決賽前最後一次訓練課取消",
+        "title": "Spain's final training session before World Cup final cancelled",
         "link": "https://www.bbc.co.uk/sport/football/articles/cly878gpgrlo?at_medium=RSS&at_campaign=rss",
         "published": "Sat, 18 Jul 2026 17:32:45 GMT",
-        "summary": "Spain's final session before Sunday's World Cup final has been cancelled due to thunderstorms in New Jersey.",
-        "title_zh": "西班牙（Spain）隊世界盃決賽前最後一次訓練課取消",
-        "title_en": "Spain's final training session before World Cup final cancelled"
+        "summary": "Spain's final session before Sunday's World Cup final has been cancelled due to thunderstorms in New Jersey."
       },
       {
-        "title": "締結決賽隊伍 De la Fuente（德拉富恩特）與 Scaloni（斯卡洛尼）永恆聯繫的課堂時刻",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c98v13rgyrmo?at_medium=RSS&at_campaign=rss",
-        "published": "Sat, 18 Jul 2026 13:00:18 GMT",
-        "summary": "Spain manager Luis de la Fuente and Argentina boss Lionel Scaloni will go head-to-head in the World Cup final on Sunday - and the two men know each other well.",
-        "title_zh": "締結決賽隊伍 De la Fuente（德拉富恩特）與 Scaloni（斯卡洛尼）永恆聯繫的課堂時刻",
-        "title_en": "The classroom moment that bonds finalists De la Fuente & Scaloni forever"
+        "title": "Tottenham confident of Savinho signing - Sunday's gossip",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cn8nypvz22no?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 18 Jul 2026 20:46:50 GMT",
+        "summary": "Tottenham are hopeful of signing Savinho from Manchester City, Real Madrid cool their interest in Rodri, AC Milan are keeping tabs on Phil Foden, plus more."
+      },
+      {
+        "title": "Who am I? Guess World Cup star No 42",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c4g02zp311po?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 19 Jul 2026 05:51:01 GMT",
+        "summary": "Will you get today's player in as few attempts as possible?"
       }
     ]
   },
@@ -443,6 +429,6 @@
   "stats": {
     "total_matches": 1,
     "significant_changes_count": 1,
-    "api_remaining": "325"
+    "api_remaining": "320"
   }
 }
