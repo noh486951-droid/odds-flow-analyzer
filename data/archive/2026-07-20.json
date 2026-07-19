@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-20T02:54:00.501730+08:00",
-  "last_updated_display": "2026/07/20 02:54 (台北時間)",
+  "last_updated": "2026-07-20T05:43:09.085927+08:00",
+  "last_updated_display": "2026/07/20 05:43 (台北時間)",
   "matches": {
     "fb30113e43d113f1ace48b8563ba1ee9": {
       "id": "fb30113e43d113f1ace48b8563ba1ee9",
@@ -8,127 +8,31 @@
       "league": "世足 FIFA World Cup",
       "home_team": "Spain",
       "away_team": "Argentina",
-      "commence_time": "2026-07-19T19:00:00Z",
+      "commence_time": "2026-07-19T19:05:00Z",
       "bookmakers": [
-        {
-          "name": "Betfair",
-          "markets": {
-            "h2h": {
-              "Argentina": {
-                "price": 3.85
-              },
-              "Spain": {
-                "price": 2.36
-              },
-              "Draw": {
-                "price": 3.1
-              }
-            },
-            "h2h_lay": {
-              "Argentina": {
-                "price": 3.9
-              },
-              "Spain": {
-                "price": 2.38
-              },
-              "Draw": {
-                "price": 3.15
-              }
-            }
-          }
-        },
         {
           "name": "Tipico",
           "markets": {
             "h2h": {
               "Argentina": {
-                "price": 3.5
+                "price": 16.0
               },
               "Spain": {
-                "price": 2.25
+                "price": 2.2
               },
               "Draw": {
-                "price": 3.1
-              }
-            }
-          }
-        },
-        {
-          "name": "BetOnline.ag",
-          "markets": {
-            "h2h": {
-              "Argentina": {
-                "price": 3.77
-              },
-              "Spain": {
-                "price": 2.28
-              },
-              "Draw": {
-                "price": 3.07
-              }
-            },
-            "spreads": {
-              "Argentina": {
-                "price": 1.69,
-                "point": 0.5,
-                "prob": 57.4
-              },
-              "Spain": {
-                "price": 2.28,
-                "point": -0.5,
-                "prob": 42.6
-              }
-            },
-            "totals": {
-              "Over": {
-                "price": 1.73,
-                "point": 2.0,
-                "prob": 55.9
-              },
-              "Under": {
-                "price": 2.19,
-                "point": 2.0,
-                "prob": 44.1
+                "price": 1.75
               }
             }
           }
         }
       ],
-      "avg_odds": {
-        "Argentina": 3.658,
-        "Spain": 2.294,
-        "Draw": 3.036
-      },
-      "true_probs": {
-        "Argentina": 26.3,
-        "Spain": 42.0,
-        "Draw": 31.7
-      },
+      "insufficient_data": true,
+      "avg_odds": {},
+      "true_probs": {},
       "other_markets": {
-        "spreads": {
-          "Argentina": {
-            "price": 1.69,
-            "point": 0.5,
-            "prob": 57.4
-          },
-          "Spain": {
-            "price": 2.28,
-            "point": -0.5,
-            "prob": 42.6
-          }
-        },
-        "totals": {
-          "Over": {
-            "price": 1.73,
-            "point": 2.0,
-            "prob": 55.9
-          },
-          "Under": {
-            "price": 2.19,
-            "point": 2.0,
-            "prob": 44.1
-          }
-        },
+        "spreads": {},
+        "totals": {},
         "btts": {}
       },
       "opening_odds": {
@@ -138,24 +42,10 @@
       },
       "first_seen": "2026-07-16T05:50:52.458721+08:00",
       "is_new": false,
-      "odds_change": {
-        "Argentina": 0.025,
-        "Spain": 0.012,
-        "Draw": -0.016
-      },
-      "change_pct": {
-        "Argentina": 0.69,
-        "Spain": 0.53,
-        "Draw": -0.52
-      },
-      "is_value_bet": true,
+      "odds_change": {},
+      "change_pct": {},
+      "is_value_bet": false,
       "odds_timeline": [
-        {
-          "time": "07/17 18:39",
-          "Argentina": 3.6,
-          "Spain": 2.295,
-          "Draw": 3.056
-        },
         {
           "time": "07/17 21:08",
           "Argentina": 3.576,
@@ -269,28 +159,19 @@
           "Argentina": 3.658,
           "Spain": 2.294,
           "Draw": 3.036
-        }
-      ],
-      "h2h_history": [
-        {
-          "date": "2018-03-27",
-          "home": "主隊",
-          "score": "6-1",
-          "away": "客隊"
         },
         {
-          "date": "1966-07-13",
-          "home": "主隊",
-          "score": "1-2",
-          "away": "客隊"
-        },
-        {
-          "date": "1972-10-11",
-          "home": "主隊",
-          "score": "1-0",
-          "away": "客隊"
+          "time": "07/20 05:42"
         }
       ],
+      "injury_alerts": [
+        {
+          "team": "Spain",
+          "title": "World Cup決賽西班牙（Spain）與阿根廷（Argentina）球員評分",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cvgjgp7656xo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "h2h_history": [],
       "home_form": {
         "record": "W",
         "wins": 1,
@@ -323,28 +204,21 @@
           }
         ]
       },
-      "elo_diff": -33,
+      "elo_diff": -60,
       "xg_stats": {
         "home": {
-          "for": 1.91,
+          "for": 1.8,
           "against": 0.6
         },
         "away": {
-          "for": 2.05,
+          "for": 2.1,
           "against": 0.8
         }
       },
       "reverse_line_movement": [],
       "advancement_status": "",
-      "ai_rec_target": "客勝",
-      "ai_rec_line": "N/A",
-      "ai_rec_prob": 0.52,
-      "rec_odds": 3.658,
-      "ai_ev": 0.902,
-      "kelly_ratio": 0.3394,
-      "half_kelly_ratio": 0.1697,
-      "ai_analysis": "【💡 推薦：客勝 (Argentina)】\n\n考量到阿根廷在本次世界盃的進攻火力（場均預期進球 2.05）以及他們近期 14 連勝的強勢表現，儘管西班牙擁有驚人的防守紀錄（場均僅失 0.31 xG），但阿根廷的進攻端仍具備撕破防線的實力。盤口賠率在比賽尾聲對阿根廷略有移動，顯示出市場對其信心增強，並未出現明顯的散戶反向指標。\n\n【🤖 勝平負判斷：客勝】\n【🎯 最可能比分：1-2, 0-1, 1-1】\n【📊 至少1球機率：75%】\n【📊 至少2球機率：45%】\n【📊 雙方進球機率：55%】\n【🎯 預測比分：主隊 1:2 客隊 (預估此比分機率：15%)】\n【⚽ 大小球推薦：大 2.0】",
-      "analysis_source": "gemini"
+      "ai_analysis": "賠率變動幅度不大，市場尚無明顯傾向。",
+      "analysis_source": "rule_based"
     }
   },
   "leagues": {
@@ -355,84 +229,84 @@
   "news": {
     "world_cup": [
       {
-        "title": "以 3D 體驗本場賽事",
+        "title": "World Cup決賽西班牙（Spain）與阿根廷（Argentina）球員評分",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cvgjgp7656xo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 19 Jul 2026 19:55:40 GMT",
+        "summary": "Rate the Spain and Argentina players out of 10 below and come back 30 minutes after full-time to see the final ratings.",
+        "title_zh": "World Cup決賽西班牙（Spain）與阿根廷（Argentina）球員評分",
+        "title_en": "Rate the Spain and Argentina players in World Cup final"
+      },
+      {
+        "title": "以3D體驗這場比賽",
         "link": "https://www.3d-bbc.co.uk/?matchId=151710&at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Jul 2026 00:00:00 GMT",
         "summary": "Watch the World Cup final from every angle including through the eyes of every player.",
-        "title_zh": "以 3D 體驗本場賽事",
+        "title_zh": "以3D體驗這場比賽",
         "title_en": "Experience this match in 3D"
       },
       {
-        "title": "Trump (川普) 出席，世界盃決賽維安升級",
+        "title": "Shakira、Madonna、Justin Bieber與BTS在色彩繽紛的World Cup中場表演",
+        "link": "https://www.bbc.co.uk/news/articles/clyxjl0wkl7o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 19 Jul 2026 21:29:21 GMT",
+        "summary": "Robbie Williams and Jennifer Hudson also performed, with Kylie Jenner and Timothee Chalamet among the celebrities in the crowds.",
+        "title_zh": "Shakira、Madonna、Justin Bieber與BTS在色彩繽紛的World Cup中場表演",
+        "title_en": "Shakira, Madonna, Justin Bieber and BTS perform at colourful World Cup half-time show"
+      },
+      {
+        "title": "Trump出席讓World Cup決賽保安嚴密",
         "link": "https://www.bbc.co.uk/sport/football/articles/c304p73m3zgo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Jul 2026 17:50:07 GMT",
         "summary": "Supporters faced long queues to get into New York New Jersey Stadium amid heightened security for the 2026 World Cup final.",
-        "title_zh": "Trump (川普) 出席，世界盃決賽維安升級",
+        "title_zh": "Trump出席讓World Cup決賽保安嚴密",
         "title_en": "Trump presence means tight security for World Cup final"
       },
       {
-        "title": "IShowSpeed (IShowSpeed) 以繽紛色彩點燃世界盃閉幕式",
-        "link": "https://www.bbc.co.uk/news/articles/clyxjl0wkl7o?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 19 Jul 2026 18:51:38 GMT",
-        "summary": "Another star-studded performance at half-time will include Shakira, BTS, Madonna and Justin Bieber.",
-        "title_zh": "IShowSpeed (IShowSpeed) 以繽紛色彩點燃世界盃閉幕式",
-        "title_en": "IShowSpeed kicks off World Cup closing ceremony in blaze of colour"
+        "title": "群星閃耀World Cup決賽中場秀",
+        "link": "https://www.bbc.co.uk/sport/football/videos/cddj0m5pzglo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 19 Jul 2026 20:52:06 GMT",
+        "summary": "Madonna, BTS, Justin Bieber, and Shakira entertain the crowd at half-time in the World Cup final, with a special appearance from Ronaldo and Ronaldinho at the New York New Jersey Stadium.",
+        "title_zh": "群星閃耀World Cup決賽中場秀",
+        "title_en": "Stars shine at the World Cup final half-time show"
       },
       {
-        "title": "Messi (梅西) 邁向歷史，這會是他的最後一場世界盃嗎？",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cql1xxxpndlo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 19 Jul 2026 09:55:22 GMT",
-        "summary": "Argentina captain Lionel Messi will play his 34th World Cup match in Sunday's final, but will it be his last appearance?",
-        "title_zh": "Messi (梅西) 邁向歷史，這會是他的最後一場世界盃嗎？",
-        "title_en": "Messi on the brink of history - will it be his last World Cup game?"
-      },
-      {
-        "title": "世界盃如何影響您的 Premier League (英超) 隊伍",
+        "title": "World Cup如何影響你的Premier League球隊",
         "link": "https://www.bbc.co.uk/sport/football/articles/c3ek99pz1wgo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Jul 2026 13:29:34 GMT",
         "summary": "Once the trophy is lifted by either Spain or Argentina in New Jersey on Sunday night, attention will shift from the 2026 World Cup to the upcoming domestic season.",
-        "title_zh": "世界盃如何影響您的 Premier League (英超) 隊伍",
+        "title_zh": "World Cup如何影響你的Premier League球隊",
         "title_en": "How the World Cup has affected your Premier League team"
       },
       {
-        "title": "我曾是世界盃官員，保證絕無偏袒",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cm2g9g3v5gmo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 19 Jul 2026 09:55:59 GMT",
-        "summary": "Darren Cann speaks to BBC Sport about the conspiracy theories around the World Cup and what referees really think.",
-        "title_zh": "我曾是世界盃官員，保證絕無偏袒",
-        "title_en": "I've been a World Cup official - I promise you there is no favouritism"
+        "title": "Arsenal有意免費簽下Stones - 週一轉會流言",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cwy41vd9ewxo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 19 Jul 2026 20:48:37 GMT",
+        "summary": "Arsenal are weighing up a move for John Stones as a replacement for the injured William Saliba, Chelsea hold formal talks over Maxence Lacroix, plus more.",
+        "title_zh": "Arsenal有意免費簽下Stones - 週一轉會流言",
+        "title_en": "Arsenal line up Stones free transfer - Monday's gossip"
       },
       {
-        "title": "Saka (沙卡) 是否向 Tuchel (杜切爾) 證明他強到不容錯過？",
+        "title": "Saka是否向Tuchel證明他表現太好不應被棄用？",
         "link": "https://www.bbc.co.uk/sport/football/articles/c0ejnwj0n4jo?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Jul 2026 09:52:44 GMT",
         "summary": "Bukayo Saka’s World Cup hat-trick against France reignited the selection debate and Thomas Tuchel’s decision to leave him out of the semi-final.",
-        "title_zh": "Saka (沙卡) 是否向 Tuchel (杜切爾) 證明他強到不容錯過？",
+        "title_zh": "Saka是否向Tuchel證明他表現太好不應被棄用？",
         "title_en": "Has Saka shown Tuchel he's too good to leave out?"
       },
       {
-        "title": "Rice (賴斯) 表示：這是多年來最佳英格蘭隊，這是事實",
+        "title": "Rice表示：這是多年來最強的英格蘭（England）隊，這是事實",
         "link": "https://www.bbc.co.uk/sport/football/articles/c4g34gjmyl7o?at_medium=RSS&at_campaign=rss",
         "published": "Sun, 19 Jul 2026 02:29:00 GMT",
         "summary": "Midfielder Declan Rice says \"this is the best England group for a very long time\" after they secure a third-placed finish at the World Cup.",
-        "title_zh": "Rice (賴斯) 表示：這是多年來最佳英格蘭隊，這是事實",
+        "title_zh": "Rice表示：這是多年來最強的英格蘭（England）隊，這是事實",
         "title_en": "Best England team for a long time - that's a fact, says Rice"
       },
       {
-        "title": "Lamine Yamal (拉明·亞馬爾) 的世界盃將以「傳奇」或「悔恨」定調",
-        "link": "https://www.bbc.co.uk/sport/football/articles/cdx8r45w2gzo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 19 Jul 2026 10:11:29 GMT",
-        "summary": "Lamine Yamal may not have had a sparkling World Cup but victory for Spain in Sunday's World Cup final would write a very different narrative.",
-        "title_zh": "Lamine Yamal (拉明·亞馬爾) 的世界盃將以「傳奇」或「悔恨」定調",
-        "title_en": "'Legend' or 'regrets'? A final that will define Lamine Yamal's World Cup"
-      },
-      {
-        "title": "Bellingham (貝林漢姆) 創英格蘭世界盃進球紀錄",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c0qvzqlp4pdo?at_medium=RSS&at_campaign=rss",
-        "published": "Sun, 19 Jul 2026 00:47:11 GMT",
-        "summary": "Jude Bellingham becomes the first Englishman to score seven goals at a single World Cup with a late strike against France.",
-        "title_zh": "Bellingham (貝林漢姆) 創英格蘭世界盃進球紀錄",
-        "title_en": "Bellingham breaks England World Cup goals record"
+        "title": "World Cup結束後，BBC Sport足球賽事將繼續",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c9w2zr9wzj1o?at_medium=RSS&at_campaign=rss",
+        "published": "Sat, 11 Jul 2026 06:03:35 GMT",
+        "summary": "When the World Cup ends we'll still have loads of great content every day as we build up to the new football season.",
+        "title_zh": "World Cup結束後，BBC Sport足球賽事將繼續",
+        "title_en": "When the World Cup finishes, the football continues on BBC Sport"
       }
     ]
   },
@@ -442,11 +316,15 @@
   "stats": {
     "total_matches": 1,
     "significant_changes_count": 1,
-    "api_remaining": "300"
+    "api_remaining": "295"
   },
   "snapshots": [
     {
       "time": "2026-07-20T02:54:00.556949+08:00",
+      "matches_count": 1
+    },
+    {
+      "time": "2026-07-20T05:43:09.142874+08:00",
       "matches_count": 1
     }
   ]
